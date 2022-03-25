@@ -98,6 +98,6 @@ Each of these steps is integral to producing intelligence, but this is not condu
 * [https://academy.attackiq.com/courses/introduction-to-the-easy-framework](https://academy.attackiq.com/courses/introduction-to-the-easy-framework) - Threat intelligence couse focusing on building your own threat intelligence workflow and program.
 * [https://www.shadowscape.io/cyber-intelligence-analytics-operat](https://www.shadowscape.io/cyber-intelligence-analytics-operat) - Learn the ins and outs of all stages of the intelligence cycle from collection to analysis from seasoned intel professionals. How to employ threat intelligence to conduct comprehensive defense strategies to mitigate potential compromise. How to use TI to respond to and minimize impact of cyber incidents. How to generate comprehensive and actionable reports to communicate gaps in defenses and intelligence findings to decision makers.
 
-![](<../.gitbook/assets/image (15).png>)
+![](<../.gitbook/assets/image (14).png>)
 
 ****

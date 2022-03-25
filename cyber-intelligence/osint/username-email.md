@@ -32,7 +32,7 @@ These two tools often go hand in hand with results often overlapping. Still, it 
 
     ​
 
-![](<../../.gitbook/assets/image (38).png>)
+![](<../../.gitbook/assets/image (34).png>)
 
 ## **Email Address Search Tools**
 

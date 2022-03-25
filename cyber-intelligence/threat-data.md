@@ -66,7 +66,8 @@ When checking your indicators against the below sources, be sure you are looking
 * [IPSpam List](http://www.ipspamlist.com/ip-lookup/) - Checks IP against their internal blacklist for reporting spam
 * [Cymru IP Reputation Lookup](https://reputation.team-cymru.com) - Checks IP against Cymru's internal reputation feed (High quality)
 * [http://www.blocklist.de/en/search.html](http://www.blocklist.de/en/search.html) - Check if a netblock or IP is malicious according to blocklist.de.
-* [https://focsec.com/](https://focsec.com) - Determine if a user’s IP address is associated with a VPN, Proxy, TOR or malicious bots.
+* [https://www.projecthoneypot.org/search\_ip.php](https://www.projecthoneypot.org/search\_ip.php) - Checks IP Attack data from distributed honeypot network.
+* [https://focsec.com/](https://focsec.com) (API ONLY) - Determine if a user’s IP address is associated with a VPN, Proxy, TOR or malicious bots.
 
 ### URL/Domain Reputation data
 
@@ -158,9 +159,6 @@ These resources may not specifically return reputation data, but with the help o
 * [https://cleantalk.org/#](https://cleantalk.org/#)
   * Search: IP Addresses, Email, Subnet, Domain
   * Returns: Presence on internal blocklist for spam activity
-* [https://www.projecthoneypot.org/search\_ip.php](https://www.projecthoneypot.org/search\_ip.php)
-  * Search: IP address
-  * Returns: Attack data from distributed honeypot network.
 
 ## Investigation Tools
 
@@ -170,7 +168,7 @@ If you do not have a SOAR platform to perform some of the OSINT lookups for you,
 Note: Some tools require more than a simple append on to the end of the URI. I am currently working on expanding that functionality.
 {% endhint %}
 
-{% file src="../.gitbook/assets/s0cm0nkeyOSINT (9).html" %}
+{% file src="../.gitbook/assets/EasyOSINT.html" %}
 
 {% embed url="https://github.com/s0cm0nkey/EasyOSINT" %}
 
@@ -180,5 +178,5 @@ Here is a MindMap I have made of the popular tools I use for analyzing indicator
 
 The interactive version can be found here:
 
-{% file src="../.gitbook/assets/Threat Object.xmind" %}
+{% file src="../.gitbook/assets/Threat Object (1).xmind" %}
 

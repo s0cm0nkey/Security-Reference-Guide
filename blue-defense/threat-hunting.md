@@ -158,5 +158,5 @@ Preparing for CJA requires organizations to do the following:
 * [https://pberba.github.io/security/2021/11/22/linux-threat-hunting-for-persistence-sysmon-auditd-webshell/](https://pberba.github.io/security/2021/11/22/linux-threat-hunting-for-persistence-sysmon-auditd-webshell/)
 * [https://github.com/schwartz1375/aws](https://github.com/schwartz1375/aws) - Repo for threat hunting in AWS.
 
-![](<../.gitbook/assets/image (12).png>)
+![](<../.gitbook/assets/image (13).png>)
 
