@@ -1,5 +1,5 @@
 # All of the Best Links and Resources on Cyber Security.
-
+https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/
 ### About Me
 
 I'm the s0cm0nkey. I am a security analyst, threat hunter, pentester, researcher, and CTF enthusiast.&#x20;
