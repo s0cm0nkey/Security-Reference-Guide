@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<style>
+ul {list-style-type: none;margin: 0;padding: 0;width: 200px;background-color: #f1f1f1;}
+li a {display: block;color: #000;padding: 8px 16px;text-decoration: none;}
+li a:hover {background-color: #555;color: white;}
+li a.active {background-color: #303942;color: white;}
+li a.grey {background-color: #cdcdcd;color: black;}
+li a.blue {background-color: #b4c8da;color: black;}
+table td, table td * {vertical-align: top;}
+</style>
+<head>
+<meta charset="UTF-8">
+<title>EasyDork</title>
+</head>
+<body>
+<table width="1000" border="0">
+<tbody>
+<tr>
+<td width="800">
+
+<!Populate All function>
+<script type="text/javascript">
+function doPopAll(PopAll){var pop = document.getElementById("PopAll");
+for (j = 1; j <= 100; j++){if (j < 10){j = "0" + j.toString();}
+else {j = j.toString();}
+console.log(j)
+item = document.getElementById("Search" + j);
+if (item != null){item.value = pop.value;}}}
+</script>
+<form onsubmit="doPopAll(this.PopAll.value); return false;">
+<input type="text" id="PopAll" name="PopAll" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:140px" value="Populate All" /><br /></form><br>
+
+<!#1 Find Login Pages:>
+<script type="text/javascript">
+function doSearch01(Search01)
+{window.open('https://www.google.ca/search?q=site:'  + Search01 + '+username+OR+password+OR+login+OR+root+OR+admin', 'Search01window');}
+</script>
+<form onsubmit="doSearch01(this.Search01.value); return false;">
+<input type="text" id="Search01" name="Search01" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:140px" value="Login Pages:" /><br /></form>
+
+<!#2 Search for Backdoors>
+<script type="text/javascript">
+function doSearch02(Search02)
+{window.open('https://www.google.ca/search?q=site:'  + Search02 + '+inurl:shell+OR+inurl:backdoor+OR+inurl:wso+OR+inurl:cmd+OR+shadow+OR+passwd+OR+boot.ini+OR+inurl:backdoor', 'Search02window');}
+</script>
+<form onsubmit="doSearch02(this.Search02.value); return false;">
+<input type="text" id="Search02" name="Search02" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:140px" value="Backdoors" /><br /></form>
+
+<!#3 Find Setup or Install Files>
+<script type="text/javascript">
+function doSearch03(Search03)
+{window.open('https://www.google.ca/search?q=site:'  + Search03 + '+inurl:readme+OR+inurl:license+OR+inurl:install+OR+inurl:setup+OR+inurl:config', 'Search03window');}
+</script>
+<form onsubmit="doSearch03(this.Search03.value); return false;">
+<input type="text" id="Search03" name="Search03" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:140px" value="Setup/Install Files" /><br /></form>
+
+<!#4 Find Wordpress Plugins/Uploads/Downloads>
+<script type="text/javascript">
+function doSearch04(Search04)
+{window.open('https://www.google.ca/search?q=site:'  + Search04 + '+inurl:wp-+OR+inurl:plugin+OR+inurl:upload+OR+inurl:download', 'Search04window');}
+</script>
+<form onsubmit="doSearch04(this.Search04.value); return false;">
+<input type="text" id="Search04" name="Search04" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:140px" value="Wordpress Plugins/Uploads/Downloads" /><br /></form>
+
+<!#5 Find Open Redirects>
+<script type="text/javascript">
+function doSearch05(Search05)
+{window.open('https://www.google.ca/search?q=site:'  + Search05 + '+inurl:redir+OR+inurl:url+OR+inurl:redirect+OR+inurl:return+OR+inurl:src=http+OR+inurl:r=http', 'Search05window');}
+</script>
+<form onsubmit="doSearch05(this.Search05.value); return false;">
+<input type="text" id="Search05" name="Search05" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:140px" value="Open Redirects" /><br /></form>
+
+<!#6 Find Files by Extension>
+<script type="text/javascript">
+function doSearch06(Search06)
+{window.open('https://www.google.ca/search?q=site:'  + Search06 + '+ext:cgi+OR+ext:php+OR+ext:asp+OR+ext:aspx+OR+ext:jsp+OR+ext:jspx+OR+ext:swf+OR+ext:fla+OR+ext:xml', 'Search06window');}
+</script>
+<form onsubmit="doSearch06(this.Search06.value); return false;">
+<input type="text" id="Search06" name="Search06" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:140px" value="Files by Extension" /><br /></form>
+
+<!#7 Find Documents by Extension>
+<script type="text/javascript">
+function doSearch07(Search07)
+{window.open('https://www.google.ca/search?q=site:'  + Search07 + '+ext:doc+OR+ext:docx+OR+ext:csv+OR+ext:pdf+OR+ext:txt+OR+ext:log+OR+ext:bak', 'Search07window');}
+</script>
+<form onsubmit="doSearch07(this.Search07.value); return false;">
+<input type="text" id="Search07" name="Search07" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:140px" value="Documents by Extension" /><br /></form>
+
+<!#8 Apache Struts RCE>
+<script type="text/javascript">
+function doSearch08(Search08)
+{window.open('https://www.google.ca/search?q=site:'  + Search08 + '+ext:action+OR+struts', 'Search08window');}
+</script>
+<form onsubmit="doSearch08(this.Search08.value); return false;">
+<input type="text" id="Search08" name="Search08" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:140px" value="Apache Struts RCE" /><br /></form>
+
+<!#9 Pastebin Posts for Domain>
+<script type="text/javascript">
+function doSearch09(Search09)
+{window.open('https://www.google.ca/search?q=site:pastebin.com+' + Search09, 'Search09window');}
+</script>
+<form onsubmit="doSearch09(this.Search09.value); return false;">
+<input type="text" id="Search09" name="Search09" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:140px" value="Pastebin Posts for Domain" /><br /></form>
+
+<!#10 Employees on Linkedin>
+<script type="text/javascript">
+function doSearch10(Search10)
+{window.open('https://www.google.ca/search?q=site:linkedin.com+employees+' + Search10, 'Search10window');}
+</script>
+<form onsubmit="doSearch10(this.Search10.value); return false;">
+<input type="text" id="Search10" name="Search10" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:140px" value="Employees on Linkedin" /><br /></form>
+
+<!#11 Index Page>
+<script type="text/javascript">
+function doSearch11(Search11)
+{window.open('https://www.google.ca/search?q=intitle:index.of+site:' + Search11, 'Search11window');}
+</script>
+<form onsubmit="doSearch11(this.Search11.value); return false;">
+<input type="text" id="Search11" name="Search11" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:140px" value="Index Of Page" /><br /></form>
+
+<!#12 Database Files>
+<script type="text/javascript">
+function doSearch12(Search12)
+{window.open('https://www.google.ca/search?q=site:'  + Search12 + '+ext:sql+OR+ext:dbf+OR+ext:mdb' 'Search12window');}
+</script>
+<form onsubmit="doSearch12(this.Search12.value); return false;">
+<input type="text" id="Search12" name="Search12" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:140px" value="Database Files" /><br /></form>
+
+<!#13 Log Files>
+<script type="text/javascript">
+function doSearch13(Search13)
+{window.open('https://www.google.ca/search?q=ext:log+site:' + Search13, 'Search13window');}
+</script>
+<form onsubmit="doSearch13(this.Search13.value); return false;">
+<input type="text" id="Search13" name="Search13" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:140px" value="Log Files" /><br /></form>
+
+<!#14 PHPInfo/htaccess/git Files>
+<script type="text/javascript">
+function doSearch14(Search14)
+{window.open('https://www.google.ca/search?q=site:' + Search14 + '+inurl:phpinfo.php+OR+inurl:htaccess+OR+inurl:.git', 'Search14window');}
+</script>
+<form onsubmit="doSearch14(this.Search14.value); return false;">
+<input type="text" id="Search14" name="Search14" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:140px" value="PHPInfo/htaccess/git Files" /><br /></form>
+
+<! Search All>
+<br>
+<script type="text/javascript">
+function doall(all){
+window.open('https://www.google.ca/search?q=site:'  + all + 'username+OR+password+OR+login+OR+root+OR+admin', 'Search01window');
+window.open('https://www.google.ca/search?q=site:'  + all + '+inurl:shell+OR+inurl:backdoor+OR+inurl:wso+OR+inurl:cmd+OR+shadow+OR+passwd+OR+boot.ini+OR+inurl:backdoor', 'Search01window');
+window.open('https://www.google.ca/search?q=site:'  + all + '+inurl:readme+OR+inurl:license+OR+inurl:install+OR+inurl:setup+OR+inurl:config', 'Search03window');
+window.open('https://www.google.ca/search?q=site:'  + all + '+inurl:wp-+OR+inurl:plugin+OR+inurl:upload+OR+inurl:download', 'Search04window');
+window.open('https://www.google.ca/search?q=site:'  + all + '+inurl:redir+OR+inurl:url+OR+inurl:redirect+OR+inurl:return+OR+inurl:src=http+OR+inurl:r=http', 'Search05window');
+window.open('https://www.google.ca/search?q=site:'  + all + '+ext:cgi+OR+ext:php+OR+ext:asp+OR+ext:aspx+OR+ext:jsp+OR+ext:jspx+OR+ext:swf+OR+ext:fla+OR+ext:xml', 'Search06window');
+window.open('https://www.google.ca/search?q=site:'  + all + '+ext:doc+OR+ext:docx+OR+ext:csv+OR+ext:pdf+OR+ext:txt+OR+ext:log+OR+ext:bak', 'Search07window');
+window.open('https://www.google.ca/search?q=site:'  + all + '+ext:action+OR+struts', 'Search08window');
+window.open('https://www.google.ca/search?q=site:pastebin.com+' + all, 'Search09window');
+window.open('https://www.google.ca/search?q=site:linkedin.com+employees+' + all, 'Search10window');
+window.open('https://www.google.ca/search?q=intitle:index.of+site:' + all, 'Search11window');
+window.open('https://www.google.ca/search?q=site:'  + all + '+ext:sql+OR+ext:dbf+OR+ext:mdb', 'Search12window');
+window.open('https://www.google.ca/search?q=ext:log+site:' + all, 'Search13window');
+window.open('https://www.google.ca/search?q=site:' + all + '+inurl:phpinfo.php+OR+inurl:htaccess+OR+inurl:.git', 'Search14window');}
+</script>
+ <form onsubmit="doall(this.all.value); return false;">
+ <input type="text" id="Search99" name="all" size="30" placeholder="Search Terms" value="" />
+ <input type="submit" style="width:140px" value="Submit All" />
+ </form>
+
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

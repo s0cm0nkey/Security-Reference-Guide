@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+li a.active {
+  background-color: #303942;
+  color: white;
+}
+li a.grey {
+  background-color: #cdcdcd;
+  color: black;
+}
+li a.blue {
+  background-color: #b4c8da;
+  color: black;
+}
+table td, table td * {
+    vertical-align: top;
+}
+</style>
+<head>
+<meta charset="UTF-8">
+<title>IntelTechniques IP Address Tool</title>
+</head>
+<body>
+<table width="1000" border="0">
+<tbody>
+<tr>
+<td width="200">
+<ul>
+<li><a href="_Start_Here.html" class="grey">IntelTechniques Tools</a></li>
+<li><a href="Search.html">Search Engines</a></li>
+<li><a href="Email.html">Email Addresses</a></li>
+<li><a href="Facebook.html">Facebook</a></li>
+<li><a href="Twitter.html">Twitter</a></li>
+<li><a href="Instagram.html">Instagram</a></li>
+<li><a href="LinkedIn.html">LinkedIn</a></li>
+<li><a href="Name.html">Real Names</a></li>
+<li><a href="Username.html">Usernames</a></li>
+<li><a href="Telephone.html">Telephone Numbers</a></li>
+<li><a href="Domain.html">Domains</a></li>
+<li><a href="IP.html" class="active">IP Addresses</a></li>
+<li><a href="Videos.html">Videos</a></li>
+<li><a href="Images.html">Images</a></li>
+<li><a href="Documents.html">Documents</a></li>
+<li><a href="Pastes.html">Pastes</a></li>
+<li><a href="Communities.html">Communities</a></li>
+<li><a href="Location.html">Locations</a></li>
+<li><a href="Business.html">Business & Government</a></li>
+<li><a href="Currencies.html">Virtual Currencies</a></li>
+<li><a href="Breaches.html">Data Breaches & Leaks</a></li>
+<li><a href="OSINT7.html" class="blue">OSINT Book</a></li>
+<li><a href="License.html" class="grey">License</a></li>
+</ul>
+</td>
+<td width="800">
+
+<script type="text/javascript">
+function doPopAll(PopAll)
+{var pop = document.getElementById("PopAll");
+for (j = 1; j <= 100; j++){
+if (j < 10){
+j = "0" + j.toString();}
+else {j = j.toString();}
+console.log(j)
+item = document.getElementById("Search" + j);
+if (item != null){
+item.value = pop.value;}}}
+</script>
+<form onsubmit="doPopAll(this.PopAll.value); return false;">
+<input type="text" id="PopAll" name="PopAll" size="30" placeholder="IP Address"/>
+<input type="submit" style="width:120px" value="Populate All" /><br /></form><br>
+
+<script type="text/javascript">
+function doSearch01(Search01)
+{window.open('http://www.bing.com/search?q=ip%3A' + Search01, 'Search01window');}
+</script>
+<form onsubmit="doSearch01(this.Search01.value); return false;">
+<input type="text" id="Search01" name="Search01" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="Bing IP" /><br /></form>
+
+<script type="text/javascript">
+function doSearch02(Search02)
+{window.open('http://viewdns.info/reverseip/?host=' + Search02 + '&t=1', 'Search02window');}
+</script>
+<form onsubmit="doSearch02(this.Search02.value); return false;">
+<input type="text" id="Search02" name="Search02" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="Reverse IP" /><br /></form>
+
+<script type="text/javascript">
+function doSearch03(Search03)
+{window.open('http://viewdns.info/iplocation/?ip=' + Search03, 'Search03window');}
+</script>
+<form onsubmit="doSearch03(this.Search03.value); return false;">
+<input type="text" id="Search03" name="Search03" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="Locate IP" /><br /></form>
+
+<script type="text/javascript">
+function doSearch04(Search04)
+{window.open('http://viewdns.info/portscan/?host=' + Search04, 'Search04window');}
+</script>
+<form onsubmit="doSearch04(this.Search04.value); return false;">
+<input type="text" id="Search04" name="Search04" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="Port Scan" /><br /></form>
+
+<script type="text/javascript">
+function doSearch05(Search05)
+{window.open('http://viewdns.info/whois/?domain=' + Search05, 'Search05window');}
+</script>
+<form onsubmit="doSearch05(this.Search05.value); return false;">
+<input type="text" id="Search05" name="Search05" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="IP Whois" /><br /></form>
+
+<script type="text/javascript">
+function doSearch06(Search06)
+{window.open('http://viewdns.info/traceroute/?domain=' + Search06, 'Search06window');}
+</script>
+<form onsubmit="doSearch06(this.Search06.value); return false;">
+<input type="text" id="Search06" name="Search06" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="TraceRoute" /><br /></form>
+
+<script type="text/javascript">
+function doSearch07(Search07)
+{window.open('http://who.is/whois-ip/ip-address/' + Search07, 'Search07window');}
+</script>
+<form onsubmit="doSearch07(this.Search07.value); return false;">
+<input type="text" id="Search07" name="Search07" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="Who.Is IP" /><br /></form>
+
+<script type="text/javascript">
+function doSearch08(Search08)
+{window.open('https://censys.io/ipv4/' + Search08, 'Search08window');}
+</script>
+<form onsubmit="doSearch08(this.Search08.value); return false;">
+<input type="text" id="Search08" name="Search08" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="Censys" /><br /></form>
+
+<script type="text/javascript">
+function doSearch09(Search09)
+{window.open('https://www.threatcrowd.org/ip.php?ip=' + Search09, 'Search09window');}
+</script>
+<form onsubmit="doSearch09(this.Search09.value); return false;">
+<input type="text" id="Search09" name="Search09" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="ThreatCrowd" /><br /></form>
+
+<script type="text/javascript">
+function doSearch10(Search10)
+{window.open('https://www.shodan.io/search?query=' + Search10, 'Search10window');}
+</script>
+<form onsubmit="doSearch10(this.Search10.value); return false;">
+<input type="text" id="Search10" name="Search10" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="Shodan" /><br /></form>
+
+<script type="text/javascript">
+function doSearch11(Search11)
+{window.open('https://www.zoomeye.org/searchResult?q=' + Search11, 'Search11window');}
+</script>
+<form onsubmit="doSearch11(this.Search11.value); return false;">
+<input type="text" id="Search11" name="Search11" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="ZoomEye" /><br /></form>
+
+<script type="text/javascript">
+function doSearch12(Search12)
+{window.open('http://iknowwhatyoudownload.com/en/peer/?ip=' + Search12, 'Search12window');}
+</script>
+<form onsubmit="doSearch12(this.Search12.value); return false;">
+<input type="text" id="Search12" name="Search12" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="Torrents" /><br /></form>
+
+<script type="text/javascript">
+function doSearch13(Search13)
+{window.open('https://thatsthem.com/ip/' + Search13, 'Search13window');}
+</script>
+<form onsubmit="doSearch13(this.Search13.value); return false;">
+<input type="text" id="Search13" name="Search13" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="That's Them" /><br /></form>
+
+<script type="text/javascript">
+function doSearch14(Search14)
+{window.open('https://weleakinfo.com/search?type=ip&query=' + Search14, 'Search14window');}
+</script>
+<form onsubmit="doSearch14(this.Search14.value); return false;">
+<input type="text" id="Search14" name="Search14" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="WeLeakInfo" /><br /></form>
+
+<script type="text/javascript">
+function doSearch15(Search15)
+{window.open('https://dehashed.com/search?query=%22' + Search15 + '%22', 'Search15window');}
+</script>
+<form onsubmit="doSearch15(this.Search15.value); return false;">
+<input type="text" id="Search15" name="Search15" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="Dehashed" /><br /></form>
+
+<script type="text/javascript">
+function doSearch16(Search16)
+{window.open('https://www.ultratools.com/tools/ipv6InfoResult?ipAddress=' + Search16, 'Search16window');}
+</script>
+<form onsubmit="doSearch16(this.Search16.value); return false;">
+<input type="text" id="Search16" name="Search16" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="UltraTools IP" /><br><br /></form>
+
+<script type="text/javascript">
+function doall(all)
+{window.open('http://www.bing.com/search?q=ip%3A' + all, 'Search01window');
+window.open('http://viewdns.info/reverseip/?host=' + all + '&t=1', 'Search02window');
+window.open('http://viewdns.info/iplocation/?ip=' + all, 'Search03window');
+window.open('http://viewdns.info/portscan/?host=' + all, 'Search04window');
+window.open('http://viewdns.info/whois/?domain=' + all, 'Search05window');
+window.open('http://viewdns.info/traceroute/?domain=' + all, 'Search06window');
+window.open('http://who.is/whois-ip/ip-address/' + all, 'Search07window');
+window.open('https://censys.io/ipv4/' + all, 'Search08window');
+window.open('https://www.threatcrowd.org/ip.php?ip=' + all, 'Search09window');
+window.open('https://www.shodan.io/search?query=' + all, 'Search10window');
+window.open('https://www.zoomeye.org/searchResult?q=' + all, 'Search11window');
+window.open('http://iknowwhatyoudownload.com/en/peer/?ip=' + all, 'Search12window');
+window.open('https://thatsthem.com/ip/' + all, 'Search13window');
+window.open('https://weleakinfo.com/search?type=ip&query=' + all, 'Search14window');
+window.open('https://dehashed.com/search?query=%22' + all + '%22', 'Search15window');
+window.open('https://www.ultratools.com/tools/ipv6InfoResult?ipAddress=' + all, 'Search16window');}
+</script>
+<form onsubmit="doall(this.all.value); return false;">
+<input type="text" id="Search99" name="all" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="Submit All" /></form>
+
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

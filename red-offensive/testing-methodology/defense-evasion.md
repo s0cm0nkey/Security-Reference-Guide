@@ -1,0 +1,177 @@
+# Defense Evasion
+
+{% hint style="info" %}
+Note: For payload obfuscation, see the Payloads section under the Offensive Toolbox.
+{% endhint %}
+
+{% content-ref url="payloads-and-obfuscation/" %}
+[payloads-and-obfuscation](payloads-and-obfuscation/)
+{% endcontent-ref %}
+
+## Guides and Reference
+
+* [https://www.ired.team/offensive-security/defense-evasion](https://www.ired.team/offensive-security/defense-evasion)
+* [PayloadsAllTheThings/Windows-AMSIBypass](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20AMSI%20Bypass.md)
+* [https://www.blackhillsinfosec.com/bypass-web-proxy-filtering/](https://www.blackhillsinfosec.com/bypass-web-proxy-filtering/) - Great write-up on Domain Fronting as C2
+* [https://www.blackhillsinfosec.com/powershell-without-powershell-how-to-bypass-application-whitelisting-environment-restrictions-av/](https://www.blackhillsinfosec.com/powershell-without-powershell-how-to-bypass-application-whitelisting-environment-restrictions-av/)
+* [https://www.netspi.com/blog/technical/network-penetration-testing/15-ways-to-bypass-the-powershell-execution-policy/](https://www.netspi.com/blog/technical/network-penetration-testing/15-ways-to-bypass-the-powershell-execution-policy/)
+* [https://pentest.blog/art-of-anti-detection-1-introduction-to-av-detection-techniques/](https://pentest.blog/art-of-anti-detection-1-introduction-to-av-detection-techniques/)
+* [https://pentest.blog/art-of-anti-detection-2-pe-backdoor-manufacturing/](https://pentest.blog/art-of-anti-detection-2-pe-backdoor-manufacturing/)
+* [https://s3cur3th1ssh1t.github.io/A-tale-of-EDR-bypass-methods/](https://s3cur3th1ssh1t.github.io/A-tale-of-EDR-bypass-methods/)
+* [https://www.purpl3f0xsecur1ty.tech/2021/03/30/av\_evasion.html](https://www.purpl3f0xsecur1ty.tech/2021/03/30/av\_evasion.html)
+* [https://netsec.expert/posts/write-a-crypter-in-any-language/](https://netsec.expert/posts/write-a-crypter-in-any-language/)
+* [https://blog.sevagas.com/IMG/pdf/BypassAVDynamics.pdf](https://blog.sevagas.com/IMG/pdf/BypassAVDynamics.pdf)
+* [https://github.com/BC-SECURITY/DEFCON27](https://github.com/BC-SECURITY/DEFCON27)
+* [https://0xhop.github.io/evasion/2021/04/19/evasion-pt1/](https://0xhop.github.io/evasion/2021/04/19/evasion-pt1/)
+* [https://0xhop.github.io/evasion/2021/05/26/evasion-pt2/](https://0xhop.github.io/evasion/2021/05/26/evasion-pt2/)
+* [https://threatpost.com/six-malicious-linux-shell-scripts-how-to-stop-them/168127/](https://threatpost.com/six-malicious-linux-shell-scripts-how-to-stop-them/168127/)
+* [https://elastic.github.io/security-research/whitepapers/2022/02/02.sandboxing-antimalware-products-for-fun-and-profit/article/](https://elastic.github.io/security-research/whitepapers/2022/02/02.sandboxing-antimalware-products-for-fun-and-profit/article/)
+* _Penetration Testing: Bypassing Antivirus Applications - pg.257_
+
+### Windows
+
+* CMSTP Execution - Bypass UAC and App whitelisting
+  * _PTFM: CMSTP Execution - pg. 20 (Optional: Metasploit, Empire)_
+* Clearing Event Logs
+  * _PTFM: Clearing Event Logs - pg. 35_
+* AV Bypass
+  * _PTFM: Bypassing AV - pg. 35_
+* Obfuscate Files
+  * _PTFM: Obfuscate Files - pg. 35_
+* &#x20;Alternate Data Streams
+  * _PTFM: Alternate Data Streams- pg. 36_
+
+### Linux
+
+* Clear bash history
+  * _PTFM: Clear Bash History- pg. 97_
+* Hidden files
+  * _PTFM: Hidden Files - pg. 98_
+* Timestomp
+  * _PTFM: Timestomp pg. 98_
+* Disable Firewall
+  * _PTFM: Disable Firewall- pg. 99_
+* Disable Logging
+  * _PTFM: Disable Logging - pg. 99_
+* Disable SELinux
+  * \#setenforce 0
+
+## Tools
+
+* [Anti-AV](https://github.com/alphaSeclab/anti-av/blob/master/Readme\_en.md) - Repository of defense evasion tools and resources
+* [Invoke-EDRChecker](https://github.com/PwnDexter/Invoke-EDRChecker) - Checks running processes, process metadata, Dlls loaded into your current process and the each DLLs metadata, common install directories, installed services, the registry and running drivers for the presence of known defensive products such as AV's, EDR's and logging tools.
+* [SandboxDefender](https://github.com/plackyhacker/SandboxDefender) - C# code to Sandbox Defender (and most probably other AV/EDRs).
+* [Unlock](https://github.com/freshness79/unlock) - Microsoft Applocker evasion tool
+* [Living Off The Land Binaries And Scripts - (LOLBins and LOLScripts)](https://lolbas-project.github.io)
+* [AVET](https://github.com/govolution/avet) - AVET is an AntiVirus Evasion Tool, which was developed for making life easier for pentesters and for experimenting with antivirus evasion techniques, as well as other methods used by malicious software.
+* [Backstab](https://github.com/Yaxser/Backstab) - Backstab is a tool capable of killing antimalware protected processes by leveraging sysinternals’ Process Explorer (ProcExp) driver, which is signed by Microsoft.
+  * [https://www.kitploit.com/2021/07/backstab-tool-to-kill-antimalware.html?m=1](https://www.kitploit.com/2021/07/backstab-tool-to-kill-antimalware.html?m=1)
+* [TimeStomp](https://www.offensive-security.com/metasploit-unleashed/timestomp/) - A wonderfully frustrating tool in the Metasploit kit, that can change time stamps of different activities to disrupt event tracking and forensics.
+* [PEcloak.py](https://www.securitysift.com/download/peCloak.py) - A simple encoder/decoder that can send instructions to spent cycles in an effort to trick the AV scanner and utilize code caves.
+  * [http://www.securitysift.com/pecloak-py-an-experiment-in-av-evasion](http://www.securitysift.com/pecloak-py-an-experiment-in-av-evasion)
+* [DefenderCheck](https://github.com/matterpreter/Defendercheck) - Takes a binary as input and splits it until it pinpoints that exact byte that Microsoft Defender will flag on, and then prints those offending bytes to the screen. This can be helpful when trying to identify the specific bad pieces of code in your tool/payload.
+* [https://github.com/QAX-A-Team/EventCleaner](https://github.com/QAX-A-Team/EventCleaner)
+* [SysWhispers3](https://github.com/klezVirus/SysWhispers3) - SysWhispers on Steroids - AV/EDR evasion via direct system calls.
+
+## OPSEC
+
+* [Modern Defenses and YOU!](https://blog.cobaltstrike.com/2017/10/25/modern-defenses-and-you/)
+* [OPSEC Considerations for Beacon Commands](https://blog.cobaltstrike.com/2017/06/23/opsec-considerations-for-beacon-commands/)
+* [Red Team Tradecraft and TTP Guidance](https://sec564.com/#!docs/tradecraft.md)
+* [Fighting the Toolset](https://www.youtube.com/watch?v=RoqVunX\_sqA)
+
+## In-Memory Evasion
+
+* [Bypassing Memory Scanners with Cobalt Strike and Gargoyle](https://labs.mwrinfosecurity.com/blog/experimenting-bypassing-memory-scanners-with-cobalt-strike-and-gargoyle/)
+* [In-Memory Evasions Course](https://www.youtube.com/playlist?list=PL9HO6M\_MU2nc5Q31qd2CwpZ8J4KFMhgnK)
+* [Bring Your Own Land (BYOL) – A Novel Red Teaming Technique](https://www.fireeye.com/blog/threat-research/2018/06/bring-your-own-land-novel-red-teaming-technique.html)
+
+## Security Tool Evasion
+
+### Endpoint Detection and Response (EDR) Evasion
+
+* [Red Teaming in the EDR age](https://youtu.be/l8nkXCOYQC4)
+* [Sharp-Suite - Process Argument Spoofing](https://github.com/FuzzySecurity/Sharp-Suite)
+* [Red Team Tactics: Combining Direct System Calls and sRDI to bypass AV/EDR](https://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/)
+* [Dechaining Macros and Evading EDR](https://www.countercept.com/blog/dechaining-macros-and-evading-edr/)
+* [Bypass EDR’s memory protection, introduction to hooking](https://medium.com/@fsx30/bypass-edrs-memory-protection-introduction-to-hooking-2efb21acffd6)
+* [Bypassing Cylance and other AVs/EDRs by Unhooking Windows APIs](https://ired.team/offensive-security/defense-evasion/bypassing-cylance-and-other-avs-edrs-by-unhooking-windows-apis)
+* [Silencing Cylance: A Case Study in Modern EDRs](https://www.mdsec.co.uk/2019/03/silencing-cylance-a-case-study-in-modern-edrs/)
+* [SharpEDRChecker](https://github.com/PwnDexter/SharpEDRChecker) -  Checks running processes, process metadata, Dlls loaded into your current process and the each DLLs metadata, common install directories, installed services and each service binaries metadata, installed drivers and each drivers metadata, all for the presence of known defensive products such as AV's, EDR's and logging tools.&#x20;
+
+### Microsoft ATA & ATP Evasion
+
+* [Red Team Techniques for Evading, Bypassing, and Disabling MS Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.com/docs/eu-17/materials/eu-17-Thompson-Red-Team-Techniques-For-Evading-Bypassing-And-Disabling-MS-Advanced-Threat-Protection-And-Advanced-Threat-Analytics.pdf)
+* [Red Team Revenge - Attacking Microsoft ATA](https://www.slideshare.net/nikhil\_mittal/red-team-revenge-attacking-microsoft-ata)
+* [Evading Microsoft ATA for Active Directory Domination](https://www.slideshare.net/nikhil\_mittal/evading-microsoft-ata-for-active-directory-domination)
+
+### HoneyTokens Evasion
+
+* [Forging Trusts for Deception in Active Directory](http://www.labofapenetrationtester.com/2018/10/deploy-deception.html)
+* [Honeypot Buster: A Unique Red-Team Tool](https://jblog.javelin-networks.com/blog/the-honeypot-buster/)
+
+### **AMSI Bypass**
+
+* The Windows Antimalware Scan Interface (AMSI) is a versatile interface standard that allows your applications and services to integrate with any antimalware product that's present on a machine. AMSI provides enhanced malware protection for end users and their data, applications, and workloads.&#x20;
+* AMSI provides features such as script scanning and behaviour monitoring, and allows detection of script functions that are known to be 'malicious'.&#x20;
+* AMSI is integrated into the following components of Windows:
+  * User Account Control (UAC) – elevation of EXE, COM, MSI, or ActiveX installation&#x20;
+  * PowerShell – scripts, interactive use, and dynamic code evaluation&#x20;
+  * Windows Script Host – wscript.exe and cscript.exe&#x20;
+  * JavaScript and VBScript&#x20;
+  * Office VBA macros
+* Bypass techniques&#x20;
+  * When .NET version 2 is installed, it enables the usage of PowerShell version 2, which does not have support for AMSI.&#x20;
+  * After calling PowerShell version 2, you can then use the ‘fileless malware’ techniques.&#x20;
+    * \> powershell.exe -version 2
+* [https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20AMSI%20Bypass.md](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20AMSI%20Bypass.md)
+* [https://rastamouse.me/memory-patching-amsi-bypass/](https://rastamouse.me/memory-patching-amsi-bypass/)
+* [https://github.com/rasta-mouse/AmsiScanBufferBypass](https://github.com/rasta-mouse/AmsiScanBufferBypass)
+* [https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal](https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal)
+* [How to bypass AMSI and execute ANY malicious Powershell code](https://0x00-0x00.github.io/research/2018/10/28/How-to-bypass-AMSI-and-Execute-ANY-malicious-powershell-code.html)
+* [AMSI: How Windows 10 Plans to Stop Script-Based Attacks](https://www.blackhat.com/docs/us-16/materials/us-16-Mittal-AMSI-How-Windows-10-Plans-To-Stop-Script-Based-Attacks-And-How-Well-It-Does-It.pdf)
+* [AMSI Bypass: Patching Technique](https://www.cyberark.com/threat-research-blog/amsi-bypass-patching-technique/)
+* [Invisi-Shell - Hide your Powershell script in plain sight. Bypass all Powershell security features](https://github.com/OmerYa/Invisi-Shell)
+* [Dynamic Microsoft Office 365 AMSI In Memory Bypass Using VBA](https://secureyourit.co.uk/wp/2019/05/10/dynamic-microsoft-office-365-amsi-in-memory-bypass-using-vba/)
+* [AmsiScanBuffer Bypass - Part 1](https://rastamouse.me/2018/10/amsiscanbuffer-bypass---part-1/)
+* [AMSI Bypass](https://www.contextis.com/en/blog/amsi-bypass)
+
+## Logging and Event Evasion
+
+### Sysmon Evasion
+
+* [Subverting Sysmon: Application of a Formalized Security Product Evasion Methodology](https://github.com/mattifestation/BHUSA2018\_Sysmon)
+* [sysmon-config-bypass-finder](https://github.com/mkorman90/sysmon-config-bypass-finder)
+* [Shhmon — Silencing Sysmon via Driver Unload](https://posts.specterops.io/shhmon-silencing-sysmon-via-driver-unload-682b5be57650)
+
+### [PowerShell ScriptBlock Logging Bypass](https://cobbr.io/ScriptBlock-Logging-Bypass.html)
+
+### Disabling Security Tools
+
+* [Invoke-Phant0m - Windows Event Log Killer](https://github.com/hlldz/Invoke-Phant0m)
+
+## **Powershell Bypassing Execution Policy**
+
+* 7 execution policies that can be set for powershell by machine admin
+  * All Signed – All scripts and configuration files must be signed by a trusted publisher.
+  * Bypass – Nothing is blocked and there are no warnings or prompts.
+  * RemoteSigned – All scripts and configuration files downloaded from the Internet must be signed by a trusted publisher.
+  * Restricted – Doesn't load configuration files or run scripts
+  * Default – Sets the default execution policy. Restricted for Windows clients or RemoteSigned for Windows servers.
+  * Undefined – No execution policy is set for the scope. If the execution policy in all scopes is Undefined, the effective execution policy is Restricted.
+  * Unrestricted – Loads all configuration files and runs all scripts. If you run an unsigned script that was downloaded from the Internet, you're prompted for permission before it runs.
+* In most cases, administrators will harden machines and will set the execution policy to Restricted.
+* When running the command `Get-ExecutionPolicy -List`, we are presented with the execution policies for all scopes
+* Ways to bypass the restricted policy
+  * ‘Bypass’ execution policy flag. This technique involves spawning a new PowerShell process, setting the execution policy to Bypass for that scope and passing the script as an argument. The command looks like this: `PS > powershell.exe -ExecutionPolicy Bypass -File .\script.ps1`
+  * Type and pipe. Although scripts are disabled, single commands still work, so another technique is to simply read the script and pipe it into the PowerShell executable. `PS > type .\script.ps1 | powershell.exe -noprofile -`
+  * The copy and the paste (only in interactive mode). This generally works best for small scripts. As above, this technique works because commands are pasted straight into the console instead of being run from the script itself.
+  * The base64 encoded parameter. PowerShell offers the ability to run commands encoded as base64. To do this, you must encode the contents of the file and pass the resulting string to the `-EncodedCommand` switch of PowerShell.\
+    &#x20;`PS > $commands = Get-Content script.ps1 -Raw`\
+    &#x20;`PS > $bytes = [System.Text.Encoding]::Unicode.GetBytes($commands)`\
+    &#x20;`PS > $encodedCommand = [Convert]::ToBase64String($bytes)`\
+    &#x20;`PS > powershell.exe -EncodedCommand $encodedCommand`
+  * Authorisation Manager → NULL. The following technique will replace the Authorisation Manager with null for the current session. Thus, the execution policy will become Unrestricted for the remainder of the session. This does not affect any global configuration.\
+    `PS > function Disable-ExecutionPolicy {($ctx = $executioncontext.gettype().getfield("_context","nonpublic,instance").getvalue( $executioncontext)).gettype().getfield("_authorizationManager","nonpublic,instance").setvalue($ctx, (new-object System.Management.Automation.AuthorizationManager "Microsoft.PowerShell"))}`\
+    &#x20;`PS > Disable-ExecutionPolicy`
+* [https://www.netspi.com/blog/technical/network-penetration-testing/15-ways-to-bypass-the-powershell-execution-policy/](https://www.netspi.com/blog/technical/network-penetration-testing/15-ways-to-bypass-the-powershell-execution-policy/)

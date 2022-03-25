@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+li a.active {
+  background-color: #303942;
+  color: white;
+}
+li a.grey {
+  background-color: #cdcdcd;
+  color: black;
+}
+li a.blue {
+  background-color: #b4c8da;
+  color: black;
+}
+table td, table td * {
+    vertical-align: top;
+}
+</style>
+<head>
+<meta charset="UTF-8">
+<title>IntelTechniques Documents Tool</title>
+</head>
+<body>
+<table width="1000" border="0">
+<tbody>
+<tr>
+<td width="200">
+<ul>
+<li><a href="_Start_Here.html" class="grey">IntelTechniques Tools</a></li>
+<li><a href="Search.html">Search Engines</a></li>
+<li><a href="Email.html" >Email Addresses</a></li>
+<li><a href="Facebook.html">Facebook</a></li>
+<li><a href="Twitter.html">Twitter</a></li>
+<li><a href="Instagram.html">Instagram</a></li>
+<li><a href="LinkedIn.html">LinkedIn</a></li>
+<li><a href="Name.html">Real Names</a></li>
+<li><a href="Username.html">Usernames</a></li>
+<li><a href="Telephone.html">Telephone Numbers</a></li>
+<li><a href="Domain.html">Domains</a></li>
+<li><a href="IP.html">IP Addresses</a></li>
+<li><a href="Videos.html">Videos</a></li>
+<li><a href="Images.html">Images</a></li>
+<li><a href="Documents.html" class="active">Documents</a></li>
+<li><a href="Pastes.html">Pastes</a></li>
+<li><a href="Communities.html">Communities</a></li>
+<li><a href="Location.html">Locations</a></li>
+<li><a href="Business.html">Business & Government</a></li>
+<li><a href="Currencies.html">Virtual Currencies</a></li>
+<li><a href="Breaches.html">Data Breaches & Leaks</a></li>
+<li><a href="OSINT7.html" class="blue">OSINT Book</a></li>
+<li><a href="License.html" class="grey">License</a></li>
+</ul>
+</td>
+<td width="800">
+
+<script type="text/javascript">
+function doPopAll(PopAll)
+{var pop = document.getElementById("PopAll");
+for (j = 1; j <= 100; j++){
+if (j < 10){
+j = "0" + j.toString();}
+else {j = j.toString();}
+console.log(j)
+item = document.getElementById("Search" + j);
+if (item != null){
+item.value = pop.value;}}}
+</script>
+<form onsubmit="doPopAll(this.PopAll.value); return false;">
+<input type="text" id="PopAll" name="PopAll" size="30" placeholder="Search Terms"/>
+<input type="submit" style="width:110px" value="Populate All" /><br /></form><br>
+
+<script type="text/javascript">
+function doSearch01(Search01)
+{window.open('https://www.google.com/search?q=ext%3Apdf+' + Search01, 'Search01window');}
+</script>
+<form onsubmit="doSearch01(this.Search01.value); return false;">
+<input type="text" id="Search01" name="Search01" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="PDF" /></form>
+
+<script type="text/javascript">
+function doSearch02(Search02)
+{window.open('https://www.google.com/search?q=ext%3Adoc+OR+ext%3Adocx+' + Search02, 'Search02window');}
+</script>
+<form onsubmit="doSearch02(this.Search02.value); return false;">
+<input type="text" id="Search02" name="Search02" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="DOC/DOCX" /></form>
+
+<script type="text/javascript">
+function doSearch03(Search03)
+{window.open('https://www.google.com/search?q=ext%3Axls+OR+ext%3Axlsx+OR+ext%3Acsv+' + Search03, 'Search03window');}
+</script>
+<form onsubmit="doSearch03(this.Search03.value); return false;">
+<input type="text" id="Search03" name="Search03" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="XLS/XLSX/CSV" /></form>
+
+<script type="text/javascript">
+function doSearch04(Search04)
+{window.open('https://www.google.com/search?q=ext%3Appt+OR+ext%3Apptx+OR+ext%3Akey+' + Search04, 'Search04window');}
+</script>
+<form onsubmit="doSearch04(this.Search04.value); return false;">
+<input type="text" id="Search04" name="Search04" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="PPT/PPTX/KEY" /> </form>
+
+<script type="text/javascript">
+function doSearch05(Search05)
+{window.open('https://www.google.com/search?q=ext%3Atxt+OR+ext%3Artf+OR+ext%3Axml+' + Search05, 'Search05window');}
+</script>
+<form onsubmit="doSearch05(this.Search05.value); return false;">
+<input type="text" id="Search05" name="Search05" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="TXT/RTF/XML" /></form>
+
+ <script type="text/javascript">
+function doSearch06(Search06)
+{window.open('https://www.google.com/search?q=ext%3Aodt+OR+ext%3Aods+OR+ext%3Aodp+' + Search06, 'Search06window');}
+</script>
+<form onsubmit="doSearch06(this.Search06.value); return false;">
+<input type="text" id="Search06" name="Search06" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="ODT/ODS/ODP" /></form>
+
+ <script type="text/javascript">
+function doSearch07(Search07)
+{window.open('https://www.google.com/search?q=ext%3Azip+OR+ext%3Arar+OR+ext%3A7z+' + Search07, 'Search07window');}
+</script>
+<form onsubmit="doSearch07(this.Search07.value); return false;">
+<input type="text" id="Search07" name="Search07" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="ZIP/RAR/7Z" /></form>
+
+ <script type="text/javascript">
+function doSearch08(Search08)
+{window.open('https://www.google.com/search?q=ext%3Ajpg+OR+ext%3Ajpeg+OR+ext%3Apng+' + Search08, 'Search08window');}
+</script>
+<form onsubmit="doSearch08(this.Search08.value); return false;">
+<input type="text" id="Search08" name="Search08" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="JPG/JPEG/PNG" /></form>
+
+ <script type="text/javascript">
+function doSearch09(Search09)
+{window.open('https://www.google.com/search?q=ext%3Ampg+OR+ext%3Ampeg+OR+ext%3Amp4+' + Search09, 'Search09window');}
+</script>
+<form onsubmit="doSearch09(this.Search09.value); return false;">
+<input type="text" id="Search09" name="Search09" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="MPG/MP4" /></form>
+
+ <script type="text/javascript">
+function doSearch10(Search10)
+{window.open('https://www.google.com/search?q=ext%3Amp3+OR+ext%3Awav+OR+ext%3Aflac+' + Search10, 'Search10window');}
+</script>
+<form onsubmit="doSearch10(this.Search10.value); return false;">
+<input type="text" id="Search10" name="Search10" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="MP3/WAV" /></form><br />
+
+
+<script type="text/javascript">
+function doall(all)
+{window.open('https://www.google.com/search?q=ext%3Apdf+' + all, 'Search01window');
+window.open('https://www.google.com/search?q=ext%3Adoc+OR+ext%3Adocx+' + all, 'Search02window');
+window.open('https://www.google.com/search?q=ext%3Axls+OR+ext%3Axlsx+OR+ext%3Acsv+' + all, 'Search03window');
+window.open('https://www.google.com/search?q=ext%3Appt+OR+ext%3Apptx+OR+ext%3Akey+' + all, 'Search04window');
+window.open('https://www.google.com/search?q=ext%3Atxt+OR+ext%3Artf+OR+ext%3Axml+' + all, 'Search05window');
+window.open('https://www.google.com/search?q=ext%3Aodt+OR+ext%3Aodsx+OR+ext%3Aodp+' + all, 'Search06window');
+window.open('https://www.google.com/search?q=ext%3Azip+OR+ext%3Arar+OR+ext%3A7z+' + all, 'Search07window');
+window.open('https://www.google.com/search?q=ext%3Ajpg+OR+ext%3Ajpeg+OR+ext%3Apng+' + all, 'Search08window');
+window.open('https://www.google.com/search?q=ext%3Ampg+OR+ext%3Ampeg+OR+ext%3Amp4+' + all, 'Search09window');
+window.open('https://www.google.com/search?q=ext%3Amp3+OR+ext%3Awav+OR+ext%3Aflac+' + all, 'Search10window');}
+</script>
+<form onSubmit="doall(this.all.value); return false;">
+<input type="text" id="Search99" name="all" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="Submit All" /></form><br><br>
+
+<script type="text/javascript">
+function doSearch11(Search11)
+{window.open('https://www.google.com/search?q=site%3Adocs.google.com+' + Search11, 'Search11window');}
+</script>
+<form onsubmit="doSearch11(this.Search11.value); return false;">
+<input type="text" id="Search11" name="Search11" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="Google Docs" /></form>
+
+ <script type="text/javascript">
+function doSearch12(Search12)
+{window.open('https://www.google.com/search?q=site%3Adrive.google.com+' + Search12, 'Search12window');}
+</script>
+<form onsubmit="doSearch12(this.Search12.value); return false;">
+<input type="text" id="Search12" name="Search12" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="Google Drive" /></form>
+
+ <script type="text/javascript">
+function doSearch13(Search13)
+{window.open('https://www.google.com/search?q=site%3Astorage.googleapis.com+' + Search13, 'Search13window');}
+</script>
+<form onsubmit="doSearch13(this.Search13.value); return false;">
+<input type="text" id="Search13" name="Search13" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="Google API" /></form>
+
+ <script type="text/javascript">
+function doSearch14(Search14)
+{window.open('https://www.google.com/search?q=site%3Adocs.microsoft.com+' + Search14, 'Search14window');}
+</script>
+<form onsubmit="doSearch14(this.Search14.value); return false;">
+<input type="text" id="Search14" name="Search14" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="MS Docs" /></form>
+
+ <script type="text/javascript">
+function doSearch15(Search15)
+{window.open('https://www.google.com/search?q=site%3Aamazonaws.com+' + Search15, 'Search15window');}
+</script>
+<form onsubmit="doSearch15(this.Search15.value); return false;">
+<input type="text" id="Search15" name="Search15" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="Amazon AWS" /></form>
+
+ <script type="text/javascript">
+function doSearch16(Search16)
+{window.open('https://www.google.com/search?q=site%3Acloudfront.net+' + Search16, 'Search16window');}
+</script>
+<form onsubmit="doSearch16(this.Search16.value); return false;">
+<input type="text" id="Search16" name="Search16" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="Cloudfront" /></form>
+
+ <script type="text/javascript">
+function doSearch17(Search17)
+{window.open('https://www.google.com/search?q=site%3Aslideshare.net+' + Search17, 'Search17window');}
+</script>
+<form onsubmit="doSearch17(this.Search17.value); return false;">
+<input type="text" id="Search17" name="Search17" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="SlideShare" /></form>
+
+ <script type="text/javascript">
+function doSearch18(Search18)
+{window.open('https://www.google.com/search?q=site%3Aprezi.com+' + Search18, 'Search18window');}
+</script>
+<form onsubmit="doSearch18(this.Search18.value); return false;">
+<input type="text" id="Search18" name="Search18" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="Prezi" /></form>
+
+ <script type="text/javascript">
+function doSearch19(Search19)
+{window.open('https://www.google.com/search?q=site%3Aissuu.com+' + Search19, 'Search19window');}
+</script>
+<form onsubmit="doSearch19(this.Search19.value); return false;">
+<input type="text" id="Search19" name="Search19" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="ISSUU" /></form>
+
+ <script type="text/javascript">
+function doSearch20(Search20)
+{window.open('https://www.google.com/search?q=site%3Ascribd.com+' + Search20, 'Search20window');}
+</script>
+<form onsubmit="doSearch20(this.Search20.value); return false;">
+<input type="text" id="Search20" name="Search20" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="Scribd" /></form>
+
+<script type="text/javascript">
+function doSearch21(Search21)
+{window.open('https://www.pdfdrive.net/search?q=' + Search21, 'Search21window');}
+</script>
+<form onsubmit="doSearch21(this.Search21.value); return false;">
+<input type="text" id="Search21" name="Search21" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="PDF Drive" /></form>
+
+ <script type="text/javascript">
+function doSearch22(Search22)
+{window.open('https://buckets.grayhatwarfare.com/results/' + Search22, 'Search22window');}
+</script>
+<form onsubmit="doSearch22(this.Search22.value); return false;">
+<input type="text" id="Search22" name="Search22" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="GrayHatWarfare" /></form><br />
+
+<script type="text/javascript">
+function doSearch23(Search23)
+{window.open('https://www.google.com/search?q=site%3Adocs.google.com+' + Search23, 'Search11window');
+window.open('https://www.google.com/search?q=site%3Adrive.google.com+' + Search23, 'Search12window');
+window.open('https://www.google.com/search?q=site%3Astorage.googleapis.com+' + Search23, 'Search12awindow');
+window.open('https://www.google.com/search?q=site%3Adocs.microsoft.com+' + Search23, 'Search13window');
+window.open('https://www.google.com/search?q=site%3As3.amazonaws.com+' + Search23, 'Search14window');
+window.open('https://www.google.com/search?q=site%3Acloudfront.net+' + Search23, 'Search15window');
+window.open('https://www.google.com/search?q=site%3Aslideshare.net+' + Search23, 'Search16window');
+window.open('https://www.google.com/search?q=site%3Aprezi.com+' + Search23, 'Search17window');
+window.open('https://www.google.com/search?q=site%3Aissuu.com+' + Search23, 'Search18window');
+window.open('https://www.google.com/search?q=site%3Ascribd.com+' + Search23, 'Search19window');
+window.open('https://www.pdfdrive.net/search?q=' + Search23, 'Search20window');
+window.open('https://buckets.grayhatwarfare.com/results/' + Search23, 'Search21window');}
+</script>
+<form onSubmit="doSearch23(this.Search23.value); return false;">
+<input type="text" id="Search23" name="Search23" size="30" placeholder="Search Terms" />
+<input type="submit" style="width:110px" value="Submit All" /></form>
+
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

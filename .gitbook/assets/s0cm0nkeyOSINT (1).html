@@ -1,0 +1,510 @@
+<!doctype html>
+<html>
+<style>
+ul {list-style-type: none;margin: 0;padding: 0;width: 200px;background-color: #f1f1f1;}
+li a {display: block;color: #000;padding: 8px 16px;text-decoration: none;}
+li a:hover {background-color: #555;color: white;}
+li a.active {background-color: #303942;color: white;}
+li a.grey {background-color: #cdcdcd;color: black;}
+li a.blue {background-color: #b4c8da;color: black;}
+table td, table td * {vertical-align: top;}
+</style>
+<head>
+<meta charset="UTF-8">
+<title>s0cm0nkey's Easy OSINT Tool</title>
+</head>
+<body>
+<table width="1000" border="0">
+<tbody>
+<tr>
+<td width="200">
+<ul>
+
+</ul>
+</td>
+<td width="800">
+<p>
+S0cm0nkey's Easy OSINT Tool
+</p>
+<br>
+<p>
+Hello All! This is my Easy OSINT Tool. For those defenders who need OSINT and reputation data on external entities, and dont have an automation solution to do it for them. Some tools do for POST requests and do not make it easy to create direct links to searches, but I have included a few that you should still use when you can!</p>
+For more details and tools for checking threat data, check you my Reference Guide!
+</p>
+<a href="https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/blue-defense/threat-data"> S0cm0nkey's Reference Guide</a>
+<br>
+<br>
+<script type="text/javascript">
+function doPopAll(PopAll)
+{var pop = document.getElementById("PopAll");
+for (j = 1; j <= 100; j++){
+if (j < 10){
+j = "0" + j.toString();}
+else {j = j.toString();}
+console.log(j)
+item = document.getElementById("Search" + j);
+if (item != null){
+item.value = pop.value;}}}
+</script>
+<div style="float:left;">
+<form onsubmit="doPopAll(this.PopAll.value); return false;">
+<input type="text" id="PopAll" name="PopAll" size="30" placeholder="Search Item Here"/>
+<input type="submit" style="width:120px" value="Populate All" /><br /></form></div>
+
+<script type="text/javascript">
+function doSearch99(Search99)
+{window.open('https://bgp.he.net/ip/' + Search99, 'Search01window');
+window.open('https://www.virustotal.com/gui/ip-address/' + Search99, 'Search99window');
+window.open('https://www.talosintelligence.com/reputation_center/lookup?search=' + Search99, 'Search03window');
+window.open('https://mxtoolbox.com/SuperTool.aspx?action=blacklist%3a' + Search99 + '&run=toolpage', 'Search04window');
+window.open('https://multirbl.valli.org/lookup/' + Search99 + '.html', 'Search05window');
+}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch99(this.Search99.value); return false;">
+<input type="text" id="Search99" name="Search99" size="30" placeholder="Search All" value="" />
+<input type="submit" style="width:120px" value="Submit All" /></form>
+</div>
+
+<div style="clear: both;"></div>
+<br>
+
+<script type="text/javascript">
+function doSearch01(Search01)
+{window.open('https://bgp.he.net/ip/' + Search01, 'Search01window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch01(this.Search01.value); return false;">
+<input type="text" id="Search01" name="Search01" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="Hurricane Electric" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch02(Search02)
+{window.open('https://www.virustotal.com/gui/ip-address/' + Search02, 'Search02window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch02(this.Search02.value); return false;">
+<input type="text" id="Search02" name="Search02" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="VirusTotal" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch03(Search03)
+{window.open('https://www.talosintelligence.com/reputation_center/lookup?search=' + Search03, 'Search03window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch03(this.Search03.value); return false;">
+<input type="text" id="Search03" name="Search03" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="Cisco Talos" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch04(Search04)
+{window.open('https://mxtoolbox.com/SuperTool.aspx?action=blacklist%3a' + Search04 + '&run=toolpage', 'Search04window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch04(this.Search04.value); return false;">
+<input type="text" id="Search04" name="Search04" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="MxToolbox Blacklist" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch05(Search05)
+{window.open('https://multirbl.valli.org/lookup/' + Search05 + '.html', 'Search05window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch05(this.Search05.value); return false;">
+<input type="text" id="Search05" name="Search05" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="Valli MultiRBL" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch06(Search06)
+{window.open('https://www.ipvoid.com/ip-blacklist-check/', 'Search06window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch06(this.Search06.value); return false;">
+<input type="text" id="Search06" name="Search06" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="IPVoid" formmethod="post"/>
+<input type="hidden" IP='Search06' /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch07(Search07)
+{window.open('http://www.ipspamlist.com/ip-lookup/' + Search07, 'Search07window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch07(this.Search07.value); return false;">
+<input type="text" id="Search07" name="Search07" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="IPSpamList" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch08(Search08)
+{window.open('https://www.dnsbl.info/dnsbl-database-check.php' + Search08, 'Search08window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch08(this.Search08.value); return false;">
+<input type="text" id="Search08" name="Search08" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="DNSBL" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch09(Search09)
+{window.open('https://reputation.team-cymru.com/' + Search09, 'Search09window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch09(this.Search09.value); return false;">
+<input type="text" id="Search09" name="Search09" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="CymruBL" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch35(Search35)
+{window.open('https://www.abuseipdb.com/check/' + Search35, 'Search35window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch35(this.Search35.value); return false;">
+<input type="text" id="Search35" name="Search35" size="30" placeholder="IP Address" value="" />
+<input type="submit" style="width:120px" value="AbuseIPDB" /><br /></form>
+</div>
+
+<div style="clear: both;"></div>
+<br>
+
+<script type="text/javascript">
+function doSearch10(Search10)
+{window.open('https://bgp.he.net/dns/' + Search10, 'Search10window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch10(this.Search10.value); return false;">
+<input type="text" id="Search10" name="Search10" size="30" placeholder="Domain" value="" />
+<input type="submit" style="width:120px" value="Hurricane Electric" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch11(Search11)
+{window.open('https://www.virustotal.com/gui/domain/' + Search11, 'Search11window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch11(this.Search11.value); return false;">
+<input type="text" id="Search11" name="Search11" size="30" placeholder="Domain" value="" />
+<input type="submit" style="width:120px" value="VirusTotal" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch12(Search12)
+{window.open('https://www.talosintelligence.com/reputation_center/lookup?search=' + Search12, 'Search03window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch03(this.Search12.value); return false;">
+<input type="text" id="Search12" name="Search12" size="30" placeholder="Domain" value="" />
+<input type="submit" style="width:120px" value="Cisco Talos" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch13(Search13)
+{window.open('https://mxtoolbox.com/SuperTool.aspx?action=blacklist%3a' + Search13 + '&run=toolpage', 'Search13window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch13(this.Search13.value); return false;">
+<input type="text" id="Search13" name="Search13" size="30" placeholder="Domain" value="" />
+<input type="submit" style="width:120px" value="MxToolbox Blacklist" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch14(Search14)
+{window.open('https://multirbl.valli.org/lookup/' + Search14 + '.html', 'Search14window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch14(this.Search14.value); return false;">
+<input type="text" id="Search14" name="Search14" size="30" placeholder="Domain" value="" />
+<input type="submit" style="width:120px" value="Valli MultiRBL" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch15(Search15)
+{window.open('https://urlscan.io' + Search15, 'Search15window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch15(this.Search15.value); return false;">
+<input type="text" id="Search15" name="Search15" size="30" placeholder="Domain" value="" />
+<input type="submit" style="width:120px" value="URLScan" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch16(Search16)
+{window.open('https://www.urlvoid.com/scan/' + Search16, 'Search16window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch16(this.Search16.value); return false;">
+<input type="text" id="Search16" name="Search16" size="30" placeholder="Domain" value="" />
+<input type="submit" style="width:120px" value="URLVoid" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch17(Search17)
+{window.open('https://quttera.com/website-malware-scanner?url_submit=' + Search17, 'Search17window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch17(this.Search17.value); return false;">
+<input type="text" id="Search17" name="Search17" size="30" placeholder="Domain" value="" />
+<input type="submit" style="width:120px" value="Quttera Scan" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch18(Search18)
+{window.open('http://www.malwaredomainlist.com/mdl.php?search=' + Search18 + '&colsearch=All&quantity=50', 'Search18window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch18(this.Search18.value); return false;">
+<input type="text" id="Search18" name="Search18" size="30" placeholder="Domain" value="" />
+<input type="submit" style="width:120px" value="MalwareDomainList" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch36(Search36)
+{window.open('https://www.abuseipdb.com/check/' + Search36, 'Search36window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch36(this.Search36.value); return false;">
+<input type="text" id="Search36" name="Search36" size="30" placeholder="Domain" value="" />
+<input type="submit" style="width:120px" value="AbuseIPDB" /><br /></form>
+</div>
+
+<div style="clear: both;"></div>
+<br>
+
+<script type="text/javascript">
+function doSearch19(Search19)
+{window.open('https://www.virustotal.com/gui/file/' + Search19, 'Search19window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch19(this.Search19.value); return false;">
+<input type="text" id="Search19" name="Search19" size="30" placeholder="Hash - All" value="" />
+<input type="submit" style="width:120px" value="VirusTotal" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch20(Search20)
+{window.open('https://bazaar.abuse.ch/browse.php?search=md5:' + Search20, 'Search20window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch20(this.Search20.value); return false;">
+<input type="text" id="Search20" name="Search20" size="30" placeholder="Hash - MD5" value="" />
+<input type="submit" style="width:120px" value="MalwareBazaar" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch21(Search21)
+{window.open('https://bazaar.abuse.ch/browse.php?search=sha256:' + Search21, 'Search21window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch21(this.Search21.value); return false;">
+<input type="text" id="Search21" name="Search21" size="30" placeholder="Hash - SHA256" value="" />
+<input type="submit" style="width:120px" value="MalwareBazaar" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch22(Search22)
+{window.open('https://hash.cymru.com', 'Search22window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch22(this.Search22.value); return false;">
+<input type="text" id="Search22" name="Search22" size="30" placeholder="Hash - MD5/SHA1" value="" />
+<input type="submit" style="width:120px" value="Cymru Hash" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch23(Search23)
+{window.open('https://talosintelligence.com/talos_file_reputation', 'Search23window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch23(this.Search23.value); return false;">
+<input type="text" id="Search23" name="Search23" size="30" placeholder="Hash - SHA256" value="" />
+<input type="submit" style="width:120px" value="Talos File Rep" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch24(Search24)
+{window.open('https://valkyrie.comodo.com/get_info?sha1=' + Search24, 'Search24window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch24(this.Search24.value); return false;">
+<input type="text" id="Search24" name="Search24" size="30" placeholder="Hash - SHA1" value="" />
+<input type="submit" style="width:120px" value="Comodo Hash Check" /><br /></form>
+</div>
+
+<div style="clear: both;"></div>
+<br>
+
+<script type="text/javascript">
+function doSearch25(Search25)
+{window.open('https://emailrep.io/?search-input='+ Search25, 'Search25window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch25(this.Search25.value); return false;">
+<input type="text" id="Search25" name="Search25" size="25" placeholder="Email Rep" value="" />
+<input type="submit" style="width:100px" value="EmailRep.io" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch26(Search26)
+{window.open('https://www.haveibeenemotet.com/?email-input=' + Search26, 'Search26window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch26(this.Search26.value); return false;">
+<input type="text" id="Search26" name="Search26" size="30" placeholder="Email Rep" value="" />
+<input type="submit" style="width:120px" value="haveibeenemotet?" /><br /></form>
+</div>
+
+<div style="clear: both;"></div>
+<br>
+
+<script type="text/javascript">
+function doSearch27(Search27)
+{window.open('https://www.shodan.io/search?query=' + Search27, 'Search27window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch27(this.Search27.value); return false;">
+<input type="text" id="Search27" name="Search27" size="30" placeholder="Multi-search" value="" />
+<input type="submit" style="width:120px" value="Shodan" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch28(Search28)
+{window.open('https://spyse.com/search?query=' + Search28, 'Search28window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch28(this.Search28.value); return false;">
+<input type="text" id="Search28" name="Search28" size="30" placeholder="Multi-search" value="" />
+<input type="submit" style="width:120px" value="Spyse" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch29(Search29)
+{window.open('https://maltiverse.com/search;query=8.8.8.8' + Search29 + ';page=1;sort=creation_time_desc', 'Search29window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch29(this.Search29.value); return false;">
+<input type="text" id="Search29" name="Search29" size="30" placeholder="Multi-search" value="" />
+<input type="submit" style="width:120px" value="Maltiverse" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch30(Search30)
+{window.open('https://www.onyphe.io/search/?query=' + Search30, 'Search30window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch30(this.Search30.value); return false;">
+<input type="text" id="Search30" name="Search30" size="30" placeholder="Multi-search" value="" />
+<input type="submit" style="width:120px" value="Onyphe" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch31(Search31)
+{window.open('https://www.threatminer.org/', 'Search31window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch31(this.Search31.value); return false;">
+<input type="text" id="Search31" name="Search31" size="30" placeholder="Multi-search" value="" />
+<input type="submit" style="width:120px" value="ThreatMiner" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch32(Search32)
+{window.open('https://search.censys.io/search?q=' + Search32, 'Search32window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch32(this.Search32.value); return false;">
+<input type="text" id="Search32" name="Search32" size="30" placeholder="Multi-search" value="" />
+<input type="submit" style="width:120px" value="Censys.io" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch33(Search33)
+{window.open('http://tweettioc.com/search', 'Search33window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch33(this.Search33.value); return false;">
+<input type="text" id="Search33" name="Search33" size="30" placeholder="Multi-search" value="" />
+<input type="submit" style="width:120px" value="Tweettioc" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch34(Search34)
+{window.open('https://www.threatcrowd.org/', 'Search34window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch34(this.Search34.value); return false;">
+<input type="text" id="Search34" name="Search34" size="30" placeholder="Multi-search" value="" />
+<input type="submit" style="width:120px" value="ThreatCrowd" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch37(Search37)
+{window.open('https://threatintelligenceplatform.com', 'Search37window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch37(this.Search37.value); return false;">
+<input type="text" id="Search37" name="Search37" size="30" placeholder="Multi-search" value="" />
+<input type="submit" style="width:120px" value="ThreatIntelPlatform" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch38(Search38)
+{window.open('https://secure.dshield.org/', 'Search38window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch38(this.Search38.value); return false;">
+<input type="text" id="Search38" name="Search38" size="30" placeholder="Multi-search" value="" />
+<input type="submit" style="width:120px" value="ThreatCrowd" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch39(Search39)
+{window.open('https://check.spamhaus.org/not_listed/?searchterm=' + Search39, 'Search39window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch39(this.Search39.value); return false;">
+<input type="text" id="Search39" name="Search39" size="30" placeholder="Multi-search" value="" />
+<input type="submit" style="width:120px" value="SpamHaus" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch40(Search40)
+{window.open('https://threatfox.abuse.ch/browse.php?search=ioc:' + Search40, 'Search40window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch40(this.Search40.value); return false;">
+<input type="text" id="Search40" name="Search40" size="30" placeholder="Multi-search" value="" />
+<input type="submit" style="width:120px" value="ThreatFox" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch41(Search41)
+{window.open('https://metadefender.opswat.com/?lang=en' + Search41, 'Search41window');}
+</script>
+<div style="float:left;">
+<form onsubmit="doSearch41(this.Search41.value); return false;">
+<input type="text" id="Search41" name="Search41" size="30" placeholder="Multi-search" value="" />
+<input type="submit" style="width:120px" value="Metadefender OPSWAT" /><br /></form>
+</div>
+
+<script type="text/javascript">
+function doSearch42(Search42)
+{window.open('https://malc0de.com/database/index.php?search=' + Search42, 'Search42window');}
+</script>
+<div style="float:right;">
+<form onsubmit="doSearch42(this.Search42.value); return false;">
+<input type="text" id="Search42" name="Search42" size="30" placeholder="Multi-search" value="" />
+<input type="submit" style="width:120px" value="Malcode DB" /><br /></form>
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

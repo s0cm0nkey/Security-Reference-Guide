@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+li a.active {
+  background-color: #303942;
+  color: white;
+}
+li a.grey {
+  background-color: #cdcdcd;
+  color: black;
+}
+li a.blue {
+  background-color: #b4c8da;
+  color: black;
+}
+table td, table td * {
+    vertical-align: top;
+}
+</style>
+<head>
+<meta charset="UTF-8">
+<title>IntelTechniques Videos Tool</title>
+</head>
+<body>
+<table width="1000" border="0">
+<tbody>
+<tr>
+<td width="200">
+<ul>
+<li><a href="_Start_Here.html" class="grey">IntelTechniques Tools</a></li>
+<li><a href="Search.html">Search Engines</a></li>
+<li><a href="Email.html" >Email Addresses</a></li>
+<li><a href="Facebook.html">Facebook</a></li>
+<li><a href="Twitter.html">Twitter</a></li>
+<li><a href="Instagram.html">Instagram</a></li>
+<li><a href="LinkedIn.html">LinkedIn</a></li>
+<li><a href="Name.html">Real Names</a></li>
+<li><a href="Username.html">Usernames</a></li>
+<li><a href="Telephone.html">Telephone Numbers</a></li>
+<li><a href="Domain.html">Domains</a></li>
+<li><a href="IP.html">IP Addresses</a></li>
+<li><a href="Videos.html" class="active">Videos</a></li>
+<li><a href="Images.html">Images</a></li>
+<li><a href="Documents.html">Documents</a></li>
+<li><a href="Pastes.html">Pastes</a></li>
+<li><a href="Communities.html">Communities</a></li>
+<li><a href="Location.html">Locations</a></li>
+<li><a href="Business.html">Business & Government</a></li>
+<li><a href="Currencies.html">Virtual Currencies</a></li>
+<li><a href="Breaches.html">Data Breaches & Leaks</a></li>
+<li><a href="OSINT7.html" class="blue">OSINT Book</a></li>
+<li><a href="License.html" class="grey">License</a></li>
+</ul>
+</td>
+<td width="800">
+
+Video Search:
+<script type="text/javascript">
+function doSearch01(Search01)
+{window.open('https://www.google.com/search?tbm=vid&q=' + Search01, 'Search01window');}
+</script>
+<form onsubmit="doSearch01(this.Search01.value); return false;">
+<input type="text" name="Search01" size="40" placeholder="Search Terms" />
+<input type="submit" style="width:120px" value="Google Videos" /><br /></form>
+
+<script type="text/javascript">
+function doSearch02(Search02)
+{window.open('https://www.bing.com/videos/search?q=' + Search02, 'Search02window');}
+</script>
+<form onsubmit="doSearch02(this.Search02.value); return false;">
+<input type="text" name="Search02" size="40" placeholder="Search Terms" />
+<input type="submit" style="width:120px" value="Bing Videos" /><br /></form>
+
+<script type="text/javascript">
+function doSearch03(Search03)
+{window.open('https://www.youtube.com/results?search_query=' + Search03, 'Search03window');}
+</script>
+<form onsubmit="doSearch03(this.Search03.value); return false;">
+<input type="text" name="Search03" size="40" placeholder="Search Terms" />
+<input type="submit" style="width:120px" value="YouTube Videos" /><br /></form>
+
+<script type="text/javascript">
+function doSearch04(Search04)
+{window.open('https://yandex.ru/video/search?text=' + Search04 + '&rpt=imageview', 'Search04window');}
+</script>
+<form onsubmit="doSearch04(this.Search04.value); return false;">
+<input type="text" name="Search04" size="40" placeholder="Search Terms" />
+<input type="submit" style="width:120px" value="Yandex Videos" /><br /></form>
+
+<script type="text/javascript">
+function doSearch05(Search05)
+{window.open('https://twitter.com/search?f=videos&vertical=default&q=' + Search05, 'Search05window');}
+</script>
+<form onsubmit="doSearch05(this.Search05.value); return false;">
+<input type="text" name="Search05" size="40" placeholder="Search Terms" />
+<input type="submit" style="width:120px" value="Twitter Videos" /><br /></form>
+
+<script type="text/javascript">
+function doSearch06(Search06)
+{window.open('http://www.yasiv.com/youtube#?q=' + Search06 + '&f=video', 'Search06window');}
+</script>
+<form onsubmit="doSearch06(this.Search06.value); return false;">
+<input type="text" name="Search06" size="40" placeholder="Search Terms" />
+<input type="submit" style="width:120px" value="Visual Graphs" /><br /></form>
+
+<script type="text/javascript">
+function doSearch06a(Search06a)
+{window.open('https://www.peteyvid.com/index.php?q=' + Search06a, 'Search06awindow');}
+</script>
+<form onsubmit="doSearch06a(this.Search06a.value); return false;">
+<input type="text" name="Search06a" size="40" placeholder="Search Terms" />
+<input type="submit" style="width:120px" value="PeteyVid" /><br /></form><br>
+
+<script type="text/javascript">
+function doSearch07(Search07)
+{window.open('https://www.google.com/search?tbm=vid&q=' + Search07, 'image1window');
+window.open('https://www.bing.com/videos/search?q=' + Search07, 'image2window');
+window.open('https://www.youtube.com/results?search_query=' + Search07, 'image3window');
+window.open('https://yandex.ru/video/search?text=' + Search07, 'image4window');
+window.open('https://twitter.com/search?f=videos&vertical=default&q=' + Search07, 'image5window');
+window.open('http://www.yasiv.com/youtube#?q=' + Search07 + '&f=video', 'image6window');
+window.open('https://www.peteyvid.com/index.php?q=' + Search07, 'image7window');}
+</script>
+<form onsubmit="doSearch07(this.Search07.value); return false;">
+<input type="text" name="Search07" size="40" placeholder="Search Terms" />
+<input type="submit"style="width:120px" value="Submit All" /><br /><br /></form>
+
+YouTube Utilities:
+
+<script type="text/javascript">
+function doPopAll(PopAll)
+{var pop = document.getElementById("PopAll");
+for (j = 1; j <= 100; j++){
+if (j < 10){
+j = "0" + j.toString();}
+else {j = j.toString();}
+console.log(j)
+item = document.getElementById("Search" + j);
+if (item != null){
+item.value = pop.value;}}}
+</script>
+<form onsubmit="doPopAll(this.PopAll.value); return false;">
+<input type="text" id="PopAll" name="PopAll" size="40" placeholder="Video ID"/>
+<input type="submit" style="width:120px" value="Populate All" /><br /></form><br>
+
+<script type="text/javascript">
+function doSearch08(Search08)
+{window.open('https://www.youtube.com/embed/' + Search08, 'Search08window');}
+</script>
+<form onsubmit="doSearch08(this.Search08.value); return false;">
+<input type="text" id="Search08" name="Search08" size="40" placeholder="Video ID" />
+<input type="submit" style="width:120px" value="Full Screen" /><br /></form>
+
+<script type="text/javascript">
+function doSearch09(Search09)
+{window.open('https://www.youtube.com/embed/' + Search09, 'Search09window');}
+</script>
+<form onsubmit="doSearch09(this.Search09.value); return false;">
+<input type="text" id="Search09" name="Search09" size="40" placeholder="Video ID" />
+<input type="submit" style="width:120px" value="Age Bypass" /><br /></form>
+
+<script type="text/javascript">
+function doSearch10(Search10)
+{window.open('https://www.youpak.com/watch?v=' + Search10, 'Search10window');}
+</script>
+<form onsubmit="doSearch10(this.Search10.value); return false;">
+<input type="text" id="Search10" name="Search10" size="40" placeholder="Video ID" />
+<input type="submit" style="width:120px" value="Country Bypass" /><br /></form>
+
+<script type="text/javascript">
+function doSearch11(Search11)
+{window.open('http://polsy.org.uk/stuff/ytrestrict.cgi?ytid=' + Search11, 'Search11window');}
+</script>
+<form onsubmit="doSearch11(this.Search11.value); return false;">
+<input type="text" id="Search11" name="Search11" size="40" placeholder="Video ID" />
+<input type="submit" style="width:120px" value="Country ID" /><br /></form>
+
+<script type="text/javascript">
+function doSearch12(Search12)
+{window.open('https://hooktube.com/watch?v=' + Search12, 'Search12window');}
+</script>
+<form onsubmit="doSearch12(this.Search12.value); return false;">
+<input type="text" id="Search12" name="Search12" size="40" placeholder="Video ID" />
+<input type="submit" style="width:120px" value="Bypass Alternative" /><br /></form>
+
+<script type="text/javascript">
+function doSearch13(Search13)
+{window.open('https://yout.com/video/' + Search13, 'Search13window');}
+</script>
+<form onsubmit="doSearch13(this.Search13.value); return false;">
+<input type="text" id="Search13" name="Search13" size="40" placeholder="Video ID" />
+<input type="submit" style="width:120px" value="Download Options" /><br /></form>
+
+<script type="text/javascript">
+function doSearch14(Search14)
+{window.open('https://www.google.com/searchbyimage?site=search&sa=X&image_url=http://i.ytimg.com/vi/' + Search14 + '/0.jpg', 'rev1window');
+window.open('https://www.google.com/searchbyimage?site=search&sa=X&image_url=http://i.ytimg.com/vi/' + Search14 + '/1.jpg', 'rev2window');
+window.open('https://www.google.com/searchbyimage?site=search&sa=X&image_url=http://i.ytimg.com/vi/' + Search14 + '/2.jpg', 'rev3window');
+window.open('https://www.google.com/searchbyimage?site=search&sa=X&image_url=http://i.ytimg.com/vi/' + Search14 + '/3.jpg', 'rev4window');
+window.open('http://www.tineye.com/search/?url=http://i.ytimg.com/vi/' + Search14 + '/0.jpg', 'revt1window');
+window.open('http://www.tineye.com/search/?url=http://i.ytimg.com/vi/' + Search14 + '/1.jpg', 'revt2window');
+window.open('http://www.tineye.com/search/?url=http://i.ytimg.com/vi/' + Search14 + '/2.jpg', 'revt3window');
+window.open('http://www.tineye.com/search/?url=http://i.ytimg.com/vi/' + Search14 + '/3.jpg', 'revt4window');
+window.open('https://www.yandex.com/images/search?img_url=http://i.ytimg.com/vi/' + Search14 + '/0.jpg&rpt=imageview', 'rev5window');
+window.open('https://www.yandex.com/images/search?img_url=http://i.ytimg.com/vi/' + Search14 + '/1.jpg&rpt=imageview', 'rev6window');
+window.open('https://www.yandex.com/images/search?img_url=http://i.ytimg.com/vi/' + Search14 + '/2.jpg&rpt=imageview', 'rev7window');
+window.open('https://www.yandex.com/images/search?img_url=http://i.ytimg.com/vi/' + Search14 + '/3.jpg&rpt=imageview', 'rev8window');
+window.open('http://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl=http://i.ytimg.com/vi/' + Search14 + '/0.jpg', 'rev9window');
+window.open('http://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl=http://i.ytimg.com/vi/' + Search14 + '/1.jpg', 'rev10window');
+window.open('http://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl=http://i.ytimg.com/vi/' + Search14 + '/2.jpg', 'rev11window');
+window.open('http://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl=http://i.ytimg.com/vi/' + Search14 + '/3.jpg', 'rev12window');
+}
+</script>
+<form onsubmit="doSearch14(this.Search14.value); return false;">
+<input type="text" id="Search14" name="Search14" size="40" placeholder="Video ID" />
+<input type="submit" style="width:120px" value="Reverse Search" /><br /></form>
+
+<script type="text/javascript">
+function doSearch15(Search15)
+{window.open('http://i.ytimg.com/vi/' + Search15 + '/0.jpg', 'Search15awindow');
+window.open('http://i.ytimg.com/vi/' + Search15 + '/1.jpg', 'Search15bwindow');
+window.open('http://i.ytimg.com/vi/' + Search15 + '/2.jpg', 'Search15cwindow');
+window.open('http://i.ytimg.com/vi/' + Search15 + '/3.jpg', 'Search15dwindow');
+}
+</script>
+<form onsubmit="doSearch15(this.Search15.value); return false;">
+<input type="text" id="Search15" name="Search15" size="40" placeholder="Video ID" />
+<input type="submit" style="width:120px" value="4 Thumbnails" /><br /></form>
+
+<script type="text/javascript">
+function doSearch16(Search16)
+{window.open('https://i.ytimg.com/vi/' + Search16 + '/maxresdefault.jpg', 'Search16window');}
+</script>
+<form onsubmit="doSearch16(this.Search16.value); return false;">
+<input type="text" id="Search16" name="Search16" size="40" placeholder="Video ID" />
+<input type="submit" style="width:120px" value="Max Thumbnail" /><br /></form>
+
+<script type="text/javascript">
+function doSearch17(Search17)
+{window.open('https://i.ytimg.com/vi/' + Search17 + '/hqdefault.jpg', 'Search17window');}
+</script>
+<form onsubmit="doSearch17(this.Search17.value); return false;">
+<input type="text" id="Search17" name="Search17" size="40" placeholder="Video ID" />
+<input type="submit" style="width:120px" value="Default Thumbnail" /><br /></form>
+
+<script type="text/javascript">
+function doSearch18(Search18)
+{window.open('https://web.archive.org/web/https://www.youtube.com/watch?v=' + Search18, 'Search18window');}
+</script>
+<form onsubmit="doSearch18(this.Search18.value); return false;">
+<input type="text" id="Search18" name="Search18" size="40" placeholder="Video ID" />
+<input type="submit" style="width:120px" value="Archive Page" /><br /></form>
+
+<script type="text/javascript">
+function doSearch19(Search19)
+{window.open('https://web.archive.org/web/2oe_/http://wayback-fakeurl.archive.org/yt/' + Search19, 'Search19window');}
+</script>
+<form onsubmit="doSearch19(this.Search19.value); return false;">
+<input type="text" id="Search19" name="Search19" size="40" placeholder="Video ID" />
+<input type="submit" style="width:120px" value="Archive File" /><br /></form>
+
+<script type="text/javascript">
+function doSearch20(Search20)
+{window.open('http://downsub.com/?url=http://www.youtube.com/watch?v=' + Search20, 'Search20window');}
+</script>
+<form onsubmit="doSearch20(this.Search20.value); return false;">
+<input type="text" id="Search20" name="Search20" size="40" placeholder="Video ID" />
+<input type="submit" style="width:120px" value="Subtitles" /><br /></form><br>
+
+
+
+Reverse Video Search:
+<script type="text/javascript">
+function doSearch21(Search21)
+{window.open('https://www.google.com/searchbyimage?site=search&sa=X&image_url=http://i.ytimg.com/vi/' + Search21 + '/0.jpg', 'rev13window');
+window.open('https://www.google.com/searchbyimage?site=search&sa=X&image_url=http://i.ytimg.com/vi/' + Search21 + '/1.jpg', 'rev14window');
+window.open('https://www.google.com/searchbyimage?site=search&sa=X&image_url=http://i.ytimg.com/vi/' + Search21 + '/2.jpg', 'rev15window');
+window.open('https://www.google.com/searchbyimage?site=search&sa=X&image_url=http://i.ytimg.com/vi/' + Search21 + '/3.jpg', 'rev16window');
+window.open('http://www.tineye.com/search/?url=http://i.ytimg.com/vi/' + Search21 + '/0.jpg', 'revt5window');
+window.open('http://www.tineye.com/search/?url=http://i.ytimg.com/vi/' + Search21 + '/1.jpg', 'revt6window');
+window.open('http://www.tineye.com/search/?url=http://i.ytimg.com/vi/' + Search21 + '/2.jpg', 'revt7window');
+window.open('http://www.tineye.com/search/?url=http://i.ytimg.com/vi/' + Search21 + '/3.jpg', 'revt8window');
+window.open('https://yandex.com/images/search?source=collections&&url=http://i.ytimg.com/vi/' + Search21 + '/0.jpg&rpt=imageview', 'rev17window');
+window.open('https://yandex.com/images/search?source=collections&&url=http://i.ytimg.com/vi/' + Search21 + '/1.jpg&rpt=imageview', 'rev18window');
+window.open('https://yandex.com/images/search?source=collections&&url=http://i.ytimg.com/vi/' + Search21 + '/2.jpg&rpt=imageview', 'rev19window');
+window.open('https://yandex.com/images/search?source=collections&&url=http://i.ytimg.com/vi/' + Search21 + '/3.jpg&rpt=imageview', 'rev20window');
+window.open('http://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl=http://i.ytimg.com/vi/' + Search21 + '/0.jpg', 'rev21window');
+window.open('http://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl=http://i.ytimg.com/vi/' + Search21 + '/1.jpg', 'rev22window');
+window.open('http://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl=http://i.ytimg.com/vi/' + Search21 + '/2.jpg', 'rev23window');
+window.open('http://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl=http://i.ytimg.com/vi/' + Search21 + '/3.jpg', 'rev24window');
+}
+</script>
+<form onsubmit="doSearch21(this.Search21.value); return false;">
+<input type="text" id="Search21" name="Search21" size="40" placeholder="Video ID" />
+<input type="submit" style="width:120px" value="YouTube" /><br /></form>
+
+<script type="text/javascript">
+function doSearch22(Search22)
+{window.open('https://www.google.com/searchbyimage?site=search&sa=X&image_url=https://i.vimeocdn.com/video/' + Search22, 'rev1window');
+window.open('http://www.tineye.com/search/?url=https://i.vimeocdn.com/video/' + Search22, 'revt1window');
+window.open('https://www.yandex.com/images/search?img_url=https://i.vimeocdn.com/video/' + Search22, 'rev5window');
+window.open('http://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl=https://i.vimeocdn.com/video/' + Search22, 'rev9window');
+}
+</script>
+<form onsubmit="doSearch22(this.Search22.value); return false;">
+<input type="text" id="Search22" name="Search22" size="40" placeholder="Video ID" />
+<input type="submit" style="width:120px" value="Vimeo" /><br /></form>
+
+<script type="text/javascript">
+function doSearch23(Search23)
+{window.open('https://www.google.com/searchbyimage?site=search&sa=X&image_url=' + Search23, 'image1window');
+window.open('http://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl=' + Search23, 'image4window');
+window.open('http://www.tineye.com/search/?url=' + Search23, 'image2window');
+window.open('https://yandex.com/images/search?url=' + Search23 + '&rpt=imageview', 'image3window');
+window.open('https://image.baidu.com/pcdutu?queryImageUrl=' + Search23, 'image5window');}
+</script>
+<form onsubmit="doSearch23(this.Search23.value); return false;">
+<input type="text" name="Search23" size="40" placeholder="Entire Image URL" />
+<input type="submit"style="width:120px" value="General" /><br /><br /></form>
+
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
