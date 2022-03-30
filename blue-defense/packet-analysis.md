@@ -213,6 +213,7 @@ PowerShell.exe -ExecutionPolicy bypass .\raw-socket-sniffer.ps1 `
 * [Detecting Network Attacks with Wireshark - InfosecMatter](https://www.infosecmatter.com/detecting-network-attacks-with-wireshark/)
 * Hack-the-box Packet Analysis Course - [https://academy.hackthebox.eu/course/preview/intro-to-network-traffic-analysis](https://academy.hackthebox.eu/course/preview/intro-to-network-traffic-analysis)
 * [https://dfirmadness.com/case-001-pcap-analysis/](https://dfirmadness.com/case-001-pcap-analysis/)
+* [https://www.antisyphontraining.com/getting-started-with-packet-decoding-w-chris-brenton/](https://www.antisyphontraining.com/getting-started-with-packet-decoding-w-chris-brenton/)
 * _Packet Analysis - Applied Network Security Monitoring, pg.341_
 
 __
