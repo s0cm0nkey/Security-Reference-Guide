@@ -227,6 +227,9 @@ Depreciated Tools
     * [https://devblogs.microsoft.com/powershell/powershell-the-blue-team/](https://devblogs.microsoft.com/powershell/powershell-the-blue-team/)
   * [Eric Zimmerman's toolset](https://ericzimmerman.github.io/#!index.md) - SANS instructor and former FBI Forensics expert Eric Zimmerman has created a list of his favorite tools for public use and reference.
     * [https://cyberforensicator.com/2017/04/04/a-guide-to-eric-zimmermans-command-line-tools/](https://cyberforensicator.com/2017/04/04/a-guide-to-eric-zimmermans-command-line-tools/)
+    * [KAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) - lets forensic teams collect and process forensically useful artifacts within minutes.
+      * [https://github.com/AndrewRathbun/Awesome-KAPE](https://github.com/AndrewRathbun/Awesome-KAPE)
+      * [https://ericzimmerman.github.io/KapeDocs/#!index.md](https://ericzimmerman.github.io/KapeDocs/#!index.md)
 
 {% file src="../.gitbook/assets/EricZimmermanCommandLineToolsCheatSheet-v1.0 (1) (1).pdf" %}
 
