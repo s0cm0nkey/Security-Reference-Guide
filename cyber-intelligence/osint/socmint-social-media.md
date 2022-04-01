@@ -65,6 +65,7 @@
 
 ## LinkedIn
 
+* [CrossLinked](https://github.com/m8r0wn/CrossLinked) - LinkedIn enumeration tool to extract valid employee names from an organization through search engine scraping
 * [inspy](https://www.kali.org/tools/inspy/) - a Python based LinkedIn enumeration tool. You will need an API key from HunterIO.
 * [https://freepeoplesearchtool.com](https://freepeoplesearchtool.com) - Find LinkedIn profiles without using your account.
 * [https://www.intelligencewithsteve.com/post/a-guide-to-searching-linkedin-by-email-address](https://www.intelligencewithsteve.com/post/a-guide-to-searching-linkedin-by-email-address)
@@ -116,6 +117,7 @@
 * [https://nitter.net](https://nitter.net) - Allows you to view a persons posts, images and videos without having a Twitter account yourself. Also has a very handy search function that allows you to search through a persons tweets for a specific string.
 * [https://tweetbeaver.com](https://tweetbeaver.com) - A great collection of various tools for preforming Twitter account OSINT. Requires you to be sign into your Twitter account.
 * [https://botsentinel.com](https://botsentinel.com) - A platform developed to classify and track inauthentic accounts, bots and toxic trolls.
+* [twint](https://github.com/twintproject/twint) - An advanced Twitter scraping & OSINT tool written in Python that doesn't use Twitter's API, allowing you to scrape a user's followers, following, Tweets and more while evading most API limitations.
 
 ## 4chan
 

@@ -35,6 +35,8 @@ When checking your indicators against the below sources, be sure you are looking
 * [https://darkfeed.io/ransomwiki/](https://darkfeed.io/ransomwiki/) - A site for researchers that keeps track and provides links to various ransomware group darknet sites.
 * [Ransomware Group Site](http://ransomwr3tsydeii4q43vazm7wofla5ujdajquitomtd47cxjtfgwyyd.onion) - An onion site that provides links and details about ransomware groups currently operating.
   * [Clearnet Proxy](http://ransomwr3tsydeii4q43vazm7wofla5ujdajquitomtd47cxjtfgwyyd.onion.pet)
+* [Crowdstrike E-Crime Index](https://adversary.crowdstrike.com/en-US/ecrime-index-ecx/?L=236)
+* [https://malpedia.caad.fkie.fraunhofer.de/](https://malpedia.caad.fkie.fraunhofer.de) - A resource for rapid identification and actionable context when investigating malware.
 
 ## **Blacklist Checks and Reputation Data**
 

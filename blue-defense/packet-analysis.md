@@ -45,6 +45,7 @@ The world’s foremost and widely-used network protocol analyzer. It lets you se
 * [https://unit42.paloaltonetworks.com/unit42-customizing-wireshark-changing-column-display/](https://unit42.paloaltonetworks.com/unit42-customizing-wireshark-changing-column-display/)
 * [General Wireshark Filter Reference](https://www.wireshark.org/docs/man-pages/wireshark-filter.html)
 * [Full Wireshark Display Filter Reference](https://www.wireshark.org/docs/dfref/)
+* [https://hunter.jorgetesta.tech/analisis-de-red/wireshark/filtros](https://hunter.jorgetesta.tech/analisis-de-red/wireshark/filtros)
 * [Customizing Wireshark – Changing Your Column Display](https://unit42.paloaltonetworks.com/unit42-customizing-wireshark-changing-column-display/)
 * [Using Wireshark – Display Filter Expressions](https://unit42.paloaltonetworks.com/using-wireshark-display-filter-expressions/)
 * [Using Wireshark: Identifying Hosts and Users](https://unit42.paloaltonetworks.com/using-wireshark-identifying-hosts-and-users/)
