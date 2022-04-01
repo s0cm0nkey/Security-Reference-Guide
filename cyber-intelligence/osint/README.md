@@ -191,6 +191,7 @@ These are misc tools and collections out there. Many overlap, but there are fant
 
 ### Frameworks
 
+* [https://nitinpandey.in/ihunt/#](https://nitinpandey.in/ihunt/#)  - Detailed OSINT framework with dozens of tools grouped by purpose.
 * [osrframework](https://www.kali.org/tools/osrframework/) - This package contains a set of libraries developed by i3visio to perform Open Source Intelligence tasks. They include references to a bunch of different applications related to username checking, DNS lookups, information leaks research, deep web search, regular expressions extraction and many others.
 
 {% content-ref url="../../red-offensive/offensive-toolbox/recon-frameworks.md" %}
