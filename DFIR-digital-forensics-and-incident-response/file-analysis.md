@@ -97,6 +97,10 @@ A package of python tools to analyze [Microsoft OLE2 files](http://en.wikipedia.
 * [pev](https://www.kali.org/tools/pev/) - pev is a tool to get information of PE32/PE32+ executables (EXE, DLL, OCX etc) like headers, sections, resources and more.
 * [ropper](https://www.kali.org/tools/ropper/) - This package contains scripts that display info about files in different formats and find gadgets to build ROPs chains for different architectures (x86/x86\_64, ARM/ARM64, MIPS, PowerPC). For disassembly ropper uses the Capstone Framework.
 
+### Email Analysis Tools
+
+* [https://www.phishtool.com/products/community](https://www.phishtool.com/products/community) - PhishTool automatically retrieves all of the relevant metadata from a phishing email, providing you with the most comprehensive technical view of a phishing email possible. This combined with thier OSINT and heuristic detection. It performs strings analysis as well as attachments and embedded hyperlinks.
+
 ### Doc Analysis Tools
 
 * [Peepdf ](https://eternal-todo.com/tools/peepdf-pdf-analysis-tool)- A Python tool to explore PDF files in order to find out if the file can be harmful or not. The aim of this tool is to provide all the necessary components that a security researcher could need in a PDF analysis without using 3 or 4 tools to make all the tasks.

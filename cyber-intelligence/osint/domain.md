@@ -88,6 +88,14 @@ Some times a target will change a website and you will want to be notified right
 * [https://siteslike.com/](https://siteslike.com) - Enter a URL or keyword and view websites that are similar or match your keyword
 * [https://www.similarweb.com/](https://www.similarweb.com) - A great tool for finding similar and/or competitor websites. Search via website URL.
 
+### Browser Proxy/Simulator
+
+For when you want to look at a site, without interacting with it.
+
+* [https://www.wannabrowser.net/](https://www.wannabrowser.net) - With Wannabroser you can have a look at the HTML-source code of any website from the view of any User-Agent you like. It's even possible to detect simple cloaking using Wannabrowser if the cloaking is just based on the visiting User-Agent.
+* [https://www.browserling.com/](https://www.browserling.com) - Used for browser testing, but can be used for safely looking at various sites.
+* [https://www.url2png.com/](https://www.url2png.com) - Capture snapshots of any website
+
 ### **Misc. Utilities**
 
 * [DNPedia](https://dnpedia.com) - Domain Name Solutions, Statistics, Scripts, News and Tools
