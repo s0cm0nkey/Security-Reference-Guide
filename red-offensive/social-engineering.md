@@ -86,7 +86,6 @@
 * [Generate a Random Name - Fake Name Generator](https://www.fakenamegenerator.com)&#x20;
 * [Random Name Generator | Fake ID Generator](https://www.elfqrin.com/fakeid.php)
 * [**AI Generated Photos**](https://generated.photos) - 100.000 AI generated faces.
-* [Facial composite (identikit) maker](http://facemaker.uvrg.org)
 
 ## User Tracking
 

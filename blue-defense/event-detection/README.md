@@ -165,7 +165,6 @@ The actions needed to setup persistence typically require the attacker to intera
 * [Flare](https://github.com/austin-taylor/flare) - Not to be confused with the malware reverse engineering VM, This Flare is a network analysis tool by Austin Taylor that can take logs from Elastic stack and Surricate and perform various types of nework analysis and detection, including beaconing detection.
 * [Revoke-Obfuscation](https://github.com/danielbohannon/Revoke-Obfuscation) - Powershell obfuscation detection tool
 * [dnstwist](https://github.com/elceef/dnstwist) - Tool for creation of potential typo-squatting domains by use of multi-character permutation and checking for registration of those domains.
-  * [https://dnstwister.report/](https://dnstwister.report) - Online Version and DNS monitoring service
 
 ## **Detection Use Cases**
 

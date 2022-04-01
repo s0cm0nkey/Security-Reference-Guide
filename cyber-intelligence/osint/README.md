@@ -182,8 +182,6 @@ These are misc tools and collections out there. Many overlap, but there are fant
 * [https://thecyberpost.com/open-source-intelligence-osint-tools/](https://thecyberpost.com/open-source-intelligence-osint-tools/)
 * [https://start.me/p/ZGAzN7/verification-toolset](https://start.me/p/ZGAzN7/verification-toolset)
 * [https://map.malfrats.industries/](https://map.malfrats.industries)
-* [https://github.com/cipher387/API-s-for-OSINT](https://github.com/cipher387/API-s-for-OSINT)
-* [https://github.com/cipher387/osint\_stuff\_tool\_collection](https://github.com/cipher387/osint\_stuff\_tool\_collection)
 
 ### VMs
 

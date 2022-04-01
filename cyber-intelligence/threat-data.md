@@ -50,7 +50,6 @@ When checking your indicators against the below sources, be sure you are looking
   * Returns: Reputation check (84 sources), DNS records, HTTPS Cert, WHOIS, Related domains, Community comments
   * Has a premium API
   * [https://virustotal.com/wargame/ ](https://virustotal.com/wargame/)- Virustotal training!
-  * [https://github.com/Neo23x0/vti-dorks](https://github.com/Neo23x0/vti-dorks) - VirusTotal Dorking
 * [Cisco Talos](https://talosintelligence.com/reputation\_center)
   * Searches: IP and Domain data
   * Returns: Reputation check, content details, mail servers, owner details, Subnet reputation details, WHOIS, email volume history, Top Network owners

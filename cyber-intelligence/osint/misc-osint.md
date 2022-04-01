@@ -30,11 +30,11 @@
 * [https://zerodot1.gitlab.io/CoinBlockerListsWeb/](https://zerodot1.gitlab.io/CoinBlockerListsWeb/) - Cryptojacking IP address blocklists.
 * [https://etherscan.io](https://etherscan.io) - Queries etherscan.io to find the balance of identified ethereum wallet addresses.
 * [Wallet explorer](https://www.walletexplorer.com) — bitcoin wallet transaction history
-* [Blockpath.com](https://blockpath.com) — viewing bitcoin wallet transactions as a graph\
-  [Cryptocurrency alerting](https://cryptocurrencyalerting.com) — track spending and deposits in Bitcoin and Ethereum wallets\
-  [Learnmebitcoin.com](https://learnmeabitcoin.com/tools/path/) — find transactions between two Bitcoin adresses\
-  [Coinwink.com](https://coinwink.com) — allows you to set up email notifications in case Bitcoin (or other #cryptocurrency) rate rises (falls) above (below) a certain value\
-  [BlockCypher](https://blockcypher.herokuapp.com) — Blockchain explorer for Bitcoin, Ethereum, Litecoin, DogeCoin, Dash. Getting into about address, transactions and block hashes, block number or wallet name.
+* [Blockpath.com](https://blockpath.com) — viewing bitcoin wallet transactions as a graph
+* [Cryptocurrency alerting](https://cryptocurrencyalerting.com) — track spending and deposits in Bitcoin and Ethereum wallets
+* [Learnmebitcoin.com](https://learnmeabitcoin.com/tools/path/) — find transactions between two Bitcoin adresses
+* [Coinwink.com](https://coinwink.com) — allows you to set up email notifications in case Bitcoin (or other #cryptocurrency) rate rises (falls) above (below) a certain value
+* [BlockCypher](https://blockcypher.herokuapp.com) — Blockchain explorer for Bitcoin, Ethereum, Litecoin, DogeCoin, Dash. Getting into about address, transactions and block hashes, block number or wallet name.
 
 {% file src="../../.gitbook/assets/Currencies.html" %}
 
