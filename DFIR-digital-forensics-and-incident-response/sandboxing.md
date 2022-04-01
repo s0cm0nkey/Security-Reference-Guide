@@ -36,6 +36,8 @@ All of the below online sandboxes can provide detailed analysis with one or more
 * [https://id-ransomware.malwarehunterteam.com/](https://id-ransomware.malwarehunterteam.com)
 * [https://virusscan.jotti.org/en](https://virusscan.jotti.org/en)
 * [https://pandora.circl.lu/submit](https://pandora.circl.lu/submit)
+* [https://exchange.xforce.ibmcloud.com/](https://exchange.xforce.ibmcloud.com)
+* [https://koodous.com/](https://koodous.com) - (APK Sandbox)
 
 ## **Local Sandbox tools**
 
@@ -48,3 +50,7 @@ Local sandboxes - There are a few options for local sandboxing that can help you
 * [ThePhish](https://github.com/emalderson/ThePhish) - ThePhish is an automated phishing email analysis tool based on [TheHive](https://github.com/TheHive-Project/TheHive), [Cortex](https://github.com/TheHive-Project/Cortex/) and [MISP](https://github.com/MISP/MISP). It is a web application written in Python 3 and based on Flask that automates the entire analysis process starting from the extraction of the observables from the header and the body of an email to the elaboration of a verdict which is final in most cases.
   * [https://secsi.io/blog/thephish-an-automated-phishing-email-analysis-tool/](https://secsi.io/blog/thephish-an-automated-phishing-email-analysis-tool/)
 * [https://www.telerik.com/fiddler](https://www.telerik.com/fiddler) - While not a sandbox, it is a simple web proxy that can be used with any other VM. By detonating your target file in a cirtual machine with this running, you can see if the file makes any outbound web requests when it is opened.
+
+![](<../.gitbook/assets/image (8).png>)
+
+![](<../.gitbook/assets/image (9).png>)

@@ -38,11 +38,17 @@ Yara Rule Testing Tools
 ### Resources
 
 * [https://github.com/InQuest/awesome-yara](https://github.com/InQuest/awesome-yara)
-* [https://resources.infosecinstitute.com/yara-simple-effective-way-dissecting-malware/](https://resources.infosecinstitute.com/yara-simple-effective-way-dissecting-malware/)
 * [https://yara.readthedocs.io/en/latest/](https://yara.readthedocs.io/en/latest/)
-* [https://securityintelligence.com/signature-based-detection-with-yara/](https://securityintelligence.com/signature-based-detection-with-yara/)
 * [http://yara.readthedocs.io/en/v3.6.3/writingrules.html#id2](http://yara.readthedocs.io/en/v3.6.3/writingrules.html#id2)
-* [https://www.nextron-systems.com/valhalla/](https://www.nextron-systems.com/valhalla/)
+* [https://www.nextron-systems.com/valhalla/](https://www.nextron-systems.com/valhalla/) - Huge YARA rule Repo
+* [https://github.com/EFForg/yaya](https://github.com/EFForg/yaya) - Automatically curate open source yara rules and run scans
+* Writing Yara Rules
+  * [https://resources.infosecinstitute.com/yara-simple-effective-way-dissecting-malware/](https://resources.infosecinstitute.com/yara-simple-effective-way-dissecting-malware/)
+  * [https://securityintelligence.com/signature-based-detection-with-yara/](https://securityintelligence.com/signature-based-detection-with-yara/)
+  * [https://www.nextron-systems.com/2015/02/16/write-simple-sound-yara-rules/](https://www.nextron-systems.com/2015/02/16/write-simple-sound-yara-rules/)
+  * [https://www.nextron-systems.com/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/](https://www.nextron-systems.com/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/)
+  * [https://www.nextron-systems.com/2016/04/15/how-to-write-simple-but-sound-yara-rules-part-3/](https://www.nextron-systems.com/2016/04/15/how-to-write-simple-but-sound-yara-rules-part-3/)
+* Yara Training
 * [https://tryhackme.com/room/yara](https://tryhackme.com/room/yara)
 * _Operator Handbook: YARA - pg. 428_
 

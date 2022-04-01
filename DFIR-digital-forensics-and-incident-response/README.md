@@ -1,6 +1,6 @@
 # Blue - DFIR: Digital Forensics and Incident Response
 
-DFIR: Digital Forensics and Incident Response is a hugely important important sector of cyber security, where your everyday security analysis is take to the next level. While most security analysts will work out of a SIEM or SOAR platform, Incident Responders and Forensic analysts typically work directly with a potentially compromised device. With this, they are required to not only be familiar with a larger array of tools for analysis, but also a much stricter set of process and procedures as their actions are often subject to legal requirements.
+&#x20;DFIR: Digital Forensics and Incident Response is a hugely important important sector of cyber security, where your everyday security analysis is take to the next level. While most security analysts will work out of a SIEM or SOAR platform, Incident Responders and Forensic analysts typically work directly with a potentially compromised device. With this, they are required to not only be familiar with a larger array of tools for analysis, but also a much stricter set of process and procedures as their actions are often subject to legal requirements.
 
 ## **DFIR Resource Collections**
 
@@ -45,13 +45,8 @@ DFIR: Digital Forensics and Incident Response is a hugely important important se
 ### IR/Malware Scanners
 
 * [https://www.nextron-systems.com/thor/](https://www.nextron-systems.com/thor/) - IR scanner with more than 12,000 handcrafted YARA signatures, 400 Sigma rules, numerous anomaly detection rules and thousands of IOCs.
-  * [Loki Scanner](https://github.com/Neo23x0/Loki)
-
-```
-loki-upgrader.exe
-loki.exe -p [Directory]
-```
-
+  * [Loki Scanner](https://github.com/Neo23x0/Loki) - The free and open IOC scanner using YARA rules.
+  * [Fenrir](https://github.com/Neo23x0/Fenrir) - Fenrir is a simple IOC scanner bash script. It allows scanning Linux/Unix/OSX systems for Indicators of Compromise (IOCs).
 * [MalwareBytes IR Scanner](https://www.malwarebytes.com/business/incident-response)
   * [https://www.malwarebytes.com/pdf/datasheets/mbirdatasheet.pdf](https://www.malwarebytes.com/pdf/datasheets/mbirdatasheet.pdf)
 * [ClamAV](https://www.clamav.net/downloads) - ClamAV is an open source antivirus engine for detecting trojans, viruses, malware & other malicious threats. Can be used with a USB for portable scanning of devices.
@@ -233,7 +228,7 @@ Depreciated Tools
   * [Eric Zimmerman's toolset](https://ericzimmerman.github.io/#!index.md) - SANS instructor and former FBI Forensics expert Eric Zimmerman has created a list of his favorite tools for public use and reference.
     * [https://cyberforensicator.com/2017/04/04/a-guide-to-eric-zimmermans-command-line-tools/](https://cyberforensicator.com/2017/04/04/a-guide-to-eric-zimmermans-command-line-tools/)
 
-{% file src="../.gitbook/assets/EricZimmermanCommandLineToolsCheatSheet-v1.0 (2).pdf" %}
+{% file src="../.gitbook/assets/EricZimmermanCommandLineToolsCheatSheet-v1.0 (1) (1).pdf" %}
 
 * Extraction Tools
   * [bulk-extractor](https://www.kali.org/tools/bulk-extractor/) - bulk\_extractor is a C++ program that scans a disk image, a file, or a directory of files and extracts useful information without parsing the file system or file system structures.
@@ -265,6 +260,9 @@ Depreciated Tools
 * [scalpel](https://www.kali.org/tools/scalpel/) - scalpel is a fast file carver that reads a database of header and footer definitions and extracts matching files from a set of image files or raw device files.
 * [scrounge-ntfs](https://www.kali.org/tools/scrounge-ntfs/) - Scrounge NTFS is a data recovery program for NTFS filesystems. It reads each block of the hard disk and try to rebuild the original filesystem tree into a directory.
 * [undbx](https://www.kali.org/tools/undbx/) - UnDBX is a tool to extract, recover and undelete e-mail messages from MS Outlook Express .dbx files
+* RDP Cache Recovery
+  * [https://github.com/BSI-Bund/RdpCacheStitcher/](https://github.com/BSI-Bund/RdpCacheStitcher/) -A tool that supports forensic analysts in reconstructing useful images out of RDP cache bitmaps
+  * [https://github.com/ANSSI-FR/bmc-tools/](https://github.com/ANSSI-FR/bmc-tools/) - RDP Bitmap Cache parser
 
 ### Forensic Imaging
 

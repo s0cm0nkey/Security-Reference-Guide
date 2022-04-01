@@ -30,6 +30,8 @@ To make Sigma even easier to use, there are tools like Uncoder.io that can easil
 
 * [Online translator for SIEM saved searches, filters, queries and Sigma rules - Uncoder.IO](https://uncoder.io)&#x20;
 
+![](<../.gitbook/assets/image (41).png>)
+
 ## [Lucene](https://lucene.apache.org) (ElasticSearch)
 
 Apache's search language that is used in many technologies including Elastic Stack and Palo Alto's XSOAR
