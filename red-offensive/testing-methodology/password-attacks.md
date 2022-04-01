@@ -34,6 +34,7 @@ description: Password1234!
 * [https://www.openwall.com/wordlists/](https://www.openwall.com/wordlists/)
 * [jeanphorn/wordlist](https://github.com/jeanphorn/wordlist)
 * [Jhaddix's wordlist](https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056) - Bug Bounty master Jason Haddix's master wordlist made from every dns enumeration tool... ever. Please excuse the lewd entries =/
+* [https://github.com/kaonashi-passwords/Kaonashi](https://github.com/kaonashi-passwords/Kaonashi) - Wordlist, rules and masks from Kaonashi project (RootedCON 2019)
 
 ### **Wordlist generation tools**
 

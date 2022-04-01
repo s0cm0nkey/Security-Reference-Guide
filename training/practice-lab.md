@@ -6,6 +6,8 @@
 * [https://serversforhackers.com/s/start-here](https://serversforhackers.com/s/start-here)
 * [https://kamran-bilgrami.medium.com/ethical-hacking-lessons-building-free-active-directory-lab-in-azure-6c67a7eddd7f](https://kamran-bilgrami.medium.com/ethical-hacking-lessons-building-free-active-directory-lab-in-azure-6c67a7eddd7f)
 * [Conda's Build a Lab Video Playlist ](https://www.youtube.com/playlist?list=PLDrNMcTNhhYoEjHYs0ZBfcSE7Hw46BeTA)
+* SANS Webcast: Building Your Own Super Duper Home Lab - [https://www.youtube.com/watch?v=uzqwoufhwyk](https://www.youtube.com/watch?v=uzqwoufhwyk)
+* BHIS | No SPAN Port? No Tap? No Problem! - John Strand - [https://www.youtube.com/watch?v=EqjmZqa\_Dho](https://www.youtube.com/watch?v=EqjmZqa\_Dho)
 * _Threat Hunting in Elastic Stack: Building your Threat Hunting Lab - pg. 93_
 
 ### Setting up your AD lab&#x20;
