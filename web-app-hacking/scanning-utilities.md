@@ -60,6 +60,7 @@ These are not only very detailed and helpful tools, but they allow you to gather
 * [Vega Scanner](https://subgraph.com/vega/) - Vega is a free and open source web security scanner and web security testing platform to test the security of web applications. Vega can help you find and validate SQL Injection, Cross-Site Scripting (XSS), inadvertently disclosed sensitive information, and other vulnerabilities.
 * [Acunetix](scanning-utilities.md#misc-tools) - A complete web application security testing solution that can be used both standalone and as part of complex environments. It offers built-in [vulnerability assessment](https://www.acunetix.com/vulnerability-scanner/vulnerability-assessment-software/) and [vulnerability management](https://www.acunetix.com/vulnerability-scanner/vulnerability-management-software/), as well as many options for integration with market-leading software development tools.
 * [WAVE](https://github.com/adithyan-ak/WAVE) - Web Application Vulnerability Exploiter (WAVE) is basically a vulnerability scanner which scans for Secuirity Vulnerabilities in web applications.
+* [https://snyk.io/website-scanner/](https://snyk.io/website-scanner/) - Get a full website security check for known vulnerabilities and HTTP security headers
 
 ## SSL Scanning
 

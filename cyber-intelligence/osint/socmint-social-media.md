@@ -32,6 +32,7 @@
 * [https://top.gg](https://top.gg) - Search for Discord bots.
 * [https://pixelatomy.com/snow-stamp/](https://pixelatomy.com/snow-stamp/) - A "snowflake" is essentially a unique ID for a resource which contains a timestamp. You can copy the snowflake from a message, user, channel, etc by right clicking on them in Discord. This will let you check the age of a Discord account or server.
 * [https://dht.chylex.com](https://dht.chylex.com) - Lets you save chat history in your servers, groups, and private conversations, and view it offline. Be careful, as this tool technically goes against Discord's ToS, so its possible that you could get your account banned!
+* [https://github.com/traumatism/get-discord-bots-tokens-with-google](https://github.com/traumatism/get-discord-bots-tokens-with-google)
 
 ## Facebook
 
@@ -69,6 +70,7 @@
 * [inspy](https://www.kali.org/tools/inspy/) - a Python based LinkedIn enumeration tool. You will need an API key from HunterIO.
 * [https://freepeoplesearchtool.com](https://freepeoplesearchtool.com) - Find LinkedIn profiles without using your account.
 * [https://www.intelligencewithsteve.com/post/a-guide-to-searching-linkedin-by-email-address](https://www.intelligencewithsteve.com/post/a-guide-to-searching-linkedin-by-email-address)
+* [https://github.com/krlabs/linkedin-dorks](https://github.com/krlabs/linkedin-dorks)
 
 ## Mastodon
 

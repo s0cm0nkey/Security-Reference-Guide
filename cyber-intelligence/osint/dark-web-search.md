@@ -12,6 +12,7 @@ Searching the Dark/Deep web is a great intelligence activity that can yield a mu
 * [Dark Search](https://darksearch.io) - A clearnet search engine for searching the Dark Web
 * [https://onionlandsearchengine.com/](https://onionlandsearchengine.com) - A search engine for the deep web. Official onion site can be found [here.](http://3bbad7fauom4d6sgppalyqddsqbf5u5p56b5k5uk2zxsy3d6ey2jobad.onion)
 * [https://www.dargle.net/search](https://www.dargle.net/search) - A data aggregation platform for dark web domains. Using this directory, we can generate a portfolio of domains and their statuses, gain insight into the content and nature of these services, as well as the connections between them.
+* [https://torwhois.com](https://torwhois.com) - TorWhois Onion Search
 
 ### Invisible Internet Project (I2P)
 
