@@ -24,6 +24,7 @@ Logging formats will change depending on the log, log source, application, and m
 * [Strontic xCyclopedia](https://strontic.github.io/xcyclopedia/) - Huge encyclopedia of executables, dll files, scripts, even the file paths they are supposed to be under. Contains tons of metadata, file hashes, reputation scores, handles, and so much more!
 * [Winbindex](https://winbindex.m417z.com) - Index of windows binaries with file hash, size, what update it was created with, and many more. Perfect for understanding more on a file.
 * [Echotrail.io](https://www.echotrail.io) - A super handy tool that maps windows file  to hashes, parent/child process, and much more. Great for determining if a file is really is a windows file, or is behaving in a way that it should.
+* [https://www.systemlookup.com/](https://www.systemlookup.com) - SystemLookup hosts a collection of lists that provide information on the components of legitimate and potentially unwanted programs.
 * [https://filesec.io/](https://filesec.io) - Stay up-to-date with the latest file extensions being used by attackers.
 * [Linux Logs Explained - Full overview of Linux Log Files - Plesk](https://www.plesk.com/blog/featured/linux-logs-explained/) - Breakdown of the files and paths of the various logs created by Linux
 * [Windows Security Log Encyclopedia](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/default.aspx) - Explanation of Windows Event IDs
