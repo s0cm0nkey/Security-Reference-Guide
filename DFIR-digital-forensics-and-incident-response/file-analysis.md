@@ -4,6 +4,54 @@ description: What is this? I didn't put this file here...
 
 # File/Binary Analysis
 
+## **File Analysis Methodology**
+
+* [https://zeltser.com/analyzing-malicious-documents/](https://zeltser.com/analyzing-malicious-documents/)
+* [SANS Malicious File Analysis Cheatsheet](https://sansorg.egnyte.com/dl/IQ3GhaH868/?)
+* [https://hunter.jorgetesta.tech/malware/tips/analisis-estatico](https://hunter.jorgetesta.tech/malware/tips/analisis-estatico)
+
+### Static Analysis Tasklist
+
+* Anatomy
+  * Time Date Stamp
+  * Discrepancy between Raw and Virtual Size
+* Hashes&#x20;
+  * Check Hashes against [https://s0cm0nkey.github.io/EasyThreatFile.html](https://s0cm0nkey.github.io/EasyThreatFile.html)
+* Strings
+  * Too many meaningless strings (Possible obfuscation)
+  * Internal/external messages
+  * Referenced (invoked) functions
+  * Sections used by the PE
+  * IPs and/or Domains
+  * Error messages or exceptions
+  * Names or keywords
+* Libraries
+  * Low number of libraries?
+  * Cryptography Libraries - Why does this need a crypto library?
+* Imports/VirtualAlloc
+
+### Dynamic Analysis Task List
+
+* Run file through available/allowed Sandboxing utilties
+
+{% content-ref url="sandboxing.md" %}
+[sandboxing.md](sandboxing.md)
+{% endcontent-ref %}
+
+* Process Hacker
+  * Observe active processes and pay attention to their colors
+  * Extract strings and data in memory of the active suspicious process
+  * Investigate Handles, including Mutex name
+* Process Monitor
+  * Record local system interactions
+* ProcDOT
+  * Organize and clean Process Monitor data
+* Wireshark
+  * Record network activity
+  * Give the malware what it wants and redirect its request to a local web server in your lab. You can use IPTABLES on linux (your lab's gateway) to intercept and redirect all internal traffic and reinfect your victim machine
+    * Use FAKEDNS in REMnux
+    * What happens if you let malware connect to your web server?
+
 ## **File Analysis Tools**
 
 ### Exif/Metadata viewers&#x20;
@@ -146,10 +194,5 @@ $obj.sources.attributes.paths
 * [https://en.wikipedia.org/wiki/List\_of\_file\_signatures](https://en.wikipedia.org/wiki/List\_of\_file\_signatures)
 * [https://www.garykessler.net/library/file\_sigs.html](https://www.garykessler.net/library/file\_sigs.html)
 * [https://filesignatures.net/index.php?page=all](https://filesignatures.net/index.php?page=all)
-
-## Reference
-
-* [https://zeltser.com/analyzing-malicious-documents/](https://zeltser.com/analyzing-malicious-documents/)
-* [SANS Malicious File Analysis Cheatsheet](https://sansorg.egnyte.com/dl/IQ3GhaH868/?)
 
 ****
