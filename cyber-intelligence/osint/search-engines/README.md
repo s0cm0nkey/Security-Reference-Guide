@@ -32,16 +32,20 @@ Google is the most powerful and scary information gathering tool today. Beyond s
 
 ### Google Dorking CLI Tools
 
-* [EasyDork](https://github.com/s0cm0nkey/EasyDork) - HTML based dorking tool to make launching popular dorking techniques easy.
-  * Encorporated dorks from:
-    * [Goohak](https://github.com/1N3/Goohak/) - Automatically launch google hacking queries against a target domain to find vulnerabilities and enumerate a target.
-      * [https://www.isec.ne.jp/wp-content/uploads/2017/10/65Goohack.pdf](https://www.isec.ne.jp/wp-content/uploads/2017/10/65Goohack.pdf)
-    * [https://dorks.faisalahmed.me/](https://dorks.faisalahmed.me) - Bug Bounty focused dorking helper
+* [Goohak](https://github.com/1N3/Goohak/) - Automatically launch google hacking queries against a target domain to find vulnerabilities and enumerate a target.
+  * [https://www.isec.ne.jp/wp-content/uploads/2017/10/65Goohack.pdf](https://www.isec.ne.jp/wp-content/uploads/2017/10/65Goohack.pdf)
+* [https://dorks.faisalahmed.me/](https://dorks.faisalahmed.me) - Bug Bounty focused dorking helper
 * [pagodo](https://github.com/opsdisk/pagodo) - pagodo (Passive Google Dork) - Automate Google Hacking Database scraping and searching
+* Fast Google Dorks Scan [https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan](https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan)
+* 0xDork [https://github.com/rlyonheart/0xdork](https://github.com/rlyonheart/0xdork)
+* SDorker [https://github.com/TheSpeedX/SDorker](https://github.com/TheSpeedX/SDorker)
+* BugBounty Helper [https://dorks.faisalahmed.me](https://dorks.faisalahmed.me)
+* Google Dork Builder Firefox Add-on [https://addons.mozilla.org/ru/firefox/addon/google-dork-builder/](https://addons.mozilla.org/ru/firefox/addon/google-dork-builder/)
+* ASHOK (osint swiss knife) [https://github.com/ankitdobhal/Ashok](https://github.com/ankitdobhal/Ashok)
 * Depreciated
   * [Googd0rker ](https://github.com/ZephrFish/GoogD0rker/)- GoogD0rker is a tool for firing off google dorks against a target domain, it is purely for OSINT against a specific target domain.
 
-### Google Dorking Cheatsheet
+### Google Dorking Lists and Resources
 
 {% content-ref url="google-dorking-cheatsheet.md" %}
 [google-dorking-cheatsheet.md](google-dorking-cheatsheet.md)
@@ -93,6 +97,7 @@ This section contains miscellaneous search engines and utilities.
   * Large list of other search engines - [https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/search-engines](https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/search-engines)
 * [https://www.blogsearchengine.org/](https://www.blogsearchengine.org) - A great tool for searching blogs online. Search for a blog, submit your own blogs, or subscribe to an RSS feed on the blog topic.
 * [https://boardreader.com/ ](https://boardreader.com) - Multi-forum search engine
+* [Firebounty](https://firebounty.com) — Bug bounty search engine
 
 ## **Training**
 

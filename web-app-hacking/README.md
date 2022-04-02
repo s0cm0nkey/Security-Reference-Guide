@@ -69,6 +69,7 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
   * [https://labs.detectify.com/2021/11/30/hakluke-creating-the-perfect-bug-bounty-automation/](https://labs.detectify.com/2021/11/30/hakluke-creating-the-perfect-bug-bounty-automation/)
 * Resource collections
   * [awesome-bug-bounty](https://github.com/djadmin/awesome-bug-bounty) - is a comprehensive curated list of available Bug Bounty.
+* [Firebounty](https://firebounty.com) — Bug bounty search engine
 * Write-up tools
   * Bug Bounty Reconnaissance Framework (BBRF)
     * [https://github.com/honoki/bbrf-client](https://github.com/honoki/bbrf-client)
@@ -126,6 +127,7 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 * [Credit Cards numbers](https://stripe.com/docs/testing#cards) for use in testing
 * [interactsh](https://github.com/projectdiscovery/interactsh) - An OOB interaction gathering server and client library
   * [https://app.interactsh.com/](https://app.interactsh.com)
+* [Firebounty](https://firebounty.com) — Bug bounty search engine
 
 ## **Training and Resources**
 

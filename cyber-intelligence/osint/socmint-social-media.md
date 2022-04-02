@@ -15,6 +15,8 @@
 * [https://www.smat-app.com](https://www.smat-app.com) - The Social Media Analysis Toolkit (SMAT) was designed to help facilitate activists, journalists, researchers, and other social good organizations to analyze and visualize harmful online trends such as hate, mis-, and disinformation on a variety of platforms including Reddit, Gab, Parler, 4chan, 8kun, Telegram, Gettr and more.
 * [https://app.skylens.io](https://app.skylens.io) - Find geotagged posts from five social networks at once on one map. Includes Twitter, YouTube, Instagram, Flickr and Vkontakte.
 * [https://findmyfbid.in/](https://findmyfbid.in) - A collection of tools for Facebook, Twitter, Instagram, Reddit and YouTube. Find user IDs, search comments on Reddit, calculate earnings from a YouTube channel and more.
+* [Orion](https://github.com/Araekiel/orion) — open-Source Search Engine for social networking websites.
+* [Hashatit.com](https://www.hashatit.com) — hastag searchengine. Search in twitter, instagram, facebook, youtube, pinterest
 
 ## Clubhouse
 
@@ -32,6 +34,7 @@
 * [https://top.gg](https://top.gg) - Search for Discord bots.
 * [https://pixelatomy.com/snow-stamp/](https://pixelatomy.com/snow-stamp/) - A "snowflake" is essentially a unique ID for a resource which contains a timestamp. You can copy the snowflake from a message, user, channel, etc by right clicking on them in Discord. This will let you check the age of a Discord account or server.
 * [https://dht.chylex.com](https://dht.chylex.com) - Lets you save chat history in your servers, groups, and private conversations, and view it offline. Be careful, as this tool technically goes against Discord's ToS, so its possible that you could get your account banned!
+* [https://github.com/traumatism/get-discord-bots-tokens-with-google](https://github.com/traumatism/get-discord-bots-tokens-with-google)
 
 ## Facebook
 
@@ -69,6 +72,7 @@
 * [inspy](https://www.kali.org/tools/inspy/) - a Python based LinkedIn enumeration tool. You will need an API key from HunterIO.
 * [https://freepeoplesearchtool.com](https://freepeoplesearchtool.com) - Find LinkedIn profiles without using your account.
 * [https://www.intelligencewithsteve.com/post/a-guide-to-searching-linkedin-by-email-address](https://www.intelligencewithsteve.com/post/a-guide-to-searching-linkedin-by-email-address)
+* [https://github.com/krlabs/linkedin-dorks](https://github.com/krlabs/linkedin-dorks)
 
 ## Mastodon
 
@@ -86,6 +90,14 @@
 *
 * [https://www.secjuice.com/reddit-osint-techniques/](https://www.secjuice.com/reddit-osint-techniques/)
 
+## Slack
+
+* [Slack Pirate](https://github.com/emtunc/SlackPirate) — tool developed in Python which uses the native Slack APIs to extract 'interesting' information from a Slack workspace given an access token
+
+## Skype
+
+* [vedbex.com/tools/email2skype](https://www.vedbex.com/tools/email2skype) — finding a Skype account by email
+
 ## SnapChat
 
 * [https://map.snapchat.com/](https://map.snapchat.com) - Reveal geolocation based on Snapchat metadata
@@ -97,6 +109,18 @@
 * [https://search.buzz.im/](https://search.buzz.im) - A tool that allows you to search Telegram channels, messages and authors for a specific string.
 * [https://lyzem.com](https://lyzem.com) - A search engine for Telegram and Telegraph.
 * [https://telegcrack.com](https://telegcrack.com) - A search engine for Telegra.ph. You can find the all posts with known title. Currently has around 3,554,101 posts indexed.
+* [Telegago](https://cse.google.com/cse?q=+\&cx=006368593537057042503:efxu7xprihg#gsc.tab=0\&gsc.q=%20\&gsc.page=1) — Telegram search engine
+* [Commentgram CSE](https://cse.google.com/cse?cx=006368593537057042503:ig4r3rz35qi#gsc.tab=0) — search by Telegram comments\
+  [Telegram Message Analyzer](https://github.com/zqtay/Telegram-Message-Analyzer) — Export #Telegram chat (with Windows version of Telegram app) and get detailed analyze of it (message count, average message count per day, word frequency etc)
+* [@SangMataInfo\_bot](https://t.me/SangMataInfo\_bot) — forward a message from the user and find out the history of their name in Telegram
+* [@tgscanrobot](https://t.me/tgscanrobot) — telegram bot to show which telegram groups a person is member of.
+* [Telegram Nearby Map](https://github.com/tejado/telegram-nearby-map) — Discover the location of nearby Telegram users on OpenStreetMap
+* [Telescan](https://github.com/pielco11/telescan) — search users in groups (and in which groups is the user) by id, username or phone number (if it's in your contacts)
+* [Tgstat](https://tgstat.com) — one of the largest directories of Telegram channels, which has detailed information about the growth of the audience, its engagement and mentions of a particular channel in various sources.
+* [Telescan](https://github.com/pielco11/telescan) — search users in groups (and in which groups is the user) by id, username or phone number
+* [@VoiceMsgBot](https://t.me/VoiceMsgBot) — telegram bot to which you can send voice messages and it converts them into text
+* [@transcriber\_bot](https://t.me/transcriber\_bot) — telegram bot, which can convert to text voice messages in 24 languages (view pic)
+* [Telegramchannels.me](https://telegramchannels.me/list/biggest?language=en) — Ratings of the 100 largest (by number of subscribers) #Telegram channels for different
 
 ## Tumblr
 
@@ -118,6 +142,13 @@
 * [https://tweetbeaver.com](https://tweetbeaver.com) - A great collection of various tools for preforming Twitter account OSINT. Requires you to be sign into your Twitter account.
 * [https://botsentinel.com](https://botsentinel.com) - A platform developed to classify and track inauthentic accounts, bots and toxic trolls.
 * [twint](https://github.com/twintproject/twint) - An advanced Twitter scraping & OSINT tool written in Python that doesn't use Twitter's API, allowing you to scrape a user's followers, following, Tweets and more while evading most API limitations.
+
+## WhatsApp
+
+* [whatsanalyze.com](https://whatsanalyze.com) — analyzes #WhatsApp group message statistics (world cloud, timeline, message frequency)
+* [chatvisualizer.com](https://chatvisualizer.com) — another #WhatsApp chat analyzer.
+* [Watools.io](https://watools.io/download-profile-picture) — download whatsapp profile picture
+* [WAGSCRAPER](https://github.com/riz4d/WaGpScraper) — Scraps Whatsapp Group Links From Google Results And Gives Working Links (with group names and images)
 
 ## 4chan
 

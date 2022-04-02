@@ -81,7 +81,7 @@
     * [XXE - XML External Entity Attacks](web-app-hacking/attacks-and-vulnerabilities/xxe-xml-external-entity-attacks.md)
     * [XSS Cross-Site Scripting](web-app-hacking/attacks-and-vulnerabilities/owasp-7-xss-cross-site-scripting.md)
 * [Blue - Defensive Operations](blue-defense/README.md)
-  * [Terminology and Mapping](blue-defense/terminology-and-mapping.md)
+  * [Standards, Frameworks, and Benchmarks](blue-defense/terminology-and-mapping.md)
   * [Query Languages](blue-defense/query-languages.md)
   * [Event and Log analysis](blue-defense/event-and-log-analysis.md)
   * [Event Detection](blue-defense/event-detection/README.md)

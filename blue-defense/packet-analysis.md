@@ -206,6 +206,7 @@ PowerShell.exe -ExecutionPolicy bypass .\raw-socket-sniffer.ps1 `
 * [Net-creds](https://github.com/DanMcInerney/net-creds) -  Sniffs sensitive data from interface or pcap
 * [PCredz ](https://github.com/lgandx/PCredz)-  This tool extracts Credit card numbers, NTLM(DCE-RPC, HTTP, SQL, LDAP, etc), Kerberos (AS-REQ Pre-Auth etype 23), HTTP Basic, SNMP, POP, SMTP, FTP, IMAP, etc from a pcap file or from a live interface.
 * [chaosreader](https://www.kali.org/tools/chaosreader/) - Chaosreader traces TCP/UDP/others sessions and fetches application data from snoop or tcpdump logs (or other libpcap compatible programs). This is a type of “any-snarf” program, as it will fetch telnet sessions, FTP files, HTTP transfers (HTML, GIF, JPEG etc) and SMTP emails from the captured data inside network traffic logs.
+* [PacketTotal](https://packettotal.com/app/search) — .pcap files (Packet Capture of network data) search engine and analyze tool. Search by URL, IP, file hash, network indicator, view timeline of dns-queries and http-connections, download files for detailed analyze.
 
 ## **Resources**
 

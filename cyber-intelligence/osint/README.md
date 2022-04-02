@@ -182,6 +182,8 @@ These are misc tools and collections out there. Many overlap, but there are fant
 * [https://thecyberpost.com/open-source-intelligence-osint-tools/](https://thecyberpost.com/open-source-intelligence-osint-tools/)
 * [https://start.me/p/ZGAzN7/verification-toolset](https://start.me/p/ZGAzN7/verification-toolset)
 * [https://map.malfrats.industries/](https://map.malfrats.industries)
+* [https://github.com/cipher387/API-s-for-OSINT](https://github.com/cipher387/API-s-for-OSINT)
+* [https://github.com/cipher387/osint\_stuff\_tool\_collection](https://github.com/cipher387/osint\_stuff\_tool\_collection)
 
 ### VMs
 
@@ -193,6 +195,8 @@ These are misc tools and collections out there. Many overlap, but there are fant
 
 * [https://nitinpandey.in/ihunt/#](https://nitinpandey.in/ihunt/#)  - Detailed OSINT framework with dozens of tools grouped by purpose.
 * [osrframework](https://www.kali.org/tools/osrframework/) - This package contains a set of libraries developed by i3visio to perform Open Source Intelligence tasks. They include references to a bunch of different applications related to username checking, DNS lookups, information leaks research, deep web search, regular expressions extraction and many others.
+* [Scrummage](https://github.com/matamorphosis/Scrummage) — Ultimate OSINT and Threat Hunting Framework
+* [Mr.Holmes](https://github.com/Lucksi/Mr.Holmes) — osint toolkit for gathering information about domains, phone numbers and social media accounts
 
 {% content-ref url="../../red-offensive/offensive-toolbox/recon-frameworks.md" %}
 [recon-frameworks.md](../../red-offensive/offensive-toolbox/recon-frameworks.md)

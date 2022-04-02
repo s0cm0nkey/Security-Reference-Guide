@@ -118,6 +118,10 @@ To help with this basic understanding, there have been many platforms, tools, an
 
 ## Misc Tools
 
+### Automation
+
+* [**NRE Labs**](https://labs.networkreliability.engineering) - learn automation by doing it. Right now, right here, in your browser.
+
 ### **Grok**
 
 * [Grok Debugger](https://grokdebug.herokuapp.com)
