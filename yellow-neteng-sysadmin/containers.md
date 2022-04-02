@@ -103,6 +103,7 @@ Container logging and analysis revolves around 3 areas:
     * [https://hakin9.org/kubebox-terminal-and-web-console-for-kubernetes/](https://hakin9.org/kubebox-terminal-and-web-console-for-kubernetes/)
   * [**kubernetes-the-hard-way**](https://github.com/kelseyhightower/kubernetes-the-hard-way) - bootstrap Kubernetes the hard way on Google Cloud Platform. No scripts.
   * [**kubernetes-the-easy-way**](https://github.com/jamesward/kubernetes-the-easy-way) - bootstrap Kubernetes the easy way on Google Cloud Platform. No scripts.
+  * [Hubble](https://github.com/cilium/hubble) is a Network, Service & Security Observability for Kubernetes using eBPF.
 * Offensive tools
   * [peirates](https://www.kali.org/tools/peirates/)  - a Kubernetes penetration tool, enables an attacker to escalate privilege and pivot through a Kubernetes cluster. It automates known techniques to steal and collect service accounts, obtain further code execution, and gain control of the cluster.
 * Security auditing

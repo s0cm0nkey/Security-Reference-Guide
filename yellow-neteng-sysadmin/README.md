@@ -1,9 +1,5 @@
 # Yellow - NetEng/SysAdmin
 
-## ****
-
-## ****
-
 ## **Networking**
 
 * [https://www.geeksforgeeks.org/computer-network-tutorials/](https://www.geeksforgeeks.org/computer-network-tutorials/) - One of the most detailed and thorough open learning tools for computer science topics on the web. Everything you need to know when learning about networking.
@@ -154,3 +150,8 @@
 {% content-ref url="security-logging/" %}
 [security-logging](security-logging/)
 {% endcontent-ref %}
+
+## Infrastructure monitoring
+
+* [Netdata](https://github.com/netdata/netdata) is high-fidelity infrastructure monitoring and troubleshooting, real-time monitoring Agent collects thousands of metrics from systems, hardware, containers, and applications with zero configuration. It runs permanently on all your physical/virtual servers, containers, cloud deployments, and edge/IoT devices, and is perfectly safe to install on your systems mid-incident without any preparation.
+  * [https://www.netdata.cloud/](https://www.netdata.cloud)
