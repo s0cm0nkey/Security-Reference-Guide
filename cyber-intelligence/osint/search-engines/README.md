@@ -30,10 +30,11 @@ Google is the most powerful and scary information gathering tool today. Beyond s
 * [https://ahrefs.com/blog/google-advanced-search-operators/](https://ahrefs.com/blog/google-advanced-search-operators/)
 * [http://www.googleguide.com/advanced\_operators\_reference.html](http://www.googleguide.com/advanced\_operators\_reference.html)
 
-### Google Dorking CLI Tools
+### Google Dorking Tools
 
-* [Goohak](https://github.com/1N3/Goohak/) - Automatically launch google hacking queries against a target domain to find vulnerabilities and enumerate a target.
-  * [https://www.isec.ne.jp/wp-content/uploads/2017/10/65Goohack.pdf](https://www.isec.ne.jp/wp-content/uploads/2017/10/65Goohack.pdf)
+* [EasyRecon.html](https://s0cm0nkey.github.io/EasyRecon.html) - My Recon tool that takes multiple resources and puts them in an easy to use webpage. Encorporates dorks from:
+  * [Goohak](https://github.com/1N3/Goohak/) - Automatically launch google hacking queries against a target domain to find vulnerabilities and enumerate a target.
+    * [https://www.isec.ne.jp/wp-content/uploads/2017/10/65Goohack.pdf](https://www.isec.ne.jp/wp-content/uploads/2017/10/65Goohack.pdf)
 * [https://dorks.faisalahmed.me/](https://dorks.faisalahmed.me) - Bug Bounty focused dorking helper
 * [pagodo](https://github.com/opsdisk/pagodo) - pagodo (Passive Google Dork) - Automate Google Hacking Database scraping and searching
 * Fast Google Dorks Scan [https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan](https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan)
