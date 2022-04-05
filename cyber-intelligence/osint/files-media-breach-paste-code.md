@@ -112,7 +112,6 @@ Paste sites like Pastebin have recently changed their ability to be parsed. Past
 
 ### Misc Tools and Resources
 
-* [OSINT Stuff's 5 Google Custom Search Engine for search 48 pastebin sites](https://cipher387.github.io/pastebinsearchengines/)
 * [Search WikiLeaks](https://search.wikileaks.org)&#x20;
 * [Cryptome](https://cryptome.org) - Archive of publicly leaked documents. Usually government related.
 * [easy-to-read breach list](https://breachalarm.com/sources) - Easy and helpful tracker for breach data.
