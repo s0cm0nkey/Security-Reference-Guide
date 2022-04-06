@@ -245,6 +245,7 @@ MISP has over 30 default feeds and growing. Below are some of the most popular. 
 * Spamhaus Block Lists - [https://www.spamhaus.org/drop/](https://www.spamhaus.org/drop/)
 * ProjectHoneyPot - [https://www.projecthoneypot.org/list\_of\_ips.php](https://www.projecthoneypot.org/list\_of\_ips.php)
 * Darkfeed - [https://darkfeed.io/](https://darkfeed.io)
+* Anomali  Limo - [https://www.anomali.com/resources/limo](https://www.anomali.com/resources/limo)
 
 ### Premium
 
