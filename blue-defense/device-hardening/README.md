@@ -17,6 +17,7 @@ The best way to understand what device hardening and how to do it, is to follow 
 
 ## Hardening Tools
 
+* [Microsoft Attack Surface Analyzer](https://github.com/Microsoft/AttackSurfaceAnalyzer) - Attack Surface Analyzer is a [Microsoft](https://github.com/microsoft/) developed open source security tool that analyzes the attack surface of a target system and reports on potential security vulnerabilities introduced during the installation of software or system misconfiguration.
 * [OSChameleon](https://github.com/mushorg/oschameleon) - OS Fingerprint Obfuscation for modern Linux Kernels.
   * [https://adhdproject.github.io/#!Tools/Annoyance/OsChameleon.md](https://adhdproject.github.io/#!Tools/Annoyance/OsChameleon.md)
 * [Portspoof](https://github.com/drk1wi/portspoof) - A tool for confusing port scanners by returning false port information.

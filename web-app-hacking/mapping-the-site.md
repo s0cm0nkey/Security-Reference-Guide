@@ -34,22 +34,21 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [Goby](https://github.com/gobysec/Goby) - **Goby** is a new generation network security assessment tool. It can efficiently and practically scan vulnerabilities while sorting out the most complete attack surface information for a target enterprise.
   * [https://gobies.org/](https://gobies.org)
 * [Asnip](https://github.com/harleo/asnip) - Asnip retrieves all IPs of a target organization—used for attack surface mapping in reconnaissance phases.
-* [Microsoft Attack Surface Analyzer](https://github.com/Microsoft/AttackSurfaceAnalyzer) - Attack Surface Analyzer is a [Microsoft](https://github.com/microsoft/) developed open source security tool that analyzes the attack surface of a target system and reports on potential security vulnerabilities introduced during the installation of software or system misconfiguration.
 * [https://securitytrails.com/](https://securitytrails.com) - Powerful tools for third-party risk, attack surface management, and total intel
 * [https://www.whoisxmlapi.com/](https://www.whoisxmlapi.com) - Domain & IP Data Intelligence for Greater Enterprise Security
 * [https://www.riskiq.com/](https://www.riskiq.com) - RiskIQ Digital Footprint gives complete visibility beyond the firewall. Unlike scanners and IP-dependent data vendors, RiskIQ Digital Footprint is the only solution with composite intelligence, code-level discovery and automated threat detection and exposure monitoring—security intelligence mapped to your attack surface.
 * [https://dehashed.com/](https://dehashed.com) - Scan domain for indicators found in breaches
-* [https://fullhunt.io/](https://fullhunt.io) - **FullHunt** is the attack surface database of the entire Internet.
 
-## Spider/Crawler
+## Content Discovery
 
 ...burp...
 
 * [Photon](https://github.com/s0md3v/Photon) - Incredibly fast crawler designed for OSINT.
-* [BlackWidow](https://github.com/1N3/BlackWidow) - A Python based web application scanner to gather OSINT and fuzz for OWASP vulnerabilities on a target website.
 * [URLgrab](https://github.com/IAmStoxe/urlgrab) - A golang utility to spider through a website searching for additional links.
 * [hakrawler](https://github.com/hakluke/hakrawler) - Simple, fast web crawler designed for easy, quick discovery of endpoints and assets within a web application. Also built by the Legendary Hakluke
 * [gospider](https://www.kali.org/tools/gospider/) - This package contains a Fast web spider written in Go.&#x20;
+* [filebuster](https://github.com/henshin/filebuster) - Filebuster is a HTTP fuzzer / content discovery script with loads of features and built to be easy to use and fast! It uses one of the fastest HTTP classes in the world (of PERL) - Furl::HTTP. Also the thread modelling is optimized to run as fast as possible.
+* [feroxbuster](https://www.kali.org/tools/feroxbuster/) - feroxbuster is a tool designed to perform Forced Browsing. Forced browsing is an attack where the aim is to enumerate and access resources that are not referenced by the web application, but are still accessible by an attacker.
 
 ## DNS/Subdomain
 
@@ -97,8 +96,6 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
   * [https://www.hackingarticles.in/comprehensive-guide-on-dirbuster-tool/](https://www.hackingarticles.in/comprehensive-guide-on-dirbuster-tool/)
 * [Dirsearch](https://github.com/maurosoria/dirsearch) - An advanced command-line tool designed to brute force directories and files in webservers, AKA web path scanner
   * [https://www.kali.org/tools/dirsearch/](https://www.kali.org/tools/dirsearch/)
-* [filebuster](https://github.com/henshin/filebuster) - Filebuster is a HTTP fuzzer / content discovery script with loads of features and built to be easy to use and fast! It uses one of the fastest HTTP classes in the world (of PERL) - Furl::HTTP. Also the thread modelling is optimized to run as fast as possible.
-* [feroxbuster](https://www.kali.org/tools/feroxbuster/) - feroxbuster is a tool designed to perform Forced Browsing. Forced browsing is an attack where the aim is to enumerate and access resources that are not referenced by the web application, but are still accessible by an attacker.
 
 ### [Go Buster](https://github.com/OJ/gobuster)&#x20;
 

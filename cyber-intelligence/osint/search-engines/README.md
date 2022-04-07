@@ -38,12 +38,27 @@ Google is the most powerful and scary information gathering tool today. Beyond s
   * [https://dorks.faisalahmed.me/](https://dorks.faisalahmed.me) - Bug Bounty focused dorking helper
   * Fast Google Dorks Scan [https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan](https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan)
 * [pagodo](https://github.com/opsdisk/pagodo) - pagodo (Passive Google Dork) - Automate Google Hacking Database scraping and searching
+
+```
+##Install
+git clone https://github.com/opsdisk/pagodo.git
+cd pagodo
+virtualenv -p python3.7 .venv           #If using a virtual environment.
+source .venv/bin/activate               #If using a virtual environment.
+pip install -r requirements.txt
+
+##Get Latest GHDB
+python ghdb_scraper.py -s -j -i
+
+##Run All Dorks
+python pagodo.py -d example.com -g dorks/all_google_dorks.txt
+```
+
 * 0xDork [https://github.com/rlyonheart/0xdork](https://github.com/rlyonheart/0xdork)
 * SDorker [https://github.com/TheSpeedX/SDorker](https://github.com/TheSpeedX/SDorker)
-* BugBounty Helper [https://dorks.faisalahmed.me](https://dorks.faisalahmed.me)
 * Google Dork Builder Firefox Add-on [https://addons.mozilla.org/ru/firefox/addon/google-dork-builder/](https://addons.mozilla.org/ru/firefox/addon/google-dork-builder/)
-* ASHOK (osint swiss knife) [https://github.com/ankitdobhal/Ashok](https://github.com/ankitdobhal/Ashok)
 * Depreciated
+  * ASHOK (osint swiss knife) [https://github.com/ankitdobhal/Ashok](https://github.com/ankitdobhal/Ashok)
   * [Googd0rker ](https://github.com/ZephrFish/GoogD0rker/)- GoogD0rker is a tool for firing off google dorks against a target domain, it is purely for OSINT against a specific target domain.
 
 ### Google Dorking Lists and Resources

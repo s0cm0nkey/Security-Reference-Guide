@@ -205,7 +205,6 @@ Commands
 
 * [Awesome Lists Collection: Asset Discovery](https://github.com/redhuntlabs/Awesome-Asset-Discovery)
 * [https://redhuntlabs.com/](https://redhuntlabs.com)
-*
 
 ### [Amass](https://github.com/OWASP/Amass)&#x20;
 

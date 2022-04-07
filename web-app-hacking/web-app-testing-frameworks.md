@@ -19,6 +19,7 @@
 * [OWASP Zap](https://owasp.org/www-project-zap/) - Open Source Web Application testing tool made by the OWASP Foundation. Serves a similar function to Burp and even shares many extensions.
   * [https://tryhackme.com/room/learnowaspzap](https://tryhackme.com/room/learnowaspzap)
 * [Jaeles](https://github.com/jaeles-project/jaeles) - Jaeles is a powerful, flexible and easily extensible framework written in Go for building your own Web Application Scanner.
+* [REngine ](https://github.com/yogeshojha/rengine)- reNgine is an automated reconnaissance framework meant for information gathering during penetration testing of web applications. reNgine has customizable scan engines, which can be used to scan the domains, endpoints, or gather information. The beauty of reNgine is that it gathers everything in one place. It has a pipeline of reconnaissance, which is highly customizable.
 * [OpenBullet2](https://github.com/openbullet/OpenBullet2) - OpenBullet 2 is a cross platform automation suite powered by .NET core. It allows to perform requests towards a target webapp and offers a lot of tools to work with the results. This software can be used for scraping and parsing data, automated pentesting and much more.
   * [https://discourse.openbullet.dev/](https://discourse.openbullet.dev)
 * [FinalRecon](https://github.com/thewhiteh4t/finalrecon) - FinalRecon is an automatic web reconnaissance tool written in python. Goal of FinalRecon is to provide an overview of the target in a short amount of time while maintaining the accuracy of results.
@@ -33,3 +34,4 @@
 * [paros](https://www.kali.org/tools/paros/) - Lightweight web application testing proxy
 * [sumrecon](https://github.com/Gr1mmie/sumrecon) - Web recon script. No need to fear, sumrecon is here!
 * [0d1n](https://github.com/CoolerVoid/0d1n) - Tool for automating customized attacks against web applications. Fully made in C language with pthreads, it has fast performance.
+* [BlackWidow](https://github.com/1N3/BlackWidow) - A Python based web application scanner to gather OSINT and fuzz for OWASP vulnerabilities on a target website.

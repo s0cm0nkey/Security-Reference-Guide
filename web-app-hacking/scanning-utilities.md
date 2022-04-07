@@ -32,7 +32,6 @@ These are not only very detailed and helpful tools, but they allow you to gather
 
 ### **CLI Based Utilities**
 
-* [REngine ](https://github.com/yogeshojha/rengine)- reNgine is an automated reconnaissance framework meant for information gathering during penetration testing of web applications. reNgine has customizable scan engines, which can be used to scan the domains, endpoints, or gather information. The beauty of reNgine is that it gathers everything in one place. It has a pipeline of reconnaissance, which is highly customizable.
 * [What Web](https://github.com/urbanadventurer/whatweb) - WhatWeb recognizes web technologies including content management systems (CMS), blogging platforms, statistic/analytics packages, JavaScript libraries, web servers, and embedded devices. WhatWeb has over 1800 plugins, each to recognize something different. WhatWeb also identifies version numbers, email addresses, account IDs, web framework modules, SQL errors, and more.
 * [wafw00f](https://github.com/EnableSecurity/wafw00f) - WAFW00F allows one to identify and fingerprint Web Application Firewall (WAF) products protecting a website.
 * [Blind Elephant](http://blindelephant.sourceforge.net) - The BlindElephant Web Application Fingerprinter attempts to discover the version of a (known) web application by comparing static files at known locations against precomputed hashes for versions of those files in all all available releases. The technique is fast, low-bandwidth, non-invasive, generic, and highly automatable.
@@ -58,8 +57,8 @@ These are not only very detailed and helpful tools, but they allow you to gather
 
     It performs "black-box" scans (it does not study the source code) of the web application by crawling the webpages of the deployed webapp, looking for scripts and forms where it can inject data.
 * [Vega Scanner](https://subgraph.com/vega/) - Vega is a free and open source web security scanner and web security testing platform to test the security of web applications. Vega can help you find and validate SQL Injection, Cross-Site Scripting (XSS), inadvertently disclosed sensitive information, and other vulnerabilities.
-* [Acunetix](scanning-utilities.md#misc-tools) - A complete web application security testing solution that can be used both standalone and as part of complex environments. It offers built-in [vulnerability assessment](https://www.acunetix.com/vulnerability-scanner/vulnerability-assessment-software/) and [vulnerability management](https://www.acunetix.com/vulnerability-scanner/vulnerability-management-software/), as well as many options for integration with market-leading software development tools.
 * [WAVE](https://github.com/adithyan-ak/WAVE) - Web Application Vulnerability Exploiter (WAVE) is basically a vulnerability scanner which scans for Secuirity Vulnerabilities in web applications.
+* [https://snyk.io/website-scanner/](https://snyk.io/website-scanner/) - Get a full website security check for known vulnerabilities and HTTP security headers
 
 ## SSL Scanning
 
