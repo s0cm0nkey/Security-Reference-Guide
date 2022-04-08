@@ -1,4 +1,25 @@
-# Google Dorking Cheatsheet
+# Google Dorking
+
+### Google Dork Collections
+
+* [https://github.com/BullsEye0/google\_dork\_list](https://github.com/BullsEye0/google\_dork\_list)
+* [https://github.com/rootac355/SQL-injection-dorks-list](https://github.com/rootac355/SQL-injection-dorks-list)
+* [https://github.com/unexpectedBy/SQLi-Dork-Repository](https://github.com/unexpectedBy/SQLi-Dork-Repository)
+* [https://github.com/thomasdesr/Google-dorks](https://github.com/thomasdesr/Google-dorks)
+* [https://github.com/arimogi/Google-Dorks](https://github.com/arimogi/Google-Dorks)
+* [https://github.com/aleedhillon/7000-Google-Dork-List](https://github.com/aleedhillon/7000-Google-Dork-List)
+* Bug Bounty Dorks
+  * [https://github.com/sushiwushi/bug-bounty-dorks](https://github.com/sushiwushi/bug-bounty-dorks)
+  * [https://github.com/hackingbharat/bug-bounty-dorks-archive/blob/main/bbdorks](https://github.com/hackingbharat/bug-bounty-dorks-archive/blob/main/bbdorks)
+  * [https://github.com/Vinod-1122/bug-bounty-dorks/blob/main/Dorks.txt](https://github.com/Vinod-1122/bug-bounty-dorks/blob/main/Dorks.txt)
+* Backlinks
+  * [https://github.com/alfazzafashion/Backlink-dorks](https://github.com/alfazzafashion/Backlink-dorks)
+  * [https://www.techywebtech.com/2021/08/backlink-dorks.html](https://www.techywebtech.com/2021/08/backlink-dorks.html)
+  * [https://www.blackhatworld.com/seo/get-backlinks-yourself-1150-dorks-for-forum-hunting.380843/](https://www.blackhatworld.com/seo/get-backlinks-yourself-1150-dorks-for-forum-hunting.380843/)
+  * CMS Dorks
+    * Wordpress [https://pastebin.com/A9dsmgHQ](https://pastebin.com/A9dsmgHQ)
+    * Magento [https://pastebin.com/k75Y2QhF](https://pastebin.com/k75Y2QhF)
+    * Joomla [https://pastebin.com/vVQFTzVC](https://pastebin.com/vVQFTzVC)
 
 ### Google Dorking Cheatsheet
 

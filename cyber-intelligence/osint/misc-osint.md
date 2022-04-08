@@ -62,3 +62,4 @@
 * [https://api.c99.nl/](https://api.c99.nl) - API platform with dozens of web based utilities.
 * [https://www.tracelabs.org/initiatives/osint-vm](https://www.tracelabs.org/initiatives/osint-vm)&#x20;
 * [https://start.me/p/0PeKwy/osint-russie-iec-ies](https://start.me/p/0PeKwy/osint-russie-iec-ies)
+* [https://github.com/j3ssie/metabigor](https://github.com/j3ssie/metabigor) - Metabigor is Intelligence tool, its goal is to do OSINT tasks and more but without any API key.

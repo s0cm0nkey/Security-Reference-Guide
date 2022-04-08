@@ -73,6 +73,7 @@
 * [https://ipleak.net](https://ipleak.net) - See what information you are giving away while browsing the internet. IP addresses, DNS leaks, WebRTC leaks, fingerprints and user-agent.
 * [https://browserleaks.com](https://browserleaks.com) - Here you will find a gallery of security testing tools that will show you what kind of personal data can be leaked, and how to protect yourself from it.
 * [https://shutuptrackers.com/browser/tweaks.php](https://shutuptrackers.com/browser/tweaks.php) - Firefox Privacy Settings
+* [What every Browser knows about you](https://webkay.robinlinus.com) — This site not only shows what information your browser provides to third-party sites, but also explains how it can be dangerous and suggests what extensions will help to ensure your anonymity.
 
 ## Personal Network Security
 

@@ -64,9 +64,12 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 
 ### Resources and Reference
 
-* Methodology
-  * [https://github.com/Cyber-Guy1/theCyberGuy\_Recon\_V1.0](https://github.com/Cyber-Guy1/theCyberGuy\_Recon\_V1.0) - Great Methodology MindMap
-  * [https://labs.detectify.com/2021/11/30/hakluke-creating-the-perfect-bug-bounty-automation/](https://labs.detectify.com/2021/11/30/hakluke-creating-the-perfect-bug-bounty-automation/)
+*   Methodology
+
+    * [https://github.com/Cyber-Guy1/theCyberGuy\_Recon\_V1.0](https://github.com/Cyber-Guy1/theCyberGuy\_Recon\_V1.0) - Great Methodology MindMap
+    * [https://labs.detectify.com/2021/11/30/hakluke-creating-the-perfect-bug-bounty-automation/](https://labs.detectify.com/2021/11/30/hakluke-creating-the-perfect-bug-bounty-automation/)
+
+
 * Resource collections
   * [awesome-bug-bounty](https://github.com/djadmin/awesome-bug-bounty) - is a comprehensive curated list of available Bug Bounty.
 * [Firebounty](https://firebounty.com) — Bug bounty search engine
@@ -80,6 +83,8 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
   * ****[**bounty-targets-data**](https://github.com/arkadiyt/bounty-targets-data) **-** This repo contains hourly-updated data dumps of bug bounty platform scopes (like Hackerone/Bugcrowd/Intigriti/etc) that are eligible for reports
   * [bug-bounty-reference](https://github.com/ngalongc/bug-bounty-reference) - is a list of bug bounty write-ups.
   * [Bug bounty writeups](https://pentester.land/list-of-bug-bounty-writeups.html) - list of bug bounty writeups (2012-2020).
+
+![](<../.gitbook/assets/image (25).png>)
 
 ## Web App Testing Frameworks
 
