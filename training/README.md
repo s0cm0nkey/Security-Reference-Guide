@@ -9,6 +9,7 @@
 * [Cisco Netwoking Academy: Cyber Security Essentials](https://www.netacad.com/portal/web/self-enroll/c/course-1003733) - Foundational knowledge and essential skills for all cybersecurity domains, including info security, systems sec, network sec, ethics and laws, and defense and mitigation techniques used in protecting businesses.
 * [https://www.hoppersroppers.org/training.html](https://www.hoppersroppers.org/training.html) - The training portion of the site is designed to teach core competencies and more importantly, provide a wide base of knowledge on how to find and use the resources available.
 * [MICS - Introduction to Cyber Security](https://www.mosse-institute.com/certifications/mics-introduction-to-cyber-security.html) - MICS teaches entry-level cyber security skills in domains such as open-source intelligence, security tools, operational security, network reconnaissance and threat hunting. Students who have successfully achieved their MICS Certification from MCSI can apply for winter/summer internships worldwide with the confidence that they have the competencies the industry is seeking.
+* [Cybersecurity 101: The Fundamentals of Cybersecurity by Crowdstrike.](https://www.crowdstrike.com/cybersecurity-101/)
 * [https://www.edx.org/course/cs50s-introduction-to-computer-science](https://www.edx.org/course/cs50s-introduction-to-computer-science)
 * [https://missing.csail.mit.edu/](https://missing.csail.mit.edu) - The missing CS semester
 
