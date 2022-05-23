@@ -48,6 +48,7 @@ Yara Rule Testing Tools
   * [https://www.nextron-systems.com/2015/02/16/write-simple-sound-yara-rules/](https://www.nextron-systems.com/2015/02/16/write-simple-sound-yara-rules/)
   * [https://www.nextron-systems.com/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/](https://www.nextron-systems.com/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/)
   * [https://www.nextron-systems.com/2016/04/15/how-to-write-simple-but-sound-yara-rules-part-3/](https://www.nextron-systems.com/2016/04/15/how-to-write-simple-but-sound-yara-rules-part-3/)
+  * [https://www.intezer.com/blog/threat-hunting/yara-rules-minimize-false-positives/](https://www.intezer.com/blog/threat-hunting/yara-rules-minimize-false-positives/)
 * Yara Training
 * [https://tryhackme.com/room/yara](https://tryhackme.com/room/yara)
 * _Operator Handbook: YARA - pg. 428_

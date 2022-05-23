@@ -2,7 +2,7 @@
 
 ## **Intro**
 
-Event detection is the bread and butter of the security analyst. Whether you are a blue teamer building automated alerting or a threat hunter looking deeper at the data, it is essential to understand what you are looking for, how to look for it, and what tools can make it easier to find it. One of the best new resources for starting your detection strategy is [https://d3fend.mitre.org/](https://d3fend.mitre.org). This is a fantastic resource that allows you to create a per task approach to creating detection use cases.
+Event detection is the bread and butter of the security analyst. Whether you are a blue teamer building automated alerting or a threat hunter looking deeper at the data, it is essential to understand what you are looking for, how to look for it, and what tools can make it easier to find it. One of the best new resources for starting your detection strategy is [https://d3fend.mitre.org/](https://d3fend.mitre.org/). This is a fantastic resource that allows you to create a per task approach to creating detection use cases.
 
 For proper event detection, we usually need 3 elements: A device/application that can generate a log relevant to what we are looking for, the log itself, and a collection tool. The device/application that generates the log does not have to be a security device in order to give us security relevant logs. One thing you will find however, is that security relevant devices send us significantly less volume of data, as they are only sending alerts and the information surrounding a detection. When we are looking at logs from non-security related devices, we must develop our own detection logic to pull out what events we deem suspicious from those logs.
 
@@ -42,7 +42,7 @@ For Netflow logs and Packet Capture, please see the following:
   * [https://github.com/JustinAzoff/bro-pdns](https://github.com/JustinAzoff/bro-pdns)
   * _PTFM: Zeek Commands - pg. 168_
   * _Bro - Applied Network Security Monitoring - pg.255fc_
-* [Corelight](https://corelight.com) - The premium, Enterprise grade, Zeek Alternative.
+* [Corelight](https://corelight.com/) - The premium, Enterprise grade, Zeek Alternative.
 * [arpwatch](https://www.kali.org/tools/arpwatch/) - Arpwatch maintains a database of Ethernet MAC addresses seen on the network, with their associated IP pairs. Alerts the system administrator via e-mail if any change happens, such as new station/activity, flip-flops, changed and re-used old addresses.
 * [maltrail](https://github.com/stamparm/maltrail) - **Maltrail** is a malicious traffic detection system, utilizing publicly available (black)lists containing malicious and/or generally suspicious trails, along with static trails compiled from various AV reports and custom user defined lists, where trail can be anything from domain name (e.g. `zvpprsensinaix.com` for [Banjori](http://www.johannesbader.ch/2015/02/the-dga-of-banjori/) malware), URL (e.g. `hXXp://109.162.38.120/harsh02.exe` for known malicious [executable](https://www.virustotal.com/en/file/61f56f71b0b04b36d3ef0c14bbbc0df431290d93592d5dd6e3fffcc583ec1e12/analysis/)), IP address (e.g. `185.130.5.231` for known attacker) or HTTP User-Agent header value (e.g. `sqlmap` for automatic SQL injection and database takeover tool). Also, it uses (optional) advanced heuristic mechanisms that can help in discovery of unknown threats (e.g. new malware).
 
@@ -58,7 +58,7 @@ For Netflow logs and Packet Capture, please see the following:
   * [https://www.nextron-systems.com/2021/11/13/aurora-sigma-based-edr-agent-preview/](https://www.nextron-systems.com/2021/11/13/aurora-sigma-based-edr-agent-preview/)
 * [whids](https://github.com/0xrawsec/whids) - Open Source EDR for Windows
 
-### [OSQuery ](https://osquery.io)
+### [OSQuery ](https://osquery.io/)
 
 * One of the most advanced endpoint visibility tools on the market. Can be used for File Integrity monitoring, change management, even security endpoint detection.
   * [Awesome Lists Collection: OSQuery Resources](https://github.com/sttor/awesome-osquery)
@@ -85,8 +85,8 @@ For Netflow logs and Packet Capture, please see the following:
 ## Fingerprinting
 
 * Fingerprint Databases&#x20;
-  * [SSL Fingerprint JA3](https://ja3er.com)&#x20;
-  * [TLSfingerprint.io](https://tlsfingerprint.io)&#x20;
+  * [SSL Fingerprint JA3](https://ja3er.com/)&#x20;
+  * [TLSfingerprint.io](https://tlsfingerprint.io/)&#x20;
   * [https://sslbl.abuse.ch/ja3-fingerprints/](https://sslbl.abuse.ch/ja3-fingerprints/)
   * [https://github.com/trisulnsm/ja3prints](https://github.com/trisulnsm/ja3prints)
 * [JA3](https://github.com/salesforce/ja3) - A method for creating SSL/TLS client fingerprints that should be easy to produce on any platform and can be easily shared for threat intelligence.
@@ -131,13 +131,13 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [Odin](https://github.com/chrismaddalena/ODIN) - ODIN is Python tool for automating intelligence gathering, asset discovery, and reporting.
 * [AttackSurfaceMapper](https://github.com/superhedgy/AttackSurfaceMapper) - AttackSurfaceMapper (ASM) is a reconnaissance tool that uses a mixture of open source intelligence and active techniques to expand the attack surface of your target. You feed in a mixture of one or more domains, subdomains and IP addresses and it uses numerous techniques to find more targets.
 * [Goby](https://github.com/gobysec/Goby) - **Goby** is a new generation network security assessment tool. It can efficiently and practically scan vulnerabilities while sorting out the most complete attack surface information for a target enterprise.
-  * [https://gobies.org/](https://gobies.org)
+  * [https://gobies.org/](https://gobies.org/)
 * [Asnip](https://github.com/harleo/asnip) - Asnip retrieves all IPs of a target organization—used for attack surface mapping in reconnaissance phases.
 * [Microsoft Attack Surface Analyzer](https://github.com/Microsoft/AttackSurfaceAnalyzer) - Attack Surface Analyzer is a [Microsoft](https://github.com/microsoft/) developed open source security tool that analyzes the attack surface of a target system and reports on potential security vulnerabilities introduced during the installation of software or system misconfiguration.
-* [https://securitytrails.com/](https://securitytrails.com) - Powerful tools for third-party risk, attack surface management, and total intel
-* [https://www.whoisxmlapi.com/](https://www.whoisxmlapi.com) - Domain & IP Data Intelligence for Greater Enterprise Security
-* [https://www.riskiq.com/](https://www.riskiq.com) - RiskIQ Digital Footprint gives complete visibility beyond the firewall. Unlike scanners and IP-dependent data vendors, RiskIQ Digital Footprint is the only solution with composite intelligence, code-level discovery and automated threat detection and exposure monitoring—security intelligence mapped to your attack surface.
-* [https://dehashed.com/](https://dehashed.com) - Scan domain for indicators found in breaches
+* [https://securitytrails.com/](https://securitytrails.com/) - Powerful tools for third-party risk, attack surface management, and total intel
+* [https://www.whoisxmlapi.com/](https://www.whoisxmlapi.com/) - Domain & IP Data Intelligence for Greater Enterprise Security
+* [https://www.riskiq.com/](https://www.riskiq.com/) - RiskIQ Digital Footprint gives complete visibility beyond the firewall. Unlike scanners and IP-dependent data vendors, RiskIQ Digital Footprint is the only solution with composite intelligence, code-level discovery and automated threat detection and exposure monitoring—security intelligence mapped to your attack surface.
+* [https://dehashed.com/](https://dehashed.com/) - Scan domain for indicators found in breaches
 
 ### Network Diffing&#x20;
 
@@ -148,7 +148,7 @@ A simple but effective monitoring method, where regular port scans are run and t
 ## User Behavior Analytics
 
 * [OpenUBA](https://github.com/GACWR/OpenUBA) - A robust, and flexible open source User & Entity Behavior Analytics (UEBA) framework used for Security Analytics. Developed with luv by Data Scientists & Security Analysts from the Cyber Security Industry.
-  * [https://openuba.org/](https://openuba.org)
+  * [https://openuba.org/](https://openuba.org/)
 
 ## File Integrity Monitoring
 
@@ -165,7 +165,7 @@ The actions needed to setup persistence typically require the attacker to intera
 * [Flare](https://github.com/austin-taylor/flare) - Not to be confused with the malware reverse engineering VM, This Flare is a network analysis tool by Austin Taylor that can take logs from Elastic stack and Surricate and perform various types of nework analysis and detection, including beaconing detection.
 * [Revoke-Obfuscation](https://github.com/danielbohannon/Revoke-Obfuscation) - Powershell obfuscation detection tool
 * [dnstwist](https://github.com/elceef/dnstwist) - Tool for creation of potential typo-squatting domains by use of multi-character permutation and checking for registration of those domains.
-  * [https://dnstwister.report/](https://dnstwister.report) - Online Version and DNS monitoring service
+  * [https://dnstwister.report/](https://dnstwister.report/) - Online Version and DNS monitoring service
 
 ## **Detection Use Cases**
 

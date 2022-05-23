@@ -79,14 +79,20 @@ Custom Powershell Log Creation: When you have a program that only outputs logs t
 
 To achieve the greatest utility and flexibility, it is preferred to use a log agent over agentless collection. Windows also has a great log agent built into the platform with the Windows Event Collector.&#x20;
 
-* Windows Event Forwarding - The built-in log forwarding and collecting service within windows
+* **Windows Event Forwarding** - The built-in log forwarding and collecting service within windows
   * Requires a Windows Event Collector  logging agent to be configured and running
   * The Collector will then pull events from the endpoint, or the endpoint will push them to the Collector.
   * GPO can be users to tell the endpoints which events to push.
   * This is intended to be sent from one windows host to a windows collector, NOT directly into a SIEM.
   * Does not support the forwarding of ETL files
   * Can manage event subscriptions via an intuitive GUI, or by a custom XML file.
-* Blind Drop - When certain applications or devices cannot output files, or your organization refuses to install an agent on a device, you can output available logs to a file and then share the log files with a file server then into your SIEM for processing.
+  * [https://hackernoon.com/the-windows-event-forwarding-survival-guide-2010db7a68c4](https://hackernoon.com/the-windows-event-forwarding-survival-guide-2010db7a68c4)
+  * [https://docs.microsoft.com/en-us/windows/security/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection](https://docs.microsoft.com/en-us/windows/security/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection)
+  * [https://docs.microsoft.com/en-us/archive/blogs/jepayne/monitoring-what-matters-windows-event-forwarding-for-everyone-even-if-you-already-have-a-siem](https://docs.microsoft.com/en-us/archive/blogs/jepayne/monitoring-what-matters-windows-event-forwarding-for-everyone-even-if-you-already-have-a-siem)
+  * [https://petri.com/configure-event-log-forwarding-windows-server-2012-r2/](https://petri.com/configure-event-log-forwarding-windows-server-2012-r2/)
+  * [https://blog.palantir.com/windows-event-forwarding-for-network-defense-cb208d5ff86f?gi=79f1178de0ae](https://blog.palantir.com/windows-event-forwarding-for-network-defense-cb208d5ff86f?gi=79f1178de0ae)
+  * [https://github.com/palantir/windows-event-forwarding](https://github.com/palantir/windows-event-forwarding)
+* **Blind Drop** - When certain applications or devices cannot output files, or your organization refuses to install an agent on a device, you can output available logs to a file and then share the log files with a file server then into your SIEM for processing.
   * Requires a single file server and a third party agent or powershell script
   * File server is set up to allow log files to be uploaded but never modified or viewed.
 
@@ -123,7 +129,7 @@ Syslog - The original method of logging for Linux.&#x20;
 * Easier to use config file
 * Can send logs to multiple locations simultaneously
 
-[Rsyslog](https://www.rsyslog.com) - Rocket-fast Syslog
+[Rsyslog](https://www.rsyslog.com/) - Rocket-fast Syslog
 
 * As the name implies, can handle a massing 1million+ messages per second to local logging.
 * Similar in increase in function to Syslog-NG

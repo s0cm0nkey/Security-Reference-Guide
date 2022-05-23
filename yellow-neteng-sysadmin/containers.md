@@ -10,7 +10,7 @@
 ### **Web Tools**
 
 * &#x20;[**Moby**](https://github.com/moby/moby) - a collaborative project for the container ecosystem to assemble container-based system.
-* [**Traefik**](https://traefik.io) - open source reverse proxy/load balancer provides easier integration with Docker and Let's encrypt.
+* [**Traefik**](https://traefik.io/) - open source reverse proxy/load balancer provides easier integration with Docker and Let's encrypt.
 * [**kong**](https://github.com/Kong/kong) - The Cloud-Native API Gateway.
 * [**rancher**](https://github.com/rancher/rancher) - complete container management platform.
 
@@ -63,13 +63,13 @@ Container logging and analysis revolves around 3 areas:
 
 ## Docker
 
-[Docker](https://www.docker.com) - A Docker container is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
+[Docker](https://www.docker.com/) - A Docker container is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 
 * Basic and Reference
   * [https://www.docker.com/101-tutorial](https://www.docker.com/101-tutorial)
   * [https://hub.docker.com/r/docker/getting-started](https://hub.docker.com/r/docker/getting-started)
-  * [https://docker-handbook.farhan.dev/](https://docker-handbook.farhan.dev)
-  * [https://devopswithdocker.com/](https://devopswithdocker.com)
+  * [https://docker-handbook.farhan.dev/](https://docker-handbook.farhan.dev/)
+  * [https://devopswithdocker.com/](https://devopswithdocker.com/)
   * [Docker Jumpstart](http://odewahn.github.io/docker-jumpstart/) - Andrew Odewahn
 * _Operator Handbook: Docker Commands - pg. 61_
 * Offensive Testing
@@ -90,7 +90,7 @@ Container logging and analysis revolves around 3 areas:
 
 {% embed url="https://youtu.be/KINjI1tlo2w" %}
 
-## [Kubernetes](https://kubernetes.io)
+## [Kubernetes](https://kubernetes.io/)
 
 ### Tools
 
@@ -128,3 +128,4 @@ Container logging and analysis revolves around 3 areas:
   * _Operator Handbook: Kubernetes Exploit - pg. 108_
 * Training
   * [kubernetes-simulator](https://github.com/kubernetes-simulator/simulator) - Kubernetes Security Training Platform - Focusing on security mitigation
+  * [https://madhuakula.com/kubernetes-goat/](https://madhuakula.com/kubernetes-goat/) - Interactive Kubernetes Security Learning Playground

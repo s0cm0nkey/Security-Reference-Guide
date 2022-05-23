@@ -75,6 +75,7 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [shuffledns](https://github.com/projectdiscovery/shuffledns) - MassDNS wrapper written in go that allows you to enumerate valid subdomains using active bruteforce as well as resolve subdomains with wildcard handling and easy input-output support.
 * [SubDomainizer](https://github.com/nsonaniya2010/SubDomainizer) - A tool to find subdomains and interesting things hidden inside, external Javascript files of page, folder, and Github.
 * [shosubgo](https://github.com/incogbyte/shosubgo) - Small tool to Grab subdomains using Shodan api.
+* [zdns](https://github.com/zmap/zdns) - Fast CLI DNS Lookup Tool
 
 ### **Subdomain Takeover**
 

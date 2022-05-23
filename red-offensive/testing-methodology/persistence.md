@@ -53,6 +53,7 @@ The goal of BDF is to patch executable binaries with user desired shellcode and 
 * [chromebackdoor](https://github.com/graniet/chromebackdoor) - Chromebackdoor is a PoC of pentest tool, this tool use a MITB technique for generate a windows executable ".exe" after launch run a malicious extension or script on most popular browsers, and send all DOM data on command and control.
 * [cymothoa](https://www.kali.org/tools/cymothoa/) - Cymothoa is a stealth backdooring tool, that inject backdoor’s shellcode into an existing process. The tool uses the ptrace library (available on nearly all \* nix), to manipulate processes and infect them.
 * [casper-fs](https://github.com/CoolerVoid/casper-fs) - Casper-fs is a custom Linux Kernel Module generator to work with resources to protect or hide a custom list of files. Each LKM has resources to protect or hide files following a custom list in the YAML rule file. Yes, not even the root has permission to see the files or make actions like edit and remove. The files only can be caught, edited, and deleted if the user sends a proper key to the custom device to liberate the action in the file system.
+* [OSRipper](https://github.com/SubGlitch1/OSRipper) - AV evading OSX Backdoor and Crypter Framework
 
 ## **Linux**&#x20;
 

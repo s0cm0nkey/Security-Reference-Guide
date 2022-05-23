@@ -15,9 +15,10 @@
 * [ActiveReign](https://github.com/m8r0wn/ActiveReign) - ActiveReign, code name AR3, is a network enumeration and attack toolset designed for use on Windows Active Directory environments.
 * [Sonar.js](https://github.com/mandatoryprogrammer/sonar.js) - A framework for identifying and launching exploits against internal network hosts. Works via WebRTC IP enumeration combined with WebSockets and external resource fingerprinting.&#x20;
 * [SprayWMI](https://github.com/trustedsec/spraywmi) - SprayWMI is a method for mass spraying [Unicorn](https://github.com/trustedsec/unicorn) PowerShell injection to CIDR notations.
-* [LOLBAS](https://lolbas-project.github.io) - Living Off The Land Binaries and Scripts (and also Libraries)
+* [LOLBAS](https://lolbas-project.github.io/) - Living Off The Land Binaries and Scripts (and also Libraries)
 * [Rubeus](https://github.com/GhostPack/Rubeus) - Rubeus is a C# toolset for raw Kerberos interaction and abuses.
   * [Rubeus-GUI](https://github.com/VbScrub/Rubeus-GUI) - GUI alternative to the Rubeus command line tool, for all your Kerberos exploit requirements
+* [MalSCCM](https://github.com/nettitude/MalSCCM) - This tool allows you to abuse local or remote SCCM servers to deploy malicious applications to hosts they manage.
 
 ## Techniques
 
