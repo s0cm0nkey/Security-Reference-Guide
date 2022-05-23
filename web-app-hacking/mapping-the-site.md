@@ -32,12 +32,12 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [Odin](https://github.com/chrismaddalena/ODIN) - ODIN is Python tool for automating intelligence gathering, asset discovery, and reporting.
 * [AttackSurfaceMapper](https://github.com/superhedgy/AttackSurfaceMapper) - AttackSurfaceMapper (ASM) is a reconnaissance tool that uses a mixture of open source intelligence and active techniques to expand the attack surface of your target. You feed in a mixture of one or more domains, subdomains and IP addresses and it uses numerous techniques to find more targets.
 * [Goby](https://github.com/gobysec/Goby) - **Goby** is a new generation network security assessment tool. It can efficiently and practically scan vulnerabilities while sorting out the most complete attack surface information for a target enterprise.
-  * [https://gobies.org/](https://gobies.org)
+  * [https://gobies.org/](https://gobies.org/)
 * [Asnip](https://github.com/harleo/asnip) - Asnip retrieves all IPs of a target organization—used for attack surface mapping in reconnaissance phases.
-* [https://securitytrails.com/](https://securitytrails.com) - Powerful tools for third-party risk, attack surface management, and total intel
-* [https://www.whoisxmlapi.com/](https://www.whoisxmlapi.com) - Domain & IP Data Intelligence for Greater Enterprise Security
-* [https://www.riskiq.com/](https://www.riskiq.com) - RiskIQ Digital Footprint gives complete visibility beyond the firewall. Unlike scanners and IP-dependent data vendors, RiskIQ Digital Footprint is the only solution with composite intelligence, code-level discovery and automated threat detection and exposure monitoring—security intelligence mapped to your attack surface.
-* [https://dehashed.com/](https://dehashed.com) - Scan domain for indicators found in breaches
+* [https://securitytrails.com/](https://securitytrails.com/) - Powerful tools for third-party risk, attack surface management, and total intel
+* [https://www.whoisxmlapi.com/](https://www.whoisxmlapi.com/) - Domain & IP Data Intelligence for Greater Enterprise Security
+* [https://www.riskiq.com/](https://www.riskiq.com/) - RiskIQ Digital Footprint gives complete visibility beyond the firewall. Unlike scanners and IP-dependent data vendors, RiskIQ Digital Footprint is the only solution with composite intelligence, code-level discovery and automated threat detection and exposure monitoring—security intelligence mapped to your attack surface.
+* [https://dehashed.com/](https://dehashed.com/) - Scan domain for indicators found in breaches
 
 ## Content Discovery
 
@@ -72,6 +72,9 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [cansina](https://github.com/deibit/cansina) - a Web Content Discovery Application. Help you making requests and filtering and inspecting the responses to tell apart if it is an existing resource or just an annoying or disguised 404.
 * [subbrute](https://github.com/TheRook/subbrute) - A DNS meta-query spider that enumerates DNS records, and subdomains.
 * [dnsx](https://github.com/projectdiscovery/dnsx) - dnsx is a fast and multi-purpose DNS toolkit allow to run multiple DNS queries of your choice with a list of user-supplied resolvers.
+* [shuffledns](https://github.com/projectdiscovery/shuffledns) - MassDNS wrapper written in go that allows you to enumerate valid subdomains using active bruteforce as well as resolve subdomains with wildcard handling and easy input-output support.
+* [SubDomainizer](https://github.com/nsonaniya2010/SubDomainizer) - A tool to find subdomains and interesting things hidden inside, external Javascript files of page, folder, and Github.
+* [shosubgo](https://github.com/incogbyte/shosubgo) - Small tool to Grab subdomains using Shodan api.
 
 ### **Subdomain Takeover**
 

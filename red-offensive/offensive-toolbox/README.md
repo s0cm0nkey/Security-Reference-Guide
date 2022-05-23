@@ -2,10 +2,10 @@
 
 ## Offensive OS
 
-* [Kali Linux](https://www.kali.org) - The one, the only. Kali Linux is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering.
+* [Kali Linux](https://www.kali.org/) - The one, the only. Kali Linux is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering.
   * [pimpmykali](https://github.com/Dewalt-arch/pimpmykali) - Fixes for new imported Kali Linux virtual machines
   * _Penetration Testing: Using Kali Linux - pg. 55_
-* [ParrotOS](https://parrotsec.org) - Parrot OS, the flagship product of Parrot Security is a GNU/Linux distribution based on Debian and designed with Security and Privacy in mind. It includes a full portable laboratory for all kinds of cyber security operations, from pentesting to digital forensics and reverse engineering, but it also includes everything needed to develop your own software or keep your data secure.
+* [ParrotOS](https://parrotsec.org/) - Parrot OS, the flagship product of Parrot Security is a GNU/Linux distribution based on Debian and designed with Security and Privacy in mind. It includes a full portable laboratory for all kinds of cyber security operations, from pentesting to digital forensics and reverse engineering, but it also includes everything needed to develop your own software or keep your data secure.
 * [Commando-VM](https://github.com/fireeye/commando-vm) - Complete Mandiant Offensive VM (Commando VM), a fully customizable Windows-based pentesting virtual machine distribution.
 * [ThreatBox](https://github.com/threatexpress/threatbox) - A handy offensive linux distro that uses a set of Ansible playbooks for automation and deployment.
 * ****[Exegol](https://github.com/ShutdownRepo/Exegol) - Exegol is a fully configured docker with many useful additional tools, resources (scripts and binaries for privesc, credential theft etc.) and some configuration (oh-my-zsh, history, aliases, colorized output for some tools). It can be used in pentest engagements, bugbounty, CTF, HackTheBox, OSCP lab & exam and so on.
@@ -43,7 +43,7 @@
 * [A Complete Penetration Testing & Hacking Tools List for Hackers & Security Professionals : ](https://www.reddit.com/r/HowToHack/comments/ewm1ax/a\_complete\_penetration\_testing\_hacking\_tools\_list/)
 * [HowToHack](https://www.reddit.com/r/HowToHack/comments/ewm1ax/a\_complete\_penetration\_testing\_hacking\_tools\_list/) - Reddit's Penetration tools list
 * [Rawsec's CyberSecurity Inventory](https://inventory.rawsec.ml/tools.html)&#x20;
-* [ToolsWatch.org – The Hackers Arsenal Tools Portal](http://www.toolswatch.org)
+* [ToolsWatch.org – The Hackers Arsenal Tools Portal](http://www.toolswatch.org/)
 * [The Penetration Testers Framework](https://github.com/trustedsec/ptf) - Installation script for a huge collection of security tools to be installed on any linux distro
 * [The only Penetration testing resources you need - kalitut](https://kalitut.com/penetration-testing-resources/)
 * [https://0xsp.com/offensive/red-teaming-toolkit-collection](https://0xsp.com/offensive/red-teaming-toolkit-collection)
@@ -52,7 +52,7 @@
 * [https://github.com/Flangvik/SharpCollection](https://github.com/Flangvik/SharpCollection) - Nightly builds of common C# offensive tools, fresh from their respective master branches built and released in a CDI fashion using Azure DevOps release pipelines.
 * [RedTeam\_toolkit](https://github.com/signorrayan/RedTeam\_toolkit) - an Open-Source Django Offensive Web-App containing useful offensive tools used in the red-teamming together for the security specialist to identify vulnerabilities.
   * [https://reconshell.com/redteam-toolkit/](https://reconshell.com/redteam-toolkit/)
-* [https://houdini.secsi.io/](https://houdini.secsi.io) - **HOUDINI** (Hundreds of Offensive and Useful Docker Images for Network Intrusion) is a curated list of **Network Security** related Docker Images for Network Intrusion purposes.
+* [https://houdini.secsi.io/](https://houdini.secsi.io/) - **HOUDINI** (Hundreds of Offensive and Useful Docker Images for Network Intrusion) is a curated list of **Network Security** related Docker Images for Network Intrusion purposes.
 
 ### Impacket
 
@@ -78,10 +78,10 @@
 
 ## **Automation**
 
-* [https://www.ansible.com/](https://www.ansible.com) - An enterprise automation platform for the entire IT organization
+* [https://www.ansible.com/](https://www.ansible.com/) - An enterprise automation platform for the entire IT organization
   * _Operator Handbook: Ansible Commands - pg. 16_
 * [threatbox](https://github.com/threatexpress/threatbox) - Offensive distribution loaded with Ansible scripts for offensive automation.Utility techniques are ones you might not use every engagement, but are still super important to have. Sometimes these supplementary techniques will be the only way you can exploit your target.
-* [https://offensive-terraform.github.io](https://offensive-terraform.github.io) - Automated multi step offensive attack modules with Infrastructure as Code(IaC)
+* [https://offensive-terraform.github.io](https://offensive-terraform.github.io/) - Automated multi step offensive attack modules with Infrastructure as Code(IaC)
   * [https://www.ired.team/offensive-security/red-team-infrastructure/automating-red-team-infrastructure-with-terraform](https://www.ired.team/offensive-security/red-team-infrastructure/automating-red-team-infrastructure-with-terraform)
 * [expect](https://www.kali.org/tools/expect/) - Expect is a tool for automating interactive applications according to a script. Following the script, Expect knows what can be expected from a program and what the correct response should be.
 
@@ -117,9 +117,11 @@
   * Encrypting/Decrypting text or files
   * Reverse shell handling
   * Cracking and generating hashes
+* [Interlace](https://github.com/codingo/Interlace) - Easily turn single threaded command line applications into a fast, multi-threaded application with CIDR and glob support.
+  * [https://hakluke.medium.com/interlace-a-productivity-tool-for-pentesters-and-bug-hunters-automate-and-multithread-your-d18c81371d3d](https://hakluke.medium.com/interlace-a-productivity-tool-for-pentesters-and-bug-hunters-automate-and-multithread-your-d18c81371d3d)
 * [pyWhat](https://github.com/bee-san/pyWhat) - Command line to to identify...well anything.
 * [arsenal](https://github.com/Orange-Cyberdefense/arsenal) - Arsenal is just a quick inventory and launcher for hacking programs. Great for filling in the blank.
-* [WadComs - ](https://wadcoms.github.io/#)WADComs is an interactive cheat sheet, containing a curated list of offensive security tools and their respective commands, to be used against Windows/AD environments.
+* [WadComs - ](https://wadcoms.github.io)WADComs is an interactive cheat sheet, containing a curated list of offensive security tools and their respective commands, to be used against Windows/AD environments.
 * [scapy](https://github.com/secdev/scapy) - Scapy is a powerful Python-based interactive packet manipulation program and library.
 * [fragrouter](https://www.kali.org/tools/fragrouter/) - Fragrouter is a network intrusion detection evasion toolkit.
 * [python-faraday](https://www.kali.org/tools/python-faraday/) - Faraday introduces a new concept (IPE) Integrated Penetration-Test Environment a multiuser Penetration test IDE.

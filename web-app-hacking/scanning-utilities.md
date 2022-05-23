@@ -21,22 +21,22 @@ The content on your target pages can provide a wealth of information as well as 
 
 These are not only very detailed and helpful tools, but they allow you to gather tons of intel on your target in a passive recon phase, as to not interaction with the target or its infrastructure at all.
 
-* [Mozilla Observatory](https://observatory.mozilla.org) - Fantastic resource that will scan for HTTP, SSL, and TLS settings and return with an overall grade based on a scored checklist. Can be run to include a few other popular third party scanning utilities for even easier recon.
+* [Mozilla Observatory](https://observatory.mozilla.org/) - Fantastic resource that will scan for HTTP, SSL, and TLS settings and return with an overall grade based on a scored checklist. Can be run to include a few other popular third party scanning utilities for even easier recon.
   * [Qualys SSLlabs test ](https://www.ssllabs.com/ssltest/)- Scan and score SLL/TLS settings
-  * [Security Headers](https://securityheaders.com) - Analyze the data found in HTTP responses to a domain
+  * [Security Headers](https://securityheaders.com/) - Analyze the data found in HTTP responses to a domain
   * Immuniweb tools [SSL](https://www.immuniweb.com/ssl/) and [WebSec](https://www.immuniweb.com/websec/) test
-* [Netcraft](https://www.netcraft.com) - Offers a slew of tools including a handy browser extension for on demand scanning of websites for reputation and technical data.
-* [Wappalyzer](https://www.wappalyzer.com) - Scanning tool that can determine the web technologies that are used on the target web page.
-* [Builtwith](https://builtwith.com) - Similar as above.&#x20;
-* [Visual Site Mapper ](http://visualsitemapper.com)- Handy tool for conceptualizing a target website in a different way.
+* [Netcraft](https://www.netcraft.com/) - Offers a slew of tools including a handy browser extension for on demand scanning of websites for reputation and technical data.
+* [Wappalyzer](https://www.wappalyzer.com/) - Scanning tool that can determine the web technologies that are used on the target web page.
+* [Builtwith](https://builtwith.com/) - Similar as above.&#x20;
+* [Visual Site Mapper ](http://visualsitemapper.com/)- Handy tool for conceptualizing a target website in a different way.
 
 ### **CLI Based Utilities**
 
 * [What Web](https://github.com/urbanadventurer/whatweb) - WhatWeb recognizes web technologies including content management systems (CMS), blogging platforms, statistic/analytics packages, JavaScript libraries, web servers, and embedded devices. WhatWeb has over 1800 plugins, each to recognize something different. WhatWeb also identifies version numbers, email addresses, account IDs, web framework modules, SQL errors, and more.
 * [wafw00f](https://github.com/EnableSecurity/wafw00f) - WAFW00F allows one to identify and fingerprint Web Application Firewall (WAF) products protecting a website.
-* [Blind Elephant](http://blindelephant.sourceforge.net) - The BlindElephant Web Application Fingerprinter attempts to discover the version of a (known) web application by comparing static files at known locations against precomputed hashes for versions of those files in all all available releases. The technique is fast, low-bandwidth, non-invasive, generic, and highly automatable.
+* [Blind Elephant](http://blindelephant.sourceforge.net/) - The BlindElephant Web Application Fingerprinter attempts to discover the version of a (known) web application by comparing static files at known locations against precomputed hashes for versions of those files in all all available releases. The technique is fast, low-bandwidth, non-invasive, generic, and highly automatable.
 * [Virtual Host Scanner](https://github.com/codingo/VHostScan) - A virtual host scanner that can be used with pivot tools, detect catch-all scenarios, aliases and dynamic default pages.
-* [https://whatcms.org/](https://whatcms.org) - Web based tool to determine what CMS a site is using.
+* [https://whatcms.org/](https://whatcms.org/) - Web based tool to determine what CMS a site is using.
 * [httprint](https://www.kali.org/tools/httprint/) - httprint is a web server fingerprinting tool. It relies on web server characteristics to accurately identify web servers, despite the fact that they may have been obfuscated by changing the server banner strings, or by plug-ins such as mod\_security or servermaskd
 
 ## **Vulnerability Scanning**
@@ -50,10 +50,10 @@ These are not only very detailed and helpful tools, but they allow you to gather
       ```
       nikto -h 10.10.10.10
       ```
-* [Arachni](https://www.arachni-scanner.com) - Arachni is a feature-full, modular, high-performance Ruby framework aimed towards helping penetration testers and administrators evaluate the security of modern web applications.
+* [Arachni](https://www.arachni-scanner.com/) - Arachni is a feature-full, modular, high-performance Ruby framework aimed towards helping penetration testers and administrators evaluate the security of modern web applications.
   * [Arachni Web UI](https://github.com/Arachni/arachni-ui-web/wiki)
 * [W3AF](https://github.com/andresriancho/w3af) - w3af: web application attack and audit framework, the open source web vulnerability scanner.
-*   [Wapiti](https://wapiti.sourceforge.io) - Wapiti allows you to audit the security of your websites or web applications.
+*   [Wapiti](https://wapiti.sourceforge.io/) - Wapiti allows you to audit the security of your websites or web applications.
 
     It performs "black-box" scans (it does not study the source code) of the web application by crawling the webpages of the deployed webapp, looking for scripts and forms where it can inject data.
 * [Vega Scanner](https://subgraph.com/vega/) - Vega is a free and open source web security scanner and web security testing platform to test the security of web applications. Vega can help you find and validate SQL Injection, Cross-Site Scripting (XSS), inadvertently disclosed sensitive information, and other vulnerabilities.
@@ -74,7 +74,7 @@ These are not only very detailed and helpful tools, but they allow you to gather
 ### WordPress
 
 * [WPScan](https://github.com/wpscanteam/wpscan) - The Wordpress Vulnerability Scanner
-  * [https://wpsec.com/](https://wpsec.com) - Online Wordpress scanner
+  * [https://wpsec.com/](https://wpsec.com/) - Online Wordpress scanner
 * [Wordpress Exploit Framework ](https://github.com/rastating/wordpress-exploit-framework) - A Ruby framework designed to aid in the penetration testing of WordPress systems.
 * [WPSploit](https://github.com/espreto/wpsploit) - This repository is designed for creating and/or porting of specific exploits for WordPress using metasploit as exploitation tool.
 
@@ -114,9 +114,11 @@ These are not only very detailed and helpful tools, but they allow you to gather
 * [SecretFinder](https://github.com/m4ll0k/SecretFinder) - A python script for find sensitive data (apikeys, accesstoken,jwt,..) and search anything on javascript files.
 * [certgraph](https://www.kali.org/tools/certgraph/) - This package contains a tool to crawl the graph of certificate Alternate Names. CertGraph crawls SSL certificates creating a directed graph where each domain is a node and the certificate alternative names for that domain’s certificate are the edges to other domain nodes.
 * [changeme](https://www.kali.org/tools/changeme/) - This package contains a default credential scanner. changeme supports the http/https, MSSQL, MySQL, Postgres, ssh and ssh w/key protocols.O-Saft is an easy to use tool to show information about SSL certificates and tests the SSL connection according to a given list of ciphers and various SSL configurations.
-* [https://csp-evaluator.withgoogle.com/](https://csp-evaluator.withgoogle.com) - CSP Evaluator allows developers and security experts to check if a Content Security Policy (CSP) serves as a strong mitigation against [cross-site scripting attacks](https://www.google.com/about/appsecurity/learning/xss/)[https://github.com/rly0nheart/oxdork](https://github.com/rly0nheart/oxdork)
+* [https://csp-evaluator.withgoogle.com/](https://csp-evaluator.withgoogle.com/) - CSP Evaluator allows developers and security experts to check if a Content Security Policy (CSP) serves as a strong mitigation against [cross-site scripting attacks](https://www.google.com/about/appsecurity/learning/xss/)[https://github.com/rly0nheart/oxdork](https://github.com/rly0nheart/oxdork)
 * [oxdork](https://github.com/rly0nheart/oxdork) - oxDork uses Google dorking techniques and Google dorks to find security holes and misconfigurations in web servers.
 * [subjs](https://github.com/lc/subjs) - Fetches javascript file from a list of URLS or subdomains.
+* [Interlace](https://github.com/codingo/Interlace) - Easily turn single threaded command line applications into a fast, multi-threaded application with CIDR and glob support.
+  * [https://hakluke.medium.com/interlace-a-productivity-tool-for-pentesters-and-bug-hunters-automate-and-multithread-your-d18c81371d3d](https://hakluke.medium.com/interlace-a-productivity-tool-for-pentesters-and-bug-hunters-automate-and-multithread-your-d18c81371d3d)
 
 ## Misc Resources
 

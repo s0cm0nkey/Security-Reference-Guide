@@ -3,9 +3,9 @@
 ## Red Teaming
 
 * [Awesome-Red-Teaming](https://github.com/yeyintminthuhtut/Awesome-Red-Teaming)
-* [https://ijustwannared.team/](https://ijustwannared.team)
-* [https://threatexpress.com/](https://threatexpress.com)
-  * [https://redteam.guide/](https://redteam.guide)
+* [https://ijustwannared.team/](https://ijustwannared.team/)
+* [https://threatexpress.com/](https://threatexpress.com/)
+  * [https://redteam.guide/](https://redteam.guide/)
 * [https://redteamer.tips/so-you-want-to-be-a-pentester-and-or-red-teamer/](https://redteamer.tips/so-you-want-to-be-a-pentester-and-or-red-teamer/)
 * [https://github.com/rmusser01/Infosec\_Reference/blob/master/Draft/RT.md](https://github.com/rmusser01/Infosec\_Reference/blob/master/Draft/RT.md)
 * [https://kwcsec.gitbook.io/the-red-team-handbook/](https://kwcsec.gitbook.io/the-red-team-handbook/)
@@ -25,7 +25,7 @@
 ### Adversary Emulation
 
 * Tool Collections
-  * [Atomic Red Team](https://atomicredteam.io) - Atomic Red Team™ is a library of simple tests that every security team can execute to test their defenses. Tests are focused, have few dependencies, and are defined in a structured format that can be used by automation frameworks.
+  * [Atomic Red Team](https://atomicredteam.io/) - Atomic Red Team™ is a library of simple tests that every security team can execute to test their defenses. Tests are focused, have few dependencies, and are defined in a structured format that can be used by automation frameworks.
     * [https://github.com/cyberbuff/TheAtomicPlaybook](https://github.com/cyberbuff/TheAtomicPlaybook)
     * [https://docs.google.com/document/d/1c8\_WRHp68Py9kyMYqMrs6aQ6ppcfLouV8jQ07UY27yE/mobilebasic](https://docs.google.com/document/d/1c8\_WRHp68Py9kyMYqMrs6aQ6ppcfLouV8jQ07UY27yE/mobilebasic)
   * [caldera](https://github.com/mitre/caldera) - Automated Adversary Emulation Platform by MITRE
@@ -36,12 +36,13 @@
   * [Metta](https://github.com/uber-common/metta) - An information security preparedness tool to do adversarial simulation.
   * [Red Team Automation (RTA)](https://github.com/endgameinc/RTA) - RTA provides a framework of scripts designed to allow blue teams to test their detection capabilities against malicious tradecraft, modeled after MITRE ATT\&CK.
   * [flightsim](https://github.com/alphasoc/flightsim) - A utility to safely generate malicious network traffic patterns and evaluate controls.
+  * [PurpleSharp](https://github.com/mvelazc0/PurpleSharp) - PurpleSharp is a C# adversary simulation tool that executes adversary techniques with the purpose of generating attack telemetry in monitored Windows environments
 * #### Resources
   * [Adversary Emulation Plans](https://attack.mitre.org/resources/adversary-emulation-plans/)
   * [The Threat Emulation Problem](https://blog.cobaltstrike.com/2016/02/17/the-threat-emulation-problem/)
   * [Why we love threat emulation exercises (and how to get started with one of your own)](https://expel.io/blog/why-we-love-threat-emulation-exercises/)
   * [MITRE ATT\&CKcon 2018: From Automation to Analytics: Simulating the Adversary to Create Better Detections, David Herrald and Ryan Kovar, Splunk](https://www.slideshare.net/attackcon2018/mitre-attckcon-2018-from-automation-to-analytics-simulating-the-adversary-to-create-better-detections-david-herrald-and-ryan-kovar-splunk)
-  * [Living Off The Land Binaries and Scripts (and also Libraries)](https://lolbas-project.github.io)
+  * [Living Off The Land Binaries and Scripts (and also Libraries)](https://lolbas-project.github.io/)
   * [Purple Teaming with Vectr, Cobalt Strike, and MITRE ATT\&CK](https://www.digitalshadows.com/blog-and-research/purple-teaming-with-vectr-cobalt-strike-and-mitre-attck/)
   * [Red Team Use of MITRE ATT\&CK](https://medium.com/@malcomvetter/red-team-use-of-mitre-att-ck-f9ceac6b3be2)
   * [Purple Teaming with ATT\&CK - x33fcon 2018](https://www.slideshare.net/ChristopherKorban/purple-teaming-with-attck-x33fcon-2018)
