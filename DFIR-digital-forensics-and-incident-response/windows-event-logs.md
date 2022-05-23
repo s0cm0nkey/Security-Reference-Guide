@@ -2,6 +2,8 @@
 
 ## Get available Logs
 
+{% embed url="https://wiki.sans.blue/Tools/pdfs/Get-WinEvent.pdf" %}
+
 ### Powershell logs <a href="#powershell-logs" id="powershell-logs"></a>
 
 ```

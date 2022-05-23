@@ -130,6 +130,8 @@ In particular instances of this event with reference to Telerik.Web.UI.IAsyncUpl
 
 ## Sysmon log information <a href="#sysmon-log-information" id="sysmon-log-information"></a>
 
+{% embed url="https://static1.squarespace.com/static/552092d5e4b0661088167e5c/t/5eb3687f39d69d48c403a42a/1588816000014/Windows+Sysmon+Logging+Cheat+Sheet_Jan_2020.pdf" %}
+
 When installed and running the event log is located at: “Applications and Services Logs/Microsoft/Windows/Sysmon/Operational”
 
 Note: A WMI consumer is a management application or script that interacts with the WMI infrastructure. [Microsoft Docs - WMI Architecture](https://docs.microsoft.com/en-us/windows/desktop/WmiSdk/wmi-architecture)

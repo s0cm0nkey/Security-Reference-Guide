@@ -13,6 +13,8 @@ To help with this basic understanding, there have been many platforms, tools, an
 
 ## Command Shells
 
+{% embed url="https://assets.contentstack.io/v3/assets/blt36c2e63521272fdc/bltea7de5267932e94b/5eb08aafcf88d36e47cf0644/Cheatsheet_SEC301-401_R7.pdf" %}
+
 ### Bash
 
 {% content-ref url="bash/" %}
@@ -76,6 +78,7 @@ To help with this basic understanding, there have been many platforms, tools, an
 
 * [CyberChef](https://gchq.github.io/CyberChef/) - Called the Cyber Swiss Army Knife, cyberchef is a tool with over 300+ functions that can encode/decode, encrypt/decrypt, convert, and parse just about anything thrown at it. You can copy and paste snippets of code for translation or even upload entire files. The most handy function is a processing option called "Magic". It will run some fuzzy logic against the target code and give suggestions as to what it is encoded with. You can even chain functions together in what they call "Recipes"
   * [https://github.com/mattnotmax/cyberchef-recipes](https://github.com/mattnotmax/cyberchef-recipes)
+  * [https://gist.github.com/michaelder](https://gist.github.com/michaelder) - Cobalt Strike decoding recipies.
 * [Hackvertor](https://hackvertor.co.uk/public) - Multi-function Code converter
 * [String Manipulation tool](https://manytools.org/http-html-text/string-manipulation/)
 * [https://encoding.tools](https://encoding.tools/)  - Basic HTML decoding and hash conversion tool

@@ -43,3 +43,5 @@ This is an amazing tool written by the Sysmon Guru Olaf Hartong, for mapping dat
 ## Misc
 
 * [https://www.socinvestigation.com/mapping-mitre-attck-with-window-event-log-ids/](https://www.socinvestigation.com/mapping-mitre-attck-with-window-event-log-ids/)
+
+{% embed url="https://static1.squarespace.com/static/552092d5e4b0661088167e5c/t/5b8f091c0ebbe8644d3a886c/1536100639356/Windows+ATT%26CK_Logging+Cheat+Sheet_ver_Sept_2018.pdf" %}

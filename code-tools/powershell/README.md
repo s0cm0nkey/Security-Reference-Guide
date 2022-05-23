@@ -1,5 +1,11 @@
 # Powershell
 
+{% embed url="https://assets.contentstack.io/v3/assets/blt36c2e63521272fdc/bltf146e4f361db3938/5e34a7bc946d717e2eab6139/power-shell-cheat-sheet-v41.pdf" %}
+
+{% embed url="https://wiki.sans.blue/Tools/pdfs/PowerShell.pdf" %}
+
+
+
 ## Resources
 
 * [A Unix Person's Guide to PowerShell](https://leanpub.com/aunixpersonsguidetopowershell) - The DevOps Collective, Inc. (PDF, ePub, MOBI, HTML) _(Leanpub account or valid email requested)_
