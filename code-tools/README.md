@@ -7,6 +7,10 @@ The same is for code.
 
 To help with this basic understanding, there have been many platforms, tools, and projects created around making understanding code, easier. As a security analyst, most are not expected to be able to write Javascript or in-depth powershell commands. But should you be able to recognize them and and be able to understand a bit of their function? Absolutely! And there are tools that can make that easier.
 
+## Secure Coding
+
+* [https://github.com/6mile/DevSecOps-Playbook](https://github.com/6mile/DevSecOps-Playbook)
+
 ## Command Shells
 
 ### Bash
@@ -28,18 +32,18 @@ To help with this basic understanding, there have been many platforms, tools, an
 ## CLI Assistance Tools
 
 * [https://www.commandlinefu.com](https://www.commandlinefu.com) - An amazing repository of command strings accomplishing different tasks. Simply search the task and see what commands have worked for others.
-* [https://explainshell.com/](https://explainshell.com) - Write down a command-line to see the help text that matches each argument
+* [https://explainshell.com/](https://explainshell.com/) - Write down a command-line to see the help text that matches each argument
 * [cheat.sh](https://github.com/chubin/cheat.sh) - Command Line cheatsheet tool
 
 ## Code Reference Tools
 
-* [https://stackoverflow.com/](https://stackoverflow.com) - The one and only. More code has been made by snippets stolen from StackOverflow than anything else. If you cant figure out how to code something, stop here first.
-* [The complete table of ASCII characters, codes, symbols and signs](https://theasciicode.com.ar)
-* [Devhints](https://devhints.io) - One of the largest collections of coding cheatsheets and guides available on the internet.
-* [PublicWWW.com](https://publicwww.com) - Search engine for code
+* [https://stackoverflow.com/](https://stackoverflow.com/) - The one and only. More code has been made by snippets stolen from StackOverflow than anything else. If you cant figure out how to code something, stop here first.
+* [The complete table of ASCII characters, codes, symbols and signs](https://theasciicode.com.ar/)
+* [Devhints](https://devhints.io/) - One of the largest collections of coding cheatsheets and guides available on the internet.
+* [PublicWWW.com](https://publicwww.com/) - Search engine for code
 * [Browse code samples | Microsoft Docs](https://docs.microsoft.com/en-us/samples/browse/)
-* [https://ryanstutorials.net/](https://ryanstutorials.net) - A collection of free, introductory tutorials on several technology topics including: Linux command line, Bash scripting, creating and styling webpages with HTML and CSS, counting and converting between different number systems, and writing regular expressions
-* [https://www.markdownguide.org/](https://www.markdownguide.org) - free and open-source reference guide that explains how to use Markdown
+* [https://ryanstutorials.net/](https://ryanstutorials.net/) - A collection of free, introductory tutorials on several technology topics including: Linux command line, Bash scripting, creating and styling webpages with HTML and CSS, counting and converting between different number systems, and writing regular expressions
+* [https://www.markdownguide.org/](https://www.markdownguide.org/) - free and open-source reference guide that explains how to use Markdown
 
 {% content-ref url="learn-to-code.md" %}
 [learn-to-code.md](learn-to-code.md)
@@ -74,22 +78,22 @@ To help with this basic understanding, there have been many platforms, tools, an
   * [https://github.com/mattnotmax/cyberchef-recipes](https://github.com/mattnotmax/cyberchef-recipes)
 * [Hackvertor](https://hackvertor.co.uk/public) - Multi-function Code converter
 * [String Manipulation tool](https://manytools.org/http-html-text/string-manipulation/)
-* [https://encoding.tools](https://encoding.tools)  - Basic HTML decoding and hash conversion tool
+* [https://encoding.tools](https://encoding.tools/)  - Basic HTML decoding and hash conversion tool
 * [DCode toolkit](https://www.dcode.fr/tools-list) - dCode is free and its tools are a valuable help in games, maths, geocaching, puzzles and problems to solve every day!
-* [quipqiup](https://quipqiup.com) - Cryptoquip and Cryptogram solver&#x20;
+* [quipqiup](https://quipqiup.com/) - Cryptoquip and Cryptogram solver&#x20;
 * [Hex to ASCII | Hex to Text converter](https://www.rapidtables.com/convert/number/hex-to-ascii.html)&#x20;
 * [DDecode](http://ddecode.com/hexdecoder/) - Hex,Octal,HTML Decoder&#x20;
-* [AES encryption](https://aesencryption.net) [Encode/Decode](https://toolbox.googleapps.com/apps/encode\_decode/)
+* [AES encryption](https://aesencryption.net/) [Encode/Decode](https://toolbox.googleapps.com/apps/encode\_decode/)
 * [de4dot](https://www.kali.org/tools/de4dot/) - de4dot is a .NET deobfuscator and unpacker.
 * [gpp-decrypt](https://www.kali.org/tools/gpp-decrypt/) - Decrypt the given Group Policy Preferences string
 
 ### Javascript Decoders
 
-* [Online JavaScript beautifier](https://beautifier.io) - Beautify, unpack or de-obfuscate JavaScript and HTML, make JSON/JSONP readable, etc.
+* [Online JavaScript beautifier](https://beautifier.io/) - Beautify, unpack or de-obfuscate JavaScript and HTML, make JSON/JSONP readable, etc.
 * [UnPacker](http://matthewfl.com/unPacker.html) - Sort and organize JS into proper looking code. Makes it easier to read
 * [InfoSec Handlers Diary Blog - Advanced obfuscated JavaScript analysis](https://isc.sans.edu/diary/Advanced+obfuscated+JavaScript+analysis/4246)&#x20;
 * [Malware at Stake: JavaScript Obfuscation](https://secniche.blogspot.com/2012/04/javascript-obfuscation-manual-armor-1.html)
-* [JS NICE: Statistical renaming, Type inference and Deobfuscation](http://www.jsnice.org)&#x20;
+* [JS NICE: Statistical renaming, Type inference and Deobfuscation](http://www.jsnice.org/)&#x20;
 
 ### Shellcoding
 
@@ -104,8 +108,8 @@ To help with this basic understanding, there have been many platforms, tools, an
 * [Snyk](https://github.com/snyk/snyk) -  CLI and build-time tool to find & fix known vulnerabilities in open-source dependencies. It is one of the biggest support tools in DevSecOps. It even has its own [convention.](https://snyk.io/snykcon/)
 * [WhiteSource Bolt for GitHub](https://github.com/apps/whitesource-bolt-for-github) - WhiteSource Bolt for GitHub is a FREE app, which continuously scans all your repos, detects vulnerabilities in open source components and provides fixes.
 * [Brakeman](https://github.com/presidentbeef/brakeman) - A static analysis security vulnerability scanner for Ruby on Rails applications&#x20;
-* [Cppcheck](http://cppcheck.sourceforge.net) - A tool for static C/C++ code analysis&#x20;
-* [FindBugs](http://findbugs.sourceforge.net) - Find Bugs in Java Programs&#x20;
+* [Cppcheck](http://cppcheck.sourceforge.net/) - A tool for static C/C++ code analysis&#x20;
+* [FindBugs](http://findbugs.sourceforge.net/) - Find Bugs in Java Programs&#x20;
 * [Sobelow](https://github.com/nccgroup/sobelow) - Security-focused static analysis for the Phoenix Framework&#x20;
 * [bandit ](https://pypi.org/project/bandit/) - Bandit is a tool designed to find common security issues in Python code.
 * [Package Hunter](https://about.gitlab.com/blog/2021/07/23/announcing-package-hunter/) - Scan dependencies for potentially malicious code
@@ -120,11 +124,11 @@ To help with this basic understanding, there have been many platforms, tools, an
 
 ### Automation
 
-* [**NRE Labs**](https://labs.networkreliability.engineering) - learn automation by doing it. Right now, right here, in your browser.
+* [**NRE Labs**](https://labs.networkreliability.engineering/) - learn automation by doing it. Right now, right here, in your browser.
 
 ### **Grok**
 
-* [Grok Debugger](https://grokdebug.herokuapp.com)
+* [Grok Debugger](https://grokdebug.herokuapp.com/)
 
 ### **Hashes**&#x20;
 
@@ -133,8 +137,8 @@ To help with this basic understanding, there have been many platforms, tools, an
 
 ### **Hex Editors**
 
-* [HexEd.it ](https://hexed.it)- Browser-based Online and Offline Hex Editing&#x20;
-* [Hexinator](https://hexinator.com) - Powerful free hex editor
+* [HexEd.it ](https://hexed.it/)- Browser-based Online and Offline Hex Editing&#x20;
+* [Hexinator](https://hexinator.com/) - Powerful free hex editor
 * [Frhed](http://frhed.sourceforge.net/en/) - Free Hex Editor
 * [shed](https://www.kali.org/tools/shed/) - shed (Simple Hex Editor) is an easy application for viewing and editing files in text mode, using ncurses.
 
@@ -160,5 +164,5 @@ To help with this basic understanding, there have been many platforms, tools, an
 ### **Honorable Mention**
 
 * [Ciphey](https://github.com/ciphey/ciphey) - Fully automated decryption/decoding/cracking tool using natural language processing & artificial intelligence, along with some common sense.
-* [Replit](https://replit.com) - Collaborative, in-browser IDE to code in 50+ languages.
+* [Replit](https://replit.com/) - Collaborative, in-browser IDE to code in 50+ languages.
 * [bytecode-viewer](https://www.kali.org/tools/bytecode-viewer/) - an Advanced Lightweight Java Bytecode Viewer, GUI Java Decompiler, GUI Bytecode Editor, and much more.

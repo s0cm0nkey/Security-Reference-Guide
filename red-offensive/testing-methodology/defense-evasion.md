@@ -62,7 +62,7 @@ Note: For payload obfuscation, see the Payloads section under the Offensive Tool
 * [Invoke-EDRChecker](https://github.com/PwnDexter/Invoke-EDRChecker) - Checks running processes, process metadata, Dlls loaded into your current process and the each DLLs metadata, common install directories, installed services, the registry and running drivers for the presence of known defensive products such as AV's, EDR's and logging tools.
 * [SandboxDefender](https://github.com/plackyhacker/SandboxDefender) - C# code to Sandbox Defender (and most probably other AV/EDRs).
 * [Unlock](https://github.com/freshness79/unlock) - Microsoft Applocker evasion tool
-* [Living Off The Land Binaries And Scripts - (LOLBins and LOLScripts)](https://lolbas-project.github.io)
+* [Living Off The Land Binaries And Scripts - (LOLBins and LOLScripts)](https://lolbas-project.github.io/)
 * [AVET](https://github.com/govolution/avet) - AVET is an AntiVirus Evasion Tool, which was developed for making life easier for pentesters and for experimenting with antivirus evasion techniques, as well as other methods used by malicious software.
 * [Backstab](https://github.com/Yaxser/Backstab) - Backstab is a tool capable of killing antimalware protected processes by leveraging sysinternals’ Process Explorer (ProcExp) driver, which is signed by Microsoft.
   * [https://www.kitploit.com/2021/07/backstab-tool-to-kill-antimalware.html?m=1](https://www.kitploit.com/2021/07/backstab-tool-to-kill-antimalware.html?m=1)
@@ -72,6 +72,7 @@ Note: For payload obfuscation, see the Payloads section under the Offensive Tool
 * [DefenderCheck](https://github.com/matterpreter/Defendercheck) - Takes a binary as input and splits it until it pinpoints that exact byte that Microsoft Defender will flag on, and then prints those offending bytes to the screen. This can be helpful when trying to identify the specific bad pieces of code in your tool/payload.
 * [https://github.com/QAX-A-Team/EventCleaner](https://github.com/QAX-A-Team/EventCleaner)
 * [SysWhispers3](https://github.com/klezVirus/SysWhispers3) - SysWhispers on Steroids - AV/EDR evasion via direct system calls.
+* [Cerbersec/metatwin/tree/cerbersec-patch-1](https://github.com/Cerbersec/metatwin/tree/cerbersec-patch-1) - The project is designed as a file resource cloner. Metadata, including digital signature, is extracted from one file and injected into another. Note: Signatures are copied, but no longer valid.
 
 ## OPSEC
 

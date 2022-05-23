@@ -42,7 +42,7 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 * [yasinS/bug-bounty-reference](https://github.com/yasinS/bug-bounty-reference)
 * [Shiva108/Web-CTF-Cheatsheet](https://github.com/Shiva108/CTF-notes/tree/master/Web-CTF-Cheatsheet)
 * [Daniel Meissler's Web Security Testing Resources](https://danielmiessler.com/projects/webappsec\_testing\_resources/)
-* [Web App Hacking Research by James Kettle](https://skeletonscribe.net) - Everything that isnt posted on [PortSwigger.com/research](https://portswigger.net/research), this site is the blog for the research done by PortSwigger's Head of research, James Kettle.
+* [Web App Hacking Research by James Kettle](https://skeletonscribe.net/) - Everything that isnt posted on [PortSwigger.com/research](https://portswigger.net/research), this site is the blog for the research done by PortSwigger's Head of research, James Kettle.
 * [Web App Payload Collection](https://github.com/foospidy/payloads)
 * [https://pentestbook.six2dez.com/enumeration/webservices/](https://pentestbook.six2dez.com/enumeration/webservices/) - Tools and attacks for specific web services.
 
@@ -50,17 +50,17 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 
 ### Platforms
 
-* [https://www.hackerone.com/](https://www.hackerone.com)
-* [https://www.bugcrowd.com/](https://www.bugcrowd.com)
+* [https://www.hackerone.com/](https://www.hackerone.com/)
+* [https://www.bugcrowd.com/](https://www.bugcrowd.com/)
   * [https://bugcrowd.com/programs/organizations/cisa](https://bugcrowd.com/programs/organizations/cisa)
-* [https://www.synack.com/](https://www.synack.com)
-* [https://cobalt.io/](https://cobalt.io)
+* [https://www.synack.com/](https://www.synack.com/)
+* [https://cobalt.io/](https://cobalt.io/)
 * [https://www.intigriti.com](https://www.intigriti.com)
-* [https://www.zerocopter.com/](https://www.zerocopter.com)
-* [https://www.yeswehack.com/](https://www.yeswehack.com)
-* [https://www.antihack.me/](https://www.antihack.me)
-* [https://securebug.se/](https://securebug.se)
-* [https://www.openbugbounty.org/](https://www.openbugbounty.org)
+* [https://www.zerocopter.com/](https://www.zerocopter.com/)
+* [https://www.yeswehack.com/](https://www.yeswehack.com/)
+* [https://www.antihack.me/](https://www.antihack.me/)
+* [https://securebug.se/](https://securebug.se/)
+* [https://www.openbugbounty.org/](https://www.openbugbounty.org/)
 
 ### Resources and Reference
 
@@ -122,8 +122,8 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 
 ## **Misc Tools**
 
-* [https://www.webgap.io/](https://www.webgap.io) - [WEBGAP](https://www.urbandictionary.com/define.php?term=webgap) remote browser isolation physically isolates you from the risks of using the internet by isolating your web browsing activity away from your local device.
-* [https://requestbin.com/](https://requestbin.com) - A modern request bin to collect, inspect and debug HTTP requests and webhooks
+* [https://www.webgap.io/](https://www.webgap.io/) - [WEBGAP](https://www.urbandictionary.com/define.php?term=webgap) remote browser isolation physically isolates you from the risks of using the internet by isolating your web browsing activity away from your local device.
+* [https://requestbin.com/](https://requestbin.com/) - A modern request bin to collect, inspect and debug HTTP requests and webhooks
 * [Race-the-web](https://github.com/TheHackerDev/race-the-web) - Tests for race conditions in web applications. Includes a RESTful API to integrate into a continuous integration pipeline.
 * [DVCS-Ripper](https://github.com/kost/dvcs-ripper) - Rip web accessible (distributed) version control systems: SVN, GIT, Mercurial/hg, bzr, etc.
 * [SSLStrip](https://github.com/LeonardoNve/sslstrip2) - This is a new version of \[Moxie´s SSLstrip] ([http://www.thoughtcrime.org/software/sslstrip/](http://www.thoughtcrime.org/software/sslstrip/)) with the new feature to avoid HTTP Strict Transport Security (HSTS) protection mechanism.
@@ -131,7 +131,7 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 * [Unfurl](https://dfir.blog/unfurl/) - Tool for breaking down a URL to better understand its components.Fake credit card numbers for testing payment systems
 * [Credit Cards numbers](https://stripe.com/docs/testing#cards) for use in testing
 * [interactsh](https://github.com/projectdiscovery/interactsh) - An OOB interaction gathering server and client library
-  * [https://app.interactsh.com/](https://app.interactsh.com)
+  * [https://app.interactsh.com/](https://app.interactsh.com/)
 * [Firebounty](https://firebounty.com) — Bug bounty search engine
 
 ## **Training and Resources**
@@ -139,6 +139,7 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 **For resources including offensive security courses, books, CTFs and much more, please check out the Training and Resources section of this guide.**
 
 * [https://tryhackme.com/module/intro-to-web-hacking](https://tryhackme.com/module/intro-to-web-hacking)
+* [crAPI](https://github.com/OWASP/crAPI) - **c**ompletely **r**idiculous **API** (crAPI) will help you to understand the ten most critical API security risks. crAPI is vulnerable by design, but you'll be able to safely run it to educate/train yourself.
 
 {% content-ref url="../training/" %}
 [training](../training/)

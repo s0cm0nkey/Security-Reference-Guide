@@ -39,3 +39,7 @@ This is an amazing tool written by the Sysmon Guru Olaf Hartong, for mapping dat
 * [ATTACKdatamap](https://github.com/olafhartong/ATTACKdatamap) - A datasource assessment on an event level to show potential coverage or the MITRE ATT\&CK framework
 * [https://medium.com/@olafhartong/assess-your-data-potential-with-att-ck-datamap-f44884cfed11](https://medium.com/@olafhartong/assess-your-data-potential-with-att-ck-datamap-f44884cfed11)
 * [https://github.com/OTRF/OSSEM-DM](https://github.com/OTRF/OSSEM-DM)
+
+## Misc
+
+* [https://www.socinvestigation.com/mapping-mitre-attck-with-window-event-log-ids/](https://www.socinvestigation.com/mapping-mitre-attck-with-window-event-log-ids/)

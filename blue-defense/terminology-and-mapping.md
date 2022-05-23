@@ -1,24 +1,25 @@
 # Standards, Frameworks, and Benchmarks
 
-### [MITRE ATT\&CK™](https://attack.mitre.org)&#x20;
+### [MITRE ATT\&CK™](https://attack.mitre.org/)&#x20;
 
 With over a dozen tactics and hundreds of techniques, MITRE Attack has become the defacto standard for event mapping. It can be used defensively to help you map both the attacks coming in against your network, as well as map your current coverage of visibility, to see where your organization can grow.
 
 * [Awesome List Collection: Mitre Attack](https://github.com/Shiva108/CTF-notes/tree/master/awesome-mitre-attack)
 * [Mitre Groups](https://attack.mitre.org/groups/) - Repository documenting known techniques performed by threat actor groups.
 * [Attack Navigator](https://mitre-attack.github.io/attack-navigator/) - A web-based tool for annotating and exploring ATT\&CK matrices. It can be used to visualize defensive coverage, red/blue team planning, the frequency of detected techniques, and more.
-* [C.A.R. Cyber Analytics Repository ](https://car.mitre.org)- A knowledge base of analytics developed by [MITRE](https://www.mitre.org) based on the [MITRE ATT\&CK](https://attack.mitre.org) adversary model.
+* [C.A.R. Cyber Analytics Repository ](https://car.mitre.org/)- A knowledge base of analytics developed by [MITRE](https://www.mitre.org) based on the [MITRE ATT\&CK](https://attack.mitre.org/) adversary model.
 * [Caldera](https://github.com/mitre/caldera) - Scalable Automated Adversary Emulation Platform built around the Mitre techniques.
 * [Cascade](https://github.com/mitre/cascade-server) - A research project at MITRE which seeks to automate much of the investigative work a “blue-team” team would perform to determine the scope and maliciousness of suspicious behavior on a network using host data.
 * [Mitre Shield Framework ](https://shield.mitre.org/matrix/)- Mitre Shield is a new framework that maps defensive tools and techniques to the topic of Active Defense. This includes things like decoy accounts, canary tokens, and other forms of cyber deception.
-* [Mitre D3fend](https://d3fend.mitre.org) - Thanks to some support from the NSA, Mitre has created a cyber countermeasure based framework that helps defenders map defensive techniques to coverage of offensive techniques.
-* [Mitre Engage](https://engage.mitre.org/#) - MITRE Engage is a framework for planning and discussing adversary engagement operations that empowers you to engage your adversaries and achieve your cybersecurity goals.
-* [ATT\&CK® EVALUATIONS](https://attackevals.mitre-engenuity.org)  - Evaluations of security tools based on MITRE technique coverage
-* [atomic-threat-coverage](https://github.com/atc-project/atomic-threat-coverage) - Atomic Threat Coverage is tool which allows you to automatically generate actionable analytics, designed to combat threats (based on the [MITRE ATT\&CK](https://attack.mitre.org) adversary model) from Detection, Response, Mitigation and Simulation perspectives
+* [Mitre D3fend](https://d3fend.mitre.org/) - Thanks to some support from the NSA, Mitre has created a cyber countermeasure based framework that helps defenders map defensive techniques to coverage of offensive techniques.
+* [Mitre Engage](https://engage.mitre.org) - MITRE Engage is a framework for planning and discussing adversary engagement operations that empowers you to engage your adversaries and achieve your cybersecurity goals.
+* [ATT\&CK® EVALUATIONS](https://attackevals.mitre-engenuity.org/)  - Evaluations of security tools based on MITRE technique coverage
+* [atomic-threat-coverage](https://github.com/atc-project/atomic-threat-coverage) - Atomic Threat Coverage is tool which allows you to automatically generate actionable analytics, designed to combat threats (based on the [MITRE ATT\&CK](https://attack.mitre.org/) adversary model) from Detection, Response, Mitigation and Simulation perspectives
 * [https://github.com/OTRF/OSSEM-DM](https://github.com/OTRF/OSSEM-DM) - Collection of Mitre mappings connected to EventIDs and Mitre Data Sources.
 * [https://github.com/center-for-threat-informed-defense/attack-flow](https://github.com/center-for-threat-informed-defense/attack-flow) - ATT\&CK Flow helps executives, SOC managers, and defenders easily understand how attackers compose ATT\&CK techniques into attacks by developing a representation of attack flows, modeling attack flows for a small corpus of incidents, and creating visualization tools to display attack flows.
   * [https://ctid.mitre-engenuity.org/our-work/attack-flow](https://ctid.mitre-engenuity.org/our-work/attack-flow)
   * [https://github.com/vz-risk/flow](https://github.com/vz-risk/flow) - Tools related to work with Attack Flow
+* [https://www.socinvestigation.com/mapping-mitre-attck-with-window-event-log-ids/](https://www.socinvestigation.com/mapping-mitre-attck-with-window-event-log-ids/)
 * [https://www.jaiminton.com/mitreatt\&ck](https://www.jaiminton.com/mitreatt\&ck)
 * [https://tryhackme.com/room/mitre](https://tryhackme.com/room/mitre)
 
@@ -54,7 +55,7 @@ Common and reasonably popular format that has some lacking in a granular classif
 * [ISO 22301](https://www.iso.org/en/contents/data/standard/07/51/75106.html) is the international standard that provides a best-practice framework for implementing an optimised BCMS (business continuity management system).
 * [ISO27001](https://www.iso.org/isoiec-27001-information-security.html) is the international standard that describes the requirements for an ISMS (information security management system). The framework is designed to help organizations manage their security practices in one place, consistently and cost-effectively.
 * [ISO 27701](https://www.iso.org/en/contents/data/standard/07/16/71670.html) specifies the requirements for a PIMS (privacy information management system) based on the requirements of ISO 27001. It is extended by a set of privacy-specific requirements, control objectives and controls. Companies that have implemented ISO 27001 will be able to use ISO 27701 to extend their security efforts to cover privacy management.
-* [EU GDPR (General Data Protection Regulation)](https://gdpr.eu) is a privacy and data protection law that supersedes existing national data protection laws across the EU, bringing uniformity by introducing just one main data protection law for companies/organizations to comply with.
+* [EU GDPR (General Data Protection Regulation)](https://gdpr.eu/) is a privacy and data protection law that supersedes existing national data protection laws across the EU, bringing uniformity by introducing just one main data protection law for companies/organizations to comply with.
 * [CCPA (California Consumer Privacy Act)](https://www.oag.ca.gov/privacy/ccpa) is a data privacy law that took effect on January 1, 2020 in the State of California. It applies to businesses that collect California residents’ personal information, and its privacy requirements are similar to those of the EU’s GDPR (General Data Protection Regulation).
 * [Payment Card Industry (PCI) Data Security Standards (DSS)](https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-pci-dss) is a global information security standard designed to prevent fraud through increased control of credit card data.
 * [SOC 2](https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/aicpasoc2report.html) is an auditing procedure that ensures your service providers securely manage your data to protect the interests of your comapny/organization and the privacy of their clients.

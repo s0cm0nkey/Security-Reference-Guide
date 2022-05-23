@@ -30,10 +30,11 @@
 * [Astra](https://github.com/flipkart-incubator/Astra) - Automated Security Testing For REST API's
 * [OWASP API check](https://owasp.org/www-project-apicheck/#div-tools) - APICheck is an environment for integrating existing HTTP APIs tools and create execution chains easily.
 * [VX-API](https://github.com/vxunderground/VX-API) - Collection of various WINAPI tricks / features used or abused by Malware
-* [https://malapi.io/](https://malapi.io) - Cheatsheet for commands that could be potentially used for malicious activity.
+* [https://malapi.io/](https://malapi.io/) - Cheatsheet for commands that could be potentially used for malicious activity.
+* [crAPI](https://github.com/OWASP/crAPI) - **c**ompletely **r**idiculous **API** (crAPI) will help you to understand the ten most critical API security risks. crAPI is vulnerable by design, but you'll be able to safely run it to educate/train yourself.
 * _Hacking: The next generation - Application Protocol Handlers, pg. 96_
 
-### [GraphQL](https://graphql.org)
+### [GraphQL](https://graphql.org/)
 
 * [InQL](https://github.com/doyensec/inql) - A Burp Extension for GraphQL Security Testing
 * [https://hackernoon.com/understanding-graphql-part-1-nxm3uv9](https://hackernoon.com/understanding-graphql-part-1-nxm3uv9)
@@ -59,7 +60,7 @@
 * [https://hackertarget.com/drupal-security-scan/](https://hackertarget.com/drupal-security-scan/)
 * [Drupal: Reverseshell](https://www.hackingarticles.in/drupal-reverseshell/)
 
-## [Firebase](https://firebase.google.com)
+## [Firebase](https://firebase.google.com/)
 
 * [Insecure-Firebase-Exploit](https://github.com/MuhammadKhizerJaved/Insecure-Firebase-Exploit) - A simple Python Exploit to Write Data to Insecure/vulnerable firebase databases! Commonly found inside Mobile Apps. If the owner of the app have set the security rules as true for both "read" & "write" an attacker can probably dump database and write his own data to firebase db.
 * [Firebase-Extractor](https://github.com/viperbluff/Firebase-Extractor) - A tool written in python for scraping firebase data
@@ -147,7 +148,7 @@
 ## Megento
 
 * [magescan](https://github.com/steverobbins/magescan) - Scan a Magento site for information
-* [https://magescan.com/](https://magescan.com)
+* [https://magescan.com/](https://magescan.com/)
 * [https://github.com/steverobbins/magento-version-identification-php](https://github.com/steverobbins/magento-version-identification-php)
 
 ## MSExchange
@@ -189,7 +190,7 @@
 ## Ruby on Rails
 
 * [brakeman](https://github.com/presidentbeef/brakeman) - A static analysis security vulnerability scanner for Ruby on Rails applications
-  * [https://brakemanscanner.org/](https://brakemanscanner.org)
+  * [https://brakemanscanner.org/](https://brakemanscanner.org/)
 
 ## SAP
 
@@ -242,7 +243,7 @@
 ## Wordpress
 
 * [WPScan](https://github.com/wpscanteam/wpscan) - The Wordpress Vulnerability Scanner
-  * [https://wpsec.com/](https://wpsec.com) - Online Wordpress scanner
+  * [https://wpsec.com/](https://wpsec.com/) - Online Wordpress scanner
   * [WPScan:WordPress Pentesting Framework](https://www.hackingarticles.in/wpscanwordpress-pentesting-framework/)
 * [Wordpress Exploit Framework ](https://github.com/rastating/wordpress-exploit-framework) - A Ruby framework designed to aid in the penetration testing of WordPress systems.
 * [WPSploit](https://github.com/espreto/wpsploit) - This repository is designed for creating and/or porting of specific exploits for WordPress using metasploit as exploitation tool.

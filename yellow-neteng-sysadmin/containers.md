@@ -70,6 +70,7 @@ Container logging and analysis revolves around 3 areas:
   * [https://hub.docker.com/r/docker/getting-started](https://hub.docker.com/r/docker/getting-started)
   * [https://docker-handbook.farhan.dev/](https://docker-handbook.farhan.dev/)
   * [https://devopswithdocker.com/](https://devopswithdocker.com/)
+  * [https://tbhaxor.com/docker-containers-security/](https://tbhaxor.com/docker-containers-security/)
   * [Docker Jumpstart](http://odewahn.github.io/docker-jumpstart/) - Andrew Odewahn
 * _Operator Handbook: Docker Commands - pg. 61_
 * Offensive Testing

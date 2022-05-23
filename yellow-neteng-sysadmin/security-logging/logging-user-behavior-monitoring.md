@@ -15,6 +15,8 @@ User behavior monitoring typically involves 3 separate tasks:
 **UBA Tools**
 
 * UBA/UEBA Tools built into you SIEM - Many SIEMs have built in UEBA utilities like [Splunk's UEBA](https://www.splunk.com/en\_us/data-insider/user-behavior-analytics-ueba.html).
-* [OpenUBA](https://github.com/GACWR/OpenUBA)[https://openuba.org/](https://openuba.org)
+* [OpenUBA](https://github.com/GACWR/OpenUBA)[https://openuba.org/](https://openuba.org/)
 * [Microsoft Advanced Threat Analytics (ATA)](https://docs.microsoft.com/en-us/advanced-threat-analytics/what-is-ata) - Microsoft's behavioral analytics tool that has recently been made EOL and is being replaced with [Identity Defender](https://www.microsoft.com/en-us/security/business/threat-protection/identity-defender)
   * Requires 21 days with 12 days of activity from the target users - Open source data science project for user behavior monitoring.&#x20;
+* [User-Behavior-Mapping-Tool](https://github.com/trustedsec/User-Behavior-Mapping-Tool) -Project aims to map out common user behavior on the computer. Most of the code is based on the research by kacos2000 found here: [https://github.com/kacos2000/WindowsTimeline](https://github.com/kacos2000/WindowsTimeline)
+  * [https://www.trustedsec.com/blog/oh-behave-figuring-out-user-behavior/](https://www.trustedsec.com/blog/oh-behave-figuring-out-user-behavior/)

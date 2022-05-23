@@ -35,7 +35,7 @@ Honeypots are a core part of Active Defense. Beyond thier incredible value for l
 
 **Honey-Assets** - Files, Objects, Accounts, or other resources that would normally not be touches by any legitimate user or process, that are set to perform a specific action when accessed.
 
-* [Canary Tokens](http://canarytokens.org) - Canary Tokens are outstanding objects that can beacon back when activated. For example, you could create a Word document that calls back. Or, in this example, a little snippet of HTML code that calls back whenever it is activated
+* [Canary Tokens](http://canarytokens.org/) - Canary Tokens are outstanding objects that can beacon back when activated. For example, you could create a Word document that calls back. Or, in this example, a little snippet of HTML code that calls back whenever it is activated
   * [https://adhdproject.github.io/#!Tools/Attribution/CanaryTokens.md](https://adhdproject.github.io/#!Tools/Attribution/CanaryTokens.md)
   * [https://www.youtube.com/watch?v=mDnaEmpO1C4](https://www.youtube.com/watch?v=mDnaEmpO1C4)
 * [dcept](https://github.com/secureworks/dcept) - A tool for deploying and detecting use of Active Directory honeytokens
@@ -48,7 +48,7 @@ Honeypots are a core part of Active Defense. Beyond thier incredible value for l
 
 **Resources**
 
-* [https://www.honeynet.org/](https://www.honeynet.org)
+* [https://www.honeynet.org/](https://www.honeynet.org/)
 * _Using Canary Honeypots for Detection - Applied Network Security Monitoring, pg.317_
 
 {% embed url="https://youtu.be/14YuyMkfB9Q" %}
@@ -59,6 +59,7 @@ Ever wonder who is attacking you? Not what IP they are proxying through, but who
 
 * [Cowrie](https://github.com/cowrie/cowrie) - Cowrie is a medium to high interaction SSH and Telnet honeypot designed to log brute force attacks and the shell interaction performed by the attacker. In medium interaction mode (shell) it emulates a UNIX system in Python, in high interaction mode (proxy) it functions as an SSH and telnet proxy to observe attacker behavior to another system.
   * [https://adhdproject.github.io/#!Tools/Annoyance/Cowrie.md](https://adhdproject.github.io/#!Tools/Annoyance/Cowrie.md)
+  * [Guide to using Cowrie](https://slashparity.com/?p=734)
 * [Decloak](https://bitbucket.org/ethanr/decloak) - Used to identify the real IP address of a web user, regardless of proxy settings, using a combination of client-side technologies and custom services.
   * [https://adhdproject.github.io/#!Tools/Attribution/Decloak.md](https://adhdproject.github.io/#!Tools/Attribution/Decloak.md)
 * [HoneyBadger](https://github.com/adhdproject/honeybadger) - Used to identify the physical location of a web user with a combination of geolocation techniques using a browser's share location feature, the visible WiFi networks, and the IP address.
