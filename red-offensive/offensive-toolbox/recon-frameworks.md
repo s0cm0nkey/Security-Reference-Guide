@@ -32,8 +32,9 @@ Recon-ng has a ton of great resources, but by far the BlackHills Infosec walkthr
 
 These other frameworks do many of the same tasks that the previous two perform. Some are still actively being developed and promise expanded functionality in the future.
 
-* [Maltego](https://www.maltego.com) - Maltego is an open source intelligence and graphical link analysis tool for gathering and connecting information for investigative tasks.
+* [Maltego](https://www.maltego.com/) - Maltego is an open source intelligence and graphical link analysis tool for gathering and connecting information for investigative tasks.
   * [https://docs.maltego.com/support/home](https://docs.maltego.com/support/home)
+  * [https://static.maltego.com/cdn/Handbooks/Maltego-Handbook-for-Social-Media-Investigations-Short.pdf](https://static.maltego.com/cdn/Handbooks/Maltego-Handbook-for-Social-Media-Investigations-Short.pdf)
 * [sn0int ](https://github.com/kpcyrd/sn0int)- A semi-automatic OSINT framework and package manager. It was built for IT security professionals and bug hunters to gather intelligence about a given target or about yourself.
 * [Raccoon](https://github.com/evyatarmeged/Raccoon) - An offensive security focused framework that performs a good bit of OSINT as well as active scanning on your target to get everything you need before attempts at exploitation.
 * [ReconSpider ](https://github.com/bhavsec/reconspider)- Another great offensive recon tool that has a great option to present the data in different visuals to help you conceptualize the data around your target

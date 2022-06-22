@@ -17,11 +17,12 @@
 3. [https://sethsec.blogspot.com/2017/05/pentest-home-lab-0x1-building-your-ad.html](https://sethsec.blogspot.com/2017/05/pentest-home-lab-0x1-building-your-ad.html)
 4. [https://www.fatrodzianko.com/2019/08/05/creating-an-active-directory-lab-in-aws/](https://www.fatrodzianko.com/2019/08/05/creating-an-active-directory-lab-in-aws/)
 5. [Conda's AD Lab Video](https://www.youtube.com/watch?v=Bm3mihQNGI4\&list=PLDrNMcTNhhYqZj7WZt2GfNhBDqBnhW6AT\&index=2)
+6. [https://blog.spookysec.net//ad-lab-2/](https://blog.spookysec.net/ad-lab-2/) - Building your own AD Lab: Part 2 (2022)
 
 ## Blue Team Lab Tools
 
 * [BlueCloud](https://github.com/iknowjason/BlueCloud) - Cyber Range deployment of HELK and Velociraptor! Automated terraform deployment of one system running HELK + Velociraptor server with one registered Windows endpoint in Azure or AWS. A collection of Terraform and Ansible scripts that automatically (and quickly) deploys a small HELK + Velociraptor R\&D lab.
-  * [https://blue.iknowjason.io/](https://blue.iknowjason.io)
+  * [https://blue.iknowjason.io/](https://blue.iknowjason.io/)
 * [Splunk Attack Range](https://github.com/splunk/attack\_range) - An amazing attack research and training tool for those who Splunk. It is a tool that allows you to create vulnerable instrumented local or cloud environments to simulate attacks against and collect the data into Splunk.&#x20;
   * Can be preloaded with data from [Attack Data](https://github.com/splunk/attack\_data), or other data sets found in the Attack Research section of this guide.
 * [DetectionLab](https://github.com/clong/DetectionLab) -  Automate the creation of a lab environment complete with security tooling and logging best practices&#x20;
@@ -37,22 +38,22 @@
 ## Practice&#x20;
 
 * [Awesome Lists Collection: Vulnerable](https://github.com/kaiiyer/awesome-vulnerable)
-* [Vulnerable By Design \~ VulnHub](https://www.vulnhub.com) - Full VMs that you can download and pwn on your own local machine.
+* [Vulnerable By Design \~ VulnHub](https://www.vulnhub.com/) - Full VMs that you can download and pwn on your own local machine.
 
 ### Web Apps&#x20;
 
-* [WebSploit - Web Penetration Testing Ethical Hacking Learning Environment](https://websploit.org)&#x20;
+* [WebSploit - Web Penetration Testing Ethical Hacking Learning Environment](https://websploit.org/)&#x20;
 * [GitHub - WebGoat/WebGoat: WebGoat is a deliberately insecure application](https://github.com/WebGoat/WebGoat)&#x20;
-* [DVWA - Damn Vulnerable Web Application](http://www.dvwa.co.uk)
+* [DVWA - Damn Vulnerable Web Application](http://www.dvwa.co.uk/)
 * [https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application)
 * [OWASP Broken Web Applications Project download | SourceForge.net](https://sourceforge.net/projects/owaspbwa/)&#x20;
 * [Juice Shop - Insecure Web Application for Training | OWASP](https://owasp.org/www-project-juice-shop/)&#x20;
 * [rapid7/hackazon: A modern vulnerable web app](https://github.com/rapid7/hackazon)&#x20;
 * [vegabird/xvna: Extreme Vulnerable Node Application](https://github.com/vegabird/xvna)
-* &#x20;[itsecgames.com](http://www.itsecgames.com) - bwapp, Buggy Web Application
+* &#x20;[itsecgames.com](http://www.itsecgames.com/) - bwapp, Buggy Web Application
 * [https://github.com/webpwnized/mutillidae](https://github.com/webpwnized/mutillidae)
 * [https://www.mavensecurity.com/resources/web-security-dojo](https://www.mavensecurity.com/resources/web-security-dojo)
-* [https://hack.me/](https://hack.me)
+* [https://hack.me/](https://hack.me/)
 
 ### Server/Endpoint&#x20;
 
