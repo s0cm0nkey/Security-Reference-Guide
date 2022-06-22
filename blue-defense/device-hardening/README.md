@@ -2,7 +2,7 @@
 
 The best way to understand what device hardening and how to do it, is to follow [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks/). This organization has developed standards for hardening different operating systems and applications to a proper level in an enterprise environment. Not only do they have step by step walk-troughs of what to look for and how to do it, they also have scripts that can check and even automate the hardening for you. As a security analyst of any level or specialty, learning the available configuration based vulnerabilities of the platforms you work with on a daily basis, is one of the most valuable things you can do to improve you skillset.
 
-[AuditScripts](https://www.auditscripts.com) is another great set of tools that can perform configuration hardening audits based on different requirements, including the choice of those defined by CIS.
+[AuditScripts](https://www.auditscripts.com/) is another great set of tools that can perform configuration hardening audits based on different requirements, including the choice of those defined by CIS.
 
 ## Security Auditing Tools
 
@@ -10,8 +10,8 @@ The best way to understand what device hardening and how to do it, is to follow 
   * [Lynis (Linux Security Auditing)](https://github.com/CISOfy/Lynis) - Lynis is a security auditing tool for systems based on UNIX like Linux, macOS, BSD, and others. It performs an in-depth security scan and runs on the system itself.
   * [Seatbelt (Windows Security Auditing) ](https://github.com/GhostPack/Seatbelt)- Seatbelt is a C# project that performs a number of security oriented host-survey "safety checks" relevant from both offensive and defensive security perspectives.
   * [BTPS: Blue team Powershell Toolkit ](https://github.com/tobor88/BTPS-SecPack)- A collection of PowerShell tools that can be utilized to protect defend an environment based Microsoft's recommendations.
-* [Bloodhound Enterprise ](https://bloodhoundenterprise.io)- Enterprise grade attack path management solution
-* [Purple Knight](https://www.purple-knight.com) -  An enterprise grade Active Directory Defense solution with AD mapping, security reports, security indicators and remediation guides.
+* [Bloodhound Enterprise ](https://bloodhoundenterprise.io/)- Enterprise grade attack path management solution
+* [Purple Knight](https://www.purple-knight.com/) -  An enterprise grade Active Directory Defense solution with AD mapping, security reports, security indicators and remediation guides.
 * [debsums](https://manpages.ubuntu.com/manpages/trusty/man1/debsums.1.html) - Utility for checking installed debian packages and comparing that hashes against a list of known good ones. Handy to run every once&#x20;
 * [PSPKIAudit](https://github.com/GhostPack/PSPKIAudit) - PowerShell toolkit for auditing Active Directory Certificate Services (AD CS).
 
@@ -56,6 +56,7 @@ The best way to understand what device hardening and how to do it, is to follow 
 * [NSA's Secure Windows baseline](https://github.com/nsacyber/Windows-Secure-Host-Baseline)
 * [https://www.securedyou.com/how-to-secure-linux-server-from-hackers-hardening-guide/](https://www.securedyou.com/how-to-secure-linux-server-from-hackers-hardening-guide/)
 * [NSA\_NETWORK\_INFRASTRUCTURE\_SECURITY\_GUIDANCE\_20220301.PDF](https://media.defense.gov/2022/Mar/01/2002947139/-1/-1/0/CTR\_NSA\_NETWORK\_INFRASTRUCTURE\_SECURITY\_GUIDANCE\_20220301.PDF)
+* [https://admx.help/](https://admx.help/) - Group Policy Administrative Templates Catalog
 * _Defensive Securit Handbook: Microsoft Windows Infrastructure - pg. 81_
 * _Defensive Securit Handbook: Hardening Endpoints - pg. 116_
 * _Defensive Securit Handbook: Network Infrastructure - pg. 143_
