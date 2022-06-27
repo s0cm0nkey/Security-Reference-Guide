@@ -12,13 +12,13 @@
 ### Cloud Security and Hardening
 
 * [SANS Cloud Security Checklist](https://www.sans.org/cloud-security/securing-web-application-technologies/?msc=cloud-security-lp) - Best practices and references for hardening your cloud infrastructure.
-* [https://cloudsecdocs.com/](https://cloudsecdocs.com) - Great page with tons of detail on cloud and container security
-* [https://cloudsecwiki.com/](https://cloudsecwiki.com) - Handy page with a few resources and hardening tips for cloud deployments.
+* [https://cloudsecdocs.com/](https://cloudsecdocs.com/) - Great page with tons of detail on cloud and container security
+* [https://cloudsecwiki.com/](https://cloudsecwiki.com/) - Handy page with a few resources and hardening tips for cloud deployments.
 
 ### Cloud Pen Testing
 
 * [https://github.com/CyberSecurityUP/Awesome-Cloud-PenTest](https://github.com/CyberSecurityUP/Awesome-Cloud-PenTest) - Huge collection of different offensive cloud tools and resources.
-* [https://hackingthe.cloud/](https://hackingthe.cloud) - Solid resource for cloud pentesting methodology and tooling.
+* [https://hackingthe.cloud/](https://hackingthe.cloud/) - Solid resource for cloud pentesting methodology and tooling.
 * _Hacking: The next generation - Cloud Insecurity: Sharing the cloud with your enemy, pg. 121_
 
 ### Multi-Cloud Tools
@@ -50,7 +50,7 @@
 * Reference Docs
   * [https://github.com/MicrosoftDocs/azure-docs](https://github.com/MicrosoftDocs/azure-docs)
   * [https://www.microsoft.com/en-us/msrc/pentest-rules-of-engagement](https://www.microsoft.com/en-us/msrc/pentest-rules-of-engagement) - Azure Pentesting Rules of Engagement
-  * [https://azurerange.azurewebsites.net/](https://azurerange.azurewebsites.net) - Azure IP Ranges
+  * [https://azurerange.azurewebsites.net/](https://azurerange.azurewebsites.net/) - Azure IP Ranges
   * &#x20;[https://www.cloudconformity.com/knowledge-base/azure/](https://www.cloudconformity.com/knowledge-base/azure/) - Azure Best Practices
   * [https://github.com/AzureAD/Deployment-Plans](https://github.com/AzureAD/Deployment-Plans)
 * Resource Collections
@@ -125,6 +125,7 @@
   * [https://bloodhound.readthedocs.io/en/latest/data-collection/azurehound.html](https://bloodhound.readthedocs.io/en/latest/data-collection/azurehound.html)
     * [Azurehound Cypher Cheatsheet](https://hausec.com/2020/11/23/azurehound-cypher-cheatsheet/)
   * [Keys of the kingdom: Playing God as Global Admin](https://o365blog.com/post/admin/)
+  * [https://danielchronlund.com/2022/01/07/the-attackers-guide-to-azure-ad-conditional-access/](https://danielchronlund.com/2022/01/07/the-attackers-guide-to-azure-ad-conditional-access/)
 * Check for open blobs
   * [https://www.youtube.com/watch?v=AWhag2K3AS8](https://www.youtube.com/watch?v=AWhag2K3AS8)
   * [https://xapax.github.io/security/#attacking\_cloud\_environment/attacking\_azure/check\_for\_blobs/](https://xapax.github.io/security/#attacking\_cloud\_environment/attacking\_azure/check\_for\_blobs/)
@@ -174,10 +175,10 @@
 * DFIR
   * [AzureHunter](https://github.com/darkquasar/AzureHunter) - A Cloud Forensics Powershell module to run threat hunting playbooks on data from Azure and O365
     * [https://www.kitploit.com/2021/11/azurehunter-cloud-forensics-powershell.html?m=1](https://www.kitploit.com/2021/11/azurehunter-cloud-forensics-powershell.html?m=1)
-    * [https://azurehunter.readthedocs.io/](https://azurehunter.readthedocs.io)
+    * [https://azurehunter.readthedocs.io/](https://azurehunter.readthedocs.io/)
   * [Sparrow](https://github.com/cisagov/Sparrow) - Sparrow.ps1 was created by CISA's Cloud Forensics team to help detect possible compromised accounts and applications in the Azure/m365 environment.
   * [hawk](https://github.com/T0pCyber/hawk) - Powershell Based tool for gathering information related to O365 intrusions and potential Breaches
-    * [https://cloudforensicator.com/](https://cloudforensicator.com)
+    * [https://cloudforensicator.com/](https://cloudforensicator.com/)
   * [DFIR-O365RC](https://github.com/ANSSI-FR/DFIR-O365RC) - The DFIR-O365RC PowerShell module is a set of functions that allow the DFIR analyst to collect logs relevant for Office 365 Business Email Compromise investigations.
   * [AzureADIncidentResponse](https://www.powershellgallery.com/packages/AzureADIncidentResponse/4.0) - Tooling to assist in Azure AD incident response
 
@@ -186,7 +187,7 @@
 ### Basics&#x20;
 
 * Reference Docs
-  * [https://docs.aws.amazon.com/](https://docs.aws.amazon.com)
+  * [https://docs.aws.amazon.com/](https://docs.aws.amazon.com/)
   * [https://github.com/awsdocs](https://github.com/awsdocs)
   * [https://ip-ranges.amazonaws.com/ip-ranges.json](https://ip-ranges.amazonaws.com/ip-ranges.json) - AWS IP Ranges
   * [amazon-ec2-user-guide](https://github.com/toniblyx/amazon-ec2-user-guide) - The open source version of the Amazon EC2 User Guide for Linux.
