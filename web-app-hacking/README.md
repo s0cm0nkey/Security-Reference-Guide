@@ -64,12 +64,9 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 
 ### Resources and Reference
 
-*   Methodology
-
-    * [https://github.com/Cyber-Guy1/theCyberGuy\_Recon\_V1.0](https://github.com/Cyber-Guy1/theCyberGuy\_Recon\_V1.0) - Great Methodology MindMap
-    * [https://labs.detectify.com/2021/11/30/hakluke-creating-the-perfect-bug-bounty-automation/](https://labs.detectify.com/2021/11/30/hakluke-creating-the-perfect-bug-bounty-automation/)
-
-
+* Methodology
+  * [https://github.com/Cyber-Guy1/theCyberGuy\_Recon\_V1.0](https://github.com/Cyber-Guy1/theCyberGuy\_Recon\_V1.0) - Great Methodology MindMap
+  * [https://labs.detectify.com/2021/11/30/hakluke-creating-the-perfect-bug-bounty-automation](https://labs.detectify.com/2021/11/30/hakluke-creating-the-perfect-bug-bounty-automation/)
 * Resource collections
   * [awesome-bug-bounty](https://github.com/djadmin/awesome-bug-bounty) - is a comprehensive curated list of available Bug Bounty.
 * [Firebounty](https://firebounty.com) — Bug bounty search engine
@@ -133,6 +130,7 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 * [interactsh](https://github.com/projectdiscovery/interactsh) - An OOB interaction gathering server and client library
   * [https://app.interactsh.com/](https://app.interactsh.com/)
 * [Firebounty](https://firebounty.com) — Bug bounty search engine
+* [https://github.com/brevityinmotion/goodfaith](https://github.com/brevityinmotion/goodfaith) - A tool that helps you stay within scope for bug bounty recon automation.
 
 ## **Training and Resources**
 
