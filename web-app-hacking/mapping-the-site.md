@@ -41,6 +41,7 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [https://www.riskiq.com/](https://www.riskiq.com/) - RiskIQ Digital Footprint gives complete visibility beyond the firewall. Unlike scanners and IP-dependent data vendors, RiskIQ Digital Footprint is the only solution with composite intelligence, code-level discovery and automated threat detection and exposure monitoring—security intelligence mapped to your attack surface.
 * [https://dehashed.com/](https://dehashed.com/) - Scan domain for indicators found in breaches
 * [https://github.com/hakluke/hakcertstream](https://github.com/hakluke/hakcertstream) - Use CertStream to get lists of new domains and subdomains registered with a certificate authority.
+* [https://github.com/ayoubfathi/leaky-paths](https://github.com/ayoubfathi/leaky-paths) - A collection of special paths linked to major web CVEs, known misconfigurations, juicy APIs ..etc. It could be used as a part of web content discovery, to scan passively for high-quality endpoints and quick-wins.
 
 ## Content Discovery
 
@@ -84,6 +85,8 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [shosubgo](https://github.com/incogbyte/shosubgo) - Small tool to Grab subdomains using Shodan api.
 * [zdns](https://github.com/zmap/zdns) - Fast CLI DNS Lookup Tool
 * [aiodnsbrute](https://github.com/blark/aiodnsbrute) - A Python 3.5+ tool that uses asyncio to brute force domain names asynchronously. This is a bruteforcer with insane speed, and a very large number of built in wordlists. Use a list of resolvers with it
+* [Altdns](https://github.com/infosec-au/altdns): Altdns is a DNS recon tool that allows for the discovery of subdomains that conform to patterns. Altdns takes in words that could be present in subdomains under a domain (such as test, dev, staging), as well as a list of known subdomains.
+* [Findomain](https://github.com/Findomain/Findomain): Findomain offers a dedicated monitoring service hosted in Amazon (only the local version is free), that allows you to monitor your target domains and send alerts to Discord and Slack webhooks or Telegram chats when new subdomains are found.
 
 ### Subdomain Fly Over
 
@@ -92,6 +95,7 @@ Visually parse and fly through subdomains looking for anything fun and interesti
 * [Aquatone](https://github.com/michenriksen/aquatone) - Aquatone is a tool for visual inspection of websites across a large amount of hosts and is convenient for quickly gaining an overview of HTTP-based attack surface.
   * [https://blog.intigriti.com/2021/07/20/hacker-tools-aquatone/](https://blog.intigriti.com/2021/07/20/hacker-tools-aquatone/)&#x20;
 * [EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness) - EyeWitness is designed to take screenshots of websites, provide some server header info, and identify default credentials if possible
+* [Meg](https://github.com/tomnomnom/meg): Meg is a tool for fetching lots of URLs without taking a toll on the servers. It can be used to fetch many paths for many hosts, or fetching a single path for all hosts before moving on to the next path and repeating.
 
 ### **Subdomain Takeover**
 

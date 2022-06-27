@@ -5,7 +5,7 @@
 The Leading Web application testing tool on the market. Has a community edition that is free and handy for basic web app testing and CTF level functionality. Also has a pro version that has advanced features like a powerful brute forcing too, vulnerability scanner and access to more extensions.
 
 * [Burp Commander](https://github.com/pentestgeek/burpcommander) - Ruby command-line interface to Burp Suite's REST API
-* [https://burpsuite.guide/](https://burpsuite.guide) - Get information on the usage of extensions along with other tips and tricksc
+* [https://burpsuite.guide/](https://burpsuite.guide/) - Get information on the usage of extensions along with other tips and tricksc
 * [https://www.blackhillsinfosec.com/using-simple-burp-macros-to-automate-testing/](https://www.blackhillsinfosec.com/using-simple-burp-macros-to-automate-testing/)
 * [https://portswigger.net/support/using-burp-suites-engagement-tools](https://portswigger.net/support/using-burp-suites-engagement-tools)
 * SANS Burp Cheat Sheet - [https://sansorg.egnyte.com/dl/x19ByeTOpS](https://sansorg.egnyte.com/dl/x19ByeTOpS)
@@ -63,7 +63,7 @@ The Leading Web application testing tool on the market. Has a community edition 
 
 * [HUNT](https://github.com/bugcrowd/HUNT) - HUNT Suite is a collection of Burp Suite Pro/Free and OWASP ZAP extensions, collected by Bug Crowd.
 * [BurpBounty](https://github.com/wagiro/BurpBounty) - This Burp Suite extension allows you, in a quick and simple way, to improve the active and passive Burp Suite scanner by means of personalized rules through a very intuitive graphical interface.
-  * [Burp Bounty Pro](https://burpbounty.net) - Premium bundle of vulnerabilites to scan for.
+  * [Burp Bounty Pro](https://burpbounty.net/) - Premium bundle of vulnerabilites to scan for.
 * [VulnersScan](https://github.com/vulnersCom/burp-vulners-scanner) - Burp Suite scanner plugin based on [Vulners.com](https://vulners.com) vulnerability database API
   * Same thing as [https://portswigger.net/bappstore/c9fb79369b56407792a7104e3c4352fb](https://portswigger.net/bappstore/c9fb79369b56407792a7104e3c4352fb)
 * [Active Scan++](https://portswigger.net/bappstore/3123d5b5f25c4128894d97ea1acc4976) - Burp Scanner automates the task of scanning web sites for content and vulnerabilities. Depending on configuration, the Scanner can [crawl the application](https://portswigger.net/burp/documentation/scanner/crawling) to discover its content and functionality, and [audit the application](https://portswigger.net/burp/documentation/scanner/auditing) to discover vulnerabilities. Active Scan++ is an extension that expands the scanning capabilities of Burp Suite.
@@ -97,6 +97,7 @@ The Leading Web application testing tool on the market. Has a community edition 
 * [Flow](https://portswigger.net/bappstore/ee1c45f4cc084304b2af4b7e92c0a49d) - History of all burp tools, extensions and tests. Handy to pull all your results together
 * [Decoder Improved](https://portswigger.net/bappstore/0a05afd37da44adca514acef1cdde3b9) - Decoder Improved is a data transformation plugin for Burp Suite that better serves the varying and expanding needs of information security professionals.
 * [WSDLer](https://portswigger.net/bappstore/594a49bb233748f2bc80a9eb18a2e08f) - This extension takes a WSDL request, parses out the operations that are associated with the targeted web service, and generates SOAP requests that can then be sent to the SOAP endpoints.
+* [WSDL Wizard](https://portswigger.net/bappstore/ef2f3f1a593d417987bb2ddded760aee): This extension scans a target server for WSDL files. After performing normal mapping of an application’s content, right click on the relevant target in the site map, and choose “Scan for WSDL files” from the context menu. The extension will search the already discovered contents for URLs with the .wsdl file extension, and guess the locations of any additional WSDL files based on the file names known to be in use. The results of the scanning appear within the extension’s output tab in the Burp Extender tool.
 
 ## Burp Payloads
 

@@ -129,6 +129,7 @@
 * [erfs](https://github.com/hackerschoice/erfs) - An easy-to-use, easy-to-setup, hassle-free secure file system with the encrypted data being stored on a remote cloud server without having to trust the server.
   * [https://hackerschoice.medium.com/thcs-encrypted-cloud-based-file-system-a39234bd7cac](https://hackerschoice.medium.com/thcs-encrypted-cloud-based-file-system-a39234bd7cac)
 * [LDAPmonitor](https://github.com/p0dalirius/LDAPmonitor) - Monitor creation, deletion and changes to LDAP objects live during your pentest or system administration!
+* [https://github.com/codingo/Interlace](https://github.com/codingo/Interlace) - Easily turn single threaded command line applications into a fast, multi-threaded application with CIDR and glob support.
 
 ## Utility Commands
 
