@@ -165,7 +165,7 @@ Commands
 
 Open Source Vulnerability Assessment Scanner. Free and comes pre installed on Kali Linux.
 
-* [https://docs.greenbone.net/](https://docs.greenbone.net)
+* [https://docs.greenbone.net/](https://docs.greenbone.net/)
 * [https://www.kali.org/tools/gvm/](https://www.kali.org/tools/gvm/)
 * [https://tryhackme.com/room/openvas](https://tryhackme.com/room/openvas)
 
@@ -186,10 +186,10 @@ Commands
 
 ### **Other Scanning Tools**
 
-* [ReconMap](https://reconmap.org) - Reconmap is a vulnerability assessment and penetration testing (VAPT) platform. It helps software engineers and infosec pros collaborate on security projects, from planning, to implementation and documentation. The tool's aim is to go from recon to report in the least possible time.
+* [ReconMap](https://reconmap.org/) - Reconmap is a vulnerability assessment and penetration testing (VAPT) platform. It helps software engineers and infosec pros collaborate on security projects, from planning, to implementation and documentation. The tool's aim is to go from recon to report in the least possible time.
   * [https://github.com/reconmap/reconmap](https://github.com/reconmap/reconmap)
 * [Vulmap](https://github.com/vulmon/Vulmap) - Vulmap Online Local Vulnerability Scanners Project
-  * [https://vulmon.com/](https://vulmon.com)
+  * [https://vulmon.com/](https://vulmon.com/)
 * [Vuls](https://github.com/future-architect/vuls)  - Vulnerability scanner for Linux/FreeBSD, agent-less, written in Go.
 * [Tsunami Scanner](https://github.com/google/tsunami-security-scanner) - Tsunami is a general purpose network security scanner with an extensible plugin system for detecting high severity vulnerabilities with high confidence.
 * [Flan Scan](https://github.com/cloudflare/flan) - Flan Scan is a lightweight network vulnerability scanner. With Flan Scan you can easily find open ports on your network, identify services and their version, and get a list of relevant CVEs affecting your network.
@@ -204,7 +204,7 @@ Commands
 ## **Attack Surface Mapping/Asset Discovery**
 
 * [Awesome Lists Collection: Asset Discovery](https://github.com/redhuntlabs/Awesome-Asset-Discovery)
-* [https://redhuntlabs.com/](https://redhuntlabs.com)
+* [https://redhuntlabs.com/](https://redhuntlabs.com/)
 
 ### [Amass](https://github.com/OWASP/Amass)&#x20;
 
@@ -221,9 +221,7 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [AttackSurfaceMapper](https://github.com/superhedgy/AttackSurfaceMapper) - AttackSurfaceMapper (ASM) is a reconnaissance tool that uses a mixture of open source intelligence and active techniques to expand the attack surface of your target. You feed in a mixture of one or more domains, subdomains and IP addresses and it uses numerous techniques to find more targets.
 * [Asnip](https://github.com/harleo/asnip) - Asnip retrieves all IPs of a target organization—used for attack surface mapping in reconnaissance phases.
 * [Microsoft Attack Surface Analyzer](https://github.com/Microsoft/AttackSurfaceAnalyzer) - Attack Surface Analyzer is a [Microsoft](https://github.com/microsoft/) developed open source security tool that analyzes the attack surface of a target system and reports on potential security vulnerabilities introduced during the installation of software or system misconfiguration.
-* [Aquatone](https://github.com/michenriksen/aquatone) - Aquatone is a tool for visual inspection of websites across a large amount of hosts and is convenient for quickly gaining an overview of HTTP-based attack surface.
-  * [https://blog.intigriti.com/2021/07/20/hacker-tools-aquatone/](https://blog.intigriti.com/2021/07/20/hacker-tools-aquatone/)&#x20;
-* [https://ivre.rocks/](https://ivre.rocks) - IVRE is an open-source framework for network recon. It relies on open-source well-known tools ([Nmap](https://nmap.org), [Masscan](https://github.com/robertdavidgraham/masscan), [ZGrab2](https://github.com/zmap/zgrab2), [ZDNS](https://github.com/zmap/zdns) and [Zeek (Bro)](https://www.zeek.org)) to gather data (_network intelligence_), stores it in a database ([MongoDB](https://www.mongodb.com) is the recommended backend), and provides tools to analyze it.
+* [https://ivre.rocks/](https://ivre.rocks/) - IVRE is an open-source framework for network recon. It relies on open-source well-known tools ([Nmap](https://nmap.org/), [Masscan](https://github.com/robertdavidgraham/masscan), [ZGrab2](https://github.com/zmap/zgrab2), [ZDNS](https://github.com/zmap/zdns) and [Zeek (Bro)](https://www.zeek.org/)) to gather data (_network intelligence_), stores it in a database ([MongoDB](https://www.mongodb.com/) is the recommended backend), and provides tools to analyze it.
 
 ## **SSL/TLS Scanning**
 
@@ -272,7 +270,7 @@ DNS Enumeration
 
 * [HoneyCaught](https://github.com/aswinmguptha/HoneyCaught) - Honeypot detection tool
 * [Sniffing Bear](https://github.com/MrSuicideParrot/SniffingBear) - A modular and distributed tool developed in python to scan networks for honeypots
-* [https://honeyscore.shodan.io/](https://honeyscore.shodan.io) - Shodan honeypot detector.
+* [https://honeyscore.shodan.io/](https://honeyscore.shodan.io/) - Shodan honeypot detector.
 * [changeme](https://www.kali.org/tools/changeme/) - This package contains a default credential scanner. changeme supports the http/https, MSSQL, MySQL, Postgres, ssh and ssh w/key protocols.
 * [SharpShare](https://github.com/djhohnstein/SharpShares/) - Enumerate all network shares in the current domain. Also, can resolve names to IP addresses.
 * [Phishious](https://github.com/Rices/Phishious) - An open-source Secure Email Gateway (SEG) evaluation toolkit designed for red-teamers.

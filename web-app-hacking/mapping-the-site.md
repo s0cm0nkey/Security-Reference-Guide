@@ -21,6 +21,8 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
   * [https://github.com/projectdiscovery/nuclei-templates](https://github.com/projectdiscovery/nuclei-templates)
   * [https://github.com/projectdiscovery/nuclei-docs](https://github.com/projectdiscovery/nuclei-docs)
 * [subfinder](https://github.com/projectdiscovery/subfinder) - Subfinder is a subdomain discovery tool that discovers valid subdomains for websites. Designed as a passive framework to be useful for bug bounties and safe for penetration testing.
+  * To get better results remember to use api keys. The following need them, [Binaryedge](https://binaryedge.io/), [C99](https://api.c99.nl/), [Certspotter](https://sslmate.com/certspotter/api/), [Chinaz](http://my.chinaz.com/ChinazAPI/DataCenter/MyDataApi), [Censys](https://censys.io/), [Chaos](https://chaos.projectdiscovery.io/), [DnsDB](https://api.dnsdb.info/), [Fofa](https://fofa.so/static\_pages/api\_help), [Github](https://github.com/), [Intelx](https://intelx.io/), [Passivetotal](http://passivetotal.org/), [Robtex](https://www.robtex.com/api/), [SecurityTrails](http://securitytrails.com/), [Shodan](https://shodan.io/), [Spyse](https://spyse.com/), [Threatbook](https://x.threatbook.cn/en), [Virustotal](https://www.virustotal.com/), [Zoomeye](https://www.zoomeye.org/)
+  * API key file is located at $HOME/.config/subfinder/provider-config.yaml and the github has an example
 * [naabu](https://github.com/projectdiscovery/naabu) - A fast port scanner written in go with a focus on reliability and simplicity. Designed to be used in combination with other tools for attack surface discovery in bug bounties and pentests
 * [httpx](https://github.com/projectdiscovery/httpx) - httpx is a fast and multi-purpose HTTP toolkit allows to run multiple probers using retryablehttp library, it is designed to maintain the result reliability with increased threads.
 * [proxify](https://github.com/projectdiscovery/proxify) - Swiss Army knife Proxy tool for HTTP/HTTPS traffic capture, manipulation, and replay on the go.
@@ -38,6 +40,7 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [https://www.whoisxmlapi.com/](https://www.whoisxmlapi.com/) - Domain & IP Data Intelligence for Greater Enterprise Security
 * [https://www.riskiq.com/](https://www.riskiq.com/) - RiskIQ Digital Footprint gives complete visibility beyond the firewall. Unlike scanners and IP-dependent data vendors, RiskIQ Digital Footprint is the only solution with composite intelligence, code-level discovery and automated threat detection and exposure monitoring—security intelligence mapped to your attack surface.
 * [https://dehashed.com/](https://dehashed.com/) - Scan domain for indicators found in breaches
+* [https://github.com/hakluke/hakcertstream](https://github.com/hakluke/hakcertstream) - Use CertStream to get lists of new domains and subdomains registered with a certificate authority.
 
 ## Content Discovery
 
@@ -70,12 +73,25 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [assetfinder](https://www.kali.org/tools/assetfinder/) - A tool to find domains and subdomains potentially related to a given domain.
 * [fierce](https://www.kali.org/tools/fierce/) - Fierce is a semi-lightweight scanner that helps locate non-contiguous IP space and hostnames against specified domains. It’s really meant as a pre-cursor to nmap, unicornscan, nessus, nikto, etc, since all of those require that you already know what IP space you are looking for.
 * [cansina](https://github.com/deibit/cansina) - a Web Content Discovery Application. Help you making requests and filtering and inspecting the responses to tell apart if it is an existing resource or just an annoying or disguised 404.
-* [subbrute](https://github.com/TheRook/subbrute) - A DNS meta-query spider that enumerates DNS records, and subdomains.
+* [Sublist3r](https://github.com/aboul3la/Sublist3r) - Sublist3r is a python tool designed to enumerate subdomains of websites using OSINT. It helps penetration testers and bug hunters collect and gather subdomains for the domain they are targeting. Sublist3r enumerates subdomains using many search engines such as Google, Yahoo, Bing, Baidu and Ask. Sublist3r also enumerates subdomains using Netcraft, Virustotal, ThreatCrowd, DNSdumpster and ReverseDNS. This tool can do both scraping and Bruteforce which makes it a nice combined tool. The downside how ever is the wordlist cannot be specified.
+  * [https://tryhackme.com/room/rpsublist3r](https://tryhackme.com/room/rpsublist3r)
+  * [subbrute](https://github.com/TheRook/subbrute) - A DNS meta-query spider that enumerates DNS records, and subdomains. (included in Sublist3r)
 * [dnsx](https://github.com/projectdiscovery/dnsx) - dnsx is a fast and multi-purpose DNS toolkit allow to run multiple DNS queries of your choice with a list of user-supplied resolvers.
-* [shuffledns](https://github.com/projectdiscovery/shuffledns) - MassDNS wrapper written in go that allows you to enumerate valid subdomains using active bruteforce as well as resolve subdomains with wildcard handling and easy input-output support.
+* [massdns](https://github.com/blechschmidt/massdns) - A high-performance DNS stub resolver for bulk lookups and reconnaissance (subdomain enumeration)
+  * Due to how many requests sent, we should use a list of resolvers to not get our connection banned. More on rate limiting here: [https://github.com/blechschmidt/massdns#rate-limiting-evasion](https://github.com/blechschmidt/massdns#rate-limiting-evasion)
+  * [shuffledns](https://github.com/projectdiscovery/shuffledns) - MassDNS wrapper written in go that allows you to enumerate valid subdomains using active bruteforce as well as resolve subdomains with wildcard handling and easy input-output support.
 * [SubDomainizer](https://github.com/nsonaniya2010/SubDomainizer) - A tool to find subdomains and interesting things hidden inside, external Javascript files of page, folder, and Github.
 * [shosubgo](https://github.com/incogbyte/shosubgo) - Small tool to Grab subdomains using Shodan api.
 * [zdns](https://github.com/zmap/zdns) - Fast CLI DNS Lookup Tool
+* [aiodnsbrute](https://github.com/blark/aiodnsbrute) - A Python 3.5+ tool that uses asyncio to brute force domain names asynchronously. This is a bruteforcer with insane speed, and a very large number of built in wordlists. Use a list of resolvers with it
+
+### Subdomain Fly Over
+
+Visually parse and fly through subdomains looking for anything fun and interesting.
+
+* [Aquatone](https://github.com/michenriksen/aquatone) - Aquatone is a tool for visual inspection of websites across a large amount of hosts and is convenient for quickly gaining an overview of HTTP-based attack surface.
+  * [https://blog.intigriti.com/2021/07/20/hacker-tools-aquatone/](https://blog.intigriti.com/2021/07/20/hacker-tools-aquatone/)&#x20;
+* [EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness) - EyeWitness is designed to take screenshots of websites, provide some server header info, and identify default credentials if possible
 
 ### **Subdomain Takeover**
 

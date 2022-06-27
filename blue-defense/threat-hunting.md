@@ -17,7 +17,7 @@ Threat hunting doesn’t have to be complex, but it’s not for everyone. Knowin
 * [ACM's Threat Hunting Labs](https://activecm.github.io/threat-hunting-labs/) - These are a series of labs that cover different types of analysis that can be done on network data when threat hunting.
 * [A Simple Hunting Maturity Model | Enterprise Detection & Response](https://detect-respond.blogspot.com/2015/10/a-simple-hunting-maturity-model.html)&#x20;
 * [HowToHunt](https://github.com/KathanP19/HowToHunt) - Tutorials and Things to Do while Hunting Vulnerability.&#x20;
-* [ThreatHunting Home](https://www.threathunting.net) - Links and Blog on popular threat hunting proceedures
+* [ThreatHunting Home](https://www.threathunting.net/) - Links and Blog on popular threat hunting proceedures
 * [Tool Analysis Result Sheet](https://jpcertcc.github.io/ToolAnalysisResultSheet/) - JP-CERT analysis on detecting the use of multiple popular tools within an network environment.
 
 ### Hunting with MITRE ATTACK
@@ -27,7 +27,7 @@ Threat hunting doesn’t have to be complex, but it’s not for everyone. Knowin
 * [Ten Ways Zeek Can Help You Detect the TTPs of MITRE ATT\&CK](https://m.youtube.com/watch?v=DfTbSc\_q2F8)
 * [Post-Exploitation Hunting with ATT\&CK & Elastic](https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1533071345.pdf)
 * [How MITRE ATT\&CK helps security operations](https://www.slideshare.net/votadlos/how-mitre-attck-helps-security-operations)
-* [MITRE Cyber Analytics Repository](https://car.mitre.org)
+* [MITRE Cyber Analytics Repository](https://car.mitre.org/)
 * [MITRE ATT\&CK Windows Logging Cheat Sheets](https://github.com/MalwareArchaeology/ATTACK)
 * [Defensive Gap Assessment with MITRE ATT\&CK](https://www.cybereason.com/blog/defensive-gap-assessment-with-mitre-attck)
 * [Prioritizing the Remediation of Mitre ATT\&CK Framework Gaps](https://blog.netspi.com/prioritizing-the-remediation-of-mitre-attck-framework-gaps/)
@@ -40,10 +40,14 @@ Threat hunting doesn’t have to be complex, but it’s not for everyone. Knowin
 * [Alternative DNS Techniques - Active Countermeasures](https://www.activecountermeasures.com/alternative-dns-techniques/)
 * [SANS@MIC -Threat Hunting via DNS - SANS Institute](https://www.sans.org/webcasts/sansatmic-threat-hunting-dns-114180)&#x20;
 
+### Misc
+
+* [https://fourcore.io/blogs/threat-hunting-with-windows-event-log-sigma-rules](https://fourcore.io/blogs/threat-hunting-with-windows-event-log-sigma-rules)
+
 ## Tools
 
 * OS/VM&#x20;
-  * [RedHunt-OS](https://github.com/redhuntlabs/RedHunt-OS) - Virtual Machine for Adversary Emulation and Threat Hunting by [RedHunt Labs](https://redhuntlabs.com)
+  * [RedHunt-OS](https://github.com/redhuntlabs/RedHunt-OS) - Virtual Machine for Adversary Emulation and Threat Hunting by [RedHunt Labs](https://redhuntlabs.com/)
   * [ThreatPursuit-VM](https://github.com/fireeye/ThreatPursuit-VM) - A fully customizable, open-sourced Windows-based distribution focused on threat intelligence analysis and hunting designed for intel and malware analysts as well as threat hunters to get up and running quickly.
 * Platform&#x20;
   * [HELK: The Hunting ELK](https://github.com/Cyb3rWard0g/HELK) -  The Hunting ELK or simply the HELK is one of the first open source hunt platforms with advanced analytics capabilities such as SQL declarative language, graphing, structured streaming, and even machine learning via Jupyter notebooks and Apache Spark over an ELK stack.

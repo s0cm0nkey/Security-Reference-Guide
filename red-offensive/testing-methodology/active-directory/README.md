@@ -8,11 +8,13 @@ description: Where can we go, once we are in?
 
 ![](../../../.gitbook/assets/Pentestingactivedirectory.png)
 
+* [https://mayfly277.github.io/assets/blog/pentest\_ad\_dark.svg](https://mayfly277.github.io/assets/blog/pentest\_ad\_dark.svg) - Another killer AD Mindmap.
+
 ### Active Directory Basics and Collections
 
 {% embed url="https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview" %}
 
-* [https://adsecurity.org/](https://adsecurity.org)
+* [https://adsecurity.org/](https://adsecurity.org/)
 * [https://kvenkatraman10.gitbook.io/ad101/](https://kvenkatraman10.gitbook.io/ad101/)
 * [https://activedirectorypro.com/glossary/](https://activedirectorypro.com/glossary/)
 * [Infosec\_Reference/Active\_Directory](https://github.com/rmusser01/Infosec\_Reference/blob/master/Draft/Active\_Directory.md)
@@ -75,7 +77,7 @@ description: Where can we go, once we are in?
 * [https://casvancooten.com/posts/2020/11/windows-active-directory-exploitation-cheat-sheet-and-command-reference/](https://casvancooten.com/posts/2020/11/windows-active-directory-exploitation-cheat-sheet-and-command-reference/)
 * [Tactics, Techniques and Procedures for Attacking Active Directory BlackHat Asia 2019](https://docs.google.com/presentation/d/1j2nW05H-iRz7-FVTRh-LBXQm6M6YIBQNWa4V7tp99YQ/)
 * [https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse](https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse)
-* [WadComs - ](https://wadcoms.github.io/#)WADComs is an interactive cheat sheet, containing a curated list of offensive security tools and their respective commands, to be used against Windows/AD environments.
+* [WadComs - ](https://wadcoms.github.io)WADComs is an interactive cheat sheet, containing a curated list of offensive security tools and their respective commands, to be used against Windows/AD environments.
 
 ## **Queries and Commands for Active Directory**
 
@@ -100,7 +102,7 @@ description: Where can we go, once we are in?
 
 The Active Directory Mapping tool. Used by Red and Blue teamers to map out their Active Directory environment and look for the shortest path to compromise Domain Admin
 
-* [Bloodhound Enterprise ](https://bloodhoundenterprise.io)- Enterprise grade attack path management solution
+* [Bloodhound Enterprise ](https://bloodhoundenterprise.io/)- Enterprise grade attack path management solution
 * [BloodHound.py](https://github.com/fox-it/BloodHound.py) - A Python based ingestor for BloodHound
 * [Plumhound](https://github.com/PlumHound/PlumHound) - Reporting Engine for bloodhound.
 * [SharpHound](https://github.com/BloodHoundAD/SharpHound) - C# version of bloodhound
@@ -194,7 +196,7 @@ The Active Directory Mapping tool. Used by Red and Blue teamers to map out their
 
 ### Defensive/Hardening Tools
 
-* [PingCastle](https://www.pingcastle.com) - A tool designed to assess quickly the Active Directory security level with a methodology based on risk assessment and a maturity framework
+* [PingCastle](https://www.pingcastle.com/) - A tool designed to assess quickly the Active Directory security level with a methodology based on risk assessment and a maturity framework
 * [Aorato Skeleton Key Malware Remote DC Scanner](https://gallery.technet.microsoft.com/Aorato-Skeleton-Key-24e46b73) - Remotely scans for the existence of the Skeleton Key Malware
 * [RiskySPN](https://github.com/cyberark/RiskySPN) - RiskySPNs is a collection of PowerShell scripts focused on detecting and abusing accounts associated with SPNs (Service Principal Name).
 * [Deploy-Deception](https://github.com/samratashok/Deploy-Deception) - A PowerShell module to deploy active directory decoy objects
