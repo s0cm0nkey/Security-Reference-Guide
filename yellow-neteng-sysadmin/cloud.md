@@ -14,6 +14,7 @@
 * [SANS Cloud Security Checklist](https://www.sans.org/cloud-security/securing-web-application-technologies/?msc=cloud-security-lp) - Best practices and references for hardening your cloud infrastructure.
 * [https://cloudsecdocs.com/](https://cloudsecdocs.com/) - Great page with tons of detail on cloud and container security
 * [https://cloudsecwiki.com/](https://cloudsecwiki.com/) - Handy page with a few resources and hardening tips for cloud deployments.
+* [https://medium.com/mitre-engenuity/research-partnership-matures-att-ck-for-cloud-d232998968ce](https://medium.com/mitre-engenuity/research-partnership-matures-att-ck-for-cloud-d232998968ce)
 
 ### Cloud Pen Testing
 
@@ -43,7 +44,7 @@
 
 {% file src="../.gitbook/assets/canvas.png" %}
 
-## **Azure -** The Microsoft Cloud Environment
+## **Azure and O365 -** The Microsoft Cloud Environment
 
 ### Basics
 
@@ -52,7 +53,10 @@
   * [https://www.microsoft.com/en-us/msrc/pentest-rules-of-engagement](https://www.microsoft.com/en-us/msrc/pentest-rules-of-engagement) - Azure Pentesting Rules of Engagement
   * [https://azurerange.azurewebsites.net/](https://azurerange.azurewebsites.net/) - Azure IP Ranges
   * &#x20;[https://www.cloudconformity.com/knowledge-base/azure/](https://www.cloudconformity.com/knowledge-base/azure/) - Azure Best Practices
+  * [https://docs.microsoft.com/en-us/security/benchmark/azure/v2-cis-benchmark](https://docs.microsoft.com/en-us/security/benchmark/azure/v2-cis-benchmark)
   * [https://github.com/AzureAD/Deployment-Plans](https://github.com/AzureAD/Deployment-Plans)
+  * [https://attack.mitre.org/matrices/enterprise/cloud/azuread/](https://attack.mitre.org/matrices/enterprise/cloud/azuread/)
+  * [https://attack.mitre.org/matrices/enterprise/cloud/office365/](https://attack.mitre.org/matrices/enterprise/cloud/office365/)
 * Resource Collections
   * [https://github.com/kmcquade/awesome-azure-security](https://github.com/kmcquade/awesome-azure-security)
   * [https://github.com/Azure/Azure-Network-Security](https://github.com/Azure/Azure-Network-Security)
@@ -65,6 +69,8 @@
   * [https://gcits.com/knowledge-base/enabling-unified-audit-log-delegated-office-365-tenants-via-powershell/](https://gcits.com/knowledge-base/enabling-unified-audit-log-delegated-office-365-tenants-via-powershell/)
   * [https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype](https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)
   * [https://www.codetwo.com/admins-blog/how-to-export-office-365-mailboxes-to-pst-using-ediscovery/](https://www.codetwo.com/admins-blog/how-to-export-office-365-mailboxes-to-pst-using-ediscovery/)
+* [The basics of modern authentication - Microsoft identity platform](https://www.youtube.com/watch?v=tkQJSHFsduY)
+* [Unified Audit logs in Microsoft 365](https://www.youtube.com/watch?v=c1kId\_esv0k)
 
 ### Azure Training
 
@@ -77,6 +83,7 @@
 * [Learn Azure in a Month of Lunches](https://azure.microsoft.com/mediahandler/files/resourcefiles/learn-azure-in-a-month-of-lunches/Learn\_Azure\_in\_a\_Month\_of\_Lunches.pdf) - Iain Foulds (PDF)
 * [Azure for Architects, Third Edition](https://azure.microsoft.com/en-us/resources/azure-for-architects/) (PDF) _(email address or account required)_
 * [Azure Functions Succinctly, Syncfusion](https://www.syncfusion.com/ebooks/azure-functions-succinctly) (PDF, Kindle) (email address requested, not required)
+* [https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310](https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310)
 
 ### Azure CLI
 
@@ -101,6 +108,18 @@
 * [PowerShell Gallery | AzSentinel 0.6.8](https://www.powershellgallery.com/packages/AzSentinel/0.6.8)
 * [https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries)
 * [https://github.com/Azure/Azure-Sentinel-Notebooks](https://github.com/Azure/Azure-Sentinel-Notebooks)
+* [https://techcommunity.microsoft.com/t5/Azure-Sentinel/Azure-Sentinel-Performing-Additional-Security-Monitoring-of-High/ba-p/430740](https://techcommunity.microsoft.com/t5/Azure-Sentinel/Azure-Sentinel-Performing-Additional-Security-Monitoring-of-High/ba-p/430740)
+* [https://techcommunity.microsoft.com/t5/Azure-Sentinel/Importing-Sigma-Rules-to-Azure-Sentinel/ba-p/657097](https://techcommunity.microsoft.com/t5/Azure-Sentinel/Importing-Sigma-Rules-to-Azure-Sentinel/ba-p/657097)
+* Azure Sentinel and Jupyter Notebooks
+  * [https://techcommunity.microsoft.com/t5/Azure-Sentinel/Security-Investigation-with-Azure-Sentinel-and-Jupyter-Notebooks/ba-p/432921](https://techcommunity.microsoft.com/t5/Azure-Sentinel/Security-Investigation-with-Azure-Sentinel-and-Jupyter-Notebooks/ba-p/432921)
+  * [https://techcommunity.microsoft.com/t5/Azure-Sentinel/Security-Investigation-with-Azure-Sentinel-and-Jupyter-Notebooks/ba-p/483466](https://techcommunity.microsoft.com/t5/Azure-Sentinel/Security-Investigation-with-Azure-Sentinel-and-Jupyter-Notebooks/ba-p/483466)
+  * [https://techcommunity.microsoft.com/t5/Azure-Sentinel/Security-Investigation-with-Azure-Sentinel-and-Jupyter-Notebooks/ba-p/561413](https://techcommunity.microsoft.com/t5/Azure-Sentinel/Security-Investigation-with-Azure-Sentinel-and-Jupyter-Notebooks/ba-p/561413)
+* KQL - Kusto Query Language and Azure Sentinel
+  * [https://docs.microsoft.com/en-us/users/register?redirectUrl=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fdata-explorer%2Fkql-quick-reference](https://docs.microsoft.com/en-us/users/register?redirectUrl=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fdata-explorer%2Fkql-quick-reference)
+  * [https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries)
+  * [https://github.com/marcusbakker/KQL/blob/master/kql\_cheat\_sheet.pdf](https://github.com/marcusbakker/KQL/blob/master/kql\_cheat\_sheet.pdf)
+  * [https://azure.microsoft.com/en-us/blog/ml-powered-detections-with-kusto-query-language-in-azure-sentinel/](https://azure.microsoft.com/en-us/blog/ml-powered-detections-with-kusto-query-language-in-azure-sentinel/)
+  * [https://docs.microsoft.com/en-us/azure/data-explorer/kqlmagic](https://docs.microsoft.com/en-us/azure/data-explorer/kqlmagic)
 
 ### Azure Defender
 
@@ -136,6 +155,11 @@
   * [Privilege Escalation and Lateral Movement on Azure](https://medium.com/xm-cyber/privilege-escalation-and-lateral-movement-on-azure-part-1-47e128cfdc06) by [Hila Cohen (@hilaco10)](https://twitter.com/hilaco10): some techniques for how a red team can gain a foothold in an Azure environment, escalate their privileges, and move laterally inside Azure infrastructure by using the Azure RBAC module and common Azure misconfigurations.
   * [Privilege Escalation in Azure AD](https://emptydc.com/2020/12/10/privilege-escalation-in-azure-ad/) by [Jan Geisbauer (@janvonkirchheim)](https://twitter.com/janvonkirchheim): a breakdown of how Azure security principals (aka Enterprise applications) vs application objects (aka application registrations) and their associated permissions can be abused to impersonate an application.
   * [Privilege Escalation and Lateral Movement on Azure](https://medium.com/xm-cyber/privilege-escalation-and-lateral-movement-on-azure-part-1-47e128cfdc06): some techniques for how a red team can gain a foothold in an Azure environment, escalate their privileges, and move laterally inside Azure infrastructure by using the Azure RBAC module and common Azure misconfigurations.
+  * [https://srcincite.io/blog/2021/01/12/making-clouds-rain-rce-in-office-365.html](https://srcincite.io/blog/2021/01/12/making-clouds-rain-rce-in-office-365.html)
+  * [https://www.inversecos.com/2021/10/how-to-backdoor-azure-applications-and.html](https://www.inversecos.com/2021/10/how-to-backdoor-azure-applications-and.html)
+  * [https://www.inversecos.com/2021/09/backdooring-office-365-and-active.html](https://www.inversecos.com/2021/09/backdooring-office-365-and-active.html)
+  * [Office365 Attacks: Bypassing MFA, Achieving Persistence and More - Part I](https://www.inversecos.com/2021/09/office365-attacks-bypassing-mfa.html)\\
+  * [Spoofing Microsoft 365 Like It’s 1995 - Black Hills Information Security](https://www.blackhillsinfosec.com/spoofing-microsoft-365-like-its-1995/)
 * _Operator Handbook: Azure\_Exploit- pg. 44_
 
 ### Tools
@@ -145,6 +169,7 @@
 * Recon and Enumeration
   * [BlobHunter](https://github.com/cyberark/BlobHunter) - An opensource tool for scanning Azure blob storage accounts for publicly opened blobs.
   * [o365recon](https://github.com/nyxgeek/o365recon) - Script to retrieve information via O365 with a valid cred
+  * [Get-AzureADPSPermissionGrants.ps1](https://gist.github.com/psignoret/9d73b00b377002456b24fcb808265c23) **-** Lists delegated permission grants (OAuth2PermissionGrants) and application permissions grants (AppRoleAssignments) granted to an app.
 * Exploitation frameworks
   * [PowerZure](https://github.com/hausec/PowerZure) - PowerZure is a PowerShell project created to assess and exploit resources within Microsoft’s cloud platform, Azure. PowerZure was created out of the need for a framework that can both perform reconnaissance **and** exploitation of Azure, AzureAD, and the associated resources.
     * [Attacking Azure, Azure AD, and Introducing PowerZure – root@Hausec](https://hausec.com/2020/01/31/attacking-azure-azure-ad-and-introducing-powerzure/)&#x20;

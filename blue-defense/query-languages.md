@@ -25,6 +25,7 @@ Second, online converters might not be able to translate from one platform easil
 * [GitHub - socprime/SigmaUI: SIGMA UI is a free open-source application based on the Elastic stack and Sigma Converter (sigmac)](https://github.com/socprime/SigmaUI)&#x20;
 * [How to Write Sigma Rules - Nextron Systems](https://www.nextron-systems.com/2018/02/10/write-sigma-rules/)
 * [GitHub - LogRhythm-Labs/Sigma: Convert Sigma rules to LogRhythm searches](https://github.com/LogRhythm-Labs/Sigma)&#x20;
+* [https://techcommunity.microsoft.com/t5/Azure-Sentinel/Importing-Sigma-Rules-to-Azure-Sentinel/ba-p/657097](https://techcommunity.microsoft.com/t5/Azure-Sentinel/Importing-Sigma-Rules-to-Azure-Sentinel/ba-p/657097)
 * [sigmaio](https://github.com/M3NIX/sigmaio) - simple webapp for converting sigma rules into siem queries using the pySigma library
   * [https://sigmaio.herokuapp.com/](https://sigmaio.herokuapp.com/)
 

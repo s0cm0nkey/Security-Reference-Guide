@@ -4,13 +4,13 @@
 
 ## **DFIR Resource Collections**
 
-* [DFIR Compendium ](https://aboutdfir.com)- The Definitive Compendium Project Digital Forensics & Incident Response
+* [DFIR Compendium ](https://aboutdfir.com/)- The Definitive Compendium Project Digital Forensics & Incident Response
 * [Infosec Reference: DFIR](https://github.com/rmusser01/Infosec\_Reference/blob/master/Draft/DFIR.md) - Massive collection of DFIR guides, articles, and tools
 * [https://start.me/p/jj0B26/dfir](https://start.me/p/jj0B26/dfir) - Collection of more DFIR resources
 * [https://www.jaiminton.com/cheatsheet/DFIR/](https://www.jaiminton.com/cheatsheet/DFIR/) - Huge collection of DFIR commands  and methodology
 * Training
-  * [DFIR Tra](https://www.dfir.training)[ning](https://www.dfir.training) - Tools, resources, and training classes for DFIR professionals
-  * [https://dfirmadness.com/](https://dfirmadness.com) - Collection of training use cases to hone your DFIR skills
+  * [DFIR Tra](https://www.dfir.training/)[ning](https://www.dfir.training/) - Tools, resources, and training classes for DFIR professionals
+  * [https://dfirmadness.com/](https://dfirmadness.com/) - Collection of training use cases to hone your DFIR skills
 
 ## **Incident Response**
 
@@ -31,7 +31,7 @@
   * _(BTHb: INRE): Incident Response Steps - pg. 5_
 * Report Templates and Guides
   * [https://github.com/cyb3rfox/Aurora-Incident-Response](https://github.com/cyb3rfox/Aurora-Incident-Response) - Incident Response Documentation made easy. Developed by Incident Responders for Incident Responders
-  * [PagerDuty Incident Response processes and document templates](https://response.pagerduty.com)
+  * [PagerDuty Incident Response processes and document templates](https://response.pagerduty.com/)
   * [Zeltser Incident Survey CheatSheet](https://zeltser.com/security-incident-survey-cheat-sheet/)
   * [https://zeltser.com/cyber-threat-intel-and-ir-report-template/](https://zeltser.com/cyber-threat-intel-and-ir-report-template/)
   * _(BTHb: INRE): Incident Response Template - pg. 24_
@@ -39,8 +39,9 @@
   * DNSDB for Incident Response - [https://info.farsightsecurity.com/passive-dns-incident-response-ebook](https://info.farsightsecurity.com/passive-dns-incident-response-ebook)
   * [Let's Defend: Build your own IR tool guide ](https://letsdefend.io/blog/build-your-own-simple-data-collection-tool-from-endpoint/)
   * [https://training.fema.gov/is/courseoverview.aspx?code=IS-100.c](https://training.fema.gov/is/courseoverview.aspx?code=IS-100.c) - Introduction to the Incident Command System, introduces the Incident Command System (ICS) and provides the foundation for higher level ICS training.
+  * [Incident Response in a Microsoft cloud environment](https://m365internals.com/2021/04/17/incident-response-in-a-microsoft-cloud-environment/)
 * Training
-  * [Incident Response Challange](https://incident-response-challenge.com) - IR CTF Style Training Scenarios&#x20;
+  * [Incident Response Challange](https://incident-response-challenge.com/?utm\_source=thn) - IR CTF Style Training Scenarios&#x20;
 
 ### IR/Malware Scanners
 
@@ -51,8 +52,8 @@
   * [https://www.malwarebytes.com/pdf/datasheets/mbirdatasheet.pdf](https://www.malwarebytes.com/pdf/datasheets/mbirdatasheet.pdf)
 * [ClamAV](https://www.clamav.net/downloads) - ClamAV is an open source antivirus engine for detecting trojans, viruses, malware & other malicious threats. Can be used with a USB for portable scanning of devices.
 * [Microsoft Safety Scanner ](https://docs.microsoft.com/en-us/windows/security/threat-protection/intelligence/safety-scanner-download)- Microsoft Safety Scanner is a scan tool designed to find and remove malware from Windows computers. Simply download it and run a scan to find malware and try to reverse changes made by identified threats.
-* [gmer Rootkit scanner](https://www.gmer.net) - An application that detects and removes [rootkits](http://en.wikipedia.org/wiki/Rootkit)
-* [chkrootkit](http://www.chkrootkit.org) - A tool to locally check for signs of a [rootkit](http://www.chkrootkit.org/links/).&#x20;
+* [gmer Rootkit scanner](https://www.gmer.net/) - An application that detects and removes [rootkits](http://en.wikipedia.org/wiki/Rootkit)
+* [chkrootkit](http://www.chkrootkit.org/) - A tool to locally check for signs of a [rootkit](http://www.chkrootkit.org/links/).&#x20;
   * [https://www.kali.org/tools/chkrootkit/](https://www.kali.org/tools/chkrootkit/)
 * [RKHunter](https://github.com/installation/rkhunter) - scans systems for known and unknown rootkits, backdoors, sniffers and exploits.
   * [https://www.kali.org/tools/rkhunter/](https://www.kali.org/tools/rkhunter/)
@@ -60,7 +61,7 @@
 * [pe-sieve](https://github.com/hasherezade/pe-sieve) - Scans a given process. Recognizes and dumps a variety of potentially malicious implants (replaced/injected PEs, shellcodes, hooks, in-memory patches).
   * [https://hshrzd.wordpress.com/pe-sieve/](https://hshrzd.wordpress.com/pe-sieve/)
 * [Redline by Fireeye ](https://www.fireeye.com/services/freeware/redline.html)- Redline®, FireEye's premier free endpoint security tool, provides host investigative capabilities to users to find signs of malicious activity through memory and file analysis and the development of a threat assessment profile.
-* [https://www.herdprotect.com/](https://www.herdprotect.com) - herdProtect is a second line of defense malware scanning platform powered by [68 anti-malware engines](https://www.herdprotect.com/engines.aspx) in the cloud. Since no single anti-malware program is perfect 100% of the time, herdProtect utilizes a 'herd' of multiple engines to guarantee the widest coverage and the earliest possible detection. As a second line of defense anti-malware solution, herdProtect is designed to run with any existing anti-virus program already installed on a user's PC. herdProtect is a free service to help user's find and remove malicious software.
+* [https://www.herdprotect.com/](https://www.herdprotect.com/) - herdProtect is a second line of defense malware scanning platform powered by [68 anti-malware engines](https://www.herdprotect.com/engines.aspx) in the cloud. Since no single anti-malware program is perfect 100% of the time, herdProtect utilizes a 'herd' of multiple engines to guarantee the widest coverage and the earliest possible detection. As a second line of defense anti-malware solution, herdProtect is designed to run with any existing anti-virus program already installed on a user's PC. herdProtect is a free service to help user's find and remove malicious software.
   * [https://www.herdprotect.com/knowledgebase.aspx](https://www.herdprotect.com/knowledgebase.aspx)
 *   Windows Defender Scan
 
@@ -131,7 +132,7 @@ Depreciated Tools
   * [Meerkat](https://github.com/TonyPhipps/Meerkat) - Meerkat is collection of PowerShell modules designed for artifact gathering and reconnaisance of Windows-based endpoints without requiring a pre-deployed agent.
 * Utility
   * [AWS\_IR](https://github.com/ThreatResponse/aws\_ir) - Python installable command line utility for mitigation of instance and key compromises.
-  * [https://processhacker.sourceforge.io/](https://processhacker.sourceforge.io) - A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware.
+  * [https://processhacker.sourceforge.io/](https://processhacker.sourceforge.io/) - A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware.
   * [ADTimeline](https://github.com/ANSSI-FR/ADTimeline) - The ADTimeline script generates a timeline based on Active Directory replication metadata for objects considered of interest.
 
 ## DFIR Commands
@@ -201,13 +202,13 @@ Depreciated Tools
     * [How To Create a Super Timeline](https://www.sans.org/blog/digital-forensic-sifting-super-timeline-creation-using-log2timeline/?msc=tool-sift)
     * [SIFT Workstation YouTube Series](https://www.youtube.com/playlist?list=PL60DFAE759FCDF36A)
     * [FOR508 - Advanced Incident Response](https://www.sans.org/cyber-security-courses/advanced-incident-response-threat-hunting-training/?msc=tool-sift)
-  * [https://tsurugi-linux.org/](https://tsurugi-linux.org) - 64 bit Linux version to perform digital forensics analysis and OSINT research.
+  * [https://tsurugi-linux.org/](https://tsurugi-linux.org/) - 64 bit Linux version to perform digital forensics analysis and OSINT research.
     * [tsurugi\_acquire](https://tsurugi-linux.org/tsurugi\_acquire.php) - a lightweight and streamlined version of Tsurugi Linux \[LAB], aimed at providing the basic tools needed to boot a PC and acquire mass storage devices.
     * [bento](https://tsurugi-linux.org/bento.php) - a portable toolkit designed for live forensics and incident response activities.
     * [https://tsurugi-linux.org/documentation\_tsurugi\_linux\_tools\_listing\_2021.php](https://tsurugi-linux.org/documentation\_tsurugi\_linux\_tools\_listing\_2021.php)
 * Forensic Frameworks
   * [Autopsy forensic framework](https://www.autopsy.com/community/) - Autopsy is the premier open source forensics platform which is fast, easy-to-use, and capable of analyzing all types of mobile devices and digital media
-    * [https://dfir-training.basistech.com/](https://dfir-training.basistech.com)
+    * [https://dfir-training.basistech.com/](https://dfir-training.basistech.com/)
     * [https://www.aldeid.com/wiki/Autopsy](https://www.aldeid.com/wiki/Autopsy)
     * [https://tryhackme.com/room/autopsy2ze0](https://tryhackme.com/room/autopsy2ze0)
   * [X-Ways Forensic Toolkit](https://www.x-ways.net/forensics/) - X-Ways Forensics is an advanced work environment for computer forensic examiners
@@ -313,7 +314,7 @@ dd.exe if=\\.\<OSDrive>: of=<drive>:\<name>.img bs=1M --size --progress
 * [Mac OS X Forensics Artifacts Spreadsheet](https://docs.google.com/spreadsheets/d/1X2Hu0NE2ptdRj023OVWIGp5dqZOw-CfxHLOW\_GNGpX8/edit#gid=1317205466)&#x20;
 * [osxcollector](https://github.com/Yelp/osxcollector) -  A forensic evidence collection & analysis toolkit for OS X
 * [automactc](https://github.com/CrowdStrike/automactc) - This is a modular forensic triage collection framework designed to access various forensic artifacts on macOS, parse them, and present them in formats viable for analysis. The output may provide valuable insights for incident response in a macOS environment. Automactc can be run against a live system or dead disk (as a mounted volume.)
-* [Mac4n6](https://www.mac4n6.com) - Great blog on Mac OS forensics
+* [Mac4n6](https://www.mac4n6.com/) - Great blog on Mac OS forensics
 * [mac\_apt](https://github.com/ydkhatri/mac\_apt) - macOS (& ios) Artifact Parsing Tool&#x20;
 * [https://themittenmac.com/tools/](https://themittenmac.com/tools/)
   * [https://themittenmac.com/the-truetree-concept/](https://themittenmac.com/the-truetree-concept/)
@@ -326,11 +327,11 @@ In incident response, phishing, or security monitoring scenarios, you will encou
 
 ### Malware Analysis Toolsets and multi-engine scanners
 
-* [https://remnux.org/](https://remnux.org) - REMnux® is a Linux toolkit for reverse-engineering and analyzing malicious software. REMnux provides a curated collection of free tools created by the community. Analysts can use it to investigate malware without having to find, install, and configure the tools.
+* [https://remnux.org/](https://remnux.org/) - REMnux® is a Linux toolkit for reverse-engineering and analyzing malicious software. REMnux provides a curated collection of free tools created by the community. Analysts can use it to investigate malware without having to find, install, and configure the tools.
   * [https://zeltser.com/remnux-malware-analysis-tips/](https://zeltser.com/remnux-malware-analysis-tips/)
 * [https://github.com/fireeye/flare-vm](https://github.com/fireeye/flare-vm) - A fully customizable, Windows-based security distribution for malware analysis, incident response, penetration testing, etc.
 * [MalwareUnicorn's tool collection](https://malwareunicorn.org/#/resources) - Tools used by one of the best malware analysts in the field.
-* [https://github.com/mindcollapse/MalwareMultiScan](https://github.com/mindcollapse/MalwareMultiScan) - Self-hosted [VirusTotal](https://www.virustotal.com) / [OPSWAT MetaDefender](https://metadefender.opswat.com) wannabe API for scanning URLs and files by multiple antivirus solutions.
+* [https://github.com/mindcollapse/MalwareMultiScan](https://github.com/mindcollapse/MalwareMultiScan) - Self-hosted [VirusTotal](https://www.virustotal.com/) / [OPSWAT MetaDefender](https://metadefender.opswat.com/) wannabe API for scanning URLs and files by multiple antivirus solutions.
 * [RATDecoders](https://github.com/kevthehermit/RATDecoders) - Python Decoders for Common Remote Access Trojans
 * [mal\_unpack](https://github.com/hasherezade/mal\_unpack) - Dynamic unpacker based on PE-sieve
   * [https://www.youtube.com/watch?v=8LZ6ksoytpU](https://www.youtube.com/watch?v=8LZ6ksoytpU)

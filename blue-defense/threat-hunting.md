@@ -40,9 +40,36 @@ Threat hunting doesn’t have to be complex, but it’s not for everyone. Knowin
 * [Alternative DNS Techniques - Active Countermeasures](https://www.activecountermeasures.com/alternative-dns-techniques/)
 * [SANS@MIC -Threat Hunting via DNS - SANS Institute](https://www.sans.org/webcasts/sansatmic-threat-hunting-dns-114180)&#x20;
 
+### Cloud Hunting - AWS
+
+{% embed url="https://youtu.be/qSp_q55pjnc" %}
+
+* [https://www.splunk.com/en\_us/blog/security/cloudtrail-digital-breadcrumbs-for-aws.html](https://www.splunk.com/en\_us/blog/security/cloudtrail-digital-breadcrumbs-for-aws.html)
+* [https://www.splunk.com/en\_us/blog/security/go-with-the-flow-network-telemetry-vpc-data-in-aws.html](https://www.splunk.com/en\_us/blog/security/go-with-the-flow-network-telemetry-vpc-data-in-aws.html)
+* [https://labs.bishopfox.com/tech-blog/privilege-escalation-in-aws](https://labs.bishopfox.com/tech-blog/privilege-escalation-in-aws)
+* [https://labs.bishopfox.com/tech-blog/5-privesc-attack-vectors-in-aws](https://labs.bishopfox.com/tech-blog/5-privesc-attack-vectors-in-aws)
+* [https://www.hunters.ai/blog/hunters-research-detecting-obfuscated-attacker-ip-in-aws](https://www.hunters.ai/blog/hunters-research-detecting-obfuscated-attacker-ip-in-aws)
+* [https://pages.awscloud.com/rs/112-TZM-766/images/How-to-Build-a-Threat-Hunting-Capability-in-AWS\_Slides.pdf](https://pages.awscloud.com/rs/112-TZM-766/images/How-to-Build-a-Threat-Hunting-Capability-in-AWS\_Slides.pdf)
+* [https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html)
+
+### Cloud Hunting - Azure/O365
+
+* [https://expel.io/blog/seven-ways-to-spot-business-email-compromise-office-365/](https://expel.io/blog/seven-ways-to-spot-business-email-compromise-office-365/)
+* [![](https://miro.medium.com/1\*m-R\_BkNf1Qjr1YbyOIJY2w.png)Threat Hunting with Microsoft O365 Logs](https://medium.com/@theartofdefense/threat-hunting-with-microsoft-o365-logs-9f64b5fd49e9)
+* [![](https://www.youtube.com/s/desktop/2cbeb7d0/img/favicon\_32x32.png)Threat Hunting in the Microsoft Cloud: Times They Are a-Changin' | John Stoner](https://www.youtube.com/watch?v=3fQJT1NXYrA)
+* G[itHub - microsoft/Microsoft-365-Defender-Hunting-Queries: Sample queries for Advanced hunting in Microsoft 365 Defender](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries)
+* H[ow Security Center and Log Analytics can be used for Threat Hunting](https://azure.microsoft.com/en-us/blog/ways-to-use-azure-security-center-log-analytics-for-threat-hunting/)
+* [GitHub - invictus-ir/Blue-team-app-Office-365-and-Azure](https://github.com/invictus-ir/Blue-team-app-Office-365-and-Azure)
+* [Threat Hunting in Azure with AC-Hunter - Active Countermeasures](https://www.activecountermeasures.com/threat-hunting-in-azure-with-ac-hunter/)
+* [ThreatHunting/AzureSentinel at master · GossiTheDog/ThreatHunting](https://github.com/GossiTheDog/ThreatHunting/tree/master/AzureSentinel)
+* [GitHub - darkquasar/AzureHunter: A Cloud Forensics Powershell module to run threat hunting playbooks on data from Azure and O365](https://github.com/darkquasar/AzureHunter)
+* [https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries)
+* [https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)
+
 ### Misc
 
 * [https://fourcore.io/blogs/threat-hunting-with-windows-event-log-sigma-rules](https://fourcore.io/blogs/threat-hunting-with-windows-event-log-sigma-rules)
+*
 
 ## Tools
 
