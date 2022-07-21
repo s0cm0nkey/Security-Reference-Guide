@@ -57,6 +57,7 @@
   * [https://github.com/AzureAD/Deployment-Plans](https://github.com/AzureAD/Deployment-Plans)
   * [https://attack.mitre.org/matrices/enterprise/cloud/azuread/](https://attack.mitre.org/matrices/enterprise/cloud/azuread/)
   * [https://attack.mitre.org/matrices/enterprise/cloud/office365/](https://attack.mitre.org/matrices/enterprise/cloud/office365/)
+  * [https://github.com/reprise99](https://github.com/reprise99)
 * Resource Collections
   * [https://github.com/kmcquade/awesome-azure-security](https://github.com/kmcquade/awesome-azure-security)
   * [https://github.com/Azure/Azure-Network-Security](https://github.com/Azure/Azure-Network-Security)
