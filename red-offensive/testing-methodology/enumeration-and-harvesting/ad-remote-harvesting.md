@@ -44,6 +44,8 @@
 ### SAM (Security Accounts Manager)
 
 * [Internal Monologue Attack: Retrieving NTLM Hashes without Touching LSASS](https://github.com/eladshamir/Internal-Monologue)
+* [GhostPack/Koh](https://github.com/GhostPack/Koh) - Koh is a C# and Beacon Object File (BOF) toolset that allows for the capture of user credential material via purposeful token/logon session leakage.
+  * [https://posts.specterops.io/koh-the-token-stealer-41ca07a40ed6?gi=be2457d740ab](https://posts.specterops.io/koh-the-token-stealer-41ca07a40ed6?gi=be2457d740ab)
 
 ### Windows Credential Manager/Vault
 
