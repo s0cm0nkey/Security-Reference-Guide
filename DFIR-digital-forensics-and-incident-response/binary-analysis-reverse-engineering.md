@@ -31,11 +31,12 @@ Binary analysis and Reverse Engineering is taking our malware/file analysis to t
 
 ### Resources
 
-* [Introduction - The Official Radare2 Book](https://book.rada.re)
+* [Introduction - The Official Radare2 Book](https://book.rada.re/)
 * [https://r2wiki.readthedocs.io/en/latest/](https://r2wiki.readthedocs.io/en/latest/)
 * [https://radare.gitbooks.io/radare2book/content/refcard/intro.html](https://radare.gitbooks.io/radare2book/content/refcard/intro.html)
 * [https://www.megabeets.net/a-journey-into-radare-2-part-1/](https://www.megabeets.net/a-journey-into-radare-2-part-1/)
 * [https://tryhackme.com/room/ccradare2](https://tryhackme.com/room/ccradare2)
+* [https://artik.blue/reversing](https://artik.blue/reversing) - Reverse engineering with radare2 course.
 
 {% embed url="https://www.youtube.com/watch?v=8rLhX_v66O4" %}
 
@@ -54,7 +55,7 @@ Binary analysis and Reverse Engineering is taking our malware/file analysis to t
 * [IDA ](https://hex-rays.com/IDA-pro/)- IDA Pro as a disassembler is capable of creating maps of their execution to show the binary instructions that are actually executed by the processor in a symbolic representation (assembly language).
   * [ Awesome Lists Collection: IDA](https://github.com/xrkk/awesome-ida/blob/master/Readme\_en.md)
 * [Rizin](https://github.com/rizinorg/rizin) - Rizin is a fork of the radare2 reverse engineering framework with a focus on usability, working features and code cleanliness.
-* [Frida](https://frida.re) - Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers. Can be used offesively for injecting code into running processes.
+* [Frida](https://frida.re/) - Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers. Can be used offesively for injecting code into running processes.
 * [BARF](https://github.com/programa-stic/barf-project) - An open source binary analysis framework that aims to support a wide range of binary code analysis tasks that are common in the information security discipline.
 * [ODA](https://onlinedisassembler.com) - A lightweight, online service for when you don’t have the time, resources, or requirements to use a heavier-weight alternative. Explore executables by dissecting its sections, strings, symbols, raw hex and machine level instructions.
 * [retoolkit](https://github.com/mentebinaria/retoolkit) - Reverse Engineer's Toolkit
@@ -62,15 +63,15 @@ Binary analysis and Reverse Engineering is taking our malware/file analysis to t
 
 ## **Hex Editors**
 
-* [HexEdit.js](https://hexed.it) – Browser-based hex editing.
-* [Hexinator](https://hexinator.com) – World’s finest (proprietary, commercial) Hex Editor.
-* [Frhed](http://frhed.sourceforge.net) – Binary file editor for Windows.
+* [HexEdit.js](https://hexed.it/) – Browser-based hex editing.
+* [Hexinator](https://hexinator.com/) – World’s finest (proprietary, commercial) Hex Editor.
+* [Frhed](http://frhed.sourceforge.net/) – Binary file editor for Windows.
 
 ## **Binary Analysis and Parsing Tools**
 
 * [capstone](https://www.kali.org/tools/capstone/) - a lightweight multi-platform, multi-architecture disassembly framework.
   * This package contains cstool, a command-line tool to disassemble hexadecimal strings.
-* [Kaitai Struct](http://kaitai.io) – File formats and network protocols dissection language and web IDE, generating parsers in C++, C#, Java, JavaScript, Perl, PHP, Python, Ruby.
+* [Kaitai Struct](http://kaitai.io/) – File formats and network protocols dissection language and web IDE, generating parsers in C++, C#, Java, JavaScript, Perl, PHP, Python, Ruby.
 * [Veles](https://codisec.com/veles/) – Binary data visualization and analysis tool.
 * [Hachoir](https://github.com/vstinner/hachoir) – Python library to view and edit a binary stream as the tree of fields and tools for metadata extraction.
 
@@ -96,7 +97,7 @@ Binary analysis and Reverse Engineering is taking our malware/file analysis to t
 * RE Training Courses
   * [https://guyinatuxedo.github.io/?mc\_cid=d676bd61c6\&mc\_eid=c18a7def31](https://guyinatuxedo.github.io/?mc\_cid=d676bd61c6\&mc\_eid=c18a7def31) - Nightmare
   * [https://malwareunicorn.org/workshops/re101.html#0](https://malwareunicorn.org/workshops/re101.html#0)
-  * [https://www.begin.re/](https://www.begin.re) - Reverse Engineering for Beginners
+  * [https://www.begin.re/](https://www.begin.re/) - Reverse Engineering for Beginners
   * [https://beginners.re/main.html](https://beginners.re/main.html) - Understanding Assembly Language
   * [https://github.com/mytechnotalent/Reverse-Engineering](https://github.com/mytechnotalent/Reverse-Engineering) - A FREE comprehensive reverse engineering tutorial covering x86, x64, 32-bit ARM & 64-bit ARM architectures.
   * [https://fumalwareanalysis.blogspot.com/p/malware-analysis-tutorials-reverse.html](https://fumalwareanalysis.blogspot.com/p/malware-analysis-tutorials-reverse.html)
