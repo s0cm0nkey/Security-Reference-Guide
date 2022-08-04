@@ -58,11 +58,11 @@ description: What is this? I didn't put this file here...
 
 Often the metadata surrounding a file can yield a trove of useful information. The below tools can be used to pull handy exif data from images or metadata from other files.
 
-* [http://www.exifdataviewer.com/](http://www.exifdataviewer.com)
-* [https://www.extractmetadata.com/](https://www.extractmetadata.com)
-* [https://exifinfo.org/](https://exifinfo.org)
+* [http://www.exifdataviewer.com/](http://www.exifdataviewer.com/)
+* [https://www.extractmetadata.com/](https://www.extractmetadata.com/)
+* [https://exifinfo.org/](https://exifinfo.org/)
 * [http://exif.regex.info/exif.cgi](http://exif.regex.info/exif.cgi)
-* [https://www.metadata2go.com/](https://www.metadata2go.com)
+* [https://www.metadata2go.com/](https://www.metadata2go.com/)
 * CLI Tools&#x20;
   * [exiftool](https://github.com/exiftool/exiftool) -  ExifTool meta information reader/writer&#x20;
   * [FOCA](https://github.com/ElevenPaths/FOCA) -  Tool to find metadata and hidden information in the documents.&#x20;
@@ -96,6 +96,8 @@ A package of python tools to analyze [Microsoft OLE2 files](http://en.wikipedia.
 * [de4dot](https://www.kali.org/tools/de4dot/) - de4dot is a .NET deobfuscator and unpacker.
 * [pev](https://www.kali.org/tools/pev/) - pev is a tool to get information of PE32/PE32+ executables (EXE, DLL, OCX etc) like headers, sections, resources and more.
 * [ropper](https://www.kali.org/tools/ropper/) - This package contains scripts that display info about files in different formats and find gadgets to build ROPs chains for different architectures (x86/x86\_64, ARM/ARM64, MIPS, PowerPC). For disassembly ropper uses the Capstone Framework.
+* [https://malcat.fr/index.html](https://malcat.fr/index.html) - Malcat is a feature-rich hexadecimal editor / disassembler for Windows and Linux targeted to IT-security professionals.\
+  Inspect [dozens of binary file formats](https://malcat.fr/features.html#file-formats), dissassemble and decompile different [CPU architectures](https://malcat.fr/features.html#cpu-architectures), extract embedded files and scan for Yara signatures or anomalies in a fast and easy-to-use graphical interface.
 
 ### Email Analysis Tools
 
@@ -149,9 +151,9 @@ A package of python tools to analyze [Microsoft OLE2 files](http://en.wikipedia.
 
 ## File Artifact Reference
 
-* [https://filesec.io/](https://filesec.io) - Resource for seeing which file extensions are used in different types of malware
+* [https://filesec.io/](https://filesec.io/) - Resource for seeing which file extensions are used in different types of malware
 * [Strontic xCyclopedia](https://strontic.github.io/xcyclopedia/) - Huge encyclopedia of executables, dll files, scripts, even the file paths they are supposed to be under. Contains tons of metadata, file hashes, reputation scores, handles, and so much more!
-* [Winbindex](https://winbindex.m417z.com) - Index of windows binaries with file hash, size, what update it was created with, and many more. Perfect for understanding more on a file.
+* [Winbindex](https://winbindex.m417z.com/) - Index of windows binaries with file hash, size, what update it was created with, and many more. Perfect for understanding more on a file.
 
 ### [Forensics Artifact Project](https://www.kali.org/tools/forensic-artifacts/)
 
