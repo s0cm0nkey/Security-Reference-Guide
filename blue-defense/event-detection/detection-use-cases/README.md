@@ -26,7 +26,7 @@ Sometimes you will have to perform a cost benefit analysis on each use case. Is 
 * [Awesome Lists Collection: Awesome Threat Detection](https://github.com/0x4D31/awesome-threat-detection)
 * [SIEM - USE CASE WRITING GUIDE - Blue Team Blog](https://blueteamblog.com/siem-use-case-writing-guide)&#x20;
 * [Alerting and Detection Strategy](https://blog.palantir.com/alerting-and-detection-strategy-framework-52dc33722df2?gi=461547ef38e7) guide by Palantir
-* [Mitre CAR](https://car.mitre.org) - The MITRE Cyber Analytics Repository (CAR) is a knowledge base of analytics developed by [MITRE](https://www.mitre.org) based on the [MITRE ATT\&CK](https://attack.mitre.org) adversary model.
+* [Mitre CAR](https://car.mitre.org/) - The MITRE Cyber Analytics Repository (CAR) is a knowledge base of analytics developed by [MITRE](https://www.mitre.org) based on the [MITRE ATT\&CK](https://attack.mitre.org/) adversary model.
   * CAR is focused on providing a set of validated and well-explained analytics, in particular with regards to their operating theory and rationale.
 * [https://blueteamblog.com/category/siem](https://blueteamblog.com/category/siem)
 * [https://nasbench.medium.com/understanding-detecting-c2-frameworks-darkfinger-c2-539c79282a1c](https://nasbench.medium.com/understanding-detecting-c2-frameworks-darkfinger-c2-539c79282a1c)
@@ -49,11 +49,12 @@ Sometimes you will have to perform a cost benefit analysis on each use case. Is 
 If you ever want to take the easy way of development, and simply purchase search rules or copy some that are existing on other platforms, there are a few places available on the web. Many poopular SIEMs have sets of rules included in the software. For more, please review the Event Detection section.
 
 * [sigma/rules at master · SigmaHQ/sigma · GitHub](https://github.com/SigmaHQ/sigma/tree/master/rules)&#x20;
+* [https://github.com/elastic/protections-artifacts](https://github.com/elastic/protections-artifacts)
 * [Azure-Sentinel/Detections at master · Azure/Azure-Sentinel · GitHub](https://github.com/Azure/Azure-Sentinel/tree/master/Detections)&#x20;
 * [IBM Security App Exchange - QRadar Use Case Manager](https://exchange.xforce.ibmcloud.com/hub/extension/bf01ee398bde8e5866fe51d0e1ee684a)&#x20;
 * [GitHub - elastic/detection-rules: Rules for Elastic Security's detection engine](https://github.com/elastic/detection-rules)
 * [https://www.threathunting.se/detection-rules/](https://www.threathunting.se/detection-rules/)
-* [C.A.R. Cyber Analytics Repository ](https://car.mitre.org)- A knowledge base of analytics developed by [MITRE](https://www.mitre.org) based on the [MITRE ATT\&CK](https://attack.mitre.org) adversary model.
+* [C.A.R. Cyber Analytics Repository ](https://car.mitre.org/)- A knowledge base of analytics developed by [MITRE](https://www.mitre.org) based on the [MITRE ATT\&CK](https://attack.mitre.org/) adversary model.
 * [https://infosecwriteups.com/common-tools-techniques-used-by-threat-actors-and-malware-part-i-deb05b664879?gi=37505dc3419c](https://infosecwriteups.com/common-tools-techniques-used-by-threat-actors-and-malware-part-i-deb05b664879?gi=37505dc3419c)
 * [https://nasbench.medium.com/common-tools-techniques-used-by-threat-actors-and-malware-part-ii-c2e65cd6b084](https://nasbench.medium.com/common-tools-techniques-used-by-threat-actors-and-malware-part-ii-c2e65cd6b084)
 * [https://github.com/bfuzzy/auditd-attack](https://github.com/bfuzzy/auditd-attack)

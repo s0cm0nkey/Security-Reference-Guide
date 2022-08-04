@@ -50,7 +50,9 @@ Yara Rule Testing Tools
   * [https://www.nextron-systems.com/2016/04/15/how-to-write-simple-but-sound-yara-rules-part-3/](https://www.nextron-systems.com/2016/04/15/how-to-write-simple-but-sound-yara-rules-part-3/)
   * [https://www.intezer.com/blog/threat-hunting/yara-rules-minimize-false-positives/](https://www.intezer.com/blog/threat-hunting/yara-rules-minimize-false-positives/)
 * Yara Training
-* [https://tryhackme.com/room/yara](https://tryhackme.com/room/yara)
+  * [https://tryhackme.com/room/yara](https://tryhackme.com/room/yara)
+* Yara rule collections
+  * [https://github.com/elastic/protections-artifacts](https://github.com/elastic/protections-artifacts)
 * _Operator Handbook: YARA - pg. 428_
 
 ![](<../.gitbook/assets/image (16).png>)
