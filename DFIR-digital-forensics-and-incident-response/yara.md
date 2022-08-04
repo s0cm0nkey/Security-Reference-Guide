@@ -40,9 +40,9 @@ Yara Rule Testing Tools
 * [https://github.com/InQuest/awesome-yara](https://github.com/InQuest/awesome-yara)
 * [https://yara.readthedocs.io/en/latest/](https://yara.readthedocs.io/en/latest/)
 * [http://yara.readthedocs.io/en/v3.6.3/writingrules.html#id2](http://yara.readthedocs.io/en/v3.6.3/writingrules.html#id2)
-* [https://www.nextron-systems.com/valhalla/](https://www.nextron-systems.com/valhalla/) - Huge YARA rule Repo
 * [https://github.com/EFForg/yaya](https://github.com/EFForg/yaya) - Automatically curate open source yara rules and run scans
 * [https://yaraify.abuse.ch/](https://yaraify.abuse.ch/) - YARAify is a project from abuse.ch that allows anyone to scan suspicious files such as malware samples or process dumps against a large repository of YARA rules. With YARAhub, the platform also provides a structured way for sharing YARA rules with the community.
+* [YaraHunter](https://github.com/deepfence/YaraHunter) - Deepfence YaraHunter scans container images, running Docker containers, and filesystems to find indicators of malware. It uses a [YARA ruleset](https://github.com/deepfence/yara-rules) to identify resources that match known malware signatures, and may indicate that the container or filesystem has been compromised.
 * Writing Yara Rules
   * [https://resources.infosecinstitute.com/yara-simple-effective-way-dissecting-malware/](https://resources.infosecinstitute.com/yara-simple-effective-way-dissecting-malware/)
   * [https://securityintelligence.com/signature-based-detection-with-yara/](https://securityintelligence.com/signature-based-detection-with-yara/)
@@ -55,6 +55,8 @@ Yara Rule Testing Tools
 * Yara rule collections
   * [https://github.com/elastic/protections-artifacts](https://github.com/elastic/protections-artifacts)
   * [https://yaraify.abuse.ch/yarahub/yaraify-rules.zip](https://yaraify.abuse.ch/yarahub/yaraify-rules.zip)
+  * [https://www.nextron-systems.com/valhalla/](https://www.nextron-systems.com/valhalla/) - Huge YARA rule Repo
+  * [https://github.com/deepfence/yara-rules](https://github.com/deepfence/yara-rules)
 * _Operator Handbook: YARA - pg. 428_
 
 ![](<../.gitbook/assets/image (16).png>)

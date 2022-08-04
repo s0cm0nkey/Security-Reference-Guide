@@ -17,7 +17,7 @@ These are NOT to be used in a malicious capacity and are for testing purposes on
 * _Advanced Penetration Testing: C2  Advanced  Attack Management - pg. 45_
 * _Advanced Penetration Testing: Creating a covert C2 Solution - pg. 112_
 
-## [**Cobalt Strike**](https://www.cobaltstrike.com/) ****&#x20;
+## [**Cobalt Strike**](https://www.cobaltstrike.com) ****&#x20;
 
 Software for Adversary Simulations and Red Team Operations
 
@@ -41,7 +41,7 @@ Software for Adversary Simulations and Red Team Operations
 
 ### PoshC2 Command Usage
 
-* &#x20;[https://poshc2.readthedocs.io/](https://poshc2.readthedocs.io/)
+* &#x20;[https://poshc2.readthedocs.io/](https://poshc2.readthedocs.io)
 * To run PoshC2, navigate to the installation directory and run the C2Server.py. This will start the server that serves the implant payloads and communicates with any running implants.
 * Prior to running the C2Server.py, it is possible to modify the configuration of the C2 server with the Config.py and restart any running server.
 * Once the C2 server has been started, a list of payloads will be shown to the user, which can be used in social engineering attacks or if access to cmd.exe or powershell.exe is available.
@@ -70,7 +70,7 @@ This tool is designed to create an encrypted command-and-control (C\&C) channel 
 * [trevorc2](https://github.com/trustedsec/trevorc2) - Written by Dave Kennedy of TrustedSec, TrevorC2 is a client/server model for masking command and control through a normally browsable website. Detection becomes much harder as time intervals are different and does not use POST requests for data exfil.
 * [Merlin](https://github.com/Ne0nd0g/merlin) - Merlin is a cross-platform post-exploitation C2 server and agent written in Go.
   * &#x20;[https://medium.com/@Ne0nd0g/introducing-merlin-645da3c635a#df21](https://medium.com/@Ne0nd0g/introducing-merlin-645da3c635a#df21)
-* [Prismatica](https://prismatica.io/) - Project Prismatica is a focused framework for Command and Control that is dedicated to extensibility. Our core objective is to provide a convenient platform with modular Transports, Backends, and Implants to enable rapid retooling opportunities and enhance Red Team operations.
+* [Prismatica](https://prismatica.io) - Project Prismatica is a focused framework for Command and Control that is dedicated to extensibility. Our core objective is to provide a convenient platform with modular Transports, Backends, and Implants to enable rapid retooling opportunities and enhance Red Team operations.
   * [https://prismatica.io/guides/](https://prismatica.io/guides/)
   * [Diagon](https://github.com/Project-Prismatica/Diagon) - The Diagon Attack Framework is a Prismatica application containing the Ravenclaw, Gryffindor, and Slytherin remote access tools (RATs).
   * [Oculus](https://github.com/Project-Prismatica/Oculus) - Oculus is a malleable python-based C2 system allowing for instantiation of listeners for the purpose of communication with remote access tools (RATs).
@@ -82,7 +82,6 @@ This tool is designed to create an encrypted command-and-control (C\&C) channel 
 * [Godoh](https://github.com/sensepost/godoh) - A DNS-over-HTTPS C2
   * [https://www.kali.org/tools/godoh/](https://www.kali.org/tools/godoh/)
 * [sliver](https://www.kali.org/tools/sliver/) - This package contains a general purpose cross-platform implant framework that supports C2 over Mutual-TLS, HTTP(S), and DNS. Implants are dynamically compiled with unique X.509 certificates signed by a per-instance certificate authority generated when you first run the binary.
-* [TripleCross](https://github.com/h3xduck/TripleCross) - A Linux eBPF rootkit with a backdoor, C2, library injection, execution hijacking, persistence and stealth capabilities.
 * _PTFM: C2 Tools - pg. 62_
 
 ## RM Shells/RATs

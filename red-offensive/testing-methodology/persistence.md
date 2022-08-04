@@ -54,7 +54,6 @@ The goal of BDF is to patch executable binaries with user desired shellcode and 
 * [cymothoa](https://www.kali.org/tools/cymothoa/) - Cymothoa is a stealth backdooring tool, that inject backdoor’s shellcode into an existing process. The tool uses the ptrace library (available on nearly all \* nix), to manipulate processes and infect them.
 * [casper-fs](https://github.com/CoolerVoid/casper-fs) - Casper-fs is a custom Linux Kernel Module generator to work with resources to protect or hide a custom list of files. Each LKM has resources to protect or hide files following a custom list in the YAML rule file. Yes, not even the root has permission to see the files or make actions like edit and remove. The files only can be caught, edited, and deleted if the user sends a proper key to the custom device to liberate the action in the file system.
 * [OSRipper](https://github.com/SubGlitch1/OSRipper) - AV evading OSX Backdoor and Crypter Framework
-* [TripleCross](https://github.com/h3xduck/TripleCross) - A Linux eBPF rootkit with a backdoor, C2, library injection, execution hijacking, persistence and stealth capabilities.
 
 ## **Linux**&#x20;
 

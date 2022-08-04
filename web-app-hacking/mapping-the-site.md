@@ -87,6 +87,7 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [aiodnsbrute](https://github.com/blark/aiodnsbrute) - A Python 3.5+ tool that uses asyncio to brute force domain names asynchronously. This is a bruteforcer with insane speed, and a very large number of built in wordlists. Use a list of resolvers with it
 * [Altdns](https://github.com/infosec-au/altdns): Altdns is a DNS recon tool that allows for the discovery of subdomains that conform to patterns. Altdns takes in words that could be present in subdomains under a domain (such as test, dev, staging), as well as a list of known subdomains.
 * [Findomain](https://github.com/Findomain/Findomain): Findomain offers a dedicated monitoring service hosted in Amazon (only the local version is free), that allows you to monitor your target domains and send alerts to Discord and Slack webhooks or Telegram chats when new subdomains are found.
+* [Dome](https://github.com/v4d1/Dome) - Fast and reliable python script that makes active and/or passive scan to obtain subdomains and search for open ports.
 
 ### Subdomain Fly Over
 

@@ -42,7 +42,9 @@
 
 ![](../.gitbook/assets/canvas.png)
 
-{% file src="../.gitbook/assets/canvas.png" %}
+### General Cloud Training Resources
+
+* [https://cloudacademy.com/](https://cloudacademy.com/)
 
 ## **Azure and O365 -** The Microsoft Cloud Environment
 
