@@ -144,6 +144,7 @@ To help with this basic understanding, there have been many platforms, tools, an
 * [Hexinator](https://hexinator.com/) - Powerful free hex editor
 * [Frhed](http://frhed.sourceforge.net/en/) - Free Hex Editor
 * [shed](https://www.kali.org/tools/shed/) - shed (Simple Hex Editor) is an easy application for viewing and editing files in text mode, using ncurses.
+* [Bless](https://github.com/bwrsandman/Bless) - Gtk# Hex Editor
 
 ### Debugger
 

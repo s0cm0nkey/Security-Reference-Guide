@@ -18,10 +18,10 @@ Raw packet captures are a staple for security analysis since they can be a compl
 * [Arkime (Moloch)](https://github.com/arkime/arkime) - Arkime augments your current security infrastructure to store and index network traffic in standard PCAP format, providing fast, indexed access.
 * [Stenographer by Google](https://github.com/google/stenographer) - A full-packet-capture utility for buffering packets to disk for intrusion detection and incident response purposes. It provides a high-performance implementation of NIC-to-disk packet writing, handles deleting those files as disk fills up, and provides methods for reading back specific sets of packets quickly and easily.
 * [CapMe](https://github.com/Security-Onion-Solutions/security-onion/wiki/CapMe) - The Web Interface for easy interaction with packet captures, located within Security Onion.
-* [NTOP](https://www.ntop.org) - Handy an flexible tool stack that can create packet captures, netflow logs, and network probes for recording traffic of different types.
+* [NTOP](https://www.ntop.org/) - Handy an flexible tool stack that can create packet captures, netflow logs, and network probes for recording traffic of different types.
 * [Dumpcap](https://www.wireshark.org/docs/man-pages/dumpcap.html) **-** Tool included with Wireshark for simple capture of packet data and writing to a disk.
 * [Daemon Logger](https://github.com/Cisco-Talos/Daemonlogger) - Simple packet logging & soft tap daemon.
-* [Netsniff-ng](http://netsniff-ng.org) - A fast network analyzer based on packet mmap(2) mechanisms. It can record pcap files to disc, replay them and also do an offline and online analysis.
+* [Netsniff-ng](http://netsniff-ng.org/) - A fast network analyzer based on packet mmap(2) mechanisms. It can record pcap files to disc, replay them and also do an offline and online analysis.
 * _Attacking Network Protocols: Ch.2 Capturing Application Traffic - pg.11_
 
 ## Decrypting Encrypted Packets <a href="#decrypting-encrypted-packets" id="decrypting-encrypted-packets"></a>
@@ -31,7 +31,7 @@ This can be done in a few ways:
 Man-in-the-middle (MITM)
 
 * [MITM Through SSLStrip](https://github.com/moxie0/sslstrip)
-* [MITM Through mitmproxy](https://mitmproxy.org)
+* [MITM Through mitmproxy](https://mitmproxy.org/)
 
 [Using the (Pre)-Master-Secret SSLKEYLOGFILE](https://wiki.wireshark.org/TLS#Using\_the\_.28Pre.29-Master-Secret) [Using an RSA Private Key](https://docs.microsoft.com/en-us/archive/blogs/nettracer/decrypting-ssltls-sessions-with-wireshark-reloaded)
 
@@ -177,8 +177,8 @@ tshark -T json -r capture.pcap -Y "http.request.method == POST"
 
 ## Online Packet Capture Analyzers
 
-* [APackets](https://apackets.com) -  Web utility that can analyze pcap files to view HTTP headers and data, extract transferred binaries, files, office documents, pictures.
-* [PacketTotal ](https://packettotal.com)- PacketTotal is an engine for analyzing, categorizing, and sharing .pcap files. The tool was built with the InfoSec community in mind and has applications in malware analysis and network forensics.
+* [APackets](https://apackets.com/) -  Web utility that can analyze pcap files to view HTTP headers and data, extract transferred binaries, files, office documents, pictures.
+* [PacketTotal ](https://packettotal.com/)- PacketTotal is an engine for analyzing, categorizing, and sharing .pcap files. The tool was built with the InfoSec community in mind and has applications in malware analysis and network forensics.
 
 ## Powershell Packet Capture
 
@@ -207,6 +207,7 @@ PowerShell.exe -ExecutionPolicy bypass .\raw-socket-sniffer.ps1 `
 * [PCredz ](https://github.com/lgandx/PCredz)-  This tool extracts Credit card numbers, NTLM(DCE-RPC, HTTP, SQL, LDAP, etc), Kerberos (AS-REQ Pre-Auth etype 23), HTTP Basic, SNMP, POP, SMTP, FTP, IMAP, etc from a pcap file or from a live interface.
 * [chaosreader](https://www.kali.org/tools/chaosreader/) - Chaosreader traces TCP/UDP/others sessions and fetches application data from snoop or tcpdump logs (or other libpcap compatible programs). This is a type of “any-snarf” program, as it will fetch telnet sessions, FTP files, HTTP transfers (HTML, GIF, JPEG etc) and SMTP emails from the captured data inside network traffic logs.
 * [PacketTotal](https://packettotal.com/app/search) — .pcap files (Packet Capture of network data) search engine and analyze tool. Search by URL, IP, file hash, network indicator, view timeline of dns-queries and http-connections, download files for detailed analyze.
+* [NetworkMiner](https://www.netresec.com/?page=NetworkMiner) - NetworkMiner is an [open source](https://www.netresec.com/?page=NetworkMinerSourceCode) Network Forensic Analysis Tool (NFAT) for Windows (but also [works in Linux](https://www.netresec.com/?page=Blog\&month=2014-02\&post=HowTo-install-NetworkMiner-in-Ubuntu-Fedora-and-Arch-Linux) / [Mac OS X](https://netresec.com/?b=146F525) / [FreeBSD](https://netresec.com/?b=11C135E)). NetworkMiner can be used as a passive network sniffer/packet capturing tool in order to detect operating systems, sessions, hostnames, open ports etc. without putting any traffic on the network. NetworkMiner can also parse PCAP files for off-line analysis and to regenerate/reassemble transmitted files and certificates from PCAP files.
 
 ## **Resources**
 
