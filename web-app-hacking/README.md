@@ -7,6 +7,7 @@
 * [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) -  comprehensive guide to testing the security of web applications and web services created by the OWASP foundation.
   * [https://owasp.org/www-project-top-ten/](https://owasp.org/www-project-top-ten/) - Guide to the top ten most common vulnerabilities encountered in web app pentesting.
   * [OWASP Testing Guide 4.0](https://www.owasp.org/images/1/19/OTGv4.pdf) (PDF)
+  * [https://www.crest-approved.org/membership/crest-ovs-programme/](https://www.crest-approved.org/membership/crest-ovs-programme/) -  CREST's New application secuyrity standard built with OWASP AVS.
 * [Hacktricks Web Pentesting Guide](https://book.hacktricks.xyz/pentesting/pentesting-web) - Written by Carlos Pollop, the creator of [WinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite) and [LinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite). Everything this guy makes is gold. Highest of recommendations
 * [The Bug Hunters Methodology](https://github.com/jhaddix/tbhm) - Written by the Jason Haddix, this repo details his toolset and methodology for web app penetration testing.
   * [Jason's Presentation of TBHM 2.0](https://docs.google.com/presentation/d/1VpRT8dFyTaFpQa9jhehtmGaC7TqQniMSYbUdlHN6VrY/edit#slide=id.p)
