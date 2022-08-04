@@ -48,6 +48,8 @@ Common and reasonably popular format that has some lacking in a granular classif
 
 ### Other Standards
 
+* [https://microsoft.github.io/Azure-Threat-Research-Matrix/](https://microsoft.github.io/Azure-Threat-Research-Matrix/) - A knowledge base built to document known TTPs within Azure and Azure AD.
+  * [https://techcommunity.microsoft.com/t5/security-compliance-and-identity/introducing-the-azure-threat-research-matrix/ba-p/3584976](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/introducing-the-azure-threat-research-matrix/ba-p/3584976)
 * [STIGs Benchmarks - Security Technical Implementation Guides](https://public.cyber.mil/stigs/)
 * [NIST - Current FIPS](https://www.nist.gov/itl/current-fips)
 * [ISO Standards Catalogue](https://www.iso.org/standards.html)
