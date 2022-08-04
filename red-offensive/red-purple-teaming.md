@@ -28,6 +28,7 @@
   * [Atomic Red Team](https://atomicredteam.io/) - Atomic Red Team™ is a library of simple tests that every security team can execute to test their defenses. Tests are focused, have few dependencies, and are defined in a structured format that can be used by automation frameworks.
     * [https://github.com/cyberbuff/TheAtomicPlaybook](https://github.com/cyberbuff/TheAtomicPlaybook)
     * [https://docs.google.com/document/d/1c8\_WRHp68Py9kyMYqMrs6aQ6ppcfLouV8jQ07UY27yE/mobilebasic](https://docs.google.com/document/d/1c8\_WRHp68Py9kyMYqMrs6aQ6ppcfLouV8jQ07UY27yE/mobilebasic)
+  * [stratus-red-team](https://github.com/DataDog/stratus-red-team) - Stratus Red Team is "[Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)™" for the cloud, allowing to emulate offensive attack techniques in a granular and self-contained manner.
   * [caldera](https://github.com/mitre/caldera) - Automated Adversary Emulation Platform by MITRE
     * [https://www.kali.org/tools/caldera/](https://www.kali.org/tools/caldera/)
   * [monkey](https://github.com/guardicore/monkey) - Infection Monkey - An automated pentest tool
