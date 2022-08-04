@@ -121,6 +121,7 @@ swapfile.sys (Virtual memory used by Windows Store Apps)
 * [WinPMem](https://github.com/Velocidex/WinPmem/releases) - The Memory forensics utility found within the [Velociraptor](https://github.com/Velocidex/velociraptor) toolset.
   * [https://winpmem.velocidex.com/docs/memory/](https://winpmem.velocidex.com/docs/memory/)
 * [rsakeyfind](https://www.kali.org/tools/rsakeyfind/) - rsakeyfind is a tool that locates BER-encoded RSA private keys in MEMORY-IMAGE. If a MODULUS-FILE is specified, it will locate private and public keys matching the hex-encoded modulus read from this file.
+* [dumpscan](https://github.com/daddycocoaman/dumpscan) - **Dumpscan** is a command-line tool designed to extract and dump secrets from kernel and Windows Minidump formats. Kernel-dump parsing is provided by [volatility3](https://github.com/volatilityfoundation/volatility3).
 
 ```
 winpmem.exe -o test.aff4 -dd
