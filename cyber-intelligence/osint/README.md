@@ -31,7 +31,7 @@ Specific for what you need to look for and how to find it, during the passive re
 
 ### Stu's People Search Workflow
 
-![](<../../.gitbook/assets/image (42).png>)
+![](../../.gitbook/assets/image.png)
 
 ### OSINT Training
 

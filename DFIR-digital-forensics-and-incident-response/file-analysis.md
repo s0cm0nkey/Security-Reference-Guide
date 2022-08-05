@@ -201,4 +201,8 @@ $obj.sources.attributes.paths
 * [https://www.garykessler.net/library/file\_sigs.html](https://www.garykessler.net/library/file\_sigs.html)
 * [https://filesignatures.net/index.php?page=all](https://filesignatures.net/index.php?page=all)
 
+## Binary Analysis Training
+
+* [https://maxkersten.nl/binary-analysis-course/](https://maxkersten.nl/binary-analysis-course/)
+
 ****

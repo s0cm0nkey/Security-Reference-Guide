@@ -200,6 +200,7 @@ Commands
     * \# cat script.db | grep '"vuln"\\|"exploit"'
   * Run all scripts in "vuln' category
     * \# sudo nmap --script vuln \[ip]
+* [https://github.com/v3n0m-Scanner/V3n0M-Scanner](https://github.com/v3n0m-Scanner/V3n0M-Scanner) - Popular Pentesting scanner in Python3.6 for SQLi/XSS/LFI/RFI and other Vulns
 
 ## **Attack Surface Mapping/Asset Discovery**
 

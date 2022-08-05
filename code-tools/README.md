@@ -120,6 +120,7 @@ To help with this basic understanding, there have been many platforms, tools, an
 * [GGShield](https://github.com/GitGuardian/ggshield) - Detect secret in source code, scan your repo for leaks. Find secrets with GitGuardian and prevent leaked credentials. GitGuardian is an automated secrets detection & remediation service.
 * [puma-scan](https://github.com/pumasecurity/puma-scan) - Puma Scan is a software security Visual Studio extension that provides real time, continuous source code analysis as development teams write code.
 * [https://github.com/deadbits/InsecureProgramming](https://github.com/deadbits/InsecureProgramming) - Examples of insecure programming. For learning
+* [https://github.com/PyCQA/bandit](https://github.com/PyCQA/bandit) - Bandit is a tool designed to find common security issues in Python code.
 * [Secure Coding in C/C++](https://www.amazon.com/Secure-Coding-2nd-Software-Engineering/dp/0321822137)
 * [Art of software Security Assessment](https://www.amazon.com/Art-Software-Security-Assessment-Vulnerabilities/dp/0321444426)
 
