@@ -50,9 +50,7 @@ Local sandboxes - There are a few options for local sandboxing that can help you
 * [https://github.com/fireeye/flare-vm](https://github.com/fireeye/flare-vm) - The fireeye VM for malware analysis.&#x20;
 * [ThePhish](https://github.com/emalderson/ThePhish) - ThePhish is an automated phishing email analysis tool based on [TheHive](https://github.com/TheHive-Project/TheHive), [Cortex](https://github.com/TheHive-Project/Cortex/) and [MISP](https://github.com/MISP/MISP). It is a web application written in Python 3 and based on Flask that automates the entire analysis process starting from the extraction of the observables from the header and the body of an email to the elaboration of a verdict which is final in most cases.
   * [https://secsi.io/blog/thephish-an-automated-phishing-email-analysis-tool/](https://secsi.io/blog/thephish-an-automated-phishing-email-analysis-tool/)
-* Local VM and Proxies
-  * [https://www.telerik.com/fiddler](https://www.telerik.com/fiddler) - While not a sandbox, it is a simple web proxy that can be used with any other VM. By detonating your target file in a cirtual machine with this running, you can see if the file makes any outbound web requests when it is opened.
-  * [https://github.com/iphelix/dnschef](https://github.com/iphelix/dnschef) - DNS proxy for Penetration Testers and Malware Analysts
+* [https://www.telerik.com/fiddler](https://www.telerik.com/fiddler) - While not a sandbox, it is a simple web proxy that can be used with any other VM. By detonating your target file in a cirtual machine with this running, you can see if the file makes any outbound web requests when it is opened.
 
 ![](<../.gitbook/assets/image (8).png>)
 

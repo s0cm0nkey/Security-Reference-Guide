@@ -24,11 +24,11 @@ Domain.html is a tool that allows us to research multiple data points associated
 
 These next few tools are collections of utilities focused around domains. Some can be used for research on other network artifacts like IP addresses and email records, but DNS records and domain related metadata is really where they shine.
 
-* [ViewDNS](https://viewdns.info) - Huge toolbox with various utilities for enumerating information about a domain.
-* [DNSDumpster](https://dnsdumpster.com) - Free domain research tool that can discover hosts related to a domain.&#x20;
-* [MXToolbox ](https://mxtoolbox.com)-  Checks MX information for the given domain
+* [ViewDNS](https://viewdns.info/) - Huge toolbox with various utilities for enumerating information about a domain.
+* [DNSDumpster](https://dnsdumpster.com/) - Free domain research tool that can discover hosts related to a domain.&#x20;
+* [MXToolbox ](https://mxtoolbox.com/)-  Checks MX information for the given domain
 * [W3DT](https://w3dt.net) - W3dt.Net is an online network troubleshooting site dedicated to providing relevant real-time data regarding networks, websites and other technical resources.
-* [DNSLytics](https://dnslytics.com) - Find out everything about a domain name, IP address or provider. Discover relations between them and see historical data. Use it for your digital investigation, fraud prevention or brand protection.
+* [DNSLytics](https://dnslytics.com/) - Find out everything about a domain name, IP address or provider. Discover relations between them and see historical data. Use it for your digital investigation, fraud prevention or brand protection.
 * [HostSpider](https://github.com/h3x0crypt/HostSpider) - Command line tool that gathers tons of information about a domain including DNS records, subdomains, WHOIS, Cloudflare IP, and more!
 
 ### **Whois Vs. RDAP**
@@ -42,7 +42,7 @@ Whois is a great tool for gathering registration data for IP addresses and domai
 
 There are tons of highly effective tools for subdomain enumeration and brute forcing, but they can be quite noisy. During the Passive Recon phase of a penetration test, we can start with any subdomains recorded by other sources to plan out our attack/test.
 
-* [https://omnisint.io/](https://omnisint.io) - Project Crobat: Rapid7's DNS Database easily searchable via a lightening fast API, with domains available in milliseconds.
+* [https://omnisint.io/](https://omnisint.io/) - Project Crobat: Rapid7's DNS Database easily searchable via a lightening fast API, with domains available in milliseconds.
 * [Spyse Sub-domain finder](https://spyse.com/tools/subdomain-finder)
 * [Pentest Tool's Sub-domain Finder](https://pentest-tools.com/information-gathering/find-subdomains-of-domain)
 * [censys-subdomain-finder](https://github.com/christophetd/censys-subdomain-finder) - This is a tool to enumerate subdomains using the Certificate Transparency logs stored by [Censys](https://censys.io).
@@ -56,6 +56,12 @@ There are tons of highly effective tools for subdomain enumeration and brute for
 Domain Certificates are an interesting and useful item to research when mapping out a target domain. Beyond the various attacks that can be performed by exploiting these certificates, looking up the domain certificates can lead to discovery of hosts, sub-domains, and related targets that were previously undiscovered.
 
 * [Crt.sh](https://crt.sh) - Enter an Identity (Domain Name, Organization Name, etc), a Certificate Fingerprint (SHA-1 or SHA-256) or a crt.sh ID to return detailed domain and certificate information.
+* [CTSearch](https://ui.ctsearch.entrust.com/ui/ctsearchui) - Certificate Transparency Search Tool
+* [tls.bufferover.run](https://tls.bufferover.run/) - Quickly find certificates in IPv4 space
+* [CertSpotter](https://sslmate.com/certspotter/) - Monitors your domains for expiring, unauthorized, and invalid SSL certificates
+* [SynapsInt](https://synapsint.com/) - The unified OSINT research tool
+* [Censys - Certificates](https://search.censys.io/certificates) - Certificates Search
+* [PassiveTotal](https://www.riskiq.com/products/passivetotal/) - Security intelligence that scales security operations and response
 * [Google Transparency Report](https://transparencyreport.google.com/https/certificates) - A tool used to look up all of a domain’s certificates that are present in [active public Certificate Transparency logs](https://www.certificate-transparency.org/known-logs)
 * [https://sslmate.com/labs/ct\_policy\_analyzer/](https://sslmate.com/labs/ct\_policy\_analyzer/) - Certificate Transparency Policy Analyzer
 
@@ -63,15 +69,15 @@ Domain Certificates are an interesting and useful item to research when mapping 
 
 Some times a target will change a website and you will want to be notified right away, usually to see what has changed and how you can exploit it.
 
-* [Follow that page](https://followthatpage.com) - Follow That Page is a change detection and notification service that sends you an email when your favorite web pages have changed.
-* [Visual Ping](https://visualping.io) - Tool that can track multiple different kinds of changes in a particular webpage and alert on specific conditions.
+* [Follow that page](https://followthatpage.com/) - Follow That Page is a change detection and notification service that sends you an email when your favorite web pages have changed.
+* [Visual Ping](https://visualping.io/) - Tool that can track multiple different kinds of changes in a particular webpage and alert on specific conditions.
 
 ### URL Shortening and Redirections
 
 * [https://shorteners.grayhatwarfare.com](https://shorteners.grayhatwarfare.com) - search URL Shorteners
 * [urlhunter](https://github.com/utkusen/urlhunter) - a recon tool that allows searching on URLs that are exposed via shortener services
 * [https://checkshorturl.com](https://checkshorturl.com) - Get information about a shortened link
-* [http://redirectdetective.com/](http://redirectdetective.com) - Where does this redirection go?
+* [http://redirectdetective.com/](http://redirectdetective.com/) - Where does this redirection go?
 * [https://wheregoes.com](https://wheregoes.com) - Redirection link enumeration tool
 * [https://lookyloo.circl.lu](https://lookyloo.circl.lu) - Redirection link enumeration tool
 * [https://www.scribd.com/doc/308659143/Cornell-Tech-Url-Shortening-Research](https://www.scribd.com/doc/308659143/Cornell-Tech-Url-Shortening-Research)
@@ -83,22 +89,22 @@ Some times a target will change a website and you will want to be notified right
 
 ### Similar Web Site Search
 
-* [https://www.similarsites.com/](https://www.similarsites.com) - Enter a website URL and view websites that are similar.
-* [https://siteslike.com/](https://siteslike.com) - Enter a URL or keyword and view websites that are similar or match your keyword
-* [https://www.similarweb.com/](https://www.similarweb.com) - A great tool for finding similar and/or competitor websites. Search via website URL.
+* [https://www.similarsites.com/](https://www.similarsites.com/) - Enter a website URL and view websites that are similar.
+* [https://siteslike.com/](https://siteslike.com/) - Enter a URL or keyword and view websites that are similar or match your keyword
+* [https://www.similarweb.com/](https://www.similarweb.com/) - A great tool for finding similar and/or competitor websites. Search via website URL.
 
 ### Browser Proxy/Simulator
 
 For when you want to look at a site, without interacting with it.
 
-* [https://www.wannabrowser.net/](https://www.wannabrowser.net) - With Wannabroser you can have a look at the HTML-source code of any website from the view of any User-Agent you like. It's even possible to detect simple cloaking using Wannabrowser if the cloaking is just based on the visiting User-Agent.
-* [https://www.browserling.com/](https://www.browserling.com) - Used for browser testing, but can be used for safely looking at various sites.
-* [https://www.url2png.com/](https://www.url2png.com) - Capture snapshots of any website
+* [https://www.wannabrowser.net/](https://www.wannabrowser.net/) - With Wannabroser you can have a look at the HTML-source code of any website from the view of any User-Agent you like. It's even possible to detect simple cloaking using Wannabrowser if the cloaking is just based on the visiting User-Agent.
+* [https://www.browserling.com/](https://www.browserling.com/) - Used for browser testing, but can be used for safely looking at various sites.
+* [https://www.url2png.com/](https://www.url2png.com/) - Capture snapshots of any website
 
 ### **Misc. Utilities**
 
-* [DNPedia](https://dnpedia.com) - Domain Name Solutions, Statistics, Scripts, News and Tools
-* [https://riddler.io/](https://riddler.io) - Obtain network information from F-Secure Riddler.io API.
+* [DNPedia](https://dnpedia.com/) - Domain Name Solutions, Statistics, Scripts, News and Tools
+* [https://riddler.io/](https://riddler.io/) - Obtain network information from F-Secure Riddler.io API.
 * [Google's Online Dig command](https://toolbox.googleapps.com/apps/dig/) - Online version of the Dig command
 * [SimilarWeb Traffic Analytics](https://www.similarweb.com) - Compare meta data about domains and traffic to other elements on the web
 * [Backlink Checker](https://smallseotools.com/backlink-checker/) - Tool to easily monitor backlinks for a particular domain.

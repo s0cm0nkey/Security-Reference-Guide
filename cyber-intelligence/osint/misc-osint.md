@@ -47,6 +47,15 @@
 * [goKML.net :: short links for KML content](http://gokml.net/)  - Embed KML requests in resources and return geolocation data when they are accessed.
 * [https://www.geocreepy.com/](https://www.geocreepy.com/) - A Geolocation OSINT Tool. Offers geolocation information gathering through social networking platforms.
 
+### WiFi Networks
+
+* [Wigle.net](https://wigle.net/) - Maps and database of 802.11 wireless networks with statistics
+* [wifimap.io](https://www.wifimap.io/) - Connect to all Free WiFi Hotspots using WiFi Map App all over the World!
+* [wificafespots.com](http://www.wificafespots.com/) - Free WiFi Cafe Spots
+* [wifispc.com](https://wifispc.com/) - Free map of Wi-Fi passwords anywhere you go!
+* [openwifimap.net](https://openwifimap.net/) - HTML5 map with OpenWiFiMap data
+* [mylnikov.org](https://www.mylnikov.org/) - Public API implementation of Wi-Fi Geo-Location database
+
 ### **Misc Utility**
 
 * OSINT Browser Extensions
@@ -56,7 +65,6 @@
 * [https://www.webgap.io/](https://www.webgap.io/) - Remote Browser Service. Gives 12 month free use for all OSINT researchers.
 * [Hunchly](https://hunch.ly/) **-** Hunchly is a an interesting tool that passively captures the web pages as you browse. This can be handy when you are parsing through a large volume of pages and you want to keep track of them, or if you are concerned a page may change after you visit.
 * [Carbon14](https://github.com/Lazza/Carbon14) - This is an OSINT tool for estimating when a web page was written. Common CMS's easily permit to change the displayed date of content, affecting both websites and RSS feeds. Moreover, the dynamic nature of most web pages does not allow investigators to use the `Last-Modified` HTTP header. However, most users do not alter the timestamps of static resources that are uploaded while writing articles. The `Last-Modified` header of linked images can be leveraged to estimate the time period spent by the writer while preparing a blog post. This period can be compared to what the CMS shows in order to detect notable differences.
-* [Wigle **** ](https://wigle.net/index)- A website for war driving. Maps of wireless networks and their locations.
 * [JupyterPen](https://github.com/obheda12/JupyterPen) **** -  For those who love Jupyter notebooks, this is a project that started as an OSINT framework built around JupyterNotebooks and has expanded into a full penetration testing tool.
 * [CardPwn](https://github.com/itsmehacker/CardPwn) - OSINT Tool to find Breached Credit Cards Information&#x20;
 * [https://api.c99.nl/](https://api.c99.nl/) - API platform with dozens of web based utilities.
