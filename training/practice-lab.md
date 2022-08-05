@@ -65,3 +65,4 @@
 ### Active Directory
 
 * [PurpleCloud](https://github.com/iknowjason/PurpleCloud) - It deploys a small Active Directory domain in Azure IaaS, using Terraform + Ansible. Joins three Windows 10 endpoints to a domain and includes a Linux Adversary.
+* [GOAD](https://github.com/Orange-Cyberdefense/GOAD) - GOAD is a pentest active directory LAB project. The purpose of this lab is to give pentesters a vulnerable Active directory environement ready to use to practice usual attack techniques.

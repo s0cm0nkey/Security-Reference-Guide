@@ -12,7 +12,7 @@ IP.html is another handy little tool created by Michael Bazzel that makes initia
 
 Sites Include: Bing, Reverse IP, Locate IP, Port Scan, IP Whois, TraceRoute, Who.IS IP, Cynsys, ThreatCrowd, Shodan, ZoomEye, Torrents, "That's Them", WeLeakInfo, Dehashed, and UltraTools IP.
 
-{% file src="../../.gitbook/assets/IP (2).html" %}
+{% file src="../../.gitbook/assets/IP (1).html" %}
 
 
 
@@ -37,11 +37,11 @@ Torrent IP addresses **-**  [https://iknowwhatyoudownload.com](https://iknowwhat
 
 \*Note: It is recommended that you use as many tools as possible for a consensus determination on the location. Some times results will show the location of the registrant, but not the location of the IP in use.
 
-* [https://www.iplocation.net/](https://www.iplocation.net)
-* [https://www.ip2location.com/](https://www.ip2location.com)
-* [https://www.ipfingerprints.com/](https://www.ipfingerprints.com)
-* [https://ipstack.com/](https://ipstack.com)
+* [https://www.iplocation.net/](https://www.iplocation.net/)
+* [https://www.ip2location.com/](https://www.ip2location.com/)
+* [https://www.ipfingerprints.com/](https://www.ipfingerprints.com/)
+* [https://ipstack.com/](https://ipstack.com/)
 
 ### Misc Tools
 
-* [https://focsec.com/](https://focsec.com) - Determine if a user’s IP address is associated with a VPN, Proxy, TOR or malicious bots
+* [https://focsec.com/](https://focsec.com/) - Determine if a user’s IP address is associated with a VPN, Proxy, TOR or malicious bots

@@ -9,33 +9,33 @@
 * [personal-security-checklist](https://github.com/Lissy93/personal-security-checklist)
 * [https://prism-break.org/en/](https://prism-break.org/en/) - A handy way to opt out of global data collection schemes
 * [https://www.safetydetectives.com/best-vpns/](https://www.safetydetectives.com/best-vpns/) - The VPN breakdown
-* [Electronic Frontier Foundation. Keep the internet free.](https://www.eff.org)
-* [EFF's Survielance Self Defense guide](https://ssd.eff.org)
+* [Electronic Frontier Foundation. Keep the internet free.](https://www.eff.org/)
+* [EFF's Survielance Self Defense guide](https://ssd.eff.org/)
 * [CrashOverride's DIY Secuirty Guides](https://www.crashoverridenetwork.com/resources.html)
 * [Security-in-a-box Security Guides](https://securityinabox.org/en/)
 * [https://exposingtheinvisible.org/resources/watching-out-yourself/](https://exposingtheinvisible.org/resources/watching-out-yourself/) - Personal security guide for investigators
-* [AmIunique](https://amiunique.org) - Learn how identifiable you are on the Internet
-* [Surveillance Self-Defense](https://ssd.eff.org) - Tips, Tools and How-tos for Safer Online Communications.
+* [AmIunique](https://amiunique.org/) - Learn how identifiable you are on the Internet
+* [Surveillance Self-Defense](https://ssd.eff.org/) - Tips, Tools and How-tos for Safer Online Communications.
 
 ### Altnets
 
 * [https://www.whonix.org/wiki/ZeroNet](https://www.whonix.org/wiki/ZeroNet) - Excellent guide on how to securely setup ZeroNet. Also provides a decent list of common ZeroNet sites.
 * [https://nodehist.fidonet.org.ua](https://nodehist.fidonet.org.ua) - A large list of FidoNet nodes. Searchable by node address or sysop name.
-* [https://nzbfriends.com/](https://nzbfriends.com) - A search engine for Usenet.
+* [https://nzbfriends.com/](https://nzbfriends.com/) - A search engine for Usenet.
 
 ### Tools
 
 * [Awesome Lists Collection: Anti-Forensics](https://github.com/shadawck/awesome-anti-forensic)
 * [Awesome Lists Collection: Anti-Censorship](https://github.com/danoctavian/awesome-anti-censorship)
-* [PrivacyTools - Encryption Against Global Mass Surveillance](https://privacytools.io)&#x20;
+* [PrivacyTools - Encryption Against Global Mass Surveillance](https://privacytools.io/)&#x20;
 * [SnowHaze Browser](https://www.snowhaze.com/en/browser.html) - SnowHaze is a browser with your privacy and security in mind. SnowHaze is open source and offers you the most extensive tools on iOS to reclaim the control over your personal data and move freely on the internet.
-* [MySudo](https://mysudo.com) - Handy tool for creating entire personal profiles with numbers and emails you can use in place of your personal information.
-* [https://privacy.com/](https://privacy.com) -  A wonderful platform for placing anonymous purchases. Allows you to create a digital preloaded credit card so your real number isnt stored by amazon or google.
-* [7-Day Free Phone Number Trial - Get Temporary Phone Numbers | Burner](https://www.burnerapp.com)&#x20;
-* [Syncthing](https://syncthing.net) - Open Source, secure file synchronization program.
-* [Tails - Home](https://tails.boum.org) - Portable linux distribution focused on extreme privacy and security.
+* [MySudo](https://mysudo.com/) - Handy tool for creating entire personal profiles with numbers and emails you can use in place of your personal information.
+* [https://privacy.com/](https://privacy.com/) -  A wonderful platform for placing anonymous purchases. Allows you to create a digital preloaded credit card so your real number isnt stored by amazon or google.
+* [7-Day Free Phone Number Trial - Get Temporary Phone Numbers | Burner](https://www.burnerapp.com/)&#x20;
+* [Syncthing](https://syncthing.net/) - Open Source, secure file synchronization program.
+* [Tails - Home](https://tails.boum.org/) - Portable linux distribution focused on extreme privacy and security.
 * [Anonymouse.org](http://anonymouse.org/anonwww.html) - Proxied "anonymous" web searching tool.
-* [Privoxy - Home Page](https://www.privoxy.org) - Privoxy is a non-caching web proxy with advanced filtering capabilities for enhancing privacy, modifying web page data and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.
+* [Privoxy - Home Page](https://www.privoxy.org/) - Privoxy is a non-caching web proxy with advanced filtering capabilities for enhancing privacy, modifying web page data and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.
 * [Kali Anonsurf ](https://github.com/Und3rf10w/kali-anonsurf)- ParrotSec's anonsurf and stealth, ported to work with Kali Linux.
   * [ParrotSec/anonsurf](https://github.com/ParrotSec/anonsurf) - Anonsurf routes all your traffic through Tor, and it also lets you start i2p services and clear any traces left on the user disk. Anonsurf also kills away all dangerous applications by virtue of the Pandora bomb, so you do not need to worry about having a Tor browser and other scripts running to hide your system.
 * [cryptsetup-nuke-password](https://www.kali.org/tools/cryptsetup-nuke-password/) - Installing this package lets you configure a special “nuke password” that can be used to destroy the encryption keys required to unlock the encrypted partitions. This password can be entered in the usual early-boot prompt asking the passphrase to unlock the encrypted partition(s).
@@ -48,25 +48,25 @@
 
 * [TorChat](https://github.com/prof7bit/TorChat) - Decentralized anaonymous IM that uses Tor networks. Creates a new randomly generated .onion address for each client launch
   * [http://kpvz7ki2v5agwt35.onion/wiki/index.php/Hacking\_TorChat](http://kpvz7ki2v5agwt35.onion/wiki/index.php/Hacking\_TorChat)
-* [https://matrix.org/](https://matrix.org) - An open network for secure, decentralized, real-time communication.
+* [https://matrix.org/](https://matrix.org/) - An open network for secure, decentralized, real-time communication.
 * [https://wire.com/en/](https://wire.com/en/) - Secure messaging, file sharing, voice calls and video conferences. All protected with end-to-end
-* [https://www.signal.org/](https://www.signal.org) - an encrypted communications app.
+* [https://www.signal.org/](https://www.signal.org/) - an encrypted communications app.
 
 ### **Secure Webmail Providers**
 
-* [**CounterMail**](https://countermail.com) - online email service, designed to provide maximum security and privacy.
-* [**Mail2Tor**](http://mail2tor.com) - is a Tor Hidden Service that allows anyone to send and receive emails anonymously.
-* [**Tutanota**](https://tutanota.com) - is the world's most secure email service and amazingly easy to use.
-* [**Protonmail**](https://protonmail.com) - is the world's largest secure email service, developed by CERN and MIT scientists.
+* [**CounterMail**](https://countermail.com/) - online email service, designed to provide maximum security and privacy.
+* [**Mail2Tor**](http://mail2tor.com/) - is a Tor Hidden Service that allows anyone to send and receive emails anonymously.
+* [**Tutanota**](https://tutanota.com/) - is the world's most secure email service and amazingly easy to use.
+* [**Protonmail**](https://protonmail.com/) - is the world's largest secure email service, developed by CERN and MIT scientists.
 * [**Startmail**](https://www.startmail.com/en/) - private & encrypted email made easy.
 
 ### Browser Privacy/Check yourself
 
-* [https://coveryourtracks.eff.org/](https://coveryourtracks.eff.org) - EFF sponsored Browser tracking checker
-* [**Panopticlick 3.0**](https://panopticlick.eff.org) - is your browser safe against tracking?
+* [https://coveryourtracks.eff.org/](https://coveryourtracks.eff.org/) - EFF sponsored Browser tracking checker
+* [**Panopticlick 3.0**](https://panopticlick.eff.org/) - is your browser safe against tracking?
 * [**Privacy Analyzer**](https://privacy.net/analyzer/) - see what data is exposed from your browser.
 * [Browser Mirror](https://centralops.net/asp/co/BrowserMirror.vbs.asp) - See what your browser says about you
-* [Webkay](https://webkay.robinlinus.com) - A demonstration of all the data your browser knows about you. All this data can be accessed by any website without asking you.
+* [Webkay](https://webkay.robinlinus.com/) - A demonstration of all the data your browser knows about you. All this data can be accessed by any website without asking you.
 * [Logger](https://inteltechniques.com/logger/) - IntelTechniques custom tool for seeing what data can be tracked in your browser.
 * [https://tenta.com/test/](https://tenta.com/test/) - Site for checking DNS Leakage and other browser security issues.
 * [https://www.grc.com/shieldsup](https://www.grc.com/shieldsup) - Great tool for profiling your internet connection and router for exposure, potential vulnerabilities, and open ports.
@@ -74,6 +74,7 @@
 * [https://browserleaks.com](https://browserleaks.com) - Here you will find a gallery of security testing tools that will show you what kind of personal data can be leaked, and how to protect yourself from it.
 * [https://shutuptrackers.com/browser/tweaks.php](https://shutuptrackers.com/browser/tweaks.php) - Firefox Privacy Settings
 * [What every Browser knows about you](https://webkay.robinlinus.com) — This site not only shows what information your browser provides to third-party sites, but also explains how it can be dangerous and suggests what extensions will help to ensure your anonymity.
+* [https://socradar.io/labs/vpnradar/](https://socradar.io/labs/vpnradar/) - VPN privacy checker
 
 ## Personal Network Security
 
@@ -87,7 +88,7 @@
 * [https://geti2p.net/en/](https://geti2p.net/en/) - Kinda like TOR?
 * [nipe](https://github.com/htrgouvea/nipe) - Tool to make TOR your default gateway
   * [Hackersploit nipe guide](https://youtu.be/ec37is2yyMo)
-* [onionscan.org](https://onionscan.org) - OnionScan is a free and open source tool for investigating the Dark Web.
+* [onionscan.org](https://onionscan.org/) - OnionScan is a free and open source tool for investigating the Dark Web.
 * [dos-over-tor](https://github.com/skizap/dos-over-tor)
 * [Kalitorify](https://github.com/brainfuckSec/kalitorify) - Transparent proxy through Tor for Kali Linux OS
 * [vanguards](https://github.com/mikeperry-tor/vanguards) - Onion services defense tools
@@ -128,7 +129,7 @@
 ### Check yourself
 
 * [https://www.dnsleaktest.com/results.html](https://www.dnsleaktest.com/results.html) - Check for DNS leaks in your TOR connection
-* [https://check.torproject.org/](https://check.torproject.org) - Are you connected to TOR? Are you sure?
+* [https://check.torproject.org/](https://check.torproject.org/) - Are you connected to TOR? Are you sure?
 
 ### Misc Reference
 
@@ -158,7 +159,7 @@
 • Be conscious of other devices you may have on your person that are giving away your location (cell phones are not your friends).\
 • PGP encryption for secure emailing\
 • Only wired keyboards and mice\
-• Read [http://grugq.github.io/](http://grugq.github.io)
+• Read [http://grugq.github.io/](http://grugq.github.io/)
 
 ### Command line history
 
@@ -220,7 +221,7 @@
   * cache.example.co.uk
 * Use a search engine that does not track its users
   * [https://www.duckduckgo.com](https://www.duckduckgo.com)
-  * [http://3g2upl4pq6kufc4m.onion/](http://3g2upl4pq6kufc4m.onion)
+  * [http://3g2upl4pq6kufc4m.onion/](http://3g2upl4pq6kufc4m.onion/)
 * Tracking cookies
   * NSA uses things like Google Ads and other tracking cookies to identify users over TOR
   * [http://www.washingtonpost.com/blogs//theswitch/wp/2013/12/10/nsausesgooglecookiestopinpointtargetsforhacking/](http://www.washingtonpost.com/blogs/theswitch/wp/2013/12/10/nsausesgooglecookiestopinpointtargetsforhacking/)
@@ -239,7 +240,7 @@
 ### File management
 
 * &#x20;File verification
-  * [http://www.gpg4win.org/](http://www.gpg4win.org) - Verifes files via PGP signature
+  * [http://www.gpg4win.org/](http://www.gpg4win.org/) - Verifes files via PGP signature
   * &#x20;MD5 and Sha-1 hash verification
 * File shredding\
   ◇ [http://www.dban.org](http://www.dban.org)\
@@ -347,7 +348,7 @@
 
 Security Settings: Click on the shield icon at the top of the Tor browser and click "Advanced Security Settings" and set the value to "Safest". Note For Tails Users: Tails will reset this value on system restarts, so make sure you do this everytime you launch Tor on Tails!
 
-Privacy Checking: To check that your I.P. address is a Tor exit node, and that your security settings are correct, go to [https://whatsmybrowser.org/](https://whatsmybrowser.org) and ensure the following:
+Privacy Checking: To check that your I.P. address is a Tor exit node, and that your security settings are correct, go to [https://whatsmybrowser.org/](https://whatsmybrowser.org/) and ensure the following:
 
 \-Javascript is disabled! -No browser details can be detected!
 
@@ -355,11 +356,11 @@ Plugins: Additional addons/plugins should not be installed. Plugins not supporte
 
 Tails: Tails is a live operating system that you can start on almost any computer from a DVD, USB stick, or SD card. It aims at preserving your privacy and anonymity and helps you to: use the internet anonymously and circumvent censorship; route all connections to the internet through the Tor network; leave no trace on the computer you are using unless you explicitly ask it to; encrypts your files, emails, and instant messaging using state-of-the-art cryptography.
 
-Official Site: [https://tails.boum.org/](https://tails.boum.org) Tails For The Darknet Markets: [http://archivecaslytosk.onion/fyYz5](http://archivecaslytosk.onion/fyYz5)
+Official Site: [https://tails.boum.org/](https://tails.boum.org/) Tails For The Darknet Markets: [http://archivecaslytosk.onion/fyYz5](http://archivecaslytosk.onion/fyYz5)
 
 Whonix: An alternative to Tails and also an open source project. Whonix is an operating system focused on anonymity, privacy, and security. It's based on the Tor anonymity network, Debian GNU/Linux, and security by isolation. DNS leaks are impossible and not even malware with root privileges can find out the user's real I.P. address.
 
-Official Site: [https://www.whonix.org/](https://www.whonix.org) Whonix For The Darknet Markets: [http://archivecaslytosk.onion/COfTH](http://archivecaslytosk.onion/COfTH)
+Official Site: [https://www.whonix.org/](https://www.whonix.org/) Whonix For The Darknet Markets: [http://archivecaslytosk.onion/COfTH](http://archivecaslytosk.onion/COfTH)
 
 Shredding History / Footprints: This section only applies to users who use the Tor browser while not using Tails or Whonix.
 

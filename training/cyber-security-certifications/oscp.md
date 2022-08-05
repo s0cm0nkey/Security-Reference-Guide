@@ -15,7 +15,7 @@ As always, read the documentation. There are tons of helpful hints and suggestio
 * [https://help.offensive-security.com/hc/en-us](https://help.offensive-security.com/hc/en-us)
 * [https://help.offensive-security.com/hc/en-us/articles/360050473812](https://help.offensive-security.com/hc/en-us/articles/360050473812)
 * [https://www.offensive-security.com/documentation/penetration-testing-with-kali.pdf](https://www.offensive-security.com/documentation/penetration-testing-with-kali.pdf)
-* [https://forums.offensive-security.com/](https://forums.offensive-security.com)
+* [https://forums.offensive-security.com/](https://forums.offensive-security.com/)
 
 ## **Tools and Resources**
 

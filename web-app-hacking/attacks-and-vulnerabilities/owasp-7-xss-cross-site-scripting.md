@@ -12,7 +12,7 @@ Cross-site scripting (also known as XSS) is a web security vulnerability that al
 * [OWASP XSS Guide](https://owasp.org/www-community/attacks/xss/)
 * [https://www.w3schools.com/tags/ref\_eventattributes.asp](https://www.w3schools.com/tags/ref\_eventattributes.asp)
 * [OWASP XSS Filter Evasion CheatSheet](https://owasp.org/www-community/xss-filter-evasion-cheatsheet)
-* [https://html5sec.org/](https://html5sec.org) - Great place to learn about HTML based XSS injections
+* [https://html5sec.org/](https://html5sec.org/) - Great place to learn about HTML based XSS injections
 * [https://www.reddit.com/r/xss/](https://www.reddit.com/r/xss/)
 * [https://brutelogic.com.br/blog/](https://brutelogic.com.br/blog/)
 * [https://owasp.org/www-community/attacks/xss/](https://owasp.org/www-community/attacks/xss/)
@@ -24,19 +24,19 @@ Cross-site scripting (also known as XSS) is a web security vulnerability that al
 
 **Payloads**
 
-* [http://www.xss-payloads.com](http://www.xss-payloads.com)
+* [http://www.xss-payloads.com](http://www.xss-payloads.com/)
 * [PayloadsAllTheThings/XSSInjection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection)
 * [https://github.com/0xsobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot](https://github.com/0xsobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot)
 
 **Tools**
 
-* [XSSHunter](https://xsshunter.com) - XSS Hunter allows you to find all kinds of cross-site scripting vulnerabilities, including the often-missed blind XSS. The service works by hosting specialized XSS probes which, upon firing, scan the page and send information about the vulnerable page to the XSS Hunter service. It uses a web platform to run certain attacks to allow detection of certain Blind XSS vulnerabilities
+* [XSSHunter](https://xsshunter.com/) - XSS Hunter allows you to find all kinds of cross-site scripting vulnerabilities, including the often-missed blind XSS. The service works by hosting specialized XSS probes which, upon firing, scan the page and send information about the vulnerable page to the XSS Hunter service. It uses a web platform to run certain attacks to allow detection of certain Blind XSS vulnerabilities
 * [XSSTrike](https://github.com/s0md3v/XSStrike) - XSStrike is a Cross Site Scripting detection suite equipped with four hand written parsers, an intelligent payload generator, a powerful fuzzing engine and an incredibly fast crawler.
-* [https://knoxss.me/](https://knoxss.me) - With multiple vectors and decision-making capabilities, KNOXSS Pro is able to find a lot of edge XSS cases and bypass several input and output filters. It also has an extension that makes all the job completely automatic: after setting a domain with one click, all URLs and forms navigated in all subdomains will be submitted to KNOXSS for testing.
+* [https://knoxss.me/](https://knoxss.me/) - With multiple vectors and decision-making capabilities, KNOXSS Pro is able to find a lot of edge XSS cases and bypass several input and output filters. It also has an extension that makes all the job completely automatic: after setting a domain with one click, all URLs and forms navigated in all subdomains will be submitted to KNOXSS for testing.
 * [XSSer](https://github.com/Varbaek/xsser) - From XSS to RCE 2.75
 * [JShell](https://github.com/s0md3v/JShell) - JShell - Get a JavaScript shell with XSS.
 * [dalfox](https://github.com/hahwul/dalfox) - DalFox is an powerful open source XSS scanning tool and parameter analyzer, utility
-  * [https://dalfox.hahwul.com/](https://dalfox.hahwul.com)
+  * [https://dalfox.hahwul.com/](https://dalfox.hahwul.com/)
 {% endtab %}
 
 {% tab title="Exploiting XSS" %}

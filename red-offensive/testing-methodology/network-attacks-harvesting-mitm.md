@@ -33,7 +33,7 @@
   * ​[https://www.atredis.com/blog/2020/1/26/flamingo-captures-credentials](https://www.atredis.com/blog/2020/1/26/flamingo-captures-credentials)_​_
   * _Operator Handbook: Flamingo - pg. 65_
 * [BetterCap](https://github.com/bettercap/bettercap) - ​Bettercap is a powerful, easily extensible and portable framework written in Go which aims to offer to security researchers, red teamers and reverse engineers an **easy to use**, **all-in-one solution** with all the features they might possibly need for performing reconnaissance and attacking [WiFi](https://www.bettercap.org/modules/wifi/) networks, [Bluetooth Low Energy](https://www.bettercap.org/modules/ble/) devices, wireless [HID](https://www.bettercap.org/modules/hid/) devices and [Ethernet](https://www.bettercap.org/modules/ethernet) networks.
-  * [https://www.bettercap.org/](https://www.bettercap.org)
+  * [https://www.bettercap.org/](https://www.bettercap.org/)
 * [Inveigh](https://github.com/Kevin-Robertson/Inveigh) - ​Inveigh is a cross-platform .NET IPv4/IPv6 machine-in-the-middle tool for penetration testers.
   * Can be used similarly to Responder and MultiRelay
 * [Espionage](https://github.com/DoubleThreatSecurity/Espionage) - ​Espionage is a network packet sniffer that intercepts large amounts of data being passed through an interface. The tool allows users to to run normal and verbose traffic analysis that shows a live feed of traffic, revealing packet direction, protocols, flags, etc.

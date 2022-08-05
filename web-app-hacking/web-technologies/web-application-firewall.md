@@ -15,7 +15,7 @@
 * [Lightbulb Framework](https://github.com/lightbulb-framework/lightbulb-framework) - A WAF testing suite written in Python.
 * [WAFBench](https://github.com/microsoft/wafbench) - A WAF performance testing suite by [Microsoft](https://github.com/microsoft).
 * [WAF Testing Framework](https://www.imperva.com/lg/lgw\_trial.asp?pid=483) - A WAF testing tool by [Imperva](https://imperva.com).
-* [Framework for Testing WAFs (FTW)](https://github.com/coreruleset/ftw) - A framework by the [OWASP CRS team](https://coreruleset.org) that helps to provide rigorous tests for WAF rules by using the OWASP Core Ruleset V3 as a baseline.
+* [Framework for Testing WAFs (FTW)](https://github.com/coreruleset/ftw) - A framework by the [OWASP CRS team](https://coreruleset.org/) that helps to provide rigorous tests for WAF rules by using the OWASP Core Ruleset V3 as a baseline.
 * [abuse-ssl-bypass-waf](https://github.com/LandGrey/abuse-ssl-bypass-waf) - Bypassing WAF by abusing SSL/TLS Ciphers
 
 ### Evasion
@@ -93,8 +93,8 @@
 * [Side Channel Attacks for Fingerprinting WAF Filter Rules](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/Side%20Channel%20Attacks%20for%20Fingerprinting%20WAF%20Filter%20Rules.pdf) - A presentation about how side channel attacks can be utilised to fingerprint firewall filter rules from [UseNix Woot'12](https://www.usenix.org/conference/woot12).
 * [Our Favorite XSS Filters/IDS and how to Attack Them](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/Our%20Favourite%20XSS%20WAF%20Filters%20And%20How%20To%20Bypass%20Them.pdf) - A presentation about how to evade XSS filters set by WAF rules from [BlackHat USA 09](https://www.blackhat.com/html/bh-us-09/).
 * [Playing Around with WAFs](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/Playing%20Around%20with%20WAFs.pdf) - A small presentation about WAF profiling and playing around with them from [Defcon 16](http://www.defcon.org/html/defcon-16/dc-16-post.html).
-* [A Forgotten HTTP Invisibility Cloak](https://github.com/0xInfection/Awesome-WAF/blob/master/presentation/A%20Forgotten%20HTTP%20Invisibility%20Cloak.pdf) - A presentation about techniques that can be used to bypass common WAFs from [BSides Manchester](https://www.bsidesmcr.org.uk).
-* [Building Your Own WAF as a Service and Forgetting about False Positives](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/Building%20Your%20Own%20WAF%20as%20a%20Service%20and%20Forgetting%20about%20False%20Positives.pdf) - A presentation about how to build a hybrid mode waf that can work both in an out-of-band manner as well as inline to reduce false positives and latency [Auscert2019](https://conference.auscert.org.au).
+* [A Forgotten HTTP Invisibility Cloak](https://github.com/0xInfection/Awesome-WAF/blob/master/presentation/A%20Forgotten%20HTTP%20Invisibility%20Cloak.pdf) - A presentation about techniques that can be used to bypass common WAFs from [BSides Manchester](https://www.bsidesmcr.org.uk/).
+* [Building Your Own WAF as a Service and Forgetting about False Positives](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/Building%20Your%20Own%20WAF%20as%20a%20Service%20and%20Forgetting%20about%20False%20Positives.pdf) - A presentation about how to build a hybrid mode waf that can work both in an out-of-band manner as well as inline to reduce false positives and latency [Auscert2019](https://conference.auscert.org.au/).
 
 ## Attack Code
 

@@ -117,7 +117,7 @@
   * \#sudo /bin/bash
   * \#sudo passwd
 * Shell escape sequences
-  * [https://gtfobins.github.io/](https://gtfobins.github.io)
+  * [https://gtfobins.github.io/](https://gtfobins.github.io/)
   * search for the commands/binaries you can run as sudo, then pass arguements that force a new root shell
 * Abusing intended functionality
   * Read/write to files owned by root

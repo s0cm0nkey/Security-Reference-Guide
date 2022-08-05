@@ -1,13 +1,13 @@
 # The Awesome Lists
 
-The Awesome Lists are multiple collections various folks have made that try to condense some of the best resources for various cyber topics, all onto one list. These are great for finding out new tools to add to your arsenal, or techniques to add to your repertoire. You can use [awesome · GitHub Topics · GitHub](https://github.com/topics/awesome) and [Awesome Indexed - Searchable Awesome Lists](https://awesome-indexed.mathew-davies.co.uk) to search for what ever content you want that might  be found in the awesome lists. \
+The Awesome Lists are multiple collections various folks have made that try to condense some of the best resources for various cyber topics, all onto one list. These are great for finding out new tools to add to your arsenal, or techniques to add to your repertoire. You can use [awesome · GitHub Topics · GitHub](https://github.com/topics/awesome) and [Awesome Indexed - Searchable Awesome Lists](https://awesome-indexed.mathew-davies.co.uk/) to search for what ever content you want that might  be found in the awesome lists. \
 For those who love the command line, [https://github.com/chubin/cheat.sh](https://github.com/chubin/cheat.sh) is amazing for doing something similar, right in your bash shell.
 
 \*Note\* The below list is NOT comprehensive. These are cherry picked for what has been found to be relevant for security practicioners.&#x20;
 
 General - These are general collections of security related resources that some awesome folks have gathered from across the internet. The first one by Sindresorhus has been come the basis for the above search tool.
 
-* [Awesome Search](https://awesomelists.top) [GitHub - sindresorhus/awesome: 😎 Awesome lists about all kinds of interesting topics](https://github.com/sindresorhus/awesome)
+* [Awesome Search](https://awesomelists.top/) [GitHub - sindresorhus/awesome: 😎 Awesome lists about all kinds of interesting topics](https://github.com/sindresorhus/awesome)
 * [GitHub - bayandin/awesome-awesomeness: A curated list of awesome awesomeness](https://github.com/bayandin/awesome-awesomeness)
 * [GitHub - onlurking/awesome-infosec: A curated list of awesome infosec courses and training resources.](https://github.com/onlurking/awesome-infosec)&#x20;
 * [GitHub - sbilly/awesome-security: A collection of awesome software, libraries, documents, books, resources and cools stuffs about security.](https://github.com/sbilly/awesome-security)&#x20;

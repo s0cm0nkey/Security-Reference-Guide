@@ -17,7 +17,7 @@
 
 ## Keys
 
-* [Welcome to Ultimate Security Devices - Industrial Lock and Key Expertise, we are specializes in medeco locks, cabinet locks, elevator keys, keys set, key switches and many other products](https://www.ultimatesecuritydevices.com)&#x20;
+* [Welcome to Ultimate Security Devices - Industrial Lock and Key Expertise, we are specializes in medeco locks, cabinet locks, elevator keys, keys set, key switches and many other products](https://www.ultimatesecuritydevices.com/)&#x20;
 * [SPARROWS FIRE SERVICE ELEVATOR KEY SET](https://www.sparrowslockpicks.com/product\_p/ekey.htm)
 * _Operator Handbook: Physical Entry Keys - pg. 248_
 
@@ -30,7 +30,7 @@
 
 ### Tools
 
-* [https://www.redteamtools.com/](https://www.redteamtools.com)
+* [https://www.redteamtools.com/](https://www.redteamtools.com/)
 * [Dark Shift](https://www.sparrowslockpicks.com/product\_p/new2.htm)&#x20;
 * [THE EOD - Full](https://www.sparrowslockpicks.com/product\_p/eod.htm)&#x20;
 * [Sparrows Warded Pick Set](https://www.sparrowslockpicks.com/product\_p/ward.htm)&#x20;

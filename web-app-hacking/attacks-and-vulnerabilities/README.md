@@ -68,7 +68,7 @@
 
 ## **Cross Site Leaks**
 
-* [https://xsleaks.dev/](https://xsleaks.dev) - Huge resource around cross site leak vulnerabilities
+* [https://xsleaks.dev/](https://xsleaks.dev/) - Huge resource around cross site leak vulnerabilities
 
 ## **CSRF - Cross Site Request Forgery**
 
@@ -294,7 +294,7 @@ Security misconfigurations include:\
 ## **Web Man-In-The-Middle**
 
 * [Evilginx2](https://github.com/kgretzky/evilginx2) - Standalone man-in-the-middle attack framework used for phishing login credentials along with session cookies, allowing for the bypass of 2-factor authentication
-* [MITM Proxy](https://mitmproxy.org) - Mitmproxy is your swiss-army knife for debugging, testing, privacy measurements, and penetration testing. It can be used to intercept, inspect, modify and replay web traffic such as HTTP/1, HTTP/2, WebSockets, or any other SSL/TLS-protected protocols.
+* [MITM Proxy](https://mitmproxy.org/) - Mitmproxy is your swiss-army knife for debugging, testing, privacy measurements, and penetration testing. It can be used to intercept, inspect, modify and replay web traffic such as HTTP/1, HTTP/2, WebSockets, or any other SSL/TLS-protected protocols.
 
 ## **Web Sockets**
 

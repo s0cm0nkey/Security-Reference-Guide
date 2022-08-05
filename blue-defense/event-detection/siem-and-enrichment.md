@@ -8,13 +8,13 @@
   * [Cyber Wardog Lab: Building a Sysmon Dashboard with an ELK Stack](https://cyberwardog.blogspot.com/2017/03/building-sysmon-dashboard-with-elk-stack.html)
   * [Elasticsearch: The Definitive Guide](https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html) ([fork it on GH](https://github.com/elastic/elasticsearch-definitive-guide))
   * [https://training.elastic.co/learn-from-home\*](https://training.elastic.co/learn-from-home\*)
-* [Greylog](https://www.graylog.org) - Greylog is a fantastically flexible logging solution that also has its own security correlation engine with Greylog Illuminate.
+* [Greylog](https://www.graylog.org/) - Greylog is a fantastically flexible logging solution that also has its own security correlation engine with Greylog Illuminate.
   * [Enhance Windows Security with Sysmon, Winlogbeat and Graylog | Graylog](https://www.graylog.org/post/back-to-basics-enhance-windows-security-with-sysmon-and-graylog)
 * [MozDef: The Mozilla SIEM](https://github.com/mozilla/MozDef) - An interesting product from the makers of everyone's favorite opensource web browser, MozDef has been built to be a SIEM focused around automation and expediency of addressing of security alerts.
   * [https://mozdef.readthedocs.io/en/latest/overview.html](https://mozdef.readthedocs.io/en/latest/overview.html)
 * [OSSIM: The Open Source SIEM | AlienVault](https://cybersecurity.att.com/products/ossim) - OSSIM is a super handy security platform that focuses less on the data mining and more of the security alerting. It has an incredibly easy to use security rule generation tool and also can perform cross correlation between data sources.
 
-## &#x20;[Splunk](https://www.splunk.com)
+## &#x20;[Splunk](https://www.splunk.com/)
 
 &#x20;Splunk is the industry leader in data mining and security monitoring,. It is an incredible tool, with unparalleled ability to parse, correlate, and present your data, as well as an unparalleled price tag!
 
@@ -34,7 +34,7 @@ With most SIEMs you can add in plugins or apps that can perform a myriad of supp
   * [Alexa Top 1 Million Domains](https://gist.github.com/chilts/7229605)
   * [Majestic Millions](https://majestic.com/reports/majestic-million)
   * [Cisco Umbrella Top 1 Million](https://umbrella.cisco.com/blog/cisco-umbrella-1-million)
-* Pre-loaded data - These are files and sets of data that can be used for reference, comparison, or enhancement. These can be white/black lists, the above domain lists, Mitre attack tables, or anything you might want to use. For easy storage and later recal, we can use a utility like [Memcached](https://memcached.org) for storing key-value pair knowledge objects.
+* Pre-loaded data - These are files and sets of data that can be used for reference, comparison, or enhancement. These can be white/black lists, the above domain lists, Mitre attack tables, or anything you might want to use. For easy storage and later recal, we can use a utility like [Memcached](https://memcached.org/) for storing key-value pair knowledge objects.
 * Threat Intelligence - _Please see the Intelligence Section of this guide._
 * [Fuzzy Searching](https://github.com/seatgeek/fuzzywuzzy) - For SIEMs that do not have integrated fuzzy searching ability, tools like [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy) uses python to calculate [Levenshtien distance](https://en.wikipedia.org/wiki/Levenshtein\_distance) for fuzzy searching of strings up to a couple characters different from the searched string.
 * [APIify](https://github.com/MarkBaggett/apiify) - First and foremost on the list, APIify is a fantastic tool that you can apply to just about every security tool you have that doesn't have its own API. It essentially takes any standalone Binary and wraps it into a cached web server. Super handy for being able to integrate the functions of your favorite tools into your SIEM.
@@ -43,7 +43,7 @@ With most SIEMs you can add in plugins or apps that can perform a myriad of supp
   * [DNSDB Cheatsheet](https://www.farsightsecurity.com/assets/media/download/dnsdb-cheatsheet.pdf)
 * [PRADS: Passive Real-time Asset Detection System](https://github.com/gamelinux/prads/) - PRADS is a tool that can passively build an asset list with useful details like operating system and open ports. When you do not have access to an asset list or CMDB from the engineering team, this can be a huge help when adding context to security investigations.
 * [hallucinate](https://github.com/SySS-Research/hallucinate/) - One-stop TLS traffic inspection and manipulation using dynamic instrumentation.
-* [phishing\_catcher](https://github.com/x0rz/phishing\_catcher) - Catch possible phishing domains in near real time by looking for suspicious TLS certificate issuances reported to the [Certificate Transparency Log (CTL)](https://www.certificate-transparency.org) via the [CertStream](https://certstream.calidog.io) API.
+* [phishing\_catcher](https://github.com/x0rz/phishing\_catcher) - Catch possible phishing domains in near real time by looking for suspicious TLS certificate issuances reported to the [Certificate Transparency Log (CTL)](https://www.certificate-transparency.org/) via the [CertStream](https://certstream.calidog.io/) API.
 * _Threat Hunting with Elastic Stack: Enriching Data to Make Intelligence - pg. 329_
 
 {% embed url="https://www.youtube.com/watch?v=lb2M7-UOqVI" %}

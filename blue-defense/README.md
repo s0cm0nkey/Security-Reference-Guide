@@ -17,7 +17,7 @@ For those wanting to build up their certifications and progress in your career, 
   * [NIST SP:800-37](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final) - Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy
   * [NIST SP:800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final) - Security and Privacy Controls for Information Systems and Organizations
 * [SANS Blue Team Operations](https://wiki.sans.blue/#!index.md) - SANS Blue Team wiki built by the instructors of the SANS defensive courses.
-* [ISECOM](https://www.isecom.org) - The Institute for Security and Open Methodologies (ISECOM) is an open, security research community providing original resources, tools, and certifications in the field of security.
+* [ISECOM](https://www.isecom.org/) - The Institute for Security and Open Methodologies (ISECOM) is an open, security research community providing original resources, tools, and certifications in the field of security.
 * [CIS Top 20 Controls](https://www.cisecurity.org/controls/cis-controls-list/) - Looking for a place to start when improving your security program? Start here!
   * [https://blog.rsisecurity.com/what-are-the-20-cis-critical-security-controls/](https://blog.rsisecurity.com/what-are-the-20-cis-critical-security-controls/)
 * [Detection Maturity model ](https://ryanstillions.blogspot.com/2014/04/the-dml-model\_21.html)- Guide for levels of maturity and development of a security program.

@@ -36,7 +36,7 @@ Active network detection is where there is an actual interaction with the device
 Active Network Detection Sources
 
 * Network Scanners
-  * [NMAP ](https://nmap.org)scanning is popular, easy, and can return a wealth of data including hostname, open ports, operating system and more. Uses a fingerprint database to identify device types, services, and the host operating system.
+  * [NMAP ](https://nmap.org/)scanning is popular, easy, and can return a wealth of data including hostname, open ports, operating system and more. Uses a fingerprint database to identify device types, services, and the host operating system.
 * Vulnerability Scanners
   * Can be unauthenticated which works similar to an NMAP scan
   * Can be authenticated which allows direct querying of the device and return significantly more data.

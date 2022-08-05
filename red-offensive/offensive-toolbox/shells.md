@@ -89,7 +89,7 @@
 
     The others configuring server.org:1080 as their SOCKS4/5 proxy. They can now connect to _any_ computer on _any port_ that your computer has access to. This includes access to computers behind your firewall that are on your local network. An alternative and without the need for a server is to use [gs-netcat](https://github.com/hackerschoice/thc-tips-tricks-hacks-cheat-sheet#bdra-anchor).
 
-### [**Netcat**](http://netcat.sourceforge.net) **** - The original shell tool.&#x20;
+### [**Netcat**](http://netcat.sourceforge.net/) **** - The original shell tool.&#x20;
 
 * Reference
   * [SANS netcat cheatsheet](https://www.sans.org/security-resources/sec560/netcat\_cheat\_sheet\_v1.pdf)

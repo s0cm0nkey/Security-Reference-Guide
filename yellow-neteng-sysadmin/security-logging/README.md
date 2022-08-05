@@ -12,8 +12,6 @@ description: Logs and the logging loggers that log them
 * Setting up Network Sensors - _Applied Network Security Monitoring_ - PG. 49
 * Sensor Placement - _Applied Network Security Monitoring_ - PG. 61
 
-
-
 ## **Logging Data Types**
 
 Before getting into the logging architecture, we need to define the various logging data types. These are the different forms of the data we use for Network Security Monitoring.
@@ -46,7 +44,7 @@ The core components of most security monitoring programs is the Security Informa
       * _Threat Hunting in Elastic Stack: Packetbeat - pg. 60_
       * _Threat Hunting in Elastic Stack: Winlogbeat - pg. 63_
       * _Threat Hunting in Elastic Stack: ElasticAgent - pg. 65_
-    * [NXLog](https://nxlog.co) - Amazing agent with both a Community and Enterprise (Premium) editions.
+    * [NXLog](https://nxlog.co/) - Amazing agent with both a Community and Enterprise (Premium) editions.
       * Free version has more features than many premium agents.
       * Has premium support available.
       * Supports tons of log formats including W3C logs, the log format of IIS, Exchange, and Bro/Zeek
@@ -84,7 +82,7 @@ The core components of most security monitoring programs is the Security Informa
 The central collection point for your logs. This is where raw logs can be parsed and event have context added to them.
 
 * Splunk Heavy Forwarder - A hybrid of a powerful logging agent and Aggregator, a Heavy forwarder can both collect logs from many sources as well as parse/filter logs.
-* [Nagios - The Industry Standard In IT Infrastructure Monitoring](https://www.nagios.org) - Network logging and monitoring tool focused for network engineering.
+* [Nagios - The Industry Standard In IT Infrastructure Monitoring](https://www.nagios.org/) - Network logging and monitoring tool focused for network engineering.
 * [Logstash ](https://github.com/elastic/logstash)- One of the most common aggregators. Built by Elastic Stack with over 200 plugins. Can be used to accept logs and convert them to other formats used by premium  SIEMs
   * Commercial support available
   * Uses a variety of plugins to perform different features
@@ -100,7 +98,7 @@ The central collection point for your logs. This is where raw logs can be parsed
   * [Plugins: Filter](https://www.elastic.co/guide/en/logstash/current/filter-plugins.html) - Filtering logs by tons of different options, variables, and conditions.
     * Regex - Filter by specific Regex matching
     * Grok - Filter by set Regex built patterns
-      * [Grok Debugger](https://grokdebug.herokuapp.com)
+      * [Grok Debugger](https://grokdebug.herokuapp.com/)
     * Pattern - Filter by customer regex that is assigned a name. Reusable regex
     * CSV - Filter by comma separated values.
     * Key Value pair
@@ -119,8 +117,8 @@ The central collection point for your logs. This is where raw logs can be parsed
 
 &#x20;An optional component, a log broker acts as a buffer for temporary storage of logs. It helps to store logs over regular flow capacity. Intended to help syslog devices as many agent based systems have their own internal broker-like services.
 
-* [Rabbitmq](https://www.rabbitmq.com) - Easy to install, easy to use, and available for all major operating systems
-* [Kafka](https://kafka.apache.org) - High powered broker with the ability to manage high volume of events at a time. Use [Apache Zookeeper](https://kafka.apache.org) to manage multiple Kafka nods
+* [Rabbitmq](https://www.rabbitmq.com/) - Easy to install, easy to use, and available for all major operating systems
+* [Kafka](https://kafka.apache.org/) - High powered broker with the ability to manage high volume of events at a time. Use [Apache Zookeeper](https://kafka.apache.org/) to manage multiple Kafka nods
 
 ### **Storage**&#x20;
 
@@ -141,13 +139,13 @@ The component which allows the searching of parsed data and creation of reports 
     * _Threat Hunting in Elastic Stack: Using Kibana - pg. 66, 198_
   * [https://www.elastic.co/elasticon/conf/2015/sf/scaling-elasticsearch-for-production-at-verizon](https://www.elastic.co/elasticon/conf/2015/sf/scaling-elasticsearch-for-production-at-verizon)__
   * _Threat Hunting in Elastic Stack: Bringing data into Elasticseach - pg. 50_
-* [Splunk](https://www.splunk.com) - The premium cadillaic option of searching/data mining utilities.
+* [Splunk](https://www.splunk.com/) - The premium cadillaic option of searching/data mining utilities.
 
 ### **Alert Engine**&#x20;
 
 One of the most important components in a SIEM, the alert engine can take predefined searches and perform specific actions when those searches return results, such as create an alert.
 
-* [Graylog](https://www.graylog.org) - An admin platform for Elastisearch that can be used to create easy and flexible alerting
+* [Graylog](https://www.graylog.org/) - An admin platform for Elastisearch that can be used to create easy and flexible alerting
 * [ElastAlert](https://github.com/Yelp/elastalert) - A python based framework for setting up alerts within Elastisearch
 * [Watcher/Kibana-Alerting](https://www.elastic.co/what-is/kibana-alerting) - Elastisearch's commercial offering for creating and managing alerts.
 * [Splunk Security Essentials](https://www.splunk.com/en\_us/software/cyber-security-essentials.html) - A free app(plugin) for Splunk that comes with a small set of security search use cases and other utilties.

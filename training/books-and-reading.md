@@ -5,11 +5,11 @@
 * [DEF CON® Hacking Conference: Resources - Required Reading for the Discerning Technophile.](https://www.defcon.org/html/links/book-list.html)&#x20;
 * [Top 100 Cybersecurity Books - Cyber Defense Magazine](https://www.cyberdefensemagazine.com/top-100-cybersecurity-books/)
 * [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)&#x20;
-* [Database of Free Online Computer Science and Programming Books, Textbooks, and Lecture Notes](https://www.freetechbooks.com)&#x20;
+* [Database of Free Online Computer Science and Programming Books, Textbooks, and Lecture Notes](https://www.freetechbooks.com/)&#x20;
 * [O'Reilly Open Books Project](https://www.oreilly.com/openbook/)
 * [https://docs.microsoft.com/en-us/archive/blogs/mssmallbiz/large-collection-of-free-microsoft-ebooks-for-you-including-sharepoint-visual-studio-windows-phone-windows-8-office-365-office-2010-sql-server-2012-azure-and-more](https://docs.microsoft.com/en-us/archive/blogs/mssmallbiz/large-collection-of-free-microsoft-ebooks-for-you-including-sharepoint-visual-studio-windows-phone-windows-8-office-365-office-2010-sql-server-2012-azure-and-more)
 * [https://docs.microsoft.com/en-us/archive/blogs/mssmallbiz/another-large-collection-of-free-microsoft-ebooks-and-resource-kits-for-you-including-sharepoint-2013-office-2013-office-365-duet-2-0-azure-cloud-windows-phone-lync-dynamics-crm-and-more](https://docs.microsoft.com/en-us/archive/blogs/mssmallbiz/another-large-collection-of-free-microsoft-ebooks-and-resource-kits-for-you-including-sharepoint-2013-office-2013-office-365-duet-2-0-azure-cloud-windows-phone-lync-dynamics-crm-and-more)
-* [https://leanpub.com/](https://leanpub.com)
+* [https://leanpub.com/](https://leanpub.com/)
 
 ## Essential Desk Reference
 

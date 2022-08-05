@@ -9,14 +9,14 @@ Proper research all starts with one thing: Data!
   * [VizSec research and development data sets](https://vizsec.org/data/)
   * [Splunk Security Dataset](https://live.splunk.com/splunk-security-dataset-project) - Access real data in Splunk hosted portal and explore/analyze various datasets with an educational tutorial.
   * [OTRF/Security-Datasets](https://github.com/OTRF/Security-Datasets) - The Open Threat Research Forge project is an open-source initiatve that contributes malicious and benign datasets, from different platforms, to the infosec community to expedite data analysis and threat research.
-  * [SecRepo - Security Data Samples Repository](https://www.secrepo.com)
+  * [SecRepo - Security Data Samples Repository](https://www.secrepo.com/)
   * [PCAP-ATTACK](https://github.com/sbousseaden/PCAP-ATTACK) -  PCAP Samples for Different Post Exploitation Techniques&#x20;
   * [EVTX-ATTACK-SAMPLES](https://github.com/sbousseaden/EVTX-ATTACK-SAMPLES) - Windows Events Attack Samples&#x20;
   * [Public PCAP files for download](https://www.netresec.com/?page=PcapFiles) - This is a list of public packet capture repositories, which are freely available on the Internet. Most of the sites listed below share Full Packet Capture (FPC) files, but some do unfortunately only have truncated frames.
   * [Splunk Boss of the SOC version 3 dataset.](https://github.com/splunk/botsv3) Datasets from one of the biggest data mining competitions in the world. Perfect for Splunk training or developing search used cases.
   * [PhishingKitTracker ](https://github.com/marcoramilli/PhishingKitTracker)- Samples of phishing kits for use in security research
 * [DetectionLab](https://github.com/clong/DetectionLab) -  Automate the creation of a lab environment complete with security tooling and logging best practices&#x20;
-* [Mitre CAR](https://car.mitre.org) - The MITRE Cyber Analytics Repository (CAR) is a knowledge base of analytics developed by [MITRE](https://www.mitre.org) based on the [MITRE ATT\&CK](https://attack.mitre.org) adversary model.
+* [Mitre CAR](https://car.mitre.org/) - The MITRE Cyber Analytics Repository (CAR) is a knowledge base of analytics developed by [MITRE](https://www.mitre.org) based on the [MITRE ATT\&CK](https://attack.mitre.org/) adversary model.
   * CAR is focused on providing a set of validated and well-explained analytics, in particular with regards to their operating theory and rationale.
 
 ## **Network Analysis through Machine Learning**&#x20;

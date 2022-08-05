@@ -26,8 +26,8 @@ When performing a structured penetration test, following/documenting proper proc
 ### **Researcher Developed Guides and Resources**
 
 * [https://book.hacktricks.xyz](https://book.hacktricks.xyz)&#x20;
-* [https://www.ired.team/](https://www.ired.team)
-* [https://guif.re/](https://guif.re)
+* [https://www.ired.team/](https://www.ired.team/)
+* [https://guif.re/](https://guif.re/)
 * [https://www.0daysecurity.com/penetration-testing/penetration.html](https://www.0daysecurity.com/penetration-testing/penetration.html)
 * Hacking without Metasploit - [https://hakluke.medium.com/haklukes-guide-to-hacking-without-metasploit-1bbbe3d14f90](https://hakluke.medium.com/haklukes-guide-to-hacking-without-metasploit-1bbbe3d14f90)
 * [https://github.com/nixawk/pentest-wiki](https://github.com/nixawk/pentest-wiki)
@@ -93,15 +93,15 @@ Notekeeping becomes incredibly important in recreating exploits, storing essenti
 
 * Note Taking Apps
   * [CherryTree](https://www.giuspen.com/cherrytree/)
-  * [Joplin](https://joplinapp.org)
+  * [Joplin](https://joplinapp.org/)
   * [OneNote](https://www.onenote.com)
-  * [Obsidian](https://obsidian.md)
+  * [Obsidian](https://obsidian.md/)
   * Trilium: [https://github.com/zadam/trilium](https://github.com/zadam/trilium)
-  * KeepNote: [http://keepnote.org/](http://keepnote.org)
-  * [https://asciinema.org/](https://asciinema.org)
+  * KeepNote: [http://keepnote.org/](http://keepnote.org/)
+  * [https://asciinema.org/](https://asciinema.org/)
 * Screen Shot Utilities
   * [https://github.com/flameshot-org/flameshot](https://github.com/flameshot-org/flameshot)
-  * [https://getgreenshot.org/](https://getgreenshot.org)
+  * [https://getgreenshot.org/](https://getgreenshot.org/)
   * Linux Native utility - Ctrl +Shift+PrintSreen
 * Reporting Tools
   * [Ghostwriter](https://github.com/GhostManager/Ghostwriter) - The SpecterOps project management and reporting engine

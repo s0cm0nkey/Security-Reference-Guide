@@ -22,8 +22,8 @@
 ## Guides and Reference
 
 * [Awesome Lists Collection: Social Engineering](https://github.com/v2-dev/awesome-social-engineering)
-* [https://www.social-engineer.org/](https://www.social-engineer.org)
-* [https://www.social-engineer.com/](https://www.social-engineer.com)
+* [https://www.social-engineer.org/](https://www.social-engineer.org/)
+* [https://www.social-engineer.com/](https://www.social-engineer.com/)
 * [https://www.social-engineer.org/framework/general-discussion/categories-social-engineers/hackers/](https://www.social-engineer.org/framework/general-discussion/categories-social-engineers/hackers/)
 * _The Hacker's Playbook 3: Social Engineering - pg. 174_
 * _Social Engineering: The Science of Human Hacking - Christopher Hadnagy_
@@ -80,21 +80,21 @@
 
 ## Persona Creation
 
-* [This Person Does Not Exist](https://thispersondoesnotexist.com)
-* &#x20;[Why a Fake Resume Generator? – trick the HR but not the job](https://thisresumedoesnotexist.com)&#x20;
+* [This Person Does Not Exist](https://thispersondoesnotexist.com/)
+* &#x20;[Why a Fake Resume Generator? – trick the HR but not the job](https://thisresumedoesnotexist.com/)&#x20;
 * [This Rental Does Not Exist](https://thisrentaldoesnotexist.com/about/)&#x20;
-* [Generate a Random Name - Fake Name Generator](https://www.fakenamegenerator.com)&#x20;
+* [Generate a Random Name - Fake Name Generator](https://www.fakenamegenerator.com/)&#x20;
 * [Random Name Generator | Fake ID Generator](https://www.elfqrin.com/fakeid.php)
 * [**AI Generated Photos**](https://generated.photos) - 100.000 AI generated faces.
-* [Facial composite (identikit) maker](http://facemaker.uvrg.org)
+* [Facial composite (identikit) maker](http://facemaker.uvrg.org/)
 
 ## User Tracking
 
 * [I-See-You](https://github.com/Viralmaniar/I-See-You) - A Bash and Javascript tool to find the exact location of the users during social engineering or phishing engagements. Using exact location coordinates an attacker can perform preliminary reconnaissance which will help them in performing further targeted attacks.
-* [https://iplogger.org/](https://iplogger.org)
+* [https://iplogger.org/](https://iplogger.org/)
 * [http://canarytokens.org/generate](http://canarytokens.org/generate)
-* [http://www.urlbiggy.com/](http://www.urlbiggy.com)
-* [https://getnotify.com/](https://getnotify.com)
+* [http://www.urlbiggy.com/](http://www.urlbiggy.com/)
+* [https://getnotify.com/](https://getnotify.com/)
 * User tracking with Wireshark and Google Maps -[https://youtu.be/xuNuy8n8u-Y](https://youtu.be/xuNuy8n8u-Y)
 
 ## Mal-docs

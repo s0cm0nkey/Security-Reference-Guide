@@ -4,7 +4,7 @@
 
 Fantastic tools that can make detection easy. They can look at logs of various kinds and use rule sets to react and alert to any traffic that violates those rules. Open source IDS tools have huge public rule sets both included with the tool and available across the internet. It is my opinion that open source IDS products offer superior detection capability to the premium products on the market due to the power of the community behind the tools and their public sharing of detection rules.
 
-## [Surricata](https://suricata-ids.org)&#x20;
+## [Surricata](https://suricata-ids.org/)&#x20;
 
 A solution that combines intrusion detection (IDS), intrusion prevention (IPS), network security monitoring (NSM) and PCAP processing, Surricata can quickly identify, stop, and assess the most sophisticated attacks. Truly a fantastic detection engine, it has quickly become a popular choice for IDS functions built into other products, such as the IDS function of Ubiquiti products.
 
@@ -22,7 +22,7 @@ One of the most powerful detection tools on the market  Snort has three primary 
 
 * Can collect logs via Syslog, CSV, Database, or the prefered method of [Unified2](https://www.snort.org/faq/readme-unified2)
   * Unified2 is a binary output for Snort. It will need interpretation by tools like [Barnyard](https://github.com/firnsy/barnyard2) or [u2json](https://idstools.readthedocs.io/en/latest/tools/u2json.html)
-* __[https://snort.8jorg/](https://snort.org)
+* __[https://snort.8jorg/](https://snort.org/)
 * [https://snort.org/#documents](https://snort.org/#documents)
 * [https://snort.org/downloads/#rule-downloads](https://snort.org/downloads/#rule-downloads)
 * [https://paper.bobylive.com/Security/Snort\_rule\_infographic.pdf](https://paper.bobylive.com/Security/Snort\_rule\_infographic.pdf)

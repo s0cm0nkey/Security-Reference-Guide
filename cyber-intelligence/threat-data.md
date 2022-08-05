@@ -33,19 +33,19 @@ When checking your indicators against the below sources, be sure you are looking
 ## Threat Actor Information
 
 * [https://darkfeed.io/ransomwiki/](https://darkfeed.io/ransomwiki/) - A site for researchers that keeps track and provides links to various ransomware group darknet sites.
-* [Ransomware Group Site](http://ransomwr3tsydeii4q43vazm7wofla5ujdajquitomtd47cxjtfgwyyd.onion) - An onion site that provides links and details about ransomware groups currently operating.
-  * [Clearnet Proxy](http://ransomwr3tsydeii4q43vazm7wofla5ujdajquitomtd47cxjtfgwyyd.onion.pet)
+* [Ransomware Group Site](http://ransomwr3tsydeii4q43vazm7wofla5ujdajquitomtd47cxjtfgwyyd.onion/) - An onion site that provides links and details about ransomware groups currently operating.
+  * [Clearnet Proxy](http://ransomwr3tsydeii4q43vazm7wofla5ujdajquitomtd47cxjtfgwyyd.onion.pet/)
 * [Crowdstrike E-Crime Index](https://adversary.crowdstrike.com/en-US/ecrime-index-ecx/?L=236)
-* [https://malpedia.caad.fkie.fraunhofer.de/](https://malpedia.caad.fkie.fraunhofer.de) - A resource for rapid identification and actionable context when investigating malware.
+* [https://malpedia.caad.fkie.fraunhofer.de/](https://malpedia.caad.fkie.fraunhofer.de/) - A resource for rapid identification and actionable context when investigating malware.
 
 ## **Blacklist Checks and Reputation Data**
 
 ### Multi - Blacklist Checkers
 
-* [Hurricane Electric BGP Toolkit](https://bgp.he.net)
+* [Hurricane Electric BGP Toolkit](https://bgp.he.net/)
   * Searches: IP address, Domain, ASN, Subnet
   * Returns: IP information, WHOIS, DNS (A records), Reputation Check ( IP Only - 93 sources), Website info, Website Preview
-* [Virustotal](https://www.virustotal.com)
+* [Virustotal](https://www.virustotal.com/)
   * Searches: File, hash, ip, domain search
   * Returns: Reputation check (84 sources), DNS records, HTTPS Cert, WHOIS, Related domains, Community comments
   * Has a premium API
@@ -65,24 +65,24 @@ When checking your indicators against the below sources, be sure you are looking
 ### IP Reputation data
 
 * [IPVoid](https://www.ipvoid.com/ip-blacklist-check/) - Returns: Reputation data (115 sources checked), Reverse DNS, ASN, Country
-* [DNSBL Email server spam checker](https://www.dnsbl.info) - Checks IP of mail server for spam data accross 100+ blacklists
+* [DNSBL Email server spam checker](https://www.dnsbl.info/) - Checks IP of mail server for spam data accross 100+ blacklists
 * [IPSpam List](http://www.ipspamlist.com/ip-lookup/) - Checks IP against their internal blacklist for reporting spam
-* [Cymru IP Reputation Lookup](https://reputation.team-cymru.com) - Checks IP against Cymru's internal reputation feed (High quality)
+* [Cymru IP Reputation Lookup](https://reputation.team-cymru.com/) - Checks IP against Cymru's internal reputation feed (High quality)
 * [http://www.blocklist.de/en/search.html](http://www.blocklist.de/en/search.html) - Check if a netblock or IP is malicious according to blocklist.de.
 * [https://www.projecthoneypot.org/search\_ip.php](https://www.projecthoneypot.org/search\_ip.php) - Checks IP Attack data from distributed honeypot network.
-* [https://focsec.com/](https://focsec.com) (API ONLY) - Determine if a user’s IP address is associated with a VPN, Proxy, TOR or malicious bots.
+* [https://focsec.com/](https://focsec.com/) (API ONLY) - Determine if a user’s IP address is associated with a VPN, Proxy, TOR or malicious bots.
 
 ### URL/Domain Reputation data
 
-* [URLScan ](https://urlscan.io) - Returns: Summary data, Reputation data, IP data, domain tree, HTTP transaction data, Screenshot of page, Detected Technologies, links
-* [URLVoid](https://www.urlvoid.com)  - Returns Reputation data (34 sources), Registration info, WHOIS, Reverse DNS, ASN
-* [Zscalar Zulu](https://zulu.zscaler.com) - Returns: URL info, Risk analysis, Content, URL checks, Host checks
-* [PhishTank](https://www.phishtank.com) - Returns: Listed on PhishTank
+* [URLScan ](https://urlscan.io/) - Returns: Summary data, Reputation data, IP data, domain tree, HTTP transaction data, Screenshot of page, Detected Technologies, links
+* [URLVoid](https://www.urlvoid.com/)  - Returns Reputation data (34 sources), Registration info, WHOIS, Reverse DNS, ASN
+* [Zscalar Zulu](https://zulu.zscaler.com/) - Returns: URL info, Risk analysis, Content, URL checks, Host checks
+* [PhishTank](https://www.phishtank.com/) - Returns: Listed on PhishTank
 * [Quttera Malware Scanner ](https://quttera.com/website-malware-scanner)- Returns: Website malware scan report
 * [MergiTools RBL check](https://megritools.com/blacklist-lookup) - Returns: Reputation data&#x20;
 * [Malware Domain Lists](http://www.malwaredomainlist.com/mdl.php?search=\&colsearch=All\&quantity=50) - Returns: Reputation data&#x20;
-* [Securi SiteCheck](https://sitecheck.sucuri.net) - Returns: Security check and malware scan
-* [https://lots-project.com/](https://lots-project.com) - Living Off Trusted Sites (LOTS) Project, Attackers are using popular legitimate domains when conducting phishing, C\&C, exfiltration and downloading tools to evade detection. The list of websites below allow attackers to use their domain or subdomain.
+* [Securi SiteCheck](https://sitecheck.sucuri.net/) - Returns: Security check and malware scan
+* [https://lots-project.com/](https://lots-project.com/) - Living Off Trusted Sites (LOTS) Project, Attackers are using popular legitimate domains when conducting phishing, C\&C, exfiltration and downloading tools to evade detection. The list of websites below allow attackers to use their domain or subdomain.
 * [https://reports.adguard.com/en/welcome.html](https://reports.adguard.com/en/welcome.html) - Checks if site is on AdGuard's block list
 
 ### File Hash Reputation Data
@@ -90,15 +90,15 @@ When checking your indicators against the below sources, be sure you are looking
 * [Cisco Talos File Reputation ](https://talosintelligence.com/talos\_file\_reputation)- SHA256 Only
 * [Abuse\[.\]ch Malware Baazar ](https://bazaar.abuse.ch/browse/)- Searches MD5, SHA256, and Keyword
   * Returns: Hash, tag, file type, clamAV signature, Yara rule, misc.
-* [Cymru MHR lookup](https://hash.cymru.com) - Searches SHA1 and MD5
-* [CIRCL Hashlookup](https://hashlookup.circl.lu) - A super handy API hash lookup from the creators of MISP. Takes MD5 and SHA1.
-* [Comodo Valkyrie](https://valkyrie.comodo.com) - SHA1 Only. Returns: File name, submit date, threat verdict by dynamic and human analysis.
+* [Cymru MHR lookup](https://hash.cymru.com/) - Searches SHA1 and MD5
+* [CIRCL Hashlookup](https://hashlookup.circl.lu/) - A super handy API hash lookup from the creators of MISP. Takes MD5 and SHA1.
+* [Comodo Valkyrie](https://valkyrie.comodo.com/) - SHA1 Only. Returns: File name, submit date, threat verdict by dynamic and human analysis.
 
 ### Email/Spam Data
 
-* [Simple Email Rep checker](https://emailrep.io) - Returns: Domain reputation, presence on social media, Blacklisted/Malicious activity, Email policy settings
+* [Simple Email Rep checker](https://emailrep.io/) - Returns: Domain reputation, presence on social media, Blacklisted/Malicious activity, Email policy settings
 * [MXtoolbox MX lookup](https://mxtoolbox.com/MXLookup.aspx) and [Super tool ](https://mxtoolbox.com/SuperTool.aspx)-  Returns: Host information, DMARC and DNS record data, Pivot to Blacklist check
-* [HaveIBeenEmotet](https://www.haveibeenemotet.com) - Returns: If your email address or domain is involved in the Emotet malspam.
+* [HaveIBeenEmotet](https://www.haveibeenemotet.com/) - Returns: If your email address or domain is involved in the Emotet malspam.
 
 ## **Indicator Enrichment**
 
@@ -108,7 +108,7 @@ These resources may not specifically return reputation data, but with the help o
 [cyber-search.md](osint/cyber-search.md)
 {% endcontent-ref %}
 
-* [Greynoise](https://viz.greynoise.io)
+* [Greynoise](https://viz.greynoise.io/)
   * Searches: IP address, domain
   * Returns: Reputation data, tags of related activity, location data, “last-seen”, reverse DNS, Threat Actor Information, Related Organizations, Related ASNs, Top Operating Systems, service type
   * Premium API available, command line version available
@@ -119,19 +119,19 @@ These resources may not specifically return reputation data, but with the help o
 * [BrightCloud](https://www.brightcloud.com/tools/url-ip-lookup.php)
   * Searches: IP address, domain
   * Returns: Web Reputation, Web category, WHOIS
-* [ThreatCrowd (Alienvault)](https://www.threatcrowd.org)
+* [ThreatCrowd (Alienvault)](https://www.threatcrowd.org/)
   * Searches: Domain, IP, Email, Organization
   * Returns: Reputation data, WHOIS, Reverse DNS, Open Ports, Subdomains, Related Entity Graph, pivot search to AlienVault OTX indicator information
-* [AbuseIPDB](https://www.abuseipdb.com)
+* [AbuseIPDB](https://www.abuseipdb.com/)
   * Searches: IP, Domain, Subnet
   * Returns: Reputation data, usage type, Location info
-* [SANS D-Shield](https://secure.dshield.org)
+* [SANS D-Shield](https://secure.dshield.org/)
   * Searches: Keyword, IP, domain, Port, Header
   * Returns: General information, Reputation data, SSH logs, Honeypot logs, WHOIS
 * [Abuse\[.\]ch ThreatFox IOC library](https://threatfox.abuse.ch/browse/)
   * Search: IoCs (ip, domain, hash, etc.)
   * Returns: date, IoC, malware family, Tags, Reporter
-* [Spamhaus Project](https://check.spamhaus.org)
+* [Spamhaus Project](https://check.spamhaus.org/)
   * Searches: IP, Domain, Hash
   * Returns: Reputation data
 * [ThreatInteligencePlatform.com](https://threatintelligenceplatform.com)
@@ -143,7 +143,7 @@ These resources may not specifically return reputation data, but with the help o
 * [RiskIQ Intel Articles](https://community.riskiq.com/home)
   * Searches: Domain, Hosts, IP, Email, Hash, Tags
   * Returns: Associated intelligence article containing the searched for indicator
-* [PulseDive](https://pulsedive.com)
+* [PulseDive](https://pulsedive.com/)
   * Searches: Indicators, Threats, Feeds, Misc. data
   * Returns: Risk Info, Highlights, Ports, Threat info, Reputation data, Linked Indicators
 * [Malc0de database](https://malc0de.com/database/)
@@ -152,14 +152,14 @@ These resources may not specifically return reputation data, but with the help o
 * [ThreatShare](https://threatshare.io/malware/)
   * Searches: IP, URL
   * Returns: malware family, online status, URLscan data
-* [Phishstats](https://phishstats.info) (Public Dashboard 2)
+* [Phishstats](https://phishstats.info/) (Public Dashboard 2)
   * Searches: IP, host, domain, full URL
   * Returns: Related metadata and reputation data.
-* [Twitter IOC Hunter](http://tweettioc.com) - An incredible tool that scrapes twitter for IoCs that are publicly reported through thier platform and puts them into a searchable repository. Tweet IoCs are one of the fastest ways to get information on newly discovered IoCs as they will often have context around thier discovery.
-* [https://lookup.abusix.com/](https://lookup.abusix.com)
+* [Twitter IOC Hunter](http://tweettioc.com/) - An incredible tool that scrapes twitter for IoCs that are publicly reported through thier platform and puts them into a searchable repository. Tweet IoCs are one of the fastest ways to get information on newly discovered IoCs as they will often have context around thier discovery.
+* [https://lookup.abusix.com/](https://lookup.abusix.com/)
   * Search: IP, domain, or email address
   * Returns: Presence on internal blocklist and misc available detail.
-* [https://cleantalk.org/#](https://cleantalk.org/#)
+* [https://cleantalk.org/#](https://cleantalk.org)
   * Search: IP Addresses, Email, Subnet, Domain
   * Returns: Presence on internal blocklist for spam activity
 

@@ -16,12 +16,12 @@ description: Password1234!
 ### **Default Passwords**
 
 * [http://critifence.com/default-password-database/](http://critifence.com/default-password-database/)
-* [https://default-password.info/](https://default-password.info)
+* [https://default-password.info/](https://default-password.info/)
 * [https://www.routerpasswords.com](https://www.routerpasswords.com)
 * [http://www.phenoelit.org/dpl/dpl.html](http://www.phenoelit.org/dpl/dpl.html)
 * [https://cirt.net/passwords](https://cirt.net/passwords)
 * [https://192-168-1-1ip.mobi/default-router-passwords-list](https://192-168-1-1ip.mobi/default-router-passwords-list)
-* [http://www.defaultpassword.com/](http://www.defaultpassword.com)
+* [http://www.defaultpassword.com/](http://www.defaultpassword.com/)
 * [https://datarecovery.com/rd/default-passwords/](https://datarecovery.com/rd/default-passwords/)
 
 ### **WordLists**
@@ -97,14 +97,14 @@ Reference
 
 ### Online Cracking tools
 
-* [https://crackstation.net/](https://crackstation.net)
-* [https://www.cmd5.org/](https://www.cmd5.org)
+* [https://crackstation.net/](https://crackstation.net/)
+* [https://www.cmd5.org/](https://www.cmd5.org/)
 * [https://hashkiller.io/listmanager](https://hashkiller.io/listmanager)
-* [https://www.onlinehashcrack.com/](https://www.onlinehashcrack.com)
-* [https://gpuhash.me/](https://gpuhash.me)
-* [https://crack.sh/](https://crack.sh)
-* [https://passwordrecovery.io/](https://passwordrecovery.io)
-* [http://cracker.offensive-security.com/](http://cracker.offensive-security.com)
+* [https://www.onlinehashcrack.com/](https://www.onlinehashcrack.com/)
+* [https://gpuhash.me/](https://gpuhash.me/)
+* [https://crack.sh/](https://crack.sh/)
+* [https://passwordrecovery.io/](https://passwordrecovery.io/)
+* [http://cracker.offensive-security.com/](http://cracker.offensive-security.com/)
 
 ### **Offline Cracking tools**
 

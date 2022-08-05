@@ -32,6 +32,7 @@
 * [VX-API](https://github.com/vxunderground/VX-API) - Collection of various WINAPI tricks / features used or abused by Malware
 * [https://malapi.io/](https://malapi.io/) - Cheatsheet for commands that could be potentially used for malicious activity.
 * [crAPI](https://github.com/OWASP/crAPI) - **c**ompletely **r**idiculous **API** (crAPI) will help you to understand the ten most critical API security risks. crAPI is vulnerable by design, but you'll be able to safely run it to educate/train yourself.
+* [https://github.com/Net-hunter121/API-Wordlist](https://github.com/Net-hunter121/API-Wordlist) - A wordlist of API names used for fuzzing web application APIs.
 * _Hacking: The next generation - Application Protocol Handlers, pg. 96_
 
 ### [GraphQL](https://graphql.org/)

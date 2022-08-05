@@ -29,6 +29,10 @@ Specific for what you need to look for and how to find it, during the passive re
 * [102 Deep Dive in the Dark Web OSINT](https://www.youtube.com/watch?v=fzd3zkAI\_o4) - Great video presentation on Dark Web OSINT techniques
 * [Verification handbook](https://datajournalism.com/read/handbook/verification-3) - Designed for journalists but still quite useful, the Verification handbook provides a wealth of resources on investigative procedure.
 
+### Stu's People Search Workflow
+
+![](<../../.gitbook/assets/image (42).png>)
+
 ### OSINT Training
 
 Somewhat formal OSINT training courses.

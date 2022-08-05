@@ -90,7 +90,7 @@ Copies configuration files from Cisco devices running SNMP.
 * [https://owasp.org/www-project-mobile-security-testing-guide/](https://owasp.org/www-project-mobile-security-testing-guide/)
 * [OWASP Mobile Security Testing Guide](https://mobile-security.gitbook.io/mobile-security-testing-guide/) - Bernhard Mueller et al.
 * [Mobile-Security-Framework-MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF) - Mobile Security Framework (MobSF) is an automated, all-in-one mobile application (Android/iOS/Windows) pen-testing, malware analysis and security assessment framework capable of performing static and dynamic analysis.
-  * [https://opensecurity.in/](https://opensecurity.in)
+  * [https://opensecurity.in/](https://opensecurity.in/)
 * [quark-engine](https://www.kali.org/tools/quark-engine/) - Quark-Engine is a full-featured Android analysis framework written in Python for hunting threat intelligence inside the APK, DEX files.
 * _Hacking: The next generation - Abusing mobile devices: Targeting your mobile workforce, pg. 149_
 

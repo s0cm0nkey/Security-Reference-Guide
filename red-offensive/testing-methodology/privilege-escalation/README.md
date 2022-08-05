@@ -8,7 +8,7 @@ description: Shellin's for show, Rootin's for dough
 
 ## **PrivEsc General Guides**
 
-* [HackTricks](https://book.hacktricks.xyz). If I had to take one link with me into a pentest, this would be it. Written by the creator of WinPEAS and LinPEAS, it is THE guide for PrivEsc, and one of the best for everything else.&#x20;
+* [HackTricks](https://book.hacktricks.xyz/). If I had to take one link with me into a pentest, this would be it. Written by the creator of WinPEAS and LinPEAS, it is THE guide for PrivEsc, and one of the best for everything else.&#x20;
 * [Vulnhub PrivEsc Cheatsheet](https://github.com/Ignitetechnologies/Privilege-Escalation) -&#x20;
 * PrivEsc for MySQL [https://www.adampalmer.me/iodigitalsec/2013/08/13/mysql-root-to-system-root-with-udf-for-windows-and-linux/](https://www.adampalmer.me/iodigitalsec/2013/08/13/mysql-root-to-system-root-with-udf-for-windows-and-linux/)
 * [https://toshellandback.com/2015/11/24/ms-priv-esc/](https://toshellandback.com/2015/11/24/ms-priv-esc/)

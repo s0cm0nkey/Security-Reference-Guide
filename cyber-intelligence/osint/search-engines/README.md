@@ -21,7 +21,7 @@ Google is the most powerful and scary information gathering tool today. Beyond s
 * [Google Advanced Search](https://www.google.com/advanced\_search) - Google search with multiple special options for your search parameters
 * [Keyword Tool](https://keywordtool.io) - Tool for assisting in analyzing the efficacy of searching for certain keywords
 * [Google keyword monitor](https://www.google.com/alerts) - An awesome tool that can alert you on new search hits on certain keywords.
-* [ISearchFrom](https://isearchfrom.com) - Tool that allows you to search google as if you are in different locations to analyze the differences in results.
+* [ISearchFrom](https://isearchfrom.com/) - Tool that allows you to search google as if you are in different locations to analyze the differences in results.
 
 ### Google search commands (Dorks)
 
@@ -35,7 +35,7 @@ Google is the most powerful and scary information gathering tool today. Beyond s
 * [EasyRecon.html](https://s0cm0nkey.github.io/EasyRecon.html) - My Recon tool that takes multiple resources and puts them in an easy to use webpage. Incorporates dorks from:
   * [Goohak](https://github.com/1N3/Goohak/) - Automatically launch google hacking queries against a target domain to find vulnerabilities and enumerate a target.
     * [https://www.isec.ne.jp/wp-content/uploads/2017/10/65Goohack.pdf](https://www.isec.ne.jp/wp-content/uploads/2017/10/65Goohack.pdf)
-  * [https://dorks.faisalahmed.me/](https://dorks.faisalahmed.me) - Bug Bounty focused dorking helper
+  * [https://dorks.faisalahmed.me/](https://dorks.faisalahmed.me/) - Bug Bounty focused dorking helper
   * Fast Google Dorks Scan [https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan](https://github.com/IvanGlinkin/Fast-Google-Dorks-Scan)
 * [pagodo](https://github.com/opsdisk/pagodo) - pagodo (Passive Google Dork) - Automate Google Hacking Database scraping and searching
 
@@ -76,24 +76,24 @@ Sometimes the page you are trying to find is no longer available. But it still m
 
 
 * [https://cipher387.github.io/quickcacheandarchivesearch/](https://cipher387.github.io/quickcacheandarchivesearch/) - An awesome tool that lets you search for older versions of websites via search engines and various web archive services.
-  * [Wayback Machine](https://web.archive.org) - The gold standard web archive. if you are looking for a version of a web page at a specific place and time, check this!
+  * [Wayback Machine](https://web.archive.org/) - The gold standard web archive. if you are looking for a version of a web page at a specific place and time, check this!
     * [waybackurls](https://github.com/tomnomnom/waybackurls) - CLI version of the Wayback Machine
   * [https://archive.ph](https://archive.ph) - A time capsule for web pages!
   * [https://www.webcitation.org](https://www.webcitation.org) (Depreciated) - WebCite is an on-demand archive site, designed to digitally preserve scientific and educationally important material on the web by making snapshots of Internet contents as they existed at the time when a blogger, or a scholar cited or quoted from it.
 * [gau](https://github.com/lc/gau) - Get All URLs - Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.
-  * [https://commoncrawl.org/](https://commoncrawl.org) - Cached data from public web crawlers since 2008
+  * [https://commoncrawl.org/](https://commoncrawl.org/) - Cached data from public web crawlers since 2008
 
 ## Privacy Focused Search Engines
 
-* [https://swisscows.com/](https://swisscows.com) - The data-secure Google alternative. A search engine where your privacy is protected. Swisscows does not monitor or save any data.
-* [https://www.gigablast.com/](https://www.gigablast.com) and [https://private.sh/](https://private.sh) - A "cryptographically-protected" private search engine.
+* [https://swisscows.com/](https://swisscows.com/) - The data-secure Google alternative. A search engine where your privacy is protected. Swisscows does not monitor or save any data.
+* [https://www.gigablast.com/](https://www.gigablast.com/) and [https://private.sh/](https://private.sh/) - A "cryptographically-protected" private search engine.
 * [https://www.startpage.com](https://www.startpage.com) - Startpage is a Dutch search engine company that highlights privacy as its distinguishing feature.
 
 ## Metasearch Engines
 
-* [https://www.faganfinder.com/](https://www.faganfinder.com) - One of the best metasearch tools there is. Allows you to search through search engines, social media, encyclopedias, libraries, news, government, documents and much more.
+* [https://www.faganfinder.com/](https://www.faganfinder.com/) - One of the best metasearch tools there is. Allows you to search through search engines, social media, encyclopedias, libraries, news, government, documents and much more.
 * [https://www.exalead.com/search/web/](https://www.exalead.com/search/web/) - A high-end data discovery and search platform that powers search, data collection, and indexing among all technology solutions.
-*   [https://all-io.net/](https://all-io.net) - A metasearch engine that combines all major search engines into one. They also allow you to create, configure and customize your own engine.
+*   [https://all-io.net/](https://all-io.net/) - A metasearch engine that combines all major search engines into one. They also allow you to create, configure and customize your own engine.
 
     ​
 
@@ -101,18 +101,18 @@ Sometimes the page you are trying to find is no longer available. But it still m
 
 This section contains miscellaneous search engines and utilities.
 
-* [Search Engine Colossus](https://www.searchenginecolossus.com) - Giant list of the various search engines from across the globe.
-* [Million Short ](https://millionshort.com)- Want to search for something not on the top 1 million web pages? This does it.
-* [https://leakix.net/](https://leakix.net) - LeakIX is the first platform combining a **search engine indexing public information** AND an **open reporting platform** linked to the results.
+* [Search Engine Colossus](https://www.searchenginecolossus.com/) - Giant list of the various search engines from across the globe.
+* [Million Short ](https://millionshort.com/)- Want to search for something not on the top 1 million web pages? This does it.
+* [https://leakix.net/](https://leakix.net/) - LeakIX is the first platform combining a **search engine indexing public information** AND an **open reporting platform** linked to the results.
 * International Search Engines
-  * Russia - [https://yandex.com/](https://yandex.com)
+  * Russia - [https://yandex.com/](https://yandex.com/)
   * China - [https://www.baidu.com](https://www.baidu.com)
-  * Japan - [https://www.goo.ne.jp/](https://www.goo.ne.jp)
-  * Korea - [https://www.daum.net/](https://www.daum.net)
-  * Iran - [https://www.parseek.com](https://www.parseek.com)
+  * Japan - [https://www.goo.ne.jp/](https://www.goo.ne.jp/)
+  * Korea - [https://www.daum.net/](https://www.daum.net/)
+  * Iran - [https://www.parseek.com](https://www.parseek.com/)
   * Large list of other search engines - [https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/search-engines](https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/search-engines)
-* [https://www.blogsearchengine.org/](https://www.blogsearchengine.org) - A great tool for searching blogs online. Search for a blog, submit your own blogs, or subscribe to an RSS feed on the blog topic.
-* [https://boardreader.com/ ](https://boardreader.com) - Multi-forum search engine
+* [https://www.blogsearchengine.org/](https://www.blogsearchengine.org/) - A great tool for searching blogs online. Search for a blog, submit your own blogs, or subscribe to an RSS feed on the blog topic.
+* [https://boardreader.com/ ](https://boardreader.com/) - Multi-forum search engine
 * [Firebounty](https://firebounty.com) — Bug bounty search engine
 
 ## **Training**

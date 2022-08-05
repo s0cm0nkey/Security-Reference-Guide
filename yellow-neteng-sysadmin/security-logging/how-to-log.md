@@ -78,7 +78,7 @@ Determining how you collect your logs depends greatly on the log you are trying 
     * This has a high degree of fidelity as well as you can custom tailor the quality of logging at the device itself.
     * The biggest drawback is the volume of configuration you must do set up all of the devices for logging. You must also be prepared to collect those logs from multiple different sources, which introduces networking issues as well as dealing with multiple different log formats.
   * Logging via network monitoring tools to capture all related traffic.
-    * By using fantastic tools like [ZEEK](https://zeek.org) or [Corelight](https://corelight.com), you can collect all of the different services you need to create logs for, with one tool and one log collection location, drastically increasing simplicity without sacrificing quality.
+    * By using fantastic tools like [ZEEK](https://zeek.org/) or [Corelight](https://corelight.com/), you can collect all of the different services you need to create logs for, with one tool and one log collection location, drastically increasing simplicity without sacrificing quality.
     * This will generate logs for systems you are unaware of, as well as provide a consistent logging format.
     * The difficulty here is more political as it usually requires a network tap, an additional server, and usually permissions to get the required level of visibility.
   * Other options

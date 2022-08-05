@@ -41,7 +41,7 @@
 
 ### **Linux**
 
-* [https://linuxjourney.com/](https://linuxjourney.com) - The absolutely best resource for starting your journey to understanding linux
+* [https://linuxjourney.com/](https://linuxjourney.com/) - The absolutely best resource for starting your journey to understanding linux
 * [https://nostarch.com/linuxbasicsforhackers](https://nostarch.com/linuxbasicsforhackers) - More focused on offensive security, a great book for learning how to use the linux OS.
 * [https://www.netacad.com/courses/os-it/ndg-linux-unhatched](https://www.netacad.com/courses/os-it/ndg-linux-unhatched) - Great course from Cisco on Linux basics
 * [https://www.roppers.org/courses/computing-fundamentals](https://www.roppers.org/courses/computing-fundamentals) - Great and detailed linux beginners class from Roppers
@@ -154,4 +154,4 @@
 ## Infrastructure monitoring
 
 * [Netdata](https://github.com/netdata/netdata) is high-fidelity infrastructure monitoring and troubleshooting, real-time monitoring Agent collects thousands of metrics from systems, hardware, containers, and applications with zero configuration. It runs permanently on all your physical/virtual servers, containers, cloud deployments, and edge/IoT devices, and is perfectly safe to install on your systems mid-incident without any preparation.
-  * [https://www.netdata.cloud/](https://www.netdata.cloud)
+  * [https://www.netdata.cloud/](https://www.netdata.cloud/)

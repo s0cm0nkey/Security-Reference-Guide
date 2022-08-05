@@ -88,7 +88,7 @@ Empire was formerly an abandoned project that BC-Securty has revived. Please be 
 
 ### Resources
 
-* [https://www.powershellempire.com/](https://www.powershellempire.com) - Legacy site
+* [https://www.powershellempire.com/](https://www.powershellempire.com/) - Legacy site
 * [https://www.bc-security.org/post/overview-of-empire-4-0-and-c/](https://www.bc-security.org/post/overview-of-empire-4-0-and-c/)
 * [DeathStar](https://github.com/byt3bl33d3r/DeathStar) - A Python script that uses [Empire's](https://github.com/BC-SECURITY/Empire) RESTful API to automate gaining Domain and/or Enterprise Admin rights in Active Directory environments using some of the most common offensive TTPs.
 * [Starkiller](https://github.com/BC-SECURITY/Starkiller) - Starkiller is a Frontend for [Powershell Empire](https://github.com/BC-SECURITY/Empire/). It is an Electron application written in VueJS.
@@ -112,7 +112,7 @@ Empire was formerly an abandoned project that BC-Securty has revived. Please be 
 ## **All-in-one Penetration Testing Toolkits**
 
 * [Sn1per](https://github.com/1N3/Sn1per) - Discover the attack surface and prioritize risks with our continuous Attack Surface Management (ASM) platform - Sn1per Professional. For more information, go to [https://xerosecurity.com](https://xerosecurity.com).
-* [legion](https://github.com/carlospolop/legion) - Legion is a tool that uses several well-known opensource tools to automatically, semi-automatically or _manually_ enumerate the most frequent found services running in machines that you could need to pentest. Written by Carlos Pollop, the creator of [WinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite), [LinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite), and [book.hacktricks](https://book.hacktricks.xyz), everything this guy makes is gold. Highest of recommendations
+* [legion](https://github.com/carlospolop/legion) - Legion is a tool that uses several well-known opensource tools to automatically, semi-automatically or _manually_ enumerate the most frequent found services running in machines that you could need to pentest. Written by Carlos Pollop, the creator of [WinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite), [LinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite), and [book.hacktricks](https://book.hacktricks.xyz/), everything this guy makes is gold. Highest of recommendations
 * [celerystalk](https://github.com/sethsec/celerystalk) - celerystalk helps you automate your network scanning/enumeration process with asynchronous jobs (aka _tasks_) while retaining full control of which tools you want to run. Super handy for stringing together all your favorite tools
 * [lscript](https://github.com/arismelachroinos/lscript) - Lazy Script: This is a script for Kali Linux that automates many procedures about wifi penetration and hacking.
 * [KatanaFramework](https://github.com/PowerScript/KatanaFramework/) - Katana is a framework written in python for penetration testing, based on a simple and comprehensive structure for anyone to use, modify, and share.

@@ -4,15 +4,15 @@
 
 There are so many options for this out there that I am not going to be able to mention all of them. Instead I will list the ones that I have found helpful from a security context. Its mostly Python.
 
-* [Codecademy](https://www.codecademy.com) - Top code learning platform on the market
-* [edX | Free Online Courses by Harvard, MIT, & more](https://www.edx.org)
-* [Coursera](https://www.coursera.org) - Build skills with courses, certificates, and degrees online from world-class universities and companies.
-* [W3Schools Online Web Tutorials](https://www.w3schools.com) - Best resource for learning HTML
-* [Codewars](https://www.codewars.com) - CTF like challanges specifically for code building
+* [Codecademy](https://www.codecademy.com/) - Top code learning platform on the market
+* [edX | Free Online Courses by Harvard, MIT, & more](https://www.edx.org/)
+* [Coursera](https://www.coursera.org/) - Build skills with courses, certificates, and degrees online from world-class universities and companies.
+* [W3Schools Online Web Tutorials](https://www.w3schools.com/) - Best resource for learning HTML
+* [Codewars](https://www.codewars.com/) - CTF like challanges specifically for code building
 * [PowerShell vs Python Reference](https://blog.ironmansoftware.com/powershell-vs-python/)
-* [Python Tutor - Visualize Python, Java, C, C++, JavaScript, TypeScript, and Ruby code execution](http://pythontutor.com)&#x20;
+* [Python Tutor - Visualize Python, Java, C, C++, JavaScript, TypeScript, and Ruby code execution](http://pythontutor.com/)&#x20;
 * [C++ Language - C++ Tutorials](https://www.cplusplus.com/doc/tutorial/)&#x20;
-* [Learn Java - Free Interactive Java Tutorial](https://www.learnjavaonline.org)
+* [Learn Java - Free Interactive Java Tutorial](https://www.learnjavaonline.org/)
 * [https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
 * [https://academy.wehackpurple.com/collections](https://academy.wehackpurple.com/collections) - Great secure coding learning platform
 
@@ -73,14 +73,14 @@ There are so many options for this out there that I am not going to be able to m
 ## Python
 
 * [BeginnersGuide/NonProgrammers - Python Wiki](https://wiki.python.org/moin/BeginnersGuide/NonProgrammers)&#x20;
-* [https://www.learnpython.org/](https://www.learnpython.org)
-* [Introduction · HonKit](https://python.swaroopch.com)&#x20;
-* [Automate the Boring Stuff with Python](https://automatetheboringstuff.com)&#x20;
-* [comp3321 NSA Python Training Document : NSA : Free Download, Borrow, and Streaming : Internet Archive](https://archive.org/details/comp3321/page/n1/mode/2up/search/device)&#x20;
+* [https://www.learnpython.org/](https://www.learnpython.org/)
+* [Introduction · HonKit](https://python.swaroopch.com/)&#x20;
+* [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)&#x20;
+* [comp3321 NSA Python Training Document : NSA : Free Download, Borrow, and Streaming : Internet Archive](https://archive.org/details/comp3321/page/n1/mode/2up/search/device?utm\_source=share\&utm\_medium=ios\_app\&utm\_name=iossmf)&#x20;
 * [Cracking Codes with Python](https://inventwithpython.com/cracking/)&#x20;
 * [vinta/awesome-python: A curated list of awesome Python frameworks, libraries, software and resources](https://github.com/vinta/awesome-python)&#x20;
-* [py.CheckiO - Python coding challenges and exercises with solutions for beginners and advanced](https://py.checkio.org)
-* &#x20;[Invent with Python](https://inventwithpython.com)&#x20;
+* [py.CheckiO - Python coding challenges and exercises with solutions for beginners and advanced](https://py.checkio.org/)
+* &#x20;[Invent with Python](https://inventwithpython.com/)&#x20;
 
 ## Go
 
@@ -105,6 +105,6 @@ There are so many options for this out there that I am not going to be able to m
 ## Assembly
 
 * [ProgrammingGroundUp.pdf](https://download-mirror.savannah.gnu.org/releases/pgubook/ProgrammingGroundUp-1-0-booksize.pdf)
-* [https://www.begin.re/](https://www.begin.re) - Reverse Engineering for Beginners
+* [https://www.begin.re/](https://www.begin.re/) - Reverse Engineering for Beginners
 * [https://beginners.re/main.html](https://beginners.re/main.html) - Understanding Assembly Language
 * [Reversing-Secrets-Engineering](https://www.amazon.com/Reversing-Secrets-Engineering-Eldad-Eilam/dp/0764574817)

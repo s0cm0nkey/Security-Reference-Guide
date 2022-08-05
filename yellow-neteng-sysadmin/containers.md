@@ -110,6 +110,7 @@ Container logging and analysis revolves around 3 areas:
 * Security auditing
   * [kubesec](https://github.com/controlplaneio/kubesec) - Security risk analysis for Kubernetes resources
   * [netassert](https://github.com/controlplaneio/netassert) - This is a security testing framework for fast, safe iteration on firewall, routing, and NACL rules for Kubernetes ([Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/), services) and non-containerised hosts (cloud provider instances, VMs, bare metal).
+  * [KubiScan](https://github.com/cyberark/KubiScan) - A tool to scan Kubernetes cluster for risky permissions
 
 ### Resources
 

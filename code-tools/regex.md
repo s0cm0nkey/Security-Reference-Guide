@@ -5,19 +5,19 @@
 Regular expressions allow us to search for patterns in datasets and are processed by regular expression engines – pieces of software which match strings to a given pattern.For example, a search pattern with a sequence **`a1\d`** would find any sequence of characters, or string, in which the letter `a` is followed by a `1` and then any digit. Here, the **`\d`** is a metacharacter that tells the regex engine to search for any digit.
 
 * Regex Testers
-  * [RegExr](https://regexr.com) - Learn, Build, & Test RegEx&#x20;
-  * [RegEx Testing](https://www.regextester.com) - online regex testing tool.
-  * [RegEx Pal](https://www.regexpal.com) - online regex testing tool + other tools.
+  * [RegExr](https://regexr.com/) - Learn, Build, & Test RegEx&#x20;
+  * [RegEx Testing](https://www.regextester.com/) - online regex testing tool.
+  * [RegEx Pal](https://www.regexpal.com/) - online regex testing tool + other tools.
 * Regex Training Material
-  * [RegexOne](https://regexone.com) - Learn Regular Expressions - Lesson 1: An Introduction, and the ABCs&#x20;
-  * [Regex101](https://regex101.com) - Online regex tester and debugger: PHP, PCRE, Python, Golang and JavaScript&#x20;
+  * [RegexOne](https://regexone.com/) - Learn Regular Expressions - Lesson 1: An Introduction, and the ABCs&#x20;
+  * [Regex101](https://regex101.com/) - Online regex tester and debugger: PHP, PCRE, Python, Golang and JavaScript&#x20;
   * [RexEgg](http://www.rexegg.com)
-  * [https://regexcrossword.com/](https://regexcrossword.com) - Fun regex training with a crossword.
+  * [https://regexcrossword.com/](https://regexcrossword.com/) - Fun regex training with a crossword.
   * [The 30 Minute Regex Tutorial](http://www.codeproject.com/Articles/9099/The-Minute-Regex-Tutorial) - Jim Hollenhorst
   * [https://tryhackme.com/room/catregex](https://tryhackme.com/room/catregex)
 * Books, Articles, and Cheatsheets
   * [Regular Expression Cheat Sheet](https://github.com/niklongstone/regular-expression-cheat-sheet)
-  * [i Hate Regex - The Regex Cheat Sheet](https://ihateregex.io)
+  * [i Hate Regex - The Regex Cheat Sheet](https://ihateregex.io/)
   * [JavaScript RegExp](https://learnbyexample.github.io/learn\_js\_regexp/) - Sundeep Agarwal
   * [Python re(gex)?](https://learnbyexample.github.io/py\_regular\_expressions/) - Sundeep Agarwal
   * [Regular Expressions for Regular Folk](https://refrf.shreyasminocha.me) - Shreyas Minocha

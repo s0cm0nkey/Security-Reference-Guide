@@ -17,6 +17,7 @@
 * [https://findmyfbid.in/](https://findmyfbid.in/) - A collection of tools for Facebook, Twitter, Instagram, Reddit and YouTube. Find user IDs, search comments on Reddit, calculate earnings from a YouTube channel and more.
 * [Orion](https://github.com/Araekiel/orion) — open-Source Search Engine for social networking websites.
 * [Hashatit.com](https://www.hashatit.com/) — hastag searchengine. Search in twitter, instagram, facebook, youtube, pinterest
+* [https://github.com/p1ngul1n0/blackbird](https://github.com/p1ngul1n0/blackbird) - An OSINT tool to search for accounts by username in social networks.
 
 ## Clubhouse
 

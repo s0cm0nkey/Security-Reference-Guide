@@ -2,7 +2,7 @@
 
 ## Guides and Resources
 
-* [https://www.sqlinjection.net/](https://www.sqlinjection.net)
+* [https://www.sqlinjection.net/](https://www.sqlinjection.net/)
 * [https://owasp.org/www-community/attacks/SQL\_Injection](https://owasp.org/www-community/attacks/SQL\_Injection)
 * [https://owasp.org/www-community/Injection\_Flaws](https://owasp.org/www-community/Injection\_Flaws)
 * [http://securityidiots.com/Web-Pentest/SQL-Injection/Part-1-Basic-of-SQL-for-SQLi.html](http://securityidiots.com/Web-Pentest/SQL-Injection/Part-1-Basic-of-SQL-for-SQLi.html)
@@ -120,7 +120,7 @@ Test if sql inject is valid (will return banner on success)
 * [PowerUpSQL](https://github.com/NetSPI/PowerUpSQL) - A PowerShell Toolkit for Attacking SQL Server
   * [https://github.com/NetSPI/PowerUpSQL/wiki](https://github.com/NetSPI/PowerUpSQL/wiki)
   * [https://github.com/NetSPI/PowerUpSQL/wiki/PowerUpSQL-Cheat-Sheet](https://github.com/NetSPI/PowerUpSQL/wiki/PowerUpSQL-Cheat-Sheet)
-* [**SQLninja**](http://sqlninja.sourceforge.net)****
+* [**SQLninja**](http://sqlninja.sourceforge.net/)****
   * [https://www.jedge.com/wordpress/sqlninja-sql-injection/](https://www.jedge.com/wordpress/sqlninja-sql-injection/)
   * Great for evading IDS and uploading shells
   * Often times IDS will either recognize SQLmap OR SQLninja but not both
@@ -135,6 +135,8 @@ Test if sql inject is valid (will return banner on success)
 * [DSSS](https://github.com/stamparm/DSSS) - Damn Small SQLi Scanner is a fully functional [SQL injection](https://en.wikipedia.org/wiki/SQL\_injection) vulnerability scanner (supporting GET and POST parameters) written in under 100 lines of code.
 * [https://github.com/the-robot/sqliv](https://github.com/the-robot/sqliv)
 * [Blisqy](https://github.com/JohnTroony/Blisqy) - Exploit Time-based blind-SQL injection in HTTP-Headers (MySQL/MariaDB).
+* [https://github.com/youngyangyang04/NoSQLAttack](https://github.com/youngyangyang04/NoSQLAttack) - **A SQLi vulnerability scanner for mongoDB**
+* [https://github.com/WhitewidowScanner/whitewidow](https://github.com/WhitewidowScanner/whitewidow) - **Another SQL vulnerability scanner**
 
 ## **SQL Basics**
 
