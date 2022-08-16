@@ -110,6 +110,11 @@ All of these are fantastic resource. Check them regularly for new tools and tech
 * [https://www.osinteditor.com/](https://www.osinteditor.com/)
 * [https://www.osintme.com/](https://www.osintme.com/)
 * [http://www.theosintjournal.org/](http://www.theosintjournal.org/)
+* [https://www.bellingcat.com/](https://www.bellingcat.com/)
+* [https://www.cqcore.uk/blog-posts/](https://www.cqcore.uk/blog-posts/)
+* [https://keyfindings.blog/](https://keyfindings.blog/)
+* [https://www.offensiveosint.io/](https://www.offensiveosint.io/)
+* [https://sector035.nl/](https://sector035.nl/)
 
 ### **Forums**
 

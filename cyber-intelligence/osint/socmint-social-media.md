@@ -18,6 +18,7 @@
 * [Orion](https://github.com/Araekiel/orion) — open-Source Search Engine for social networking websites.
 * [Hashatit.com](https://www.hashatit.com/) — hastag searchengine. Search in twitter, instagram, facebook, youtube, pinterest
 * [https://github.com/p1ngul1n0/blackbird](https://github.com/p1ngul1n0/blackbird) - An OSINT tool to search for accounts by username in social networks.
+* [https://www.crowdtangle.com/features](https://www.crowdtangle.com/features) - Easily follow public content across Facebook, Instagram and Reddit.
 
 ## Clubhouse
 
@@ -124,6 +125,7 @@
 * [@VoiceMsgBot](https://t.me/VoiceMsgBot) — telegram bot to which you can send voice messages and it converts them into text
 * [@transcriber\_bot](https://t.me/transcriber\_bot) — telegram bot, which can convert to text voice messages in 24 languages (view pic)
 * [Telegramchannels.me](https://telegramchannels.me/list/biggest?language=en) — Ratings of the 100 largest (by number of subscribers) #Telegram channels for different
+* [https://hatless1der.com/telegram-osint-basics-5-tips-anyone-can-do-right](https://hatless1der.com/telegram-osint-basics-5-tips-anyone-can-do-right)
 
 ## Tumblr
 
