@@ -69,7 +69,6 @@ Threat hunting doesn’t have to be complex, but it’s not for everyone. Knowin
 ### Misc
 
 * [https://fourcore.io/blogs/threat-hunting-with-windows-event-log-sigma-rules](https://fourcore.io/blogs/threat-hunting-with-windows-event-log-sigma-rules)
-*
 
 ## Tools
 
@@ -179,8 +178,6 @@ Preparing for CJA requires organizations to do the following:
 * Crown Jewel Analysis - _Crafting the Infosec Playbook: pg. 21_
 
 ### Misc
-
-
 
 * [Finding the Elusive Active Directory Threat Hunting - 2017-BSidesCharm-DetectingtheElusive-ActiveDirectoryThreatHunting-Final.pdf](https://adsecurity.org/wp-content/uploads/2017/04/2017-BSidesCharm-DetectingtheElusive-ActiveDirectoryThreatHunting-Final.pdf)&#x20;
 * [Quantify Your Hunt: Not Your Parent’s Red Teaming Redux](https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1536351477.pdf)
