@@ -105,6 +105,7 @@
 
 * [https://edu.gcfglobal.org/en/macosbasics/all-about-macos/1/](https://edu.gcfglobal.org/en/macosbasics/all-about-macos/1/)  - Mac Basics
 * [https://macpaw.com/how-to/new-to-mac](https://macpaw.com/how-to/new-to-mac) - Beginners Guide to Mac
+* [https://theevilbit.github.io/posts/getting\_started\_in\_macos\_security/](https://theevilbit.github.io/posts/getting\_started\_in\_macos\_security/)
 * _Operator Handbook: MacOS\_Commands - pg.154_&#x20;
 * _Operator Handbook: MacOS\_Defend - pg.162_
 * _Operator Handbook: MacOS\_Ports - pg.181_

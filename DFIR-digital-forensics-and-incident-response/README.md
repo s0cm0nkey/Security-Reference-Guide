@@ -28,6 +28,7 @@
   * [https://gitlab.com/syntax-ir/playbooks#ir-playbooks](https://gitlab.com/syntax-ir/playbooks#ir-playbooks) - Public IR playbooks
   * [https://learn.microsoft.com/en-us/security/compass/incident-response-playbooks](https://learn.microsoft.com/en-us/security/compass/incident-response-playbooks)
     * [Azure-AD-Incident-Response-PowerShell-Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module)
+    * [https://m365internals.com/2021/04/17/incident-response-in-a-microsoft-cloud-environment/](https://m365internals.com/2021/04/17/incident-response-in-a-microsoft-cloud-environment/)
   * _BTFM: Incident Response checklist - pg. 109_
   * _BTFM: Remediation Tasks - pg. 112_
   * _(BTHb: INRE): Incident Response Steps - pg. 5_
@@ -59,6 +60,7 @@
   * [https://www.kali.org/tools/chkrootkit/](https://www.kali.org/tools/chkrootkit/)
 * [RKHunter](https://github.com/installation/rkhunter) - scans systems for known and unknown rootkits, backdoors, sniffers and exploits.
   * [https://www.kali.org/tools/rkhunter/](https://www.kali.org/tools/rkhunter/)
+* [CobaltStrikeScan](https://github.com/Apr4h/CobaltStrikeScan) - Scan files or process memory for CobaltStrike beacons and parse their configuration.
 * [hashlookup-forensic-analyser](https://github.com/hashlookup/hashlookup-forensic-analyser) - Analyse a forensic target (such as a directory) to find and report files found and not found from CIRCL hashlookup public service - [https://circl.lu/services/hashlookup/](https://circl.lu/services/hashlookup/)
 * [pe-sieve](https://github.com/hasherezade/pe-sieve) - Scans a given process. Recognizes and dumps a variety of potentially malicious implants (replaced/injected PEs, shellcodes, hooks, in-memory patches).
   * [https://hshrzd.wordpress.com/pe-sieve/](https://hshrzd.wordpress.com/pe-sieve/)

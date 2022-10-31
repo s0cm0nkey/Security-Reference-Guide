@@ -74,6 +74,7 @@ Note: For payload obfuscation, see the Payloads section under the Offensive Tool
 * [SysWhispers3](https://github.com/klezVirus/SysWhispers3) - SysWhispers on Steroids - AV/EDR evasion via direct system calls.
 * [Cerbersec/metatwin/tree/cerbersec-patch-1](https://github.com/Cerbersec/metatwin/tree/cerbersec-patch-1) - The project is designed as a file resource cloner. Metadata, including digital signature, is extracted from one file and injected into another. Note: Signatures are copied, but no longer valid.
 * [StopDefender](https://github.com/lab52io/StopDefender) - Stop Windows Defender programmatically creating a new token using TrustedInstaller and Windefend service accounts.
+* [Injector](https://github.com/0xDivyanshu/Injector) - Complete Arsenal of Memory injection and other techniques for red-teaming in Windows
 
 ## OPSEC
 

@@ -24,6 +24,7 @@
 * [https://github.com/0xCGonzalo/Golden-Guide-for-Pentesting/tree/master/API%20Security](https://github.com/0xCGonzalo/Golden-Guide-for-Pentesting/tree/master/API%20Security)
 * [https://cheatsheet.haax.fr/web-pentest/attacking\_apis/](https://cheatsheet.haax.fr/web-pentest/attacking\_apis/)
 * [https://infosecwriteups.com/31-tips-api-security-pentesting-480b5998b765?gi=4d455b3b778f](https://infosecwriteups.com/31-tips-api-security-pentesting-480b5998b765?gi=4d455b3b778f)
+* [https://github.com/dxa4481/AttackingAndDefendingTheGCPMetadataAPI/blob/master/README.md](https://github.com/dxa4481/AttackingAndDefendingTheGCPMetadataAPI/blob/master/README.md)
 * [https://github.com/streaak/keyhacks](https://github.com/streaak/keyhacks)
 * [https://gist.github.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d](https://gist.github.com/yassineaboukir/8e12adefbd505ef704674ad6ad48743d) - API Endpoint wordlist
 * [imperva/automatic-api-attack-tool](https://github.com/imperva/automatic-api-attack-tool) - Imperva's customizable API attack tool takes an API specification as an input, generates and runs attacks that are based on it as an output.

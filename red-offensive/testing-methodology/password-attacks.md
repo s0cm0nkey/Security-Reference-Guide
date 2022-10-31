@@ -79,6 +79,7 @@ $ hash-identifier
 * [kerbrute](https://github.com/ropnop/kerbrute) - A tool to quickly bruteforce and enumerate valid Active Directory accounts through Kerberos Pre-Authentication
 * [brutespray](https://www.kali.org/tools/brutespray/) - This Python script takes nmap GNMAP/XML output and automatically brute-forces services with default credentials using Medusa.
 * [o365spray](https://github.com/0xZDH/o365spray) - o365spray ia a username enumeration and password spraying tool aimed at Microsoft Office 365 (O365).
+* [ShadowSpray](https://github.com/Dec0ne/ShadowSpray) - A tool to spray Shadow Credentials across an entire domain in hopes of abusing long forgotten GenericWrite/GenericAll DACLs over other objects in the domain.
 
 Reference
 

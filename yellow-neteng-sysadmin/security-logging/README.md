@@ -10,6 +10,7 @@ description: Logs and the logging loggers that log them
 * [https://cheatsheetseries.owasp.org/cheatsheets/Logging\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Logging\_Cheat\_Sheet.html)
 * [https://cheatsheetseries.owasp.org/cheatsheets/Logging\_Vocabulary\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Logging\_Vocabulary\_Cheat\_Sheet.html)
 * [https://github.com/Neo23x0/auditd](https://github.com/Neo23x0/auditd) - Best Practice Auditd Configuration
+* [https://github.com/JSCU-NL/logging-essentials](https://github.com/JSCU-NL/logging-essentials) - A Windows event logging and collection baseline focused on finding balance between forensic value and optimising retention.
 * Setting up Network Sensors - _Applied Network Security Monitoring_ - PG. 49
 * Sensor Placement - _Applied Network Security Monitoring_ - PG. 61
 

@@ -119,3 +119,4 @@ For when you want to look at a site, without interacting with it.
 * [CloudFlair](https://github.com/christophetd/CloudFlair) - Find origin servers of websites behind CloudFlare by using Internet-wide scan data from Censys.
 * [cf-check](https://github.com/dwisiswant0/cf-check) - Check an Host is Owned by CloudFlare.
 * [AnalyticsRelationships](https://github.com/Josue87/AnalyticsRelationships) - Get related domains / subdomains by looking at Google Analytics IDs
+* [https://lots-project.com/?s=09](https://lots-project.com/?s=09) - Attackers are using popular legitimate domains when conducting phishing, C\&C, exfiltration and downloading tools to evade detection. The list of websites below allow attackers to use their domain or subdomain.

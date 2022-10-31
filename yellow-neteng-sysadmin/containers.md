@@ -121,6 +121,7 @@ Container logging and analysis revolves around 3 areas:
   * _Operator Handbook: Kubernetes - pg. 107_
 * Security Auditing and Hardening
   * [NSA Kubernetes hardening guide](https://media.defense.gov/2021/Aug/03/2002820425/-1/-1/1/CTR\_KUBERNETES%20HARDENING%20GUIDANCE.PDF)
+    * [https://research.nccgroup.com/2021/09/09/nsa-cisa-kubernetes-security-guidance-a-critical-review/](https://research.nccgroup.com/2021/09/09/nsa-cisa-kubernetes-security-guidance-a-critical-review/)
   * [https://cheatsheetseries.owasp.org/cheatsheets/Kubernetes\_Security\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Kubernetes\_Security\_Cheat\_Sheet.html)
   * [kubernetes-security-best-practice](https://github.com/freach/kubernetes-security-best-practice)
   * [k8s-security](https://github.com/kabachook/k8s-security) - kubernetes security notes and best practices.

@@ -103,6 +103,8 @@
 
 * [https://docs.microsoft.com/en-us/azure/active-directory/](https://docs.microsoft.com/en-us/azure/active-directory/)
 * [Attacking & Defending the Microsoft Cloud](https://adsecurity.org/wp-content/uploads/2019/08/2019-BlackHat-US-Metcalf-Morowczynski-AttackingAndDefendingTheMicrosoftCloud.pdf)
+* [https://github.com/Cloud-Architekt/AzureAD-Attack-Defense](https://github.com/Cloud-Architekt/AzureAD-Attack-Defense)
+* [https://aadinternals.com/osint/](https://aadinternals.com/osint/) - This Open-source Intelligence (OSINT) tool will extract openly available information for the given tenant. The tool is using APIs mentioned in my previous [blog post](https://aadinternals.com/post/just-looking/) and in MS Graph API [documentation](https://learn.microsoft.com/en-us/graph/api/tenantrelationship-findtenantinformationbytenantid).
 
 ### Sentinel - The Azure SIEM
 
@@ -114,6 +116,7 @@
 * [https://github.com/Azure/Azure-Sentinel-Notebooks](https://github.com/Azure/Azure-Sentinel-Notebooks)
 * [https://techcommunity.microsoft.com/t5/Azure-Sentinel/Azure-Sentinel-Performing-Additional-Security-Monitoring-of-High/ba-p/430740](https://techcommunity.microsoft.com/t5/Azure-Sentinel/Azure-Sentinel-Performing-Additional-Security-Monitoring-of-High/ba-p/430740)
 * [https://techcommunity.microsoft.com/t5/Azure-Sentinel/Importing-Sigma-Rules-to-Azure-Sentinel/ba-p/657097](https://techcommunity.microsoft.com/t5/Azure-Sentinel/Importing-Sigma-Rules-to-Azure-Sentinel/ba-p/657097)
+* [https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/azure-sentinel-to-go-part1-a-lab-w-prerecorded-data-amp-a-custom/ba-p/1260191](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/azure-sentinel-to-go-part1-a-lab-w-prerecorded-data-amp-a-custom/ba-p/1260191)
 * Azure Sentinel and Jupyter Notebooks
   * [https://techcommunity.microsoft.com/t5/Azure-Sentinel/Security-Investigation-with-Azure-Sentinel-and-Jupyter-Notebooks/ba-p/432921](https://techcommunity.microsoft.com/t5/Azure-Sentinel/Security-Investigation-with-Azure-Sentinel-and-Jupyter-Notebooks/ba-p/432921)
   * [https://techcommunity.microsoft.com/t5/Azure-Sentinel/Security-Investigation-with-Azure-Sentinel-and-Jupyter-Notebooks/ba-p/483466](https://techcommunity.microsoft.com/t5/Azure-Sentinel/Security-Investigation-with-Azure-Sentinel-and-Jupyter-Notebooks/ba-p/483466)
@@ -159,6 +162,7 @@
   * [Privilege Escalation and Lateral Movement on Azure](https://medium.com/xm-cyber/privilege-escalation-and-lateral-movement-on-azure-part-1-47e128cfdc06) by [Hila Cohen (@hilaco10)](https://twitter.com/hilaco10): some techniques for how a red team can gain a foothold in an Azure environment, escalate their privileges, and move laterally inside Azure infrastructure by using the Azure RBAC module and common Azure misconfigurations.
   * [Privilege Escalation in Azure AD](https://emptydc.com/2020/12/10/privilege-escalation-in-azure-ad/) by [Jan Geisbauer (@janvonkirchheim)](https://twitter.com/janvonkirchheim): a breakdown of how Azure security principals (aka Enterprise applications) vs application objects (aka application registrations) and their associated permissions can be abused to impersonate an application.
   * [Privilege Escalation and Lateral Movement on Azure](https://medium.com/xm-cyber/privilege-escalation-and-lateral-movement-on-azure-part-1-47e128cfdc06): some techniques for how a red team can gain a foothold in an Azure environment, escalate their privileges, and move laterally inside Azure infrastructure by using the Azure RBAC module and common Azure misconfigurations.
+  * [https://posts.specterops.io/azure-privilege-escalation-via-azure-api-permissions-abuse-74aee1006f48?gi=89b4a351f786](https://posts.specterops.io/azure-privilege-escalation-via-azure-api-permissions-abuse-74aee1006f48?gi=89b4a351f786)
   * [https://srcincite.io/blog/2021/01/12/making-clouds-rain-rce-in-office-365.html](https://srcincite.io/blog/2021/01/12/making-clouds-rain-rce-in-office-365.html)
   * [https://www.inversecos.com/2021/10/how-to-backdoor-azure-applications-and.html](https://www.inversecos.com/2021/10/how-to-backdoor-azure-applications-and.html)
   * [https://www.inversecos.com/2021/09/backdooring-office-365-and-active.html](https://www.inversecos.com/2021/09/backdooring-office-365-and-active.html)

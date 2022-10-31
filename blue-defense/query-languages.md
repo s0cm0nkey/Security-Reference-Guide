@@ -28,6 +28,8 @@ Second, online converters might not be able to translate from one platform easil
 * [https://techcommunity.microsoft.com/t5/Azure-Sentinel/Importing-Sigma-Rules-to-Azure-Sentinel/ba-p/657097](https://techcommunity.microsoft.com/t5/Azure-Sentinel/Importing-Sigma-Rules-to-Azure-Sentinel/ba-p/657097)
 * [sigmaio](https://github.com/M3NIX/sigmaio) - simple webapp for converting sigma rules into siem queries using the pySigma library
   * [https://sigmaio.herokuapp.com/](https://sigmaio.herokuapp.com/)
+* [WithSecureLabs/chainsaw](https://github.com/WithSecureLabs/chainsaw) - Chainsaw provides a powerful ‘first-response’ capability to quickly identify threats within Windows forensic artefacts such as Event Logs and MFTs. Chainsaw offers a generic and fast method of searching through event logs for keywords, and by identifying threats using built-in support for Sigma detection rules, and via custom Chainsaw detection rules.
+* [Yamato-Security/hayabusa](https://github.com/Yamato-Security/hayabusa) - Hayabusa (隼) is a sigma-based threat hunting and fast forensics timeline generator for Windows event logs.
 
 To make Sigma even easier to use, there are tools like Uncoder.io that can easily translate the rule syntax from one platform to another, free of charge. As stated above, if you cannot do direct translations from one platform to another, try changing the source search to Sigma first, then on to the platform of your choice.
 

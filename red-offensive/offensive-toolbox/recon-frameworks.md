@@ -47,8 +47,5 @@ These other frameworks do many of the same tasks that the previous two perform. 
 * [finalrecon](https://www.kali.org/tools/finalrecon/) - A fast and simple python script for web reconnaissance that follows a modular structure and provides detailed information on various areas.
 * [gasmask](https://github.com/twelvesec/gasmask) - All in one Information gathering tool
 * [machinae](https://github.com/HurricaneLabs/machinae) - Machinae is a tool for collecting intelligence from public sites/feeds about various security-related pieces of data: IP addresses, domain names, URLs, email addresses, file hashes and SSL fingerprints.
-*   [blacklanternsecurity/bbot](https://github.com/blacklanternsecurity/bbot) - **BBOT** is a **recursive**, **modular** OSINT framework inspired by Spiderfoot and written in Python. Capable of executing the entire OSINT process in a single command, BBOT does subdomain enumeration, port scanning, web screenshots (with its `gowitness` module), vulnerability scanning (with `nuclei`), and much more.
-
-    BBOT currently has over **60 modules** and counting.
 
 {% embed url="https://youtu.be/zemNLx0-LRw" %}

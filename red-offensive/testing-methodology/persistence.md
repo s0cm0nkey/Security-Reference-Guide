@@ -12,6 +12,7 @@
   * [https://haiderm.com/fully-undetectable-backdooring-pe-file/#Code\_Caves](https://haiderm.com/fully-undetectable-backdooring-pe-file/#Code\_Caves)
 * [https://www.infosecmatter.com/terminal-escape-injection/](https://www.infosecmatter.com/terminal-escape-injection/)
 * [http://pwnwiki.io/#!persistence/windows/autostart.md](http://pwnwiki.io/#!persistence/windows/autostart.md) - Windows Autostart locations
+* [https://persistence-info.github.io/](https://persistence-info.github.io/)
 * Common Registry locations for Persistence - _PTFM: - pg. 24_&#x20;
 * _PTFM:  Persistence with Metasploit/Empire - pg. 26_
 

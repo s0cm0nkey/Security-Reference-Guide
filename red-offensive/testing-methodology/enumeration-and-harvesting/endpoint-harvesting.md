@@ -48,6 +48,8 @@ Simply double clicking on the executable ‘Lazagne.exe' will cause a warning me
 * [pspy](https://github.com/DominicBreuker/pspy) - Monitor linux processes without root permissions
 * [swap\_digger](https://github.com/sevagas/swap\_digger) - swap\_digger is a tool used to automate Linux swap analysis during post-exploitation or forensics. It automates swap extraction and searches for Linux user credentials, web forms credentials, web forms emails, http basic authentication, Wifi SSID and keys, etc.
 * [https://highon.coffee/blog/linux-local-enumeration-script/](https://highon.coffee/blog/linux-local-enumeration-script/)
+* [Masky](https://github.com/Z4kSec/Masky) - Python library with CLI allowing to remotely dump domain user credentials via an ADCS without dumping the LSASS process memory
+  * [https://z4ksec.github.io/posts/masky-release-v0.0.3/](https://z4ksec.github.io/posts/masky-release-v0.0.3/)
 
 ### Reference
 

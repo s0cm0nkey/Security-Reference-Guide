@@ -71,6 +71,8 @@ When checking your indicators against the below sources, be sure you are looking
 * [http://www.blocklist.de/en/search.html](http://www.blocklist.de/en/search.html) - Check if a netblock or IP is malicious according to blocklist.de.
 * [https://www.projecthoneypot.org/search\_ip.php](https://www.projecthoneypot.org/search\_ip.php) - Checks IP Attack data from distributed honeypot network.
 * [https://focsec.com/](https://focsec.com/) (API ONLY) - Determine if a user’s IP address is associated with a VPN, Proxy, TOR or malicious bots.
+* [https://www.ipqualityscore.com/ip-reputation-check](https://www.ipqualityscore.com/ip-reputation-check) - Use this free tool to accurately **check IP Reputation** using leading IP address intelligence. **Lookup IP reputation history** which could indicate SPAM issues, threats, or elevated IP fraud scores that could be causing your IP address to be blocked and blacklisted.
+  * [https://www.ipqualityscore.com/vpn-ip-address-check](https://www.ipqualityscore.com/vpn-ip-address-check) - Use this tool to perform a **VPN detection test** on any IP address. Lookup any IP addresses that recently allowed VPN activity or functioned as a Virtual Private Network. 99.9% accuracy for testing VPN IP addressees.
 
 ### URL/Domain Reputation data
 

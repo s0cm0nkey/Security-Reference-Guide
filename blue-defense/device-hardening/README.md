@@ -14,6 +14,7 @@ The best way to understand what device hardening and how to do it, is to follow 
 * [Purple Knight](https://www.purple-knight.com/) -  An enterprise grade Active Directory Defense solution with AD mapping, security reports, security indicators and remediation guides.
 * [debsums](https://manpages.ubuntu.com/manpages/trusty/man1/debsums.1.html) - Utility for checking installed debian packages and comparing that hashes against a list of known good ones. Handy to run every once&#x20;
 * [PSPKIAudit](https://github.com/GhostPack/PSPKIAudit) - PowerShell toolkit for auditing Active Directory Certificate Services (AD CS).
+* [WDACTools](https://github.com/mattifestation/WDACTools) - A PowerShell module to facilitate building, configuring, deploying, and auditing Windows Defender Application Control (WDAC) policies
 
 ## Hardening Tools
 
@@ -63,6 +64,7 @@ The best way to understand what device hardening and how to do it, is to follow 
 
 ### AD hardening
 
+* [Active Directory Security Assessment Checklist](https://www.cert.ssi.gouv.fr/uploads/guide-ad.html) - CERT.FR
 * [Active Directory Certificate Services](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831740\(v=ws.11\)) -  An often overlooked tool that should come with most Microsoft licenses, use AD certificates to sign scripts and docs made in your environment, to easily detect what is foreign. Detections, alerts, and all the fancy security tools are completely worthless, if the devices you are trying to protect are not properly hardened against the onslaught of attacks they might face day to day. Most if not all devices and even applications, in their factory fresh state, are not properly hardened for use in an enterprise environment. Many features that you might appreciate as a convenience in your home network, are actually a major vulnerability in a large scale network deployed at your company.
   * [ Locksmith](https://github.com/TrimarcJake/Locksmith) - A tool to identify and remediate common misconfigurations in Active Directory Certificate Services
     * [https://www.hub.trimarcsecurity.com/post/wild-west-hackin-fest-toolshed-talk-locksmith](https://www.hub.trimarcsecurity.com/post/wild-west-hackin-fest-toolshed-talk-locksmith)
