@@ -4,6 +4,10 @@ description: All the ways to grab the goodies
 
 # Enumeration and Harvesting
 
+## **Post Exploitation Tasks**
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
 ## **Host Enumeration**
 
 * [JAWS](https://github.com/411Hall/JAWS) - JAWS is PowerShell script designed to help penetration testers (and CTFers) quickly identify potential privilege escalation vectors on Windows systems. It
@@ -17,6 +21,8 @@ Privilege escalation tools can also provide much of the enumeration that you nee
 {% content-ref url="../privilege-escalation/" %}
 [privilege-escalation](../privilege-escalation/)
 {% endcontent-ref %}
+
+##
 
 ## AD Enumeration
 
@@ -88,6 +94,8 @@ Privilege escalation tools can also provide much of the enumeration that you nee
 {% content-ref url="meterpreter-post-auth-runbook.md" %}
 [meterpreter-post-auth-runbook.md](meterpreter-post-auth-runbook.md)
 {% endcontent-ref %}
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 * iRedTeam blog - [https://www.ired.team/offensive-security/credential-access-and-credential-dumping](https://www.ired.team/offensive-security/credential-access-and-credential-dumping)
 * Copy a locked file - [https://github.com/GhostPack/Lockless](https://github.com/GhostPack/Lockless)

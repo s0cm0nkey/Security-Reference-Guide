@@ -134,4 +134,4 @@ winpmem.exe -o test.raw --format raw -dd
 * [https://www.howtogeek.com/196672/windows-memory-dumps-what-exactly-are-they-for/](https://www.howtogeek.com/196672/windows-memory-dumps-what-exactly-are-they-for/)
 * SANS Memory Forensics CheatSheet
 
-![](<../../.gitbook/assets/image (8) (1).png>)
+![](<../../.gitbook/assets/image (8) (1) (1).png>)

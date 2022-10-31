@@ -35,3 +35,4 @@
 * [sumrecon](https://github.com/Gr1mmie/sumrecon) - Web recon script. No need to fear, sumrecon is here!
 * [0d1n](https://github.com/CoolerVoid/0d1n) - Tool for automating customized attacks against web applications. Fully made in C language with pthreads, it has fast performance.
 * [BlackWidow](https://github.com/1N3/BlackWidow) - A Python based web application scanner to gather OSINT and fuzz for OWASP vulnerabilities on a target website.
+* [https://caido.io/](https://caido.io/) - A lightweight web security auditing toolkit. Built from the ground up in Rust, Caido aims to help security professionals and enthusiasts audit web applications with efficiency and ease

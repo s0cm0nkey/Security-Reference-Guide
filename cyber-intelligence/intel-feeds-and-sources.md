@@ -248,6 +248,7 @@ MISP has over 30 default feeds and growing. Below are some of the most popular. 
 * Anomali  Limo - [https://www.anomali.com/resources/limo](https://www.anomali.com/resources/limo)
 * Uncoder CTI - [https://socprime.com/blog/uncoder-cti-step-by-step-guidelines/](https://socprime.com/blog/uncoder-cti-step-by-step-guidelines/)
 * [Rescure](https://rescure.me/) - Curated cyber threat intelligence for everyone
+* [https://github.com/executemalware/Malware-IOCs](https://github.com/executemalware/Malware-IOCs)
 
 ### Premium
 

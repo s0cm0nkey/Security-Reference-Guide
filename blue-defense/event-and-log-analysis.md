@@ -51,6 +51,6 @@ Logging formats will change depending on the log, log source, application, and m
   * _Crafting the InfoSec Playbook: Logging Requirements - pg.48_
   * _Cyber Operations: Logging - pg. 455_
 
-![](<../.gitbook/assets/image (17).png>)
+![](<../.gitbook/assets/image (17) (1).png>)
 
 ![](<../.gitbook/assets/image (18).png>)

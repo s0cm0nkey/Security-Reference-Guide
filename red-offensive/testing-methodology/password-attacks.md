@@ -120,6 +120,8 @@ Reference
 * [cmospwd](https://www.kali.org/tools/cmospwd/) - a cross-platform tool to decrypt password stored in CMOS used to access a computer’s BIOS setup.
 * [crack](https://www.kali.org/tools/crack/) - Crack is program designed to quickly locate vulnerabilities in Unix (or other) password files by scanning the contents of a password file, looking for users who have misguidedly chosen a weak login password.
 * [rainbowcrack](https://www.kali.org/tools/rainbowcrack/)  - RainbowCrack is a general propose implementation of Philippe Oechslin’s faster time-memory trade-off technique. It crack hashes with rainbow tables.
+* [hashview](https://github.com/hashview/hashview) - A web front-end for password cracking and analytics
+  * [https://www.hashview.io/](https://www.hashview.io/)
 
 ### [HashCat](https://github.com/hashcat/hashcat)&#x20;
 

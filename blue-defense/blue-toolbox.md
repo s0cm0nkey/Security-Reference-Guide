@@ -21,6 +21,10 @@ This section contains handy links and tools for anything else not mentioned in t
 * [eBPF](https://ebpf.io/) is a technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading kernel modules. By making the Linux kernel programmable, infrastructure software can leverage existing layers, making them more intelligent and feature-rich without continuing to add additional layers of complexity to the system.
 * [eBPF for Windows](https://github.com/microsoft/ebpf-for-windows) is an eBPF implementation that runs on top of Windows. eBPF is a well-known technology for providing programmability and agility, especially for extending an OS kernel, for use cases such as DoS protection and observability.
 
+### OpenSource Email Security
+
+* [https://sublimesecurity.com/](https://sublimesecurity.com/) - Sublime lets you write and run custom detection and response rules to block phishing attacks, hunt for threats, and more.
+
 ### **VMs/OSs**
 
 * [Security Onion](https://securityonionsolutions.com/) - Security Onion is a free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management.

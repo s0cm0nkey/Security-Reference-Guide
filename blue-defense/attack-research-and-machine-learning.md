@@ -18,6 +18,7 @@ Proper research all starts with one thing: Data!
 * [DetectionLab](https://github.com/clong/DetectionLab) -  Automate the creation of a lab environment complete with security tooling and logging best practices&#x20;
 * [Mitre CAR](https://car.mitre.org/) - The MITRE Cyber Analytics Repository (CAR) is a knowledge base of analytics developed by [MITRE](https://www.mitre.org) based on the [MITRE ATT\&CK](https://attack.mitre.org/) adversary model.
   * CAR is focused on providing a set of validated and well-explained analytics, in particular with regards to their operating theory and rationale.
+* [soc-faker](https://github.com/swimlane/soc-faker) - A python package for use in generating fake data for SOC and security automation.
 
 ## **Network Analysis through Machine Learning**&#x20;
 

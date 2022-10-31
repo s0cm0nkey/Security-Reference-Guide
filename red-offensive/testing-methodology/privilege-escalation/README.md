@@ -4,7 +4,7 @@ description: Shellin's for show, Rootin's for dough
 
 # Privilege Escalation
 
-![](<../../../.gitbook/assets/image (2).png>)
+![](<../../../.gitbook/assets/image (2) (1).png>)
 
 ## **PrivEsc General Guides**
 

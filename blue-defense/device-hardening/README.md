@@ -32,7 +32,9 @@ The best way to understand what device hardening and how to do it, is to follow 
 
     New/unknown IP are checked against crowdsec API, and if request should be blocked, a **403** or a captcha can be returned to the user, and put in cache.
 * [dev-sec](https://github.com/dev-sec/) - Security + DevOps: Automatic Server Hardening.
-* [grapheneX](https://github.com/grapheneX/grapheneX) - Automated System Hardening Framework
+* [grapheneX](https://github.com/grapheneX/grapheneX) - Automated System Hardening Framework&#x20;
+* [Legit-Labs/legitify](https://github.com/Legit-Labs/legitify) - Detect and remediate misconfigurations and security risks across all your GitHub assets
+* [https://github.com/cisagov/ScubaGear](https://github.com/cisagov/ScubaGear) - Automation to assess the state of your M365 tenant against CISA's baselines
 
 ### Linux
 
