@@ -131,7 +131,8 @@ Depreciated Tools
   * [Windows Forensic Toolchest](https://www.foolmoon.net/security/wft/) - The Windows Forensic Toolchest™ (WFT) is designed to provide a structured and repeatable automated Live Forensic Response, Incident Response, or Audit on a Windows system while collecting security-relevant information from the system.
   * [Veliciraptor](https://github.com/Velocidex/velociraptor) - A tool for collecting host based state information.
     * [Velociraptor Deep Dive Video training](https://www.youtube.com/watch?app=desktop\&v=PiYPLEjYXnw)
-  * [Meerkat](https://github.com/TonyPhipps/Meerkat) - Meerkat is collection of PowerShell modules designed for artifact gathering and reconnaisance of Windows-based endpoints without requiring a pre-deployed agent.
+  * [Meerkat](https://github.com/TonyPhipps/Meerkat) - Meerkat is collection of PowerShell modules designed for artifact gathering and reconnaisreconnaissanceance of Windows-based endpoints without requiring a pre-deployed agent.
+  * [https://www.cadosecurity.com/cado-community-edition/](https://www.cadosecurity.com/cado-community-edition/) - The Cado Community Edition leverages the scale and speed of the cloud to simplify deep-dive investigations. With the free community edition, data can be processed in minutes compared to days when using traditional methods. Stop wasting time, money, or effort. Achieve forensic-level detail without forensic-level effort. Only Cado empowers the security community to investigate and respond at cloud speed.
 * Utility
   * [AWS\_IR](https://github.com/ThreatResponse/aws\_ir) - Python installable command line utility for mitigation of instance and key compromises.
   * [https://processhacker.sourceforge.io/](https://processhacker.sourceforge.io/) - A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware.

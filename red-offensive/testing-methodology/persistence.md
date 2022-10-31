@@ -196,6 +196,7 @@ Image File Execution Options Injection - IFEO
   * [https://hakin9.org/robber-is-open-source-tool-for-finding-executables-prone-to-dll-hijacking/](https://hakin9.org/robber-is-open-source-tool-for-finding-executables-prone-to-dll-hijacking/)
 * [https://www.blackhillsinfosec.com/digging-deeper-vulnerable-windows-services/](https://www.blackhillsinfosec.com/digging-deeper-vulnerable-windows-services/)
 * [https://attack.mitre.org/techniques/T1574/001/](https://attack.mitre.org/techniques/T1574/001/)
+* [https://github.com/wietze/HijackLibs](https://github.com/wietze/HijackLibs) - Project for tracking publicly disclosed DLL Hijacking opportunities.
 * DLL Search Order Hijacking - _PTFM:  - pg. 25_
 
 ### Application Shimming

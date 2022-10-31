@@ -186,6 +186,7 @@
   * [Stormspotter ](https://github.com/Azure/Stormspotter)- Azure Red Team tool for graphing Azure and Azure Active Directory objects&#x20;
   * [ROADtools](https://github.com/dirkjanm/ROADtools) - ROADtools is a framework to interact with Azure AD.
   * [adconnectdump](https://github.com/fox-it/adconnectdump) - Azure AD Connect password extraction
+  * [TeamFiltration](https://github.com/Flangvik/TeamFiltration) - TeamFiltration is a cross-platform framework for enumerating, spraying, exfiltrating, and backdooring O365 AAD accounts
 * For Password Spraying
   * First check if the accounts is valid. [https://github.com/LMGsec/o365creeper](https://github.com/LMGsec/o365creeper)
   * Perform password spraying attack: [MailSniper](https://github.com/dafthack/MailSniper) - MailSniper is a penetration testing tool for searching through email in a Microsoft Exchange environment for specific terms (passwords, insider intel, network architecture information, etc.)
