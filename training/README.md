@@ -1,5 +1,13 @@
 # Training and Resources
 
+## ****
+
+## ****
+
+## ****
+
+## ****
+
 ## **Beginner Training**
 
 * [SANS New to Cyber Field Manual](https://assets.contentstack.io/v3/assets/blt36c2e63521272fdc/bltf17c3bc431e8fef1/6193f768d193b36297ef8540/N2C\_Field\_Manual\_Update.pdf) - The Ultimate Guide to Getting into Cyber
@@ -148,6 +156,7 @@ These sections have guides on how to practice your offensive an defensive skills
 * [https://www.netspi.com/training/](https://www.netspi.com/training/) - Training provider with both public and private offensive focused courses
 * [Nightmare by GuyInAuxedo](https://guyinatuxedo.github.io/) - Nightmare is an intro to binary exploitation / reverse engineering course based around ctf challenges.
 * [https://hackersploit.org/](https://hackersploit.org/) - Blog posts and guides to different offensive tactics.
+* [https://pentesting.cloud/](https://pentesting.cloud/) - A Free Pen Testing Learning Platform
 
 ### Web Application Testing Training
 

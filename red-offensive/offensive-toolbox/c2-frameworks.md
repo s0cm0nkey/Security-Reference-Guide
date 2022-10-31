@@ -83,6 +83,7 @@ This tool is designed to create an encrypted command-and-control (C\&C) channel 
   * [https://www.kali.org/tools/godoh/](https://www.kali.org/tools/godoh/)
 * [sliver](https://www.kali.org/tools/sliver/) - This package contains a general purpose cross-platform implant framework that supports C2 over Mutual-TLS, HTTP(S), and DNS. Implants are dynamically compiled with unique X.509 certificates signed by a per-instance certificate authority generated when you first run the binary.
 * [TripleCross](https://github.com/h3xduck/TripleCross) - A Linux eBPF rootkit with a backdoor, C2, library injection, execution hijacking, persistence and stealth capabilities.
+* [iscariot-suite](https://gitlab.com/badsectorlabs/iscariot-suite) - The Iscariot Suite is a collection of tools to enhance and augment trusted open-source and commercial Blue Team/Sysadmin products, turning them into traitorware to achieve offensive security goals.
 * _PTFM: C2 Tools - pg. 62_
 
 ## RM Shells/RATs

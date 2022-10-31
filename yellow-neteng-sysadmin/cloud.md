@@ -298,9 +298,11 @@
   * [cloudtracker](https://github.com/duo-labs/cloudtracker) - CloudTracker helps you find over-privileged IAM users and roles by comparing CloudTrail logs with current IAM policies.
   * [aws-recon](https://github.com/darkbitio/aws-recon) - Multi-threaded AWS inventory collection tool with a focus on security-relevant resources and metadata.
   * [review-security-groups](https://github.com/MrSecure/review-security-groups) - A small set of scripts to summarize AWS Security Groups, and generate visualizations of the rules.
+  * [cloudtrail2sightings](https://github.com/zmallen/cloudtrail2sightings) - Convert cloudtrail data to MITRE ATT\&CK Sightings
 * DFIR
   * [aws\_ir](https://github.com/ThreatResponse/aws\_ir) - Python installable command line utility for mitigation of host and key compromises.
   * [acquire-aws-ec2](https://github.com/telekom-security/acquire-aws-ec2) - Handy script for capturing EC2 instances in IR scenarios
+  * [https://www.chrisfarris.com/post/aws-ir/](https://www.chrisfarris.com/post/aws-ir/) - Incident Response in AWS
 * Threat Hunting
   * [https://github.com/schwartz1375/aws](https://github.com/schwartz1375/aws) - Repo for threat hunting in AWS.
 
