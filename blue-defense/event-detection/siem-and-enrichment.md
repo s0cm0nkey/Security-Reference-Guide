@@ -44,6 +44,7 @@ With most SIEMs you can add in plugins or apps that can perform a myriad of supp
 * [PRADS: Passive Real-time Asset Detection System](https://github.com/gamelinux/prads/) - PRADS is a tool that can passively build an asset list with useful details like operating system and open ports. When you do not have access to an asset list or CMDB from the engineering team, this can be a huge help when adding context to security investigations.
 * [hallucinate](https://github.com/SySS-Research/hallucinate/) - One-stop TLS traffic inspection and manipulation using dynamic instrumentation.
 * [phishing\_catcher](https://github.com/x0rz/phishing\_catcher) - Catch possible phishing domains in near real time by looking for suspicious TLS certificate issuances reported to the [Certificate Transparency Log (CTL)](https://www.certificate-transparency.org/) via the [CertStream](https://certstream.calidog.io/) API.
+* [guac](https://github.com/guacsec/guac) - Graph for Understanding Artifact Composition (GUAC) aggregates software security metadata into a high fidelity graph database—normalizing entity identities and mapping standard relationships between them. Querying this graph can drive higher-level organizational outcomes such as audit, policy, risk management, and even developer assistance.
 * _Threat Hunting with Elastic Stack: Enriching Data to Make Intelligence - pg. 329_
 
 {% embed url="https://www.youtube.com/watch?v=lb2M7-UOqVI" %}

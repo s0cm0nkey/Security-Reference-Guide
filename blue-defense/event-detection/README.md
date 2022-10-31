@@ -69,6 +69,7 @@ For Netflow logs and Packet Capture, please see the following:
   * [Using osquery for remote forensics](https://blog.trailofbits.com/2019/05/31/using-osquery-for-remote-forensics/)
   * [OSQuery: Incident Response Across the Enterprise.](https://blog.palantir.com/osquery-across-the-enterprise-3c3c9d13ec55)
   * OSQuery for Security by Chris Long[ - Part 1](https://medium.com/@clong/osquery-for-security-b66fffdf2daf)[,  Part 2](https://medium.com/@clong/osquery-for-security-part-2-2e03de4d3721)
+  * [osquery-defense-kit](https://github.com/chainguard-dev/osquery-defense-kit) - Production-ready detection & response queries for osquery
 
 ### Other Tools
 

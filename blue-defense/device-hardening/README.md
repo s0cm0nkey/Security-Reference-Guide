@@ -64,11 +64,14 @@ The best way to understand what device hardening and how to do it, is to follow 
 ### AD hardening
 
 * [Active Directory Certificate Services](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831740\(v=ws.11\)) -  An often overlooked tool that should come with most Microsoft licenses, use AD certificates to sign scripts and docs made in your environment, to easily detect what is foreign. Detections, alerts, and all the fancy security tools are completely worthless, if the devices you are trying to protect are not properly hardened against the onslaught of attacks they might face day to day. Most if not all devices and even applications, in their factory fresh state, are not properly hardened for use in an enterprise environment. Many features that you might appreciate as a convenience in your home network, are actually a major vulnerability in a large scale network deployed at your company.
+  * [ Locksmith](https://github.com/TrimarcJake/Locksmith) - A tool to identify and remediate common misconfigurations in Active Directory Certificate Services
+    * [https://www.hub.trimarcsecurity.com/post/wild-west-hackin-fest-toolshed-talk-locksmith](https://www.hub.trimarcsecurity.com/post/wild-west-hackin-fest-toolshed-talk-locksmith)
 * [Security Considerations for Domain Trusts - Microsoft](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc755321\(v=ws.10\)?redirectedfrom=MSDN#w2k3tr\_trust\_security\_zyzk)
 * [Locking up your Domain Controllers - Microsoft](https://docs.microsoft.com/en-us/previous-versions/technet-magazine/cc160936\(v=msdn.10\)?redirectedfrom=MSDN)
-* [Active Directory and Group Policy Guidelines](https://www.grouppolicy.biz/2010/07/best-practice-active-directory-structure-guidelines-part-1/)
-* [https://www.blackhillsinfosec.com/webcast-group-policies-that-kill-kill-chains](https://www.blackhillsinfosec.com/webcast-group-policies-that-kill-kill-chains/)
-* [NIST Secure base set of GPOs](https://csrc.nist.gov/Projects/United-States-Government-Configuration-Baseline/USGCB-Content/Microsoft-Content)
+* Group Policies
+  * [Active Directory and Group Policy Guidelines](https://www.grouppolicy.biz/2010/07/best-practice-active-directory-structure-guidelines-part-1/)
+  * [https://www.blackhillsinfosec.com/webcast-group-policies-that-kill-kill-chains](https://www.blackhillsinfosec.com/webcast-group-policies-that-kill-kill-chains/)
+  * [NIST Secure base set of GPOs](https://csrc.nist.gov/Projects/United-States-Government-Configuration-Baseline/USGCB-Content/Microsoft-Content)
 
 ### Certificate Pinning
 

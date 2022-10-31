@@ -20,6 +20,7 @@
 
 * [https://github.com/CyberSecurityUP/Awesome-Cloud-PenTest](https://github.com/CyberSecurityUP/Awesome-Cloud-PenTest) - Huge collection of different offensive cloud tools and resources.
 * [https://hackingthe.cloud/](https://hackingthe.cloud/) - Solid resource for cloud pentesting methodology and tooling.
+* [https://github.com/dafthack/CloudPentestCheatsheets](https://github.com/dafthack/CloudPentestCheatsheets) - This repository contains a collection of cheatsheets I have put together for tools related to pentesting organizations that leverage cloud providers.
 * _Hacking: The next generation - Cloud Insecurity: Sharing the cloud with your enemy, pg. 121_
 
 ### Multi-Cloud Tools
@@ -188,6 +189,7 @@
 * For Password Spraying
   * First check if the accounts is valid. [https://github.com/LMGsec/o365creeper](https://github.com/LMGsec/o365creeper)
   * Perform password spraying attack: [MailSniper](https://github.com/dafthack/MailSniper) - MailSniper is a penetration testing tool for searching through email in a Microsoft Exchange environment for specific terms (passwords, insider intel, network architecture information, etc.)
+  * [o365spray](https://github.com/0xZDH/o365spray) - o365spray ia a username enumeration and password spraying tool aimed at Microsoft Office 365 (O365).
 
 #### Defensive
 
@@ -208,7 +210,8 @@
   * [hawk](https://github.com/T0pCyber/hawk) - Powershell Based tool for gathering information related to O365 intrusions and potential Breaches
     * [https://cloudforensicator.com/](https://cloudforensicator.com/)
   * [DFIR-O365RC](https://github.com/ANSSI-FR/DFIR-O365RC) - The DFIR-O365RC PowerShell module is a set of functions that allow the DFIR analyst to collect logs relevant for Office 365 Business Email Compromise investigations.
-  * [AzureADIncidentResponse](https://www.powershellgallery.com/packages/AzureADIncidentResponse/4.0) - Tooling to assist in Azure AD incident response
+  * [Azure-AD-Incident-Response-PowerShell-Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module) - The Azure Active Directory Incident Response PowerShell module provides a number of tools, developed by the Azure Active Directory Product Group in conjunction with the Microsoft Detection and Response Team (DART), to assist in compromise response.
+    * [https://www.powershellgallery.com/packages/AzureADIncidentResponse/](https://www.powershellgallery.com/packages/AzureADIncidentResponse/)
 
 ## **AWS -** Amazon Cloud Services
 

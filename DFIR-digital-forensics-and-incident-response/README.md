@@ -26,6 +26,8 @@
   * [NIST 61 R2 - ](./#tools-and-frameworks)[Computer Security Incident Handling Guide](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final)
   * [https://zeltser.com/ddos-incident-cheat-sheet/](https://zeltser.com/ddos-incident-cheat-sheet/)
   * [https://gitlab.com/syntax-ir/playbooks#ir-playbooks](https://gitlab.com/syntax-ir/playbooks#ir-playbooks) - Public IR playbooks
+  * [https://learn.microsoft.com/en-us/security/compass/incident-response-playbooks](https://learn.microsoft.com/en-us/security/compass/incident-response-playbooks)
+    * [Azure-AD-Incident-Response-PowerShell-Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module)
   * _BTFM: Incident Response checklist - pg. 109_
   * _BTFM: Remediation Tasks - pg. 112_
   * _(BTHb: INRE): Incident Response Steps - pg. 5_
@@ -134,6 +136,8 @@ Depreciated Tools
   * [AWS\_IR](https://github.com/ThreatResponse/aws\_ir) - Python installable command line utility for mitigation of instance and key compromises.
   * [https://processhacker.sourceforge.io/](https://processhacker.sourceforge.io/) - A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware.
   * [ADTimeline](https://github.com/ANSSI-FR/ADTimeline) - The ADTimeline script generates a timeline based on Active Directory replication metadata for objects considered of interest.
+  * [Azure-AD-Incident-Response-PowerShell-Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module) - The Azure Active Directory Incident Response PowerShell module provides a number of tools, developed by the Azure Active Directory Product Group in conjunction with the Microsoft Detection and Response Team (DART), to assist in compromise response.
+    * [https://www.powershellgallery.com/packages/AzureADIncidentResponse/](https://www.powershellgallery.com/packages/AzureADIncidentResponse/)
 
 ## DFIR Commands
 

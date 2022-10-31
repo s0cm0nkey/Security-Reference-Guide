@@ -62,6 +62,7 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 * [https://www.antihack.me/](https://www.antihack.me/)
 * [https://securebug.se/](https://securebug.se/)
 * [https://www.openbugbounty.org/](https://www.openbugbounty.org/)
+* [https://security.apple.com/](https://security.apple.com/)
 
 ### Resources and Reference
 

@@ -70,6 +70,14 @@ If you are looking to simply purchase use cases from a market place, the foremos
 [detection-use-cases.md](detection-use-cases.md)
 {% endcontent-ref %}
 
+## Detection Use Case Testing
+
+*   [threatest](https://github.com/DataDog/threatest) - Threatest is a Go framework for testing threat detection end-to-end.
+
+    Threatest allows you to **detonate** an attack technique, and verify that the alert you expect was generated in your favorite security platform.
+
+    * [https://securitylabs.datadoghq.com/articles/threatest-end-to-end-testing-threat-detection/](https://securitylabs.datadoghq.com/articles/threatest-end-to-end-testing-threat-detection/)
+
 ## Detection Use Cases by Category
 
 {% content-ref url="dns.md" %}

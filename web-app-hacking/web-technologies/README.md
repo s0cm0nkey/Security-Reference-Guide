@@ -156,6 +156,10 @@
 
 * [https://blog.orange.tw/2021/08/proxylogon-a-new-attack-surface-on-ms-exchange-part-1.html](https://blog.orange.tw/2021/08/proxylogon-a-new-attack-surface-on-ms-exchange-part-1.html)
 
+## NGINX
+
+* [ nginxpwner](https://github.com/stark0de/nginxpwner) - Nginxpwner is a simple tool to look for common Nginx misconfigurations and vulnerabilities.
+
 ## OAuth 2.0
 
 {% content-ref url="oauth-2.0.md" %}

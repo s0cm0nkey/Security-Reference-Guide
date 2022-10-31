@@ -55,6 +55,8 @@ The goal of BDF is to patch executable binaries with user desired shellcode and 
 * [casper-fs](https://github.com/CoolerVoid/casper-fs) - Casper-fs is a custom Linux Kernel Module generator to work with resources to protect or hide a custom list of files. Each LKM has resources to protect or hide files following a custom list in the YAML rule file. Yes, not even the root has permission to see the files or make actions like edit and remove. The files only can be caught, edited, and deleted if the user sends a proper key to the custom device to liberate the action in the file system.
 * [OSRipper](https://github.com/SubGlitch1/OSRipper) - AV evading OSX Backdoor and Crypter Framework
 * [TripleCross](https://github.com/h3xduck/TripleCross) - A Linux eBPF rootkit with a backdoor, C2, library injection, execution hijacking, persistence and stealth capabilities.
+* [Nidhogg](https://github.com/Idov31/Nidhogg) - Nidhogg is an all-in-one simple to use rootkit for red teams.
+  * [https://idov31.github.io/2022/07/14/lord-of-the-ring0-p1.html](https://idov31.github.io/2022/07/14/lord-of-the-ring0-p1.html)
 
 ## **Linux**&#x20;
 

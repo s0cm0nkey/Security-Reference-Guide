@@ -41,6 +41,8 @@
 
 ### Tools
 
+* [squarephish](https://github.com/secureworks/squarephish) - SquarePhish is an advanced phishing tool that uses a technique combining the OAuth Device code authentication flow and QR codes.
+* [PhishInSuits](https://github.com/secureworks/PhishInSuits) - OAuth Device Code Phishing with Verified Apps
 * [Muraena](https://github.com/muraenateam/muraena) - Muraena is an almost-transparent reverse proxy aimed at automating phishing and post-phishing activities.
   * [NecroBrowser](https://github.com/muraenateam/necrobrowser) - Necrobrowser is a browser instrumentation microservice written in NodeJS: it uses the Puppeteer library to control instances of Chrome or Firefox in headless and GUI mode.
 * [catphish](https://github.com/ring0lab/catphish) - Generate similar-looking domains for phishing attacks. Check expired domains and their categorized domain status to evade proxy categorization. Whitelisted domains are perfect for your C2 servers. Perfect for Red Team engagements.

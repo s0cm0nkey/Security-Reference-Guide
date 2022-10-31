@@ -9,6 +9,7 @@ description: Logs and the logging loggers that log them
 * [https://its.uiowa.edu/support/article/3576](https://its.uiowa.edu/support/article/3576) - Limiting or Removing Unwanted Network Traffic at the Client
 * [https://cheatsheetseries.owasp.org/cheatsheets/Logging\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Logging\_Cheat\_Sheet.html)
 * [https://cheatsheetseries.owasp.org/cheatsheets/Logging\_Vocabulary\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Logging\_Vocabulary\_Cheat\_Sheet.html)
+* [https://github.com/Neo23x0/auditd](https://github.com/Neo23x0/auditd) - Best Practice Auditd Configuration
 * Setting up Network Sensors - _Applied Network Security Monitoring_ - PG. 49
 * Sensor Placement - _Applied Network Security Monitoring_ - PG. 61
 
