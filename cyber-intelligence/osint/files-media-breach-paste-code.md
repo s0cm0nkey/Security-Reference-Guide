@@ -4,11 +4,15 @@
 
 Files and Media are one of the more juicy targets to look for when planning a penetration test. For companies that publish things to the web on a regular basis, there is constantly information that is overlooked and should not have been sent out of the organization. I have found things like email distribution lists, Internal only email addresses perfect for phishing, personnel information, client communications, etc. Dont forget public facing FTP servers. They always seem to have something juicy hidden in them.
 
+### Document Search Tools
+
 **Documents.html**
 
 Documents.html is a tool that allows you to take a search term related to your target, and search for various file types associated with the term. The term should be something as unique as possible, but still related to the target: company name, platform, application, client, etc. Perform multiple searches for various terms for the best coverage.
 
-{% file src="../../.gitbook/assets/Documents (1).html" %}
+<details>
+
+<summary>Document Search Tools</summary>
 
 * [Google Custom Search Engine for Documents](https://cse.google.com/cse?cx=001580308195336108602:vvchyaurf\_4#gsc.tab=0)
 * [http://www.uvrx.com/](http://www.uvrx.com/) - The most comprehensive online file storage search engine. They have individual search engines for badongo, Mediafire, Zshare, 4shared and taringa. They also provide a search all function that searches filefactory, depositfiles, easy-share, sharedzilla, sendspace, yousendit, letitbit, drop, sharebee, rapidspread, and many others.
@@ -17,7 +21,13 @@ Documents.html is a tool that allows you to take a search term related to your t
 * [FilePhish](https://cartographia.github.io/FilePhish/) - A simple OSINT Google query builder for fast and easy document and file discovery.
 * [MetaFinder](https://github.com/Josue87/MetaFinder) - Search for documents in a domain through Search Engines (Google, Bing and Baidu). The objective is to extract metadata
 
-### Public Directory, FTP, and Cloud
+</details>
+
+{% file src="../../.gitbook/assets/Documents (1).html" %}
+
+<details>
+
+<summary>Public Directory, FTP, and Cloud</summary>
 
 * [http://palined.com/search/](http://palined.com/search/) - Search for files and open directories via keyword. Uses a Google CSE.
 * [https://www.filechef.com](https://www.filechef.com) - Search for open directories and files on the web or in Google Drives via keywords. Including document, video, audio, image and executable files. Uses Google dorks.
@@ -29,7 +39,11 @@ Documents.html is a tool that allows you to take a search term related to your t
 * [https://www.gdrivesearch.com/](https://www.gdrivesearch.com/) - A simple and fast tool that allows you to search Google Drive for files.
 * [https://www.reddit.com/r/opendirectories/](https://www.reddit.com/r/opendirectories/) - Unprotected directories of pics, vids, music, software and otherwise interesting files.
 
-### Article, Presentation, and Book search
+</details>
+
+<details>
+
+<summary>Article, Presentation, and Book search</summary>
 
 * [https://libgen.rs/](https://libgen.rs/) - This is the largest free library in human history. Giving the world free access to over 84 million scholarly journals, over 6.6 million academic and general-interest books, over 2.2 million comics, and over 381 thousand magazines. Commonly referred to as "Libgen" for short. Libgen has zero regard for copyright.
 * [https://sci-hub.se/](https://sci-hub.se/) - A "shadow library" that provides free access to millions of research papers and books by bypassing paywalls. SciHub has zero regard for copyright.
@@ -37,9 +51,11 @@ Documents.html is a tool that allows you to take a search term related to your t
   * [https://eyedex.org](https://eyedex.org) - A searchable index of the-eye.eu. Much faster than manually digging through subfolders or using Google dorks.
 * [https://doaj.org](https://doaj.org) - Search over 16,000 journals, over 6.5 million articles in 80 different languages from 129 different countries.
 * [https://www.slideshare.net/](https://www.slideshare.net/) - Allows users to upload content including presentations, infographics, documents, and videos. Users can upload files privately or publicly in PowerPoint, Word, PDF, or OpenDocument format
-  *   [https://slideshare-downloader.herokuapp.com](https://slideshare-downloader.herokuapp.com) - Enter the URL of any Slideshare document and this tool will download it for you.
+  * [https://slideshare-downloader.herokuapp.com](https://slideshare-downloader.herokuapp.com) - Enter the URL of any Slideshare document and this tool will download it for you.
 
-      ​
+</details>
+
+
 
 ## **Images/Videos**
 
@@ -49,37 +65,63 @@ While having other functionality Michael Bazzell's **Images.html** and **Videos.
 
 * [OSHINT IMGINT Links](https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/imagery-intelligence-imint)
 
-{% file src="../../.gitbook/assets/Images.html" %}
+<details>
 
-{% file src="../../.gitbook/assets/Videos (1).html" %}
+<summary>Image Analysis and Forensics</summary>
 
-* [CameraTrace](http://www.cameratrace.com/trace)  - Trace the location a camera has been by the metadata it embeds in photos that end up on the internet.
 * [FotoForensics](https://fotoforensics.com/) - Free and public photo forensics tools.
 * [https://www.imageforensic.org/](https://www.imageforensic.org/) - Image Metadata Analysis tool
 * [https://github.com/GuidoBartoli/sherloq](https://github.com/GuidoBartoli/sherloq) - An open-source digital image forensic toolset
 * [https://www.peteyvid.com/](https://www.peteyvid.com/) - A video and audio search engine that searches over 70 different platforms.
-* Reverse Image Search
-  * [The Wolfram Language Image Identification Project](https://www.imageidentify.com/)&#x20;
-  * [pic.sogou.com](https://pic.sogou.com/) — chinese reverse image search engine
-  * [Image So Search](https://image.so.com/) — Qihoo 360 Reverse Images Search
-  * [Revesearch.com](https://revesesearch.com) — allows to upload an image once and immediately search for it in #Google, #Yandex, and #Bing.
-  * [Pixsy](https://pixsy.com) — allows to upload pictures from computer, social networks or cloud storages, and then search for their duplicates and check if they are copyrighted
-  * [Image Search Assistant](https://chrome.google.com/webstore/detail/image-search-assistant/kldhhobmmejaeaiilomaibhjlcfpceac/related) — searches for a picture, screenshot or fragment of a screenshot in several search engines and stores at once
-  * [openi.nlm.nih.gov](https://openi.nlm.nih.gov/gridquery) — Reverse image search engine for scientific and medical images
-  * [DepositPhotos Reverse Image Search](https://ru.depositphotos.com/search/by-images.html) — tool for reverse image search (strictly from DepositPhoto's collection of 222 million files).
-  * [EveryPixel](https://www.everypixel.com/) — Reverse image search engine. Search across 50 leading stock images agencies. It's possible to filter only free or only paid images.
-  * [https://tineye.com/](https://tineye.com/) - Image search engine.
-* Facial Recognition
-  * [pictriev](http://pictriev.com/)  - Search engine for faces. Upload the picture of choice and find links to other pictures with similar people.
-  * [PimEyes](https://pimeyes.com/en) - Facial recognition and reverse image search
-  * [Portrait Matcher](http://zeus.robots.ox.ac.uk/portraitmatcher/index?error=agree) — Upload a picture of a face and get three paintings that show similar people.
-  * [FindFace](https://findface.pro/) - Russian face search engine.
-  * [Face Recognition](https://github.com/ageitgey/face\_recognition) — facial recognition api for Python and the command line
-  * [Search4faces.com](https://search4faces.com/) — search people in VK, Odnoklassniki, TikTok and ClubHouse by photo or identikit
-* Clothing/Shopping
-  * [Searchbyimage.app](https://searchbyimage.app/) — search clothes in online shops
-  * [Aliseeks.com](https://www.aliseeks.com/search) — search items by photo in AliExpress and Ebay
-  * [lykdat.com](https://lykdat.com/) — clothing reverse image search services
+* [CameraTrace](http://www.cameratrace.com/trace)  - Trace the location a camera has been by the metadata it embeds in photos that end up on the internet.
+
+</details>
+
+<details>
+
+<summary>Reverse Image Search</summary>
+
+* [The Wolfram Language Image Identification Project](https://www.imageidentify.com/)&#x20;
+* [pic.sogou.com](https://pic.sogou.com/) — chinese reverse image search engine
+* [Image So Search](https://image.so.com/) — Qihoo 360 Reverse Images Search
+* [Revesearch.com](https://revesesearch.com) — allows to upload an image once and immediately search for it in #Google, #Yandex, and #Bing.
+* [Pixsy](https://pixsy.com) — allows to upload pictures from computer, social networks or cloud storages, and then search for their duplicates and check if they are copyrighted
+* [Image Search Assistant](https://chrome.google.com/webstore/detail/image-search-assistant/kldhhobmmejaeaiilomaibhjlcfpceac/related) — searches for a picture, screenshot or fragment of a screenshot in several search engines and stores at once
+* [openi.nlm.nih.gov](https://openi.nlm.nih.gov/gridquery) — Reverse image search engine for scientific and medical images
+* [DepositPhotos Reverse Image Search](https://ru.depositphotos.com/search/by-images.html) — tool for reverse image search (strictly from DepositPhoto's collection of 222 million files).
+* [EveryPixel](https://www.everypixel.com/) — Reverse image search engine. Search across 50 leading stock images agencies. It's possible to filter only free or only paid images.
+* [https://tineye.com/](https://tineye.com/) - Image search engine.
+
+</details>
+
+<details>
+
+<summary>Facial Recognition</summary>
+
+* [pictriev](http://pictriev.com/)  - Search engine for faces. Upload the picture of choice and find links to other pictures with similar people.
+* [PimEyes](https://pimeyes.com/en) - Facial recognition and reverse image search
+* [Portrait Matcher](http://zeus.robots.ox.ac.uk/portraitmatcher/index?error=agree) — Upload a picture of a face and get three paintings that show similar people.
+* [FindFace](https://findface.pro/) - Russian face search engine.
+* [Face Recognition](https://github.com/ageitgey/face\_recognition) — facial recognition api for Python and the command line
+* [Search4faces.com](https://search4faces.com/) — search people in VK, Odnoklassniki, TikTok and ClubHouse by photo or identikit
+
+</details>
+
+<details>
+
+<summary>Misc Utility</summary>
+
+Clothing/Shopping
+
+* [Searchbyimage.app](https://searchbyimage.app/) — search clothes in online shops
+* [Aliseeks.com](https://www.aliseeks.com/search) — search items by photo in AliExpress and Ebay
+* [lykdat.com](https://lykdat.com/) — clothing reverse image search services
+
+</details>
+
+{% file src="../../.gitbook/assets/Images.html" %}
+
+{% file src="../../.gitbook/assets/Videos (1).html" %}
 
 ## **Breach/Leak/Paste data**&#x20;
 
@@ -88,6 +130,10 @@ Looking for easy creds? Linked data? Password hash? Breaches can be a trove for 
 The below tools and links can be used to parse data in known data breaches and leaks, or be used for detection and alert for the presence of credentials when new breach data is reported.\
 \
 Paste sites like Pastebin have recently changed their ability to be parsed. Pastebin itself has removed the ability to to search its pastes. However, with a bit of clever google dorking, you can still search for breach data by submitting your search along with "insite:pastebin.com"
+
+<details>
+
+<summary>Breach Report and Search Tools</summary>
 
 * [https://www.dehashed.com/](https://www.dehashed.com/) - Premium but well worth it, Breach data site. Can search by multiple types of indicators like email, IP, address, domain, even password.
 * [Have I Been Pwned](https://haveibeenpwned.com/) - Check if your email has been compromised in a data breach&#x20;
@@ -101,6 +147,8 @@ Paste sites like Pastebin have recently changed their ability to be parsed. Past
 * [LeakCheck.io](https://leakcheck.io/) - Make sure your credentials haven't been compromised
 * [BreachForums](https://breached.to/) - Breaches, Data leaks, databases and more
 * [http://4wbwa6vcpvcr3vvf4qkhppgy56urmjcj2vagu2iqgp3z656xcmfdbiqd.onion/](http://4wbwa6vcpvcr3vvf4qkhppgy56urmjcj2vagu2iqgp3z656xcmfdbiqd.onion/) - An .onion site that allows you to search through the full 2019 Facebook data breach.
+
+</details>
 
 {% file src="../../.gitbook/assets/Breaches.html" %}
 

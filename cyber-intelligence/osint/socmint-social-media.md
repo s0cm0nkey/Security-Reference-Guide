@@ -1,8 +1,8 @@
 # SOCMINT - Social Media
 
-## General
+<details>
 
-{% file src="../../.gitbook/assets/Communities.html" %}
+<summary>General Social Media Search Tools</summary>
 
 * [Custom Google SE - Social Networks](https://bit.ly/2ma3ANe)&#x20;
 * [Social Searcher](https://www.social-searcher.com/) - Free Social Media Search Engine&#x20;
@@ -20,13 +20,23 @@
 * [https://github.com/p1ngul1n0/blackbird](https://github.com/p1ngul1n0/blackbird) - An OSINT tool to search for accounts by username in social networks.
 * [https://www.crowdtangle.com/features](https://www.crowdtangle.com/features) - Easily follow public content across Facebook, Instagram and Reddit.
 
-## Clubhouse
+</details>
+
+{% file src="../../.gitbook/assets/Communities.html" %}
+
+<details>
+
+<summary>Clubhouse</summary>
 
 * [https://clubhousedb.com](https://clubhousedb.com) - A free Clubhouse analytics tool. Find the most followed users and clubs using this database.
 * [https://roomsofclubhouse.com](https://roomsofclubhouse.com)  - Search open and scheduled rooms in the Clubhouse app.
 * [https://clubsearch.io](https://clubsearch.io) - Search open and scheduled rooms.
 
-## Discord
+</details>
+
+<details>
+
+<summary>Discord</summary>
 
 * [https://disboard.org/search](https://disboard.org/search) - A public server search engine.
 * [https://discordbee.com](https://discordbee.com) - A search engine for public Discord servers.
@@ -38,7 +48,11 @@
 * [https://dht.chylex.com](https://dht.chylex.com) - Lets you save chat history in your servers, groups, and private conversations, and view it offline. Be careful, as this tool technically goes against Discord's ToS, so its possible that you could get your account banned!
 * [https://github.com/traumatism/get-discord-bots-tokens-with-google](https://github.com/traumatism/get-discord-bots-tokens-with-google)
 
-## Facebook
+</details>
+
+<details>
+
+<summary>Facebook</summary>
 
 * [https://www.osintcombine.com/facebook-search-tools](https://www.osintcombine.com/facebook-search-tools) - A simple way to quickly search for multiple keywords from a list or open mutual friends for multiple profiles at the same time. It simply loads a new tab for each word or ID searched to create efficiency when working from a list of search terms or IDs, it does not do any advanced searching or automation.
 * [http://4wbwa6vcpvcr3vvf4qkhppgy56urmjcj2vagu2iqgp3z656xcmfdbiqd.onion/](http://4wbwa6vcpvcr3vvf4qkhppgy56urmjcj2vagu2iqgp3z656xcmfdbiqd.onion/) - An .onion site that allows you to search through the full 2019 Facebook data breach.
@@ -48,13 +62,19 @@
 * [Facebook's list of dangerous groups and individuals](https://theintercept.com/document/2021/10/12/facebook-dangerous-individuals-and-organizations-list-reproduced-snapshot/) - A leaked internal document from Facebook that contains their list of dangerous individuals and groups. Worth saving.
 * [Facebook law enforcement guide](https://www.facebook.com/safety/groups/law/guidelines/?\_fb\_noscript=1) - Guidelines and resources for law enforcement officials seeking records from Facebook and/or Instagram.
 
-## Gab
+</details>
+
+<details>
+
+<summary>Gab</summary>
 
 * [https://www.secjuice.com/investigate-gab-users-osint/](https://www.secjuice.com/investigate-gab-users-osint/)
 
-## Instagram
+</details>
 
-{% file src="../../.gitbook/assets/Instagram.html" %}
+<details>
+
+<summary>Instagram</summary>
 
 * [instaloader](https://www.kali.org/tools/instaloader/) - Downloads public and private profiles, hashtags, user stories, feeds and saved media Downloads comments, geotags and captions of each post.
 * [https://www.searchmy.bio/](https://www.searchmy.bio/) - search for Instagram users and influencers based on their profile biography text.
@@ -62,13 +82,23 @@
 * [https://searchusers.com](https://searchusers.com) - Search for Instagram users by name or username.
 * [https://imginn.com](https://imginn.com) - View Instagram profiles, download photos, videos and stories, watch Instagram stories anonymously.
 
-## kik
+</details>
+
+{% file src="../../.gitbook/assets/Instagram.html" %}
+
+<details>
+
+<summary>kik</summary>
 
 * [https://ws2.kik.com/user/%3Cusername\_goes\_here%3E](https://ws2.kik.com/user/%3Cusername\_goes\_here%3E) - Enter a Kik username and get information for that account in JSON format. Includes full name, profile picture, and a UNIX formatted timestamp of when the profile picture was last changed. Example: `https://ws2.kik.com/user/<username_goes_here`.
 * [https://kik.me/%3Cusername\_goes\_here%3E](https://kik.me/%3Cusername\_goes\_here%3E) - Check if a username exists simply by entering in a username in the URL. Displays full name, username and profile picture. Example: `http://kik.me/<username_goes_here>`.
 * [https://kikusernames.com/search](https://kikusernames.com/search) - Search for Kik usernames.
 
-## LinkedIn
+</details>
+
+<details>
+
+<summary>Linkedin</summary>
 
 * [CrossLinked](https://github.com/m8r0wn/CrossLinked) - LinkedIn enumeration tool to extract valid employee names from an organization through search engine scraping
 * [inspy](https://www.kali.org/tools/inspy/) - a Python based LinkedIn enumeration tool. You will need an API key from HunterIO.
@@ -76,38 +106,69 @@
 * [https://www.intelligencewithsteve.com/post/a-guide-to-searching-linkedin-by-email-address](https://www.intelligencewithsteve.com/post/a-guide-to-searching-linkedin-by-email-address)
 * [https://github.com/krlabs/linkedin-dorks](https://github.com/krlabs/linkedin-dorks)
 
-## Mastodon
+</details>
+
+<details>
+
+<summary>Mastodon</summary>
 
 * [https://search.noc.social/](https://search.noc.social/) - Search for social accounts across multiple Mastodon/Fediverse instances. Discover content and users on this open source social network
 
-## Parler
+</details>
+
+<details>
+
+<summary>Parler</summary>
 
 * [https://parler.adatascienti.st](https://parler.adatascienti.st) - A searchable data set of the Parler social network.
 * [https://www.skopenow.com/news/the-new-digital-meeting-place-what-parler-means-for-osint-investigators](https://www.skopenow.com/news/the-new-digital-meeting-place-what-parler-means-for-osint-investigators)
 * [https://mktg.skopenow.com/parler-whitepaper-webinar](https://mktg.skopenow.com/parler-whitepaper-webinar)
 
-## Reddit
+</details>
+
+<details>
+
+<summary>Reddit</summary>
 
 * [https://camas.github.io/reddit-search/](https://camas.github.io/reddit-search/) - One of the best Reddit archives out there. Search for deleted posts and comments. Allows you to search by username, subreddit, date range, string, or a combination of all.
-*
 * [https://www.secjuice.com/reddit-osint-techniques/](https://www.secjuice.com/reddit-osint-techniques/)
 
-## Slack
+</details>
+
+<details>
+
+<summary>Slack</summary>
 
 * [Slack Pirate](https://github.com/emtunc/SlackPirate) — tool developed in Python which uses the native Slack APIs to extract 'interesting' information from a Slack workspace given an access token
 
-## Skype
+
+
+</details>
+
+<details>
+
+<summary>Skype</summary>
 
 * [vedbex.com/tools/email2skype](https://www.vedbex.com/tools/email2skype) — finding a Skype account by email
 
-## SnapChat
+
+
+</details>
+
+<details>
+
+<summary>SnapChat</summary>
 
 * Geolocation
   * [https://map.snapchat.com/](https://map.snapchat.com/) - Reveal geolocation based on Snapchat metadata
 * Misc
   * [https://osintcurio.us/2020/04/13/using-snapchat-for-osint-10-minute-tip/](https://osintcurio.us/2020/04/13/using-snapchat-for-osint-10-minute-tip/)
 
-## Telegram
+</details>
+
+<details>
+
+<summary>Telegram</summary>
 
 * [https://telegramdb.org](https://telegramdb.org) - Database of public Telegram groups, channels and bots.
 * [https://search.buzz.im/](https://search.buzz.im/) - A tool that allows you to search Telegram channels, messages and authors for a specific string.
@@ -127,19 +188,31 @@
 * [Telegramchannels.me](https://telegramchannels.me/list/biggest?language=en) — Ratings of the 100 largest (by number of subscribers) #Telegram channels for different
 * [https://hatless1der.com/telegram-osint-basics-5-tips-anyone-can-do-right](https://hatless1der.com/telegram-osint-basics-5-tips-anyone-can-do-right)
 
-## Tumblr
+</details>
+
+<details>
+
+<summary>Tumblr</summary>
 
 * [https://www.secjuice.com/tumblr-osint/](https://www.secjuice.com/tumblr-osint/)
 * [https://jetblackcode.com/TumblrOriginalPostFinder](https://jetblackcode.com/TumblrOriginalPostFinder) - Find all original posts for any Tumblr blog. You can filter posts by note count or a certain tag.
 * [https://labs.polsys.net/tools/tumblr/](https://labs.polsys.net/tools/tumblr/) - Collects posts tagged with a specific term from Tumblr and export to a .tab or .gdf file.
 
-## Twitch
+</details>
+
+<details>
+
+<summary>Twitch</summary>
 
 * [https://sizeof.cat/post/twitch-leaks/](https://sizeof.cat/post/twitch-leaks/) - In October 6th, 2021, Twitch got hacked and their data was dumped online. This article explains the contents of the breached data and provides a magnet URI to download the raw data.
 
-## Twitter
 
-{% file src="../../.gitbook/assets/Twitter.html" %}
+
+</details>
+
+<details>
+
+<summary>Twitter</summary>
 
 * Advanced Search - [https://twitter.com/search-advanced](https://twitter.com/search-advanced)
 * Toolsets
@@ -159,17 +232,29 @@
 * Geolocation
   * [https://onemilliontweetmap.com/](https://onemilliontweetmap.com/)
 
-## WhatsApp
+</details>
+
+{% file src="../../.gitbook/assets/Twitter.html" %}
+
+<details>
+
+<summary>WhatsApp</summary>
 
 * [whatsanalyze.com](https://whatsanalyze.com) — analyzes #WhatsApp group message statistics (world cloud, timeline, message frequency)
 * [chatvisualizer.com](https://chatvisualizer.com) — another #WhatsApp chat analyzer.
 * [Watools.io](https://watools.io/download-profile-picture) — download whatsapp profile picture
 * [WAGSCRAPER](https://github.com/riz4d/WaGpScraper) — Scraps Whatsapp Group Links From Google Results And Gives Working Links (with group names and images)
 
-## 4chan
+</details>
+
+<details>
+
+<summary>4chan</summary>
 
 * [https://archived.moe/](https://archived.moe/) - A searchable archive of most 4chan boards.
 * [https://4chansearch.com](https://4chansearch.com) - A Google CSE that allows you to search 4chan and its various archives.
 * [https://4plebs.org](https://4plebs.org) - A searchable archive of all threads and images from /adv/, /f/, /hr/, /o/, /pol/, /sp/, /tg/, /trv/, /tv/ and /x/. Reminder: 4chan is serious business, you might get offended.
 * [https://find.4chan.org](https://find.4chan.org) - Search current 4chan threads for matching keywords.
 * [https://qresear.ch](https://qresear.ch) - A searchable archive of "QAnon" related posts from 8kun/8chan.
+
+</details>
