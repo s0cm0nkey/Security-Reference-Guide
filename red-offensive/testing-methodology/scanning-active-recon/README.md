@@ -119,13 +119,34 @@ wol.udp [MAC] #Send a WOL as an IPv4 broadcast packet to UDP port 9
 
 {% tabs %}
 {% tab title="Responder" %}
+[Responder](https://github.com/lgandx/Responder) is a great tool for spoofing various network protocols but can also be used in "analyze" modes.
 
+* **BROWSER mode**: inspect [Browse Service](http://ubiqx.org/cifs/Browsing.html)  messages and map IP addresses with NetBIOS names
+* **LANMAN mode**: passively map domain controllers, servers and workstations joined to a domain with the Browser protocol
+* **LLMNR, NBTNS, MDNS modes**: inspect broadcast and multicast name resolution requests
+
+The following command will enable the analyze modes and will give interesting information like:
+
+* Domain Controller, SQL servers, workstations
+* Fully Qualified Domain Name (FQDN)
+* Windows versions in used
+* The "enabled" or "disabled" state of protocols like LLMNR, NBTNS, MDNS, LANMAN, BROWSER
+
+```
+// Some code
+```
+
+
+
+[https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/responder-20-owning-windows-networks-part-3/](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/responder-20-owning-windows-networks-part-3/)
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
 {% endtab %}
 {% endtabs %}
+
+
 
 
 
