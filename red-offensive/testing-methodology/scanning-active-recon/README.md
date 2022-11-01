@@ -10,8 +10,14 @@
 * [fierce](https://www.kali.org/tools/fierce/) - Fierce is a semi-lightweight scanner that helps locate non-contiguous IP space and hostnames against specified domains. It’s really meant as a pre-cursor to nmap, unicornscan, nessus, nikto, etc, since all of those require that you already know what IP space you are looking for.
 * [hosthunter](https://www.kali.org/tools/hosthunter/) - This package contains a tool to efficiently discover and extract hostnames providing a large set of target IP addresses. HostHunter utilises simple OSINT techniques to map IP addresses with virtual hostnames.
 
-### Host Command
+{% tabs %}
+{% tab title="DHCP" %}
+```
+nmap --script broadcast-dhcp-discover
+```
+{% endtab %}
 
+{% tab title="Host Cmd" %}
 Name Servers
 
 ```
@@ -23,9 +29,9 @@ Email Server
 ```
 $ host -t mx domain.com
 ```
+{% endtab %}
 
-### Via ICMP
-
+{% tab title="ICMP" %}
 ```
 #ping -c 1 199.66.11.4    #1 echo request to a host
 #fping -sagq 192.168.0.0/24 #Send echo requests to ranges
@@ -36,9 +42,9 @@ $ host -t mx domain.com
 * a - show active/alive targets&#x20;
 * g = generate target list&#x20;
 * q = dont show per target list (we dont care about unreachables)&#x20;
+{% endtab %}
 
-### Via ARP
-
+{% tab title="ARP" %}
 [arp-scan](https://www.kali.org/tools/arp-scan/) - sends arp requests to look for link layer devices&#x20;
 
 ```
@@ -46,15 +52,15 @@ $ host -t mx domain.com
 #nmap -sn <Network> #ARP Requests (Discover IPs)
 #netdiscover -r <Network> #ARP requests (Discover IPs)
 ```
+{% endtab %}
 
-### NBT Discovery
-
+{% tab title="NBTSCAN" %}
 ```
 nbtscan -r 192.168.0.1/24 #Search in Domain
 ```
+{% endtab %}
 
-### [Bettercap2](https://github.com/bettercap/bettercap)
-
+{% tab title="Bettercap2" %}
 ```
 net.probe on/off #Activate all service discover and ARP
 net.probe.mdns #Search local mDNS services (Discover local)
@@ -64,8 +70,10 @@ net.probe.wsd # Search Web Services Discovery (Discover local)
 net.probe.throttle 10 #10ms between requests sent (Discover local)
 ```
 
-### **Wake On Lan**
+[https://github.com/bettercap/bettercap](https://github.com/bettercap/bettercap)
+{% endtab %}
 
+{% tab title="WOL" %}
 Wake On Lan is used to turn on computers through a network message. The magic packet used to turn on the computer is only a packet where a MAC Dst is provided and then it is repeated 16 times inside the same paket. Then this kind of packets are usually sent in an ethernet 0x0842 or in a UDP packet to port 9. If no \[MAC] is provided, the packet is sent to broadcast ethernet (and the broadcast MAC will be the one being repeated).
 
 ```
@@ -74,6 +82,10 @@ wol.eth [MAC] #Send a WOL as a raw ethernet packet of type 0x0847
 wol.udp [MAC] #Send a WOL as an IPv4 broadcast packet to UDP port 9
 ## Bettercap2 can also be used for this purpose
 ```
+{% endtab %}
+{% endtabs %}
+
+
 
 ## **Port-Scanning**
 

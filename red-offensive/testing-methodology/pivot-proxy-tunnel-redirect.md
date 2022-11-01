@@ -15,7 +15,6 @@
 * [https://xapax.github.io/security/#random\_tips\_and\_tricks/port\_forwarding\_and\_tunneling/](https://xapax.github.io/security/#random\_tips\_and\_tricks/port\_forwarding\_and\_tunneling/)
 * [https://xapax.github.io/security/#random\_tips\_and\_tricks/pivoting/](https://xapax.github.io/security/#random\_tips\_and\_tricks/pivoting/)
 * [http://pwnwiki.io/#!pivoting/linux/index.md](http://pwnwiki.io/#!pivoting/linux/index.md)
-* [https://medium.com/@kuwaitison/pivoting-and-tunneling-for-oscp-and-beyond-cheat-sheet-3435d1d6022](https://medium.com/@kuwaitison/pivoting-and-tunneling-for-oscp-and-beyond-cheat-sheet-3435d1d6022)
 * _Attacking Network Protocols: Network Proxies - pg.20_
 
 ## Tools
