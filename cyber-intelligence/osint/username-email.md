@@ -4,8 +4,6 @@
 
 Corporate usernames are beginning to be obnoxiously easy to guess and build. The standard of FIRSTNAME.LASTNAME@CORP.com is so common, it's ridiculous. Even more so when account management tools will simply take the first half of the email and reuse it as a username. We can use schemes like this to our advantage to search for a multitude of treasures like accounts on other services with the same username, credentials found in breaches, and associated sites or tools. When searching for usernames, you can uncover linked social media accounts and tons of relevant intelligence.
 
-## Username and Email Address Analysis Tools
-
 **Username.html and Email.html**
 
 These two tools often go hand in hand with results often overlapping. Still, it is good habit to run the searches for both the username and the email address in case there is a discrepancy between the two. These two tools check for two things: presence of the username/email on a given platform, and any public/leaked info connected to them.
@@ -14,9 +12,9 @@ These two tools often go hand in hand with results often overlapping. Still, it 
 
 {% file src="../../.gitbook/assets/Email.html" %}
 
-<details>
+![](../../.gitbook/assets/proxy-image.png)
 
-<summary>Username Search Tools</summary>
+## **Username Search Tools**
 
 * [https://whatsmyname.app/](https://whatsmyname.app/) - This tool allows you to enumerate usernames across many different websites.
   * [https://github.com/WebBreacher/WhatsMyName](https://github.com/WebBreacher/WhatsMyName)
@@ -30,13 +28,13 @@ These two tools often go hand in hand with results often overlapping. Still, it 
 * [socialscan](https://github.com/iojw/socialscan) - Python library and CLI for accurately querying username and email usage on online platforms.
 * [https://analyzeid.com/username/](https://analyzeid.com/username/) - Social media username checker. Gather information on the taken username and get a summary of who the person is.
 * [https://www.idcrawl.com/](https://www.idcrawl.com/) - A free people search engine that organizes social network information, deep web information, phone numbers, email addresses and more.
-* [https://knowem.com/](https://knowem.com/) - Allows you to check for a username or real name instantly on over 500 popular and emerging social media sites.
+*   [https://knowem.com/](https://knowem.com/) - Allows you to check for a username or real name instantly on over 500 popular and emerging social media sites.
 
-</details>
+    ​
 
-<details>
+![](<../../.gitbook/assets/image (34).png>)
 
-<summary>Email Address Search Tools</summary>
+## **Email Address Search Tools**
 
 * [Public Mail Records](https://publicemailrecords.com/) - Search public email records for a given email address.
 * [MXToolBox](https://mxtoolbox.com/) - Collection of online tools that can gather multiple points of data surrounding an email address or domain.
@@ -45,11 +43,7 @@ These two tools often go hand in hand with results often overlapping. Still, it 
   * [https://github.com/megadose/holehe](https://github.com/megadose/holehe)
 * [https://emailcrawlr.com/](https://emailcrawlr.com/) - Search EmailCrawlr for email addresses and phone numbers associated with a domain.
 
-</details>
-
-<details>
-
-<summary>Email Address Enumeration Tools</summary>
+### Email Address Discovery
 
 For when you have your target but not their email address
 
@@ -60,11 +54,7 @@ For when you have your target but not their email address
 * [Email Format ](https://www.email-format.com/)- Find the email address format for a given company or domain.
 * [https://snov.io/email-finder](https://snov.io/email-finder) - Locate employee email addresses via domain name. Very handy.
 
-</details>
-
-<details>
-
-<summary>Email Verification Tools</summary>
+### **Email Verification**&#x20;
 
 Some times it helps to perform a quick check to see if an email is even valid or registered.
 
@@ -73,11 +63,7 @@ Some times it helps to perform a quick check to see if an email is even valid or
 * [Verify email](https://verify-email.org/) - This email verification tool actually connects to the mail server and checks whether the mailbox exists or not.
 * [Email Checker](https://www.emailchecker.com/) - Email Checker ensures that an email address is correct and active in real-time without ever needing to send a message.
 
-</details>
-
-<details>
-
-<summary>CLI Email Intelligence Tools</summary>
+### **Email CLI Tools**
 
 * [TheHarvester](https://github.com/laramies/theharvester) - This tool is the defacto standard for email intelligence gathering. It checks a large array of sources to pull together information. It can leverage APIs of other services such as Spyse or Shodan to improve the search. Remember these will require an API key to use. I have found that between the above html tools and this, it will satisfy your email searching needs.
 * [Infoga](https://github.com/m4ll0k/Infoga) - Infoga is a tool gathering email accounts information (ip,hostname,country,...) from different public source (search engines, pgp key servers and shodan) and check if emails was leaked using haveibeenpwned.com API.
@@ -87,14 +73,8 @@ Some times it helps to perform a quick check to see if an email is even valid or
   * [https://hakin9.org/h8mail-email-osint-password-breach-hunting-tool-locally-or-using-premium-services/](https://hakin9.org/h8mail-email-osint-password-breach-hunting-tool-locally-or-using-premium-services/)
 * [EmailFinder](https://github.com/Josue87/EmailFinder) - Search emails from a domain through search engines
 
-</details>
-
-****
-
 {% embed url="https://youtu.be/VytCL2ujjcA" %}
 
-## Investigation MindMaps
+### Sources of Intelligence&#x20;
 
-![](../../.gitbook/assets/proxy-image.png)
-
-![](<../../.gitbook/assets/image (34).png>)
+* Google Calendar - Using a valid google email account, you can search for public calendars.

@@ -73,26 +73,46 @@ The US government loves paperwork, and thanks to many initiatives like the Freed
 * [OSHINT TRADINT Links](https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/business-research-and-trade-intelligence-tradint)
 * [OSHINT FININT Links](https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/financial-intelligence-finint)
 
-{% file src="../../.gitbook/assets/Business (1).html" %}
+<details>
 
-* [https://search.gleif.org/](https://search.gleif.org/) - Look up company information from Global Legal Entity Identifier Foundation (GLEIF).
-* [https://opencorporates.com](https://opencorporates.com) - Giant public database of corporate information.
-* [Public Records ](https://www.blackbookonline.info/)- Search public government records for entries relating to your target.
-* [PACER Court Case documents](https://pacer.uscourts.gov/)
-* [Legacy.com Obituary Search](https://www.legacy.com/search)
+<summary>Legal Records Search Tools</summary>
+
 * [Background checks](https://freebackgroundcheck.org/) - Search for mentions of a person in court cases, contact information, assets, police records and much more!
-* [SEC filings](https://www.sec.gov/edgar.shtml) - All companies, foreign and domestic, are required to file registration statements, periodic reports, and other forms electronically through EDGAR. Anyone can access and download this information for free. Here you'll find links to a complete list of filings available through EDGAR and instructions for searching the EDGAR database.
-* [Vital Records Search Tools](https://stevemorse.org/index.html) - This site contains tools for finding immigration records, census records, vital records, and for dealing with calendars, maps, foreign alphabets, and numerous other applications. Some of these tools fetch data from other websites but do so in more versatile ways than the search tools provided on those websites. Created by Stephen P, Morse.
 * [https://www.judyrecords.com/](https://www.judyrecords.com/) - Search over 580 million United States court cases.
 * [https://case.law/](https://case.law/) - A free tool that allows you to search over 1.7 million U.S. federal cases and over 4.9 million state cases.
 * [https://www.courtrecord.net/](https://www.courtrecord.net/) - Search complete and up-to-date public court records in the U.S.
 * [https://publicrecords.searchsystems.net/](https://publicrecords.searchsystems.net/) - Search for United States public records.
-* [https://arrests.org](https://arrests.org) -&#x20;
+* [https://arrests.org](https://arrests.org)&#x20;
+* [Public Records ](https://www.blackbookonline.info/)- Search public government records for entries relating to your target.
+* [PACER Court Case documents](https://pacer.uscourts.gov/)
+
+</details>
+
+<details>
+
+<summary>Personell Records</summary>
+
+* [Vital Records Search Tools](https://stevemorse.org/index.html) - This site contains tools for finding immigration records, census records, vital records, and for dealing with calendars, maps, foreign alphabets, and numerous other applications. Some of these tools fetch data from other websites but do so in more versatile ways than the search tools provided on those websites. Created by Stephen P, Morse.
+* [Legacy.com Obituary Search](https://www.legacy.com/search)
+
+
+
+</details>
+
+<details>
+
+<summary>Business Records</summary>
+
+* [https://search.gleif.org/](https://search.gleif.org/) - Look up company information from Global Legal Entity Identifier Foundation (GLEIF).
+* [https://opencorporates.com](https://opencorporates.com) - Giant public database of corporate information.
+* [SEC filings](https://www.sec.gov/edgar.shtml) - All companies, foreign and domestic, are required to file registration statements, periodic reports, and other forms electronically through EDGAR. Anyone can access and download this information for free. Here you'll find links to a complete list of filings available through EDGAR and instructions for searching the EDGAR database.
+
+</details>
+
+{% file src="../../.gitbook/assets/Business (1).html" %}
 
 ## Investigaiton MindMaps
 
 ![](<../../.gitbook/assets/image (37).png>)
 
-*
-
-    ![](<../../.gitbook/assets/image (26).png>)
+![](<../../.gitbook/assets/image (26).png>)

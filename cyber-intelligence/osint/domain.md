@@ -161,6 +161,6 @@ For when you want to look at a site, without interacting with it.
 
 </details>
 
-**Here is a fantastic workflow mindmap for investigating a domain name written by Michael Bazzell of IntelTechniques**
+## **Investigation Mind Maps**
 
 ![](<../../.gitbook/assets/image (40).png>)
