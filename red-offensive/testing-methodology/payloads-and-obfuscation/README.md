@@ -69,6 +69,7 @@
 * [DNSStager](https://github.com/mhaskar/DNSStager) - DNSStager will create a malicious DNS server that handles DNS requests to your domain and return your payload as a response to specific record requests such as `AAAA` or `TXT` records after splitting it into chunks and encoding the payload using different algorithms.
 * [obscureV4](https://github.com/dagonis/obscureV4) - Obscure an IPv4 address into over 100 different formats that still work for connecting to network resources. Useful for bypassing web application firewalls and intrusion detection systems.
 * [TerraLdr](https://github.com/ORCx41/TerraLdr) - A Payload Loader Designed With Advanced Evasion Features
+* [EncryptedReaper](https://github.com/ItsCyberAli/EncryptedReaper) - A program to encrypt a binary to bypass static detection and aid in loader or dropper development and hide your payload in the resource section.
 
 ## Guides and Reference
 

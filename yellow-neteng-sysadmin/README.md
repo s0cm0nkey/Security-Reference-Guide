@@ -72,6 +72,7 @@
   * _Operator Handbook: Windows\_Ports - pg. 365_
 * Windows Local File Systems - [https://tinyurl.com/35snns2k](https://tinyurl.com/35snns2k)
 * Windows Registry - [https://docs.microsoft.com/en-us/windows/win32/sysinfo/registry](https://docs.microsoft.com/en-us/windows/win32/sysinfo/registry)
+  * [https://posts.specterops.io/the-defenders-guide-to-the-windows-registry-febe241abc75?gi=6e7da1428d77](https://posts.specterops.io/the-defenders-guide-to-the-windows-registry-febe241abc75?gi=6e7da1428d77)
   * _Operator Handbook: Windows\_Registry- pg. 370_
 * Windows Administration Tools - [https://tinyurl.com/hwmv4cvt](https://tinyurl.com/hwmv4cvt)
 * Microsoft Active Directory
