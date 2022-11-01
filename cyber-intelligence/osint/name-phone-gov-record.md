@@ -1,10 +1,12 @@
 # Name, Phone, Gov Record
 
-![](<../../.gitbook/assets/image (37).png>)
-
 ## **People Search/PII**
 
 This section will get stalker-ish real quick. While limited in usefulness for a penetration test, it can help you discover all the interesting data surrounding a person, or link data you have found back to an individual. For those who would like a premium all in one option, there are a few handy platforms that can make collection faster and easier.
+
+<details>
+
+<summary>People/PII Search tools</summary>
 
 * [https://sociallinks.io/](https://sociallinks.io/) - Premium collection of OSINT tools focusing on data gathered from social media and other sits.
   * [Gamayun](https://sociallinks.io/products/gamayun) - Gamayun is a web based tool designed for conducting OSINT investigations when searching for emails, locations, phone number, aliases, and photos.
@@ -15,7 +17,11 @@ This section will get stalker-ish real quick. While limited in usefulness for a 
 * [https://effectgroup.io](https://effectgroup.io) - One of the best tools for searching people by username, email address, real name or phone number and build a dossier on your target. Searches social media sites, data breaches, documents and much more. Requires a paid subscription after first search.
 * [https://medium.com/the-first-digit/osint-how-to-find-information-on-anyone-5029a3c7fd56](https://medium.com/the-first-digit/osint-how-to-find-information-on-anyone-5029a3c7fd56)
 
-### Name Search
+</details>
+
+<details>
+
+<summary>Name Search</summary>
 
 Name search records can get muddy really quickly when dealing with names like "John Smith", however many tools will allow you refine the search with other data points such as location or other context. As with any search tool, the more data you feed it, the more accurate your results will be. As always I like to start with one of Michael Bazzell's handy tools, **Name.html**. This tool will search databases of names that will return associated data points for building a full profile of your target. From here, the next step is to start looking for any public records that may be associated with the name you are searching for. Remember to use location to aid in context.
 
@@ -28,13 +34,15 @@ Name search records can get muddy really quickly when dealing with names like "J
 * [https://verecor.com/](https://verecor.com/) - Generic people search site for U.S. citizens.
 * [https://ufind.name/](https://ufind.name/) - Search for a person's name and see matching results including LinkedIn and Facebook accounts, white page results, vehicle registration database entries, marketing data and more.
 
+</details>
+
 {% file src="../../.gitbook/assets/Name (1).html" %}
 
 ## Telephone Numbers
 
-{% file src="../../.gitbook/assets/Telephone.html" %}
+<details>
 
-![](<../../.gitbook/assets/image (26).png>)
+<summary>Telephone Number Lookup Tools</summary>
 
 * [Carrier lookup](https://freecarrierlookup.com/) - Enter a phone number and returns the carrier name and whether the number is wireless or landline.
 * [NumLookup](https://www.numlookup.com/) - Free reverse phone lookup
@@ -53,6 +61,10 @@ Name search records can get muddy really quickly when dealing with names like "J
 * [sync.me](https://sync.me/) - Find out who called
 * [EmobileTracker](https://www.emobiletracker.com/) - Track Mobile Owner Name, Location and Mobile Service Provider
 * [Reverse Phone Lookup](https://www.reversephonelookup.com/) - Find Out The Owner Of A Phone Number
+
+</details>
+
+{% file src="../../.gitbook/assets/Telephone.html" %}
 
 ## Government and Business Records
 
@@ -76,3 +88,11 @@ The US government loves paperwork, and thanks to many initiatives like the Freed
 * [https://www.courtrecord.net/](https://www.courtrecord.net/) - Search complete and up-to-date public court records in the U.S.
 * [https://publicrecords.searchsystems.net/](https://publicrecords.searchsystems.net/) - Search for United States public records.
 * [https://arrests.org](https://arrests.org) -&#x20;
+
+## Investigaiton MindMaps
+
+![](<../../.gitbook/assets/image (37).png>)
+
+*
+
+    ![](<../../.gitbook/assets/image (26).png>)
