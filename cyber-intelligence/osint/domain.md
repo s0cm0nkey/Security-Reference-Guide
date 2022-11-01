@@ -1,12 +1,23 @@
 # Domain
 
-![](<../../.gitbook/assets/image (40).png>)
-
 ## Domains
+
+A **domain name** is a [string](https://en.wikipedia.org/wiki/String\_\(computer\_science\)) that identifies a realm of administrative autonomy, authority or control within the [Internet](https://en.wikipedia.org/wiki/Internet). Domain names are used in various networking contexts and for application-specific naming and addressing purposes. In general, a domain name identifies a [network domain](https://en.wikipedia.org/wiki/Network\_domain) or an [Internet Protocol](https://en.wikipedia.org/wiki/Internet\_Protocol) (IP) resource, such as a personal computer used to access the Internet, or a server computer. Domain names are often used to identify services provided through the Internet, such as [websites](https://en.wikipedia.org/wiki/Website) and [email](https://en.wikipedia.org/wiki/Email) services
 
 Domains, more than almost any other target, have one of the largest assortments of associated data points. The most important that we will look for out of this section is the Registration data, the hosting data, site information, archived data, and analytics.
 
-**Domain.html**
+## **Whois Vs. RDAP**
+
+Whois is a great tool for gathering registration data for IP addresses and domains. The only problem with it is that there is not a clearly defined structure to organize registration data points and keep them maintained. Enter RDAP. A new Standard as of 2019, RDAP lookups will quickly replace WHOIS lookups.&#x20;
+
+* RDAP lookup tool - [https://client.rdap.org](https://client.rdap.org)
+* General information on RDAP - [https://www.icann.org/rdap](https://www.icann.org/rdap)
+
+## Domain Analysis Tools
+
+<details>
+
+<summary><strong>Domain.html</strong></summary>
 
 Domain.html is a tool that allows us to research multiple data points associated with a domain that might be handy during an investigation.
 
@@ -18,9 +29,15 @@ Domain.html is a tool that allows us to research multiple data points associated
 * Threat Data - Discussed under the Blue - Threat Data section
 * Shortened URL metadata.
 
+</details>
+
 {% file src="../../.gitbook/assets/Domain.html" %}
 
-### **Domain Toolboxes**
+<details>
+
+<summary>Domain Toolboxes</summary>
+
+
 
 These next few tools are collections of utilities focused around domains. Some can be used for research on other network artifacts like IP addresses and email records, but DNS records and domain related metadata is really where they shine.
 
@@ -31,14 +48,11 @@ These next few tools are collections of utilities focused around domains. Some c
 * [DNSLytics](https://dnslytics.com/) - Find out everything about a domain name, IP address or provider. Discover relations between them and see historical data. Use it for your digital investigation, fraud prevention or brand protection.
 * [HostSpider](https://github.com/h3x0crypt/HostSpider) - Command line tool that gathers tons of information about a domain including DNS records, subdomains, WHOIS, Cloudflare IP, and more!
 
-### **Whois Vs. RDAP**
+</details>
 
-Whois is a great tool for gathering registration data for IP addresses and domains. The only problem with it is that there is not a clearly defined structure to organize registration data points and keep them maintained. Enter RDAP. A new Standard as of 2019, RDAP lookups will quickly replace WHOIS lookups.&#x20;
+<details>
 
-* RDAP lookup tool - [https://client.rdap.org](https://client.rdap.org)
-* General information on RDAP - [https://www.icann.org/rdap](https://www.icann.org/rdap)
-
-### **Sub-domains**
+<summary>Sub-domain <strong>Discovery</strong></summary>
 
 There are tons of highly effective tools for subdomain enumeration and brute forcing, but they can be quite noisy. During the Passive Recon phase of a penetration test, we can start with any subdomains recorded by other sources to plan out our attack/test.
 
@@ -51,7 +65,11 @@ There are tons of highly effective tools for subdomain enumeration and brute for
   * [https://tryhackme.com/room/rpsublist3r](https://tryhackme.com/room/rpsublist3r)
 * [puredns](https://github.com/d3mondev/puredns) - Puredns is a fast domain resolver and subdomain bruteforcing tool that can accurately filter out wildcard subdomains and DNS poisoned entries.
 
-### **Domain Certificates**
+</details>
+
+<details>
+
+<summary>Domain Certificates</summary>
 
 Domain Certificates are an interesting and useful item to research when mapping out a target domain. Beyond the various attacks that can be performed by exploiting these certificates, looking up the domain certificates can lead to discovery of hosts, sub-domains, and related targets that were previously undiscovered.
 
@@ -65,14 +83,22 @@ Domain Certificates are an interesting and useful item to research when mapping 
 * [Google Transparency Report](https://transparencyreport.google.com/https/certificates) - A tool used to look up all of a domain’s certificates that are present in [active public Certificate Transparency logs](https://www.certificate-transparency.org/known-logs)
 * [https://sslmate.com/labs/ct\_policy\_analyzer/](https://sslmate.com/labs/ct\_policy\_analyzer/) - Certificate Transparency Policy Analyzer
 
-### **Web Site Change Tracking**
+</details>
+
+<details>
+
+<summary>Web Site Change Tracking</summary>
 
 Some times a target will change a website and you will want to be notified right away, usually to see what has changed and how you can exploit it.
 
 * [Follow that page](https://followthatpage.com/) - Follow That Page is a change detection and notification service that sends you an email when your favorite web pages have changed.
 * [Visual Ping](https://visualping.io/) - Tool that can track multiple different kinds of changes in a particular webpage and alert on specific conditions.
 
-### URL Shortening and Redirections
+</details>
+
+<details>
+
+<summary>URL Shortening and Redirections</summary>
 
 * [https://shorteners.grayhatwarfare.com](https://shorteners.grayhatwarfare.com) - search URL Shorteners
 * [urlhunter](https://github.com/utkusen/urlhunter) - a recon tool that allows searching on URLs that are exposed via shortener services
@@ -87,19 +113,31 @@ Some times a target will change a website and you will want to be notified right
   * tiny.cc - add =
   * tunyurl.com - add "preview." to the beginning of the url.
 
-### Similar Web Site Search
+</details>
+
+<details>
+
+<summary>Similar Web Site Search</summary>
 
 * [https://www.similarsites.com/](https://www.similarsites.com/) - Enter a website URL and view websites that are similar.
 * [https://siteslike.com/](https://siteslike.com/) - Enter a URL or keyword and view websites that are similar or match your keyword
 * [https://www.similarweb.com/](https://www.similarweb.com/) - A great tool for finding similar and/or competitor websites. Search via website URL.
 
-### Browser Proxy/Simulator
+</details>
+
+<details>
+
+<summary>Browser Proxy/Simulator</summary>
 
 For when you want to look at a site, without interacting with it.
 
 * [https://www.wannabrowser.net/](https://www.wannabrowser.net/) - With Wannabroser you can have a look at the HTML-source code of any website from the view of any User-Agent you like. It's even possible to detect simple cloaking using Wannabrowser if the cloaking is just based on the visiting User-Agent.
 * [https://www.browserling.com/](https://www.browserling.com/) - Used for browser testing, but can be used for safely looking at various sites.
 * [https://www.url2png.com/](https://www.url2png.com/) - Capture snapshots of any website
+
+</details>
+
+
 
 ### **Misc. Utilities**
 
@@ -120,3 +158,6 @@ For when you want to look at a site, without interacting with it.
 * [cf-check](https://github.com/dwisiswant0/cf-check) - Check an Host is Owned by CloudFlare.
 * [AnalyticsRelationships](https://github.com/Josue87/AnalyticsRelationships) - Get related domains / subdomains by looking at Google Analytics IDs
 * [https://lots-project.com/?s=09](https://lots-project.com/?s=09) - Attackers are using popular legitimate domains when conducting phishing, C\&C, exfiltration and downloading tools to evade detection. The list of websites below allow attackers to use their domain or subdomain.
+*
+
+    ![](<../../.gitbook/assets/image (40).png>)

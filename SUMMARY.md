@@ -6,7 +6,7 @@
     * [Search Engines](cyber-intelligence/osint/search-engines/README.md)
       * [Goohak.sh Code](cyber-intelligence/osint/search-engines/goohak.sh-code.md)
       * [Google Dorking](cyber-intelligence/osint/search-engines/google-dorking-cheatsheet.md)
-    * [Cyber Search](cyber-intelligence/osint/cyber-search.md)
+    * [Cyber Search Engines](cyber-intelligence/osint/cyber-search.md)
     * [Dark-Web Search](cyber-intelligence/osint/dark-web-search.md)
     * [IP Address](cyber-intelligence/osint/ip-address.md)
     * [Domain](cyber-intelligence/osint/domain.md)
