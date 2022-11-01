@@ -6,9 +6,7 @@ Searching the Dark/Deep web is a great intelligence activity that can yield a mu
 
 \*Darknet and .onion sites change frequently. This list may not be up to date.
 
-<details>
-
-<summary>Clearnet Search Engines</summary>
+### Clearnet Search Engines
 
 * [Ahmia](https://ahmia.fi/) -  Ahmia searches hidden services on the Tor network. To access these hidden services, you need the [Tor browser bundle](https://www.torproject.org/projects/torbrowser.html).
 * [Dark Search](https://darksearch.io/) - A clearnet search engine for searching the Dark Web
@@ -19,21 +17,13 @@ Searching the Dark/Deep web is a great intelligence activity that can yield a mu
 * [Onion Search Engine (+maps, mail and pastebin)](https://onionsearchengine.com/)
 * [KILOS Darknet Search Engine](http://dnmugu4755642434.onion.pet/captcha)
 
-</details>
-
-<details>
-
-<summary>Invisible Internet Project (I2P)</summary>
+### Invisible Internet Project (I2P)
 
 * [https://i2psearch.com/](https://i2psearch.com/) - A I2P search engine. I2P gateway is used for the search results to access I2P hidden services, known as "eepsites".
 * [https://ahmia.fi/i2p/](https://ahmia.fi/i2p/) - Another great I2P search engine.
 * [http://nekhbet.com/i2p\_links.shtml](http://nekhbet.com/i2p\_links.shtml) - A neatly organized directory of eepsites.
 
-</details>
-
-<details>
-
-<summary>Deep/Darknet Search Utility</summary>
+### Deep/Darknet Search Utility
 
 * [Onion Link](http://onionlink.online) - Constantly curated list of popular Dark Web links.
 * [Tor2Web ](https://tor2web.org/)- Tor2web is a software project to allow [Tor hidden services](https://en.wikipedia.org/wiki/List\_of\_Tor\_hidden\_services) to be accessed from a standard [browser](https://en.wikipedia.org/wiki/Web\_browser) without being connected to the [Tor network](https://en.wikipedia.org/wiki/Tor\_\(anonymity\_network\))
@@ -41,11 +31,7 @@ Searching the Dark/Deep web is a great intelligence activity that can yield a mu
 * [https://www.darkowl.com/darknetdataproducts](https://www.darkowl.com/darknetdataproducts) - A great tool for searching through different darknets including TOR, I2P, ZeroNet and paste sites. Requires a paid subscription.
 * [https://iaca-darkweb-tools.com](https://iaca-darkweb-tools.com) - A collection of darkweb search tools. Allows you to query .onion search engines, marketplaces and social media sites.
 
-</details>
-
-<details>
-
-<summary><a href="https://ipfs.io/">IPFS - Interplanetary File System</a></summary>
+### [IPFS - Interplanetary File System](https://ipfs.io/)
 
 A peer-to-peer hypermedia protocol designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open.
 
@@ -53,11 +39,7 @@ A peer-to-peer hypermedia protocol designed to preserve and grow humanity's know
 * [https://ipfs-search.com/#/search](https://ipfs-search.com/#/search) - Another search engine for IPFS.
 * [https://awesome.ipfs.io/datasets/](https://awesome.ipfs.io/datasets/) - A huge collection of all sorts of different data sets hosted via IPFS.
 
-</details>
-
-<details>
-
-<summary>Misc Sites and Tools</summary>
+### Misc Sites and Tools
 
 * [Dark Web Exposure and Phishing Detection Test](https://www.immuniweb.com/darkweb/)
 * [Onion Search ](https://github.com/megadose/OnionSearch)-  OnionSearch is a Python3 script that scrapes urls on different ".onion" search engines.
@@ -67,15 +49,9 @@ A peer-to-peer hypermedia protocol designed to preserve and grow humanity's know
 * [https://darktracer.com/](https://darktracer.com/) - Darkweb intelligence too. Has a free version for a limited number of queries.
 * [https://socradar.io/labs/darkmirror/](https://socradar.io/labs/darkmirror/) - Darkweb forum monitoring service
 
-</details>
-
-<details>
-
-<summary>Reference</summary>
+### Reference
 
 * [https://www.osintcombine.com/post/dark-web-searching](https://www.osintcombine.com/post/dark-web-searching)
 * [https://www.osintme.com/index.php/2019/11/24/darknet-diving-conducting-osint-on-onion-sites/](https://www.osintme.com/index.php/2019/11/24/darknet-diving-conducting-osint-on-onion-sites/)
 * [https://www.osintme.com/index.php/2020/11/21/list-of-darknet-markets-for-investigators/](https://www.osintme.com/index.php/2020/11/21/list-of-darknet-markets-for-investigators/)
 * [https://webhose.io/blog/dark-web/the-top-5-dark-web-search-engines/](https://webhose.io/blog/dark-web/the-top-5-dark-web-search-engines/)
-
-</details>

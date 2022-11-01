@@ -1,47 +1,29 @@
-# Cyber Search Engines
+# Cyber Search
 
-## [Shodan](https://www.shodan.io/)&#x20;
+## **Cyber Search Engines and Internet Scanners**
 
-Shodan is often called the "Hacker's Search Engine". Shodan has servers scanning the entire internet for devices. Once it finds them, it maps their ports and collects other useful information. Shodan has advanced search commands similar to google dorks. Shodan also has a flexible API that can be leveraged into many other tools.
-
-* [https://cli.shodan.io/](https://cli.shodan.io/)
-* [https://beta.shodan.io/search/filters](https://beta.shodan.io/search/filters)
-* [https://tryhackme.com/room/shodan](https://tryhackme.com/room/shodan)
-* _Operator Handbook: Shodan CLI - pg. 274_
-
-<details>
-
-<summary>Shodan Dorking</summary>
-
-* [Awesome List Collection: Shodan Queries](https://github.com/jakejarvis/awesome-shodan-queries)
-* [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Recon/Shodan%20Dorks.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Recon/Shodan%20Dorks.md)
-* [https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE/blob/master/1-part-100-article/google/Shodan%20Queries.txt](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE/blob/master/1-part-100-article/google/Shodan%20Queries.txt)
-* [https://github.com/humblelad/Shodan-Dorks](https://github.com/humblelad/Shodan-Dorks)
-* [https://github.com/AustrianEnergyCERT/ICS\_IoT\_Shodan\_Dorks](https://github.com/AustrianEnergyCERT/ICS\_IoT\_Shodan\_Dorks)
-* [https://github.com/lothos612/shodan](https://github.com/lothos612/shodan)
-* [https://github.com/IFLinfosec/shodan-dorks](https://github.com/IFLinfosec/shodan-dorks)
-* [https://www.osintme.com/index.php/2021/01/16/ultimate-osint-with-shodan-100-great-shodan-queries/](https://www.osintme.com/index.php/2021/01/16/ultimate-osint-with-shodan-100-great-shodan-queries/)
-
-</details>
+* [Shodan](https://www.shodan.io/) - Shodan is often called the "Hacker's Search Engine". Shodan has servers scanning the entire internet for devices. Once it finds them, it maps their ports and collects other useful information. Shodan has advanced search commands similar to google dorks. Shodan also has a flexible API that can be leveraged into many other tools.
+  * [https://cli.shodan.io/](https://cli.shodan.io/)
+  * [https://beta.shodan.io/search/filters](https://beta.shodan.io/search/filters)
+  * [https://tryhackme.com/room/shodan](https://tryhackme.com/room/shodan)
+  * Shodan Dorking
+    * [Awesome List Collection: Shodan Queries](https://github.com/jakejarvis/awesome-shodan-queries)
+    * [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Recon/Shodan%20Dorks.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Recon/Shodan%20Dorks.md)
+    * [https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE/blob/master/1-part-100-article/google/Shodan%20Queries.txt](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE/blob/master/1-part-100-article/google/Shodan%20Queries.txt)
+    * [https://github.com/humblelad/Shodan-Dorks](https://github.com/humblelad/Shodan-Dorks)
+    * [https://github.com/AustrianEnergyCERT/ICS\_IoT\_Shodan\_Dorks](https://github.com/AustrianEnergyCERT/ICS\_IoT\_Shodan\_Dorks)
+    * [https://github.com/lothos612/shodan](https://github.com/lothos612/shodan)
+    * [https://github.com/IFLinfosec/shodan-dorks](https://github.com/IFLinfosec/shodan-dorks)
+    * [https://www.osintme.com/index.php/2021/01/16/ultimate-osint-with-shodan-100-great-shodan-queries/](https://www.osintme.com/index.php/2021/01/16/ultimate-osint-with-shodan-100-great-shodan-queries/)
+  * _Operator Handbook: Shodan CLI - pg. 274_
 
 {% embed url="https://youtu.be/v2EdwgX72PQ" %}
-
-## Cyber Search Tools
-
-<details>
-
-<summary>Internet Asset Search Engines</summary>
-
-Asset Search Engines are fantastic tools that regular scan the internet taking inventory of every entity that they can detect. Using large networks of sensors and scanners, they can document items like registration information, open ports, documented network traffic, and much more.
 
 * [Spyse](https://spyse.com/) - The Internet Asset Search Engine. Spyse has some advanced scanning features that can allow you to discover seen vulnerabilities by CVE score or subdomains, on top of detailed metadata on your target. With its heavy toolset and API functionality, it is a popular choice for automated enrichment.
 * [https://fullhunt.io/](https://fullhunt.io/) - **FullHunt** is the attack surface database of the entire Internet.
 * [Maltiverse](https://maltiverse.com/search) - A search engine for threat based indicators. Maltiverse also has multiple threat feeds you can ingest into your intel platform for alerting.
-* [Onyphe](https://www.onyphe.io/) - A Cyber Defense Search Engine for open-source and cyber threat intelligence data collected by crawling various sources available on the Internet or by listening to Internet background noise. ONYPHE does correlate this information with data gathered by performing active Internet scanning for connected devices and also by crawling Web site URLs.&#x20;
+* [Onyphe](https://www.onyphe.io/) - A Cyber Defense Search Engine for open-source and cyber threat intelligence data collected by crawling various sources available on the Internet or by listening to Internet background noise. ONYPHE does correlate this information with data gathered by performing active Internet scanning for connected devices and also by crawling Web site URLs.
   * [https://www.onyphe.io/documentation/dorkpedia](https://www.onyphe.io/documentation/dorkpedia)
-
-<!---->
-
 * [IntellX](https://intelx.io/) - Search Engine that allows searching with selectors, i.e. specific search terms such as email addresses, domains, URLs, IPs, CIDRs, Bitcoin addresses, IPFS hashes, etc. It searches in places such as the darknet, document sharing platforms, whois data, public data leaks and others. It also keeps a historical data archive of results, similar to how the Wayback Machine from archive.org stores historical copies of websites.
 * [https://synapsint.com/](https://synapsint.com/) - The unified OSINT research tool that allows you to search for various data points about different indicators.
 * [https://natlas.io/](https://natlas.io/) - Scaling Network Scanning Utility
@@ -58,16 +40,10 @@ Asset Search Engines are fantastic tools that regular scan the internet taking i
 * [https://leakix.net/](https://leakix.net/) - Search LeakIX for host data leaks, open ports, software and geoip.
 * [Riddler](https://riddler.io/) - Allows you to search in a high quality dataset
 
-</details>
-
-<details>
-
-<summary>Favicon tools</summary>
+### Favicon tools
 
 * [FavFreak](https://github.com/devanshbatham/FavFreak) - Weaponizing favicon.ico for BugBounties , OSINT and what not
   * [https://medium.com/@Asm0d3us/weaponizing-favicon-ico-for-bugbounties-osint-and-what-not-ace3c214e139](https://medium.com/@Asm0d3us/weaponizing-favicon-ico-for-bugbounties-osint-and-what-not-ace3c214e139)
 * [fav-up](https://github.com/pielco11/fav-up) - IP lookup by favicon using Shodan. Helps to find IP addresses hidden behind Cloudflare
   * [https://pielco11.ovh/posts/cloud-hunting/](https://pielco11.ovh/posts/cloud-hunting/)
 * [https://besticon.herokuapp.com/](https://besticon.herokuapp.com/) - A service finding icons on web sites
-
-</details>

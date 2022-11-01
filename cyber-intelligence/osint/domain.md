@@ -137,9 +137,9 @@ For when you want to look at a site, without interacting with it.
 
 </details>
 
+<details>
 
-
-### **Misc. Utilities**
+<summary>Misc. Utilities</summary>
 
 * [DNPedia](https://dnpedia.com/) - Domain Name Solutions, Statistics, Scripts, News and Tools
 * [https://riddler.io/](https://riddler.io/) - Obtain network information from F-Secure Riddler.io API.
@@ -158,6 +158,9 @@ For when you want to look at a site, without interacting with it.
 * [cf-check](https://github.com/dwisiswant0/cf-check) - Check an Host is Owned by CloudFlare.
 * [AnalyticsRelationships](https://github.com/Josue87/AnalyticsRelationships) - Get related domains / subdomains by looking at Google Analytics IDs
 * [https://lots-project.com/?s=09](https://lots-project.com/?s=09) - Attackers are using popular legitimate domains when conducting phishing, C\&C, exfiltration and downloading tools to evade detection. The list of websites below allow attackers to use their domain or subdomain.
-*
 
-    ![](<../../.gitbook/assets/image (40).png>)
+</details>
+
+**Here is a fantastic workflow mindmap for investigating a domain name written by Michael Bazzell of IntelTechniques**
+
+![](<../../.gitbook/assets/image (40).png>)
