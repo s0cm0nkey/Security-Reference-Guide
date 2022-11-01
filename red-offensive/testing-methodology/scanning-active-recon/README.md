@@ -17,6 +17,34 @@ nmap --script broadcast-dhcp-discover
 ```
 {% endtab %}
 
+{% tab title="DNS" %}
+AD-DS (Active Directory Domain Services) rely on DNS SRV RR (service location resource records). Those records can be queried to find the location of some servers: the global catalog, LDAP servers, the Kerberos KDC and so on.
+
+nslookup is a DNS client that can be used to query SRV records. It usually comes with the [https://packages.debian.org/buster/dnsutils](https://packages.debian.org/buster/dnsutils) package.
+
+```
+# find the PDC (Principal Domain Controller)
+nslookup -type=srv _ldap._tcp.pdc._msdcs.$FQDN_DOMAIN
+​
+# find the DCs (Domain Controllers)
+nslookup -type=srv _ldap._tcp.dc._msdcs.$FQDN_DOMAIN
+​
+# find the GC (Global Catalog, i.e. DC with extended data)
+nslookup -type=srv gc._msdcs.$FQDN_DOMAIN
+​
+# Other ways to find services hosts that may be DCs 
+nslookup -type=srv _kerberos._tcp.$FQDN_DOMAIN
+nslookup -type=srv _kpasswd._tcp.$FQDN_DOMAIN
+nslookup -type=srv _ldap._tcp.$FQDN_DOMAIN
+```
+
+This can also be accomplished by an NMAP Script
+
+```
+nmap --script dns-srv-enum --script-args dns-srv-enum.domain=$FQDN_DOMAIN
+```
+{% endtab %}
+
 {% tab title="Host Cmd" %}
 Name Servers
 
@@ -55,6 +83,10 @@ $ host -t mx domain.com
 {% endtab %}
 
 {% tab title="NBTSCAN" %}
+Just like DNS, the NTB-NS (NetBIOS name service) protocol is used to translate names to IP addresses. By default, it's used as a fallback in AD-DS.
+
+[https://wiki.wireshark.org/NetBIOS/NBNS](https://wiki.wireshark.org/NetBIOS/NBNS)
+
 ```
 nbtscan -r 192.168.0.1/24 #Search in Domain
 ```
@@ -85,52 +117,23 @@ wol.udp [MAC] #Send a WOL as an IPv4 broadcast packet to UDP port 9
 {% endtab %}
 {% endtabs %}
 
+{% tabs %}
+{% tab title="Responder" %}
+
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
+
 
 
 ## **Port-Scanning**
 
-* **Open** port: _SYN --> SYN/ACK --> RST_
-* **Closed** port: _SYN --> RST/ACK_
-* **Filtered** port: _SYN --> \[NO RESPONSE]_
-* **Filtered** port: _SYN --> ICMP message_
+<details>
 
-### **NMAP**&#x20;
-
-{% content-ref url="nmap.md" %}
-[nmap.md](nmap.md)
-{% endcontent-ref %}
-
-### [Masscan](https://github.com/robertdavidgraham/masscan)&#x20;
-
-This is an Internet-scale port scanner. It can scan the entire Internet in under 5 minutes, transmitting 10 million packets per second, from a single machine.
-
-```
-# sudo apt install masscan 
-# sudo masscan -p [port(s)] [IP CIDR] 
-```
-
-* \-oL \[log file]&#x20;
-* \-e specify interface&#x20;
-* \--rate rate of packet transmission&#x20;
-* \--router-ip - specify the IP address for the appropriate gateway
-
-### Other Port Scanning Tools
-
-* [WebMap](https://github.com/DeadNumbers/WebMap) - Nmap Web Dashboard and Reporting
-* [Scantron](https://github.com/rackerlabs/scantron) - Scantron is a distributed nmap and [Masscan](https://github.com/robertdavidgraham/masscan) scanner comprised of two components. The first is a console node that consists of a web front end used for scheduling scans and storing scan targets and results. The second component is an engine that pulls scan jobs from the console and conducts the actual scanning.
-* [Scanless](https://github.com/vesche/scanless) - This is a Python 3 command-line utility and library for using websites that can perform port scans on your behalf.
-* [naabu](https://github.com/projectdiscovery/naabu) - A fast port scanner written in go with a focus on reliability and simplicity. Designed to be used in combination with other tools for attack surface discovery in bug bounties and pentests
-* [RustScan](https://github.com/RustScan/RustScan) - The Modern Port Scanner. **Find ports quickly (3 seconds at its fastest)**. Run scripts through our scripting engine (Python, Lua, Shell supported).
-  * [https://reconshell.com/rustscan-faster-port-scanning-tool/](https://reconshell.com/rustscan-faster-port-scanning-tool/)
-  * [https://tryhackme.com/room/rustscan](https://tryhackme.com/room/rustscan)
-* [knocker](https://www.kali.org/tools/knocker/) - Knocker is a new, simple, and easy to use TCP security port scanner written in C, using threads. It is able to analyze hosts and the network services which are running on them.
-* [unicornscan](https://www.kali.org/tools/unicornscan/) - Unicornscan is an attempt at a User-land Distributed TCP/IP stack. It is intended to provide a researcher a superior interface for introducing a stimulus into and measuring a response from a TCP/IP enabled device or network.
-  * [https://linuxhint.com/unicornscan\_beginner\_tutorial/](https://linuxhint.com/unicornscan\_beginner\_tutorial/)
-* [unimap](https://github.com/Edu4rdSHL/unimap) - Scan only once by IP address and reduce scan times with Nmap for large amounts of data.
-
-{% embed url="https://youtu.be/X_DdYUeKS-o" %}
-
-### Manual Port Checks
+<summary>Manual Port Checks</summary>
 
 Netcat banner grab
 
@@ -143,6 +146,82 @@ Telnet banner grab
 ```
 telnet 10.10.10.10 port
 ```
+
+</details>
+
+<details>
+
+<summary>Probe Response CheatSheet</summary>
+
+* **Open** port: _SYN --> SYN/ACK --> RST_
+
+<!---->
+
+* **Closed** port: _SYN --> RST/ACK_
+
+<!---->
+
+* **Filtered** port: _SYN --> \[NO RESPONSE]_
+
+<!---->
+
+* **Filtered** port: _SYN --> ICMP message_
+
+</details>
+
+### **Tools**
+
+{% content-ref url="nmap.md" %}
+[nmap.md](nmap.md)
+{% endcontent-ref %}
+
+<details>
+
+<summary><a href="https://github.com/robertdavidgraham/masscan">Masscan</a></summary>
+
+This is an Internet-scale port scanner. It can scan the entire Internet in under 5 minutes, transmitting 10 million packets per second, from a single machine.
+
+```
+# sudo apt install masscan 
+# sudo masscan -p [port(s)] [IP CIDR] 
+```
+
+* \-oL \[log file]&#x20;
+
+<!---->
+
+* \-e specify interface&#x20;
+
+<!---->
+
+* \--rate rate of packet transmission&#x20;
+
+<!---->
+
+* \--router-ip - specify the IP address for the appropriate gateway
+
+</details>
+
+<details>
+
+<summary><a href="https://www.kali.org/tools/unicornscan/">UnicornScan</a></summary>
+
+Unicornscan is an attempt at a User-land Distributed TCP/IP stack. It is intended to provide a researcher a superior interface for introducing a stimulus into and measuring a response from a TCP/IP enabled device or network.
+
+* [https://linuxhint.com/unicornscan\_beginner\_tutorial/](https://linuxhint.com/unicornscan\_beginner\_tutorial/)
+* Port Scanning with UnicornScan - [https://youtu.be/X\_DdYUeKS-o](https://youtu.be/X\_DdYUeKS-o)
+
+</details>
+
+* [WebMap](https://github.com/DeadNumbers/WebMap) - Nmap Web Dashboard and Reporting
+* [Scantron](https://github.com/rackerlabs/scantron) - Scantron is a distributed nmap and [Masscan](https://github.com/robertdavidgraham/masscan) scanner comprised of two components. The first is a console node that consists of a web front end used for scheduling scans and storing scan targets and results. The second component is an engine that pulls scan jobs from the console and conducts the actual scanning.
+* [Scanless](https://github.com/vesche/scanless) - This is a Python 3 command-line utility and library for using websites that can perform port scans on your behalf.
+* [naabu](https://github.com/projectdiscovery/naabu) - A fast port scanner written in go with a focus on reliability and simplicity. Designed to be used in combination with other tools for attack surface discovery in bug bounties and pentests
+* [RustScan](https://github.com/RustScan/RustScan) - The Modern Port Scanner. **Find ports quickly (3 seconds at its fastest)**. Run scripts through our scripting engine (Python, Lua, Shell supported).
+  * [https://reconshell.com/rustscan-faster-port-scanning-tool/](https://reconshell.com/rustscan-faster-port-scanning-tool/)
+  * [https://tryhackme.com/room/rustscan](https://tryhackme.com/room/rustscan)
+* [knocker](https://www.kali.org/tools/knocker/) - Knocker is a new, simple, and easy to use TCP security port scanner written in C, using threads. It is able to analyze hosts and the network services which are running on them.
+* [unimap](https://github.com/Edu4rdSHL/unimap) - Scan only once by IP address and reduce scan times with Nmap for large amounts of data.
 
 ## Application Detection
 
