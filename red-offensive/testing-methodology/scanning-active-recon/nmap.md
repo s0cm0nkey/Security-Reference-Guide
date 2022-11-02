@@ -2,29 +2,38 @@
 
 ## **Links and Resources**
 
-* Documentation and Reference
-  * [https://nmap.org/book/toc.html](https://nmap.org/book/toc.html)&#x20;
-  * [NSEDoc Reference Portal](https://nmap.org/nsedoc/)&#x20;
-  * [https://www.amazon.com/Nmap-Network-Scanning-Official-Discovery/dp/0979958717](https://www.amazon.com/Nmap-Network-Scanning-Official-Discovery/dp/0979958717)&#x20;
-  * [https://blogs.sans.org/pen-testing/files/2013/10/NmapCheatSheetv1.1.pdf](https://blogs.sans.org/pen-testing/files/2013/10/NmapCheatSheetv1.1.pdf)&#x20;
-  * [https://blog.zsec.uk/nmap-rtfm/](https://blog.zsec.uk/nmap-rtfm/)&#x20;
-  * [https://gtfobins.github.io/gtfobins/nmap/](https://gtfobins.github.io/gtfobins/nmap/)
-  * _Operator Handbook: NMAP - pg. 222_
-  * _Penetration Testing: Port Scanning with NMAP - pg.125_
-* NMAP Scripting
-  * [https://nmap.org/book/man-nse.html](https://nmap.org/book/man-nse.html)&#x20;
-  * [Ultimate List of Nmap NSE Scripts (Interactive Spreadsheet) - InfosecMatter](https://www.infosecmatter.com/ultimate-list-of-nmap-nse-scripts-interactive-table/)&#x20;
-* Nmap for pentester articles
-  * [Nmap for Pentester: Host Discovery](https://www.hackingarticles.in/nmap-for-pentester-host-discovery/)
-  * [Nmap for Pentester: Output Format Scan](https://www.hackingarticles.in/nmap-for-pentester-output-format-scan/)
-  * [Nmap for Pentester: Vulnerability Scan](https://www.hackingarticles.in/nmap-for-pentester-vulnerability-scan/)
-  * [Nmap for Pentester: Timing Scan](https://www.hackingarticles.in/nmap-for-pentester-timing-scan/)
-  * [Nmap for Pentester: Ping Scan](https://www.hackingarticles.in/nmap-for-pentester-ping-scan/)
-  * [Nmap for Pentester: Port Status](https://www.hackingarticles.in/nmap-for-pentester-port-status/)
-  * [Nmap for Pentester: Password Cracking](https://www.hackingarticles.in/nmap-for-pentester-password-cracking/)
-* Training
-  * [https://tryhackme.com/room/nmap01](https://tryhackme.com/room/nmap01)
-  * [https://tryhackme.com/room/furthernmap](https://tryhackme.com/room/furthernmap)
+{% tabs %}
+{% tab title="Documentation and Reference" %}
+* [https://nmap.org/book/toc.html](https://nmap.org/book/toc.html)&#x20;
+* [NSEDoc Reference Portal](https://nmap.org/nsedoc/)&#x20;
+* [https://www.amazon.com/Nmap-Network-Scanning-Official-Discovery/dp/0979958717](https://www.amazon.com/Nmap-Network-Scanning-Official-Discovery/dp/0979958717)&#x20;
+* [https://blogs.sans.org/pen-testing/files/2013/10/NmapCheatSheetv1.1.pdf](https://blogs.sans.org/pen-testing/files/2013/10/NmapCheatSheetv1.1.pdf)&#x20;
+* [https://blog.zsec.uk/nmap-rtfm/](https://blog.zsec.uk/nmap-rtfm/)&#x20;
+* [https://gtfobins.github.io/gtfobins/nmap/](https://gtfobins.github.io/gtfobins/nmap/)
+* _Operator Handbook: NMAP - pg. 222_
+* _Penetration Testing: Port Scanning with NMAP - pg.125_
+{% endtab %}
+
+{% tab title="NMAP Scripting" %}
+* [https://nmap.org/book/man-nse.html](https://nmap.org/book/man-nse.html)&#x20;
+* [Ultimate List of Nmap NSE Scripts (Interactive Spreadsheet) - InfosecMatter](https://www.infosecmatter.com/ultimate-list-of-nmap-nse-scripts-interactive-table/)&#x20;
+{% endtab %}
+
+{% tab title="Nmap for pentester articles" %}
+* [Nmap for Pentester: Host Discovery](https://www.hackingarticles.in/nmap-for-pentester-host-discovery/)
+* [Nmap for Pentester: Output Format Scan](https://www.hackingarticles.in/nmap-for-pentester-output-format-scan/)
+* [Nmap for Pentester: Vulnerability Scan](https://www.hackingarticles.in/nmap-for-pentester-vulnerability-scan/)
+* [Nmap for Pentester: Timing Scan](https://www.hackingarticles.in/nmap-for-pentester-timing-scan/)
+* [Nmap for Pentester: Ping Scan](https://www.hackingarticles.in/nmap-for-pentester-ping-scan/)
+* [Nmap for Pentester: Port Status](https://www.hackingarticles.in/nmap-for-pentester-port-status/)
+* [Nmap for Pentester: Password Cracking](https://www.hackingarticles.in/nmap-for-pentester-password-cracking/)
+{% endtab %}
+
+{% tab title="Training" %}
+* [https://tryhackme.com/room/nmap01](https://tryhackme.com/room/nmap01)
+* [https://tryhackme.com/room/furthernmap](https://tryhackme.com/room/furthernmap)
+{% endtab %}
+{% endtabs %}
 
 ## **Commands**
 

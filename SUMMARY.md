@@ -56,7 +56,7 @@
 * [Red - Web App Hacking](web-app-hacking/README.md)
   * [Burp Suite](web-app-hacking/burp-suite.md)
   * [Web App Testing Frameworks](web-app-hacking/web-app-testing-frameworks.md)
-  * [Mapping the Site](web-app-hacking/mapping-the-site.md)
+  * [DNS Scanning/Enumeration - Mapping the Site](web-app-hacking/mapping-the-site.md)
   * [Scanning Utilities](web-app-hacking/scanning-utilities.md)
   * [Web Technologies](web-app-hacking/web-technologies/README.md)
     * [SSL/TLS and Certificates](web-app-hacking/web-technologies/ssl-tls-and-certificates.md)
