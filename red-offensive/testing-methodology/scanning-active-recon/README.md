@@ -350,21 +350,23 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [https://www.youtube.com/watch?v=mEQnVkSG19M](https://www.youtube.com/watch?v=mEQnVkSG19M)
 {% endtab %}
 
-{% tab title="Other Tools" %}
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
+
+###
+
+### **Other Tools**
+
 * [Intrigue](https://github.com/intrigueio/intrigue-core) - Intrigue Core is a framework for discovering attack surface. It discovers security-relevant assets and exposures within the context of projects and can be used with a human-in-the-loop running individual tasks, and/or automated through the use of workflows.
 * [Odin](https://github.com/chrismaddalena/ODIN) - ODIN is Python tool for automating intelligence gathering, asset discovery, and reporting.
 * [AttackSurfaceMapper](https://github.com/superhedgy/AttackSurfaceMapper) - AttackSurfaceMapper (ASM) is a reconnaissance tool that uses a mixture of open source intelligence and active techniques to expand the attack surface of your target. You feed in a mixture of one or more domains, subdomains and IP addresses and it uses numerous techniques to find more targets.
 * [Asnip](https://github.com/harleo/asnip) - Asnip retrieves all IPs of a target organization—used for attack surface mapping in reconnaissance phases.
 * [Microsoft Attack Surface Analyzer](https://github.com/Microsoft/AttackSurfaceAnalyzer) - Attack Surface Analyzer is a [Microsoft](https://github.com/microsoft/) developed open source security tool that analyzes the attack surface of a target system and reports on potential security vulnerabilities introduced during the installation of software or system misconfiguration.
 * [https://ivre.rocks/](https://ivre.rocks/) - IVRE is an open-source framework for network recon. It relies on open-source well-known tools ([Nmap](https://nmap.org/), [Masscan](https://github.com/robertdavidgraham/masscan), [ZGrab2](https://github.com/zmap/zgrab2), [ZDNS](https://github.com/zmap/zdns) and [Zeek (Bro)](https://www.zeek.org/)) to gather data (_network intelligence_), stores it in a database ([MongoDB](https://www.mongodb.com/) is the recommended backend), and provides tools to analyze it.
-{% endtab %}
-{% endtabs %}
 
-## Other Scanning Utilities
-
-<details>
-
-<summary><strong>SSL/TLS Scanning</strong></summary>
+## **SSL/TLS Scanning**
 
 * [SSL Cipher Suite Enum](https://github.com/portcullislabs/ssl-cipher-suite-enum) - Perl script to enumerate supported SSL cipher suites supported by network services (principally HTTPS).
 * [sslScrape](https://github.com/cheetz/sslScrape) - strips hostnames form certs over port 443 connections
@@ -373,15 +375,41 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [testssl.sh](https://github.com/drwetter/testssl.sh) - A free command line tool which checks a server's service on any port for the support of TLS/SSL ciphers, protocols as well as some cryptographic flaws.
 * [https://pentestbook.six2dez.com/enumeration/ssl-tls](https://pentestbook.six2dez.com/enumeration/ssl-tls) - List of commads to test for specific SSL/TLS Vulnerabilities.
 
-</details>
+## DNS Scanning/Enumeration
 
 {% content-ref url="../../../web-app-hacking/mapping-the-site.md" %}
 [mapping-the-site.md](../../../web-app-hacking/mapping-the-site.md)
 {% endcontent-ref %}
 
-<details>
+### **Commands**
 
-<summary>Misc Scanning tools</summary>
+DNS Enumeration
+
+* Host command - find ip address(s) associated with a domain\
+  &#x20;◇ # host \[domain]\
+  &#x20;◇ -t \[mx, txt, cname, etc] specifcy record to return. will default to A record
+* DNS Zone transfer - database replication between realted dns servers.
+  * where the zone file is copied from a master DNS to a slave server
+  * Use the results of previous host commands to get the hostname of DNS servers
+  * \> host -l \[domain name] \[dns server address]
+  * \> host -l test.com ns1.test.com
+    * \-l lists zones
+  * Get name server command
+    * host -t ns megacorpone.com | cut -d " " -f 4
+  * [https://en.wikipedia.org/wiki/DNS\_zone\_transfer](https://en.wikipedia.org/wiki/DNS\_zone\_transfer)
+  * [https://security.stackexchange.com/questions/10452/dns-zone-transfer-attack](https://security.stackexchange.com/questions/10452/dns-zone-transfer-attack)
+* DNSRecon - DNS enumeration script - [https://github.com/darkoperator/dnsrecon](https://github.com/darkoperator/dnsrecon)
+  * \#dnsrecon -d \[domain] -t axfr
+    * \-d specify domain
+    * &#x20;\-t specify the type of enumeration&#x20;
+  * \#dnsrecon -d \[domain] -D \~/name.txt -t brt
+    * this will brute force hostnames
+* DNSenum
+  * \# dnsenum \[domain]
+
+{% embed url="https://youtu.be/rQ-dc5kwRtU" %}
+
+## **Misc Scanning tools**
 
 * [HoneyCaught](https://github.com/aswinmguptha/HoneyCaught) - Honeypot detection tool
 * [Sniffing Bear](https://github.com/MrSuicideParrot/SniffingBear) - A modular and distributed tool developed in python to scan networks for honeypots
@@ -392,4 +420,4 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [firewalk](https://www.kali.org/tools/firewalk/) - Firewalk is an active reconnaissance network security tool that attempts to determine what layer 4 protocols a given IP forwarding device will pass.
 * [ftester](https://www.kali.org/tools/ftester/) - The Firewall Tester (FTester) is a tool designed for testing firewall filtering policies and Intrusion Detection System (IDS) capabilities.
 
-</details>
+****

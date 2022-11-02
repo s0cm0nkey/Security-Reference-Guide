@@ -37,7 +37,9 @@
 
 ## **Commands**
 
-### Handy options&#x20;
+<details>
+
+<summary>Handy options</summary>
 
 * \-sS - Stealthy SYN scan
 * \-sV - Loud version scan, will make complete connection, grab banner, and version info&#x20;
@@ -46,13 +48,21 @@
 * \-Pn - disable ping. Most big companies will have ping diabled on most external entities&#x20;
 * \-n - disable DNS resolution, helps speed up scan
 
-### Basic scan&#x20;
+</details>
+
+<details>
+
+<summary>Basic scan </summary>
 
 ```
 #nmap [IP Address] or nmap [website.com]
 ```
 
-### Specify ports&#x20;
+</details>
+
+<details>
+
+<summary>Specify ports</summary>
 
 Top Ports
 
@@ -96,13 +106,23 @@ Full TCP Scan
 nmap -sC -sV -p- -vv -oA full 10.10.10.10
 ```
 
-### Port knock
+</details>
+
+<details>
+
+<summary>Port knock</summary>
 
 ```
 for x in 7000 8000 9000; do nmap -Pn --host_timeout 201 --max-retries 0 -p $x 10.10.10.10; done
 ```
 
-### Network Sweep&#x20;
+
+
+</details>
+
+<details>
+
+<summary>Network Sweep</summary>
 
 Broad scans then specific on hosts of interest&#x20;
 
@@ -110,13 +130,23 @@ Broad scans then specific on hosts of interest&#x20;
 #nmap -sn 10.0.0.1-254 
 ```
 
-### Banner grabbing&#x20;
+</details>
+
+<details>
+
+<summary>Banner grabbing </summary>
 
 ```
 nmap -sV -v -p- [IP Address]
 ```
 
-### OS scan&#x20;
+
+
+</details>
+
+<details>
+
+<summary>OS scan</summary>
 
 ```
 #sudo nmap -O -sV [IP Address]
@@ -125,10 +155,14 @@ nmap -sV -v -p- [IP Address]
 * \--osscan-guess provides a faster, more aggressive scan, which is useful when Nmap retrieves close to 100% OS detection. However, aggressive scanning may result in missing some ports.
 * \--osscan-limit is an option used to limit what targets to scan. This option is useful when you have a large range of IPs to scan.
 
+</details>
+
 ## NSE - Nmap scripting Engine&#x20;
 
 Nmap Scripting Engine (NSE) allows users to run custom and community generated scripts. ◇ stored in /usr/share/nmap/scripts&#x20;
 
+{% tabs %}
+{% tab title="Basics" %}
 The most basic way of running Nmap scripts is by using the -sC option, invoking the default scripts.
 
 ```
@@ -153,7 +187,9 @@ Run all NSE scripts against found ports
 ```
 $nmap -Pn -sV -O -pT:{TCP ports found},U:{UDP ports found} --script *vuln* $ip
 ```
+{% endtab %}
 
+{% tab title="Vulscan" %}
 ### [vulscan](https://github.com/scipag/vulscan)&#x20;
 
 Advanced vulnerability scanning with Nmap NSE
@@ -168,44 +204,46 @@ $ nmap -sS -sV --script=/usr/share/nmap/scripts/vulnscan/vulscan.nse $ip
 * [https://hakin9.org/vulscan-advanced-vulnerability-scanning-with-nmap-nse/](https://hakin9.org/vulscan-advanced-vulnerability-scanning-with-nmap-nse/)
 * [https://www.computec.ch/projekte/vulscan/](https://www.computec.ch/projekte/vulscan/)
 
+
+{% endtab %}
+{% endtabs %}
+
 ## IDS and IPS Evasion
 
 ****[**https://book.hacktricks.xyz/pentesting/pentesting-network/ids-evasion**](https://book.hacktricks.xyz/pentesting/pentesting-network/ids-evasion)****
 
-### **TTL Manipulation**
-
+{% tabs %}
+{% tab title="TTL Manipulation" %}
 Send some packets with a TTL enough to arrive to the IDS/IPS but not enough to arrive to the final system. And then, send another packets with the same sequences as the other ones so the IPS/IDS will think that they are repetitions and won't check them, but indeed they are carrying the malicious content.
 
 **Nmap option:** `--ttlvalue <value>`
+{% endtab %}
 
-### Avoiding signatures
-
+{% tab title="Junk Data" %}
 Just add garbage data to the packets so the IPS/IDS signature is avoided.
 
 **Nmap option:** `--data-length 25`
+{% endtab %}
 
-### **Fragmented Packets**
-
+{% tab title="Fragmentation" %}
 Just fragment the packets and send them. If the IDS/IPS doesn't have the ability to reassemble them, they will arrive to the final host.
 
-**Nmap option:** `-f`
+**Nmap option**
+{% endtab %}
 
-### **Invalid** _**checksum**_
-
+{% tab title="Invalid checksum" %}
 Sensors usually don't calculate checksum for performance reasons. _****_ So an attacker can send a packet that will be **interpreted by the sensor but rejected by the final host.** Example:Send a packet with the flag RST and a invalid checksum, so then, the IPS/IDS may thing that this packet is going to close the connection, but the final host will discard the packet as the checksum is invalid.
+{% endtab %}
 
-### **Uncommon IP and TCP options**
-
-A sensor might disregard packets with certain flags and options set within IP and TCP headers, whereas the destination host accepts the packet upon receipt.
-
-### **Overlapping**
-
+{% tab title="Overlapping" %}
 It is possible that when you fragment a packet, some kind of overlapping exists between packets (maybe first 8 bytes of packet 2 overlaps with last 8 bytes of packet 1, and 8 last bytes of packet 2 overlaps with first 8 bytes of packet 3). Then, if the IDS/IPS reassembles them in a different way than the final host, a different packet will be interpreted. Or maybe, 2 packets with the same offset comes and the host has to decide which one it takes.
 
 * **BSD**: It has preference for packets with smaller _offset_. For packets with same offset, it will choose the first one.
 * **Linux**: Like BSD, but it prefers the last packet with the same offset.
 * **First** (Windows): First value that comes, value that stays.
 * **Last** (cisco): Last value that comes, value that stays.
+{% endtab %}
+{% endtabs %}
 
 ## Video Instruction
 
