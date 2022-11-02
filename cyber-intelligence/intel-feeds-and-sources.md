@@ -33,15 +33,23 @@ Beyond the daily checkers, regular parsing of "Round-up" style blogs are super h
 
 ## Intelligence Tools and Resources
 
+<details>
 
-
-Intel Resource Collections
+<summary>Intel Resource Collections</summary>
 
 * [Awesome Lists Collection: Threat Intelligence](https://github.com/hslatman/awesome-threat-intelligence)
 * [Awesome Lists Collection: IOCs](https://github.com/sroberts/awesome-iocs)
 * [Awesome Lists Collection: Security Feeds](https://github.com/mrtouch93/awesome-security-feed)
 
+</details>
+
 ### Indicator Gathering and Enrichment Tools
+
+These are tools for collecting, enriching, and shareing threat indicators. Most are open source and focus on indicator sharing within the cyber community and flexibility to work with a wide array of tools that might use the data.
+
+<details>
+
+<summary>Indicator Gathering and Enrichment Tools</summary>
 
 * [CSIRTGadget's CIF: Collective Intelligence Framework](https://csirtgadgets.com/collective-intelligence-framework) - Pulls feeds from multiple locations and makes them available for other systems to use for lookup or enrichment.
 * [Yeti](https://github.com/yeti-platform/yeti) - Yeti is a platform meant to organize observables, indicators of compromise, TTPs, and knowledge on threats in a single, unified repository.
@@ -56,9 +64,15 @@ Intel Resource Collections
 * [TALR](https://github.com/SecurityRiskAdvisors/TALR) - A public repository for the collection and sharing of detection rules in STIX format.
 * [github.com/crits/crits](https://github.com/crits/crits) - CRITs - Collaborative Research Into Threats
 
+</details>
+
 ### MISP
 
-[**MISP**](https://www.misp-project.org/)**:**The Malware Information Sharing Platform - The MISP threat sharing platform is a free and open source software helping information sharing of threat intelligence including cyber security indicators. This tool has the ability to ingest a large number of indicator feeds, enrich indicators, and funnel them into other platforms. It comes with a large array of feeds that come default in the platform, all of which have a high degree of fidelity. Best of all, it comes with modules that allow it to integrate with a slew of other platforms and technologies.
+[**MISP**](https://www.misp-project.org/)**:** The Malware Information Sharing Platform - The MISP threat sharing platform is a free and open source software helping information sharing of threat intelligence including cyber security indicators. This tool has the ability to ingest a large number of indicator feeds, enrich indicators, and funnel them into other platforms. It comes with a large array of feeds that come default in the platform, all of which have a high degree of fidelity. Best of all, it comes with modules that allow it to integrate with a slew of other platforms and technologies.
+
+<details>
+
+<summary>MISP Resources</summary>
 
 * MISP Github - [https://github.com/MISP/MISP](https://github.com/MISP/MISP)
 * MISP Modules - [https://github.com/MISP/misp-modules](https://github.com/MISP/misp-modules)
@@ -69,11 +83,15 @@ Intel Resource Collections
 * [https://www.sans.org/webcasts/sharing-alerts-threat-intelligence-misp-110000](https://www.sans.org/webcasts/sharing-alerts-threat-intelligence-misp-110000)
 * [https://www.sans.org/webcasts/friend-creating-threat-intelligence-capability-103532](https://www.sans.org/webcasts/friend-creating-threat-intelligence-capability-103532)
 
+</details>
+
 {% embed url="https://www.youtube.com/watch?app=desktop&v=00jq7Gbqdz8" %}
 
 ## Intelligence News Feeds
 
-### Government Feeds
+<details>
+
+<summary>Government Feeds</summary>
 
 * FBI Infragaurd - [https://www.infragard.org/](https://www.infragard.org/)
 * CISA
@@ -83,13 +101,21 @@ Intel Resource Collections
 * IC3 News Releases -[https://www.ic3.gov/](https://www.ic3.gov/)
 * Various ISAC - Find an ISAC in your sector
 
-### Intel Platforms
+</details>
+
+<details>
+
+<summary>Intel Platforms</summary>
 
 * IBM X-Force - [https://exchange.xforce.ibmcloud.com/](https://exchange.xforce.ibmcloud.com/)
 * ThreatConnect - [https://app.threatconnect.com/auth/index.xhtml#/](https://app.threatconnect.com/auth/index.xhtml#/)
 * AlienVault - [https://otx.alienvault.com/browse/global?q=\&include\_inactive=0\&sort=-modified\&page=1\&indicatorsSearch=modified:%22%22](https://otx.alienvault.com/browse/global?q=\&include\_inactive=0\&sort=-modified\&page=1\&indicatorsSearch=modified:%22%22)
 
-### Cyber News
+</details>
+
+<details>
+
+<summary>Cyber News</summary>
 
 * Threat Post - [https://threatpost.com/](https://threatpost.com/)
 * PacketStorm -[https://packetstormsecurity.com/](https://packetstormsecurity.com/)
@@ -111,7 +137,11 @@ Intel Resource Collections
 * Security News Wire - [https://securitynewswire.com/index.php/Home](https://securitynewswire.com/index.php/Home)
 * Ars Technica: Security - [https://arstechnica.com/tag/security/](https://arstechnica.com/tag/security/)
 
-### Vulnerability Disclosure
+</details>
+
+<details>
+
+<summary>Vulnerability Disclosure</summary>
 
 * NIST -[https://nvd.nist.gov/vuln/search](https://nvd.nist.gov/vuln/search)
 * Full Disclosure -[https://seclists.org/fulldisclosure/](https://seclists.org/fulldisclosure/)
@@ -122,7 +152,11 @@ Intel Resource Collections
 * VulDB - [https://vuldb.com/](https://vuldb.com/)
 * vFeed -[https://vfeed.io/](https://vfeed.io/)
 
-### Threat Research Blogs
+</details>
+
+<details>
+
+<summary>Threat Research Group Blogs</summary>
 
 * FireEye - [https://www.fireeye.com/blog/threat-research.html](https://www.fireeye.com/blog/threat-research.html)
 * Sophos -[https://news.sophos.com/en-us/](https://news.sophos.com/en-us/)
@@ -143,7 +177,11 @@ Intel Resource Collections
 * Cryptolaemus - [https://paste.cryptolaemus.com/](https://paste.cryptolaemus.com/)
 * Uptycs - [https://www.uptycs.com/blog/tag/threat-research](https://www.uptycs.com/blog/tag/threat-research)
 
-### Solo Researcher Blogs
+</details>
+
+<details>
+
+<summary>Solo Researcher Blogs</summary>
 
 * Krebs on Security - [https://krebsonsecurity.com/](https://krebsonsecurity.com/)
 * Schnier on Security - [https://www.schneier.com/](https://www.schneier.com/)
@@ -162,6 +200,10 @@ Intel Resource Collections
 * Troy Hunt - [https://www.troyhunt.com/](https://www.troyhunt.com/)\
   ZeroSec - [https://blog.zsec.uk/](https://blog.zsec.uk/)
 * Graham Cluely - [https://grahamcluley.com/](https://grahamcluley.com/)
+
+</details>
+
+
 
 ### Corporate Security Blogs
 
