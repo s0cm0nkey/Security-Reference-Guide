@@ -14,6 +14,12 @@ When checking your indicators against the below sources, be sure you are looking
 
 ## Threat Maps
 
+Threat maps are an interesting visual that shows volume trends in traffic and detected cyber attacks against a geolocation match on a world map. Make sure your SOC has these on large TVs so people think it looks cool.
+
+<details>
+
+<summary>Threat Maps</summary>
+
 * [https://threatmap.bitdefender.com](https://threatmap.bitdefender.com)
 * [https://cybermap.kaspersky.com](https://cybermap.kaspersky.com)
 * [https://www.digitalattackmap.com](https://www.digitalattackmap.com)
@@ -30,7 +36,15 @@ When checking your indicators against the below sources, be sure you are looking
 * [https://horizon.netscout.com](https://horizon.netscout.com)
 * [https://securitycenter.sonicwall.com/m/page/worldwide-attacks](https://securitycenter.sonicwall.com/m/page/worldwide-attacks)
 
+</details>
+
 ## Threat Actor Information
+
+Major threat actors are often researched repeatedly in order to build a profile of intelligence around them. This helps with identifying future attacks and giving attribution to the appropriate threat actor.
+
+<details>
+
+<summary>Threat Actor Information</summary>
 
 * [https://darkfeed.io/ransomwiki/](https://darkfeed.io/ransomwiki/) - A site for researchers that keeps track and provides links to various ransomware group darknet sites.
 * [Ransomware Group Site](http://ransomwr3tsydeii4q43vazm7wofla5ujdajquitomtd47cxjtfgwyyd.onion/) - An onion site that provides links and details about ransomware groups currently operating.
@@ -38,9 +52,13 @@ When checking your indicators against the below sources, be sure you are looking
 * [Crowdstrike E-Crime Index](https://adversary.crowdstrike.com/en-US/ecrime-index-ecx/?L=236)
 * [https://malpedia.caad.fkie.fraunhofer.de/](https://malpedia.caad.fkie.fraunhofer.de/) - A resource for rapid identification and actionable context when investigating malware.
 
+</details>
+
 ## **Blacklist Checks and Reputation Data**
 
-### Multi - Blacklist Checkers
+<details>
+
+<summary>Multi - Blacklist Checkers</summary>
 
 * [Hurricane Electric BGP Toolkit](https://bgp.he.net/)
   * Searches: IP address, Domain, ASN, Subnet
@@ -62,7 +80,11 @@ When checking your indicators against the below sources, be sure you are looking
   * Returns: FCrDNS Test data, Reputation data (242 blacklist checks)
 * [https://www.infobyip.com/ipbulklookup.php](https://www.infobyip.com/ipbulklookup.php) - (Honorable Mention) - A great tool that allows you to take a bulk list of IP addresses or Domains and check them for the presence on blacklists.
 
-### IP Reputation data
+</details>
+
+<details>
+
+<summary>IP Reputation data</summary>
 
 * [IPVoid](https://www.ipvoid.com/ip-blacklist-check/) - Returns: Reputation data (115 sources checked), Reverse DNS, ASN, Country
 * [DNSBL Email server spam checker](https://www.dnsbl.info/) - Checks IP of mail server for spam data accross 100+ blacklists
@@ -74,7 +96,11 @@ When checking your indicators against the below sources, be sure you are looking
 * [https://www.ipqualityscore.com/ip-reputation-check](https://www.ipqualityscore.com/ip-reputation-check) - Use this free tool to accurately **check IP Reputation** using leading IP address intelligence. **Lookup IP reputation history** which could indicate SPAM issues, threats, or elevated IP fraud scores that could be causing your IP address to be blocked and blacklisted.
   * [https://www.ipqualityscore.com/vpn-ip-address-check](https://www.ipqualityscore.com/vpn-ip-address-check) - Use this tool to perform a **VPN detection test** on any IP address. Lookup any IP addresses that recently allowed VPN activity or functioned as a Virtual Private Network. 99.9% accuracy for testing VPN IP addressees.
 
-### URL/Domain Reputation data
+</details>
+
+<details>
+
+<summary>URL/Domain Reputation data</summary>
 
 * [URLScan ](https://urlscan.io/) - Returns: Summary data, Reputation data, IP data, domain tree, HTTP transaction data, Screenshot of page, Detected Technologies, links
 * [URLVoid](https://www.urlvoid.com/)  - Returns Reputation data (34 sources), Registration info, WHOIS, Reverse DNS, ASN
@@ -87,7 +113,11 @@ When checking your indicators against the below sources, be sure you are looking
 * [https://lots-project.com/](https://lots-project.com/) - Living Off Trusted Sites (LOTS) Project, Attackers are using popular legitimate domains when conducting phishing, C\&C, exfiltration and downloading tools to evade detection. The list of websites below allow attackers to use their domain or subdomain.
 * [https://reports.adguard.com/en/welcome.html](https://reports.adguard.com/en/welcome.html) - Checks if site is on AdGuard's block list
 
-### File Hash Reputation Data
+</details>
+
+<details>
+
+<summary>File Hash Reputation Data</summary>
 
 * [Cisco Talos File Reputation ](https://talosintelligence.com/talos\_file\_reputation)- SHA256 Only
 * [Abuse\[.\]ch Malware Baazar ](https://bazaar.abuse.ch/browse/)- Searches MD5, SHA256, and Keyword
@@ -96,11 +126,17 @@ When checking your indicators against the below sources, be sure you are looking
 * [CIRCL Hashlookup](https://hashlookup.circl.lu/) - A super handy API hash lookup from the creators of MISP. Takes MD5 and SHA1.
 * [Comodo Valkyrie](https://valkyrie.comodo.com/) - SHA1 Only. Returns: File name, submit date, threat verdict by dynamic and human analysis.
 
-### Email/Spam Data
+</details>
+
+<details>
+
+<summary>Email/Spam Data</summary>
 
 * [Simple Email Rep checker](https://emailrep.io/) - Returns: Domain reputation, presence on social media, Blacklisted/Malicious activity, Email policy settings
 * [MXtoolbox MX lookup](https://mxtoolbox.com/MXLookup.aspx) and [Super tool ](https://mxtoolbox.com/SuperTool.aspx)-  Returns: Host information, DMARC and DNS record data, Pivot to Blacklist check
 * [HaveIBeenEmotet](https://www.haveibeenemotet.com/) - Returns: If your email address or domain is involved in the Emotet malspam.
+
+</details>
 
 ## **Indicator Enrichment**
 
@@ -109,6 +145,10 @@ These resources may not specifically return reputation data, but with the help o
 {% content-ref url="osint/cyber-search.md" %}
 [cyber-search.md](osint/cyber-search.md)
 {% endcontent-ref %}
+
+<details>
+
+<summary>Indicator Enrichment Tools</summary>
 
 * [Greynoise](https://viz.greynoise.io/)
   * Searches: IP address, domain
@@ -164,6 +204,8 @@ These resources may not specifically return reputation data, but with the help o
 * [https://cleantalk.org/#](https://cleantalk.org)
   * Search: IP Addresses, Email, Subnet, Domain
   * Returns: Presence on internal blocklist for spam activity
+
+</details>
 
 ## Investigation Tools
 

@@ -87,7 +87,7 @@ These are tools for collecting, enriching, and shareing threat indicators. Most 
 
 {% embed url="https://www.youtube.com/watch?app=desktop&v=00jq7Gbqdz8" %}
 
-## Intelligence News Feeds
+## Intelligence Sources
 
 <details>
 
@@ -203,9 +203,9 @@ These are tools for collecting, enriching, and shareing threat indicators. Most 
 
 </details>
 
+<details>
 
-
-### Corporate Security Blogs
+<summary>Corporate Security Blogs</summary>
 
 * TrendMicro - [https://blog.trendmicro.com/](https://blog.trendmicro.com/)
 * Microsoft - [https://msrc-blog.microsoft.com/](https://msrc-blog.microsoft.com/)
@@ -241,7 +241,11 @@ These are tools for collecting, enriching, and shareing threat indicators. Most 
 * Scythe - [https://www.scythe.io/threatthursday](https://www.scythe.io/threatthursday)
 * McAfee - [https://www.mcafee.com/blogs/](https://www.mcafee.com/blogs/)
 
-### **New Cyber Tool Blogs**
+</details>
+
+<details>
+
+<summary>New Cyber Tool Blogs</summary>
 
 * [https://www.darknet.org.uk/](https://www.darknet.org.uk/)
 * [https://www.toolswatch.org/](https://www.toolswatch.org/)
@@ -249,11 +253,17 @@ These are tools for collecting, enriching, and shareing threat indicators. Most 
 * [https://packetstormsecurity.com/files/tags/tool/](https://packetstormsecurity.com/files/tags/tool/)
 * [https://hakin9.org/blog-2/](https://hakin9.org/blog-2/)
 
+</details>
+
+****
+
 ## IoC Feeds
 
-### Free (In MISP)
-
 MISP has over 30 default feeds and growing. Below are some of the most popular. For more information on which feeds are in MISP, see here: [https://www.misp-project.org/feeds/](https://www.misp-project.org/feeds/)
+
+<details>
+
+<summary>Free (In MISP)</summary>
 
 * CIRC.LU - [https://www.circl.lu/doc/misp/feed-osint/](https://www.circl.lu/doc/misp/feed-osint/)
 * Botvrj - [https://www.botvrij.eu/data/feed-osint/](https://www.botvrij.eu/data/feed-osint/)
@@ -264,7 +274,11 @@ MISP has over 30 default feeds and growing. Below are some of the most popular. 
 * Digital Side - [https://osint.digitalside.it/Threat-Intel/digitalside-misp-feed/](https://osint.digitalside.it/Threat-Intel/digitalside-misp-feed/)
 * FireHOL - [https://iplists.firehol.org/](https://iplists.firehol.org/)
 
-### Free (Not in MISP)
+</details>
+
+<details>
+
+<summary>Free (Not in MISP)</summary>
 
 * AlienVault OTX - [https://otx.alienvault.com/](https://otx.alienvault.com/)
   * [https://github.com/AlienVault-OTX/ApiV2](https://github.com/AlienVault-OTX/ApiV2)
@@ -286,7 +300,11 @@ MISP has over 30 default feeds and growing. Below are some of the most popular. 
 * [Rescure](https://rescure.me/) - Curated cyber threat intelligence for everyone
 * [https://github.com/executemalware/Malware-IOCs](https://github.com/executemalware/Malware-IOCs)
 
-### Premium
+</details>
+
+<details>
+
+<summary>Premium Feeds</summary>
 
 * CrowdStrike - [https://www.crowdstrike.com/endpoint-security-products/falcon-x-threat-intelligence/](https://www.crowdstrike.com/endpoint-security-products/falcon-x-threat-intelligence/)
 * SpamHaus - [https://www.spamhaus.com/product/data-query-service/](https://www.spamhaus.com/product/data-query-service/)
@@ -300,15 +318,13 @@ MISP has over 30 default feeds and growing. Below are some of the most popular. 
 * ThreatStop - [https://www.threatstop.com/threatstop-pricing](https://www.threatstop.com/threatstop-pricing)
 * Well-Fed Intelligence -[https://wellfedintelligence.com/](https://wellfedintelligence.com/)
 
+</details>
+
 ## Other Sources and Media
 
-* &#x20;[https://osint.party/api/rss/fresh](https://osint.party/api/rss/fresh) - An amazing RSS feed of fresh and newly discovered .onion sites. Be careful, this feed remains uncensored, so you may encounter illegal content.
+<details>
 
-### Twitter Feeds
-
-* Lets make it easy. Sub to everyone on this list for raw, user created intel with a high level of fidelity. [https://phishunt.io/community/](https://phishunt.io/community/)
-
-### Forum
+<summary>Forum</summary>
 
 * SANS Forums - [https://isc.sans.edu/forums/Diary+Discussions/](https://isc.sans.edu/forums/Diary+Discussions/)
 * HackBusters -[https://discuss.hackbusters.com/](https://discuss.hackbusters.com/)
@@ -327,7 +343,11 @@ MISP has over 30 default feeds and growing. Below are some of the most popular. 
   * r/SecurityBlueTeam
   * r/SecurityRedTeam
 
-### Podcast/Webcast
+</details>
+
+<details>
+
+<summary>Podcast/Webcast</summary>
 
 * Darknet Diaries - [https://darknetdiaries.com/](https://darknetdiaries.com/)
 * Privacy, Security, and OSINT show - [https://inteltechniques.com/podcast.html](https://inteltechniques.com/podcast.html)
@@ -339,3 +359,8 @@ MISP has over 30 default feeds and growing. Below are some of the most popular. 
 * GIAC - [https://www.giac.org/podcasts](https://www.giac.org/podcasts)
 * Security Weekly - [https://securityweekly.com/](https://securityweekly.com/)
 * BlackHills Webcasts - [https://www.blackhillsinfosec.com/blog/webcasts/](https://www.blackhillsinfosec.com/blog/webcasts/)
+
+</details>
+
+* **Onion Sites** -  [https://osint.party/api/rss/fresh](https://osint.party/api/rss/fresh) - An amazing RSS feed of fresh and newly discovered .onion sites. Be careful, this feed remains uncensored, so you may encounter illegal content.
+* **Twitter Users to Follow** - Lets make it easy. Sub to everyone on this list for raw, user created intel with a high level of fidelity. [https://phishunt.io/community/](https://phishunt.io/community/)
