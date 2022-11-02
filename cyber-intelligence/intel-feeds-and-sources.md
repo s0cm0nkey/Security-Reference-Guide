@@ -33,19 +33,13 @@ Beyond the daily checkers, regular parsing of "Round-up" style blogs are super h
 
 ## Intelligence Tools and Resources
 
-### Intel Resource Collections
+
+
+Intel Resource Collections
 
 * [Awesome Lists Collection: Threat Intelligence](https://github.com/hslatman/awesome-threat-intelligence)
 * [Awesome Lists Collection: IOCs](https://github.com/sroberts/awesome-iocs)
 * [Awesome Lists Collection: Security Feeds](https://github.com/mrtouch93/awesome-security-feed)
-
-### Intelligence Gathering and Enrichment Tools
-
-All of the handy tools we would use can be found under the Cyber Search section.
-
-{% content-ref url="osint/cyber-search.md" %}
-[cyber-search.md](osint/cyber-search.md)
-{% endcontent-ref %}
 
 ### Indicator Gathering and Enrichment Tools
 
