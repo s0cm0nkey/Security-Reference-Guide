@@ -1,5 +1,13 @@
 # Scanning/Active-Recon
 
+
+
+After your passive reconnaissance phase, the next step is active scanning of your target. This usually involves port scanning and scanning for any vulnerabilities that your target might have, preferably with out them noticing. Active scanning does have direct interaction with your target and does run the risk of being detected. There are ways to subtle scan your target and not draw too much attention. This can include slowing the rate of your scanning or performing them in such a way as to not create a full connection request that would trigger any defensive alerts.
+
+The following section will contain scanning tools and resources such as port scanners, vulnerability scanners, and so much more!
+
+* [https://tryhackme.com/room/activerecon](https://tryhackme.com/room/activerecon)
+
 ## Host Discovery
 
 * [https://book.hacktricks.xyz/pentesting/pentesting-network#discovering-hosts](https://book.hacktricks.xyz/pentesting/pentesting-network#discovering-hosts)
@@ -146,10 +154,6 @@ The following command will enable the analyze modes and will give interesting in
 {% endtab %}
 {% endtabs %}
 
-
-
-
-
 ## **Port-Scanning**
 
 <details>
@@ -234,6 +238,10 @@ Unicornscan is an attempt at a User-land Distributed TCP/IP stack. It is intende
 
 </details>
 
+<details>
+
+<summary>Other Tools</summary>
+
 * [WebMap](https://github.com/DeadNumbers/WebMap) - Nmap Web Dashboard and Reporting
 * [Scantron](https://github.com/rackerlabs/scantron) - Scantron is a distributed nmap and [Masscan](https://github.com/robertdavidgraham/masscan) scanner comprised of two components. The first is a console node that consists of a web front end used for scheduling scans and storing scan targets and results. The second component is an engine that pulls scan jobs from the console and conducts the actual scanning.
 * [Scanless](https://github.com/vesche/scanless) - This is a Python 3 command-line utility and library for using websites that can perform port scans on your behalf.
@@ -243,6 +251,8 @@ Unicornscan is an attempt at a User-land Distributed TCP/IP stack. It is intende
   * [https://tryhackme.com/room/rustscan](https://tryhackme.com/room/rustscan)
 * [knocker](https://www.kali.org/tools/knocker/) - Knocker is a new, simple, and easy to use TCP security port scanner written in C, using threads. It is able to analyze hosts and the network services which are running on them.
 * [unimap](https://github.com/Edu4rdSHL/unimap) - Scan only once by IP address and reduce scan times with Nmap for large amounts of data.
+
+</details>
 
 ## Application Detection
 
@@ -257,7 +267,9 @@ $ amap -d $ip <port>
 * _BTFM: Scanning and Vulnerabilities - pg. 11_
 * _Penetration Testing: Finding Vulnerabilities - pg.133_
 
-### [Nessus](https://www.tenable.com/products/nessus/nessus-professional)&#x20;
+{% tabs %}
+{% tab title="Nessus " %}
+[https://www.tenable.com/products/nessus/nessus-professional](https://www.tenable.com/products/nessus/nessus-professional)
 
 The most popular vulnerability scanning tool on the web.
 
@@ -272,7 +284,9 @@ Commands
 * Start nessus service
   * \#sudo /etc/init.d/nessusd start
   * Browser > [https://localhost:8834](https://localhost:8834)
+{% endtab %}
 
+{% tab title="OpenVAS" %}
 ### [OpenVAS](https://github.com/greenbone/openvas)&#x20;
 
 Open Source Vulnerability Assessment Scanner. Free and comes pre installed on Kali Linux.
@@ -290,12 +304,19 @@ Commands
 * After setup and update, check listening ports to see if OpenVAS is active
   * \#ss -lnt4
 * Navigate to WebUI
-  * https://127.0.0.1:9392
+  * https://127.0.0.1:939[NSE Nmap Scripts](https://nmap.org/nsedoc/) - NSE Scripts can perform various scanning techniques for enumerating services and scanning targets for specific vulnerabilities.
+{% endtab %}
 
-{% embed url="https://youtu.be/fEANg6gyV5A" %}
+{% tab title="NSE Scripts" %}
+* Show all available scripts and thier details
+  * \# nmap --script-help default
+* Show all vuln/exploit scripts
+  * \# cat script.db | grep '"vuln"\\|"exploit"'
+* Run all scripts in "vuln' category
+  * \# sudo nmap --script vuln \[ip]
+{% endtab %}
 
-{% embed url="https://youtu.be/koMo_fSQGlk" %}
-
+{% tab title="Other Scanning Tools" %}
 ### **Other Scanning Tools**
 
 * [ReconMap](https://reconmap.org/) - Reconmap is a vulnerability assessment and penetration testing (VAPT) platform. It helps software engineers and infosec pros collaborate on security projects, from planning, to implementation and documentation. The tool's aim is to go from recon to report in the least possible time.
@@ -305,20 +326,21 @@ Commands
 * [Vuls](https://github.com/future-architect/vuls)  - Vulnerability scanner for Linux/FreeBSD, agent-less, written in Go.
 * [Tsunami Scanner](https://github.com/google/tsunami-security-scanner) - Tsunami is a general purpose network security scanner with an extensible plugin system for detecting high severity vulnerabilities with high confidence.
 * [Flan Scan](https://github.com/cloudflare/flan) - Flan Scan is a lightweight network vulnerability scanner. With Flan Scan you can easily find open ports on your network, identify services and their version, and get a list of relevant CVEs affecting your network.
-* [NSE Nmap Scripts](https://nmap.org/nsedoc/) - NSE Scripts can perform various scanning techniques for enumerating services and scanning targets for specific vulnerabilities.
-  * Show all available scripts and thier details
-    * \# nmap --script-help default
-  * Show all vuln/exploit scripts
-    * \# cat script.db | grep '"vuln"\\|"exploit"'
-  * Run all scripts in "vuln' category
-    * \# sudo nmap --script vuln \[ip]
 * [https://github.com/v3n0m-Scanner/V3n0M-Scanner](https://github.com/v3n0m-Scanner/V3n0M-Scanner) - Popular Pentesting scanner in Python3.6 for SQLi/XSS/LFI/RFI and other Vulns
+{% endtab %}
+{% endtabs %}
+
+{% embed url="https://youtu.be/fEANg6gyV5A" %}
+
+{% embed url="https://youtu.be/koMo_fSQGlk" %}
 
 ## **Attack Surface Mapping/Asset Discovery**
 
 * [Awesome Lists Collection: Asset Discovery](https://github.com/redhuntlabs/Awesome-Asset-Discovery)
 * [https://redhuntlabs.com/](https://redhuntlabs.com/)
 
+{% tabs %}
+{% tab title="Amass" %}
 ### [Amass](https://github.com/OWASP/Amass)&#x20;
 
 The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and active reconnaissance techniques.
@@ -326,6 +348,14 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * Hakluke's Amass Guide - [https://medium.com/@hakluke/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7](https://medium.com/@hakluke/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7)
 * Dionach's Amass Guide - [https://www.dionach.com/blog/how-to-use-owasp-amass-an-extensive-tutorial/](https://www.dionach.com/blog/how-to-use-owasp-amass-an-extensive-tutorial/)
 * [https://www.youtube.com/watch?v=mEQnVkSG19M](https://www.youtube.com/watch?v=mEQnVkSG19M)
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
+
+###
 
 ### **Other Tools**
 
