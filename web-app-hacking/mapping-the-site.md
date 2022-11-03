@@ -1,4 +1,4 @@
-# Mapping the Site
+# DNS Scanning/Enumeration - Mapping the Site
 
 ## Attack Surface Mapping and Asset Discovery
 
@@ -56,7 +56,9 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 
 ## DNS/Subdomain
 
-[https://pentestbook.six2dez.com/others/subdomain-tools-review](https://pentestbook.six2dez.com/others/subdomain-tools-review)
+{% embed url="https://pentestbook.six2dez.com/others/subdomain-tools-review" %}
+
+{% embed url="https://youtu.be/rQ-dc5kwRtU" %}
 
 ### **Enumeration Tools**
 

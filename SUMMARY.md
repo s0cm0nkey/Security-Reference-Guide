@@ -26,7 +26,6 @@
     * [Payloads and Obfuscation](red-offensive/testing-methodology/payloads-and-obfuscation/README.md)
       * [MSFVenom Commands](red-offensive/testing-methodology/payloads-and-obfuscation/msfvenom-commands.md)
     * [Enumeration and Harvesting](red-offensive/testing-methodology/enumeration-and-harvesting/README.md)
-      * [Endpoint Harvesting](red-offensive/testing-methodology/enumeration-and-harvesting/endpoint-harvesting.md)
       * [AD/Remote Harvesting](red-offensive/testing-methodology/enumeration-and-harvesting/ad-remote-harvesting.md)
       * [Meterpreter Post-Auth Runbook](red-offensive/testing-methodology/enumeration-and-harvesting/meterpreter-post-auth-runbook.md)
     * [Exploit Dev/Buffer Overflow](red-offensive/testing-methodology/exploit-dev-buffer-overflow.md)

