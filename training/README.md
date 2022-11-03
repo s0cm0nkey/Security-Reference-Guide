@@ -22,7 +22,7 @@
 * [https://www.edx.org/course/cs50s-introduction-to-computer-science](https://www.edx.org/course/cs50s-introduction-to-computer-science)
 * [https://missing.csail.mit.edu/](https://missing.csail.mit.edu/) - The missing CS semester
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Networking
 
