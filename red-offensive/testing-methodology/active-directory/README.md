@@ -232,14 +232,14 @@ The Active Directory Mapping tool. Used by Red and Blue teamers to map out their
 
 * [https://attl4s.github.io/assets/pdf/Understanding\_Active\_Directory\_Enumeration.pdf](https://attl4s.github.io/assets/pdf/Understanding\_Active\_Directory\_Enumeration.pdf)
 
-{% content-ref url="../post-exploitation/enumeration-and-harvesting/" %}
-[enumeration-and-harvesting](../post-exploitation/enumeration-and-harvesting/)
+{% content-ref url="../post-exploitation/enumeration-and-harvesting.md" %}
+[enumeration-and-harvesting.md](../post-exploitation/enumeration-and-harvesting.md)
 {% endcontent-ref %}
 
 ## **AD Credential Harvesting**
 
-{% content-ref url="../post-exploitation/enumeration-and-harvesting/ad-remote-harvesting.md" %}
-[ad-remote-harvesting.md](../post-exploitation/enumeration-and-harvesting/ad-remote-harvesting.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## **AD Privilege Escalation**

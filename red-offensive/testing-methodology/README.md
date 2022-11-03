@@ -50,8 +50,8 @@ Note: Many Recon Frameworks have both passive and active reconnaissance capabili
 
 * _Penetration Testing: Post Exploitation - pg.277_
 
-{% content-ref url="post-exploitation/enumeration-and-harvesting/" %}
-[enumeration-and-harvesting](post-exploitation/enumeration-and-harvesting/)
+{% content-ref url="post-exploitation/enumeration-and-harvesting.md" %}
+[enumeration-and-harvesting.md](post-exploitation/enumeration-and-harvesting.md)
 {% endcontent-ref %}
 
 {% content-ref url="network-attacks-harvesting-mitm.md" %}
