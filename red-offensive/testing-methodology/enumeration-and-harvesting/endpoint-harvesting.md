@@ -96,14 +96,7 @@ Simply double clicking on the executable ‘Lazagne.exe' will cause a warning me
 
 <summary>Dumping LSASS with out Mimikatz</summary>
 
-* [https://ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz](https://ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz)
-* [https://www.whiteoaksecurity.com/blog/attacks-defenses-dumping-lsass-no-mimikatz/](https://www.whiteoaksecurity.com/blog/attacks-defenses-dumping-lsass-no-mimikatz/)
-* ProcDump
-  * \>procdump.exe -accepteula -ma lsass.exe lsass.dmp
-    * will need local admin to dump LSASS
-  * Create dump file by using options within tasklist
-  * Executing a native comsvcs.dll DLL found in Windows\system32 with rundll32:
-    * .\rundll32.exe C:\windows\System32\comsvcs.dll, MiniDump 624 C:\temp\lsass.dmp full
+*
 
 </details>
 
@@ -111,6 +104,7 @@ Simply double clicking on the executable ‘Lazagne.exe' will cause a warning me
 
 <summary>Skeleton Key attack</summary>
 
+*
 * [http://www.secureworks.com/cyber-threat-intelligence/threats/skeleton-key-malware-analysis](http://www.secureworks.com/cyber-threat-intelligence/threats/skeleton-key-malware-analysis)
 * Back door a privileged AD account with Mimikatz
 * To install the skeleton key
@@ -169,10 +163,6 @@ Once you have Domain Admin access, the old way to pull all hashes from the DC wa
   * Impersonates the DC and requests hashes of all users on the domain
   * No need to touch the DC at all!!
   * Must have proper permissions: Domain Admins/Enterprise Admins/DC groups/ anyone with Replicating Changes permissions seg to Allow
-* Mimikatz command
-  * Lsadump::dcsync /domain:\[domain] /user:\[account to pull hashes from]
-  * Powershell Empire module
-    * \>powershell/credentials/mimikatz
 
 </details>
 
@@ -180,9 +170,7 @@ Once you have Domain Admin access, the old way to pull all hashes from the DC wa
 
 <summary>Memory Extraction</summary>
 
-* [MimiPenguin](https://github.com/huntergregal/mimipenguin) - A tool to dump the login password from the current linux desktop user.
-* [Dumping Lsass.exe to Disk Without Mimikatz and Extracting Credentials - Red Teaming Experiments](https://www.ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz)&#x20;
-* [Internal-Monologue](https://github.com/eladshamir/Internal-monologue) - Internal Monologue Attack: Retrieving NTLM Hashes without Touching LSASS
+*
 
 
 
