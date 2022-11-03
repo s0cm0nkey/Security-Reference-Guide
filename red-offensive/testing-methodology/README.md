@@ -50,24 +50,24 @@ Note: Many Recon Frameworks have both passive and active reconnaissance capabili
 
 * _Penetration Testing: Post Exploitation - pg.277_
 
-{% content-ref url="enumeration-and-harvesting/" %}
-[enumeration-and-harvesting](enumeration-and-harvesting/)
+{% content-ref url="post-exploitation/enumeration-and-harvesting/" %}
+[enumeration-and-harvesting](post-exploitation/enumeration-and-harvesting/)
 {% endcontent-ref %}
 
 {% content-ref url="network-attacks-harvesting-mitm.md" %}
 [network-attacks-harvesting-mitm.md](network-attacks-harvesting-mitm.md)
 {% endcontent-ref %}
 
-{% content-ref url="privilege-escalation/" %}
-[privilege-escalation](privilege-escalation/)
+{% content-ref url="post-exploitation/privilege-escalation/" %}
+[privilege-escalation](post-exploitation/privilege-escalation/)
 {% endcontent-ref %}
 
 {% content-ref url="active-directory/" %}
 [active-directory](active-directory/)
 {% endcontent-ref %}
 
-{% content-ref url="persistence.md" %}
-[persistence.md](persistence.md)
+{% content-ref url="post-exploitation/persistence.md" %}
+[persistence.md](post-exploitation/persistence.md)
 {% endcontent-ref %}
 
 ## Offensive Utility
@@ -84,8 +84,8 @@ Note: Many Recon Frameworks have both passive and active reconnaissance capabili
 [pivot-proxy-tunnel-redirect.md](pivot-proxy-tunnel-redirect.md)
 {% endcontent-ref %}
 
-{% content-ref url="defense-evasion.md" %}
-[defense-evasion.md](defense-evasion.md)
+{% content-ref url="post-exploitation/defense-evasion.md" %}
+[defense-evasion.md](post-exploitation/defense-evasion.md)
 {% endcontent-ref %}
 
 {% content-ref url="password-attacks.md" %}

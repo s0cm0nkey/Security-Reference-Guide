@@ -2,8 +2,8 @@
 
 ## Harvested Credentials
 
-{% content-ref url="../enumeration-and-harvesting/ad-remote-harvesting.md" %}
-[ad-remote-harvesting.md](../enumeration-and-harvesting/ad-remote-harvesting.md)
+{% content-ref url="../post-exploitation/enumeration-and-harvesting/ad-remote-harvesting.md" %}
+[ad-remote-harvesting.md](../post-exploitation/enumeration-and-harvesting/ad-remote-harvesting.md)
 {% endcontent-ref %}
 
 ## Constrained Delegation

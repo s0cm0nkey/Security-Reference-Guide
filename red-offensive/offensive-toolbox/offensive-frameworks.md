@@ -65,8 +65,8 @@ MSVenom is a tool that can encode your payloads to bypass detection by your targ
 * [https://xapax.github.io/security/#post\_exploitation/getting\_meterpreter\_shell/](https://xapax.github.io/security/#post\_exploitation/getting\_meterpreter\_shell/)
 * [https://www.netscylla.com/blog/2018/09/26/MSF-Meterpreter-and-Railgun.html](https://www.netscylla.com/blog/2018/09/26/MSF-Meterpreter-and-Railgun.html)
 
-{% content-ref url="../testing-methodology/enumeration-and-harvesting/meterpreter-post-auth-runbook.md" %}
-[meterpreter-post-auth-runbook.md](../testing-methodology/enumeration-and-harvesting/meterpreter-post-auth-runbook.md)
+{% content-ref url="../testing-methodology/post-exploitation/meterpreter-post-auth-runbook.md" %}
+[meterpreter-post-auth-runbook.md](../testing-methodology/post-exploitation/meterpreter-post-auth-runbook.md)
 {% endcontent-ref %}
 
 {% embed url="https://youtu.be/xsyeL6xWWy4" %}

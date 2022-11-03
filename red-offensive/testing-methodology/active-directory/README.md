@@ -81,7 +81,7 @@ description: Where can we go, once we are in?
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
@@ -232,14 +232,14 @@ The Active Directory Mapping tool. Used by Red and Blue teamers to map out their
 
 * [https://attl4s.github.io/assets/pdf/Understanding\_Active\_Directory\_Enumeration.pdf](https://attl4s.github.io/assets/pdf/Understanding\_Active\_Directory\_Enumeration.pdf)
 
-{% content-ref url="../enumeration-and-harvesting/" %}
-[enumeration-and-harvesting](../enumeration-and-harvesting/)
+{% content-ref url="../post-exploitation/enumeration-and-harvesting/" %}
+[enumeration-and-harvesting](../post-exploitation/enumeration-and-harvesting/)
 {% endcontent-ref %}
 
 ## **AD Credential Harvesting**
 
-{% content-ref url="../enumeration-and-harvesting/ad-remote-harvesting.md" %}
-[ad-remote-harvesting.md](../enumeration-and-harvesting/ad-remote-harvesting.md)
+{% content-ref url="../post-exploitation/enumeration-and-harvesting/ad-remote-harvesting.md" %}
+[ad-remote-harvesting.md](../post-exploitation/enumeration-and-harvesting/ad-remote-harvesting.md)
 {% endcontent-ref %}
 
 ## **AD Privilege Escalation**
@@ -250,8 +250,8 @@ The Active Directory Mapping tool. Used by Red and Blue teamers to map out their
 
 ## **AD Persistence**
 
-{% content-ref url="../persistence.md" %}
-[persistence.md](../persistence.md)
+{% content-ref url="../post-exploitation/persistence.md" %}
+[persistence.md](../post-exploitation/persistence.md)
 {% endcontent-ref %}
 
 ## Special AD Targets
