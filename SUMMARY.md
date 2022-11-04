@@ -32,7 +32,6 @@
       * [Enumeration and Harvesting](red-offensive/testing-methodology/post-exploitation/enumeration-and-harvesting.md)
       * [Privilege Escalation](red-offensive/testing-methodology/post-exploitation/privilege-escalation/README.md)
         * [Linux Methodology](red-offensive/testing-methodology/post-exploitation/privilege-escalation/linux-methodology.md)
-        * [Windows Methodology](red-offensive/testing-methodology/post-exploitation/privilege-escalation/windows-methodology.md)
       * [Meterpreter Post-Auth Runbook](red-offensive/testing-methodology/post-exploitation/meterpreter-post-auth-runbook.md)
     * [File Transfer](red-offensive/testing-methodology/file-transfer.md)
     * [Active Directory](red-offensive/testing-methodology/active-directory/README.md)
