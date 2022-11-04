@@ -58,8 +58,8 @@ Note: Many Recon Frameworks have both passive and active reconnaissance capabili
 [network-attacks-harvesting-mitm.md](network-attacks-harvesting-mitm.md)
 {% endcontent-ref %}
 
-{% content-ref url="post-exploitation/privilege-escalation/" %}
-[privilege-escalation](post-exploitation/privilege-escalation/)
+{% content-ref url="post-exploitation/privilege-escalation.md" %}
+[privilege-escalation.md](post-exploitation/privilege-escalation.md)
 {% endcontent-ref %}
 
 {% content-ref url="active-directory/" %}
