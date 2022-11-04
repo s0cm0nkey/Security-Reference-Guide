@@ -10,9 +10,11 @@ description: Where can we go, once we are in?
 
 * [https://mayfly277.github.io/assets/blog/pentest\_ad\_dark.svg](https://mayfly277.github.io/assets/blog/pentest\_ad\_dark.svg) - Another killer AD Mindmap.
 
-### Active Directory Basics and Collections
+<details>
 
-{% embed url="https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview" %}
+<summary>Active Directory Basics and Collections</summary>
+
+[https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)&#x20;
 
 * [https://adsecurity.org/](https://adsecurity.org/)
 * [https://kvenkatraman10.gitbook.io/ad101/](https://kvenkatraman10.gitbook.io/ad101/)
@@ -20,55 +22,68 @@ description: Where can we go, once we are in?
 * [Infosec\_Reference/Active\_Directory](https://github.com/rmusser01/Infosec\_Reference/blob/master/Draft/Active\_Directory.md)
 * [https://github.com/infosecn1nja/AD-Attack-Defense](https://github.com/infosecn1nja/AD-Attack-Defense)
 * [AD-security-workshop](https://github.com/wavestone-cdt/AD-security-workshop)
+* [AD Security Technical Implementation Guide](https://www.stigviewer.com/stig/active\_directory\_domain/)
 * [https://social.technet.microsoft.com/wiki/contents/articles/20964.active-directory-ultimate-reading-collection.aspx](https://social.technet.microsoft.com/wiki/contents/articles/20964.active-directory-ultimate-reading-collection.aspx)
 * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/understanding\_active\_directory/about\_active\_directory/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/understanding\_active\_directory/about\_active\_directory/)
+* [https://xapax.github.io/security/#attacking\_active\_directory\_domain/good\_to\_know/active\_directory\_help\_commands/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/good\_to\_know/active\_directory\_help\_commands/)
 
-### Domain Controllers
+</details>
+
+<details>
+
+<summary>Domain Controllers</summary>
 
 * [https://adsecurity.org/?p=3377](https://adsecurity.org/?p=3377)
 * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/understanding\_active\_directory/domain\_controller/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/understanding\_active\_directory/domain\_controller/)
 * [Attacking Read-Only Domain Controllers (RODCs) to Own Active Directory](https://adsecurity.org/?p=3592)
 * [https://www.secureauth.com/blog/the-kerberos-key-list-attack-the-return-of-the-read-only-domain-controllers/](https://www.secureauth.com/blog/the-kerberos-key-list-attack-the-return-of-the-read-only-domain-controllers/)
 
-### Domain Groups
+</details>
 
-{% embed url="https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups" %}
+<details>
+
+<summary>Domain Groups</summary>
+
+[https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups)
 
 * [https://www.harmj0y.net/blog/activedirectory/a-pentesters-guide-to-group-scoping/](https://www.harmj0y.net/blog/activedirectory/a-pentesters-guide-to-group-scoping/)
 
-### Group Policy
+</details>
 
-{% embed url="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11)" %}
+<details>
+
+<summary>Group Policy</summary>
+
+[https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11)](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791\(v=ws.11\))
 
 * [NIST Hardened GPO checklist](https://ncp.nist.gov/checklist/629/download/7296)
 * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/understanding\_active\_directory/group\_policies/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/understanding\_active\_directory/group\_policies/)
 
-### Kerberos
+</details>
 
-{% embed url="https://docs.microsoft.com/en-us/windows-server/security/kerberos/kerberos-authentication-overview" %}
+<details>
+
+<summary>Kerberos</summary>
+
+[https://docs.microsoft.com/en-us/windows-server/security/kerberos/kerberos-authentication-overview](https://docs.microsoft.com/en-us/windows-server/security/kerberos/kerberos-authentication-overview)
 
 * [https://m0chan.github.io/2019/07/31/How-To-Attack-Kerberos-101.html](https://m0chan.github.io/2019/07/31/How-To-Attack-Kerberos-101.html)
 * [https://0xeb-bp.com/blog/2019/11/21/practical-guide-pass-the-ticket.html](https://0xeb-bp.com/blog/2019/11/21/practical-guide-pass-the-ticket.html)
 * [https://blog.redforce.io/oh-my-kerberos-do-not-get-kerberoasted/](https://blog.redforce.io/oh-my-kerberos-do-not-get-kerberoasted/)
 * [Kerberos Tickets on Linux Red Teams](https://www.fireeye.com/blog/threat-research/2020/04/kerberos-tickets-on-linux-red-teams.html)
 * [https://posts.specterops.io/kerberosity-killed-the-domain-an-offensive-kerberos-overview-eb04b1402c61](https://posts.specterops.io/kerberosity-killed-the-domain-an-offensive-kerberos-overview-eb04b1402c61)
-
-### **AD Tips**
-
-* [AD Security Technical Implementation Guide](https://www.stigviewer.com/stig/active\_directory\_domain/)
-* [https://xapax.github.io/security/#attacking\_active\_directory\_domain/good\_to\_know/active\_directory\_help\_commands/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/good\_to\_know/active\_directory\_help\_commands/)
-* [https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/check\_for\_lockout\_threshold/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/check\_for\_lockout\_threshold/)
-
-### CheatSheets
-
-* [Active-Directory-Exploitation-Cheat-Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet)
 * [Kerberos Attacks Cheat Sheet](https://gist.github.com/TarlogicSecurity/2f221924fef8c14a1d8e29f3cb5c5c4a)
 * [Kerberos cheatsheet](https://gist.github.com/knethteo/2fc8af6ea28199fd63a529a73a4176c7)
-* [Active Directory Exploitation Cheat Sheet](https://github.com/Integration-IT/Active-Directory-Exploitation-Cheat-Sheet)
 
-### Attacking AD
+</details>
+
+<details>
+
+<summary>Attacking AD</summary>
 
 * [PayloadsAllTheThings/ActiveDirectoryAttack](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Active%20Directory%20Attack.md)
+* [Active-Directory-Exploitation-Cheat-Sheet](https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet)
+* [Active Directory Exploitation Cheat Sheet](https://github.com/Integration-IT/Active-Directory-Exploitation-Cheat-Sheet)
 * [PayloadsAllTheThings/Windows-Usingcredentials](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Using%20credentials.md)
 * [Top 16 Active Directory Vulnerabilities](https://www.infosecmatter.com/top-16-active-directory-vulnerabilities/)
 * [Attacking Active Directory: 0 to 0.9 | zer1t0](https://zer1t0.gitlab.io/posts/attacking\_ad/)
@@ -79,15 +94,11 @@ description: Where can we go, once we are in?
 * [https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse](https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse)
 * [WadComs - ](https://wadcoms.github.io)WADComs is an interactive cheat sheet, containing a curated list of offensive security tools and their respective commands, to be used against Windows/AD environments.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+</details>
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<details>
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
-## **Queries and Commands for Active Directory**
+<summary>Queries and Commands for Active Directory</summary>
 
 * Get more information about users in AD
   * Manual Queries - Traditional
@@ -104,40 +115,38 @@ description: Where can we go, once we are in?
 * _Cyber Operations: Active Directory - pg.235_
 * _BTFM: Active Directory Inventory - pg. 16_
 
+</details>
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 ## **AD Tools**
 
 ### [Bloodhound](https://github.com/BloodHoundAD/BloodHound)&#x20;
 
-The Active Directory Mapping tool. Used by Red and Blue teamers to map out their Active Directory environment and look for the shortest path to compromise Domain Admin
+The Active Directory Mapping tool. Used by Red and Blue teamers to map out their Active Directory environment and look for the shortest path to compromise Domain Admin.
 
-* [Bloodhound Enterprise ](https://bloodhoundenterprise.io/)- Enterprise grade attack path management solution
-* [BloodHound.py](https://github.com/fox-it/BloodHound.py) - A Python based ingestor for BloodHound
-* [Plumhound](https://github.com/PlumHound/PlumHound) - Reporting Engine for bloodhound.
-* [SharpHound](https://github.com/BloodHoundAD/SharpHound) - C# version of bloodhound
-* [GoodHound](https://github.com/idnahacks/GoodHound) - Uses Sharphound, Bloodhound and Neo4j to produce an actionable list of attack paths for targeted remediation.
-* [BadBlood](https://github.com/davidprowe/BadBlood) - BadBlood by Secframe fills a Microsoft Active Directory Domain with a structure and thousands of objects. The output of the tool is a domain similar to a domain in the real world. Used for testing of Bloodhound.
-* [aclpwn.py](https://github.com/fox-it/aclpwn.py) - Active Directory ACL exploitation with BloodHound
-* [crackhound](https://github.com/trustedsec/crackhound) - CrackHound is a way to introduce plain-text passwords into BloodHound. This allows you to upload all your cracked hashes to the Neo4j database and use it for reporting purposes (csv exports) or path finding in BloodHound using custom queries.
-  * [https://www.trustedsec.com/blog/expanding-the-hound-introducing-plaintext-field-to-compromised-accounts/](https://www.trustedsec.com/blog/expanding-the-hound-introducing-plaintext-field-to-compromised-accounts/)
-* ****[**GoldenCopy**](https://github.com/Dramelac/GoldenCopy) **-** Copy the properties and groups of a user from neo4j (bloodhound) to create an identical golden ticket.
-* Bloodhound Guides and Reference
-  * [Awesome Lists Collection: Bloodhound](https://github.com/chryzsh/awesome-bloodhound)
-  * [BloodHound: Six Degrees of Domain Admin — BloodHound 3.0.3 documentation](https://bloodhound.readthedocs.io/en/latest/)&#x20;
-  * [Title - ERNW\_DogWhispererHandbook.pdf](https://ernw.de/download/BloodHoundWorkshop/ERNW\_DogWhispererHandbook.pdf)&#x20;
-  * [BloodHound Power Usage - Google Slides](https://docs.google.com/presentation/d/1-fJooJ\_ehGnyrJUHj8G2sGMmSNuYs60P2JWEKnspxng/mobilepresent#slide=id.g35f391192\_00)&#x20;
-  * [CptJesus | BloodHound: Intro to Cypher](https://blog.cptjesus.com/posts/introtocypher)&#x20;
-  * [AD Resilience - Oslo 2019 - Google Slides](https://docs.google.com/presentation/d/1RmewetR6mp4ZzDlgPL4wRUmePmEtXUXOWw7ArJ5JGOY/mobilepresent#slide=id.g35f391192\_00)
-  * [Attack Mapping With Bloodhound](https://blog.stealthbits.com/local-admin-mapping-bloodhound)
-  * [Hidden Administrative Accounts: BloodHound to the Rescue](https://www.crowdstrike.com/blog/hidden-administrative-accounts-bloodhound-to-the-rescue/)
-  * [Bloodhound walkthrough. A Tool for Many Tradecrafts](https://www.pentestpartners.com/security-blog/bloodhound-walkthrough-a-tool-for-many-tradecrafts/)
-  * [Conda's Bloodhound Setup Video](https://www.youtube.com/watch?v=aJqjH3MsbLM\&list=PLDrNMcTNhhYqZj7WZt2GfNhBDqBnhW6AT\&index=3)
-* Cypher Queries
-  * [DogWhisperer - BloodHound Cypher Cheat Sheet (v2)](https://github.com/SadProcessor/Cheats/blob/master/DogWhispererV2.md)
-  * [Bloodhound-Custom-Queries](https://github.com/hausec/Bloodhound-Custom-Queries)
-  * [BloodhoundAD-Queries](https://github.com/Scoubi/BloodhoundAD-Queries)
-  * [Bloodhound Cypher Cheatsheet](https://hausec.com/2019/09/09/bloodhound-cypher-cheatsheet/)
-* _Operator Handbook: Bloodhound - pg. 49_
+{% tabs %}
+{% tab title="Guides and Reference" %}
+* [Awesome Lists Collection: Bloodhound](https://github.com/chryzsh/awesome-bloodhound)
+* [BloodHound: Six Degrees of Domain Admin — BloodHound 3.0.3 documentation](https://bloodhound.readthedocs.io/en/latest/)&#x20;
+* [Title - ERNW\_DogWhispererHandbook.pdf](https://ernw.de/download/BloodHoundWorkshop/ERNW\_DogWhispererHandbook.pdf)&#x20;
+* [BloodHound Power Usage - Google Slides](https://docs.google.com/presentation/d/1-fJooJ\_ehGnyrJUHj8G2sGMmSNuYs60P2JWEKnspxng/mobilepresent#slide=id.g35f391192\_00)&#x20;
+* [CptJesus | BloodHound: Intro to Cypher](https://blog.cptjesus.com/posts/introtocypher)&#x20;
+* [AD Resilience - Oslo 2019 - Google Slides](https://docs.google.com/presentation/d/1RmewetR6mp4ZzDlgPL4wRUmePmEtXUXOWw7ArJ5JGOY/mobilepresent#slide=id.g35f391192\_00)
+* [Attack Mapping With Bloodhound](https://blog.stealthbits.com/local-admin-mapping-bloodhound)
+* [Hidden Administrative Accounts: BloodHound to the Rescue](https://www.crowdstrike.com/blog/hidden-administrative-accounts-bloodhound-to-the-rescue/)
+* [Bloodhound walkthrough. A Tool for Many Tradecrafts](https://www.pentestpartners.com/security-blog/bloodhound-walkthrough-a-tool-for-many-tradecrafts/)
+* [Conda's Bloodhound Setup Video](https://www.youtube.com/watch?v=aJqjH3MsbLM\&list=PLDrNMcTNhhYqZj7WZt2GfNhBDqBnhW6AT\&index=3)
+* _Operator Handbook: Bloodhound - pg. 4_
+{% endtab %}
 
+{% tab title="Bloodhound Basics" %}
 ### Bloodhound Basics
 
 * Uses graph theory to reveal the hidden and unintended relationships in an AD environment.
@@ -175,7 +184,6 @@ The Active Directory Mapping tool. Used by Red and Blue teamers to map out their
     * Database URL: bolt://127.0.0.1:7687
     * Username: neo4j
     * Password: newpassword
-    *
     * Upload data - all the created csv files
   * Neo4j allows for raw queries through its own language called Cypher
     * [https://blog.cptjesus/posts/introtocypher](https://blog.cptjesus/posts/introtocypher)
@@ -185,6 +193,28 @@ The Active Directory Mapping tool. Used by Red and Blue teamers to map out their
   * The info we gather from Access Control Entries describes allowed and denied permissions for users groups and comps.
   * Bloodhound 1.3 - the ACL attack path Update [https://wald0.com/?p=112](https://wald0.com/?p=112)
   * Introducing the adversary resiliancy methodology [http://bit.ly/2GYU7S7](http://bit.ly/2GYU7S7)
+{% endtab %}
+
+{% tab title="Bloodhound Related Tools" %}
+* [Bloodhound Enterprise ](https://bloodhoundenterprise.io/)- Enterprise grade attack path management solution
+* [BloodHound.py](https://github.com/fox-it/BloodHound.py) - A Python based ingestor for BloodHound
+* [Plumhound](https://github.com/PlumHound/PlumHound) - Reporting Engine for bloodhound.
+* [SharpHound](https://github.com/BloodHoundAD/SharpHound) - C# version of bloodhound
+* [GoodHound](https://github.com/idnahacks/GoodHound) - Uses Sharphound, Bloodhound and Neo4j to produce an actionable list of attack paths for targeted remediation.
+* [BadBlood](https://github.com/davidprowe/BadBlood) - BadBlood by Secframe fills a Microsoft Active Directory Domain with a structure and thousands of objects. The output of the tool is a domain similar to a domain in the real world. Used for testing of Bloodhound.
+* [aclpwn.py](https://github.com/fox-it/aclpwn.py) - Active Directory ACL exploitation with BloodHound
+* [crackhound](https://github.com/trustedsec/crackhound) - CrackHound is a way to introduce plain-text passwords into BloodHound. This allows you to upload all your cracked hashes to the Neo4j database and use it for reporting purposes (csv exports) or path finding in BloodHound using custom queries.
+  * [https://www.trustedsec.com/blog/expanding-the-hound-introducing-plaintext-field-to-compromised-accounts/](https://www.trustedsec.com/blog/expanding-the-hound-introducing-plaintext-field-to-compromised-accounts/)
+* ****[**GoldenCopy**](https://github.com/Dramelac/GoldenCopy) **-** Copy the properties and groups of a user from neo4j (bloodhound) to create an identical golden ticket.
+{% endtab %}
+
+{% tab title="Cypher Queries" %}
+* [DogWhisperer - BloodHound Cypher Cheat Sheet (v2)](https://github.com/SadProcessor/Cheats/blob/master/DogWhispererV2.md)
+* [Bloodhound-Custom-Queries](https://github.com/hausec/Bloodhound-Custom-Queries)
+* [BloodhoundAD-Queries](https://github.com/Scoubi/BloodhoundAD-Queries)
+* [Bloodhound Cypher Cheatsheet](https://hausec.com/2019/09/09/bloodhound-cypher-cheatsheet/)&#x20;
+{% endtab %}
+{% endtabs %}
 
 ### **Offensive Tools**
 
@@ -234,12 +264,6 @@ The Active Directory Mapping tool. Used by Red and Blue teamers to map out their
 
 {% content-ref url="../post-exploitation/enumeration-and-harvesting.md" %}
 [enumeration-and-harvesting.md](../post-exploitation/enumeration-and-harvesting.md)
-{% endcontent-ref %}
-
-## **AD Credential Harvesting**
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## **AD Privilege Escalation**
