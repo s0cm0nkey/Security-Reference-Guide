@@ -79,8 +79,8 @@
   * [https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
   * _Cyber Operations: Active Directory - pg.235_
 
-{% content-ref url="../red-offensive/testing-methodology/active-directory/" %}
-[active-directory](../red-offensive/testing-methodology/active-directory/)
+{% content-ref url="../red-offensive/testing-methodology/active-directory.md" %}
+[active-directory.md](../red-offensive/testing-methodology/active-directory.md)
 {% endcontent-ref %}
 
 * Windows Command Line

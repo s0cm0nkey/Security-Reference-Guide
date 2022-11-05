@@ -62,8 +62,8 @@ Note: Many Recon Frameworks have both passive and active reconnaissance capabili
 [privilege-escalation.md](post-exploitation/privilege-escalation.md)
 {% endcontent-ref %}
 
-{% content-ref url="active-directory/" %}
-[active-directory](active-directory/)
+{% content-ref url="active-directory.md" %}
+[active-directory.md](active-directory.md)
 {% endcontent-ref %}
 
 {% content-ref url="post-exploitation/persistence.md" %}
