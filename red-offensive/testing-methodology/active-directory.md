@@ -305,6 +305,7 @@ The Active Directory Mapping tool. Used by Red and Blue teamers to map out their
 * [CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec) - CrackMapExec (a.k.a CME) is a post-exploitation tool that helps automate assessing the security of _large_ Active Directory networks. Built with stealth in mind, CME follows the concept of "Living off the Land": abusing built-in Active Directory features/protocols to achieve it's functionality and allowing it to evade most endpoint protection/IDS/IPS solutions.
   * [Home · byt3bl33d3r/CrackMapExec Wiki · GitHub](https://github.com/byt3bl33d3r/CrackMapExec/wiki)&#x20;
   * [Introduction - CrackMapExec \~ CME WIKI](https://mpgn.gitbook.io/crackmapexec/)
+* [Rubeus](https://github.com/GhostPack/Rubeus) - a C# toolset for raw Kerberos interaction and abuses.
 * [LAPSToolkit](https://github.com/leoloobeek/LAPSToolkit) - Tool to audit and attack LAPS environments.
 * [Powermad](https://github.com/Kevin-Robertson/Powermad) - PowerShell MachineAccountQuota and DNS exploit tools
   * [https://www.netspi.com/blog/technical/network-penetration-testing/exploiting-adidns/](https://www.netspi.com/blog/technical/network-penetration-testing/exploiting-adidns/)
