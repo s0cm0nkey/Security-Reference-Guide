@@ -33,7 +33,7 @@
       * [Privilege Escalation](red-offensive/testing-methodology/post-exploitation/privilege-escalation.md)
       * [Meterpreter Post-Auth Runbook](red-offensive/testing-methodology/post-exploitation/meterpreter-post-auth-runbook.md)
     * [File Transfer](red-offensive/testing-methodology/file-transfer.md)
-    * [Active Directory](red-offensive/testing-methodology/active-directory/README.md)
+    * [Attacking Active Directory](red-offensive/testing-methodology/active-directory/README.md)
       * [AD Privilege Escalation](red-offensive/testing-methodology/active-directory/ad-privilege-escalation.md)
     * [Lateral Movement](red-offensive/testing-methodology/lateral-movement.md)
     * [Pivot/Proxy/Tunnel/Redirect](red-offensive/testing-methodology/pivot-proxy-tunnel-redirect.md)

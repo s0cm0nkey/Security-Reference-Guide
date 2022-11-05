@@ -2,7 +2,7 @@
 description: Where can we go, once we are in?
 ---
 
-# Active Directory
+# Attacking Active Directory
 
 ## **AD Guides and Reference**
 
@@ -63,6 +63,21 @@ description: Where can we go, once we are in?
 
 <details>
 
+<summary>AD Certificate Services</summary>
+
+****[**https://docs.microsoft.com/en-us/learn/modules/implement-manage-active-directory-certificate-services**](https://docs.microsoft.com/en-us/learn/modules/implement-manage-active-directory-certificate-services)****
+
+* [https://www.exandroid.dev/2021/06/23/ad-cs-relay-attack-practical-guide/](https://www.exandroid.dev/2021/06/23/ad-cs-relay-attack-practical-guide/)
+* [PSPKIAudit](https://github.com/GhostPack/PSPKIAudit) - PowerShell toolkit for auditing Active Directory Certificate Services (AD CS).
+* [Certify](https://github.com/GhostPack/Certify) - Certify is a C# tool to enumerate and abuse misconfigurations in Active Directory Certificate Services (AD CS).
+  * [https://specterops.io/assets/resources/Certified\_Pre-Owned.pdf](https://specterops.io/assets/resources/Certified\_Pre-Owned.pdf)
+  * [Certipy](https://github.com/ollypwn/Certipy) - Python implementation for Certify
+  * [https://research.ifcr.dk/certipy-2-0-bloodhound-new-escalations-shadow-credentials-golden-certificates-and-more-34d1c26f0dc6?gi=8b97d28018d8](https://research.ifcr.dk/certipy-2-0-bloodhound-new-escalations-shadow-credentials-golden-certificates-and-more-34d1c26f0dc6?gi=8b97d28018d8)
+
+</details>
+
+<details>
+
 <summary>Kerberos</summary>
 
 [https://docs.microsoft.com/en-us/windows-server/security/kerberos/kerberos-authentication-overview](https://docs.microsoft.com/en-us/windows-server/security/kerberos/kerberos-authentication-overview)
@@ -117,6 +132,10 @@ description: Where can we go, once we are in?
 
 </details>
 
+{% content-ref url="../../../blue-defense/device-hardening/ad-security-checks.md" %}
+[ad-security-checks.md](../../../blue-defense/device-hardening/ad-security-checks.md)
+{% endcontent-ref %}
+
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
@@ -125,9 +144,7 @@ description: Where can we go, once we are in?
 
 <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-## **AD Tools**
-
-### [Bloodhound](https://github.com/BloodHoundAD/BloodHound)&#x20;
+## [Bloodhound](https://github.com/BloodHoundAD/BloodHound)&#x20;
 
 The Active Directory Mapping tool. Used by Red and Blue teamers to map out their Active Directory environment and look for the shortest path to compromise Domain Admin.
 
@@ -216,14 +233,64 @@ The Active Directory Mapping tool. Used by Red and Blue teamers to map out their
 {% endtab %}
 {% endtabs %}
 
-### **Offensive Tools**
+## **AD Enumeration**
 
-* AD  reconnasaince and numeration
-  * [ADExplorer by Sysinternals](https://docs.microsoft.com/en-us/sysinternals/downloads/adexplorer) - An advanced Active Directory (AD) viewer and editor. You can use AD Explorer to easily navigate an AD database, define favorite locations, view object properties and attributes without having to open dialog boxes, edit permissions, view an object's schema, and execute sophisticated searches that you can save and re-execute.
-  * [ADRecon](https://github.com/adrecon/ADRecon) - ADRecon is a tool which extracts and combines various artifacts (as highlighted below) out of an AD environment.
-  * [ACLight](https://github.com/cyberark/ACLight) -A tool for advanced discovery of Privileged Accounts - including Shadow Admins.
-  * [TruffleSnout](https://github.com/dsnezhkov/TruffleSnout) - Iterative AD discovery toolkit for offensive operators. Situational awareness and targeted low noise enumeration.
-  * [Snaffler](https://github.com/SnaffCon/Snaffler) - It gets a list of Windows computers from Active Directory, then spreads out its snaffly appendages to them all to figure out which ones have file shares, and whether you can read them.
+[https://attl4s.github.io/assets/pdf/Understanding\_Active\_Directory\_Enumeration.pdf](https://attl4s.github.io/assets/pdf/Understanding\_Active\_Directory\_Enumeration.pdf)
+
+{% tabs %}
+{% tab title="Tools" %}
+* [ADExplorer by Sysinternals](https://docs.microsoft.com/en-us/sysinternals/downloads/adexplorer) - An advanced Active Directory (AD) viewer and editor. You can use AD Explorer to easily navigate an AD database, define favorite locations, view object properties and attributes without having to open dialog boxes, edit permissions, view an object's schema, and execute sophisticated searches that you can save and re-execute.
+* [ADRecon](https://github.com/adrecon/ADRecon) - ADRecon is a tool which extracts and combines various artifacts (as highlighted below) out of an AD environment.
+* [ACLight](https://github.com/cyberark/ACLight) -A tool for advanced discovery of Privileged Accounts - including Shadow Admins.
+* [TruffleSnout](https://github.com/dsnezhkov/TruffleSnout) - Iterative AD discovery toolkit for offensive operators. Situational awareness and targeted low noise enumeration.
+* [Snaffler](https://github.com/SnaffCon/Snaffler) - It gets a list of Windows computers from Active Directory, then spreads out its snaffly appendages to them all to figure out which ones have file shares, and whether you can read them.
+{% endtab %}
+
+{% tab title="SPN Scanning" %}
+* [SPN Scanning – Service Discovery without Network Port Scanning](https://adsecurity.org/?p=1508)
+* [Active Directory: PowerShell script to list all SPNs used](https://social.technet.microsoft.com/wiki/contents/articles/18996.active-directory-powershell-script-to-list-all-spns-used.aspx)
+* [Discovering Service Accounts Without Using Privile](https://blog.stealthbits.com/discovering-service-accounts-without-using-privileges/)
+{% endtab %}
+
+{% tab title="Data Mining" %}
+* [A Data Hunting Overview](https://thevivi.net/2018/05/23/a-data-hunting-overview/)
+* [Push it, Push it Real Good](https://www.harmj0y.net/blog/redteaming/push-it-push-it-real-good/)
+* [Finding Sensitive Data on Domain SQL Servers using PowerUpSQL](https://blog.netspi.com/finding-sensitive-data-domain-sql-servers-using-powerupsql/)
+* [Sensitive Data Discovery in Email with MailSniper](https://www.youtube.com/watch?v=ZIOw\_xfqkKM)
+* [Remotely Searching for Sensitive Files](https://www.fortynorthsecurity.com/remotely-search/)
+* [I Hunt Sysadmins - harmj0](http://www.harmj0y.net/blog/penetesting/i-hunt-sysadmins/)y
+{% endtab %}
+
+{% tab title="User Hunting" %}
+* [Active Directory Recon Without Admin Rights](https://adsecurity.org/?p=2535)
+* [Gathering AD Data with the Active Directory PowerShell Module](https://adsecurity.org/?p=3719)
+* [Using ActiveDirectory module for Domain Enumeration from PowerShell Constrained Language Mode](http://www.labofapenetrationtester.com/2018/10/domain-enumeration-from-PowerShell-CLM.html)
+* [PowerUpSQL Active Directory Recon Functions](https://github.com/NetSPI/PowerUpSQL/wiki/Active-Directory-Recon-Functions)
+* [Derivative Local Admin](https://medium.com/@sixdub/derivative-local-admin-cdd09445aac8)
+* [Automated Derivative Administrator Search](https://wald0.com/?p=14)
+* [Dumping Active Directory Domain Info – with PowerUpSQL!](https://blog.netspi.com/dumping-active-directory-domain-info-with-powerupsql/)
+* [Local Group Enumeration](https://www.harmj0y.net/blog/redteaming/local-group-enumeration/)
+* [Situational Awareness](https://pentestlab.blog/2018/05/28/situational-awareness/)
+* [Commands for Domain Network Compromise](https://www.javelin-networks.com/static/5fcc6e84.pdf)
+* [A Pentester’s Guide to Group Scopin](https://www.harmj0y.net/blog/activedirectory/a-pentesters-guide-to-group-scoping/)
+{% endtab %}
+
+{% tab title="LAPS" %}
+* [Microsoft LAPS Security & Active Directory LAPS Configuration Recon](https://adsecurity.org/?p=3164)
+* [Running LAPS with PowerView](https://www.harmj0y.net/blog/powershell/running-laps-with-powerview/)
+* [RastaMouse LAPS Part 1 & 2](https://rastamouse.me/tags/laps/)
+{% endtab %}
+
+{% tab title="ADFS" %}
+* [118 Attacking ADFS Endpoints with PowerShell Karl Fosaaen](https://www.youtube.com/watch?v=oTyLdAUjw30)
+* [Using PowerShell to Identify Federated Domains](https://blog.netspi.com/using-powershell-identify-federated-domains/)
+* [LyncSniper: A tool for penetration testing Skype for Business and Lync deployments](https://github.com/mdsecresearch/LyncSniper)
+* [Troopers 19 - I am AD FS and So Can You](https://www.slideshare.net/DouglasBienstock/troopers-19-i-am-ad-fs-and-so-can-you)
+{% endtab %}
+{% endtabs %}
+
+****
+
 * [CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec) - CrackMapExec (a.k.a CME) is a post-exploitation tool that helps automate assessing the security of _large_ Active Directory networks. Built with stealth in mind, CME follows the concept of "Living off the Land": abusing built-in Active Directory features/protocols to achieve it's functionality and allowing it to evade most endpoint protection/IDS/IPS solutions.
   * [Home · byt3bl33d3r/CrackMapExec Wiki · GitHub](https://github.com/byt3bl33d3r/CrackMapExec/wiki)&#x20;
   * [Introduction - CrackMapExec \~ CME WIKI](https://mpgn.gitbook.io/crackmapexec/)
@@ -232,51 +299,11 @@ The Active Directory Mapping tool. Used by Red and Blue teamers to map out their
   * [https://www.netspi.com/blog/technical/network-penetration-testing/exploiting-adidns/](https://www.netspi.com/blog/technical/network-penetration-testing/exploiting-adidns/)
 * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/good\_to\_know/tools/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/good\_to\_know/tools/)
 
-### Defensive/Hardening Tools
+###
 
-* [PingCastle](https://www.pingcastle.com/) - A tool designed to assess quickly the Active Directory security level with a methodology based on risk assessment and a maturity framework
-* [Aorato Skeleton Key Malware Remote DC Scanner](https://gallery.technet.microsoft.com/Aorato-Skeleton-Key-24e46b73) - Remotely scans for the existence of the Skeleton Key Malware
-* [RiskySPN](https://github.com/cyberark/RiskySPN) - RiskySPNs is a collection of PowerShell scripts focused on detecting and abusing accounts associated with SPNs (Service Principal Name).
-* [Deploy-Deception](https://github.com/samratashok/Deploy-Deception) - A PowerShell module to deploy active directory decoy objects
-* [SpoolerScanner](https://github.com/vletoux/SpoolerScanner) - Check if MS-RPRN is remotely available with powershell/c#
-* [dcept](https://github.com/secureworks/dcept) - A tool for deploying and detecting use of Active Directory honeytokens
-* [DCSYNCMonitor](https://github.com/shellster/DCSYNCMonitor) - Monitors for DCSYNC and DCSHADOW attacks and create custom Windows Events for these events
-* [jackdaw](https://github.com/skelsec/jackdaw) - Jackdaw is here to collect all information in your domain, store it in a SQL database and show you nice graphs on how your domain objects interact with each-other an how a potential attacker may exploit these interactions. It also comes with a handy feature to help you in a password-cracking project by storing/looking up/reporting hashes/passowrds/users.
-
-{% content-ref url="../../../blue-defense/device-hardening/ad-security-checks.md" %}
-[ad-security-checks.md](../../../blue-defense/device-hardening/ad-security-checks.md)
-{% endcontent-ref %}
-
-## **AD Certificate Services**
-
-{% embed url="https://docs.microsoft.com/en-us/learn/modules/implement-manage-active-directory-certificate-services" %}
-
-* [Certify](https://github.com/GhostPack/Certify) - Certify is a C# tool to enumerate and abuse misconfigurations in Active Directory Certificate Services (AD CS).
-  * [https://specterops.io/assets/resources/Certified\_Pre-Owned.pdf](https://specterops.io/assets/resources/Certified\_Pre-Owned.pdf)
-  * [Certipy](https://github.com/ollypwn/Certipy) - Python implementation for Certify
-  * [https://research.ifcr.dk/certipy-2-0-bloodhound-new-escalations-shadow-credentials-golden-certificates-and-more-34d1c26f0dc6?gi=8b97d28018d8](https://research.ifcr.dk/certipy-2-0-bloodhound-new-escalations-shadow-credentials-golden-certificates-and-more-34d1c26f0dc6?gi=8b97d28018d8)
-* [PSPKIAudit](https://github.com/GhostPack/PSPKIAudit) - PowerShell toolkit for auditing Active Directory Certificate Services (AD CS).
-* [https://www.exandroid.dev/2021/06/23/ad-cs-relay-attack-practical-guide/](https://www.exandroid.dev/2021/06/23/ad-cs-relay-attack-practical-guide/)
-
-## **AD Enumeration**
-
-* [https://attl4s.github.io/assets/pdf/Understanding\_Active\_Directory\_Enumeration.pdf](https://attl4s.github.io/assets/pdf/Understanding\_Active\_Directory\_Enumeration.pdf)
-
-{% content-ref url="../post-exploitation/enumeration-and-harvesting.md" %}
-[enumeration-and-harvesting.md](../post-exploitation/enumeration-and-harvesting.md)
-{% endcontent-ref %}
+## ****
 
 ## **AD Privilege Escalation**
-
-{% content-ref url="ad-privilege-escalation.md" %}
-[ad-privilege-escalation.md](ad-privilege-escalation.md)
-{% endcontent-ref %}
-
-## **AD Persistence**
-
-{% content-ref url="../post-exploitation/persistence.md" %}
-[persistence.md](../post-exploitation/persistence.md)
-{% endcontent-ref %}
 
 ## Special AD Targets
 
