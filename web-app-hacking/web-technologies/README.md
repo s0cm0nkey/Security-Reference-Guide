@@ -1,6 +1,8 @@
 # Web Technologies
 
-## ****[**Adobe AEM**](https://www.adobe.com/marketing/experience-manager.html)****
+<details>
+
+<summary><a href="https://www.adobe.com/marketing/experience-manager.html">Adobe AEM</a></summary>
 
 * [aem-hacker](https://github.com/0ang3el/aem-hacker) - Tools to identify vulnerable Adobe Experience Manager (AEM) webapps.
 * [aemscan](https://github.com/Raz0r/aemscan) - Adobe Experience Manager Vulnerability Scanner
@@ -9,12 +11,20 @@
 * [https://www.slideshare.net/0ang3el/hacking-aem-sites](https://www.slideshare.net/0ang3el/hacking-aem-sites)
 * [https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
 
-## Apache Web Server
+</details>
 
-* [apache-users](https://www.kali.org/tools/apache-users/) - This Perl script will enumerate the usernames on any system that uses Apache with the UserDir module.
+<details>
 
-## **APIs**
+<summary>Apache Web Server</summary>
 
+* [apache-users](https://www.kali.org/tools/apache-users/) - This Perl script will enumerate the usernames on any system that uses Apache with the UserDir modul
+
+</details>
+
+#### APIs
+
+{% tabs %}
+{% tab title="APIs" %}
 * [https://github.com/shieldfy/API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist)
 * [https://github.com/OWASP/API-Security/blob/master/2019/en/dist/owasp-api-security-top-10.pdf](https://github.com/OWASP/API-Security/blob/master/2019/en/dist/owasp-api-security-top-10.pdf)
 * [https://hackanythingfor.blogspot.com/2020/07/api-testing-checklist.html](https://hackanythingfor.blogspot.com/2020/07/api-testing-checklist.html)
@@ -36,7 +46,9 @@
 * [https://github.com/Net-hunter121/API-Wordlist](https://github.com/Net-hunter121/API-Wordlist) - A wordlist of API names used for fuzzing web application APIs.
 * [https://github.com/metlo-labs/metlo](https://github.com/metlo-labs/metlo) - Metlo is an open-source API security platform
 * _Hacking: The next generation - Application Protocol Handlers, pg. 96_
+{% endtab %}
 
+{% tab title="GraphQL" %}
 ### [GraphQL](https://graphql.org/)
 
 * [InQL](https://github.com/doyensec/inql) - A Burp Extension for GraphQL Security Testing
@@ -46,22 +58,47 @@
 * [https://lab.wallarm.com/securing-and-attacking-graphql-part-1-overview/](https://lab.wallarm.com/securing-and-attacking-graphql-part-1-overview/)
 * [https://medium.com/@apkash8/graphql-vs-rest-api-model-common-security-test-cases-for-graphql-endpoints-5b723b1468b4](https://medium.com/@apkash8/graphql-vs-rest-api-model-common-security-test-cases-for-graphql-endpoints-5b723b1468b4)
 * [https://the-bilal-rizwan.medium.com/graphql-common-vulnerabilities-how-to-exploit-them-464f9fdce696](https://the-bilal-rizwan.medium.com/graphql-common-vulnerabilities-how-to-exploit-them-464f9fdce696)
+{% endtab %}
+{% endtabs %}
 
-## ASP.NET
+<details>
+
+<summary>ASP.NET</summary>
 
 * [viewgen](https://github.com/0xacb/viewgen) - a ViewState tool capable of generating both signed and encrypted payloads with leaked validation keys
+
+<!---->
+
 * [https://notsosecure.com/exploiting-viewstate-deserialization-using-blacklist3r-and-ysoserial-net/#PoC](https://notsosecure.com/exploiting-viewstate-deserialization-using-blacklist3r-and-ysoserial-net/#PoC)
 
-## Cloudflare
+
+
+</details>
+
+<details>
+
+<summary>Cloudflare</summary>
 
 * [cloudflare\_enum](https://github.com/mandatoryprogrammer/cloudflare\_enum) - Cloudflare DNS Enumeration Tool for Pentesters
 
-## Drupal
+
+
+</details>
+
+<details>
+
+<summary>Drupal</summary>
 
 * [Droopscan](https://github.com/droope/droopescan) - plugin-based scanner that aids security researchers in identifying issues with several CMS.
 * [drupwn](https://github.com/immunIT/drupwn) - Drupal enumeration & exploitation tool
 * [https://hackertarget.com/drupal-security-scan/](https://hackertarget.com/drupal-security-scan/)
 * [Drupal: Reverseshell](https://www.hackingarticles.in/drupal-reverseshell/)
+
+</details>
+
+<details>
+
+<summary><a href="https://firebase.google.com/">Firebase</a></summary>
 
 ## [Firebase](https://firebase.google.com/)
 
@@ -70,37 +107,80 @@
 * [Pyrebase](https://github.com/thisbejim/Pyrebase) - A simple python wrapper for the Firebase API.
 * [https://blog.securitybreached.org/2020/02/04/exploiting-insecure-firebase-database-bugbounty/](https://blog.securitybreached.org/2020/02/04/exploiting-insecure-firebase-database-bugbounty/)
 
-## Firebird
+</details>
+
+<details>
+
+<summary>Firebird</summary>
 
 * [https://www.infosecmatter.com/firebird-database-exploitation/](https://www.infosecmatter.com/firebird-database-exploitation/)
 
-## Flask
+
+
+</details>
+
+<details>
+
+<summary>Flask</summary>
 
 * [Flask-Unsign](https://github.com/Paradoxis/Flask-Unsign) - Command line tool to fetch, decode, brute-force and craft session cookies of a Flask application by guessing secret keys.
+
+<!---->
+
 * [https://blog.paradoxis.nl/defeating-flasks-session-management-65706ba9d3ce](https://blog.paradoxis.nl/defeating-flasks-session-management-65706ba9d3ce)
 
-## Google Web Toolkit
+</details>
+
+<details>
+
+<summary>Google Web Toolkit</summary>
 
 * [GWTMap](https://github.com/FSecureLABS/GWTMap) - GWTMap is a tool to help map the attack surface of Google Web Toolkit (GWT) based applications.
   * [https://labs.f-secure.com/blog/gwtmap-reverse-engineering-google-web-toolkit-applications](https://labs.f-secure.com/blog/gwtmap-reverse-engineering-google-web-toolkit-applications)
 
-## .htaccess File
+</details>
+
+<details>
+
+<summary>.htaccess File</summary>
 
 * [htshells](https://www.kali.org/tools/htshells/) - htshells is a series of web based attacks based around the .htaccess files. Most of the attacks are centered around two attack categories. Remote code/ command execution and information disclosure.
 
-## HTTP/2
+
+
+</details>
+
+<details>
+
+<summary>HTTP/2</summary>
 
 * [https://portswigger.net/research/http2](https://portswigger.net/research/http2)
 
-## IIS
+
+
+</details>
+
+<details>
+
+<summary>IIS</summary>
 
 * [https://github.com/inquisb/miscellaneous/blob/master/ms10-070\_check.py](https://github.com/inquisb/miscellaneous/blob/master/ms10-070\_check.py)
 
-## Java Applets
+</details>
+
+<details>
+
+<summary>Java Applets</summary>
 
 * _Advanced Penetration Testing: Using the Java Applet for Payload Delivery - pg. 31_
 
-## JavaScript
+
+
+</details>
+
+<details>
+
+<summary>JavaScript</summary>
 
 * [JSScanner](https://github.com/dark-warlord14/JSScanner) - Scan JS Files for Endpoints and Secrets
 * [JSFScan.sh](https://github.com/KathanP19/JSFScan.sh) - Automation for javascript recon in bug bounty.
@@ -111,32 +191,52 @@
 * [JSA](https://github.com/w9w/JSA) - Javascript security analysis (JSA) is a program for javascript analysis during web application security assessment.
 * [https://securityjunky.com/scanning-js-files-for-endpoint-and-secrets/](https://securityjunky.com/scanning-js-files-for-endpoint-and-secrets/)
 
-## JBoss
+</details>
 
-* [jexboss](https://github.com/joaomatosf/jexboss) - JexBoss: Jboss (and Java Deserialization Vulnerabilities) verify and EXploitation Tool
+<details>
+
+<summary>JBoss</summary>
+
 * [jboss-autopwn](https://www.kali.org/tools/jboss-autopwn/) - This JBoss script deploys a JSP shell on the target JBoss AS server. Once deployed, the script uses its upload and command execution capability to provide an interactive session.
+* [jexboss](https://github.com/joaomatosf/jexboss) - JexBoss: Jboss (and Java Deserialization Vulnerabilities) verify and EXploitation Tool
 
-## Jenkins
+</details>
+
+<details>
+
+<summary>Jenkins</summary>
 
 * [pwn\_jenkins](https://github.com/gquere/pwn\_jenkins) - Notes about attacking Jenkins servers
 * [Accenture/jenkins-attack-framework](https://github.com/Accenture/jenkins-attack-framework) - Project fpr enumerating and attacking Jenkins
 * [https://pentestbook.six2dez.com/enumeration/webservices/jenkins](https://pentestbook.six2dez.com/enumeration/webservices/jenkins)
 * [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jenkins.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jenkins.md)
 
-## Jira
+</details>
 
-* [jira\_scan](https://github.com/bcoles/jira\_scan) - A simple remote scanner for Atlassian Jira
+<details>
+
+<summary>Jira</summary>
+
 * [https://pentestbook.six2dez.com/enumeration/webservices/jira](https://pentestbook.six2dez.com/enumeration/webservices/jira)
 * [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jira.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jira.md)
+* [jira\_scan](https://github.com/bcoles/jira\_scan) - A simple remote scanner for Atlassian Jira
 
-## Joomla
+</details>
+
+<details>
+
+<summary>Joomla</summary>
 
 * [JCS](https://github.com/TheM4hd1/JCS) - JCS (Joomla Component Scanner) made for penetration testing purpose on Joomla CMS
 * [Joomscan](https://wiki.owasp.org/index.php/Category:OWASP\_Joomla\_Vulnerability\_Scanner\_Project) - OWASP Joomla! Vulnerability Scanner (JoomScan) is an open source project, developed with the aim of automating the task of vulnerability detection and reliability assurance in Joomla CMS deployments.
 * [juumla](https://github.com/oppsec/juumla) - Juumla is a python tool created to identify Joomla version, scan for vulnerabilities and search for config files.
 * [Joomla: Reverse Shell](https://www.hackingarticles.in/joomla-reverse-shell/)
 
-## JSON Web Tokens
+</details>
+
+<details>
+
+<summary>JSON Web Tokens</summary>
 
 * [jwt\_tool](https://github.com/ticarpi/jwt\_tool) - A toolkit for testing, tweaking and cracking JSON Web Tokens
   * [https://github.com/ticarpi/jwt\_tool/wiki/Attack-Methodology](https://github.com/ticarpi/jwt\_tool/wiki/Attack-Methodology)
@@ -148,21 +248,35 @@
 * [https://medium.com/swlh/hacking-json-web-tokens-jwts-9122efe91e4a](https://medium.com/swlh/hacking-json-web-tokens-jwts-9122efe91e4a)
 * [https://medium.com/101-writeups/hacking-json-web-token-jwt-233fe6c862e6](https://medium.com/101-writeups/hacking-json-web-token-jwt-233fe6c862e6)
 
-## Megento
+</details>
+
+<details>
+
+<summary>Megento</summary>
 
 * [magescan](https://github.com/steverobbins/magescan) - Scan a Magento site for information
 * [https://magescan.com/](https://magescan.com/)
 * [https://github.com/steverobbins/magento-version-identification-php](https://github.com/steverobbins/magento-version-identification-php)
 
-## MSExchange
+</details>
+
+<details>
+
+<summary>MSExchange</summary>
 
 * [https://blog.orange.tw/2021/08/proxylogon-a-new-attack-surface-on-ms-exchange-part-1.html](https://blog.orange.tw/2021/08/proxylogon-a-new-attack-surface-on-ms-exchange-part-1.html)
 
-## NGINX
+
+
+</details>
+
+<details>
+
+<summary>NGINX</summary>
 
 * [ nginxpwner](https://github.com/stark0de/nginxpwner) - Nginxpwner is a simple tool to look for common Nginx misconfigurations and vulnerabilities.
 
-## OAuth 2.0
+</details>
 
 {% content-ref url="oauth-2.0.md" %}
 [oauth-2.0.md](oauth-2.0.md)
