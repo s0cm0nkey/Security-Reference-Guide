@@ -64,10 +64,8 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 
 {% embed url="https://pentestbook.six2dez.com/others/subdomain-tools-review" %}
 
-{% embed url="https://youtu.be/rQ-dc5kwRtU" %}
-
-### **Enumeration Tools**
-
+{% tabs %}
+{% tab title="Enumeration Tools" %}
 * [dnsdumpster](https://github.com/nmmapper/dnsdumpster) - A tool to perform DNS reconnaissance on target networks. Among the DNS information got from include subdomains, mx records, web application firewall detection and more fingerprinting and lookups
 * [DNSRecon](https://github.com/darkoperator/dnsrecon) - The Original DNS recon script.
   * [https://www.kali.org/tools/dnsrecon/](https://www.kali.org/tools/dnsrecon/)
@@ -96,40 +94,39 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [Altdns](https://github.com/infosec-au/altdns): Altdns is a DNS recon tool that allows for the discovery of subdomains that conform to patterns. Altdns takes in words that could be present in subdomains under a domain (such as test, dev, staging), as well as a list of known subdomains.
 * [Findomain](https://github.com/Findomain/Findomain): Findomain offers a dedicated monitoring service hosted in Amazon (only the local version is free), that allows you to monitor your target domains and send alerts to Discord and Slack webhooks or Telegram chats when new subdomains are found.
 * [Dome](https://github.com/v4d1/Dome) - Fast and reliable python script that makes active and/or passive scan to obtain subdomains and search for open ports.
+{% endtab %}
 
-### Subdomain Fly Over
-
+{% tab title="Subdomain Fly Over" %}
 Visually parse and fly through subdomains looking for anything fun and interesting.
 
 * [Aquatone](https://github.com/michenriksen/aquatone) - Aquatone is a tool for visual inspection of websites across a large amount of hosts and is convenient for quickly gaining an overview of HTTP-based attack surface.
   * [https://blog.intigriti.com/2021/07/20/hacker-tools-aquatone/](https://blog.intigriti.com/2021/07/20/hacker-tools-aquatone/)&#x20;
 * [EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness) - EyeWitness is designed to take screenshots of websites, provide some server header info, and identify default credentials if possible
 * [Meg](https://github.com/tomnomnom/meg): Meg is a tool for fetching lots of URLs without taking a toll on the servers. It can be used to fetch many paths for many hosts, or fetching a single path for all hosts before moving on to the next path and repeating.
+{% endtab %}
 
-### **Subdomain Takeover**
-
+{% tab title="Subdomain Takeover" %}
 * [TKO-subs](https://github.com/anshumanbh/tko-subs) - A tool that can help detect and takeover subdomains with dead DNS records
 * [Subjack](https://github.com/haccer/subjack) - Subjack is a Subdomain Takeover tool written in Go designed to scan a list of subdomains concurrently and identify ones that are able to be hijacked.
 * [Second-Order](https://github.com/mhmdiaa/second-order) - Scans web applications for second-order subdomain takeover by crawling the app, and collecting URLs (and other data) that match some specific rules, or respond in a specific way.
 * [dnstake](https://github.com/pwnesia/dnstake) - A fast tool to check missing hosted DNS zones that can lead to subdomain takeover
+{% endtab %}
 
-### **Subdomain wordlists**
-
+{% tab title="Subdomain Wordlist" %}
 * [gotator](https://github.com/Josue87/gotator) - Gotator is a tool to generate DNS wordlists through permutations.
 * Knock Wordlist - [https://github.com/guelfoweb/knock/blob/4.1/knockpy/wordlist/wordlist.txt](https://github.com/guelfoweb/knock/blob/4.1/knockpy/wordlist/wordlist.txt)
 * Seclists Subdomains - [https://github.com/danielmiessler/SecLists/tree/master/Discovery/DNS](https://github.com/danielmiessler/SecLists/tree/master/Discovery/DNS)
 * Seclists Web Content - [https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content](https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content)
 * Cheetz all.txt - [https://gist.githubusercontent.com/cheetz/4d6a26bb122a942592ab9ac21894e57b/raw/f58e82c9abfa46a932eb92edbe6b18214141439b/all.txt](https://gist.githubusercontent.com/cheetz/4d6a26bb122a942592ab9ac21894e57b/raw/f58e82c9abfa46a932eb92edbe6b18214141439b/all.txt)
+{% endtab %}
+{% endtabs %}
+
+{% embed url="https://youtu.be/rQ-dc5kwRtU" %}
 
 ## Directory Enumeration
 
-* [dirb](https://www.kali.org/tools/dirb/) - DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary based attack against a web server and analyzing the responses.
-* [DirBuster](https://tools.kali.org/web-applications/dirbuster) - DirBuster is a multi threaded java application designed to brute force directories and files names on web/application servers.
-  * [https://www.kali.org/tools/dirbuster/](https://www.kali.org/tools/dirbuster/)
-  * [https://www.hackingarticles.in/comprehensive-guide-on-dirbuster-tool/](https://www.hackingarticles.in/comprehensive-guide-on-dirbuster-tool/)
-* [Dirsearch](https://github.com/maurosoria/dirsearch) - An advanced command-line tool designed to brute force directories and files in webservers, AKA web path scanner
-  * [https://www.kali.org/tools/dirsearch/](https://www.kali.org/tools/dirsearch/)
-
+{% tabs %}
+{% tab title="Go Buster" %}
 ### [Go Buster](https://github.com/OJ/gobuster)&#x20;
 
 Directory/File, DNS and VHost busting tool written in Go. [https://www.kali.org/tools/gobuster/](https://www.kali.org/tools/gobuster/)
@@ -152,3 +149,15 @@ Gobuster search with file extension
 gobuster -u 10.10.10.10 -w /usr/share/seclists/Discovery/Web_Content/common.txt -t 80 -a Linux -x .txt,.php
 ```
 
+
+{% endtab %}
+
+{% tab title="Other Tools" %}
+* [dirb](https://www.kali.org/tools/dirb/) - DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary based attack against a web server and analyzing the responses.
+* [DirBuster](https://tools.kali.org/web-applications/dirbuster) - DirBuster is a multi threaded java application designed to brute force directories and files names on web/application servers.
+  * [https://www.kali.org/tools/dirbuster/](https://www.kali.org/tools/dirbuster/)
+  * [https://www.hackingarticles.in/comprehensive-guide-on-dirbuster-tool/](https://www.hackingarticles.in/comprehensive-guide-on-dirbuster-tool/)
+* [Dirsearch](https://github.com/maurosoria/dirsearch) - An advanced command-line tool designed to brute force directories and files in webservers, AKA web path scanner
+  * [https://www.kali.org/tools/dirsearch/](https://www.kali.org/tools/dirsearch/)
+{% endtab %}
+{% endtabs %}
