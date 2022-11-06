@@ -2,37 +2,55 @@
 
 ## Guides and Reference
 
+<details>
+
+<summary>Guides and Reference</summary>
+
 * [https://www.ired.team/offensive-security/lateral-movement](https://www.ired.team/offensive-security/lateral-movement)
 * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/remote\_access/remote\_access/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/remote\_access/remote\_access/)
 * [PSExec Pass the Hash - Metasploit Unleashed](https://www.offensive-security.com/metasploit-unleashed/psexec-pass-hash/)&#x20;
 * [Lateral Movement via DCOM: Round 2 | enigma0x3](https://enigma0x3.net/2017/01/23/lateral-movement-via-dcom-round-2/)
 * [https://enigma0x3.net/2017/01/05/lateral-movement-using-the-mmc20-application-com-object/](https://enigma0x3.net/2017/01/05/lateral-movement-using-the-mmc20-application-com-object/)
-* [https://0xeb-bp.github.io/blog/2019/11/21/practical-guide-pass-the-ticket.html](https://0xeb-bp.github.io/blog/2019/11/21/practical-guide-pass-the-ticket.html)
+
+</details>
 
 ## Tools
 
+<details>
+
+<summary>Tools</summary>
+
 * [keimpx](https://github.com/nccgroup/keimpx) - quickly check for valid credentials across a network over SMB.
-* [ActiveReign](https://github.com/m8r0wn/ActiveReign) - ActiveReign, code name AR3, is a network enumeration and attack toolset designed for use on Windows Active Directory environments.
 * [Sonar.js](https://github.com/mandatoryprogrammer/sonar.js) - A framework for identifying and launching exploits against internal network hosts. Works via WebRTC IP enumeration combined with WebSockets and external resource fingerprinting.&#x20;
 * [SprayWMI](https://github.com/trustedsec/spraywmi) - SprayWMI is a method for mass spraying [Unicorn](https://github.com/trustedsec/unicorn) PowerShell injection to CIDR notations.
 * [LOLBAS](https://lolbas-project.github.io/) - Living Off The Land Binaries and Scripts (and also Libraries)
-* [Rubeus](https://github.com/GhostPack/Rubeus) - Rubeus is a C# toolset for raw Kerberos interaction and abuses.
-  * [Rubeus-GUI](https://github.com/VbScrub/Rubeus-GUI) - GUI alternative to the Rubeus command line tool, for all your Kerberos exploit requirements
 * [MalSCCM](https://github.com/nettitude/MalSCCM) - This tool allows you to abuse local or remote SCCM servers to deploy malicious applications to hosts they manage.
+
+</details>
 
 ## Techniques
 
-### Microsoft SQL Server Database links
+{% tabs %}
+{% tab title="PSExec" %}
 
-* [SQL Server – Link… Link… Link… and Shell: How to Hack Database Links in SQL Server!](https://blog.netspi.com/how-to-hack-database-links-in-sql-server/)
-* [SQL Server Link Crawling with PowerUpSQL](https://blog.netspi.com/sql-server-link-crawling-powerupsql/)
+{% endtab %}
 
-### **Targeting other endpoints**
+{% tab title="Targeting Endpoints" %}
+*   P
 
-* PSExec
-  * Allows you to execute programs and code remotely using credentials
-  * Combine with Veil to create an obfuscated payload that can bypass AV
-  * _RTFM: PSExec Commands - pg. 18_
+    SExec
+
+    * Allows you to execute programs and code remotely using credentials
+    * Combine with Veil to create an obfuscated payload that can bypass AV
+    * _RTFM: PSExec Commands - pg. 18_
+
+
+
+    SExec
+
+    * Allows you to execute programs and code remotely using credentials
+    * Combine with Veil to create an obfuscated payload that can bypass AV
+    * _RTFM: PSExec Commands - pg. 18_
 * Metasploit
   * \> use exploit/windows/smb/psexec\_psh
   * Use powershell encoded commands to mimic, ld psexec
@@ -57,6 +75,21 @@
   * new\_gpo\_immediate\_task - Builds and immediate schtask to push through a specified GPO. mist have access to modify GPOs
     * [http://harmj0y.net/blog/empire/empire-1-5](http://harmj0y.net/blog/empire/empire-1-5)
   * _PTFM: Empire Admin Tools - pg. 52_
+{% endtab %}
+
+{% tab title="MSSQL DB Links" %}
+* [SQL Server – Link… Link… Link… and Shell: How to Hack Database Links in SQL Server!](https://blog.netspi.com/how-to-hack-database-links-in-sql-server/)
+* [SQL Server Link Crawling with PowerUpSQL](https://blog.netspi.com/sql-server-link-crawling-powerupsql/)
+{% endtab %}
+{% endtabs %}
+
+### Microsoft SQL Server Database links
+
+*
+
+### **Targeting other endpoints**
+
+*
 
 ### **Impersonating other users on the victim machine**
 
