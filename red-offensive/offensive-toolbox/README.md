@@ -1,8 +1,6 @@
 # Offensive Toolbox
 
-<details>
-
-<summary>Offensive Operating Systems</summary>
+## Offensive OS
 
 * [Kali Linux](https://www.kali.org/) - The one, the only. Kali Linux is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering.
   * [pimpmykali](https://github.com/Dewalt-arch/pimpmykali) - Fixes for new imported Kali Linux virtual machines
@@ -10,16 +8,36 @@
 * [ParrotOS](https://parrotsec.org/) - Parrot OS, the flagship product of Parrot Security is a GNU/Linux distribution based on Debian and designed with Security and Privacy in mind. It includes a full portable laboratory for all kinds of cyber security operations, from pentesting to digital forensics and reverse engineering, but it also includes everything needed to develop your own software or keep your data secure.
 * [Commando-VM](https://github.com/fireeye/commando-vm) - Complete Mandiant Offensive VM (Commando VM), a fully customizable Windows-based pentesting virtual machine distribution.
 * [ThreatBox](https://github.com/threatexpress/threatbox) - A handy offensive linux distro that uses a set of Ansible playbooks for automation and deployment.
-* [AriaCloud](https://github.com/iknowjason/AriaCloud) - A remote penetration testing Docker container, with a focus on including cloud penetration testing tools for Azure, AWS, and GCP.
-* [https://blackarch.org/](https://blackarch.org/index.html) - Offensive Distrobution based on Arch.
 * ****[Exegol](https://github.com/ShutdownRepo/Exegol) - Exegol is a fully configured docker with many useful additional tools, resources (scripts and binaries for privesc, credential theft etc.) and some configuration (oh-my-zsh, history, aliases, colorized output for some tools). It can be used in pentest engagements, bugbounty, CTF, HackTheBox, OSCP lab & exam and so on.
   * [https://hakin9.org/exegol-a-fully-featured-and-community-driven-hacking-environment/](https://hakin9.org/exegol-a-fully-featured-and-community-driven-hacking-environment/)
+* [AriaCloud](https://github.com/iknowjason/AriaCloud) - A remote penetration testing Docker container, with a focus on including cloud penetration testing tools for Azure, AWS, and GCP.
+* [https://blackarch.org/](https://blackarch.org/index.html) - Offensive Distrobution based on Arch.
 
-</details>
+## **Recon Frameworks**
 
-<details>
+{% content-ref url="recon-frameworks.md" %}
+[recon-frameworks.md](recon-frameworks.md)
+{% endcontent-ref %}
 
-<summary>Tool collections</summary>
+## Offensive Frameworks
+
+{% content-ref url="offensive-frameworks.md" %}
+[offensive-frameworks.md](offensive-frameworks.md)
+{% endcontent-ref %}
+
+## C2 Frameworks
+
+{% content-ref url="c2-frameworks.md" %}
+[c2-frameworks.md](c2-frameworks.md)
+{% endcontent-ref %}
+
+## Shells
+
+{% content-ref url="shells.md" %}
+[shells.md](shells.md)
+{% endcontent-ref %}
+
+## **Tool collections**&#x20;
 
 * [Awesome Lists Collection: Security Tools](https://github.com/tina1998612/Awesome-Security-Tool-List)
 * [A Complete Penetration Testing & Hacking Tools List for Hackers & Security Professionals : ](https://www.reddit.com/r/HowToHack/comments/ewm1ax/a\_complete\_penetration\_testing\_hacking\_tools\_list/)
@@ -36,11 +54,7 @@
   * [https://reconshell.com/redteam-toolkit/](https://reconshell.com/redteam-toolkit/)
 * [https://houdini.secsi.io/](https://houdini.secsi.io/) - **HOUDINI** (Hundreds of Offensive and Useful Docker Images for Network Intrusion) is a curated list of **Network Security** related Docker Images for Network Intrusion purposes.
 
-</details>
-
-<details>
-
-<summary>Impacket</summary>
+### Impacket
 
 ****[**Impacket**](https://github.com/SecureAuthCorp/impacket) **-** Impacket is a collection of Python classes for working with network protocols. Impacket is focused on providing low-level programmatic access to the packets and for some protocols (e.g. SMB1-3 and MSRPC) the protocol implementation itself. Packets can be constructed from scratch, as well as parsed from raw data, and the object oriented API makes it simple to work with deep hierarchies of protocols. The library provides a set of tools as examples of what can be done within the context of this library.
 
@@ -51,11 +65,7 @@
 * [https://cheatsheet.haax.fr/windows-systems/exploitation/impacket/](https://cheatsheet.haax.fr/windows-systems/exploitation/impacket/)
 * _Operator Handbook: Impacket - pg. 93_
 
-</details>
-
-<details>
-
-<summary>Powershell tools</summary>
+### **Powershell tools**
 
 * [Powershell Suite ](https://github.com/FuzzySecurity/PowerShell-Suite)- Misc handy offensive powershell script
 * [Nishang](https://github.com/samratashok/nishang)  - Nishang is a framework and collection of scripts and payloads which enables usage of PowerShell for offensive security, penetration testing and red teaming. Nishang is useful during all phases of penetration testing.
@@ -66,11 +76,7 @@
 * [https://docs.quasarops.com/en/public/the-soc-analyst-scrolls/powershell](https://docs.quasarops.com/en/public/the-soc-analyst-scrolls/powershell)
 * [https://docs.quasarops.com/en/public/the-soc-analyst-scrolls/one-liners](https://docs.quasarops.com/en/public/the-soc-analyst-scrolls/one-liners)
 
-</details>
-
-<details>
-
-<summary>Automation</summary>
+## **Automation**
 
 * [https://www.ansible.com/](https://www.ansible.com/) - An enterprise automation platform for the entire IT organization
   * _Operator Handbook: Ansible Commands - pg. 16_
@@ -81,22 +87,14 @@
 * [ warhorse](https://github.com/warhorse/warhorse) - Warhorse consists of a fully-featured Ansible playbook to deploy infrastructure in the cloud for conducting security assessments. The Playbook combines Terraform & Ansible to deploy and configure virtual machines for a wide range of use cases. This Playbook is highly customizable and includes operational security. No experience with Ansible or Terraform is required to use this Playbook.
   * [https://docs.war-horse.io/](https://docs.war-horse.io/)
 
-</details>
-
-<details>
-
-<summary>Networking Tools</summary>
+## Networking Tools
 
 * [0trace](https://www.kali.org/tools/0trace/) - A traceroute tool that can be run within an existing, open TCP connection, therefore bypassing some types of stateful packet filters with ease.
 * [fping](https://www.kali.org/tools/fping/) - fping is a ping like program which uses the Internet Control Message Protocol (ICMP) echo request to determine if a target host is responding.
-* [Netwox Toolkit](https://www.kali.org/tools/netw-ib-ox-ag/) - Toolbox netwox helps to find and solve network problems.
 * [hping3](https://www.kali.org/tools/hping3/) - hping3 is a network tool able to send custom ICMP/UDP/TCP packets and to display target replies like ping does with ICMP replies.
+* [Netwox Toolkit](https://www.kali.org/tools/netw-ib-ox-ag/) - Toolbox netwox helps to find and solve network problems.
 
-</details>
-
-<details>
-
-<summary>Stress Testing (DDOS)</summary>
+## Stress Testing (DDOS)
 
 * [https://cheatsheetseries.owasp.org/cheatsheets/Denial\_of\_Service\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Denial\_of\_Service\_Cheat\_Sheet.html)
 * [https://github.com/ddosify/ddosify](https://github.com/ddosify/ddosify) - High-performance load testing tool, written in Golang.
@@ -114,11 +112,7 @@
 * [**DOS Attack Penetration Testing (Part 1)**](https://www.hackingarticles.in/dos-penetration-testing-part-1/)
 * [**DOS Attack Penetration Testing (Part 2)**](https://www.hackingarticles.in/dos-attack-penetration-testing-part-2/)
 
-</details>
-
-<details>
-
-<summary>Misc Tools</summary>
+## Misc Tools
 
 * [Karkinos -](https://hakin9.org/karkinos-penetration-testing-and-hacking-ctfs-swiss-army-knife/) Karkinos is a light-weight 'Swiss Army Knife' for penetration testing and/or hacking CTF's. Currently, Karkinos offers the following:
   * Encoding/Decoding characters
@@ -139,23 +133,7 @@
 * [LDAPmonitor](https://github.com/p0dalirius/LDAPmonitor) - Monitor creation, deletion and changes to LDAP objects live during your pentest or system administration!
 * [https://github.com/codingo/Interlace](https://github.com/codingo/Interlace) - Easily turn single threaded command line applications into a fast, multi-threaded application with CIDR and glob support.
 
-</details>
-
-{% content-ref url="recon-frameworks.md" %}
-[recon-frameworks.md](recon-frameworks.md)
-{% endcontent-ref %}
-
-{% content-ref url="offensive-frameworks.md" %}
-[offensive-frameworks.md](offensive-frameworks.md)
-{% endcontent-ref %}
-
-{% content-ref url="c2-frameworks.md" %}
-[c2-frameworks.md](c2-frameworks.md)
-{% endcontent-ref %}
-
-{% content-ref url="shells.md" %}
-[shells.md](shells.md)
-{% endcontent-ref %}
+## Utility Commands
 
 {% content-ref url="utility-commands.md" %}
 [utility-commands.md](utility-commands.md)
