@@ -36,9 +36,9 @@ Software for Adversary Simulations and Red Team Operations
 
 </details>
 
-## **PoshC2**
+## ****[**PoshC2**](https://github.com/nettitude/PoshC2/)****
 
-****[**Posh C2**](https://github.com/nettitude/PoshC2/) **** - PoshC2 is a proxy aware C2 framework used to aid penetration testers with red teaming, post-exploitation and lateral movement. This is my framework of choice.
+PoshC2 is a proxy aware C2 framework used to aid penetration testers with red teaming, post-exploitation and lateral movement. This is my framework of choice.
 
 <details>
 
@@ -81,11 +81,14 @@ This tool is designed to create an encrypted command-and-control (C\&C) channel 
 
 </details>
 
-
-
 ## **Other Frameworks**
 
 * [https://www.thec2matrix.com/matrix](https://www.thec2matrix.com/matrix) - Find All the popular C2 Frameworks
+
+<details>
+
+<summary>Other Frameworks</summary>
+
 * [SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY) - SILENTTRINITY is modern, asynchronous, multiplayer & multiserver C2/post-exploitation framework powered by Python 3 and .NETs DLR.
   * [https://www.kali.org/tools/silenttrinity/](https://www.kali.org/tools/silenttrinity/)
 * [Mythic](https://github.com/its-a-feature/Mythic) - A cross-platform, post-exploit, red teaming framework built with python3, docker, docker-compose, and a web browser UI.
@@ -111,7 +114,13 @@ This tool is designed to create an encrypted command-and-control (C\&C) channel 
 * [shad0w](https://github.com/bats3c/shad0w) - A post exploitation framework designed to operate covertly on heavily monitored environments
 * _PTFM: C2 Tools - pg. 62_
 
-## RM Shells/RATs
+</details>
+
+## Remote Management Shells/RATs
+
+<details>
+
+<summary>Shells and Rats</summary>
 
 * [Awesome Lists Collection: RATs](https://github.com/alphaSeclab/awesome-rat/blob/master/Readme\_en.md)
 * [https://github.com/AJMartel/MeGa-RAT-Pack](https://github.com/AJMartel/MeGa-RAT-Pack)
@@ -124,16 +133,21 @@ This tool is designed to create an encrypted command-and-control (C\&C) channel 
   * [https://www.hackingarticles.in/evilosx-rat-for-macos-osx/](https://www.hackingarticles.in/evilosx-rat-for-macos-osx/)
 * [serpentine](https://github.com/jafarlihi/serpentine) - serpentine is a Windows RAT (Remote Administration Tool) that lets you interact with the clients using a multiplatform RESTful C2 server.
 * [QuasarRAT](https://github.com/quasar/Quasar) - Quasar is a fast and light-weight remote administration tool coded in C#. The usage ranges from user support through day-to-day administrative work to employee monitoring. Providing high stability and an easy-to-use user interface, Quasar is the perfect remote administration solution for you.
+* [Remcos-Professional-Cracked-By-Alcatraz3222](https://github.com/cybertoxin/Remcos-Professional-Cracked-By-Alcatraz3222) - Remcos lets you extensively control and manage one or many computers remotely.
+
+</details>
 
 {% embed url="https://youtu.be/kyueZUfSWO4" %}
-
-* [Remcos-Professional-Cracked-By-Alcatraz3222](https://github.com/cybertoxin/Remcos-Professional-Cracked-By-Alcatraz3222) - Remcos lets you extensively control and manage one or many computers remotely.
 
 {% embed url="https://youtu.be/rffkJDcri18" %}
 
 ## Tor C2
 
 &#x20;A C2 server can be provisioned as a node within the Tor network and force the compromised host to connect to Tor when it comes online.&#x20;
+
+<details>
+
+<summary>How to Tor C2</summary>
 
 * Torrc file - Tor stores its configuration in a file called torrc.&#x20;
   * In order to create a hidden service append the following lines to the torrc file&#x20;
@@ -158,3 +172,5 @@ HiddenServicePort 8080 127.0.0.1:8080
   * Please rename so it is not immediately visible in the Windows process list&#x20;
   * Changes that need to be made ▪ Change teh SSH tunneling IPs from the Internet IPv4 addresses within the code to point to the .onion address mentioned previously.&#x20;
   * Tell the SSH SOCKS proxy to upstream to the Tor SOCKs proxy on TCP 9050
+
+</details>
