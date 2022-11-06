@@ -5,6 +5,8 @@
 * [Awesome Lists Collection: Asset Discovery](https://github.com/redhuntlabs/Awesome-Asset-Discovery)
 * [https://cheatsheetseries.owasp.org/cheatsheets/Attack\_Surface\_Analysis\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Attack\_Surface\_Analysis\_Cheat\_Sheet.html)
 
+{% tabs %}
+{% tab title="Amass" %}
 ### [Amass](https://github.com/OWASP/Amass)&#x20;
 
 The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and active reconnaissance techniques.
@@ -12,7 +14,9 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * Hakluke's Amass Guide - [https://medium.com/@hakluke/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7](https://medium.com/@hakluke/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7)
 * Dionach's Amass Guide - [https://www.dionach.com/blog/how-to-use-owasp-amass-an-extensive-tutorial/](https://www.dionach.com/blog/how-to-use-owasp-amass-an-extensive-tutorial/)
 * [https://www.youtube.com/watch?v=mEQnVkSG19M](https://www.youtube.com/watch?v=mEQnVkSG19M)
+{% endtab %}
 
+{% tab title="Project Discovery Suite" %}
 ### [projectdiscovery.io](https://projectdiscovery.io/#/)
 
 &#x20;Collection of open source tools for attack surface management or Bug Bounties.
@@ -27,9 +31,20 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [httpx](https://github.com/projectdiscovery/httpx) - httpx is a fast and multi-purpose HTTP toolkit allows to run multiple probers using retryablehttp library, it is designed to maintain the result reliability with increased threads.
 * [proxify](https://github.com/projectdiscovery/proxify) - Swiss Army knife Proxy tool for HTTP/HTTPS traffic capture, manipulation, and replay on the go.
 * [dnsx](https://github.com/projectdiscovery/dnsx) - dnsx is a fast and multi-purpose DNS toolkit allow to run multiple DNS queries of your choice with a list of user-supplied resolvers.
+{% endtab %}
 
-### Other tools
+{% tab title="Web Content Discovery" %}
+...burp...
 
+* [Photon](https://github.com/s0md3v/Photon) - Incredibly fast crawler designed for OSINT.
+* [URLgrab](https://github.com/IAmStoxe/urlgrab) - A golang utility to spider through a website searching for additional links.
+* [hakrawler](https://github.com/hakluke/hakrawler) - Simple, fast web crawler designed for easy, quick discovery of endpoints and assets within a web application. Also built by the Legendary Hakluke
+* [gospider](https://www.kali.org/tools/gospider/) - This package contains a Fast web spider written in Go.&#x20;
+* [filebuster](https://github.com/henshin/filebuster) - Filebuster is a HTTP fuzzer / content discovery script with loads of features and built to be easy to use and fast! It uses one of the fastest HTTP classes in the world (of PERL) - Furl::HTTP. Also the thread modelling is optimized to run as fast as possible.
+* [feroxbuster](https://www.kali.org/tools/feroxbuster/) - feroxbuster is a tool designed to perform Forced Browsing. Forced browsing is an attack where the aim is to enumerate and access resources that are not referenced by the web application, but are still accessible by an attacker.
+{% endtab %}
+
+{% tab title="Other Tools" %}
 * [Intrigue](https://github.com/intrigueio/intrigue-core) - Intrigue Core is a framework for discovering attack surface. It discovers security-relevant assets and exposures within the context of projects and can be used with a human-in-the-loop running individual tasks, and/or automated through the use of workflows.
 * [Odin](https://github.com/chrismaddalena/ODIN) - ODIN is Python tool for automating intelligence gathering, asset discovery, and reporting.
 * [AttackSurfaceMapper](https://github.com/superhedgy/AttackSurfaceMapper) - AttackSurfaceMapper (ASM) is a reconnaissance tool that uses a mixture of open source intelligence and active techniques to expand the attack surface of your target. You feed in a mixture of one or more domains, subdomains and IP addresses and it uses numerous techniques to find more targets.
@@ -41,18 +56,9 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [https://www.riskiq.com/](https://www.riskiq.com/) - RiskIQ Digital Footprint gives complete visibility beyond the firewall. Unlike scanners and IP-dependent data vendors, RiskIQ Digital Footprint is the only solution with composite intelligence, code-level discovery and automated threat detection and exposure monitoring—security intelligence mapped to your attack surface.
 * [https://dehashed.com/](https://dehashed.com/) - Scan domain for indicators found in breaches
 * [https://github.com/hakluke/hakcertstream](https://github.com/hakluke/hakcertstream) - Use CertStream to get lists of new domains and subdomains registered with a certificate authority.
-* [https://github.com/ayoubfathi/leaky-paths](https://github.com/ayoubfathi/leaky-paths) - A collection of special paths linked to major web CVEs, known misconfigurations, juicy APIs ..etc. It could be used as a part of web content discovery, to scan passively for high-quality endpoints and quick-wins.
-
-## Content Discovery
-
-...burp...
-
-* [Photon](https://github.com/s0md3v/Photon) - Incredibly fast crawler designed for OSINT.
-* [URLgrab](https://github.com/IAmStoxe/urlgrab) - A golang utility to spider through a website searching for additional links.
-* [hakrawler](https://github.com/hakluke/hakrawler) - Simple, fast web crawler designed for easy, quick discovery of endpoints and assets within a web application. Also built by the Legendary Hakluke
-* [gospider](https://www.kali.org/tools/gospider/) - This package contains a Fast web spider written in Go.&#x20;
-* [filebuster](https://github.com/henshin/filebuster) - Filebuster is a HTTP fuzzer / content discovery script with loads of features and built to be easy to use and fast! It uses one of the fastest HTTP classes in the world (of PERL) - Furl::HTTP. Also the thread modelling is optimized to run as fast as possible.
-* [feroxbuster](https://www.kali.org/tools/feroxbuster/) - feroxbuster is a tool designed to perform Forced Browsing. Forced browsing is an attack where the aim is to enumerate and access resources that are not referenced by the web application, but are still accessible by an attacker.
+* [https://github.com/ayoubfathi/leaky-paths](https://github.com/ayoubfathi/leaky-paths) - A collection of special paths linked to major web CVEs, known misconfigurations, juicy APIs ..etc. It could be used as a part of web content discovery, to scan passively for high-quality endpoints and quick-wins
+{% endtab %}
+{% endtabs %}
 
 ## DNS/Subdomain
 
