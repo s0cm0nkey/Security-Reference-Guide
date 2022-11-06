@@ -54,17 +54,24 @@ The Leading Web application testing tool on the market. Has a community edition 
   * [https://portswigger.net/burp/documentation/collaborator](https://portswigger.net/burp/documentation/collaborator)
   * [https://www.hackingarticles.in/burp-suite-for-pentester-burp-collaborator/](https://www.hackingarticles.in/burp-suite-for-pentester-burp-collaborator/)
 {% endtab %}
+
+{% tab title="Payloads" %}
+* [Payload Processing Rule in Burp suite (Part 1)](https://www.hackingarticles.in/payload-processing-rule-burp-suite-part-1/)
+* [Payload Processing Rule in Burp suite (Part 2)](https://www.hackingarticles.in/payload-processing-rule-burp-suite-part-2/)
+* [Beginners Guide to Burpsuite Payloads (Part 1)](https://www.hackingarticles.in/beginners-guide-burpsuite-payloads-part-1/)
+* [Beginners Guide to Burpsuite Payloads (Part 2)](https://www.hackingarticles.in/beginners-guide-burpsuite-payloads-part-2/)
+{% endtab %}
 {% endtabs %}
 
 ## Burp Extensions
 
-### Extension Collections
-
+{% tabs %}
+{% tab title="Collections" %}
 * [Awesome Lists Collection: Burp Extensions](https://github.com/snoopysecurity/awesome-burp-extensions)
 * [Bug Bounty Forum's Burp Extensions List](https://bugbountyforum.com/tools/proxy-plugins/)
+{% endtab %}
 
-### Multi-Vulnerability Scanning Extensions
-
+{% tab title="Multi-Vuln Scanners" %}
 * [HUNT](https://github.com/bugcrowd/HUNT) - HUNT Suite is a collection of Burp Suite Pro/Free and OWASP ZAP extensions, collected by Bug Crowd.
 * [BurpBounty](https://github.com/wagiro/BurpBounty) - This Burp Suite extension allows you, in a quick and simple way, to improve the active and passive Burp Suite scanner by means of personalized rules through a very intuitive graphical interface.
   * [Burp Bounty Pro](https://burpbounty.net/) - Premium bundle of vulnerabilites to scan for.
@@ -74,9 +81,9 @@ The Leading Web application testing tool on the market. Has a community edition 
   * [https://portswigger.net/burp/documentation/desktop/scanning](https://portswigger.net/burp/documentation/desktop/scanning)
   * [https://www.hackingarticles.in/burp-suite-for-pentester-active-scan/](https://www.hackingarticles.in/burp-suite-for-pentester-active-scan/)
 * [ParamMiner](https://portswigger.net/bappstore/17d2949a985c4b7ca092728dba871943) - This extension identifies hidden, unlinked parameters. It's particularly useful for finding web cache poisoning vulnerabilities.
+{% endtab %}
 
-### Single Vulnerability Extensions
-
+{% tab title="Single Vuln Scanners" %}
 * [Retire.JS](https://github.com/h3xstream/burp-retire-js) - Burp/ZAP/Maven extension that integrate Retire.js repository to find vulnerable Javascript libraries.
 * [sqlipy](https://github.com/codewatchorg/sqlipy) - SQLiPy is a Python plugin for Burp Suite that integrates SQLMap using the SQLMap API.
 * [Backslash powered scanner](https://portswigger.net/bappstore/9cff8c55432a45808432e26dbb2b41d8) - Active scan for SSTI detection
@@ -90,9 +97,9 @@ The Leading Web application testing tool on the market. Has a community edition 
 * [shelling](https://github.com/ewilded/shelling) - a comprehensive OS command injection payload generator
 * [Autorise](https://portswigger.net/bappstore/f9bbac8c4acf4aefa4d7dc92a991af2f) - Tool for detecting autorization vulerabilities such as Indirect Object Reference.
 * [Java Deserialization Scanner](https://portswigger.net/bappstore/228336544ebe4e68824b5146dbbd93ae) - Active and passive scanner to find Java deserialization vulnerabilities
+{% endtab %}
 
-### Utility Extensions
-
+{% tab title="Utility" %}
 * [Hackbar](https://github.com/d3vilbug/HackBar) - Hackbar is a plugin designed for the penetration tester such in order to help them to speed their manual testing procedures**.**
   * [https://www.hackingarticles.in/burp-suite-for-pentester-hackbar/](https://www.hackingarticles.in/burp-suite-for-pentester-hackbar/)
 * [Burp-Send-To](https://github.com/bytebutcher/burp-send-to) - Adds a customizable "Send to..."-context-menu to your Burp Suite. Handy for easily sending data into another tool like SQLmap
@@ -102,13 +109,8 @@ The Leading Web application testing tool on the market. Has a community edition 
 * [Decoder Improved](https://portswigger.net/bappstore/0a05afd37da44adca514acef1cdde3b9) - Decoder Improved is a data transformation plugin for Burp Suite that better serves the varying and expanding needs of information security professionals.
 * [WSDLer](https://portswigger.net/bappstore/594a49bb233748f2bc80a9eb18a2e08f) - This extension takes a WSDL request, parses out the operations that are associated with the targeted web service, and generates SOAP requests that can then be sent to the SOAP endpoints.
 * [WSDL Wizard](https://portswigger.net/bappstore/ef2f3f1a593d417987bb2ddded760aee): This extension scans a target server for WSDL files. After performing normal mapping of an application’s content, right click on the relevant target in the site map, and choose “Scan for WSDL files” from the context menu. The extension will search the already discovered contents for URLs with the .wsdl file extension, and guess the locations of any additional WSDL files based on the file names known to be in use. The results of the scanning appear within the extension’s output tab in the Burp Extender tool.
-
-## Burp Payloads
-
-* [Payload Processing Rule in Burp suite (Part 1)](https://www.hackingarticles.in/payload-processing-rule-burp-suite-part-1/)
-* [Payload Processing Rule in Burp suite (Part 2)](https://www.hackingarticles.in/payload-processing-rule-burp-suite-part-2/)
-* [Beginners Guide to Burpsuite Payloads (Part 1)](https://www.hackingarticles.in/beginners-guide-burpsuite-payloads-part-1/)
-* [Beginners Guide to Burpsuite Payloads (Part 2)](https://www.hackingarticles.in/beginners-guide-burpsuite-payloads-part-2/)
+{% endtab %}
+{% endtabs %}
 
 ## **Burp Training**
 
