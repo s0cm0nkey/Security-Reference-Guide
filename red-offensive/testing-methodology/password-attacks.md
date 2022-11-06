@@ -4,17 +4,19 @@ description: Password1234!
 
 # Password Attacks
 
-## **Guides and Reference**
+## **Guides and Resources**
 
+{% tabs %}
+{% tab title="General Guides" %}
 * [https://alexandreborgesbrazil.files.wordpress.com/2013/08/introduction\_to\_password\_cracking\_part\_1.pdf](https://alexandreborgesbrazil.files.wordpress.com/2013/08/introduction\_to\_password\_cracking\_part\_1.pdf)
 * [https://medium.com/bugbountywriteup/pwning-wordpress-passwords-2caf12216956](https://medium.com/bugbountywriteup/pwning-wordpress-passwords-2caf12216956)
 * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/cracking\_hashes/cracking\_hashes/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/cracking\_hashes/cracking\_hashes/)
 * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/cracking\_hashes/generate\_password\_list/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/cracking\_hashes/generate\_password\_list/)
 * _Operator Handbook: Password Cracking Methodology - pg. 243_
 * _Penetration Testing: Password Attacks - pg.197_
+{% endtab %}
 
-### **Default Passwords**
-
+{% tab title="Default Passwords" %}
 * [http://critifence.com/default-password-database/](http://critifence.com/default-password-database/)
 * [https://default-password.info/](https://default-password.info/)
 * [https://www.routerpasswords.com](https://www.routerpasswords.com)
@@ -22,10 +24,9 @@ description: Password1234!
 * [https://cirt.net/passwords](https://cirt.net/passwords)
 * [https://192-168-1-1ip.mobi/default-router-passwords-list](https://192-168-1-1ip.mobi/default-router-passwords-list)
 * [http://www.defaultpassword.com/](http://www.defaultpassword.com/)
-* [https://datarecovery.com/rd/default-passwords/](https://datarecovery.com/rd/default-passwords/)
+{% endtab %}
 
-### **WordLists**
-
+{% tab title="WordLists" %}
 * [Awesome Lists Collection: Wordlists](https://github.com/gmelodie/awesome-wordlists)
 * [SecLists](https://github.com/danielmiessler/SecLists/tree/master/Passwords) - Daniel Miessler's gold standard of wordlists
 * [berzerk0/Probable-Wordlists](https://github.com/berzerk0/Probable-Wordlists)
@@ -35,9 +36,9 @@ description: Password1234!
 * [jeanphorn/wordlist](https://github.com/jeanphorn/wordlist)
 * [Jhaddix's wordlist](https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056) - Bug Bounty master Jason Haddix's master wordlist made from every dns enumeration tool... ever. Please excuse the lewd entries =/
 * [https://github.com/kaonashi-passwords/Kaonashi](https://github.com/kaonashi-passwords/Kaonashi) - Wordlist, rules and masks from Kaonashi project (RootedCON 2019)
+{% endtab %}
 
-### **Wordlist generation tools**
-
+{% tab title="Wordlist Generation Tools" %}
 * [CEWL](https://digi.ninja/projects/cewl.php) - CeWL is a ruby app which spiders a given url to a specified depth, optionally following external links, and returns a list of words which can then be used for password crackers such as [John the Ripper](http://www.openwall.com/john/).
   * [https://www.kali.org/tools/cewl/](https://www.kali.org/tools/cewl/)
 * [Crunch](https://tools.kali.org/password-attacks/crunch) - Crunch is a wordlist generator where you can specify a standard character set or a character set you specify. crunch can generate all possible combinations and permutations.
@@ -52,19 +53,25 @@ description: Password1234!
 * [https://github.com/cyberspacekittens/nsa-rules](https://github.com/cyberspacekittens/nsa-rules)
 * [https://github.com/cyberspacekittens/Hob0Rules](https://github.com/cyberspacekittens/Hob0Rules)
 * [https://github.com/cyberspacekittens/password\_cracking\_rules](https://github.com/cyberspacekittens/password\_cracking\_rules)
+{% endtab %}
+{% endtabs %}
 
-## Hash Identification
+## Tools
+
+<details>
+
+<summary>Hash Identification</summary>
 
 * [http://www.101hacker.com/2010/12/hashes-and-seeds-know-basics.html](http://www.101hacker.com/2010/12/hashes-and-seeds-know-basics.html)
 * [HashID](https://pypi.org/project/hashID/) - Identify the different types of hashes used to encrypt data and especially passwords.
 * [haiti](https://github.com/noraj/haiti) - Hash Identification tool.
 * [hash-identifier](https://www.kali.org/tools/hash-identifier/)
 
-```
-$ hash-identifier
-```
+</details>
 
-## **Password Spraying**
+<details>
+
+<summary>Password Spraying</summary>
 
 * [SprayingToolkit](https://github.com/byt3bl33d3r/SprayingToolkit) - Scripts to make password spraying attacks against Lync/S4B, OWA & O365 a lot quicker, less painful and more efficient
 * [Trident](https://github.com/praetorian-inc/trident) - automated password spraying tool
@@ -87,18 +94,30 @@ Reference
 * [https://www.ired.team/offensive-security/initial-access/password-spraying-outlook-web-access-remote-shell](https://www.ired.team/offensive-security/initial-access/password-spraying-outlook-web-access-remote-shell)
 * [Attacking Exchange with MailSniper](https://www.blackhillsinfosec.com/attacking-exchange-with-mailsniper/)
 
-## **Password Guessing Tools**
+</details>
+
+<details>
+
+<summary>Password Guessing Tools</summary>
 
 * [Prince](https://github.com/hashcat/princeprocessor) - Standalone password candidate generator using the PRINCE algorithm
   * [https://reusablesec.blogspot.com/2014/12/tool-deep-dive-prince.html](https://reusablesec.blogspot.com/2014/12/tool-deep-dive-prince.html)
-* [PassGAN](https://github.com/brannondorsey/PassGAN) - A Deep Learning Approach for Password Guessing
+
+<!---->
+
 * [Talon](https://github.com/optiv/Talon/) - A password guessing tool that targets the Kerberos and LDAP services within the Windows Active Directory environment.
+
+<!---->
+
 * [https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/melicher](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/melicher)
+* [PassGAN](https://github.com/brannondorsey/PassGAN) - A Deep Learning Approach for Password Guessing
 
-## Password Cracking
+</details>
 
-### Online Cracking tools
+### Password Cracking
 
+{% tabs %}
+{% tab title="Online Cracking" %}
 * [https://crackstation.net/](https://crackstation.net/)
 * [https://www.cmd5.org/](https://www.cmd5.org/)
 * [https://hashkiller.io/listmanager](https://hashkiller.io/listmanager)
@@ -107,9 +126,9 @@ Reference
 * [https://crack.sh/](https://crack.sh/)
 * [https://passwordrecovery.io/](https://passwordrecovery.io/)
 * [http://cracker.offensive-security.com/](http://cracker.offensive-security.com/)
+{% endtab %}
 
-### **Offline Cracking tools**
-
+{% tab title="Offline Cracking" %}
 * [HateCrack](https://github.com/trustedsec/hate\_crack) - A tool for automating cracking methodologies through Hashcat from the TrustedSec team.
 * [Password Analysis and Cracking Kit ](https://github.com/iphelix/PACK)- Collection of utilities for analyzing passwords for cracking and guessing
 * MDXFind - the CPU-based hash-cracking tool
@@ -122,7 +141,9 @@ Reference
 * [rainbowcrack](https://www.kali.org/tools/rainbowcrack/)  - RainbowCrack is a general propose implementation of Philippe Oechslin’s faster time-memory trade-off technique. It crack hashes with rainbow tables.
 * [hashview](https://github.com/hashview/hashview) - A web front-end for password cracking and analytics
   * [https://www.hashview.io/](https://www.hashview.io/)
+{% endtab %}
 
+{% tab title="Hashcat" %}
 ### [HashCat](https://github.com/hashcat/hashcat)&#x20;
 
 World's fastest and most advanced password recovery utility
@@ -143,7 +164,9 @@ GPU cracking:
 ```
 $ hashcat -m 500 -a 0 -o output.txt -remove hashes.txt /usr/share/wordlists/rockyou.txt
 ```
+{% endtab %}
 
+{% tab title="JohnTheRipper" %}
 ### JohnTheRipper
 
 [John The Ripper](https://www.offensive-security.com/metasploit-unleashed/john-ripper/) - The John The Ripper module is used to identify weak passwords that have been acquired as hashed files (loot) or raw LANMAN/NTLM hashes (hashdump). The goal of this module is to find trivial passwords in a short amount of time. To crack complex passwords or use large wordlists, John the Ripper should be used outside of Metasploit.
@@ -181,10 +204,14 @@ $ hashcat -m 500 -a 0 -o output.txt -remove hashes.txt /usr/share/wordlists/rock
   * \#rar2john \[rarfile] > \[out file]
   * \#john --wordlist=/word/list.txt out\_file.txt
   * \#unrar -p password out\_file.txt
+{% endtab %}
+{% endtabs %}
 
-## Brute Forcing
+### Password Brute Forcing
 
+<details>
 
+<summary>Password Brute Forcing</summary>
 
 * [Cerbrutus-BruteForcer](https://github.com/Cerbrutus-BruteForcer/cerbrutus) - The fastest brute-forceing and spraying tool available. Currently supports SSH and FTP with other protocols in development.
 * [Hydra](https://github.com/vanhauser-thc/thc-hydra) - Super powerful, multi-protocol password brute forceing tool
@@ -193,14 +220,22 @@ $ hashcat -m 500 -a 0 -o output.txt -remove hashes.txt /usr/share/wordlists/rock
   * [https://www.kali.org/tools/crowbar/](https://www.kali.org/tools/crowbar/)
 * [WBruter](https://github.com/wuseman/WBRUTER) - wbruter is is the first tool which has been released as open source wich can guarantee 100% that your pin code will be cracked as long as usb debugging has been enable. wbruter also includes some other brute methods like dictionary attacks for gmail, ftp, rar, zip and some other file extensions.
 
-## **RSA Tools**
+</details>
+
+### **RSA Tools**
+
+<details>
+
+<summary>RSA Tools</summary>
 
 * [RSA Calculator](https://www.cs.drexel.edu/\~jpopyack/IntroCS/HW/RSAWorksheet.html)
 * [RSACTFTool](https://github.com/Ganapati/RsaCtfTool) - RSA multi attacks tool : uncipher data from weak public key and try to recover private key Automatic selection of best attack for the given public key
 * [RSATool](https://github.com/ius/rsatool) - rsatool calculates RSA (p, q, n, d, e) and RSA-CRT (dP, dQ, qInv) parameters given either two primes (p, q) or modulus and private exponent (n, d). Resulting parameters are displayed and can optionally be written as an OpenSSL compatible DER or PEM encoded RSA private key.
 * RSA Theory - [https://muirlandoracle.co.uk/2020/01/29/rsa-encryption/](https://muirlandoracle.co.uk/2020/01/29/rsa-encryption/)
 
-## **Rainbow Table Attacks**
+</details>
+
+### **Rainbow Table Attacks**
 
 * [Rainbow Crack](http://project-rainbowcrack.com/table.htm) - RainbowCrack is a general propose implementation of Philippe Oechslin's faster [time-memory trade-off](https://en.wikipedia.org/wiki/Space-time\_tradeoff) technique. It crack hashes with [rainbow tables](https://en.wikipedia.org/wiki/Rainbow\_table).
 * [dcipher](https://github.com/k4m4/dcipher) - Decipher hashes using online rainbow & lookup table attack services.
