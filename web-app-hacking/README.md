@@ -2,8 +2,8 @@
 
 ## **Web App Testing Resources**
 
-### **Guides**
-
+{% tabs %}
+{% tab title="Guides" %}
 * [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) -  comprehensive guide to testing the security of web applications and web services created by the OWASP foundation.
   * [https://owasp.org/www-project-top-ten/](https://owasp.org/www-project-top-ten/) - Guide to the top ten most common vulnerabilities encountered in web app pentesting.
   * [OWASP Testing Guide 4.0](https://www.owasp.org/images/1/19/OTGv4.pdf) (PDF)
@@ -18,7 +18,9 @@
 * [https://github.com/KathanP19/HowToHunt/blob/master/CheckList/Web\_Checklist\_by\_Chintan\_Gurjar.pdf](https://github.com/KathanP19/HowToHunt/blob/master/CheckList/Web\_Checklist\_by\_Chintan\_Gurjar.pdf)
 * [https://github.com/KathanP19/HowToHunt/blob/master/CheckList/mindmap.png](https://github.com/KathanP19/HowToHunt/blob/master/CheckList/mindmap.png)
 * [https://github.com/KathanP19/HowToHunt/blob/master/CheckList/Web\_Penetration\_Testing\_Methodology%402x.png](https://github.com/KathanP19/HowToHunt/blob/master/CheckList/Web\_Penetration\_Testing\_Methodology%402x.png)
+{% endtab %}
 
+{% tab title="Resources" %}
 ### Resources
 
 There is a bug bounty focused search engine at [https://www.bugbountyhunting.com/?](https://www.bugbountyhunting.com/?) that can point you in the direction of  tools, attacks, methodology, writeups, anything you want. It is amazing.
@@ -29,9 +31,9 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 * [https://pentestbook.six2dez.com/others/web-fuzzers-comparision](https://pentestbook.six2dez.com/others/web-fuzzers-comparision)
 * [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Recon/Scope.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Recon/Scope.md)
 * _Operator Handbook: Web\_Exploit - pg.318_
+{% endtab %}
 
-### **Resource Collections**
-
+{% tab title="Resource Collections" %}
 * [Awesome Lists Collection: Web Hacking](https://github.com/infoslack/awesome-web-hacking)
 * [Awesome Lists Collection: Web Security](https://github.com/qazbnm456/awesome-web-security)
 * [Awesome Lists Collection: Hacker API Tools](https://github.com/Hacker0x01/awesome-hacker-api-tools)
@@ -46,9 +48,13 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 * [Web App Hacking Research by James Kettle](https://skeletonscribe.net/) - Everything that isnt posted on [PortSwigger.com/research](https://portswigger.net/research), this site is the blog for the research done by PortSwigger's Head of research, James Kettle.
 * [Web App Payload Collection](https://github.com/foospidy/payloads)
 * [https://pentestbook.six2dez.com/enumeration/webservices/](https://pentestbook.six2dez.com/enumeration/webservices/) - Tools and attacks for specific web services.
+{% endtab %}
+{% endtabs %}
 
 ## **Bug Bounty**
 
+{% tabs %}
+{% tab title="Platforms" %}
 ### Platforms
 
 * [https://www.hackerone.com/](https://www.hackerone.com/)
@@ -63,9 +69,9 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 * [https://securebug.se/](https://securebug.se/)
 * [https://www.openbugbounty.org/](https://www.openbugbounty.org/)
 * [https://security.apple.com/](https://security.apple.com/)
+{% endtab %}
 
-### Resources and Reference
-
+{% tab title="Resources and Reference" %}
 * Methodology
   * [https://github.com/Cyber-Guy1/theCyberGuy\_Recon\_V1.0](https://github.com/Cyber-Guy1/theCyberGuy\_Recon\_V1.0) - Great Methodology MindMap
   * [https://labs.detectify.com/2021/11/30/hakluke-creating-the-perfect-bug-bounty-automation](https://labs.detectify.com/2021/11/30/hakluke-creating-the-perfect-bug-bounty-automation/)
@@ -82,10 +88,12 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
   * ****[**bounty-targets-data**](https://github.com/arkadiyt/bounty-targets-data) **-** This repo contains hourly-updated data dumps of bug bounty platform scopes (like Hackerone/Bugcrowd/Intigriti/etc) that are eligible for reports
   * [bug-bounty-reference](https://github.com/ngalongc/bug-bounty-reference) - is a list of bug bounty write-ups.
   * [Bug bounty writeups](https://pentester.land/list-of-bug-bounty-writeups.html) - list of bug bounty writeups (2012-2020).
+{% endtab %}
+{% endtabs %}
 
 ![](<../.gitbook/assets/image (25).png>)
 
-## Web App Testing Frameworks
+## Tools
 
 {% content-ref url="burp-suite.md" %}
 [burp-suite.md](burp-suite.md)
@@ -95,11 +103,28 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 [web-app-testing-frameworks.md](web-app-testing-frameworks.md)
 {% endcontent-ref %}
 
-## **Scanning Utilities**
-
 {% content-ref url="scanning-utilities.md" %}
 [scanning-utilities.md](scanning-utilities.md)
 {% endcontent-ref %}
+
+<details>
+
+<summary>Misc Tools</summary>
+
+* [https://www.webgap.io/](https://www.webgap.io/) - [WEBGAP](https://www.urbandictionary.com/define.php?term=webgap) remote browser isolation physically isolates you from the risks of using the internet by isolating your web browsing activity away from your local device.
+* [https://requestbin.com/](https://requestbin.com/) - A modern request bin to collect, inspect and debug HTTP requests and webhooks
+* [Race-the-web](https://github.com/TheHackerDev/race-the-web) - Tests for race conditions in web applications. Includes a RESTful API to integrate into a continuous integration pipeline.
+* [DVCS-Ripper](https://github.com/kost/dvcs-ripper) - Rip web accessible (distributed) version control systems: SVN, GIT, Mercurial/hg, bzr, etc.
+* [SSLStrip](https://github.com/LeonardoNve/sslstrip2) - This is a new version of \[Moxie´s SSLstrip] ([http://www.thoughtcrime.org/software/sslstrip/](http://www.thoughtcrime.org/software/sslstrip/)) with the new feature to avoid HTTP Strict Transport Security (HSTS) protection mechanism.
+* [BB King's Quieter Firefox template](https://bitbucket.org/mrbbking/quieter-firefox/src/master/) - Stripped down Firefox with no callouts to throw off traffic. Great for testing of all sorts.
+* [Unfurl](https://dfir.blog/unfurl/) - Tool for breaking down a URL to better understand its components.Fake credit card numbers for testing payment systems
+* [Credit Cards numbers](https://stripe.com/docs/testing#cards) for use in testing
+* [interactsh](https://github.com/projectdiscovery/interactsh) - An OOB interaction gathering server and client library
+  * [https://app.interactsh.com/](https://app.interactsh.com/)
+* [Firebounty](https://firebounty.com) — Bug bounty search engine
+* [https://github.com/brevityinmotion/goodfaith](https://github.com/brevityinmotion/goodfaith) - A tool that helps you stay within scope for bug bounty recon automation.
+
+</details>
 
 ## **Mapping the Site**
 
@@ -118,21 +143,6 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 {% content-ref url="attacks-and-vulnerabilities/" %}
 [attacks-and-vulnerabilities](attacks-and-vulnerabilities/)
 {% endcontent-ref %}
-
-## **Misc Tools**
-
-* [https://www.webgap.io/](https://www.webgap.io/) - [WEBGAP](https://www.urbandictionary.com/define.php?term=webgap) remote browser isolation physically isolates you from the risks of using the internet by isolating your web browsing activity away from your local device.
-* [https://requestbin.com/](https://requestbin.com/) - A modern request bin to collect, inspect and debug HTTP requests and webhooks
-* [Race-the-web](https://github.com/TheHackerDev/race-the-web) - Tests for race conditions in web applications. Includes a RESTful API to integrate into a continuous integration pipeline.
-* [DVCS-Ripper](https://github.com/kost/dvcs-ripper) - Rip web accessible (distributed) version control systems: SVN, GIT, Mercurial/hg, bzr, etc.
-* [SSLStrip](https://github.com/LeonardoNve/sslstrip2) - This is a new version of \[Moxie´s SSLstrip] ([http://www.thoughtcrime.org/software/sslstrip/](http://www.thoughtcrime.org/software/sslstrip/)) with the new feature to avoid HTTP Strict Transport Security (HSTS) protection mechanism.
-* [BB King's Quieter Firefox template](https://bitbucket.org/mrbbking/quieter-firefox/src/master/) - Stripped down Firefox with no callouts to throw off traffic. Great for testing of all sorts.
-* [Unfurl](https://dfir.blog/unfurl/) - Tool for breaking down a URL to better understand its components.Fake credit card numbers for testing payment systems
-* [Credit Cards numbers](https://stripe.com/docs/testing#cards) for use in testing
-* [interactsh](https://github.com/projectdiscovery/interactsh) - An OOB interaction gathering server and client library
-  * [https://app.interactsh.com/](https://app.interactsh.com/)
-* [Firebounty](https://firebounty.com) — Bug bounty search engine
-* [https://github.com/brevityinmotion/goodfaith](https://github.com/brevityinmotion/goodfaith) - A tool that helps you stay within scope for bug bounty recon automation.
 
 ## **Training and Resources**
 

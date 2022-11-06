@@ -4,15 +4,17 @@
 
 The Leading Web application testing tool on the market. Has a community edition that is free and handy for basic web app testing and CTF level functionality. Also has a pro version that has advanced features like a powerful brute forcing too, vulnerability scanner and access to more extensions.
 
+{% tabs %}
+{% tab title="Guides and Support Tools" %}
 * [Burp Commander](https://github.com/pentestgeek/burpcommander) - Ruby command-line interface to Burp Suite's REST API
 * [https://burpsuite.guide/](https://burpsuite.guide/) - Get information on the usage of extensions along with other tips and tricksc
 * [https://www.blackhillsinfosec.com/using-simple-burp-macros-to-automate-testing/](https://www.blackhillsinfosec.com/using-simple-burp-macros-to-automate-testing/)
 * [https://portswigger.net/support/using-burp-suites-engagement-tools](https://portswigger.net/support/using-burp-suites-engagement-tools)
 * SANS Burp Cheat Sheet - [https://sansorg.egnyte.com/dl/x19ByeTOpS](https://sansorg.egnyte.com/dl/x19ByeTOpS)
 * [IntruderPayloads](https://github.com/1N3/IntruderPayloads) - A collection of Burpsuite Intruder payloads, BurpBounty payloads, fuzz lists, malicious file uploads and web pentesting methodologies and checklists.
+{% endtab %}
 
-## Burp Platform Components
-
+{% tab title="Platform Components" %}
 * Dashboard - Burp's dashboard lets you control and monitor Burp's automated activity:
   * [https://portswigger.net/burp/documentation/desktop/dashboard](https://portswigger.net/burp/documentation/desktop/dashboard)
   * [https://portswigger.net/blog/the-new-dashboard](https://portswigger.net/blog/the-new-dashboard)
@@ -51,6 +53,8 @@ The Leading Web application testing tool on the market. Has a community edition 
 * Collaborater - Burp Collaborator is a network service that Burp Suite uses to help discover many kinds of vulnerabilities.
   * [https://portswigger.net/burp/documentation/collaborator](https://portswigger.net/burp/documentation/collaborator)
   * [https://www.hackingarticles.in/burp-suite-for-pentester-burp-collaborator/](https://www.hackingarticles.in/burp-suite-for-pentester-burp-collaborator/)
+{% endtab %}
+{% endtabs %}
 
 ## Burp Extensions
 
