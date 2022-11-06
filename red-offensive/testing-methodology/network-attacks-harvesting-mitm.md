@@ -2,6 +2,10 @@
 
 ## Guides and Reference
 
+<details>
+
+<summary>Guides and Reference</summary>
+
 * [https://book.hacktricks.xyz/pentesting/pentesting-network/spoofing-llmnr-nbt-ns-mdns-dns-and-wpad-and-relay-attacks](https://book.hacktricks.xyz/pentesting/pentesting-network/spoofing-llmnr-nbt-ns-mdns-dns-and-wpad-and-relay-attacks)
 * [https://www.blackhillsinfosec.com/how-to-disable-llmnr-why-you-want-to/](https://www.blackhillsinfosec.com/how-to-disable-llmnr-why-you-want-to/)
 * [https://www.blackhillsinfosec.com/an-smb-relay-race-how-to-exploit-llmnr-and-smb-message-signing-for-fun-and-profit/](https://www.blackhillsinfosec.com/an-smb-relay-race-how-to-exploit-llmnr-and-smb-message-signing-for-fun-and-profit/)
@@ -9,9 +13,6 @@
 * [https://www.sternsecurity.com/blog/local-network-attacks-llmnr-and-nbt-ns-poisoning/](https://www.sternsecurity.com/blog/local-network-attacks-llmnr-and-nbt-ns-poisoning/)
 * [https://pentest.blog/what-is-llmnr-wpad-and-how-to-abuse-them-during-pentest/](https://pentest.blog/what-is-llmnr-wpad-and-how-to-abuse-them-during-pentest/)
 * [https://github.com/frostbits-security/MITM-cheatsheet](https://github.com/frostbits-security/MITM-cheatsheet)
-
-### NTLM Relay & LLMNR/NBNS
-
 * [Pwning with Responder – A Pentester’s Guide](https://www.notsosecure.com/pwning-with-responder-a-pentesters-guide/)
 * [Practical guide to NTLM Relaying in 2017 (A.K.A getting a foothold in under 5 minutes)](https://byt3bl33d3r.github.io/practical-guide-to-ntlm-relaying-in-2017-aka-getting-a-foothold-in-under-5-minutes.html)
 * [Relaying credentials everywhere with ntlmrelayx](https://www.fox-it.com/en/insights/blogs/blog/inside-windows-network/)
@@ -20,20 +21,49 @@
 * [mitm6 – compromising IPv4 networks via IPv6](https://www.fox-it.com/en/news/blog/mitm6-compromising-ipv4-networks-via-ipv6/)
 * [The worst of both worlds: Combining NTLM Relaying and Kerberos delegation](https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/)
 
+</details>
+
 ## Tools
 
+{% tabs %}
+{% tab title="Responder" %}
 * [Responder ](https://github.com/lgandx/Responder)**-** ​LLMNR/NBT-NS/mDNS Poisoner.
   * MultiRelay.py - Tool within the Responder pack to perform NTLM Relay attacks.
   * [https://www.4armed.com/blog/llmnr-nbtns-poisoning-using-responder/](https://www.4armed.com/blog/llmnr-nbtns-poisoning-using-responder/)
   * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/ntlm\_relaying\_and\_theft/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/active\_directory\_privilege\_escalation/ntlm\_relaying\_and\_theft/)
   * [https://trelis24.github.io/2018/08/03/Windows-WPAD-Poisoning-Responder/](https://trelis24.github.io/2018/08/03/Windows-WPAD-Poisoning-Responder/)
   * _Operator Handbook: Responder - pg. 265_
+{% endtab %}
+
+{% tab title="Bettercap" %}
+* [BetterCap](https://github.com/bettercap/bettercap) - ​Bettercap is a powerful, easily extensible and portable framework written in Go which aims to offer to security researchers, red teamers and reverse engineers an **easy to use**, **all-in-one solution** with all the features they might possibly need for performing reconnaissance and attacking [WiFi](https://www.bettercap.org/modules/wifi/) networks, [Bluetooth Low Energy](https://www.bettercap.org/modules/ble/) devices, wireless [HID](https://www.bettercap.org/modules/hid/) devices and [Ethernet](https://www.bettercap.org/modules/ethernet) networks.
+  * [https://www.bettercap.org/](https://www.bettercap.org/)
+
+
+{% endtab %}
+
+{% tab title="Impacket Scripts" %}
+* Impacket Scripts
+  * [ntlmrelayx.py:](https://github.com/SecureAuthCorp/impacket/blob/impacket\_0\_9\_21/examples/ntlmrelayx.py) This script performs NTLM Relay Attacks, setting an SMB and HTTP Server and relaying credentials to many different protocols (SMB, HTTP, MSSQL, LDAP, IMAP, POP3, etc.). The script can be used with predefined attacks that can be triggered when a connection is relayed (e.g. create a user through LDAP) or can be executed in SOCKS mode. In this mode, for every connection relayed, it will be available to be used later on multiple times through a SOCKS proxy.
+  * [karmaSMB.py:](https://github.com/SecureAuthCorp/impacket/blob/impacket\_0\_9\_21/examples/karmaSMB.py) A SMB Server that answers specific file contents regardless of the SMB share and pathname specified.
+  * [smbserver.py:](https://github.com/SecureAuthCorp/impacket/blob/impacket\_0\_9\_21/examples/smbserver.py) A Python implementation of an SMB server. Allows to quickly set up shares and user accounts.
+{% endtab %}
+
+{% tab title="Scapy" %}
+* [Scapy](https://github.com/secdev/scapy) -powerful Python library that allows full packet manipulation. It is a particularly useful tool to use when Nmap is unavailable or when less noise on the wire is needed.
+* Create an IP packet with the destination field set to our target host:
+  * `IP(dst=0.0.0.0)`
+* &#x20;This can then be amended as follows to create an ICMP packet:
+  * `test_packet = IP(dst="0.0.0.0")/ICMP()`
+* The sr1() function will then send the packet on the wire:
+  * `sr1(test_packet)`\</
+{% endtab %}
+
+{% tab title="Other tools" %}
 * [mitm6](https://github.com/fox-it/mitm6) - mitm6 is a pentesting tool that exploits the default configuration of Windows to take over the default DNS server. It does this by replying to DHCPv6 messages, providing victims with a link-local IPv6 address and setting the attackers host as default DNS server.
 * [Flamingo](https://github.com/atredispartners/flamingo) - ​Captures credentials sprayed across the network by various IT and security products.
   * ​[https://www.atredis.com/blog/2020/1/26/flamingo-captures-credentials](https://www.atredis.com/blog/2020/1/26/flamingo-captures-credentials)_​_
   * _Operator Handbook: Flamingo - pg. 65_
-* [BetterCap](https://github.com/bettercap/bettercap) - ​Bettercap is a powerful, easily extensible and portable framework written in Go which aims to offer to security researchers, red teamers and reverse engineers an **easy to use**, **all-in-one solution** with all the features they might possibly need for performing reconnaissance and attacking [WiFi](https://www.bettercap.org/modules/wifi/) networks, [Bluetooth Low Energy](https://www.bettercap.org/modules/ble/) devices, wireless [HID](https://www.bettercap.org/modules/hid/) devices and [Ethernet](https://www.bettercap.org/modules/ethernet) networks.
-  * [https://www.bettercap.org/](https://www.bettercap.org/)
 * [Inveigh](https://github.com/Kevin-Robertson/Inveigh) - ​Inveigh is a cross-platform .NET IPv4/IPv6 machine-in-the-middle tool for penetration testers.
   * Can be used similarly to Responder and MultiRelay
 * [Espionage](https://github.com/DoubleThreatSecurity/Espionage) - ​Espionage is a network packet sniffer that intercepts large amounts of data being passed through an interface. The tool allows users to to run normal and verbose traffic analysis that shows a live feed of traffic, revealing packet direction, protocols, flags, etc.
@@ -41,22 +71,22 @@
 * [Yersina](https://github.com/tomac/yersinia) - ​A framework for layer 2 attacks
 * [StreamDivert](https://github.com/jellever/StreamDivert) - Redirecting (specific) TCP, UDP and ICMP traffic to another destination.
 * [PortBender](https://github.com/praetorian-inc/PortBender) - PortBender is a TCP port redirection utility that allows a red team operator to redirect inbound traffic destined for one TCP port (e.g., 445/TCP) to another TCP port (e.g., 8445/TCP).
-* Impacket Scripts
-  * [ntlmrelayx.py:](https://github.com/SecureAuthCorp/impacket/blob/impacket\_0\_9\_21/examples/ntlmrelayx.py) This script performs NTLM Relay Attacks, setting an SMB and HTTP Server and relaying credentials to many different protocols (SMB, HTTP, MSSQL, LDAP, IMAP, POP3, etc.). The script can be used with predefined attacks that can be triggered when a connection is relayed (e.g. create a user through LDAP) or can be executed in SOCKS mode. In this mode, for every connection relayed, it will be available to be used later on multiple times through a SOCKS proxy.
-  * [karmaSMB.py:](https://github.com/SecureAuthCorp/impacket/blob/impacket\_0\_9\_21/examples/karmaSMB.py) A SMB Server that answers specific file contents regardless of the SMB share and pathname specified.
-  * [smbserver.py:](https://github.com/SecureAuthCorp/impacket/blob/impacket\_0\_9\_21/examples/smbserver.py) A Python implementation of an SMB server. Allows to quickly set up shares and user accounts.
 * [LDAP-Password-Hunter](https://github.com/oldboy21/LDAP-Password-Hunter) - a tool which wraps features of getTGT.py (Impacket) and ldapsearch in order to look up for password stored in LDAP database.
 * NTLM Relay
   * [Divert](https://github.com/basil00/Divert) - WinDivert: Windows Packet Divert
   * [DivertTCPconn](https://github.com/Arno0x/DivertTCPconn) - A TCP packet diverter for Windows platform
   * [https://rastamouse.me/ntlm-relaying-via-cobalt-strike/](https://rastamouse.me/ntlm-relaying-via-cobalt-strike/)
+{% endtab %}
+{% endtabs %}
+
+{% embed url="https://youtu.be/LvaII2PEwcQ" %}
 
 ## Network Level Attacks
 
 [https://book.hacktricks.xyz/pentesting/pentesting-network#lan-attacks](https://book.hacktricks.xyz/pentesting/pentesting-network#lan-attacks)d
 
-### **ARP based Attacks**
-
+{% tabs %}
+{% tab title="Arp Attacks" %}
 * ARP cache poisoning&#x20;
   * First you must set up IP forwarding to forward any extraneous packets received to their proper destination&#x20;
     * \# echo 1 > /proc/sys/net/ipv4/ip\_forward&#x20;
@@ -73,16 +103,18 @@
     * Use Firesheep&#x20;
     * Hampster/Ferret - acts as a proxy server and replaces you cookies with session cookies stolen from someone else
 
-### **DHCP Starvation**
 
+{% endtab %}
+
+{% tab title="DHCP Starvation" %}
 * ****[**dhcpig**](https://www.kali.org/tools/dhcpig/) **-** DHCPig initiates an advanced DHCP exhaustion attack. It will consume all IPs on the LAN, stop new users from obtaining IPs, release any IPs in use, then for good measure send gratuitous ARP and knock all windows hosts offline.
 
 ```
 # pig.py eth0
 ```
+{% endtab %}
 
-### **SSL Attacks**
-
+{% tab title="SSL Attacks" %}
 * SSL MITM&#x20;
   * For an SSL MITM attack we will be using the tool ettercap&#x20;
   * Ettercap can also be used for an ARP or DNS MITM as well&#x20;
@@ -96,20 +128,10 @@
   * ◇ # iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 8080&#x20;
 * Now we start SSLstrip on the outgoing port.&#x20;
   * \#sslstrip -l 8080
+{% endtab %}
 
-### **Packet Manipulation**
+{% tab title="Router Attacks" %}
 
-* [Scapy](https://github.com/secdev/scapy) -powerful Python library that allows full packet manipulation. It is a particularly useful tool to use when Nmap is unavailable or when less noise on the wire is needed.
-* Create an IP packet with the destination field set to our target host:
-  * `IP(dst=0.0.0.0)`
-* &#x20;This can then be amended as follows to create an ICMP packet:
-  * `test_packet = IP(dst="0.0.0.0")/ICMP()`
-* The sr1() function will then send the packet on the wire:
-  * `sr1(test_packet)`\</
-
-{% embed url="https://youtu.be/LvaII2PEwcQ" %}
-
-### **Router Based Attacks**
 
 * Router Sploit - [https://www.github.com/threat9/routersploit ](https://www.github.com/threat9/routersploit)&#x20;
 * Download and install Routersploit - a framework for exploiting routers.
@@ -147,6 +169,8 @@
       * \-P pass.txt is the password file with passwords in it line by line.
       * \-f tells Hydra to stop once it finds a successful match.
       * \-vV to be verbose and show the attempts.
+{% endtab %}
+{% endtabs %}
 
 {% embed url="https://youtu.be/wyjM_P7Axa8" %}
 

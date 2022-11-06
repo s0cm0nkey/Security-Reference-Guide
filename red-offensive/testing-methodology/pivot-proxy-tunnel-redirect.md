@@ -2,10 +2,6 @@
 
 ## Guides and Reference
 
-<details>
-
-<summary>Guides and Reference</summary>
-
 * [NetworkPivotingTechniques](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Network%20Pivoting%20Techniques.md)
 * [Abachy's Port Forwarding Guide](https://www.abatchy.com/2017/01/port-forwarding-practical-hands-on-guide)&#x20;
 * [http://woshub.com/port-forwarding-in-windows/](http://woshub.com/port-forwarding-in-windows/)
@@ -22,13 +18,7 @@
 * [https://medium.com/@kuwaitison/pivoting-and-tunneling-for-oscp-and-beyond-cheat-sheet-3435d1d6022](https://medium.com/@kuwaitison/pivoting-and-tunneling-for-oscp-and-beyond-cheat-sheet-3435d1d6022)
 * _Attacking Network Protocols: Network Proxies - pg.20_
 
-</details>
-
 ## Tools
-
-<details>
-
-<summary>Tools</summary>
 
 * [PivotSuite](https://github.com/RedTeamOperations/PivotSuite) - PivotSuite is a portable, platform independent and powerful network pivoting toolkit, Which helps Red Teamers / Penetration Testers to use a compromised system to move around inside a network.
 * [ProxyChains](https://github.com/haad/proxychains) - ProxyChains is a UNIX program, that hooks network-related libc functions in dynamically linked programs via a preloaded DLL and redirects the connections through SOCKS4a/5 or HTTP proxies.
@@ -49,22 +39,18 @@
 * [redsocks](https://www.kali.org/tools/redsocks/) - Redsocks is a daemon running on the local system, that will transparently tunnel any TCP connection via a remote SOCKS4, SOCKS5 or HTTP proxy server.
 * [sslh](https://www.kali.org/tools/sslh/) - sslh lets one accept HTTPS, SSH, OpenVPN, tinc and XMPP connections on the same port. This makes it possible to connect to any of these servers on port 443 (e.g. from inside a corporate firewall, which almost never block port 443) while still serving HTTPS on that port.
 
-</details>
+## Commands
 
-## Techniques and Commands
+### **LinuxPort forwarding**&#x20;
 
-{% tabs %}
-{% tab title="Linux Port Fwd" %}
 * rinetd&#x20;
   * \# sudo apt update && sudo apt install rinetd&#x20;
   * The rinetd configuration file, /etc/rinetd.conf, lists forwarding rules that require four parameters, including bindaddress and bindport, which define the bound (“listening”) IP address and port, and connectaddress and connectport, which define the traffic’s destination address and port:&#x20;
   * \# cat /etc/rinetd.conf&#x20;
   * \# sudo service rinetd restart
 
+### **Windows forwarding/tunneling**&#x20;
 
-{% endtab %}
-
-{% tab title="Plink.exe" %}
 * Plink.exe&#x20;
   * \>plink.exe -ssh -l kali -pw ilak -R 10.11.0.4:1234:127.0.0.1:3306 10.11.0.4&#x20;
     * \-ssh -connect via ssh&#x20;
@@ -82,10 +68,10 @@
     * \> netsh interface portproxy add v4tov4 listenport=4455 listenaddress=10.11.0.22 connectport=445 connectaddress=192.168.1.110&#x20;
   * We can add firewall rules to allow out traffic outbound&#x20;
     * \> netsh advfirewall firewall add rule name="forward\_port\_rule" protocol=TCP dir=in localip=10.11.0.22 localport=4455 action=allow Ok.
-{% endtab %}
 
-{% tab title="SSH Tunnel" %}
-* SSH local port forwarding.&#x20;
+### **Linux SSH tunneling**&#x20;
+
+* &#x20;SSH local port forwarding.&#x20;
   * \# cat /root/port\_forwarding\_and\_tunneling/ssh\_local\_port\_forwarding.sh
   * \# ssh -N -L \[bind\_address:]port:host:hostport \[username@address]&#x20;
   * \# sudo ssh -N -L 0.0.0.0:445:192.168.1.110:445 student@10.11.0.128&#x20;
@@ -97,16 +83,16 @@
   * \# sudo ssh -N -D 127.0.0.1:8080 student@10.11.0.128
 * [https://github.com/DennyZhang/cheatsheet-ssh-A4](https://github.com/DennyZhang/cheatsheet-ssh-A4)
 * _Operator Handbook: SSH - pg.286_
-{% endtab %}
 
-{% tab title="Proxychains" %}
+### **Proxychains**
+
 * \#cat /etc/proxychains.conf&#x20;
 * \#sudo proxychains nmap --top-ports=20 -sT -Pn 192.168.1.110
 * [How to set up ProxyChains - Stay Anonymous](pivot-proxy-tunnel-redirect.md#linux-ssh-tunneling)
 * [How to set up ProxyChains - Change IP](https://youtu.be/FtFTh-KVjsA)
-{% endtab %}
 
-{% tab title="HTTP Tunnel" %}
+### **HTTP tunneling through Deep Packet Inspection**&#x20;
+
 * Some DPI devices only allow specific protocols, like no SSH&#x20;
 * HTTPTunnel&#x20;
   * \# apt-cache search httptunnel&#x20;
@@ -115,9 +101,7 @@
 * Set up server to listen on port 1234 and redirect to local 8888&#x20;
   * \# htc --forward-port 8080 10.11.0.128:1234 (Client-kali)&#x20;
 * Set up client to send it to the listening server.
-{% endtab %}
 
-{% tab title="Misc" %}
 ### **RDP Tunneling**
 
 * _PTFM: RDP Tunneling - pg. 53_
@@ -125,5 +109,3 @@
 ### **NGINX for proxy**
 
 * _PTFM: NGINX for proxy use- pg. 64_
-{% endtab %}
-{% endtabs %}
