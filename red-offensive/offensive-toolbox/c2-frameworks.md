@@ -21,6 +21,10 @@ These are NOT to be used in a malicious capacity and are for testing purposes on
 
 Software for Adversary Simulations and Red Team Operations
 
+<details>
+
+<summary>Cobalt Strike Resources</summary>
+
 * [bluscreenofjeff/AggressorScripts](https://github.com/bluscreenofjeff/AggressorScripts)- Script your cobalt strike
 * [harleyQu1nn/AggressorScripts](https://github.com/harleyQu1nn/AggressorScripts) - Alternate collection of scripts
 * [ElevateKit](https://github.com/rsmudge/ElevateKit) - Use 3rd party privilege escalation techniques with Cobalt Strike's beacon payload
@@ -30,16 +34,26 @@ Software for Adversary Simulations and Red Team Operations
 * [https://www.ired.team/offensive-security/red-team-infrastructure/cobalt-strike-101-installation-and-interesting-commands](https://www.ired.team/offensive-security/red-team-infrastructure/cobalt-strike-101-installation-and-interesting-commands)
 * _Operator Handbook: Cobalt Strike - pg. 52_
 
+</details>
+
 ## **PoshC2**
 
 ****[**Posh C2**](https://github.com/nettitude/PoshC2/) **** - PoshC2 is a proxy aware C2 framework used to aid penetration testers with red teaming, post-exploitation and lateral movement. This is my framework of choice.
+
+<details>
+
+<summary>PoshC2 Resources</summary>
 
 * [https://poshc2.readthedocs.io/en/latest/](https://poshc2.readthedocs.io/en/latest/)
 * [Apache Mod Python](https://labs.nettitude.com/blog/apache-mod\_python-for-red-teams/) - Advanced C2 comms through Apache web servers
 * [https://www.youtube.com/watch?v=zj0ijJF9cEQ\&feature=youtu.be](https://www.youtube.com/watch?v=zj0ijJF9cEQ\&feature=youtu.be)
 * [https://www.youtube.com/watch?v=XKJ4hTPGBQ4\&feature=emb\_title](https://www.youtube.com/watch?v=XKJ4hTPGBQ4\&feature=emb\_title)
 
-### PoshC2 Command Usage
+</details>
+
+<details>
+
+<summary>PoshC2 Command Usage</summary>
 
 * &#x20;[https://poshc2.readthedocs.io/](https://poshc2.readthedocs.io/)
 * To run PoshC2, navigate to the installation directory and run the C2Server.py. This will start the server that serves the implant payloads and communicates with any running implants.
@@ -50,14 +64,24 @@ Software for Adversary Simulations and Red Team Operations
 * [https://github.com/nettitude/PoshC2/wiki/Getting-Started](https://github.com/nettitude/PoshC2/wiki/Getting-Started)
 * [https://github.com/nettitude/PoshC2/wiki/Privilege-Esca](https://github.com/nettitude/PoshC2/wiki/Privilege-Escalation)
 
+</details>
+
 ## [**DNScat2**](https://github.com/iagox86/dnscat2)&#x20;
 
 This tool is designed to create an encrypted command-and-control (C\&C) channel over the DNS protocol, which is an effective tunnel out of almost every network.
+
+<details>
+
+<summary>DNScat2 Resources</summary>
 
 * [https://www.kali.org/tools/dnscat2/](https://www.kali.org/tools/dnscat2/)
 * [https://github.com/lukebaggett/dnscat2-powershell/](https://github.com/lukebaggett/dnscat2-powershell/)&#x20;
 * [https://www.blackhillsinfosec.com/bypassing-cylance-part-2-using-dnscat2/](https://www.blackhillsinfosec.com/bypassing-cylance-part-2-using-dnscat2/)
 * _Hacker Playbook 3: dnscat2 - pg.15_
+
+</details>
+
+
 
 ## **Other Frameworks**
 
