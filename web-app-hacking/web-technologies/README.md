@@ -21,10 +21,10 @@
 
 </details>
 
-#### APIs
+<details>
 
-{% tabs %}
-{% tab title="APIs" %}
+<summary>APIs</summary>
+
 * [https://github.com/shieldfy/API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist)
 * [https://github.com/OWASP/API-Security/blob/master/2019/en/dist/owasp-api-security-top-10.pdf](https://github.com/OWASP/API-Security/blob/master/2019/en/dist/owasp-api-security-top-10.pdf)
 * [https://hackanythingfor.blogspot.com/2020/07/api-testing-checklist.html](https://hackanythingfor.blogspot.com/2020/07/api-testing-checklist.html)
@@ -46,9 +46,13 @@
 * [https://github.com/Net-hunter121/API-Wordlist](https://github.com/Net-hunter121/API-Wordlist) - A wordlist of API names used for fuzzing web application APIs.
 * [https://github.com/metlo-labs/metlo](https://github.com/metlo-labs/metlo) - Metlo is an open-source API security platform
 * _Hacking: The next generation - Application Protocol Handlers, pg. 96_
-{% endtab %}
 
-{% tab title="GraphQL" %}
+</details>
+
+<details>
+
+<summary>API: GraphQL</summary>
+
 ### [GraphQL](https://graphql.org/)
 
 * [InQL](https://github.com/doyensec/inql) - A Burp Extension for GraphQL Security Testing
@@ -58,8 +62,8 @@
 * [https://lab.wallarm.com/securing-and-attacking-graphql-part-1-overview/](https://lab.wallarm.com/securing-and-attacking-graphql-part-1-overview/)
 * [https://medium.com/@apkash8/graphql-vs-rest-api-model-common-security-test-cases-for-graphql-endpoints-5b723b1468b4](https://medium.com/@apkash8/graphql-vs-rest-api-model-common-security-test-cases-for-graphql-endpoints-5b723b1468b4)
 * [https://the-bilal-rizwan.medium.com/graphql-common-vulnerabilities-how-to-exploit-them-464f9fdce696](https://the-bilal-rizwan.medium.com/graphql-common-vulnerabilities-how-to-exploit-them-464f9fdce696)
-{% endtab %}
-{% endtabs %}
+
+</details>
 
 <details>
 
@@ -282,11 +286,17 @@
 [oauth-2.0.md](oauth-2.0.md)
 {% endcontent-ref %}
 
-## [OneLogin - SAML](https://developers.onelogin.com/saml)
+<details>
 
-* [SAMLExtractor](https://github.com/fadyosman/SAMLExtractor) - A tool that can take a URL or list of URL and prints back SAML consume URL.
+<summary><a href="https://developers.onelogin.com/saml">OneLogin - SAML</a></summary>
 
-## OWA/O365
+* [SAMLExtractor](https://github.com/fadyosman/SAMLExtractor) - A tool that can take a URL or list of URL and prints back SAML consume URL.ex
+
+</details>
+
+<details>
+
+<summary>OWA/O365</summary>
 
 * [MailSniper](https://github.com/dafthack/MailSniper) - MailSniper is a penetration testing tool for searching through email in a Microsoft Exchange environment for specific terms (passwords, insider intel, network architecture information, etc.). It can be used as a non-administrative user to search their own email, or by an administrator to search the mailboxes of every user in a domain.
 * [byt3bl33d3r/SprayingToolkit](https://github.com/byt3bl33d3r/SprayingToolkit) - Scripts to make password spraying attacks against Lync/S4B, OWA & O365 a lot quicker, less painful and more efficient
@@ -299,49 +309,70 @@
 * [https://silentbreaksecurity.com/malicious-outlook-rules/](https://silentbreaksecurity.com/malicious-outlook-rules/) - Malicious Outlook Rules
 * [http://www.blackhillsinfosec.com/?p=5465](http://www.blackhillsinfosec.com/?p=5465) - Outlook Rules in Action
 
-## PHP
+</details>
 
-* [Chankro](https://github.com/TarlogicSecurity/Chankro) - bypass **disable\_functions** and **open\_basedir** in your pentests.
+<details>
+
+<summary>PHP</summary>
+
 * [phpggc](https://github.com/ambionics/phpggc) - a library of PHP unserialize() payloads along with a tool to generate them, from command line or programmatically.
+* [Chankro](https://github.com/TarlogicSecurity/Chankro) - bypass **disable\_functions** and **open\_basedir** in your pentests.
 
-## Redis
+</details>
+
+<details>
+
+<summary>Redis</summary>
 
 * [https://cheatsheet.haax.fr/web-pentest/injections/server-side-injections/ssrf/#redis-exploitation](https://cheatsheet.haax.fr/web-pentest/injections/server-side-injections/ssrf/#redis-exploitation)
 
-## Ruby on Rails
+
+
+</details>
+
+<details>
+
+<summary>Ruby on Rails</summary>
 
 * [brakeman](https://github.com/presidentbeef/brakeman) - A static analysis security vulnerability scanner for Ruby on Rails applications
   * [https://brakemanscanner.org/](https://brakemanscanner.org/)
 
-## SAP
+
+
+</details>
+
+<details>
+
+<summary>SAP</summary>
 
 * [SAP\_RECON](https://github.com/chipik/SAP\_RECON) - PoC for CVE-2020-6287, CVE-2020-6286 (SAP RECON vulnerability)
 * [https://github.com/shipcod3/mySapAdventures](https://github.com/shipcod3/mySapAdventures)
 * [https://github.com/emadshanab/SAP-wordlist/blob/main/SAP-wordlist.txt](https://github.com/emadshanab/SAP-wordlist/blob/main/SAP-wordlist.txt)
 * [https://buddysap.com/list-of-sap-port-used-in-sap-abap-and-java-system/](https://buddysap.com/list-of-sap-port-used-in-sap-abap-and-java-system/)
 
-## SSL/TLS and Certificates
+</details>
 
 {% content-ref url="ssl-tls-and-certificates.md" %}
 [ssl-tls-and-certificates.md](ssl-tls-and-certificates.md)
 {% endcontent-ref %}
 
-## Virtual Hosts
+<details>
+
+<summary>Virtual Hosts</summary>
 
 * [virtual-host-discovery](https://github.com/jobertabma/virtual-host-discovery) - A script to enumerate virtual hosts on a server.
 * [vhosts-sieve](https://github.com/dariusztytko/vhosts-sieve) - Searching for virtual hosts among non-resolvable domains
-* [VHostScan](https://github.com/codingo/VHostScan) - A virtual host scanner that performs reverse lookups, can be used with pivot tools, detect catch-all scenarios, work around wildcards, aliases and dynamic default pages.
+* [VHostScan](https://github.com/codingo/VHostScan) - A virtual host scanner that performs reverse lookups, can be used with pivot tools, detect catch-all scenarios, work around wildcards, aliases and dynamic default pages.ex
 
-## VPN
-
-* [ike-scan](https://github.com/royhills/ike-scan) - Discover and fingerprint IKE hosts (IPsec VPN Servers)
-* _Kali Linux - An Ethical Hacker's Cookbook, pg. 24_
-
-## Web Application Firewalls
+</details>
 
 {% content-ref url="web-application-firewall.md" %}
 [web-application-firewall.md](web-application-firewall.md)
 {% endcontent-ref %}
+
+<details>
+
+<summary><a href="https://en.wikipedia.org/wiki/WebDAV">WebDav</a></summary>
 
 ## [WebDav](https://en.wikipedia.org/wiki/WebDAV)
 
@@ -357,15 +388,26 @@
   $ cadaver http://$ip:8080/webdav/
   ```
 
-## Web Proxies
+</details>
+
+<details>
+
+<summary>Web Proxies</summary>
 
 * [https://github.com/GrrrDog/weird\_proxies](https://github.com/GrrrDog/weird\_proxies) - Reverse proxies cheatsheet
 
-## Wordpress
+</details>
+
+<details>
+
+<summary>Wordpress - Resources</summary>
 
 * [WPScan](https://github.com/wpscanteam/wpscan) - The Wordpress Vulnerability Scanner
   * [https://wpsec.com/](https://wpsec.com/) - Online Wordpress scanner
   * [WPScan:WordPress Pentesting Framework](https://www.hackingarticles.in/wpscanwordpress-pentesting-framework/)
+
+<!---->
+
 * [Wordpress Exploit Framework ](https://github.com/rastating/wordpress-exploit-framework) - A Ruby framework designed to aid in the penetration testing of WordPress systems.
 * [WPSploit](https://github.com/espreto/wpsploit) - This repository is designed for creating and/or porting of specific exploits for WordPress using metasploit as exploitation tool.
 * [xmlrpc-scan](https://github.com/nullfil3/xmlrpc-scan) - Scan urls or a single URL against XMLRPC wordpress issues.
@@ -380,7 +422,13 @@
 * [Multiple Ways to Crack WordPress login](https://www.hackingarticles.in/multiple-ways-to-crack-wordpress-login/)
 * [WordPress: Reverse Shell](https://www.hackingarticles.in/wordpress-reverse-shell/)
 
-### WordPress Common Bugs
+
+
+</details>
+
+<details>
+
+<summary>WordPress Common Bugs</summary>
 
 * Denial of Service via load-scripts.php
 
@@ -459,5 +507,7 @@ Host: target.com
 ```
 
 Source: [https://github.com/daffainfo/AllAboutBugBounty/blob/master/CMS/WordPress.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/CMS/WordPress.md)
+
+</details>
 
 {% embed url="https://youtu.be/sQ4TtFdaiRA" %}
