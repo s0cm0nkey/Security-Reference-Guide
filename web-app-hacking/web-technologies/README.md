@@ -1,8 +1,6 @@
 # Web Technologies
 
-<details>
-
-<summary><a href="https://www.adobe.com/marketing/experience-manager.html">Adobe AEM</a></summary>
+## ****[**Adobe AEM**](https://www.adobe.com/marketing/experience-manager.html)****
 
 * [aem-hacker](https://github.com/0ang3el/aem-hacker) - Tools to identify vulnerable Adobe Experience Manager (AEM) webapps.
 * [aemscan](https://github.com/Raz0r/aemscan) - Adobe Experience Manager Vulnerability Scanner
@@ -11,19 +9,11 @@
 * [https://www.slideshare.net/0ang3el/hacking-aem-sites](https://www.slideshare.net/0ang3el/hacking-aem-sites)
 * [https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
 
-</details>
+## Apache Web Server
 
-<details>
+* [apache-users](https://www.kali.org/tools/apache-users/) - This Perl script will enumerate the usernames on any system that uses Apache with the UserDir module.
 
-<summary>Apache Web Server</summary>
-
-* [apache-users](https://www.kali.org/tools/apache-users/) - This Perl script will enumerate the usernames on any system that uses Apache with the UserDir modul
-
-</details>
-
-<details>
-
-<summary>APIs</summary>
+## **APIs**
 
 * [https://github.com/shieldfy/API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist)
 * [https://github.com/OWASP/API-Security/blob/master/2019/en/dist/owasp-api-security-top-10.pdf](https://github.com/OWASP/API-Security/blob/master/2019/en/dist/owasp-api-security-top-10.pdf)
@@ -47,12 +37,6 @@
 * [https://github.com/metlo-labs/metlo](https://github.com/metlo-labs/metlo) - Metlo is an open-source API security platform
 * _Hacking: The next generation - Application Protocol Handlers, pg. 96_
 
-</details>
-
-<details>
-
-<summary>API: GraphQL</summary>
-
 ### [GraphQL](https://graphql.org/)
 
 * [InQL](https://github.com/doyensec/inql) - A Burp Extension for GraphQL Security Testing
@@ -63,46 +47,21 @@
 * [https://medium.com/@apkash8/graphql-vs-rest-api-model-common-security-test-cases-for-graphql-endpoints-5b723b1468b4](https://medium.com/@apkash8/graphql-vs-rest-api-model-common-security-test-cases-for-graphql-endpoints-5b723b1468b4)
 * [https://the-bilal-rizwan.medium.com/graphql-common-vulnerabilities-how-to-exploit-them-464f9fdce696](https://the-bilal-rizwan.medium.com/graphql-common-vulnerabilities-how-to-exploit-them-464f9fdce696)
 
-</details>
-
-<details>
-
-<summary>ASP.NET</summary>
+## ASP.NET
 
 * [viewgen](https://github.com/0xacb/viewgen) - a ViewState tool capable of generating both signed and encrypted payloads with leaked validation keys
-
-<!---->
-
 * [https://notsosecure.com/exploiting-viewstate-deserialization-using-blacklist3r-and-ysoserial-net/#PoC](https://notsosecure.com/exploiting-viewstate-deserialization-using-blacklist3r-and-ysoserial-net/#PoC)
 
-
-
-</details>
-
-<details>
-
-<summary>Cloudflare</summary>
+## Cloudflare
 
 * [cloudflare\_enum](https://github.com/mandatoryprogrammer/cloudflare\_enum) - Cloudflare DNS Enumeration Tool for Pentesters
 
-
-
-</details>
-
-<details>
-
-<summary>Drupal</summary>
+## Drupal
 
 * [Droopscan](https://github.com/droope/droopescan) - plugin-based scanner that aids security researchers in identifying issues with several CMS.
 * [drupwn](https://github.com/immunIT/drupwn) - Drupal enumeration & exploitation tool
 * [https://hackertarget.com/drupal-security-scan/](https://hackertarget.com/drupal-security-scan/)
 * [Drupal: Reverseshell](https://www.hackingarticles.in/drupal-reverseshell/)
-
-</details>
-
-<details>
-
-<summary><a href="https://firebase.google.com/">Firebase</a></summary>
 
 ## [Firebase](https://firebase.google.com/)
 
@@ -111,80 +70,37 @@
 * [Pyrebase](https://github.com/thisbejim/Pyrebase) - A simple python wrapper for the Firebase API.
 * [https://blog.securitybreached.org/2020/02/04/exploiting-insecure-firebase-database-bugbounty/](https://blog.securitybreached.org/2020/02/04/exploiting-insecure-firebase-database-bugbounty/)
 
-</details>
-
-<details>
-
-<summary>Firebird</summary>
+## Firebird
 
 * [https://www.infosecmatter.com/firebird-database-exploitation/](https://www.infosecmatter.com/firebird-database-exploitation/)
 
-
-
-</details>
-
-<details>
-
-<summary>Flask</summary>
+## Flask
 
 * [Flask-Unsign](https://github.com/Paradoxis/Flask-Unsign) - Command line tool to fetch, decode, brute-force and craft session cookies of a Flask application by guessing secret keys.
-
-<!---->
-
 * [https://blog.paradoxis.nl/defeating-flasks-session-management-65706ba9d3ce](https://blog.paradoxis.nl/defeating-flasks-session-management-65706ba9d3ce)
 
-</details>
-
-<details>
-
-<summary>Google Web Toolkit</summary>
+## Google Web Toolkit
 
 * [GWTMap](https://github.com/FSecureLABS/GWTMap) - GWTMap is a tool to help map the attack surface of Google Web Toolkit (GWT) based applications.
   * [https://labs.f-secure.com/blog/gwtmap-reverse-engineering-google-web-toolkit-applications](https://labs.f-secure.com/blog/gwtmap-reverse-engineering-google-web-toolkit-applications)
 
-</details>
-
-<details>
-
-<summary>.htaccess File</summary>
+## .htaccess File
 
 * [htshells](https://www.kali.org/tools/htshells/) - htshells is a series of web based attacks based around the .htaccess files. Most of the attacks are centered around two attack categories. Remote code/ command execution and information disclosure.
 
-
-
-</details>
-
-<details>
-
-<summary>HTTP/2</summary>
+## HTTP/2
 
 * [https://portswigger.net/research/http2](https://portswigger.net/research/http2)
 
-
-
-</details>
-
-<details>
-
-<summary>IIS</summary>
+## IIS
 
 * [https://github.com/inquisb/miscellaneous/blob/master/ms10-070\_check.py](https://github.com/inquisb/miscellaneous/blob/master/ms10-070\_check.py)
 
-</details>
-
-<details>
-
-<summary>Java Applets</summary>
+## Java Applets
 
 * _Advanced Penetration Testing: Using the Java Applet for Payload Delivery - pg. 31_
 
-
-
-</details>
-
-<details>
-
-<summary>JavaScript</summary>
+## JavaScript
 
 * [JSScanner](https://github.com/dark-warlord14/JSScanner) - Scan JS Files for Endpoints and Secrets
 * [JSFScan.sh](https://github.com/KathanP19/JSFScan.sh) - Automation for javascript recon in bug bounty.
@@ -195,52 +111,32 @@
 * [JSA](https://github.com/w9w/JSA) - Javascript security analysis (JSA) is a program for javascript analysis during web application security assessment.
 * [https://securityjunky.com/scanning-js-files-for-endpoint-and-secrets/](https://securityjunky.com/scanning-js-files-for-endpoint-and-secrets/)
 
-</details>
+## JBoss
 
-<details>
-
-<summary>JBoss</summary>
-
-* [jboss-autopwn](https://www.kali.org/tools/jboss-autopwn/) - This JBoss script deploys a JSP shell on the target JBoss AS server. Once deployed, the script uses its upload and command execution capability to provide an interactive session.
 * [jexboss](https://github.com/joaomatosf/jexboss) - JexBoss: Jboss (and Java Deserialization Vulnerabilities) verify and EXploitation Tool
+* [jboss-autopwn](https://www.kali.org/tools/jboss-autopwn/) - This JBoss script deploys a JSP shell on the target JBoss AS server. Once deployed, the script uses its upload and command execution capability to provide an interactive session.
 
-</details>
-
-<details>
-
-<summary>Jenkins</summary>
+## Jenkins
 
 * [pwn\_jenkins](https://github.com/gquere/pwn\_jenkins) - Notes about attacking Jenkins servers
 * [Accenture/jenkins-attack-framework](https://github.com/Accenture/jenkins-attack-framework) - Project fpr enumerating and attacking Jenkins
 * [https://pentestbook.six2dez.com/enumeration/webservices/jenkins](https://pentestbook.six2dez.com/enumeration/webservices/jenkins)
 * [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jenkins.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jenkins.md)
 
-</details>
+## Jira
 
-<details>
-
-<summary>Jira</summary>
-
+* [jira\_scan](https://github.com/bcoles/jira\_scan) - A simple remote scanner for Atlassian Jira
 * [https://pentestbook.six2dez.com/enumeration/webservices/jira](https://pentestbook.six2dez.com/enumeration/webservices/jira)
 * [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jira.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jira.md)
-* [jira\_scan](https://github.com/bcoles/jira\_scan) - A simple remote scanner for Atlassian Jira
 
-</details>
-
-<details>
-
-<summary>Joomla</summary>
+## Joomla
 
 * [JCS](https://github.com/TheM4hd1/JCS) - JCS (Joomla Component Scanner) made for penetration testing purpose on Joomla CMS
 * [Joomscan](https://wiki.owasp.org/index.php/Category:OWASP\_Joomla\_Vulnerability\_Scanner\_Project) - OWASP Joomla! Vulnerability Scanner (JoomScan) is an open source project, developed with the aim of automating the task of vulnerability detection and reliability assurance in Joomla CMS deployments.
 * [juumla](https://github.com/oppsec/juumla) - Juumla is a python tool created to identify Joomla version, scan for vulnerabilities and search for config files.
 * [Joomla: Reverse Shell](https://www.hackingarticles.in/joomla-reverse-shell/)
 
-</details>
-
-<details>
-
-<summary>JSON Web Tokens</summary>
+## JSON Web Tokens
 
 * [jwt\_tool](https://github.com/ticarpi/jwt\_tool) - A toolkit for testing, tweaking and cracking JSON Web Tokens
   * [https://github.com/ticarpi/jwt\_tool/wiki/Attack-Methodology](https://github.com/ticarpi/jwt\_tool/wiki/Attack-Methodology)
@@ -252,51 +148,31 @@
 * [https://medium.com/swlh/hacking-json-web-tokens-jwts-9122efe91e4a](https://medium.com/swlh/hacking-json-web-tokens-jwts-9122efe91e4a)
 * [https://medium.com/101-writeups/hacking-json-web-token-jwt-233fe6c862e6](https://medium.com/101-writeups/hacking-json-web-token-jwt-233fe6c862e6)
 
-</details>
-
-<details>
-
-<summary>Megento</summary>
+## Megento
 
 * [magescan](https://github.com/steverobbins/magescan) - Scan a Magento site for information
 * [https://magescan.com/](https://magescan.com/)
 * [https://github.com/steverobbins/magento-version-identification-php](https://github.com/steverobbins/magento-version-identification-php)
 
-</details>
-
-<details>
-
-<summary>MSExchange</summary>
+## MSExchange
 
 * [https://blog.orange.tw/2021/08/proxylogon-a-new-attack-surface-on-ms-exchange-part-1.html](https://blog.orange.tw/2021/08/proxylogon-a-new-attack-surface-on-ms-exchange-part-1.html)
 
-
-
-</details>
-
-<details>
-
-<summary>NGINX</summary>
+## NGINX
 
 * [ nginxpwner](https://github.com/stark0de/nginxpwner) - Nginxpwner is a simple tool to look for common Nginx misconfigurations and vulnerabilities.
 
-</details>
+## OAuth 2.0
 
 {% content-ref url="oauth-2.0.md" %}
 [oauth-2.0.md](oauth-2.0.md)
 {% endcontent-ref %}
 
-<details>
+## [OneLogin - SAML](https://developers.onelogin.com/saml)
 
-<summary><a href="https://developers.onelogin.com/saml">OneLogin - SAML</a></summary>
+* [SAMLExtractor](https://github.com/fadyosman/SAMLExtractor) - A tool that can take a URL or list of URL and prints back SAML consume URL.
 
-* [SAMLExtractor](https://github.com/fadyosman/SAMLExtractor) - A tool that can take a URL or list of URL and prints back SAML consume URL.ex
-
-</details>
-
-<details>
-
-<summary>OWA/O365</summary>
+## OWA/O365
 
 * [MailSniper](https://github.com/dafthack/MailSniper) - MailSniper is a penetration testing tool for searching through email in a Microsoft Exchange environment for specific terms (passwords, insider intel, network architecture information, etc.). It can be used as a non-administrative user to search their own email, or by an administrator to search the mailboxes of every user in a domain.
 * [byt3bl33d3r/SprayingToolkit](https://github.com/byt3bl33d3r/SprayingToolkit) - Scripts to make password spraying attacks against Lync/S4B, OWA & O365 a lot quicker, less painful and more efficient
@@ -309,70 +185,49 @@
 * [https://silentbreaksecurity.com/malicious-outlook-rules/](https://silentbreaksecurity.com/malicious-outlook-rules/) - Malicious Outlook Rules
 * [http://www.blackhillsinfosec.com/?p=5465](http://www.blackhillsinfosec.com/?p=5465) - Outlook Rules in Action
 
-</details>
+## PHP
 
-<details>
-
-<summary>PHP</summary>
-
-* [phpggc](https://github.com/ambionics/phpggc) - a library of PHP unserialize() payloads along with a tool to generate them, from command line or programmatically.
 * [Chankro](https://github.com/TarlogicSecurity/Chankro) - bypass **disable\_functions** and **open\_basedir** in your pentests.
+* [phpggc](https://github.com/ambionics/phpggc) - a library of PHP unserialize() payloads along with a tool to generate them, from command line or programmatically.
 
-</details>
-
-<details>
-
-<summary>Redis</summary>
+## Redis
 
 * [https://cheatsheet.haax.fr/web-pentest/injections/server-side-injections/ssrf/#redis-exploitation](https://cheatsheet.haax.fr/web-pentest/injections/server-side-injections/ssrf/#redis-exploitation)
 
-
-
-</details>
-
-<details>
-
-<summary>Ruby on Rails</summary>
+## Ruby on Rails
 
 * [brakeman](https://github.com/presidentbeef/brakeman) - A static analysis security vulnerability scanner for Ruby on Rails applications
   * [https://brakemanscanner.org/](https://brakemanscanner.org/)
 
-
-
-</details>
-
-<details>
-
-<summary>SAP</summary>
+## SAP
 
 * [SAP\_RECON](https://github.com/chipik/SAP\_RECON) - PoC for CVE-2020-6287, CVE-2020-6286 (SAP RECON vulnerability)
 * [https://github.com/shipcod3/mySapAdventures](https://github.com/shipcod3/mySapAdventures)
 * [https://github.com/emadshanab/SAP-wordlist/blob/main/SAP-wordlist.txt](https://github.com/emadshanab/SAP-wordlist/blob/main/SAP-wordlist.txt)
 * [https://buddysap.com/list-of-sap-port-used-in-sap-abap-and-java-system/](https://buddysap.com/list-of-sap-port-used-in-sap-abap-and-java-system/)
 
-</details>
+## SSL/TLS and Certificates
 
 {% content-ref url="ssl-tls-and-certificates.md" %}
 [ssl-tls-and-certificates.md](ssl-tls-and-certificates.md)
 {% endcontent-ref %}
 
-<details>
-
-<summary>Virtual Hosts</summary>
+## Virtual Hosts
 
 * [virtual-host-discovery](https://github.com/jobertabma/virtual-host-discovery) - A script to enumerate virtual hosts on a server.
 * [vhosts-sieve](https://github.com/dariusztytko/vhosts-sieve) - Searching for virtual hosts among non-resolvable domains
-* [VHostScan](https://github.com/codingo/VHostScan) - A virtual host scanner that performs reverse lookups, can be used with pivot tools, detect catch-all scenarios, work around wildcards, aliases and dynamic default pages.ex
+* [VHostScan](https://github.com/codingo/VHostScan) - A virtual host scanner that performs reverse lookups, can be used with pivot tools, detect catch-all scenarios, work around wildcards, aliases and dynamic default pages.
 
-</details>
+## VPN
+
+* [ike-scan](https://github.com/royhills/ike-scan) - Discover and fingerprint IKE hosts (IPsec VPN Servers)
+* _Kali Linux - An Ethical Hacker's Cookbook, pg. 24_
+
+## Web Application Firewalls
 
 {% content-ref url="web-application-firewall.md" %}
 [web-application-firewall.md](web-application-firewall.md)
 {% endcontent-ref %}
-
-<details>
-
-<summary><a href="https://en.wikipedia.org/wiki/WebDAV">WebDav</a></summary>
 
 ## [WebDav](https://en.wikipedia.org/wiki/WebDAV)
 
@@ -388,26 +243,15 @@
   $ cadaver http://$ip:8080/webdav/
   ```
 
-</details>
-
-<details>
-
-<summary>Web Proxies</summary>
+## Web Proxies
 
 * [https://github.com/GrrrDog/weird\_proxies](https://github.com/GrrrDog/weird\_proxies) - Reverse proxies cheatsheet
 
-</details>
-
-<details>
-
-<summary>Wordpress - Resources</summary>
+## Wordpress
 
 * [WPScan](https://github.com/wpscanteam/wpscan) - The Wordpress Vulnerability Scanner
   * [https://wpsec.com/](https://wpsec.com/) - Online Wordpress scanner
   * [WPScan:WordPress Pentesting Framework](https://www.hackingarticles.in/wpscanwordpress-pentesting-framework/)
-
-<!---->
-
 * [Wordpress Exploit Framework ](https://github.com/rastating/wordpress-exploit-framework) - A Ruby framework designed to aid in the penetration testing of WordPress systems.
 * [WPSploit](https://github.com/espreto/wpsploit) - This repository is designed for creating and/or porting of specific exploits for WordPress using metasploit as exploitation tool.
 * [xmlrpc-scan](https://github.com/nullfil3/xmlrpc-scan) - Scan urls or a single URL against XMLRPC wordpress issues.
@@ -422,13 +266,7 @@
 * [Multiple Ways to Crack WordPress login](https://www.hackingarticles.in/multiple-ways-to-crack-wordpress-login/)
 * [WordPress: Reverse Shell](https://www.hackingarticles.in/wordpress-reverse-shell/)
 
-
-
-</details>
-
-<details>
-
-<summary>WordPress Common Bugs</summary>
+### WordPress Common Bugs
 
 * Denial of Service via load-scripts.php
 
@@ -507,7 +345,5 @@ Host: target.com
 ```
 
 Source: [https://github.com/daffainfo/AllAboutBugBounty/blob/master/CMS/WordPress.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/CMS/WordPress.md)
-
-</details>
 
 {% embed url="https://youtu.be/sQ4TtFdaiRA" %}
