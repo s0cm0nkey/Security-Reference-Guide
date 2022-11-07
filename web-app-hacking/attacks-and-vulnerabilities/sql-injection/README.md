@@ -2,6 +2,8 @@
 
 ## Guides and Resources
 
+{% tabs %}
+{% tab title="Guides" %}
 * [https://www.sqlinjection.net/](https://www.sqlinjection.net/)
 * [https://owasp.org/www-community/attacks/SQL\_Injection](https://owasp.org/www-community/attacks/SQL\_Injection)
 * [https://owasp.org/www-community/Injection\_Flaws](https://owasp.org/www-community/Injection\_Flaws)
@@ -13,20 +15,28 @@
 * [https://pentestbook.six2dez.com/enumeration/web/sqli](https://pentestbook.six2dez.com/enumeration/web/sqli)
 * [https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet](https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet)
 * _SQL Injection Vulnerabilities - Bug Bounty Hunting Essentials, pg 29_
+{% endtab %}
 
-### Payload Cheatsheets
-
+{% tab title="Payload Cheatsheets" %}
 * [https://portswigger.net/web-security/sql-injection/cheat-sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
 * [https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection)
 * [https://github.com/payloadbox/sql-injection-payload-list/](https://github.com/payloadbox/sql-injection-payload-list/)
 * [https://websec.ca/kb/sql\_injection](https://websec.ca/kb/sql\_injection)
 * [http://pentestmonkey.net/category/cheat-sheet/sql-injection](http://pentestmonkey.net/category/cheat-sheet/sql-injection)
 * [https://www.codecademy.com/articles/sql-commands](https://www.codecademy.com/articles/sql-commands)
+{% endtab %}
+{% endtabs %}
+
+{% content-ref url="sql-tips-and-tricks.md" %}
+[sql-tips-and-tricks.md](sql-tips-and-tricks.md)
+{% endcontent-ref %}
 
 ## ****[**SQLmap**](https://github.com/sqlmapproject/sqlmap)  **** &#x20;
 
 SQL Injection tool that can spawn a meterpreter or VNC session back to attacker. Can return a decent number of false positives. Always verify. If you do not specify a value, SQLmap will attempt all by default
 
+{% tabs %}
+{% tab title="Guides and Resources" %}
 * [SQLMate](https://github.com/s0md3v/sqlmate) - Companion tool for SQLMap
   * &#x20;Maps out and locates admin panel
   * Query dorking for finding targets
@@ -38,9 +48,9 @@ SQL Injection tool that can spawn a meterpreter or VNC session back to attacker.
 * [https://tryhackme.com/room/sqlmap](https://tryhackme.com/room/sqlmap)
 * _RTFM: SQLMap - pg. 71_
 * _Operator Handbook: SQLMap - pg. 284_
+{% endtab %}
 
-### **Config and help commands**
-
+{% tab title="Config/help cmds" %}
 Specify the database type if not SQL
 
 ```
@@ -59,6 +69,10 @@ Help
 # sqlmap --wizard
 ```
 
+
+{% endtab %}
+
+{% tab title="Cmds - GET" %}
 ### Commands GET parameter - injection passed in the URL itself
 
 Test if sql inject is valid (will return banner on success)
@@ -96,7 +110,9 @@ WAF bypass and shell setup
 ```
 # sqlmap -u http://10.11.0.22/debug.php?id=1 -p "id" --dbms=mysql --os-shell
 ```
+{% endtab %}
 
+{% tab title="Cmds - POST" %}
 ### Commands POST parameter - injection passed in the data section
 
 Test if sql inject is valid (will return banner on success)
@@ -104,8 +120,12 @@ Test if sql inject is valid (will return banner on success)
 ```
 # sqlmap -u “http://domain.com” --data="user=test&pass=test" -b
 ```
+{% endtab %}
+{% endtabs %}
 
-### SQLmap with Burp
+<details>
+
+<summary>SQLmap with Burp</summary>
 
 * Start SQLmap API on your kali box while Burp Proxy Pro can be runnign anywhere
 * When Burp finds an SQL injection, it will connect to SQLmap's running API to automaticallu attack the vulnerable parameters.
@@ -113,9 +133,15 @@ Test if sql inject is valid (will return banner on success)
   * \# cd /opt/sqlmap
   * \# python sqlmapapi.py -s \[ip] -p \[port]
 
+</details>
+
 {% embed url="https://youtu.be/2YD4vygeghM" %}
 
 ## Other Tools
+
+<details>
+
+<summary>Other Tools</summary>
 
 * [PowerUpSQL](https://github.com/NetSPI/PowerUpSQL) - A PowerShell Toolkit for Attacking SQL Server
   * [https://github.com/NetSPI/PowerUpSQL/wiki](https://github.com/NetSPI/PowerUpSQL/wiki)
@@ -138,15 +164,19 @@ Test if sql inject is valid (will return banner on success)
 * [https://github.com/youngyangyang04/NoSQLAttack](https://github.com/youngyangyang04/NoSQLAttack) - **A SQLi vulnerability scanner for mongoDB**
 * [https://github.com/WhitewidowScanner/whitewidow](https://github.com/WhitewidowScanner/whitewidow) - **Another SQL vulnerability scanner**
 
+</details>
+
 ## **SQL Basics**
 
 {% content-ref url="sql-methodology.md" %}
 [sql-methodology.md](sql-methodology.md)
 {% endcontent-ref %}
 
-## Techniques
+## Attack Techniques
 
-### Filter evasion
+<details>
+
+<summary>Filter evasion</summary>
 
 * Many applications use web application firewalls (WAF) to help protect against any kind of SQL injection vulnerability. The only problem is that WAFs only look for certain words, characters, or patterns, meaning certain special characters used in combination can be used to evade WAF filter protection.
 * For example, a very basic WAF may filter out specific SQL keywords such as `OR`, `SELECT`, `UNION` or `WHERE` to prevent them from being used in SQL injection attacks.
@@ -165,9 +195,13 @@ Test if sql inject is valid (will return banner on success)
   * **String Splitting** - You can split strings within the query to bypass various filters. MySQL will still execute them as keywords.
     * `un?+un/**/ion+se/**/lect+`
 
-### String Concatenation
 
 
+</details>
+
+<details>
+
+<summary>String Concatenation</summary>
 
 An input field may restrict the usage of certain datatypes and/or words/punctuation. This can make the exploitation of SQL injection vulnerabilities a little bit more difficult. However, two functions can be used in conjunction to bypass filters such as these:`CHAR()` and `CONCAT()`.
 
@@ -185,7 +219,11 @@ An input field may restrict the usage of certain datatypes and/or words/punctuat
   Strings can be encoded into their Hex values either by passing a hex value or using the `HEX()` function.
 * For example, the string 'password' can be passed to an SQL statement like this: `SELECT 0x70617373776f726`
 
-### **Retrieve Hidden Data**
+</details>
+
+<details>
+
+<summary>Retrieve Hidden Data</summary>
 
 * When retrieving items from a database via an SQL query, some results may be filtered with a restriction clause at the end of the of the query&#x20;
 * In a vulnerable parameter, we can insert ‘--’ which is the SQL code for a comment. This will “comment out” the rest of the query, there for removing any restrictions placed on it.
@@ -199,7 +237,11 @@ An input field may restrict the usage of certain datatypes and/or words/punctuat
     * &#x20;Resulted query: `SELECT * FROM products WHERE category = 'Gifts' OR 1=1--' AND released = 1`
 *  [https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data](https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data)
 
-### **Subvert App Logic/Login Bypass**
+</details>
+
+<details>
+
+<summary>Subvert App Logic/Login Bypass</summary>
 
 * When an application checks login credentials, it submits in a query, usually with the fields of a username and password. If the query returns with the user details, the login is successful.
 * One way of bypassing the login requirement of the password, is to comment out the part of the query, after the username
@@ -211,6 +253,8 @@ An input field may restrict the usage of certain datatypes and/or words/punctuat
 * [https://pentestlab.blog/2012/12/24/sql-injection-authentication-bypass-cheat-sheet/](https://pentestlab.blog/2012/12/24/sql-injection-authentication-bypass-cheat-sheet/)
 * [http://www.securityidiots.com/Web-Pentest/SQL-Injection/bypass-login-using-sql-injection.html](http://www.securityidiots.com/Web-Pentest/SQL-Injection/bypass-login-using-sql-injection.html)
 * [https://portswigger.net/web-security/sql-injection/lab-login-bypass](https://portswigger.net/web-security/sql-injection/lab-login-bypass)
+
+</details>
 
 ## **Manual Injection Methodology**
 

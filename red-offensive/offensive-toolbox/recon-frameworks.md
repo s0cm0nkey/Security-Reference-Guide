@@ -1,10 +1,12 @@
 # Recon Frameworks
 
-## Recon Frameworks&#x20;
-
 Recon Frameworks are the backbone of any recon phase of a penetration test. With the wealth of information they can retrieve, they can also be leveraged for assisting in actions such as threat hunting, threat intelligence, attack surface mapping, and many others.&#x20;
 
-### [**Spiderfoot** ](https://github.com/smicallef/spiderfoot) ****&#x20;
+## Spiderfoot
+
+<details>
+
+<summary><a href="recon-frameworks.md#undefined">Spiderfoot </a> </summary>
 
 This is my go to for OSINT searches. Not only is it easy to use, it has a great web UI with loadable templates you can tailor to the scan that you want. It has over 200 different modules to collect different information about your target. These modules can call on other command line utilities as well as web services to pull in data.&#x20;
 
@@ -14,7 +16,13 @@ As with any great tool, make sure you read the [documentation](https://www.spide
 
 * [https://www.ired.team/offensive-security/red-team-infrastructure/spiderfoot-101-with-kali-using-docker](https://www.ired.team/offensive-security/red-team-infrastructure/spiderfoot-101-with-kali-using-docker)
 
-### ****[**Recon-ng**](https://github.com/lanmaster53/recon-ng) ****&#x20;
+</details>
+
+## Recon-NG
+
+<details>
+
+<summary><a href="recon-frameworks.md#undefined">Recon-ng </a></summary>
 
 This command line tool is the gold standard for recon. Tim Tomes (lanmaster53) has done an incredible job with it, making a plethora of modules for various needs. It is a flexible python framework that makes it ideal for automating tasks. After loading your API keys into a lookup file for the Recon-ng modules, you can select some or all of the modules to run and output the results into the file of your choice. Because the modules in Recon-ng can be run independently and can be scripted pretty easily, it is easy to incorporate its modules into other workflows outside of passive recon. Take a look at all of them, and see what you can use.
 
@@ -26,15 +34,32 @@ Recon-ng has a ton of great resources, but by far the BlackHills Infosec walkthr
 * [Black Hills Infosec Intro to Recon-ng](https://www.blackhillsinfosec.com/whats-changed-in-recon-ng-5x/)
 * [Black Hills Infosec Recon-ng cheatsheet](https://www.blackhillsinfosec.com/wp-content/uploads/2019/11/recon-ng-5.x-cheat-sheet-Sheet1-1.pdf)
 
+</details>
+
 {% embed url="https://youtu.be/0J6Auz88iTY" %}
 
-### **Other Frameworks**
+## Maltego
 
-These other frameworks do many of the same tasks that the previous two perform. Some are still actively being developed and promise expanded functionality in the future.
+<details>
+
+<summary><a href="https://www.maltego.com/">Maltego</a></summary>
 
 * [Maltego](https://www.maltego.com/) - Maltego is an open source intelligence and graphical link analysis tool for gathering and connecting information for investigative tasks.
   * [https://docs.maltego.com/support/home](https://docs.maltego.com/support/home)
   * [https://static.maltego.com/cdn/Handbooks/Maltego-Handbook-for-Social-Media-Investigations-Short.pdf](https://static.maltego.com/cdn/Handbooks/Maltego-Handbook-for-Social-Media-Investigations-Short.pdf)
+
+</details>
+
+{% embed url="https://youtu.be/zemNLx0-LRw" %}
+
+## **Other Frameworks**
+
+These other frameworks do many of the same tasks that the previous two perform. Some are still actively being developed and promise expanded functionality in the future.
+
+<details>
+
+<summary>Other Frameworks</summary>
+
 * [sn0int ](https://github.com/kpcyrd/sn0int)- A semi-automatic OSINT framework and package manager. It was built for IT security professionals and bug hunters to gather intelligence about a given target or about yourself.
 * [Raccoon](https://github.com/evyatarmeged/Raccoon) - An offensive security focused framework that performs a good bit of OSINT as well as active scanning on your target to get everything you need before attempts at exploitation.
 * [ReconSpider ](https://github.com/bhavsec/reconspider)- Another great offensive recon tool that has a great option to present the data in different visuals to help you conceptualize the data around your target
@@ -51,4 +76,4 @@ These other frameworks do many of the same tasks that the previous two perform. 
 
     BBOT currently has over **60 modules** and counting.
 
-{% embed url="https://youtu.be/zemNLx0-LRw" %}
+</details>

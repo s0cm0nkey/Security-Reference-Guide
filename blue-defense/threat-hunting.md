@@ -8,6 +8,8 @@ Threat hunting doesn’t have to be complex, but it’s not for everyone. Knowin
 
 ## Guides and Reference
 
+{% tabs %}
+{% tab title="General" %}
 * [Threat Hunter Playbook](https://threathunterplaybook.com/introduction.html) - a community-based open source project developed to share threat hunting concepts and aid the development of techniques and hypothesis for hunting campaigns by leveraging security event logs from diverse operating systems.
 * [huntpedia.pdf](https://www.threathunting.net/files/huntpedia.pdf)  - Book written by seasoned threat hunters on thier techniques and theory.
 * [Open Threat Research Forge](https://github.com/OTRF) - Github repository of Threat Hunting articles, playbooks and tools.
@@ -19,9 +21,9 @@ Threat hunting doesn’t have to be complex, but it’s not for everyone. Knowin
 * [HowToHunt](https://github.com/KathanP19/HowToHunt) - Tutorials and Things to Do while Hunting Vulnerability.&#x20;
 * [ThreatHunting Home](https://www.threathunting.net/) - Links and Blog on popular threat hunting proceedures
 * [Tool Analysis Result Sheet](https://jpcertcc.github.io/ToolAnalysisResultSheet/) - JP-CERT analysis on detecting the use of multiple popular tools within an network environment.
+{% endtab %}
 
-### Hunting with MITRE ATTACK
-
+{% tab title="Hunting with MITRE ATTACK" %}
 * [MITRE ATT\&CKcon 2018: Hunters ATT\&CKing with the Data, Roberto Rodriguez, SpecterOps and Jose Luis Rodriguez, Student](https://www.slideshare.net/attackcon2018/mitre-attckcon-2018-hunters-attcking-with-the-data-robert-rodriguez-specterops-and-jose-luis-rodriguez-student)
 * [Testing the Top MITRE ATT\&CK Techniques: PowerShell, Scripting, Regsvr32](https://redcanary.com/blog/testing-the-top-mitre-attck-techniques-powershell-scripting-regsvr32/)
 * [Ten Ways Zeek Can Help You Detect the TTPs of MITRE ATT\&CK](https://m.youtube.com/watch?v=DfTbSc\_q2F8)
@@ -34,27 +36,32 @@ Threat hunting doesn’t have to be complex, but it’s not for everyone. Knowin
 * [Finding Related ATT\&CK Techniques](https://medium.com/mitre-attack/finding-related-att-ck-techniques-f1a4e8dfe2b6)
 * [Getting Started with ATT\&CK: Detection and Analytics](https://medium.com/mitre-attack/getting-started-with-attack-detection-a8e49e4960d0)
 * [Mapping your Blue Team to MITRE ATT\&CK™](https://www.siriussecurity.nl/blog/2019/5/8/mapping-your-blue-team-to-mitre-attack)
+{% endtab %}
+{% endtabs %}
 
-### DNS Hunting
+<details>
 
-* [Alternative DNS Techniques - Active Countermeasures](https://www.activecountermeasures.com/alternative-dns-techniques/)
+<summary>Hunting in Windows Events</summary>
+
+* [https://fourcore.io/blogs/threat-hunting-with-windows-event-log-sigma-rules](https://fourcore.io/blogs/threat-hunting-with-windows-event-log-sigma-rules)
+
+</details>
+
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+<details>
+
+<summary>DNS Hunting</summary>
+
 * [SANS@MIC -Threat Hunting via DNS - SANS Institute](https://www.sans.org/webcasts/sansatmic-threat-hunting-dns-114180)&#x20;
+* [Alternative DNS Techniques - Active Countermeasures](https://www.activecountermeasures.com/alternative-dns-techniques/)
 
-### Cloud Hunting - AWS
+</details>
 
-{% embed url="https://youtu.be/qSp_q55pjnc" %}
+<details>
 
-* [https://www.splunk.com/en\_us/blog/security/cloudtrail-digital-breadcrumbs-for-aws.html](https://www.splunk.com/en\_us/blog/security/cloudtrail-digital-breadcrumbs-for-aws.html)
-* [https://www.splunk.com/en\_us/blog/security/go-with-the-flow-network-telemetry-vpc-data-in-aws.html](https://www.splunk.com/en\_us/blog/security/go-with-the-flow-network-telemetry-vpc-data-in-aws.html)
-* [https://labs.bishopfox.com/tech-blog/privilege-escalation-in-aws](https://labs.bishopfox.com/tech-blog/privilege-escalation-in-aws)
-* [https://labs.bishopfox.com/tech-blog/5-privesc-attack-vectors-in-aws](https://labs.bishopfox.com/tech-blog/5-privesc-attack-vectors-in-aws)
-* [https://www.hunters.ai/blog/hunters-research-detecting-obfuscated-attacker-ip-in-aws](https://www.hunters.ai/blog/hunters-research-detecting-obfuscated-attacker-ip-in-aws)
-* [https://pages.awscloud.com/rs/112-TZM-766/images/How-to-Build-a-Threat-Hunting-Capability-in-AWS\_Slides.pdf](https://pages.awscloud.com/rs/112-TZM-766/images/How-to-Build-a-Threat-Hunting-Capability-in-AWS\_Slides.pdf)
-* [https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html)
+<summary>Cloud Hunting - Azure/O365</summary>
 
-### Cloud Hunting - Azure/O365
-
-* [https://expel.io/blog/seven-ways-to-spot-business-email-compromise-office-365/](https://expel.io/blog/seven-ways-to-spot-business-email-compromise-office-365/)
 * [![](https://miro.medium.com/1\*m-R\_BkNf1Qjr1YbyOIJY2w.png)Threat Hunting with Microsoft O365 Logs](https://medium.com/@theartofdefense/threat-hunting-with-microsoft-o365-logs-9f64b5fd49e9)
 * [![](https://www.youtube.com/s/desktop/2cbeb7d0/img/favicon\_32x32.png)Threat Hunting in the Microsoft Cloud: Times They Are a-Changin' | John Stoner](https://www.youtube.com/watch?v=3fQJT1NXYrA)
 * G[itHub - microsoft/Microsoft-365-Defender-Hunting-Queries: Sample queries for Advanced hunting in Microsoft 365 Defender](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries)
@@ -65,62 +72,103 @@ Threat hunting doesn’t have to be complex, but it’s not for everyone. Knowin
 * [GitHub - darkquasar/AzureHunter: A Cloud Forensics Powershell module to run threat hunting playbooks on data from Azure and O365](https://github.com/darkquasar/AzureHunter)
 * [https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries)
 * [https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)
+* [https://expel.io/blog/seven-ways-to-spot-business-email-compromise-office-365/](https://expel.io/blog/seven-ways-to-spot-business-email-compromise-office-365/)
 
-### Misc
+</details>
 
-* [https://fourcore.io/blogs/threat-hunting-with-windows-event-log-sigma-rules](https://fourcore.io/blogs/threat-hunting-with-windows-event-log-sigma-rules)
+<details>
+
+<summary>Cloud Hunting - AWS</summary>
+
+* [https://www.splunk.com/en\_us/blog/security/cloudtrail-digital-breadcrumbs-for-aws.html](https://www.splunk.com/en\_us/blog/security/cloudtrail-digital-breadcrumbs-for-aws.html)
+* [https://www.splunk.com/en\_us/blog/security/go-with-the-flow-network-telemetry-vpc-data-in-aws.html](https://www.splunk.com/en\_us/blog/security/go-with-the-flow-network-telemetry-vpc-data-in-aws.html)
+* [https://labs.bishopfox.com/tech-blog/privilege-escalation-in-aws](https://labs.bishopfox.com/tech-blog/privilege-escalation-in-aws)
+* [https://labs.bishopfox.com/tech-blog/5-privesc-attack-vectors-in-aws](https://labs.bishopfox.com/tech-blog/5-privesc-attack-vectors-in-aws)
+* [https://www.hunters.ai/blog/hunters-research-detecting-obfuscated-attacker-ip-in-aws](https://www.hunters.ai/blog/hunters-research-detecting-obfuscated-attacker-ip-in-aws)
+* [https://pages.awscloud.com/rs/112-TZM-766/images/How-to-Build-a-Threat-Hunting-Capability-in-AWS\_Slides.pdf](https://pages.awscloud.com/rs/112-TZM-766/images/How-to-Build-a-Threat-Hunting-Capability-in-AWS\_Slides.pdf)
+* [https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html)
+
+</details>
 
 ## Tools
 
-* OS/VM&#x20;
-  * [RedHunt-OS](https://github.com/redhuntlabs/RedHunt-OS) - Virtual Machine for Adversary Emulation and Threat Hunting by [RedHunt Labs](https://redhuntlabs.com/)
-  * [ThreatPursuit-VM](https://github.com/fireeye/ThreatPursuit-VM) - A fully customizable, open-sourced Windows-based distribution focused on threat intelligence analysis and hunting designed for intel and malware analysts as well as threat hunters to get up and running quickly.
-* Platform&#x20;
-  * [HELK: The Hunting ELK](https://github.com/Cyb3rWard0g/HELK) -  The Hunting ELK or simply the HELK is one of the first open source hunt platforms with advanced analytics capabilities such as SQL declarative language, graphing, structured streaming, and even machine learning via Jupyter notebooks and Apache Spark over an ELK stack.
-  * [ACM's AI-Hunter ](https://www.activecountermeasures.com/ac-hunter-how-it-works/)- Platform for hunting and detecting malware on your network.
+{% tabs %}
+{% tab title="OS/VM " %}
+* [RedHunt-OS](https://github.com/redhuntlabs/RedHunt-OS) - Virtual Machine for Adversary Emulation and Threat Hunting by [RedHunt Labs](https://redhuntlabs.com/)
+* [ThreatPursuit-VM](https://github.com/fireeye/ThreatPursuit-VM) - A fully customizable, open-sourced Windows-based distribution focused on threat intelligence analysis and hunting designed for intel and malware analysts as well as threat hunters to get up and running quickly.
+{% endtab %}
+
+{% tab title="Hunting Platforms and Toolkits" %}
+* [HELK: The Hunting ELK](https://github.com/Cyb3rWard0g/HELK) -  The Hunting ELK or simply the HELK is one of the first open source hunt platforms with advanced analytics capabilities such as SQL declarative language, graphing, structured streaming, and even machine learning via Jupyter notebooks and Apache Spark over an ELK stack.
+* [ACM's AI-Hunter ](https://www.activecountermeasures.com/ac-hunter-how-it-works/)- Platform for hunting and detecting malware on your network.
 * [ThreatHunter's Toolkit](https://github.com/ethack/tht) - Threat Hunting Toolkit is a Swiss Army knife for threat hunting, log processing, and security-focused data science
   * [https://www.blackhillsinfosec.com/wp-content/uploads/2021/11/SLIDES\_LookingforNeedlesinNeedlestacks.pdf](https://www.blackhillsinfosec.com/wp-content/uploads/2021/11/SLIDES\_LookingforNeedlesinNeedlestacks.pdf)
   * [https://www.youtube.com/watch?v=q7ai6P-cHaQ\&t=2107s](https://www.youtube.com/watch?v=q7ai6P-cHaQ\&t=2107s)
-* DNS&#x20;
-  * [freq.py](https://github.com/sans-blue-team/freq.py) - Mark Baggett's tool for detecting randomness using NLP techniques rather than pure entropy calculations. Uses character pair frequency analysis to determine the likelihood of tested strings of characters occurring.&#x20;
-  * [domain\_stats](https://github.com/MarkBaggett/domain\_stats) - Domain\_stats is a log enhancment utility that is intended help you find threats in your environment. It will identify the following possible threats in your environment.
-  * [dnstwist](https://github.com/elceef/dnstwist) -  Domain name permutation engine for detecting homograph phishing attacks, typo squatting, and brand impersonation
-* Misc Tools
-  * [Awesome Lists Collection: Cobalt Strike Defense](https://github.com/MichaelKoczwara/Awesome-CobaltStrike-Defence)&#x20;
-  * [DeepBlueCLI](https://github.com/sans-blue-team/DeepBlueCLI)  - a PowerShell Module for Threat Hunting via Windows Event Logs
-  * [LogonTracer](https://github.com/JPCERTCC/LogonTracer) - LogonTracer is a tool to investigate malicious logon by visualizing and analyzing Windows Active Directory event logs.
-  * [APT-Hunter](https://github.com/ahmedkhlief/APT-Hunter) - Threat Hunting tool for windows event logs which made by purple team mindset to provide detect APT movements hidden in the sea of windows event logs to decrease the time to uncover suspicious activity&#x20;
-  * [PSHunt](https://github.com/Infocyte/PSHunt) - Powershell Threat Hunting Module&#x20;
-  * [PSRecon](https://github.com/gfoss/PSRecon) -  Gathers data from a remote Windows host using PowerShell (v2 or later), organizes the data into folders, hashes all extracted data, hashes PowerShell and various system properties, and sends the data off to the security team. The data can be pushed to a share, sent over email, or retained locally.&#x20;
-  * [Mihari ](https://github.com/ninoseki/mihari)-  A framework for continuous OSINT based threat hunting&#x20;
-  * [Oriana](https://github.com/mvelazc0/Oriana) - A threat hunting tool that leverages a subset of Windows events to build relationships, calculate totals and run analytics. The results are presented in a Web layer to help defenders identify outliers and suspicious behavior on corporate environments.
-  * [rastrea2r](https://github.com/rastrea2r/rastrea2r) - A multi-platform open source tool that allows incident responders and SOC analysts to triage suspect systems and hunt for Indicators of Compromise (IOCs) across thousands of endpoints in minutes.
-  * [Zircolite](https://github.com/wagga40/Zircolite) - A standalone SIGMA-based detection tool for EVTX.
-  * [chainsaw](https://github.com/countercept/chainsaw) - Rapidly Search and Hunt through Windows Event Logs
-  * [https://www.nextron-systems.com/thor-lite/](https://www.nextron-systems.com/thor-lite/) - fast and flexible multi-platform IOC and [YARA](http://virustotal.github.io/yara/) scanner
-    * [LOKI](https://github.com/Neo23x0/LOKI) - imple IOC and Incident Response Scanner
-    * [https://github.com/Neo23x0/signature-base](https://github.com/Neo23x0/signature-base)
-    * [https://www.nextron-systems.com/valhalla/](https://www.nextron-systems.com/valhalla/)
+
+
+{% endtab %}
+
+{% tab title="DNS" %}
+* [freq.py](https://github.com/sans-blue-team/freq.py) - Mark Baggett's tool for detecting randomness using NLP techniques rather than pure entropy calculations. Uses character pair frequency analysis to determine the likelihood of tested strings of characters occurring.&#x20;
+* [domain\_stats](https://github.com/MarkBaggett/domain\_stats) - Domain\_stats is a log enhancment utility that is intended help you find threats in your environment. It will identify the following possible threats in your environment.
+* [dnstwist](https://github.com/elceef/dnstwist) -  Domain name permutation engine for detecting homograph phishing attacks, typo squatting, and brand impersonation
+
+
+{% endtab %}
+
+{% tab title="Misc" %}
+* [Awesome Lists Collection: Cobalt Strike Defense](https://github.com/MichaelKoczwara/Awesome-CobaltStrike-Defence)&#x20;
+* [DeepBlueCLI](https://github.com/sans-blue-team/DeepBlueCLI)  - a PowerShell Module for Threat Hunting via Windows Event Logs
+* [LogonTracer](https://github.com/JPCERTCC/LogonTracer) - LogonTracer is a tool to investigate malicious logon by visualizing and analyzing Windows Active Directory event logs.
+* [APT-Hunter](https://github.com/ahmedkhlief/APT-Hunter) - Threat Hunting tool for windows event logs which made by purple team mindset to provide detect APT movements hidden in the sea of windows event logs to decrease the time to uncover suspicious activity&#x20;
+* [PSHunt](https://github.com/Infocyte/PSHunt) - Powershell Threat Hunting Module&#x20;
+* [PSRecon](https://github.com/gfoss/PSRecon) -  Gathers data from a remote Windows host using PowerShell (v2 or later), organizes the data into folders, hashes all extracted data, hashes PowerShell and various system properties, and sends the data off to the security team. The data can be pushed to a share, sent over email, or retained locally.&#x20;
+* [Mihari ](https://github.com/ninoseki/mihari)-  A framework for continuous OSINT based threat hunting&#x20;
+* [Oriana](https://github.com/mvelazc0/Oriana) - A threat hunting tool that leverages a subset of Windows events to build relationships, calculate totals and run analytics. The results are presented in a Web layer to help defenders identify outliers and suspicious behavior on corporate environments.
+* [rastrea2r](https://github.com/rastrea2r/rastrea2r) - A multi-platform open source tool that allows incident responders and SOC analysts to triage suspect systems and hunt for Indicators of Compromise (IOCs) across thousands of endpoints in minutes.
+* [Zircolite](https://github.com/wagga40/Zircolite) - A standalone SIGMA-based detection tool for EVTX.
+* [chainsaw](https://github.com/countercept/chainsaw) - Rapidly Search and Hunt through Windows Event Logs
+* [https://www.nextron-systems.com/thor-lite/](https://www.nextron-systems.com/thor-lite/) - fast and flexible multi-platform IOC and [YARA](http://virustotal.github.io/yara/) scanner
+  * [LOKI](https://github.com/Neo23x0/LOKI) - imple IOC and Incident Response Scanner
+  * [https://github.com/Neo23x0/signature-base](https://github.com/Neo23x0/signature-base)
+  * [https://www.nextron-systems.com/valhalla/](https://www.nextron-systems.com/valhalla/)
+
+
+{% endtab %}
+{% endtabs %}
 
 ### **Splunkhunting**
 
-* Splunk Apps&#x20;
-  * [ThreatHunting | Splunkbase](https://splunkbase.splunk.com/app/4305/)&#x20;
-  * [URL Toolbox | Splunkbase](https://splunkbase.splunk.com/app/2734/)&#x20;
-  * [URLParser | Splunkbase](https://splunkbase.splunk.com/app/3396/)&#x20;
-  * [Splunk Security Essentials | Splunkbase](https://splunkbase.splunk.com/app/3435/)&#x20;
-  * [SA-Investigator for Enterprise Security | Splunkbase](https://splunkbase.splunk.com/app/3749/)&#x20;
-  * [DFUR-Splunk-App](https://github.com/fireeye/DFUR-Splunk-App) -  The "DFUR" Splunk application and data that was presented at the 2020 SANS DFIR Summit.&#x20;
-  * [CyberMenace](https://github.com/PM0ney/CyberMenace) - A one stop shop hunting app in Splunk that can ingest Zeek, Suricata, Sysmon, and Windows event data to find malicious indicators of compromise relating to the MITRE ATT\&CK Matrix.
-* Splunk Hunting Resources
-  * [Hunting with Splunk: The Basics](https://www.splunk.com/blog/2017/07/06/hunting-with-splunk-the-basics.html)&#x20;
-  * [ATT\&CKized Splunk - Threat Hunting with MITRE’s ATT\&CK using SplunkSecurity Affairs](https://securityaffairs.co/wordpress/81288/security/hunting-mitres-attck-splunk.html)&#x20;
-  * [Detecting malware beacons using Splunk | geekery](https://pleasefeedthegeek.wordpress.com/2012/12/20/detecting-malware-beacons-using-splunk/)&#x20;
-  * [red|blue: Automating APT Scanning with Loki Scanner and Splunk](https://www.redblue.team/2017/04/automating-apt-scanning-with-loki.html?m=1)&#x20;
-  * [Detecting dynamic DNS domains in Splunk | Splunk](https://www.splunk.com/en\_us/blog/security/detecting-dynamic-dns-domains-in-splunk.html)&#x20;
-  * [hunting\_the\_known\_unknowns\_with\_DNS.pdf](https://www.splunk.com/pdfs/events/govsummit/hunting\_the\_known\_unknowns\_with\_DNS.pdf)
-  * [https://www.deepwatch.com/blog/threat-hunting-in-splunk/](https://www.deepwatch.com/blog/threat-hunting-in-splunk/)
-  * [SEC1244 - Cops and Robbers: Simulating the Adversary to Test Your Splunk Security Analytics](https://static.rainfocus.com/splunk/splunkconf18/sess/1522696002986001hj1a/finalPDF/Simulating-the-Adversary-Test-1244\_1538791048709001YJnK.pdf)
+<details>
+
+<summary>Splunk Apps</summary>
+
+* [ThreatHunting | Splunkbase](https://splunkbase.splunk.com/app/4305/)&#x20;
+* [URL Toolbox | Splunkbase](https://splunkbase.splunk.com/app/2734/)&#x20;
+* [URLParser | Splunkbase](https://splunkbase.splunk.com/app/3396/)&#x20;
+* [Splunk Security Essentials | Splunkbase](https://splunkbase.splunk.com/app/3435/)&#x20;
+* [SA-Investigator for Enterprise Security | Splunkbase](https://splunkbase.splunk.com/app/3749/)&#x20;
+* [DFUR-Splunk-App](https://github.com/fireeye/DFUR-Splunk-App) -  The "DFUR" Splunk application and data that was presented at the 2020 SANS DFIR Summit.&#x20;
+* [CyberMenace](https://github.com/PM0ney/CyberMenace) - A one stop shop hunting app in Splunk that can ingest Zeek, Suricata, Sysmon, and Windows event data to find malicious indicators of compromise relating to the MITRE ATT\&CK Matrix.
+
+
+
+</details>
+
+<details>
+
+<summary>Splunk Hunting Resources</summary>
+
+* [Hunting with Splunk: The Basics](https://www.splunk.com/blog/2017/07/06/hunting-with-splunk-the-basics.html)&#x20;
+* [ATT\&CKized Splunk - Threat Hunting with MITRE’s ATT\&CK using SplunkSecurity Affairs](https://securityaffairs.co/wordpress/81288/security/hunting-mitres-attck-splunk.html)&#x20;
+* [Detecting malware beacons using Splunk | geekery](https://pleasefeedthegeek.wordpress.com/2012/12/20/detecting-malware-beacons-using-splunk/)&#x20;
+* [red|blue: Automating APT Scanning with Loki Scanner and Splunk](https://www.redblue.team/2017/04/automating-apt-scanning-with-loki.html?m=1)&#x20;
+* [Detecting dynamic DNS domains in Splunk | Splunk](https://www.splunk.com/en\_us/blog/security/detecting-dynamic-dns-domains-in-splunk.html)&#x20;
+* [hunting\_the\_known\_unknowns\_with\_DNS.pdf](https://www.splunk.com/pdfs/events/govsummit/hunting\_the\_known\_unknowns\_with\_DNS.pdf)
+* [https://www.deepwatch.com/blog/threat-hunting-in-splunk/](https://www.deepwatch.com/blog/threat-hunting-in-splunk/)
+* [SEC1244 - Cops and Robbers: Simulating the Adversary to Test Your Splunk Security Analytics](https://static.rainfocus.com/splunk/splunkconf18/sess/1522696002986001hj1a/finalPDF/Simulating-the-Adversary-Test-1244\_1538791048709001YJnK.pdf)
+
+</details>
 
 {% embed url="https://www.youtube.com/watch?v=ST0cuppJ2nc" %}
 
@@ -185,6 +233,3 @@ Preparing for CJA requires organizations to do the following:
 * [A Process is No One : Hunting for Token Manipulation](https://specterops.io/assets/resources/A\_Process\_is\_No\_One.pdf)
 * [https://pberba.github.io/security/2021/11/22/linux-threat-hunting-for-persistence-sysmon-auditd-webshell/](https://pberba.github.io/security/2021/11/22/linux-threat-hunting-for-persistence-sysmon-auditd-webshell/)
 * [https://github.com/schwartz1375/aws](https://github.com/schwartz1375/aws) - Repo for threat hunting in AWS.
-
-![](<../.gitbook/assets/image (13).png>)
-
