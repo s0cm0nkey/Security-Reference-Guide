@@ -70,7 +70,7 @@
     * [Insecure Direct Object Reference](web-app-hacking/attacks-and-vulnerabilities/insecure-direct-object-reference.md)
     * [SQL Injection](web-app-hacking/attacks-and-vulnerabilities/sql-injection/README.md)
       * [SQL Tips and Tricks](web-app-hacking/attacks-and-vulnerabilities/sql-injection/sql-tips-and-tricks.md)
-      * [SQL Methodology](web-app-hacking/attacks-and-vulnerabilities/sql-injection/sql-methodology.md)
+      * [SQL Basics](web-app-hacking/attacks-and-vulnerabilities/sql-injection/sql-methodology.md)
       * [Manual Injection Methodology](web-app-hacking/attacks-and-vulnerabilities/sql-injection/manual-injection-methodology.md)
     * [Web Cache Poisoning](web-app-hacking/attacks-and-vulnerabilities/web-cache-poisoning.md)
     * [Web Sockets](web-app-hacking/attacks-and-vulnerabilities/web-sockets.md)
