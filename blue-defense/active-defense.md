@@ -14,16 +14,22 @@ Honeypots are a core part of Active Defense. Beyond thier incredible value for l
 
 * [Awesome Lists Collection : Honeypots](https://github.com/paralax/awesome-honeypots)
 * [https://tryhackme.com/room/introductiontohoneypots](https://tryhackme.com/room/introductiontohoneypots)
-* Honeypot tools
-  * [HoneyD](https://www.honeyd.org) - The OG Honeypot. Honeyd is a small daemon that creates virtual hosts on a network. The hosts can be configured to run arbitrary services, and their personality can be adapted so that they appear to be running certain operating systems.
-  * [MDH: Modern Honeypot Network ](https://github.com/pwnlandia/mhn)- Easy to install and configure Honeypot service. Has config scripts for Snort, Cowrie, and Dionea.&#x20;
-  * [Open Canary](https://github.com/thinkst/opencanary) - One of the most popular and flexible honeypot applications available. OpenCanary is a daemon that runs canary services, which can trigger alerts when accessed. The alerts can be sent to syslog, emails or an opencanary-correlator.
-    * [https://adhdproject.github.io/#!Tools/Attribution/OpenCanary.md](https://adhdproject.github.io/#!Tools/Attribution/OpenCanary.md)
-  * [Wordport - The Wordpress based Honeypot](https://github.com/adhdproject/wordpot)
-    * [https://adhdproject.github.io/#!Tools/Annoyance/Wordpot.md](https://adhdproject.github.io/#!Tools/Annoyance/Wordpot.md)
-  * [Labrea](https://labrea.sourceforge.io/labrea-info.html) - LaBrea takes over unused IP addresses, and creates virtual servers that are attractive to worms, hackers, and other denizens of the Internet. The program answers connection attempts in such a way that the machine at the other end gets "stuck", sometimes for a very long time.
+* [https://www.honeynet.org/](https://www.honeynet.org/)
+* _Using Canary Honeypots for Detection - Applied Network Security Monitoring, pg.317_
 
-**Honeyports** - Honeyports are a great way to dynamically blacklist  attacking systems. You can create a simple script that dynamically blacklist attackers when they establish full connections to certain ports, or perform simple alerting.
+{% tabs %}
+{% tab title="Honeypot Tools" %}
+* [HoneyD](https://www.honeyd.org) - The OG Honeypot. Honeyd is a small daemon that creates virtual hosts on a network. The hosts can be configured to run arbitrary services, and their personality can be adapted so that they appear to be running certain operating systems.
+* [MDH: Modern Honeypot Network ](https://github.com/pwnlandia/mhn)- Easy to install and configure Honeypot service. Has config scripts for Snort, Cowrie, and Dionea.&#x20;
+* [Open Canary](https://github.com/thinkst/opencanary) - One of the most popular and flexible honeypot applications available. OpenCanary is a daemon that runs canary services, which can trigger alerts when accessed. The alerts can be sent to syslog, emails or an opencanary-correlator.
+  * [https://adhdproject.github.io/#!Tools/Attribution/OpenCanary.md](https://adhdproject.github.io/#!Tools/Attribution/OpenCanary.md)
+* [Wordport - The Wordpress based Honeypot](https://github.com/adhdproject/wordpot)
+  * [https://adhdproject.github.io/#!Tools/Annoyance/Wordpot.md](https://adhdproject.github.io/#!Tools/Annoyance/Wordpot.md)
+* [Labrea](https://labrea.sourceforge.io/labrea-info.html) - LaBrea takes over unused IP addresses, and creates virtual servers that are attractive to worms, hackers, and other denizens of the Internet. The program answers connection attempts in such a way that the machine at the other end gets "stuck", sometimes for a very long time.
+{% endtab %}
+
+{% tab title="Honeyports" %}
+Honeyports are a great way to dynamically blacklist  attacking systems. You can create a simple script that dynamically blacklist attackers when they establish full connections to certain ports, or perform simple alerting.
 
 * [Honeyports tool](https://github.com/adhdproject/honeyports)
   * [https://adhdproject.github.io/#!Tools/Annoyance/HoneyPorts.md](https://adhdproject.github.io/#!Tools/Annoyance/HoneyPorts.md)
@@ -32,8 +38,10 @@ Honeypots are a core part of Active Defense. Beyond thier incredible value for l
   * [https://bitbucket.org/Zaeyx/rubberglue/src/master/](https://bitbucket.org/Zaeyx/rubberglue/src/master/)
 * [Invisport ](https://bitbucket.org/Zaeyx/invisiport/src/master/)&#x20;
 * _Offensive Countermeasures - pg. 34_
+{% endtab %}
 
-**Honey-Assets** - Files, Objects, Accounts, or other resources that would normally not be touches by any legitimate user or process, that are set to perform a specific action when accessed.
+{% tab title="Honey-Assets" %}
+Files, Objects, Accounts, or other resources that would normally not be touches by any legitimate user or process, that are set to perform a specific action when accessed.
 
 * [Canary Tokens](http://canarytokens.org/) - Canary Tokens are outstanding objects that can beacon back when activated. For example, you could create a Word document that calls back. Or, in this example, a little snippet of HTML code that calls back whenever it is activated
   * [https://adhdproject.github.io/#!Tools/Attribution/CanaryTokens.md](https://adhdproject.github.io/#!Tools/Attribution/CanaryTokens.md)
@@ -45,11 +53,8 @@ Honeypots are a core part of Active Defense. Beyond thier incredible value for l
   * [https://medium.com/@Mag1cM0n/active-cyberdefense-installing-artillery-on-windows-server-2012-r2-e1ab22974947](https://medium.com/@Mag1cM0n/active-cyberdefense-installing-artillery-on-windows-server-2012-r2-e1ab22974947)
   * _Offensive Countermeasures - pg. 76_
   * _Honeydocs - Applied Network Security Monitoring, pg.335_
-
-**Resources**
-
-* [https://www.honeynet.org/](https://www.honeynet.org/)
-* _Using Canary Honeypots for Detection - Applied Network Security Monitoring, pg.317_
+{% endtab %}
+{% endtabs %}
 
 {% embed url="https://youtu.be/14YuyMkfB9Q" %}
 
