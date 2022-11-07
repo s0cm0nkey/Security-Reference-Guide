@@ -59,24 +59,26 @@
 
 ### IR/Malware Scanners
 
-
-
+{% tabs %}
+{% tab title="Yara Scanners" %}
+* [Yara](https://github.com/virustotal/yara/releases/latest)
 * [https://www.nextron-systems.com/thor/](https://www.nextron-systems.com/thor/) - IR scanner with more than 12,000 handcrafted YARA signatures, 400 Sigma rules, numerous anomaly detection rules and thousands of IOCs.
   * [Loki Scanner](https://github.com/Neo23x0/Loki) - The free and open IOC scanner using YARA rules.
   * [Fenrir](https://github.com/Neo23x0/Fenrir) - Fenrir is a simple IOC scanner bash script. It allows scanning Linux/Unix/OSX systems for Indicators of Compromise (IOCs).
+* [Binalyze IREC Tactical ](https://www.binalyze.com/tactical)- Standalone evidence collector for traditional DFIR situations. Can scan target with set YARA rules
+
+```
+IREC.exe --triage-memory
+IREC.exe -ad "\\MACHINE\IREC-DIR" --triage-ruleset MyYaraRules --triage-memory 
+```
+{% endtab %}
+
+{% tab title="Malware/AV Scanners" %}
 * [MalwareBytes IR Scanner](https://www.malwarebytes.com/business/incident-response)
   * [https://www.malwarebytes.com/pdf/datasheets/mbirdatasheet.pdf](https://www.malwarebytes.com/pdf/datasheets/mbirdatasheet.pdf)
 * [ClamAV](https://www.clamav.net/downloads) - ClamAV is an open source antivirus engine for detecting trojans, viruses, malware & other malicious threats. Can be used with a USB for portable scanning of devices.
 * [Microsoft Safety Scanner ](https://docs.microsoft.com/en-us/windows/security/threat-protection/intelligence/safety-scanner-download)- Microsoft Safety Scanner is a scan tool designed to find and remove malware from Windows computers. Simply download it and run a scan to find malware and try to reverse changes made by identified threats.
-* [gmer Rootkit scanner](https://www.gmer.net/) - An application that detects and removes [rootkits](http://en.wikipedia.org/wiki/Rootkit)
-* [chkrootkit](http://www.chkrootkit.org/) - A tool to locally check for signs of a [rootkit](http://www.chkrootkit.org/links/).&#x20;
-  * [https://www.kali.org/tools/chkrootkit/](https://www.kali.org/tools/chkrootkit/)
-* [RKHunter](https://github.com/installation/rkhunter) - scans systems for known and unknown rootkits, backdoors, sniffers and exploits.
-  * [https://www.kali.org/tools/rkhunter/](https://www.kali.org/tools/rkhunter/)
-* [CobaltStrikeScan](https://github.com/Apr4h/CobaltStrikeScan) - Scan files or process memory for CobaltStrike beacons and parse their configuration.
 * [hashlookup-forensic-analyser](https://github.com/hashlookup/hashlookup-forensic-analyser) - Analyse a forensic target (such as a directory) to find and report files found and not found from CIRCL hashlookup public service - [https://circl.lu/services/hashlookup/](https://circl.lu/services/hashlookup/)
-* [pe-sieve](https://github.com/hasherezade/pe-sieve) - Scans a given process. Recognizes and dumps a variety of potentially malicious implants (replaced/injected PEs, shellcodes, hooks, in-memory patches).
-  * [https://hshrzd.wordpress.com/pe-sieve/](https://hshrzd.wordpress.com/pe-sieve/)
 * [Redline by Fireeye ](https://www.fireeye.com/services/freeware/redline.html)- Redline®, FireEye's premier free endpoint security tool, provides host investigative capabilities to users to find signs of malicious activity through memory and file analysis and the development of a threat assessment profile.
 * [https://www.herdprotect.com/](https://www.herdprotect.com/) - herdProtect is a second line of defense malware scanning platform powered by [68 anti-malware engines](https://www.herdprotect.com/engines.aspx) in the cloud. Since no single anti-malware program is perfect 100% of the time, herdProtect utilizes a 'herd' of multiple engines to guarantee the widest coverage and the earliest possible detection. As a second line of defense anti-malware solution, herdProtect is designed to run with any existing anti-virus program already installed on a user's PC. herdProtect is a free service to help user's find and remove malicious software.
   * [https://www.herdprotect.com/knowledgebase.aspx](https://www.herdprotect.com/knowledgebase.aspx)
@@ -108,14 +110,29 @@
 CrowdResponse -v -i config.txt -o out.xml
 ```
 
-* [Binalyze IREC Tactical ](https://www.binalyze.com/tactical)- Standalone evidence collector for traditional DFIR situations. Can scan target with set YARA rules
 
-```
-IREC.exe --triage-memory
-IREC.exe -ad "\\MACHINE\IREC-DIR" --triage-ruleset MyYaraRules --triage-memory 
-```
+{% endtab %}
 
-* [Yara](https://github.com/virustotal/yara/releases/latest)
+{% tab title="Memory Scanners" %}
+* [CobaltStrikeScan](https://github.com/Apr4h/CobaltStrikeScan) - Scan files or process memory for CobaltStrike beacons and parse their configuration.
+* [pe-sieve](https://github.com/hasherezade/pe-sieve) - Scans a given process. Recognizes and dumps a variety of potentially malicious implants (replaced/injected PEs, shellcodes, hooks, in-memory patches).
+  * [https://hshrzd.wordpress.com/pe-sieve/](https://hshrzd.wordpress.com/pe-sieve/)
+{% endtab %}
+
+{% tab title="Misc Scanners" %}
+* [gmer Rootkit scanner](https://www.gmer.net/) - An application that detects and removes [rootkits](http://en.wikipedia.org/wiki/Rootkit)
+* [chkrootkit](http://www.chkrootkit.org/) - A tool to locally check for signs of a [rootkit](http://www.chkrootkit.org/links/).&#x20;
+  * [https://www.kali.org/tools/chkrootkit/](https://www.kali.org/tools/chkrootkit/)
+* [RKHunter](https://github.com/installation/rkhunter) - scans systems for known and unknown rootkits, backdoors, sniffers and exploits.
+  * [https://www.kali.org/tools/rkhunter/](https://www.kali.org/tools/rkhunter/)
+{% endtab %}
+{% endtabs %}
+
+
+
+
+
+*
 
 ```
 yara32.exe -d filename=[file defined in ruleset.yar] [ruleset.yar] [file to scan]
