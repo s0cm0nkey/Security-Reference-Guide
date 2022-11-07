@@ -1,6 +1,6 @@
 # Blue - DFIR: Digital Forensics and Incident Response
 
-&#x20;DFIR: Digital Forensics and Incident Response is a hugely important important sector of cyber security, where your everyday security analysis is take to the next level. While most security analysts will work out of a SIEM or SOAR platform, Incident Responders and Forensic analysts typically work directly with a potentially compromised device. With this, they are required to not only be familiar with a larger array of tools for analysis, but also a much stricter set of process and procedures as their actions are often subject to legal requirements.
+DFIR: Digital Forensics and Incident Response is a hugely important important sector of cyber security, where your everyday security analysis is take to the next level. While most security analysts will work out of a SIEM or SOAR platform, Incident Responders and Forensic analysts typically work directly with a potentially compromised device. With this, they are required to not only be familiar with a larger array of tools for analysis, but also a much stricter set of process and procedures as their actions are often subject to legal requirements.
 
 ## **DFIR Resource Collections**
 
@@ -264,25 +264,36 @@ IREC.exe -ad "\\MACHINE\IREC-DIR" --triage-ruleset MyYaraRules --triage-memory
 {% endtab %}
 {% endtabs %}
 
+{% tabs %}
+{% tab title="Extraction Tools" %}
+* [bulk-extractor](https://www.kali.org/tools/bulk-extractor/) - bulk\_extractor is a C++ program that scans a disk image, a file, or a directory of files and extracts useful information without parsing the file system or file system structures.
+* [dumpzilla](https://www.kali.org/tools/dumpzilla/) - Dumpzilla application is developed in Python 3.x and has as purpose extract all forensic interesting information of Firefox, Iceweasel and Seamonkey browsers to be analyzed.
+* [regripper](https://www.kali.org/tools/regripper/) - RegRipper is an open source tool, written in Perl, for extracting/parsing information (keys, values, data) from the Registry and presenting it for analysis.
+* [safecopy](https://www.kali.org/tools/safecopy/) - safecopy tries to get as much data from SOURCE as possible, even resorting to device specific low level operations if applicable.
 
 
-* Extraction Tools
-  * [bulk-extractor](https://www.kali.org/tools/bulk-extractor/) - bulk\_extractor is a C++ program that scans a disk image, a file, or a directory of files and extracts useful information without parsing the file system or file system structures.
-  * [dumpzilla](https://www.kali.org/tools/dumpzilla/) - Dumpzilla application is developed in Python 3.x and has as purpose extract all forensic interesting information of Firefox, Iceweasel and Seamonkey browsers to be analyzed.
-  * [regripper](https://www.kali.org/tools/regripper/) - RegRipper is an open source tool, written in Perl, for extracting/parsing information (keys, values, data) from the Registry and presenting it for analysis.
-  * [safecopy](https://www.kali.org/tools/safecopy/) - safecopy tries to get as much data from SOURCE as possible, even resorting to device specific low level operations if applicable.
-* Browser Tools
-  * [galleta](https://www.kali.org/tools/galleta/) - Galleta is a forensics tool that examines the content of cookie files produced by Microsoft Internet Explorer (MSIE). It parses the file and outputs a field separated that can be loaded in a spreadsheet.
-  * [pasco](https://www.kali.org/tools/pasco/) - Pasco is a forensic tool that examines the content of cache files (index.dat) produced by Microsoft Internet Explorer.
-* Misc Utility
-  * [XOR Tool](https://github.com/hellman/xortool) - A tool to do some xor analysis: Guess the key length (based on count of equal chars) and Guess the key (base on knowledge of most frequent char)
-  * [forensics-colorize](https://www.kali.org/tools/forensics-colorize/) - forensics-colorize is a set of tools to visually compare large files, as filesystem images, creating graphics of them. It is intuitive because the produced graphics provide a quick and perfect sense about the percentage of changes between two files.
-  * [dislocker](https://www.kali.org/tools/dislocker/) - Dislocker has been designed to read BitLocker encrypted partitions under a Linux system
-  * [mac-robber](https://www.kali.org/tools/mac-robber/) - mac-robber is a digital investigation tool (digital forensics) that collects metadata from allocated files in a mounted filesystem. This is useful during incident response when analyzing a live system or when analyzing a dead system in a lab.
-  * [testdisk](https://www.kali.org/tools/testdisk/) - TestDisk checks the partition and boot sectors of your disks. It is very useful in forensics, recovering lost partitions.
-  * [unhide](https://www.kali.org/tools/unhide/) - Unhide is a forensic tool to find processes and TCP/UDP ports hidden by rootkits, Linux kernel modules or by other techniques. It includes two utilities: unhide and unhide-tcp.
+{% endtab %}
 
-### **File Carving/Recovery**
+{% tab title="Browser Tools" %}
+* [galleta](https://www.kali.org/tools/galleta/) - Galleta is a forensics tool that examines the content of cookie files produced by Microsoft Internet Explorer (MSIE). It parses the file and outputs a field separated that can be loaded in a spreadsheet.
+* [pasco](https://www.kali.org/tools/pasco/) - Pasco is a forensic tool that examines the content of cache files (index.dat) produced by Microsoft Internet Explorer.
+
+
+{% endtab %}
+
+{% tab title="Misc Utility" %}
+* [XOR Tool](https://github.com/hellman/xortool) - A tool to do some xor analysis: Guess the key length (based on count of equal chars) and Guess the key (base on knowledge of most frequent char)
+* [forensics-colorize](https://www.kali.org/tools/forensics-colorize/) - forensics-colorize is a set of tools to visually compare large files, as filesystem images, creating graphics of them. It is intuitive because the produced graphics provide a quick and perfect sense about the percentage of changes between two files.
+* [dislocker](https://www.kali.org/tools/dislocker/) - Dislocker has been designed to read BitLocker encrypted partitions under a Linux system
+* [mac-robber](https://www.kali.org/tools/mac-robber/) - mac-robber is a digital investigation tool (digital forensics) that collects metadata from allocated files in a mounted filesystem. This is useful during incident response when analyzing a live system or when analyzing a dead system in a lab.
+* [testdisk](https://www.kali.org/tools/testdisk/) - TestDisk checks the partition and boot sectors of your disks. It is very useful in forensics, recovering lost partitions.
+* [unhide](https://www.kali.org/tools/unhide/) - Unhide is a forensic tool to find processes and TCP/UDP ports hidden by rootkits, Linux kernel modules or by other techniques. It includes two utilities: unhide and unhide-tcp.
+{% endtab %}
+{% endtabs %}
+
+<details>
+
+<summary>File Carving/Recovery</summary>
 
 * [Foremost](https://github.com/korczis/foremost): Foremost is a console program to recover files based on their headers, footers, and internal data structures.
 * [ext4magic](https://www.kali.org/tools/ext4magic/) - ext4magic can extract the information from the journal and restore files in an entire directory tree, if the information in the journal are sufficient.
@@ -300,7 +311,11 @@ IREC.exe -ad "\\MACHINE\IREC-DIR" --triage-ruleset MyYaraRules --triage-memory
   * [https://github.com/BSI-Bund/RdpCacheStitcher/](https://github.com/BSI-Bund/RdpCacheStitcher/) -A tool that supports forensic analysts in reconstructing useful images out of RDP cache bitmaps
   * [https://github.com/ANSSI-FR/bmc-tools/](https://github.com/ANSSI-FR/bmc-tools/) - RDP Bitmap Cache parser
 
-### Forensic Imaging
+</details>
+
+<details>
+
+<summary>Forensic Imaging</summary>
 
 * [FTK Imager by AccessData](https://www.exterro.com/ftk-imager) - Create forensic images of local hard drives, CDs and DVDs, thumb drives or other USB devices, entire folders, or individual files from various places within the media.
 
@@ -326,20 +341,26 @@ dd.exe if=\\.\<OSDrive>: of=<drive>:\<name>.img bs=1M --size --progress
 * [X-ways Imager](https://www.x-ways.net/imager/index-m.html) - Forensic disk imaging tool. Stripped down version of the [X-Ways Forensics](https://www.x-ways.net/forensics/index-m.html) computer forensics software with just the disk imaging functionality and little more
 * [guymager](https://www.kali.org/tools/guymager/) - The forensic imager contained in this package, guymager, was designed to support different image file formats, to be most user-friendly and to run really fast.
 
-### Memory Forensics
+</details>
 
 {% content-ref url="memory-forensics/" %}
 [memory-forensics](memory-forensics/)
 {% endcontent-ref %}
 
-### **USB Analysis**
+<details>
+
+<summary>USB Analysis</summary>
 
 * [https://gbhackers.com/usb-forensics/](https://gbhackers.com/usb-forensics/)
 * [USB Descriptors](https://www.beyondlogic.org/usbnutshell/usb5.shtml)
 * [USB Data Transfer Types](https://www.jungo.com/st/support/documentation/windriver/10.2.1/wdusb\_manual.mhtml/USB\_data\_transfer\_types.html)
 * [USB WIreshark Filters](https://www.wireshark.org/docs/dfref/u/usb.html)
 
-### MacOS&#x20;
+</details>
+
+<details>
+
+<summary>MacOS</summary>
 
 * [Mac OS X 10.9 Forensics Wiki](https://forensicswiki.org/wiki/Mac\_OS\_X\_10.9\_-\_Artifacts\_Location)
 * [Mac OS X 10.11 Forensics Wiki](https://forensicswiki.org/wiki/Mac\_OS\_X\_10.11\_\(ElCapitan\)\_-\_Artifacts\_Location)
@@ -353,11 +374,17 @@ dd.exe if=\\.\<OSDrive>: of=<drive>:\<name>.img bs=1M --size --progress
   * [https://themittenmac.com/monitorui-tool-release/](https://themittenmac.com/monitorui-tool-release/)
   * [https://themittenmac.com/the-esf-playground/](https://themittenmac.com/the-esf-playground/)
 
+</details>
+
+*
+
 ## **Malware Analysis**
 
 In incident response, phishing, or security monitoring scenarios, you will encounter potentially malicious files that will require in depth analysis to certify the nature of the file. These files can be as overt as an executable labeled "virus.exe" or as covert as "resume.doc". There will be instances where even after all of your analysis, you still cannot verify the nature of the document, and therefore should be considered malicious until proven otherwise.
 
-### Malware Analysis Toolsets and multi-engine scanners
+<details>
+
+<summary>Malware Analysis Toolsets and multi-engine scanners</summary>
 
 * [https://remnux.org/](https://remnux.org/) - REMnux® is a Linux toolkit for reverse-engineering and analyzing malicious software. REMnux provides a curated collection of free tools created by the community. Analysts can use it to investigate malware without having to find, install, and configure the tools.
   * [https://zeltser.com/remnux-malware-analysis-tips/](https://zeltser.com/remnux-malware-analysis-tips/)
@@ -369,25 +396,11 @@ In incident response, phishing, or security monitoring scenarios, you will encou
   * [https://www.youtube.com/watch?v=8LZ6ksoytpU](https://www.youtube.com/watch?v=8LZ6ksoytpU)
 * [CobaltStrikeParser](https://github.com/Sentinel-One/CobaltStrikeParser) - Python parser for CobaltStrike Beacon's configuration
 
-### **Sandboxing**
+</details>
 
-{% content-ref url="sandboxing.md" %}
-[sandboxing.md](sandboxing.md)
-{% endcontent-ref %}
+<details>
 
-Outside of sandboxing, there are a host of other tools available that can perform different types of analysis on malware. There are even a few virtual machine distributions that are dedicated to malware analysis. The foremost of them are Flare-VM and Remnux. These will usually include sandboxing tools like cuckoo, code analysis tools like Snyk and Ghidra, and a host of other handy options.&#x20;
-
-{% hint style="info" %}
-Remember: it is always advised to perform your malware analysis on a virtual machine, in order to prevent unwanted accidents.
-{% endhint %}
-
-### **File Analysis**
-
-{% content-ref url="file-analysis.md" %}
-[file-analysis.md](file-analysis.md)
-{% endcontent-ref %}
-
-### **Resources**
+<summary>Resources</summary>
 
 * [https://nostarch.com/malware](https://nostarch.com/malware)
   * [https://www.jaiminton.com/Tutorials/PracticalMalwareAnalysis/](https://www.jaiminton.com/Tutorials/PracticalMalwareAnalysis/)
@@ -404,6 +417,22 @@ Remember: it is always advised to perform your malware analysis on a virtual mac
 * _BTFM: Identifying Malware - pg. 80_
 * _PTFM: Malware Analysis - pg. 149_
 * _BTFM: Malware Attributes Checklist - pg.115_
+
+</details>
+
+{% content-ref url="sandboxing.md" %}
+[sandboxing.md](sandboxing.md)
+{% endcontent-ref %}
+
+Outside of sandboxing, there are a host of other tools available that can perform different types of analysis on malware. There are even a few virtual machine distributions that are dedicated to malware analysis. The foremost of them are Flare-VM and Remnux. These will usually include sandboxing tools like cuckoo, code analysis tools like Snyk and Ghidra, and a host of other handy options.&#x20;
+
+{% hint style="info" %}
+Remember: it is always advised to perform your malware analysis on a virtual machine, in order to prevent unwanted accidents.
+{% endhint %}
+
+{% content-ref url="file-analysis.md" %}
+[file-analysis.md](file-analysis.md)
+{% endcontent-ref %}
 
 ## Reverse Engineering
 
