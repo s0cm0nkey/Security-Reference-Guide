@@ -117,9 +117,9 @@
 
 </details>
 
+<details>
 
-
-### **Accessing Internal Websites via Host Brute-Forcing**
+<summary>Accessing Internal Websites via Host Brute-Forcing</summary>
 
 *   &#x20;Companies sometimes make the mistake of hosting publicly accessible websites and private, internal sites on the same server. Servers typically have both a public and a private IP address. As the internal hostname may resolve to the private IP address, this scenario can't always be detected simply by looking at DNS records:
 
@@ -127,7 +127,11 @@
     &#x20;`intranet.example.com: 10.0.0.132`
 * In some cases, the internal site might not even have a public DNS record associated with it. Nonetheless, an attacker can typically access any virtual host on any server that they have access to, provided they can guess the hostnames.
 
-### **Routing Based SSRF**
+</details>
+
+<details>
+
+<summary>Routing Based SSRF</summary>
 
 * It is possible to use the Host header to launch high-impact, routing-based SSRF attacks. These are sometimes known as "Host header SSRF attacks".
 * &#x20;You can use Burp Collaborator to help identify these vulnerabilities. If you supply the domain of your Collaborator server in the Host header, and subsequently receive a DNS lookup from the target server or another in-path system, this indicates that you may be able to route requests to arbitrary domains.
@@ -135,13 +139,19 @@
 * [https://portswigger.net/web-security/host-header/exploiting/lab-host-header-routing-based-ssrf](https://portswigger.net/web-security/host-header/exploiting/lab-host-header-routing-based-ssrf)
 * [https://portswigger.net/web-security/host-header/exploiting/lab-host-header-ssrf-via-flawed-request-parsing](https://portswigger.net/web-security/host-header/exploiting/lab-host-header-ssrf-via-flawed-request-parsing)
 
-### **SSRF via Malformed Request Line**
+</details>
 
-* &#x20;Custom proxies sometimes fail to validate the request line properly, which can allow you to supply unusual, malformed input with unfortunate results.
+<details>
+
+<summary>SSRF via Malformed Request Line</summary>
+
+* Custom proxies sometimes fail to validate the request line properly, which can allow you to supply unusual, malformed input with unfortunate results.
 *   &#x20;For example, a reverse proxy might take the path from the request line, prefix it with `http://backend-server`, and route the request to that upstream URL. This works fine if the path starts with a `/` character, but what if starts with an `@` character instead?
 
     &#x20;`GET @private-intranet/example HTTP/1.1`
 * &#x20;The resulting upstream URL will be `http://backend-server@private-intranet/example`, which most HTTP libraries interpret as a request to access `private-intranet` with the username `backend-server`.
+
+</details>
 
 ## **HTTP Header Attack Protection**
 

@@ -2,6 +2,7 @@
 
 ## Guides and Resources
 
+*
 * [https://www.sqlinjection.net/](https://www.sqlinjection.net/)
 * [https://owasp.org/www-community/attacks/SQL\_Injection](https://owasp.org/www-community/attacks/SQL\_Injection)
 * [https://owasp.org/www-community/Injection\_Flaws](https://owasp.org/www-community/Injection\_Flaws)
