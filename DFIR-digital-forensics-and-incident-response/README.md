@@ -60,17 +60,13 @@
 ### IR/Malware Scanners
 
 {% tabs %}
-{% tab title="Yara Scanners" %}
-* [Yara](https://github.com/virustotal/yara/releases/latest)
-* [https://www.nextron-systems.com/thor/](https://www.nextron-systems.com/thor/) - IR scanner with more than 12,000 handcrafted YARA signatures, 400 Sigma rules, numerous anomaly detection rules and thousands of IOCs.
-  * [Loki Scanner](https://github.com/Neo23x0/Loki) - The free and open IOC scanner using YARA rules.
-  * [Fenrir](https://github.com/Neo23x0/Fenrir) - Fenrir is a simple IOC scanner bash script. It allows scanning Linux/Unix/OSX systems for Indicators of Compromise (IOCs).
-* [Binalyze IREC Tactical ](https://www.binalyze.com/tactical)- Standalone evidence collector for traditional DFIR situations. Can scan target with set YARA rules
-
-```
-IREC.exe --triage-memory
-IREC.exe -ad "\\MACHINE\IREC-DIR" --triage-ruleset MyYaraRules --triage-memory 
-```
+{% tab title="Frameworks/Collections" %}
+* [Kansa (Powershell)](https://github.com/davehull/kansa) - A modular incident response framework in Powershell. It uses Powershell Remoting to run user contributed, ahem, user contri- buted modules across hosts in an enterprise to collect data for use during incident response, breach hunts, or for building an environmental baseline.
+* [Windows Forensic Toolchest](https://www.foolmoon.net/security/wft/) - The Windows Forensic Toolchest™ (WFT) is designed to provide a structured and repeatable automated Live Forensic Response, Incident Response, or Audit on a Windows system while collecting security-relevant information from the system.
+* [Veliciraptor](https://github.com/Velocidex/velociraptor) - A tool for collecting host based state information.
+  * [Velociraptor Deep Dive Video training](https://www.youtube.com/watch?app=desktop\&v=PiYPLEjYXnw)
+* [Meerkat](https://github.com/TonyPhipps/Meerkat) - Meerkat is collection of PowerShell modules designed for artifact gathering and reconnaisreconnaissanceance of Windows-based endpoints without requiring a pre-deployed agent.
+* [https://www.cadosecurity.com/cado-community-edition/](https://www.cadosecurity.com/cado-community-edition/) - The Cado Community Edition leverages the scale and speed of the cloud to simplify deep-dive investigations. With the free community edition, data can be processed in minutes compared to days when using traditional methods. Stop wasting time, money, or effort. Achieve forensic-level detail without forensic-level effort. Only Cado empowers the security community to investigate and respond at cloud speed.
 {% endtab %}
 
 {% tab title="Malware/AV Scanners" %}
@@ -110,29 +106,18 @@ IREC.exe -ad "\\MACHINE\IREC-DIR" --triage-ruleset MyYaraRules --triage-memory
 CrowdResponse -v -i config.txt -o out.xml
 ```
 
-
-{% endtab %}
-
-{% tab title="Memory Scanners" %}
 * [CobaltStrikeScan](https://github.com/Apr4h/CobaltStrikeScan) - Scan files or process memory for CobaltStrike beacons and parse their configuration.
 * [pe-sieve](https://github.com/hasherezade/pe-sieve) - Scans a given process. Recognizes and dumps a variety of potentially malicious implants (replaced/injected PEs, shellcodes, hooks, in-memory patches).
   * [https://hshrzd.wordpress.com/pe-sieve/](https://hshrzd.wordpress.com/pe-sieve/)
-{% endtab %}
-
-{% tab title="Misc Scanners" %}
 * [gmer Rootkit scanner](https://www.gmer.net/) - An application that detects and removes [rootkits](http://en.wikipedia.org/wiki/Rootkit)
 * [chkrootkit](http://www.chkrootkit.org/) - A tool to locally check for signs of a [rootkit](http://www.chkrootkit.org/links/).&#x20;
   * [https://www.kali.org/tools/chkrootkit/](https://www.kali.org/tools/chkrootkit/)
 * [RKHunter](https://github.com/installation/rkhunter) - scans systems for known and unknown rootkits, backdoors, sniffers and exploits.
   * [https://www.kali.org/tools/rkhunter/](https://www.kali.org/tools/rkhunter/)
 {% endtab %}
-{% endtabs %}
 
-
-
-
-
-*
+{% tab title="Yara Scanners" %}
+* [Yara](https://github.com/virustotal/yara/releases/latest)
 
 ```
 yara32.exe -d filename=[file defined in ruleset.yar] [ruleset.yar] [file to scan]
@@ -142,33 +127,38 @@ yara64.exe yararule.yar -r C: -f 2> $null
 ```
 
 * Yara Linux
-
-Note: -s shows matching yara strings.
+  * Note: -s shows matching yara strings.
 
 ```
 yara rule.yara malware.exe -s
 yara rule.yara [Directory] -s
 ```
 
+* [https://www.nextron-systems.com/thor/](https://www.nextron-systems.com/thor/) - IR scanner with more than 12,000 handcrafted YARA signatures, 400 Sigma rules, numerous anomaly detection rules and thousands of IOCs.
+  * [Loki Scanner](https://github.com/Neo23x0/Loki) - The free and open IOC scanner using YARA rules.
+  * [Fenrir](https://github.com/Neo23x0/Fenrir) - Fenrir is a simple IOC scanner bash script. It allows scanning Linux/Unix/OSX systems for Indicators of Compromise (IOCs).
+* [Binalyze IREC Tactical ](https://www.binalyze.com/tactical)- Standalone evidence collector for traditional DFIR situations. Can scan target with set YARA rules
+
+```
+IREC.exe --triage-memory
+IREC.exe -ad "\\MACHINE\IREC-DIR" --triage-ruleset MyYaraRules --triage-memory 
+```
+{% endtab %}
+
+{% tab title="Scanning Utilities" %}
+* [AWS\_IR](https://github.com/ThreatResponse/aws\_ir) - Python installable command line utility for mitigation of instance and key compromises.
+* [https://processhacker.sourceforge.io/](https://processhacker.sourceforge.io/) - A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware.
+* [ADTimeline](https://github.com/ANSSI-FR/ADTimeline) - The ADTimeline script generates a timeline based on Active Directory replication metadata for objects considered of interest.
+* [Azure-AD-Incident-Response-PowerShell-Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module) - The Azure Active Directory Incident Response PowerShell module provides a number of tools, developed by the Azure Active Directory Product Group in conjunction with the Microsoft Detection and Response Team (DART), to assist in compromise response.
+  * [https://www.powershellgallery.com/packages/AzureADIncidentResponse/](https://www.powershellgallery.com/packages/AzureADIncidentResponse/)
+
+
+{% endtab %}
+{% endtabs %}
+
 {% content-ref url="yara.md" %}
 [yara.md](yara.md)
 {% endcontent-ref %}
-
-### Other Tools
-
-* Frameworks and Collections
-  * [Kansa (Powershell)](https://github.com/davehull/kansa) - A modular incident response framework in Powershell. It uses Powershell Remoting to run user contributed, ahem, user contri- buted modules across hosts in an enterprise to collect data for use during incident response, breach hunts, or for building an environmental baseline.
-  * [Windows Forensic Toolchest](https://www.foolmoon.net/security/wft/) - The Windows Forensic Toolchest™ (WFT) is designed to provide a structured and repeatable automated Live Forensic Response, Incident Response, or Audit on a Windows system while collecting security-relevant information from the system.
-  * [Veliciraptor](https://github.com/Velocidex/velociraptor) - A tool for collecting host based state information.
-    * [Velociraptor Deep Dive Video training](https://www.youtube.com/watch?app=desktop\&v=PiYPLEjYXnw)
-  * [Meerkat](https://github.com/TonyPhipps/Meerkat) - Meerkat is collection of PowerShell modules designed for artifact gathering and reconnaisreconnaissanceance of Windows-based endpoints without requiring a pre-deployed agent.
-  * [https://www.cadosecurity.com/cado-community-edition/](https://www.cadosecurity.com/cado-community-edition/) - The Cado Community Edition leverages the scale and speed of the cloud to simplify deep-dive investigations. With the free community edition, data can be processed in minutes compared to days when using traditional methods. Stop wasting time, money, or effort. Achieve forensic-level detail without forensic-level effort. Only Cado empowers the security community to investigate and respond at cloud speed.
-* Utility
-  * [AWS\_IR](https://github.com/ThreatResponse/aws\_ir) - Python installable command line utility for mitigation of instance and key compromises.
-  * [https://processhacker.sourceforge.io/](https://processhacker.sourceforge.io/) - A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware.
-  * [ADTimeline](https://github.com/ANSSI-FR/ADTimeline) - The ADTimeline script generates a timeline based on Active Directory replication metadata for objects considered of interest.
-  * [Azure-AD-Incident-Response-PowerShell-Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module) - The Azure Active Directory Incident Response PowerShell module provides a number of tools, developed by the Azure Active Directory Product Group in conjunction with the Microsoft Detection and Response Team (DART), to assist in compromise response.
-    * [https://www.powershellgallery.com/packages/AzureADIncidentResponse/](https://www.powershellgallery.com/packages/AzureADIncidentResponse/)
 
 ## DFIR Commands
 
@@ -214,8 +204,8 @@ yara rule.yara [Directory] -s
 
 ## **Forensics**
 
-### **Guides and Resources**
-
+{% tabs %}
+{% tab title="Guides and Resources" %}
 * [Awesome Lists Collection: Forensics](https://github.com/Cugu/awesome-forensics)
 * [DFIR artifact repository](https://github.com/ForensicArtifacts/artifacts)
 * [https://tryhackme.com/room/windowsforensics1](https://tryhackme.com/room/windowsforensics1)
@@ -226,48 +216,55 @@ yara rule.yara [Directory] -s
   * [RFC - 3227: Order of Volatility](https://datatracker.ietf.org/doc/html/rfc3227)
   * _(BTHb: INRE): Order of Volatility - pg. 29_
   * _BTFM: Live Triage - pg. 60_
+{% endtab %}
 
-### Tools&#x20;
+{% tab title="Forensic OS/VM" %}
+* [https://www.sans.org/tools/sift-workstation](https://www.sans.org/tools/sift-workstation) - The SIFT Workstation is a collection of free and open-source incident response and forensic tools designed to perform detailed digital forensic examinations in a variety of settings. It can match any current incident response and forensic tool suite.
+  * [SANS DFIR Posters and Cheat Sheets](https://www.sans.org/security-resources/posters/dfir/?msc=tool-sift)
+  * [How To Mount a Disk Image In Read-Only Mode](https://www.sans.org/blog/digital-forensic-sifting-how-to-perform-a-read-only-mount-of-filesystem-evidence/?msc=tool-sift)
+  * [How To Create a Filesystem and Registry Timeline](https://www.sans.org/blog/digital-forensic-sifting-registry-and-filesystem-timeline-creation/?msc=tool-sift)
+  * [How To Create a Super Timeline](https://www.sans.org/blog/digital-forensic-sifting-super-timeline-creation-using-log2timeline/?msc=tool-sift)
+  * [SIFT Workstation YouTube Series](https://www.youtube.com/playlist?list=PL60DFAE759FCDF36A)
+  * [FOR508 - Advanced Incident Response](https://www.sans.org/cyber-security-courses/advanced-incident-response-threat-hunting-training/?msc=tool-sift)
+* [https://tsurugi-linux.org/](https://tsurugi-linux.org/) - 64 bit Linux version to perform digital forensics analysis and OSINT research.
+  * [tsurugi\_acquire](https://tsurugi-linux.org/tsurugi\_acquire.php) - a lightweight and streamlined version of Tsurugi Linux \[LAB], aimed at providing the basic tools needed to boot a PC and acquire mass storage devices.
+  * [bento](https://tsurugi-linux.org/bento.php) - a portable toolkit designed for live forensics and incident response activities.
+  * [https://tsurugi-linux.org/documentation\_tsurugi\_linux\_tools\_listing\_2021.php](https://tsurugi-linux.org/documentation\_tsurugi\_linux\_tools\_listing\_2021.php)
 
-* Forensic OS/VM
-  * [https://www.sans.org/tools/sift-workstation](https://www.sans.org/tools/sift-workstation) - The SIFT Workstation is a collection of free and open-source incident response and forensic tools designed to perform detailed digital forensic examinations in a variety of settings. It can match any current incident response and forensic tool suite.
-    * [SANS DFIR Posters and Cheat Sheets](https://www.sans.org/security-resources/posters/dfir/?msc=tool-sift)
-    * [How To Mount a Disk Image In Read-Only Mode](https://www.sans.org/blog/digital-forensic-sifting-how-to-perform-a-read-only-mount-of-filesystem-evidence/?msc=tool-sift)
-    * [How To Create a Filesystem and Registry Timeline](https://www.sans.org/blog/digital-forensic-sifting-registry-and-filesystem-timeline-creation/?msc=tool-sift)
-    * [How To Create a Super Timeline](https://www.sans.org/blog/digital-forensic-sifting-super-timeline-creation-using-log2timeline/?msc=tool-sift)
-    * [SIFT Workstation YouTube Series](https://www.youtube.com/playlist?list=PL60DFAE759FCDF36A)
-    * [FOR508 - Advanced Incident Response](https://www.sans.org/cyber-security-courses/advanced-incident-response-threat-hunting-training/?msc=tool-sift)
-  * [https://tsurugi-linux.org/](https://tsurugi-linux.org/) - 64 bit Linux version to perform digital forensics analysis and OSINT research.
-    * [tsurugi\_acquire](https://tsurugi-linux.org/tsurugi\_acquire.php) - a lightweight and streamlined version of Tsurugi Linux \[LAB], aimed at providing the basic tools needed to boot a PC and acquire mass storage devices.
-    * [bento](https://tsurugi-linux.org/bento.php) - a portable toolkit designed for live forensics and incident response activities.
-    * [https://tsurugi-linux.org/documentation\_tsurugi\_linux\_tools\_listing\_2021.php](https://tsurugi-linux.org/documentation\_tsurugi\_linux\_tools\_listing\_2021.php)
-* Forensic Frameworks
-  * [Autopsy forensic framework](https://www.autopsy.com/community/) - Autopsy is the premier open source forensics platform which is fast, easy-to-use, and capable of analyzing all types of mobile devices and digital media
-    * [https://dfir-training.basistech.com/](https://dfir-training.basistech.com/)
-    * [https://www.aldeid.com/wiki/Autopsy](https://www.aldeid.com/wiki/Autopsy)
-    * [https://tryhackme.com/room/autopsy2ze0](https://tryhackme.com/room/autopsy2ze0)
-  * [X-Ways Forensic Toolkit](https://www.x-ways.net/forensics/) - X-Ways Forensics is an advanced work environment for computer forensic examiners
-    * [https://www.x-ways.net/forensics/x-tensions/](https://www.x-ways.net/forensics/x-tensions/) - X-Ways plugin tools
-    * [https://github.com/CrowdStrike/xwf-yara-scanner](https://github.com/CrowdStrike/xwf-yara-scanner) - YARA Scanner Plugin
-    * [X-ways Imager](https://www.x-ways.net/imager/index-m.html) - Forensic disk imaging tool. Stripped down version of the [X-Ways Forensics](https://www.x-ways.net/forensics/index-m.html) computer forensics software with just the disk imaging functionality and little more
-  * [Forensic Tool Kit (FTK)](https://www.exterro.com/forensic-toolkit) - Premium forensics suite that can perform imaging, file decryption, registry parsing, and much more.
-    * [FTK Imager by AccessData](https://www.exterro.com/ftk-imager) - Create forensic images of local hard drives, CDs and DVDs, thumb drives or other USB devices, entire folders, or individual files from various places within the media.
-  * [sleuthkit](https://www.kali.org/tools/sleuthkit/) - The Sleuth Kit, also known as TSK, is a collection of UNIX-based command line file and volume system forensic analysis tools. The filesystem tools allow you to examine filesystems of a suspect computer in a non-intrusive fashion. Because the tools do not rely on the operating system to process the filesystems, deleted and hidden content is shown.
-    * [http://www.sleuthkit.org/sleuthkit/](http://www.sleuthkit.org/sleuthkit/)
-  * [NTDSxtract](https://github.com/csababarta/ntdsxtract) - Active Directory forensic framework
-  * [linux-explorer](https://github.com/intezer/linux-explorer) - Easy-to-use live forensics toolbox for Linux endpoints
-    * [Installation and Configuration Video](https://youtu.be/NAOtGYBG-QY)
-  * [GRR](https://github.com/google/grr) - GRR Rapid Response is an incident response framework focused on remote live forensics.
-  * [PowerForensics](https://github.com/Invoke-IR/PowerForensics) - An all inclusive framework for hard drive forensic analysis. PowerForensics currently supports NTFS and FAT file systems, and work has begun on Extended File System and HFS+ support.
-    * [https://powerforensics.readthedocs.io/en/latest/](https://powerforensics.readthedocs.io/en/latest/)&#x20;
-    * [https://devblogs.microsoft.com/powershell/powershell-the-blue-team/](https://devblogs.microsoft.com/powershell/powershell-the-blue-team/)
-  * [Eric Zimmerman's toolset](https://ericzimmerman.github.io/#!index.md) - SANS instructor and former FBI Forensics expert Eric Zimmerman has created a list of his favorite tools for public use and reference.
-    * [https://cyberforensicator.com/2017/04/04/a-guide-to-eric-zimmermans-command-line-tools/](https://cyberforensicator.com/2017/04/04/a-guide-to-eric-zimmermans-command-line-tools/)
-    * [KAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) - lets forensic teams collect and process forensically useful artifacts within minutes.
-      * [https://github.com/AndrewRathbun/Awesome-KAPE](https://github.com/AndrewRathbun/Awesome-KAPE)
-      * [https://ericzimmerman.github.io/KapeDocs/#!index.md](https://ericzimmerman.github.io/KapeDocs/#!index.md)
+
+{% endtab %}
+
+{% tab title="Forensic Frameworks" %}
+* [Autopsy forensic framework](https://www.autopsy.com/community/) - Autopsy is the premier open source forensics platform which is fast, easy-to-use, and capable of analyzing all types of mobile devices and digital media
+  * [https://dfir-training.basistech.com/](https://dfir-training.basistech.com/)
+  * [https://www.aldeid.com/wiki/Autopsy](https://www.aldeid.com/wiki/Autopsy)
+  * [https://tryhackme.com/room/autopsy2ze0](https://tryhackme.com/room/autopsy2ze0)
+* [X-Ways Forensic Toolkit](https://www.x-ways.net/forensics/) - X-Ways Forensics is an advanced work environment for computer forensic examiners
+  * [https://www.x-ways.net/forensics/x-tensions/](https://www.x-ways.net/forensics/x-tensions/) - X-Ways plugin tools
+  * [https://github.com/CrowdStrike/xwf-yara-scanner](https://github.com/CrowdStrike/xwf-yara-scanner) - YARA Scanner Plugin
+  * [X-ways Imager](https://www.x-ways.net/imager/index-m.html) - Forensic disk imaging tool. Stripped down version of the [X-Ways Forensics](https://www.x-ways.net/forensics/index-m.html) computer forensics software with just the disk imaging functionality and little more
+* [Forensic Tool Kit (FTK)](https://www.exterro.com/forensic-toolkit) - Premium forensics suite that can perform imaging, file decryption, registry parsing, and much more.
+  * [FTK Imager by AccessData](https://www.exterro.com/ftk-imager) - Create forensic images of local hard drives, CDs and DVDs, thumb drives or other USB devices, entire folders, or individual files from various places within the media.
+* [sleuthkit](https://www.kali.org/tools/sleuthkit/) - The Sleuth Kit, also known as TSK, is a collection of UNIX-based command line file and volume system forensic analysis tools. The filesystem tools allow you to examine filesystems of a suspect computer in a non-intrusive fashion. Because the tools do not rely on the operating system to process the filesystems, deleted and hidden content is shown.
+  * [http://www.sleuthkit.org/sleuthkit/](http://www.sleuthkit.org/sleuthkit/)
+* [NTDSxtract](https://github.com/csababarta/ntdsxtract) - Active Directory forensic framework
+* [linux-explorer](https://github.com/intezer/linux-explorer) - Easy-to-use live forensics toolbox for Linux endpoints
+  * [Installation and Configuration Video](https://youtu.be/NAOtGYBG-QY)
+* [GRR](https://github.com/google/grr) - GRR Rapid Response is an incident response framework focused on remote live forensics.
+* [PowerForensics](https://github.com/Invoke-IR/PowerForensics) - An all inclusive framework for hard drive forensic analysis. PowerForensics currently supports NTFS and FAT file systems, and work has begun on Extended File System and HFS+ support.
+  * [https://powerforensics.readthedocs.io/en/latest/](https://powerforensics.readthedocs.io/en/latest/)&#x20;
+  * [https://devblogs.microsoft.com/powershell/powershell-the-blue-team/](https://devblogs.microsoft.com/powershell/powershell-the-blue-team/)
+* [Eric Zimmerman's toolset](https://ericzimmerman.github.io/#!index.md) - SANS instructor and former FBI Forensics expert Eric Zimmerman has created a list of his favorite tools for public use and reference.
+  * [https://cyberforensicator.com/2017/04/04/a-guide-to-eric-zimmermans-command-line-tools/](https://cyberforensicator.com/2017/04/04/a-guide-to-eric-zimmermans-command-line-tools/)
+  * [KAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) - lets forensic teams collect and process forensically useful artifacts within minutes.
+    * [https://github.com/AndrewRathbun/Awesome-KAPE](https://github.com/AndrewRathbun/Awesome-KAPE)
+    * [https://ericzimmerman.github.io/KapeDocs/#!index.md](https://ericzimmerman.github.io/KapeDocs/#!index.md)
 
 {% file src="../.gitbook/assets/EricZimmermanCommandLineToolsCheatSheet-v1.0 (1) (1).pdf" %}
+{% endtab %}
+{% endtabs %}
+
+
 
 * Extraction Tools
   * [bulk-extractor](https://www.kali.org/tools/bulk-extractor/) - bulk\_extractor is a C++ program that scans a disk image, a file, or a directory of files and extracts useful information without parsing the file system or file system structures.
