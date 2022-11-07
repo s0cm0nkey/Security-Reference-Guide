@@ -2,7 +2,12 @@
 
 ## How it works
 
-### **Basics**
+* [https://portswigger.net/web-security/host-header](https://portswigger.net/web-security/host-header)
+* [https://www.intruder.io/research/practical-http-header-smuggling](https://www.intruder.io/research/practical-http-header-smuggling)
+
+<details>
+
+<summary>Basics</summary>
 
 * The HTTP Host header is a mandatory request header as of HTTP/1.1. It specifies the domain name that the client wants to access
 * The purpose of the HTTP Host header is to help identify which back-end component the client wants to communicate with. This can occur with a single server hosting multiple domains or when websites are hosted on distinct back-end servers, but all traffic between the client and servers is routed through an intermediary system. This could be a simple load balancer or a reverse proxy server of some kind.
@@ -14,14 +19,13 @@
   * &#x20;Routing-based SSRF
   * &#x20;Classic server-side vulnerabilities, such as SQL injection
 
-### **Reference**
-
-* [https://portswigger.net/web-security/host-header](https://portswigger.net/web-security/host-header)
-* [https://www.intruder.io/research/practical-http-header-smuggling](https://www.intruder.io/research/practical-http-header-smuggling)
+</details>
 
 ## Recon and Identification
 
-### Give an arbitrary Host header and Check for flawed validation
+<details>
+
+<summary>Give an arbitrary Host header and Check for flawed validation</summary>
 
 *   &#x20;You should try to understand how the website parses the Host header. This can sometimes reveal loopholes that can be used to bypass the validation. For example, some parsing algorithms will omit the port from the Host header, meaning that only the domain name is validated. If you are also able to supply a non-numeric port, you can leave the domain name untouched to ensure that you reach the target application, while potentially injecting a payload via the port.
 
@@ -36,7 +40,13 @@
     &#x20;`GET /example HTTP/1.1`\
     &#x20;`Host: hacked-subdomain.vulnerable-website.com`
 
-### Send ambiguous requests
+
+
+</details>
+
+<details>
+
+<summary>Send ambiguous requests</summary>
 
 * Inject duplicate headers
   * &#x20;`GET /example HTTP/1.1`\
@@ -48,7 +58,11 @@
 * Add line wrapping
 * Misc HTTP request smuggling techniques
 
-### Inject override headers
+</details>
+
+<details>
+
+<summary>Inject override headers</summary>
 
 * You can sometimes use `X-Forwarded-Host` to inject your malicious input while circumventing any validation on the Host header itself.
 * &#x20;`GET /example HTTP/1.1`\
@@ -60,32 +74,50 @@
   * &#x20;`X-HTTP-Host-Override`
   * &#x20;`Forwarded`
 
+</details>
+
 ## **HTTP Header Attacks**
 
 **\*\*\*** In Burp Suite, you can use the [Param Miner](https://portswigger.net/bappstore/17d2949a985c4b7ca092728dba871943) extension's "Guess headers" function to automatically probe for supported headers using its extensive built-in wordlist.\*\*\*
 
-### **Password Reset poisoning**
+<details>
 
+<summary>Password Reset poisoning</summary>
+
+* [https://portswigger.net/web-security/host-header/exploiting/password-reset-poisoning](https://portswigger.net/web-security/host-header/exploiting/password-reset-poisoning)
 * Attack Process
   1. &#x20;The attacker obtains the victim's email address or username, as required, and submits a password reset request on their behalf. When submitting the form, they intercept the resulting HTTP request and modify the Host header so that it points to a domain that they control. For this example, we'll use `evil-user.net`.
   2. &#x20;The victim receives a genuine password reset email directly from the website. This seems to contain an ordinary link to reset their password and, crucially, contains a valid password reset token that is associated with their account. However, the domain name in the URL points to the attacker's server:\
      &#x20;`https://evil-user.net/reset?token=0a1b2c3d4e5f6g7h8i9j`
   3. &#x20;If the victim clicks this link (or it is fetched in some other way, for example, by an antivirus scanner) the password reset token will be delivered to the attacker's server.
   4. &#x20;The attacker can now visit the real URL for the vulnerable website and supply the victim's stolen token via the corresponding parameter. They will then be able to reset the user's password to whatever they like and subsequently log in to their account.
-* [https://portswigger.net/web-security/host-header/exploiting/password-reset-poisoning](https://portswigger.net/web-security/host-header/exploiting/password-reset-poisoning)
 
-### **Web Cache Poisoning via Host Header**
 
-* &#x20;**** To construct a web cache poisoning attack, you need to elicit a response from the server that reflects an injected payload. The challenge is to do this while preserving a cache key that will still be mapped to other users' requests. If successful, the next step is to get this malicious response cached. It will then be served to any users who attempt to visit the affected page.
+
+</details>
+
+<details>
+
+<summary>Web Cache Poisoning via Host Header</summary>
+
+* To construct a web cache poisoning attack, you need to elicit a response from the server that reflects an injected payload. The challenge is to do this while preserving a cache key that will still be mapped to other users' requests. If successful, the next step is to get this malicious response cached. It will then be served to any users who attempt to visit the affected page.
 * [https://portswigger.net/web-security/web-cache-poisoning](https://portswigger.net/web-security/web-cache-poisoning)
 * [https://portswigger.net/web-security/host-header/exploiting/lab-host-header-web-cache-poisoning-via-ambiguous-requests](https://portswigger.net/web-security/host-header/exploiting/lab-host-header-web-cache-poisoning-via-ambiguous-requests)
 
-### **Classic Server-Side Vulnerabilities** - SQL Injection via the Host Header
+</details>
 
-### **Accessing Restricted Functionality**
+<details>
+
+<summary>Accessing Restricted Functionality</summary>
 
 * Some websites' access control features make flawed assumptions that allow you to bypass these restrictions by making simple modifications to the Host header.
 * [https://portswigger.net/web-security/host-header/exploiting/lab-host-header-authentication-bypass](https://portswigger.net/web-security/host-header/exploiting/lab-host-header-authentication-bypass)
+
+
+
+</details>
+
+
 
 ### **Accessing Internal Websites via Host Brute-Forcing**
 
