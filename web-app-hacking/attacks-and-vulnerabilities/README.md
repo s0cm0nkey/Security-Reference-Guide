@@ -8,6 +8,10 @@
 
 ## **Broken Links**
 
+<details>
+
+<summary>Broken Links</summary>
+
 * [broken-link-checker](https://github.com/stevenvachon/broken-link-checker) - Find broken links, missing images, etc within your HTML.
 * [https://ahrefs.com/broken-link-checker](https://ahrefs.com/broken-link-checker)
 * [https://brokenlinkcheck.com](https://brokenlinkcheck.com)
@@ -15,13 +19,26 @@
 * [https://medium.com/@bathinivijaysimhareddy/how-i-takeover-the-companys-linkedin-page-790c9ed2b04d](https://medium.com/@bathinivijaysimhareddy/how-i-takeover-the-companys-linkedin-page-790c9ed2b04d)
 * [https://kathan19.gitbook.io/howtohunt/broken-link-hijacking/brokenlinkhijacking](https://kathan19.gitbook.io/howtohunt/broken-link-hijacking/brokenlinkhijacking)
 
+</details>
+
 ## **Browser Attacks**
+
+<details>
+
+<summary>Browser Attacks</summary>
 
 * [Beef](https://github.com/beefproject/beef) - BeEF is short for The Browser Exploitation Framework. It is a penetration testing tool that focuses on the web browser.
   * [https://www.kali.org/tools/beef-xss/](https://www.kali.org/tools/beef-xss/)
+
+<!---->
+
 * Metasploit; [Browser-AutoPwn](https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/server/browser\_autopwn.rb)
 * [https://systemweakness.com/give-me-a-browser-ill-give-you-a-shell-de19811defa0?gi=a6af0aee993e](https://systemweakness.com/give-me-a-browser-ill-give-you-a-shell-de19811defa0?gi=a6af0aee993e)
 * _Advanced Penetration Testing: Browser Pivoting - pg. 23_
+
+__
+
+</details>
 
 ## Business logic flaws
 
@@ -31,6 +48,10 @@
 
 ## Bypass Methodology
 
+<details>
+
+<summary>Bypass Methodology</summary>
+
 * [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20403.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20403.md)
 * [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20304.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20304.md)
 * [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20Captcha.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20Captcha.md)
@@ -38,6 +59,8 @@
 * [byp4xx](https://github.com/lobuhi/byp4xx) - Pyhhton script for HTTP 40X responses bypassing. Features: Verb tampering, headers, #bugbountytips tricks and 2454 User-Agents.
 * [403bypasser](https://github.com/yunemse48/403bypasser) - automates the techniques used to circumvent access control restrictions on target pages.
 * [bypass-403](https://github.com/iamj0ker/bypass-403) - A simple script just made for self use for bypassing 403
+
+</details>
 
 ## Clickjacking
 
@@ -51,7 +74,11 @@
 [command-injection.md](command-injection.md)
 {% endcontent-ref %}
 
-## **CORS Misconfiguration**
+## **CORS Attacks**
+
+<details>
+
+<summary>CORS MIsconfig</summary>
 
 * [Corsy](https://github.com/s0md3v/Corsy) - CORS Misconfiguration Scanner
 * [CORScanner](https://github.com/chenjj/CORScanner) - Fast CORS misconfiguration vulnerabilities scanner🍻
@@ -62,9 +89,15 @@
 * [https://pentestbook.six2dez.com/enumeration/web/cors](https://pentestbook.six2dez.com/enumeration/web/cors)
 * [https://kathan19.gitbook.io/howtohunt/cors/cors](https://kathan19.gitbook.io/howtohunt/cors/cors)&#x20;
 
-### CORS Bypass
+</details>
+
+<details>
+
+<summary>CORS Bypass</summary>
 
 * [https://kathan19.gitbook.io/howtohunt/cors/cors\_bypasses](https://kathan19.gitbook.io/howtohunt/cors/cors\_bypasses)
+
+</details>
 
 ## **Cross Site Leaks**
 
@@ -78,11 +111,17 @@
 
 ## **Carriage Return and Line Feed Injection**
 
+<details>
+
+<summary>CRLF Injection</summary>
+
 * [https://owasp.org/www-community/vulnerabilities/CRLF\_Injection](https://owasp.org/www-community/vulnerabilities/CRLF\_Injection)
 * [CRLF-Injection-Scanner](https://github.com/MichaelStott/CRLF-Injection-Scanner) - Command line tool for testing CRLF injection on a list of domains.
 * [crlfuzz](https://github.com/dwisiswant0/crlfuzz) A fast tool to scan CRLF vulnerability written in Go
 * [crlfmap](https://github.com/ryandamour/crlfmap) - CRLFMap is a tool to find HTTP Splitting vulnerabilities
 * [https://pentestbook.six2dez.com/enumeration/web/crlf](https://pentestbook.six2dez.com/enumeration/web/crlf)
+
+</details>
 
 ## **Client Side Template Injection**
 
@@ -106,7 +145,9 @@
 
 Directory traversal (also known as file path traversal) is a web security vulnerability that allows an attacker to read arbitrary files on the server that is running an application. This might include application code and data, credentials for back-end systems, and sensitive operating system files.
 
-### Basics
+<details>
+
+<summary>Basics</summary>
 
 * Simple attack
   * Linux system - ../../../etc/passwd
@@ -126,12 +167,18 @@ Directory traversal (also known as file path traversal) is a web security vulner
   * filename=../../../etc/passwd%00.png
 * [dotdotpwn](https://www.kali.org/tools/dotdotpwn/) - DotDotPwn is a very flexible intelligent fuzzer to discover traversal directory vulnerabilities in software such as HTTP/FTP/TFTP servers, Web platforms such as CMSs, ERPs, Blogs, etc.
 
-### **Resources**
+</details>
+
+<details>
+
+<summary>Resources</summary>
 
 * [https://immersivelabs.online/labs/web-applications-directory-traversal/](https://immersivelabs.online/labs/web-applications-directory-traversal/)
 * [https://www.acunetix.com/websitesecurity/directory-traversal/](https://www.acunetix.com/websitesecurity/directory-traversal/)
 * [https://owasp.org/www-community/attacks/Path\_Traversal](https://owasp.org/www-community/attacks/Path\_Traversal)
 * [Comprehensive Guide on Path Traversal](https://www.hackingarticles.in/comprehensive-guide-on-path-traversal/)
+
+</details>
 
 {% embed url="https://youtu.be/kkSzmhJD73s" %}
 
@@ -139,8 +186,8 @@ Directory traversal (also known as file path traversal) is a web security vulner
 
 File inclusion vulnerabilities allow an attacker to include a file into the applications running code. **** In order to actually exploit a file inclusion vulnerability, we must be able to not only execute code, but also to write our shell payload somewhere.
 
-### **Identification**
-
+{% tabs %}
+{% tab title="Identification" %}
 * Discovered the same way as directory transversals
 * Locate parameters you can manipulate and attempt to use them to load arbitrary files
 * We take it one step further and attempt to execute the contents of the file within the application
@@ -149,16 +196,16 @@ File inclusion vulnerabilities allow an attacker to include a file into the appl
 * Remote file inclusions (RFI) occur when a file is loaded from an external source.
   * Try changing the local path parameter to a URL.
   * [http://10.11.0.22/menu.php?file=http://10.11.0.4/evil.txt](http://10.11.0.22/menu.php?file=http://10.11.0.4/evil.txt)
+{% endtab %}
 
-### Tools
-
+{% tab title="Tools" %}
 * [LFISuite](https://github.com/D35m0nd142/LFISuite) - LFI Suite is a totally automatic tool able to scan and exploit Local File Inclusion vulnerabilities using many different methods of attack
 * [Liffy](https://github.com/hvqzao/liffy) - Local File Inclusion Exploitation tool.
 * [Kadimus](https://github.com/P0cL4bs/Kadimus) - Kadimus is a tool to check for and exploit LFI vulnerabilities, with a focus on PHP systems.
 * [fimap](https://github.com/kurobeats/fimap) - Fimap is a little python tool which can find, prepare, audit, exploit and even google automatically for local and remote file inclusion bugs in webapps.
+{% endtab %}
 
-### Reference
-
+{% tab title="Reference" %}
 * [LFI CheatSheet](https://highon.coffee/blog/lfi-cheat-sheet/)
 * [File Inclusion Vulnerability Guide ](https://www.offensive-security.com/metasploit-unleashed/file-inclusion-vulnerabilities/)
 * [https://xapax.github.io/security/#attacking\_web\_applications/local\_file\_inclusion/](https://xapax.github.io/security/#attacking\_web\_applications/local\_file\_inclusion/)
@@ -167,8 +214,14 @@ File inclusion vulnerabilities allow an attacker to include a file into the appl
 * [Comprehensive Guide on Local File Inclusion (LFI)](https://www.hackingarticles.in/comprehensive-guide-to-local-file-inclusion/)
 * [Comprehensive Guide to Remote File Inclusion (RFI)](https://www.hackingarticles.in/comprehensive-guide-to-remote-file-inclusion-rfi/)
 * [https://tryhackme.com/room/lfibasics](https://tryhackme.com/room/lfibasics)
+{% endtab %}
+{% endtabs %}
 
 ## **File Upload**
+
+<details>
+
+<summary>File Upload</summary>
 
 * [fuxploider](https://github.com/almandin/fuxploider) - File upload vulnerability scanner and exploitation tool.
 * [https://xapax.github.io/security/#attacking\_web\_applications/bypass\_image\_upload/](https://xapax.github.io/security/#attacking\_web\_applications/bypass\_image\_upload/)
@@ -177,6 +230,8 @@ File inclusion vulnerabilities allow an attacker to include a file into the appl
 * [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20File%20Upload.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20File%20Upload.md)
 * [**Comprehensive Guide on Unrestricted File Upload**](https://www.hackingarticles.in/comprehensive-guide-on-unrestricted-file-upload/)
 * [https://medium.com/@raymond-lind/ssrf-lfi-in-uploads-feature-321d83b93ec0](https://medium.com/@raymond-lind/ssrf-lfi-in-uploads-feature-321d83b93ec0)
+
+</details>
 
 ## HTML Injection
 
@@ -196,6 +251,10 @@ File inclusion vulnerabilities allow an attacker to include a file into the appl
 
 ## **Input Fuzzing**
 
+<details>
+
+<summary>Input Fuzzing</summary>
+
 * [Wfuzz](https://github.com/xmendez/wfuzz) - Powerful Web application content fuzzer.
 * [FuzzDb](https://github.com/fuzzdb-project/fuzzdb) - FuzzDB was created to increase the likelihood of finding application security vulnerabilities through dynamic application security testing.
 * [ffuf](https://github.com/ffuf/ffuf) - A super fast web fuzzer written in Go.
@@ -203,6 +262,8 @@ File inclusion vulnerabilities allow an attacker to include a file into the appl
   * [https://tryhackme.com/room/ffuf](https://tryhackme.com/room/ffuf)
 * [QsFuzz](https://github.com/ameenmaali/qsfuzz) - Qsfuzz (Query String Fuzz) allows you to build your own rules to fuzz query strings and easily identify vulnerabilities.
 * [AFLplusplus](https://github.com/AFLplusplus/AFLplusplus) - The fuzzer afl++ is afl with community patches, qemu 5.1 upgrade, collision-free coverage, enhanced laf-intel & redqueen, AFLfast++ power schedules, MOpt mutators, unicorn\_mode, and a lot more!
+
+</details>
 
 ## **Insecure Direct Object Reference**
 
@@ -212,12 +273,22 @@ File inclusion vulnerabilities allow an attacker to include a file into the appl
 
 ## LDAP Injection
 
+<details>
+
+<summary>LDAP Injection</summary>
+
 * [https://owasp.org/www-community/attacks/LDAP\_Injection](https://owasp.org/www-community/attacks/LDAP\_Injection)
 * [https://cheatsheetseries.owasp.org/cheatsheets/LDAP\_Injection\_Prevention\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/LDAP\_Injection\_Prevention\_Cheat\_Sheet.html)
 * [https://cheatsheetseries.owasp.org/cheatsheets/Injection\_Prevention\_Cheat\_Sheet.html#ldap-injection](https://cheatsheetseries.owasp.org/cheatsheets/Injection\_Prevention\_Cheat\_Sheet.html#ldap-injection)
 * [https://www.ldapexplorer.com/en/manual/109010000-ldap-filter-syntax.htm](https://www.ldapexplorer.com/en/manual/109010000-ldap-filter-syntax.htm)
 
+</details>
+
 ## Open Redirect Vulnerabilities
+
+<details>
+
+<summary>Open Redirect Vulnerabilities</summary>
 
 * [OpenRedireX](https://github.com/devanshbatham/OpenRedireX) - A Fuzzer for OpenRedirect issues
 * [Oralyzer](https://github.com/r0075h3ll/Oralyzer) - Open Redirection Analyzer
@@ -225,6 +296,8 @@ File inclusion vulnerabilities allow an attacker to include a file into the appl
 * [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Open%20Redirect.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Open%20Redirect.md)
 * [**Comprehensive Guide on Open Redirect**](https://www.hackingarticles.in/comprehensive-guide-on-open-redirect/)
 * _Open Redirect Vulnerabilities - Bug Bounty Hunting Essentials, pg.141_
+
+</details>
 
 ## Prototype Pollution
 
@@ -243,14 +316,6 @@ Security misconfigurations include:\
 
 * [hamster-sidejack](https://www.kali.org/tools/hamster-sidejack/) - Hamster is tool or “sidejacking”. It acts as a proxy server that replaces your cookies with session cookies stolen from somebody else, allowing you to hijack their sessions.
 
-## Sub-Domain Takeover
-
-* [TKO-subs](https://github.com/anshumanbh/tko-subs) - A tool that can help detect and takeover subdomains with dead DNS records
-* [Subjack](https://github.com/haccer/subjack) - Subjack is a Subdomain Takeover tool written in Go designed to scan a list of subdomains concurrently and identify ones that are able to be hijacked.
-* [Second-Order](https://github.com/mhmdiaa/second-order) - Scans web applications for second-order subdomain takeover by crawling the app, and collecting URLs (and other data) that match some specific rules, or respond in a specific way.
-* [https://xapax.github.io/security/#attacking\_web\_applications/subdomain\_takeover/](https://xapax.github.io/security/#attacking\_web\_applications/subdomain\_takeover/)
-* _Sub-Domain Takeovers - Bug Bounty Hunting Essentials, pg.159_
-
 ## **SQL Injection**
 
 {% content-ref url="sql-injection/" %}
@@ -258,6 +323,10 @@ Security misconfigurations include:\
 {% endcontent-ref %}
 
 ## **SSRF: Server Side Request Forgery**
+
+<details>
+
+<summary>SSRF</summary>
 
 * [SSRF Bible](https://docs.google.com/document/d/1v1TkWZtrhzRLy0bYXBcdLUedXGb9njTNIJXa3u9akHM/) - Ultimate Guide to SSRF vulnerabilities and attacks
 * [SSRF-Testing](https://github.com/cujanovic/SSRF-Testing) - SSRF (Server Side Request Forgery) testing resources
@@ -269,7 +338,13 @@ Security misconfigurations include:\
 * [PayloadsAllTheThings/ServerSideRequestForgery](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Request%20Forgery)
 * [https://cheatsheetseries.owasp.org/cheatsheets/Server\_Side\_Request\_Forgery\_Prevention\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Server\_Side\_Request\_Forgery\_Prevention\_Cheat\_Sheet.html)
 
+</details>
+
 ## **SSTI: Server Side Template Injection**
+
+<details>
+
+<summary>SSTI</summary>
 
 * [TPLmap](https://github.com/epinna/tplmap) - Server-Side Template Injection and Code Injection Detection and Exploitation Tool
 * [https://www.blackhat.com/docs/us-15/materials/us-15-Kettle-Server-Side-Template-Injection-RCE-For-The-Modern-Web-App-wp.pdf](https://www.blackhat.com/docs/us-15/materials/us-15-Kettle-Server-Side-Template-Injection-RCE-For-The-Modern-Web-App-wp.pdf)
@@ -279,6 +354,8 @@ Security misconfigurations include:\
 * [https://medium.com/server-side-template-injection/server-side-template-injection-faf88d0c7f34](https://medium.com/server-side-template-injection/server-side-template-injection-faf88d0c7f34)
 * [https://tryhackme.com/room/learnssti](https://tryhackme.com/room/learnssti)
 * _Template Injection - Bug Bounty Hunting Essentials, pg.189_
+
+</details>
 
 ## X-Path Injection
 

