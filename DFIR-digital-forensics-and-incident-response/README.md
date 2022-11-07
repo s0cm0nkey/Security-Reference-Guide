@@ -14,39 +14,52 @@
 
 ## **Incident Response**
 
-### **Resources**
-
+{% tabs %}
+{% tab title="Guides and Resources" %}
 * [Awesome Lists Collection: Incident Response](https://github.com/meirwah/awesome-incident-response)
-* Guides and Frameworks
-  * [ATC React](https://atc-project.github.io/atc-react/) - The RE\&CT Framework is designed for accumulating, describing and categorizing actionable Incident Response techniques. It can be used for prioritization of Incident Response capabilities development, including skills development, technical measures acquisition/deployment, internal procedures development, etc, as well as gap analysis to determine "coverage" of existing Incident Response capabilities.
-    * [https://github.com/atc-project/atc-react](https://github.com/atc-project/atc-react)
-    * [https://github.com/atc-project/atc-data](https://github.com/atc-project/atc-data)
-  * [SANS Incident Handlers Handbook](https://www.sans.org/reading-room/whitepapers/incident/incident-handlers-handbook-33901)
-  * [Exabeam Incident Response Guide](https://www.exabeam.com/incident-response/steps/)
-  * [NIST 61 R2 - ](./#tools-and-frameworks)[Computer Security Incident Handling Guide](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final)
-  * [https://zeltser.com/ddos-incident-cheat-sheet/](https://zeltser.com/ddos-incident-cheat-sheet/)
-  * [https://gitlab.com/syntax-ir/playbooks#ir-playbooks](https://gitlab.com/syntax-ir/playbooks#ir-playbooks) - Public IR playbooks
-  * [https://learn.microsoft.com/en-us/security/compass/incident-response-playbooks](https://learn.microsoft.com/en-us/security/compass/incident-response-playbooks)
-    * [Azure-AD-Incident-Response-PowerShell-Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module)
-    * [https://m365internals.com/2021/04/17/incident-response-in-a-microsoft-cloud-environment/](https://m365internals.com/2021/04/17/incident-response-in-a-microsoft-cloud-environment/)
-  * _BTFM: Incident Response checklist - pg. 109_
-  * _BTFM: Remediation Tasks - pg. 112_
-  * _(BTHb: INRE): Incident Response Steps - pg. 5_
-* Report Templates and Guides
-  * [https://github.com/cyb3rfox/Aurora-Incident-Response](https://github.com/cyb3rfox/Aurora-Incident-Response) - Incident Response Documentation made easy. Developed by Incident Responders for Incident Responders
-  * [PagerDuty Incident Response processes and document templates](https://response.pagerduty.com/)
-  * [Zeltser Incident Survey CheatSheet](https://zeltser.com/security-incident-survey-cheat-sheet/)
-  * [https://zeltser.com/cyber-threat-intel-and-ir-report-template/](https://zeltser.com/cyber-threat-intel-and-ir-report-template/)
-  * _(BTHb: INRE): Incident Response Template - pg. 24_
-* Misc
-  * DNSDB for Incident Response - [https://info.farsightsecurity.com/passive-dns-incident-response-ebook](https://info.farsightsecurity.com/passive-dns-incident-response-ebook)
-  * [Let's Defend: Build your own IR tool guide ](https://letsdefend.io/blog/build-your-own-simple-data-collection-tool-from-endpoint/)
-  * [https://training.fema.gov/is/courseoverview.aspx?code=IS-100.c](https://training.fema.gov/is/courseoverview.aspx?code=IS-100.c) - Introduction to the Incident Command System, introduces the Incident Command System (ICS) and provides the foundation for higher level ICS training.
-  * [Incident Response in a Microsoft cloud environment](https://m365internals.com/2021/04/17/incident-response-in-a-microsoft-cloud-environment/)
-* Training
-  * [Incident Response Challange](https://incident-response-challenge.com/?utm\_source=thn) - IR CTF Style Training Scenarios&#x20;
+* [ATC React](https://atc-project.github.io/atc-react/) - The RE\&CT Framework is designed for accumulating, describing and categorizing actionable Incident Response techniques. It can be used for prioritization of Incident Response capabilities development, including skills development, technical measures acquisition/deployment, internal procedures development, etc, as well as gap analysis to determine "coverage" of existing Incident Response capabilities.
+  * [https://github.com/atc-project/atc-react](https://github.com/atc-project/atc-react)
+  * [https://github.com/atc-project/atc-data](https://github.com/atc-project/atc-data)
+* [SANS Incident Handlers Handbook](https://www.sans.org/reading-room/whitepapers/incident/incident-handlers-handbook-33901)
+* [Exabeam Incident Response Guide](https://www.exabeam.com/incident-response/steps/)
+* [NIST 61 R2 - ](./#tools-and-frameworks)[Computer Security Incident Handling Guide](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final)
+* [https://zeltser.com/ddos-incident-cheat-sheet/](https://zeltser.com/ddos-incident-cheat-sheet/)
+* [https://gitlab.com/syntax-ir/playbooks#ir-playbooks](https://gitlab.com/syntax-ir/playbooks#ir-playbooks) - Public IR playbooks
+* [https://learn.microsoft.com/en-us/security/compass/incident-response-playbooks](https://learn.microsoft.com/en-us/security/compass/incident-response-playbooks)
+  * [Azure-AD-Incident-Response-PowerShell-Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module)
+  * [https://m365internals.com/2021/04/17/incident-response-in-a-microsoft-cloud-environment/](https://m365internals.com/2021/04/17/incident-response-in-a-microsoft-cloud-environment/)
+* _BTFM: Incident Response checklist - pg. 109_
+* _BTFM: Remediation Tasks - pg. 112_
+* _(BTHb: INRE): Incident Response Steps - pg. 5_
+{% endtab %}
+
+{% tab title="IR Report Writing" %}
+* [https://github.com/cyb3rfox/Aurora-Incident-Response](https://github.com/cyb3rfox/Aurora-Incident-Response) - Incident Response Documentation made easy. Developed by Incident Responders for Incident Responders
+* [PagerDuty Incident Response processes and document templates](https://response.pagerduty.com/)
+* [Zeltser Incident Survey CheatSheet](https://zeltser.com/security-incident-survey-cheat-sheet/)
+* [https://zeltser.com/cyber-threat-intel-and-ir-report-template/](https://zeltser.com/cyber-threat-intel-and-ir-report-template/)
+* _(BTHb: INRE): Incident Response Template - pg. 24_
+{% endtab %}
+
+{% tab title="Misc" %}
+* DNSDB for Incident Response - [https://info.farsightsecurity.com/passive-dns-incident-response-ebook](https://info.farsightsecurity.com/passive-dns-incident-response-ebook)
+* [Let's Defend: Build your own IR tool guide ](https://letsdefend.io/blog/build-your-own-simple-data-collection-tool-from-endpoint/)
+* [https://training.fema.gov/is/courseoverview.aspx?code=IS-100.c](https://training.fema.gov/is/courseoverview.aspx?code=IS-100.c) - Introduction to the Incident Command System, introduces the Incident Command System (ICS) and provides the foundation for higher level ICS training.
+* [Incident Response in a Microsoft cloud environment](https://m365internals.com/2021/04/17/incident-response-in-a-microsoft-cloud-environment/)
+
+
+{% endtab %}
+
+{% tab title="Training" %}
+* [Incident Response Challange](https://incident-response-challenge.com/?utm\_source=thn) - IR CTF Style Training Scenarios&#x20;
+
+
+{% endtab %}
+{% endtabs %}
 
 ### IR/Malware Scanners
+
+
 
 * [https://www.nextron-systems.com/thor/](https://www.nextron-systems.com/thor/) - IR scanner with more than 12,000 handcrafted YARA signatures, 400 Sigma rules, numerous anomaly detection rules and thousands of IOCs.
   * [Loki Scanner](https://github.com/Neo23x0/Loki) - The free and open IOC scanner using YARA rules.
@@ -123,8 +136,6 @@ yara rule.yara [Directory] -s
 {% content-ref url="yara.md" %}
 [yara.md](yara.md)
 {% endcontent-ref %}
-
-Depreciated Tools
 
 ### Other Tools
 
