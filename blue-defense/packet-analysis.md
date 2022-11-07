@@ -12,7 +12,11 @@ Raw packet captures are a staple for security analysis since they can be a compl
 * BPF - Stands for Berkeley Packet Filters. BPF syntax is used in packet analyzers like Wireshark to filter out specific packets from a capture during network analysis. It can also be used in a Linux terminal through tools like tcpdump.
 * Libpcap - The most common library used by other programs to read packet capture files.
 
-## Capture and Indexing
+## Capture and Indexing Tools
+
+<details>
+
+<summary>Capture and Tools</summary>
 
 * [Awesome Collection: Pcap Tools](https://github.com/caesar0301/awesome-pcaptools)
 * [Arkime (Moloch)](https://github.com/arkime/arkime) - Arkime augments your current security infrastructure to store and index network traffic in standard PCAP format, providing fast, indexed access.
@@ -24,7 +28,13 @@ Raw packet captures are a staple for security analysis since they can be a compl
 * [Netsniff-ng](http://netsniff-ng.org/) - A fast network analyzer based on packet mmap(2) mechanisms. It can record pcap files to disc, replay them and also do an offline and online analysis.
 * _Attacking Network Protocols: Ch.2 Capturing Application Traffic - pg.11_
 
+</details>
+
 ## Decrypting Encrypted Packets <a href="#decrypting-encrypted-packets" id="decrypting-encrypted-packets"></a>
+
+<details>
+
+<summary>Decrypting Encrypted Packets</summary>
 
 This can be done in a few ways:
 
@@ -35,9 +45,17 @@ Man-in-the-middle (MITM)
 
 [Using the (Pre)-Master-Secret SSLKEYLOGFILE](https://wiki.wireshark.org/TLS#Using\_the\_.28Pre.29-Master-Secret) [Using an RSA Private Key](https://docs.microsoft.com/en-us/archive/blogs/nettracer/decrypting-ssltls-sessions-with-wireshark-reloaded)
 
-## [**Wireshark**](https://www.wireshark.org/#download) ****&#x20;
+</details>
+
+## PCAP Analysis Tools
+
+### [**Wireshark**](https://www.wireshark.org/#download) ****&#x20;
 
 The world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions.
+
+<details>
+
+<summary>Wireshark Resources</summary>
 
 * Filter cheatsheet - [https://packetlife.net/media/library/13/Wireshark\_Display\_Filters.pdf](https://packetlife.net/media/library/13/Wireshark\_Display\_Filters.pdf)
 * Display guide - [https://311hrs.wordpress.com/2016/04/02/costumize-column-display-in-wireshark/](https://311hrs.wordpress.com/2016/04/02/costumize-column-display-in-wireshark/)
@@ -56,19 +74,23 @@ The world’s foremost and widely-used network protocol analyzer. It lets you se
 * _Operator Handbook: Wireshark - pg. 426_
 * _Wireshark for NSM Analysis - Applied Network Security Monitoring, pg.363_
 
+</details>
+
 {% embed url="https://youtu.be/6ywAHXEOHZE" %}
 
-## **TShark**
+### **TShark**
 
-**tshark** - command line version of Wireshark
+Command line version of Wireshark
 
+{% tabs %}
+{% tab title="Resources" %}
 * [Beginners Guide to TShark (Part 1)](https://www.hackingarticles.in/beginners-guide-to-tshark-part-1/)
 * [Beginners Guide to TShark (Part 2)](https://www.hackingarticles.in/beginners-guide-to-tshark-part-2/)
 * [Beginners Guide to TShark (Part 3)](https://www.hackingarticles.in/beginners-guide-to-tshark-part-3/)
 * [https://tryhackme.com/room/tshark](https://tryhackme.com/room/tshark)
+{% endtab %}
 
-### Basic Commands
-
+{% tab title="Basic Commands" %}
 * \#tshark -r \[file]
 * \#tshark -r \[file] -Y \[wireshark display filter]
   * The -Y options specifies a display filter to help organize packet captures and filter out specific data such as protocols or host information.
@@ -81,7 +103,9 @@ The world’s foremost and widely-used network protocol analyzer. It lets you se
 * _BTFM: tshark - pg. 43_
 * _Operator Handbook: TShark - pg.304_
 * _Tshark for Packet Analysis - Applied Network Security Monitoring, pg.359_
+{% endtab %}
 
+{% tab title="Utility Commands" %}
 ### Merging multiple pcap files <a href="#merging-multiple-pcap-files" id="merging-multiple-pcap-files"></a>
 
 Note: [mergecap](https://www.wireshark.org/docs/man-pages/mergecap.html)
@@ -131,24 +155,28 @@ tshark -T fields -r capture.pcap -e http.host -e ip.dst -e http.request.full_uri
 ```
 tshark -T json -r capture.pcap -Y "http.request.method == POST"
 ```
+{% endtab %}
+{% endtabs %}
 
-## **TCPDump**
+### **TCPDump**
 
-**TCPDump** - tcpdump is a command line packet analysis tool.
+**A** command line packet analysis tool.
 
+{% tabs %}
+{% tab title="Guides" %}
 * [**Comprehensive Guide to tcpdump (Part 1)**](https://www.hackingarticles.in/comprehensive-guide-to-tcpdump-part-1/)
 * [**Comprehensive Guide to tcpdump (Part 2)**](https://www.hackingarticles.in/comprehensive-guide-to-tcpdump-part-2/)
 * [**Comprehensive Guide to tcpdump (Part 3)**](https://www.hackingarticles.in/comprehensive-guide-to-tcpdump-part-3/)
+{% endtab %}
 
-### Basic Commands
-
+{% tab title="Basic Commands" %}
 * \#tcpdump -r \[filename.pcapng] host \[IPADDRESS]
   * display all packets transferred to and from a specified IP address.
 * \#tcpdump -r \[filename.pcapng] -w \[filename]
   * output your results into a specified file type such as csv or txt
+{% endtab %}
 
-### Filtering Traffic
-
+{% tab title="Filtering Traffic" %}
 * Using awk and sort\
   &#x20;▪ #sudo tcpdump -n -r File.pcap | awk -F" " '{print $3}' | sort | uniq -c | head
 * \-n skip dns resolution
@@ -162,10 +190,12 @@ tshark -T json -r capture.pcap -Y "http.request.method == POST"
 * [https://github.com/SergK/cheatsheat-tcpdump/blob/master/tcpdump\_advanced\_filters.txt](https://github.com/SergK/cheatsheat-tcpdump/blob/master/tcpdump\_advanced\_filters.txt)
 * [https://www.andreafortuna.org/technology/networking/tcpdump-a-simple-cheatsheet/](https://www.andreafortuna.org/technology/networking/tcpdump-a-simple-cheatsheet/)
 * _TCPDump for NSM Analysis - Applied Network Security Monitoring, pg.355_
+{% endtab %}
+{% endtabs %}
 
 {% embed url="https://youtu.be/1lDfCRM6dWk" %}
 
-## NGREP
+### NGREP
 
 **C**ommand line packet analysis tool which enables users to search for words and phrases at the network layer.
 
@@ -175,7 +205,7 @@ tshark -T json -r capture.pcap -Y "http.request.method == POST"
 * Filters - ngrep understands BPF syntax, which can be applied alongside the pattern match.
   * \#ngrep -I ngrep.pcap "POST" host ‘192.168.1.1’
 
-## Online Packet Capture Analyzers
+### Online Packet Capture Analyzers
 
 * [APackets](https://apackets.com/) -  Web utility that can analyze pcap files to view HTTP headers and data, extract transferred binaries, files, office documents, pictures.
 * [PacketTotal ](https://packettotal.com/)- PacketTotal is an engine for analyzing, categorizing, and sharing .pcap files. The tool was built with the InfoSec community in mind and has applications in malware analysis and network forensics.
