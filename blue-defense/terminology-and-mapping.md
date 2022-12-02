@@ -25,18 +25,19 @@ With over a dozen tactics and hundreds of techniques, MITRE Attack has become th
 
 ### Center for Internet Security (CIS) Benchmarks and Controls
 
-CIS has sets of helpful resources for hardening your environment. The most important for defensive specialists is the CIS Benchmarks and the CIS Controls. The CIS Benchmarks are a large collection of hardening and configuration standards of dozens of products from different vendors. To make life even easier, there are even scripts that help you set up your infrastructure to these standards. CIS Controls are documented security best practices for your network. These are incredibly valueable for improvingyour security posture, and you can even map your detection use cases to the controls that protect against certain attacks.&#x20;
+CIS has sets of helpful resources for hardening your environment. The most important for defensive specialists is the CIS Benchmarks and the CIS Controls. The CIS Benchmarks are a large collection of hardening and configuration standards of dozens of products from different vendors. To make life even easier, there are even scripts that help you set up your infrastructure to these standards. CIS Controls are documented security best practices for your network. These are incredibly valuable for improving your security posture, and you can even map your detection use cases to the controls that protect against certain attacks.&#x20;
 
-Understanding both of these are incredibly valueable to both your organization as well as you. Understanding the critical security controls can help you develop your own understanding of security theory. Digging into the CIS Benchmarks (especially the hardening scripts) is incredibly useful for more detailed technical knowledge of security issues.
+Understanding both of these are incredibly valuable to both your organization as well as you. Understanding the critical security controls can help you develop your own understanding of security theory. Digging into the CIS Benchmarks (especially the hardening scripts) is incredibly useful for more detailed technical knowledge of security issues.
 
 * [https://www.cisecurity.org/controls/](https://www.cisecurity.org/controls/)
 * [https://www.cisecurity.org/cis-benchmarks/](https://www.cisecurity.org/cis-benchmarks/)
+* [https://www.cisecurity.org/insights/white-papers/cis-community-defense-model](https://www.cisecurity.org/insights/white-papers/cis-community-defense-model)
 * [https://www.cisecurity.org/blog/cyber-attack-defense-cis-benchmarks-cdm-mitre-attck/](https://www.cisecurity.org/blog/cyber-attack-defense-cis-benchmarks-cdm-mitre-attck/)
 * [https://www.blackhillsinfosec.com/center-for-internet-security-cis-v8-why-you-should-care/](https://www.blackhillsinfosec.com/center-for-internet-security-cis-v8-why-you-should-care/)
 
 ### Lockheed-Martin Cyber Kill-Chain&#x20;
 
-This is a great format for seeing the timeline of an attack. When responding to an event or alert you see from your security devices, see where they match up on the killchain and remember to look for any evidence of activity that might fall before it, or after it, in the kill-chain.
+This is a great format for seeing the timeline of an attack. When responding to an event or alert you see from your security devices, see where they match up on the kill-chain and remember to look for any evidence of activity that might fall before it, or after it, in the kill-chain.
 
 {% file src="../.gitbook/assets/Gaining_the_Advantage_Cyber_Kill_Chain.pdf" %}
 Cyber Kill-Chain

@@ -95,11 +95,14 @@ These are tools for collecting, enriching, and shareing threat indicators. Most 
 
 * FBI Infragaurd - [https://www.infragard.org/](https://www.infragard.org/)
 * CISA
-  * Current Activity - [https://us-cert.cisa.gov/ncas/current-activity](https://us-cert.cisa.gov/ncas/current-activity)
-  * Bullitins - [https://us-cert.cisa.gov/ncas/bulletins/2020](https://us-cert.cisa.gov/ncas/bulletins/2020)
-  * Ammouncements - [https://us-cert.cisa.gov/announcements](https://us-cert.cisa.gov/announcements)
+  * Current Activity - [https://www.cisa.gov/uscert/ncas/current-activity](https://www.cisa.gov/uscert/ncas/current-activity)
+  * Alerts - [https://www.cisa.gov/uscert/ncas/alerts](https://www.cisa.gov/uscert/ncas/alerts)
+  * Vulnerability Bulletins - [https://www.cisa.gov/uscert/ncas/bulletins](https://www.cisa.gov/uscert/ncas/bulletins)
+  * Analysis Reports- [https://www.cisa.gov/uscert/ncas/analysis-reports](https://www.cisa.gov/uscert/ncas/analysis-reports)
+  * Automated Indicator Sharing (AIS) TAXII 2.1 API Capability (free/ registration required)- [https://www.cisa.gov/ais](https://www.cisa.gov/ais)
+  * CISA RSS Feeds- [https://www.cisa.gov/uscert/mailing-lists-and-feeds](https://www.cisa.gov/uscert/mailing-lists-and-feeds)
 * IC3 News Releases -[https://www.ic3.gov/](https://www.ic3.gov/)
-* Various ISAC - Find an ISAC in your sector
+* Various ISAC - Find an ISAC in your sector - [https://www.nationalisacs.org/member-isacs-3](https://www.nationalisacs.org/member-isacs-3)
 
 </details>
 
