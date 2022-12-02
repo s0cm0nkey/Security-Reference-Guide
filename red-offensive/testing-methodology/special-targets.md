@@ -1,5 +1,9 @@
 # Special Targets
 
+## Hardware and IOT
+
+* [https://swisskyrepo.github.io/HardwareAllTheThings/](https://swisskyrepo.github.io/HardwareAllTheThings/)
+
 ## IPV6 and ICMPV6
 
 * [thc-ipv6](https://www.kali.org/tools/thc-ipv6/) - Attack toolkit for testing IPv6 and ICMPv6 protocol weaknesses.
