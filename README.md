@@ -47,8 +47,8 @@ Warning: Do not use any of the mentioned tools referenced here for illegal, unet
 [blue-defense](blue-defense/)
 {% endcontent-ref %}
 
-{% content-ref url="DFIR-digital-forensics-and-incident-response/" %}
-[DFIR-digital-forensics-and-incident-response](DFIR-digital-forensics-and-incident-response/)
+{% content-ref url="blue-defense/dfir-digital-forensics-and-incident-response/" %}
+[dfir-digital-forensics-and-incident-response](blue-defense/dfir-digital-forensics-and-incident-response/)
 {% endcontent-ref %}
 
 {% content-ref url="yellow-neteng-sysadmin/" %}

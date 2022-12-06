@@ -54,6 +54,6 @@ Local sandboxes - There are a few options for local sandboxing that can help you
   * [https://www.telerik.com/fiddler](https://www.telerik.com/fiddler) - While not a sandbox, it is a simple web proxy that can be used with any other VM. By detonating your target file in a cirtual machine with this running, you can see if the file makes any outbound web requests when it is opened.
   * [https://github.com/iphelix/dnschef](https://github.com/iphelix/dnschef) - DNS proxy for Penetration Testers and Malware Analysts
 
-![](<../.gitbook/assets/image (8) (1).png>)
+![](<../../.gitbook/assets/image (8) (1).png>)
 
-![](<../.gitbook/assets/image (9) (1).png>)
+![](<../../.gitbook/assets/image (9) (1).png>)

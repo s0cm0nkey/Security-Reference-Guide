@@ -16,6 +16,7 @@ This section contains handy links and tools for anything else not mentioned in t
 
 ### **Personal Firewall/Sandbox**
 
+* [PortMaster ](https://safing.io/)- Portmaster is a free and open-source application firewall with audjustable defense profiles, white/blacklisting, and amazing extra features.
 * [OpenSnitch](https://github.com/evilsocket/opensnitch) - Linux Application Firewall. The first thing I install.
 * [FireJail](https://github.com/netblue30/firejail) - Firejail is a SUID sandbox program that reduces the risk of security breaches by restricting the running environment of untrusted applications using Linux namespaces, seccomp-bpf and Linux capabilities.
 * [eBPF](https://ebpf.io/) is a technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading kernel modules. By making the Linux kernel programmable, infrastructure software can leverage existing layers, making them more intelligent and feature-rich without continuing to add additional layers of complexity to the system.

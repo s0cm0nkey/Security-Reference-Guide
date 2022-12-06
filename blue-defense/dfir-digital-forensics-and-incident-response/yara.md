@@ -59,5 +59,5 @@ Yara Rule Testing Tools
   * [https://github.com/deepfence/yara-rules](https://github.com/deepfence/yara-rules)
 * _Operator Handbook: YARA - pg. 428_
 
-![](<../.gitbook/assets/image (16).png>)
+![](<../../.gitbook/assets/image (16).png>)
 
