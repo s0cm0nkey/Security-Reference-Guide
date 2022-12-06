@@ -137,7 +137,7 @@ description: Where can we go, once we are in?
 [ad-security-checks.md](../../blue-defense/device-hardening/ad-security-checks.md)
 {% endcontent-ref %}
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 

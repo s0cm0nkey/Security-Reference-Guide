@@ -113,6 +113,9 @@
 <summary>Mastodon</summary>
 
 * [https://search.noc.social/](https://search.noc.social/) - Search for social accounts across multiple Mastodon/Fediverse instances. Discover content and users on this open source social network
+*
+
+    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 </details>
 

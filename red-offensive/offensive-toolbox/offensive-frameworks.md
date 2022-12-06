@@ -149,5 +149,7 @@ Empire was formerly an abandoned project that BC-Securty has revived. Please be 
 * [Xerror](https://github.com/Chudry/Xerror) - Xerror is an automated penetration tool , which will help security professionals and non professionals to automate their pentesting tasks.
 * [WinPwn](https://github.com/S3cur3Th1sSh1t/WinPwn) - Powershell based recon and exploitation script with automatic proxy recognition and integration.
 * [axiom](https://github.com/pry0cc/axiom) - The dynamic infrastructure framework for everybody! Distribute the workload of many different scanning tools with ease, including nmap, ffuf, masscan, nuclei, meg and many more!
+* [shennina](https://github.com/mazen160/shennina) - Automating Host Exploitation with AI
+  * [https://mazinahmed.net/blog/shennina-exploitation-framework/](https://mazinahmed.net/blog/shennina-exploitation-framework/)
 
 </details>
