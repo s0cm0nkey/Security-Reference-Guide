@@ -314,6 +314,8 @@ __
   * [Introduction - CrackMapExec \~ CME WIKI](https://mpgn.gitbook.io/crackmapexec/)
 * [Rubeus](https://github.com/GhostPack/Rubeus) - Rubeus is a C# toolset for raw Kerberos interaction and abuses.
   * [Rubeus-GUI](https://github.com/VbScrub/Rubeus-GUI) - GUI alternative to the Rubeus command line tool, for all your Kerberos exploit requirements
+* [orpheus](https://github.com/trustedsec/orpheus) - Bypassing Kerberoast Detections with Modified KDC Options and Encryption Types
+  * [https://www.trustedsec.com/blog/the-art-of-bypassing-kerberoast-detections-with-orpheus/](https://www.trustedsec.com/blog/the-art-of-bypassing-kerberoast-detections-with-orpheus/)
 * [ActiveReign](https://github.com/m8r0wn/ActiveReign) - ActiveReign, code name AR3, is a network enumeration and attack toolset designed for use on Windows Active Directory environments.
 * [LAPSToolkit](https://github.com/leoloobeek/LAPSToolkit) - Tool to audit and attack LAPS environments.
 * [Powermad](https://github.com/Kevin-Robertson/Powermad) - PowerShell MachineAccountQuota and DNS exploit tools
