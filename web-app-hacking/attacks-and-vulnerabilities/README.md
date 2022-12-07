@@ -354,6 +354,11 @@ Security misconfigurations include:\
 * [https://medium.com/server-side-template-injection/server-side-template-injection-faf88d0c7f34](https://medium.com/server-side-template-injection/server-side-template-injection-faf88d0c7f34)
 * [https://tryhackme.com/room/learnssti](https://tryhackme.com/room/learnssti)
 * _Template Injection - Bug Bounty Hunting Essentials, pg.189_
+*
+
+    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+__
 
 </details>
 

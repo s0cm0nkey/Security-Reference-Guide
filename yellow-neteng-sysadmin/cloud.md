@@ -26,6 +26,8 @@
 ### Multi-Cloud Tools
 
 * Enumeration and Auditing
+  * [cloudfox](https://github.com/BishopFox/cloudfox) - CloudFox helps you gain situational awareness in unfamiliar cloud environments. It’s an open source command line tool created to help penetration testers and other offensive security professionals find exploitable attack paths in cloud infrastructure.
+    * [https://bishopfox.com/blog/introducing-cloudfox](https://bishopfox.com/blog/introducing-cloudfox)
   * [cloud-enum](https://www.kali.org/tools/cloud-enum/) - enumerates public resources matching user requested keywords in public clouds
   * [ScoutSuite](https://github.com/nccgroup/ScoutSuite) - Scout Suite is an open source multi-cloud security-auditing tool, which enables security posture assessment of cloud environments. Using the APIs exposed by cloud providers, Scout Suite gathers configuration data for manual inspection and highlights risk areas. Rather than going through dozens of pages on the web consoles, Scout Suite presents a clear view of the attack surface automatically.
     * [https://www.youtube.com/watch?v=k8CQhvQAu7E](https://www.youtube.com/watch?v=k8CQhvQAu7E)

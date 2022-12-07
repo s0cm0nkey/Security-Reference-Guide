@@ -62,7 +62,16 @@
   * [https://metasploit.help.rapid7.com/docs/metasploitable-2-exploitability-guide](https://metasploit.help.rapid7.com/docs/metasploitable-2-exploitability-guide)&#x20;
 * [OWASP Serverless Goat](https://owasp.org/www-project-serverless-goat/)
 
+### Cloud
+
+* [iam-vulnerable](https://github.com/BishopFox/iam-vulnerable) - Use Terraform to create your own vulnerable by design AWS IAM privilege escalation playground.
+
 ### Active Directory
 
 * [PurpleCloud](https://github.com/iknowjason/PurpleCloud) - It deploys a small Active Directory domain in Azure IaaS, using Terraform + Ansible. Joins three Windows 10 endpoints to a domain and includes a Linux Adversary.
-* [GOAD](https://github.com/Orange-Cyberdefense/GOAD) - GOAD is a pentest active directory LAB project. The purpose of this lab is to give pentesters a vulnerable Active directory environement ready to use to practice usual attack techniques.
+* [GOAD](https://github.com/Orange-Cyberdefense/GOAD) - GOAD is a pentest active directory LAB project. The purpose of this lab is to give pentesters a vulnerable Active directory environment ready to use to practice usual attack techniques.
+
+### Containers
+
+* [badPods](https://github.com/BishopFox/badPods) - A collection of manifests that will create pods with elevated privileges.
+  * [https://bishopfox.com/blog/kubernetes-pod-privilege-escalation](https://bishopfox.com/blog/kubernetes-pod-privilege-escalation)

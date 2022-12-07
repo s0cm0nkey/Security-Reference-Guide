@@ -96,7 +96,8 @@
 * [multitor](https://github.com/trimstray/multitor) - Create multiple TOR instances with a load-balancing
 * [CrowdStrike/Tortilla](https://github.com/CrowdStrike/Tortilla) - Route all network through Tor.
   * [Hackersploit's guide to Tortilla](https://youtu.be/hcKpROGDXOM)
-* [https://iaca-darkweb-tools.com](https://iaca-darkweb-tools.com) - A collection of darkweb search tools. Allows you to query .onion search engines, marketplaces and social media sites.
+* [https://iaca-darkweb-tools.com](https://iaca-darkweb-tools.com) - A collection of darkweb search tools. Allows you to query .onion search engines, marketplaces and social media sites. -&#x20;
+* [https://torrouters.com/](https://torrouters.com/) - THOR is a hardware version of the Tor (The Onion Router) bundle, which provides you with anonymity and privacy you need to bypass any ISP restrictions and enhance your privacy online.
 
 ### Tor Bridges - alternative entry points for Tor that are not listed
 
