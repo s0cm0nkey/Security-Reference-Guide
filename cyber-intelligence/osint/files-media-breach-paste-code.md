@@ -201,6 +201,7 @@ You can manually parse these by user or subject but there are some handy tools t
 * [Gitrob](https://github.com/michenriksen/gitrob) - Gitrob is a tool to help find potentially sensitive files pushed to public repositories on Github.
 * [Git all secrets](https://github.com/anshumanbh/git-all-secrets) - Clone different gits and automatically scan them for secrets.
 * [Truffle Hog](https://github.com/dxa4481/truffleHog) - Searches through git repositories for secrets, digging deep into commit history and branches. This is effective at finding secrets accidentally committed.
+  * [trufflehog3](https://github.com/feeltheajf/trufflehog3) - This is an enhanced version of the [truffleHog](https://github.com/dxa4481/truffleHog) scanner
 * [gitleaks](https://www.kali.org/tools/gitleaks/) - This package contains a SAST tool for detecting hardcoded secrets like passwords, API keys, and tokens in git repos. Gitleaks aims to be the easy-to-use, all-in-one solution for finding secrets, past or present, in your code.
 * [GitDorker](https://github.com/obheda12/GitDorker) - A Python program to scrape secrets from GitHub through usage of a large repository of dorks.
   * [https://youtu.be/UwzB5a5GrZk](https://youtu.be/UwzB5a5GrZk)
