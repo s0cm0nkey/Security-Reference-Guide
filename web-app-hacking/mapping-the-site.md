@@ -57,6 +57,7 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [https://dehashed.com/](https://dehashed.com/) - Scan domain for indicators found in breaches
 * [https://github.com/hakluke/hakcertstream](https://github.com/hakluke/hakcertstream) - Use CertStream to get lists of new domains and subdomains registered with a certificate authority.
 * [https://github.com/ayoubfathi/leaky-paths](https://github.com/ayoubfathi/leaky-paths) - A collection of special paths linked to major web CVEs, known misconfigurations, juicy APIs ..etc. It could be used as a part of web content discovery, to scan passively for high-quality endpoints and quick-wins
+* [https://github.com/edoardottt/csprecon](https://github.com/edoardottt/csprecon) - Discover new target domains using Content Security Policy
 {% endtab %}
 {% endtabs %}
 
