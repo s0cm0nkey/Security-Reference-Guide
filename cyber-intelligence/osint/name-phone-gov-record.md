@@ -64,6 +64,8 @@ Name search records can get muddy really quickly when dealing with names like "J
 
 </details>
 
+* [https://www.aware-online.com/en/how-can-i-find-a-google-account-by-phone-number/](https://www.aware-online.com/en/how-can-i-find-a-google-account-by-phone-number/)
+
 {% file src="../../.gitbook/assets/Telephone.html" %}
 
 ## Government and Business Records
