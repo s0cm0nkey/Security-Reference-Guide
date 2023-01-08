@@ -4,8 +4,13 @@
 
 I'm the s0cm0nkey. I am a security analyst, threat hunter, pentester, researcher, and CTF enthusiast. By day, I run a SOC team and teach cyber security. By night, I play CTFs, hack things, and eat a professional volume of tacos. Ping me any time. I love to talk about all things security.&#x20;
 
-s0cm0nkey@protonmail.com\
-@s0cm0nkeysec
+[https://s0cm0nkey.github.io/](https://s0cm0nkey.github.io/)
+
+s0cm0nkey@protonmail.com
+
+@s0cm0nkeysec&#x20;
+
+@s0cm0nkey@infosec.exchange
 
 ### What is this?
 
@@ -28,41 +33,3 @@ Warning: Do not use any of the mentioned tools referenced here for illegal, unet
 **Other Publications:**
 
 \*\*\*\*[https://www.deepwatch.com/blog/logging-strategy/](https://www.deepwatch.com/blog/logging-strategy/)
-
-## Index
-
-{% content-ref url="cyber-intelligence/" %}
-[cyber-intelligence](cyber-intelligence/)
-{% endcontent-ref %}
-
-{% content-ref url="red-offensive/" %}
-[red-offensive](red-offensive/)
-{% endcontent-ref %}
-
-{% content-ref url="web-app-hacking/" %}
-[web-app-hacking](web-app-hacking/)
-{% endcontent-ref %}
-
-{% content-ref url="blue-defense/" %}
-[blue-defense](blue-defense/)
-{% endcontent-ref %}
-
-{% content-ref url="blue-defense/dfir-digital-forensics-and-incident-response/" %}
-[dfir-digital-forensics-and-incident-response](blue-defense/dfir-digital-forensics-and-incident-response/)
-{% endcontent-ref %}
-
-{% content-ref url="yellow-neteng-sysadmin.md" %}
-[yellow-neteng-sysadmin.md](yellow-neteng-sysadmin.md)
-{% endcontent-ref %}
-
-{% content-ref url="code-tools/" %}
-[code-tools](code-tools/)
-{% endcontent-ref %}
-
-{% content-ref url="grey-privacy-tor-opsec/" %}
-[grey-privacy-tor-opsec](grey-privacy-tor-opsec/)
-{% endcontent-ref %}
-
-{% content-ref url="training/" %}
-[training](training/)
-{% endcontent-ref %}
