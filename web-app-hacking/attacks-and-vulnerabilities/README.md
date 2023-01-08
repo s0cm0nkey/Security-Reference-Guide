@@ -84,6 +84,7 @@ __
 * [CORScanner](https://github.com/chenjj/CORScanner) - Fast CORS misconfiguration vulnerabilities scanner🍻
 * [CORStest](https://github.com/RUB-NDS/CORStest) - A simple CORS misconfiguration scanner
 * [CorsMe](https://github.com/Shivangx01b/CorsMe) - Cross Origin Resource Sharing MisConfiguration Scanner
+* [of-CORS](https://github.com/trufflesecurity/of-CORS) - [Truffle Security's](https://trufflesecurity.com/) tool suite for identifying and exploiting CORS misconfigurations on the internal networks of bug bounty targets using typosquatting.
 * [https://owasp.org/www-community/attacks/CORS\_RequestPreflightScrutiny](https://owasp.org/www-community/attacks/CORS\_RequestPreflightScrutiny)
 * [https://owasp.org/www-community/attacks/CORS\_OriginHeaderScrutiny](https://owasp.org/www-community/attacks/CORS\_OriginHeaderScrutiny)
 * [https://pentestbook.six2dez.com/enumeration/web/cors](https://pentestbook.six2dez.com/enumeration/web/cors)
