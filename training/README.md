@@ -1,15 +1,9 @@
 # Training and Resources
 
-## ****
-
-## ****
-
-## ****
-
-## ****
-
 ## **Beginner Training**
 
+* [https://github.com/jassics/security-study-plan](https://github.com/jassics/security-study-plan) - Complete Practical Study Plan to become a successful cybersecurity engineer based on roles like Pentest, AppSec, Cloud Security, DevSecOps and so on...
+  * For complete newbies, start here.
 * [SANS New to Cyber Field Manual](https://assets.contentstack.io/v3/assets/blt36c2e63521272fdc/bltf17c3bc431e8fef1/6193f768d193b36297ef8540/N2C\_Field\_Manual\_Update.pdf) - The Ultimate Guide to Getting into Cyber
 * [https://www.cyberaces.org/courses.html](https://www.cyberaces.org/courses.html) - Free SANS intro to security course.
 * [EC Council Essential's Series](https://codered.eccouncil.org/essentials-series-bundle/) - The Essential Series includes three courses, each covering essential skills in [Network Defense](https://codered.eccouncil.org/essentials-series-bundle/#network-defense-essentials), [Ethical Hacking](https://codered.eccouncil.org/essentials-series-bundle/#ethical-hacking-essentials), and [Digital Forensics](https://codered.eccouncil.org/essentials-series-bundle/#digital-forensics-essentials). This introductory course series is designed for today's entry-level careers in information security, network defense, and digital forensics and is ideal for learners aspiring to pursue a career in cybersecurity.
@@ -171,6 +165,7 @@ These sections have guides on how to practice your offensive an defensive skills
 * [https://www.isc2.org/Development/Express-Learning-Courses/Web-Application-Penetration-Testing](https://www.isc2.org/Development/Express-Learning-Courses/Web-Application-Penetration-Testing)
 * [https://www.hacksec.in/](https://www.hacksec.in/)
 * [crAPI](https://github.com/OWASP/crAPI) - **c**ompletely **r**idiculous **API** (crAPI) will help you to understand the ten most critical API security risks. crAPI is vulnerable by design, but you'll be able to safely run it to educate/train yourself.
+* [https://github.com/jassics/security-study-plan/blob/main/web-pentest-study-plan.md](https://github.com/jassics/security-study-plan/blob/main/web-pentest-study-plan.md)
 
 ## Books and Reading
 

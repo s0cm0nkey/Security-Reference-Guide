@@ -92,12 +92,12 @@ Note: Many Recon Frameworks have both passive and active reconnaissance capabili
 [password-attacks.md](password-attacks.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../yellow-neteng-sysadmin/cloud.md" %}
-[cloud.md](../../yellow-neteng-sysadmin/cloud.md)
+{% content-ref url="../../cloud.md" %}
+[cloud.md](../../cloud.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../yellow-neteng-sysadmin/containers.md" %}
-[containers.md](../../yellow-neteng-sysadmin/containers.md)
+{% content-ref url="../../containers.md" %}
+[containers.md](../../containers.md)
 {% endcontent-ref %}
 
 {% content-ref url="special-targets.md" %}

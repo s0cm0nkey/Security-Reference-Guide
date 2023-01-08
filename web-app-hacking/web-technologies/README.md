@@ -47,6 +47,8 @@
 * [https://github.com/metlo-labs/metlo](https://github.com/metlo-labs/metlo) - Metlo is an open-source API security platform
 * _Hacking: The next generation - Application Protocol Handlers, pg. 96_
 
+_For training on APIs and API hacking, please see_ [_https://github.com/jassics/security-study-plan/blob/main/api-security-study-plan.md_](https://github.com/jassics/security-study-plan/blob/main/api-security-study-plan.md)__
+
 </details>
 
 <details>

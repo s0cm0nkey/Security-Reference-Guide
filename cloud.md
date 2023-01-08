@@ -1,4 +1,4 @@
-# Cloud
+# Yellow - Cloud
 
 ## **General Cloud**
 
@@ -43,7 +43,7 @@
     * [Cougar](https://github.com/pumasecurity/serverless-prey/blob/main/cougar): Azure Function written in C#
     * [Cheetah](https://github.com/pumasecurity/serverless-prey/blob/main/cheetah): Google Cloud Function written in Go
 
-![](../.gitbook/assets/canvas.png)
+![](.gitbook/assets/canvas.png)
 
 ### General Cloud Training Resources
 
@@ -224,6 +224,8 @@
 
 ### Basics&#x20;
 
+* Learn AWS
+  * [https://github.com/jassics/security-study-plan/blob/main/aws-security-study-plan.md](https://github.com/jassics/security-study-plan/blob/main/aws-security-study-plan.md)
 * Reference Docs
   * [https://docs.aws.amazon.com/](https://docs.aws.amazon.com/)
   * [https://github.com/awsdocs](https://github.com/awsdocs)

@@ -51,8 +51,8 @@ Warning: Do not use any of the mentioned tools referenced here for illegal, unet
 [dfir-digital-forensics-and-incident-response](blue-defense/dfir-digital-forensics-and-incident-response/)
 {% endcontent-ref %}
 
-{% content-ref url="yellow-neteng-sysadmin/" %}
-[yellow-neteng-sysadmin](yellow-neteng-sysadmin/)
+{% content-ref url="yellow-neteng-sysadmin.md" %}
+[yellow-neteng-sysadmin.md](yellow-neteng-sysadmin.md)
 {% endcontent-ref %}
 
 {% content-ref url="code-tools/" %}

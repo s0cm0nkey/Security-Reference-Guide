@@ -24,8 +24,8 @@ For parsing through logs and organizing them into an easy format, there is a won
 
 For Netflow logs and Packet Capture, please see the following:
 
-{% content-ref url="../../yellow-neteng-sysadmin/security-logging/logging-guide-network-services.md" %}
-[logging-guide-network-services.md](../../yellow-neteng-sysadmin/security-logging/logging-guide-network-services.md)
+{% content-ref url="../../security-logging/logging-guide-network-services.md" %}
+[logging-guide-network-services.md](../../security-logging/logging-guide-network-services.md)
 {% endcontent-ref %}
 
 {% content-ref url="../packet-analysis.md" %}

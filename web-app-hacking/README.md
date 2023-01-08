@@ -18,6 +18,7 @@
 * [https://github.com/KathanP19/HowToHunt/blob/master/CheckList/Web\_Checklist\_by\_Chintan\_Gurjar.pdf](https://github.com/KathanP19/HowToHunt/blob/master/CheckList/Web\_Checklist\_by\_Chintan\_Gurjar.pdf)
 * [https://github.com/KathanP19/HowToHunt/blob/master/CheckList/mindmap.png](https://github.com/KathanP19/HowToHunt/blob/master/CheckList/mindmap.png)
 * [https://github.com/KathanP19/HowToHunt/blob/master/CheckList/Web\_Penetration\_Testing\_Methodology%402x.png](https://github.com/KathanP19/HowToHunt/blob/master/CheckList/Web\_Penetration\_Testing\_Methodology%402x.png)
+* [https://github.com/jassics/security-study-plan/blob/main/web-pentest-study-plan.md](https://github.com/jassics/security-study-plan/blob/main/web-pentest-study-plan.md)
 {% endtab %}
 
 {% tab title="Resources" %}
