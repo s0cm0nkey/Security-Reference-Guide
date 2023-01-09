@@ -15,6 +15,7 @@ The best way to understand what device hardening and how to do it, is to follow 
 * [debsums](https://manpages.ubuntu.com/manpages/trusty/man1/debsums.1.html) - Utility for checking installed debian packages and comparing that hashes against a list of known good ones. Handy to run every once&#x20;
 * [PSPKIAudit](https://github.com/GhostPack/PSPKIAudit) - PowerShell toolkit for auditing Active Directory Certificate Services (AD CS).
 * [WDACTools](https://github.com/mattifestation/WDACTools) - A PowerShell module to facilitate building, configuring, deploying, and auditing Windows Defender Application Control (WDAC) policies
+* [CSET](https://www.cisa.gov/stopransomware/cyber-security-evaluation-tool-csetr) - The Cyber Security Evaluation Tool (CSET®) is a stand-alone desktop application that guides asset owners and operators through a systematic process of evaluating Operational Technology and Information Technology.
 
 ## Hardening Tools
 

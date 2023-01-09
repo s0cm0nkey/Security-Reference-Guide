@@ -19,6 +19,7 @@ With over a dozen tactics and hundreds of techniques, MITRE Attack has become th
 * [https://github.com/center-for-threat-informed-defense/attack-flow](https://github.com/center-for-threat-informed-defense/attack-flow) - ATT\&CK Flow helps executives, SOC managers, and defenders easily understand how attackers compose ATT\&CK techniques into attacks by developing a representation of attack flows, modeling attack flows for a small corpus of incidents, and creating visualization tools to display attack flows.
   * [https://ctid.mitre-engenuity.org/our-work/attack-flow](https://ctid.mitre-engenuity.org/our-work/attack-flow)
   * [https://github.com/vz-risk/flow](https://github.com/vz-risk/flow) - Tools related to work with Attack Flow
+* [https://github.com/xakepnz/enterpriseattack](https://github.com/xakepnz/enterpriseattack) - A lightweight Python module to interact with the Mitre Att\&ck Enterprise dataset.
 * [https://www.socinvestigation.com/mapping-mitre-attck-with-window-event-log-ids/](https://www.socinvestigation.com/mapping-mitre-attck-with-window-event-log-ids/)
 * [https://www.jaiminton.com/mitreatt\&ck](https://www.jaiminton.com/mitreatt\&ck)
 * [https://tryhackme.com/room/mitre](https://tryhackme.com/room/mitre)

@@ -118,6 +118,22 @@
 
 <details>
 
+<summary>ARM Exploitation</summary>
+
+* [https://ad2001.gitbook.io/a-noobs-guide-to-arm-exploitation/](https://ad2001.gitbook.io/a-noobs-guide-to-arm-exploitation/)
+
+</details>
+
+<details>
+
+<summary>Drone Hacking</summary>
+
+* [https://github.com/HKSSY/Drone-Hacking-Tool](https://github.com/HKSSY/Drone-Hacking-Tool)
+
+</details>
+
+<details>
+
 <summary>Misc Tools</summary>
 
 * [Karkinos -](https://hakin9.org/karkinos-penetration-testing-and-hacking-ctfs-swiss-army-knife/) Karkinos is a light-weight 'Swiss Army Knife' for penetration testing and/or hacking CTF's. Currently, Karkinos offers the following:

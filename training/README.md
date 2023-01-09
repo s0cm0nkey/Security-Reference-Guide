@@ -37,6 +37,7 @@
 ## **Role and Career Resources**
 
 * [Infosec Color Wheel ](https://hackernoon.com/introducing-the-infosec-colour-wheel-blending-developers-with-red-and-blue-security-teams-6437c1a07700)- Making sense of the different groups and roles within Cyber
+* [https://shehackspurple.ca/2022/01/01/jobs-in-information-security-infosec/](https://shehackspurple.ca/2022/01/01/jobs-in-information-security-infosec/)
 * [https://www.cyberseek.org/heatmap.html](https://www.cyberseek.org/heatmap.html)
 * [Cyber career pathway guide](https://www.cyberseek.org/pathway.html)
 * [Cyber Job Hunting Guide](https://www.cyberhuntingguide.net/)

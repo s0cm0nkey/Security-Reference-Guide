@@ -1,4 +1,4 @@
-# Containers
+# Yellow - Containers
 
 ## Container Management
 
@@ -87,7 +87,7 @@ Container logging and analysis revolves around 3 areas:
 * Misc
   * [Whaler](https://github.com/P3GLEG/Whaler) - Program to reverse Docker images into Docker files
 
-{% file src="../.gitbook/assets/Docker-Security-Cheatsheet_hp8lh3.pdf" %}
+{% file src=".gitbook/assets/Docker-Security-Cheatsheet_hp8lh3.pdf" %}
 
 {% embed url="https://youtu.be/KINjI1tlo2w" %}
 
@@ -111,6 +111,8 @@ Container logging and analysis revolves around 3 areas:
   * [kubesec](https://github.com/controlplaneio/kubesec) - Security risk analysis for Kubernetes resources
   * [netassert](https://github.com/controlplaneio/netassert) - This is a security testing framework for fast, safe iteration on firewall, routing, and NACL rules for Kubernetes ([Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/), services) and non-containerised hosts (cloud provider instances, VMs, bare metal).
   * [KubiScan](https://github.com/cyberark/KubiScan) - A tool to scan Kubernetes cluster for risky permissions
+  * [rbac-police](https://github.com/PaloAltoNetworks/rbac-police) - Evaluate the RBAC permissions of Kubernetes identities through policies written in Rego
+    * [https://www.paloaltonetworks.com/resources/whitepapers/kubernetes-privilege-escalation-excessive-permissions-in-popular-platforms](https://www.paloaltonetworks.com/resources/whitepapers/kubernetes-privilege-escalation-excessive-permissions-in-popular-platforms)
 
 ### Resources
 

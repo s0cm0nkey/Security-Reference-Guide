@@ -12,7 +12,9 @@
 * [scund00r/red-team-and-physical-entry-gear](https://scund00r.com/all/gear/2019/06/25/red-team-and-physical-entry-gear.html)
 * [https://www.blackhillsinfosec.com/pentesting-dropbox-on-steroids/](https://www.blackhillsinfosec.com/pentesting-dropbox-on-steroids/)
 * [EDEC](https://edecdf.com/collections/mobile) [Samy Kamkar: PoisonTap - exploiting locked computers over USB](https://samy.pl/poisontap/)&#x20;
-* [pcileech: Direct Memory Access (DMA) Attack Software](https://github.com/ufrisk/pcileech)&#x20;
+* [pcileech: Direct Memory Access (DMA) Attack Software](https://github.com/ufrisk/pcileech)
+* Bashbunny/USBRubberducky
+  * [https://github.com/I-Am-Jakoby/PowerShell-for-Hackers](https://github.com/I-Am-Jakoby/PowerShell-for-Hackers)
 * _Advanced Penetration Testing: The Creeper Box - pg. 155_
 
 ## Keys
