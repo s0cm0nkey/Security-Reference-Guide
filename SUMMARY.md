@@ -155,3 +155,4 @@
   * [The Awesome Lists](training/the-awesome-lists.md)
   * [Practice Lab](training/practice-lab.md)
   * [CTF](training/ctf-practice.md)
+* [Yellow - AI and Machine Learning](yellow-ai-and-machine-learning.md)
