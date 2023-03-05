@@ -20,6 +20,7 @@ DFIR: Digital Forensics and Incident Response is a hugely important important se
 * [ATC React](https://atc-project.github.io/atc-react/) - The RE\&CT Framework is designed for accumulating, describing and categorizing actionable Incident Response techniques. It can be used for prioritization of Incident Response capabilities development, including skills development, technical measures acquisition/deployment, internal procedures development, etc, as well as gap analysis to determine "coverage" of existing Incident Response capabilities.
   * [https://github.com/atc-project/atc-react](https://github.com/atc-project/atc-react)
   * [https://github.com/atc-project/atc-data](https://github.com/atc-project/atc-data)
+* [https://github.com/certsocietegenerale/IRM](https://github.com/certsocietegenerale/IRM) - CERT Societe Generale Incident Response Methodologies 2022
 * [SANS Incident Handlers Handbook](https://www.sans.org/reading-room/whitepapers/incident/incident-handlers-handbook-33901)
 * [Exabeam Incident Response Guide](https://www.exabeam.com/incident-response/steps/)
 * [NIST 61 R2 - ](./#tools-and-frameworks)[Computer Security Incident Handling Guide](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final)
@@ -395,6 +396,7 @@ In incident response, phishing, or security monitoring scenarios, you will encou
 * [mal\_unpack](https://github.com/hasherezade/mal\_unpack) - Dynamic unpacker based on PE-sieve
   * [https://www.youtube.com/watch?v=8LZ6ksoytpU](https://www.youtube.com/watch?v=8LZ6ksoytpU)
 * [CobaltStrikeParser](https://github.com/Sentinel-One/CobaltStrikeParser) - Python parser for CobaltStrike Beacon's configuration
+* [ThreatCheck](https://github.com/rasta-mouse/ThreatCheck) - Identifies the bytes that Microsoft Defender / AMSI Consumer flags on.
 
 </details>
 

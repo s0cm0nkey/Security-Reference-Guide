@@ -50,6 +50,7 @@
 
 * Collection of Microsoft vulnerabilities and exploits that they refuse to patch. [https://github.com/cfalta/MicrosoftWontFixList](https://github.com/cfalta/MicrosoftWontFixList)
 * [https://www.wietzebeukema.nl/blog/windows-command-line-obfuscation](https://www.wietzebeukema.nl/blog/windows-command-line-obfuscation)
+* [https://github.com/optiv/Freeze](https://github.com/optiv/Freeze) - Freeze is a payload toolkit for bypassing EDRs using suspended processes, direct syscalls, and alternative execution methods
 
 {% tabs %}
 {% tab title="Veil Framework" %}

@@ -31,6 +31,8 @@ As always, read the documentation. There are tons of helpful hints and suggestio
 
 Every one that takes the exam writes up a blog post about it. Read them all. Learn from their successes and their failures.
 
+* [https://johnjhacking.com/blog/oscp-reborn-2023/](https://johnjhacking.com/blog/oscp-reborn-2023/)
+* [https://sgtdede.gitbook.io/hacking/oscp-2022/guide-en](https://sgtdede.gitbook.io/hacking/oscp-2022/guide-en)
 * [https://www.netsecfocus.com/oscp/2021/05/06/The\_Journey\_to\_Try\_Harder-\_TJnull-s\_Preparation\_Guide\_for\_PEN-200\_PWK\_OSCP\_2.0.html](https://www.netsecfocus.com/oscp/2021/05/06/The\_Journey\_to\_Try\_Harder-\_TJnull-s\_Preparation\_Guide\_for\_PEN-200\_PWK\_OSCP\_2.0.html)
 * [https://hxrrvs.gitbook.io/oscp/](https://hxrrvs.gitbook.io/oscp/)
 * [https://ninjasec.medium.com/efficiently-utilizing-autorecon-for-oscp-and-beyond-74c93a273a36](https://ninjasec.medium.com/efficiently-utilizing-autorecon-for-oscp-and-beyond-74c93a273a36)

@@ -10,10 +10,13 @@
 * [https://awakened1712.github.io/oscp/oscp-transfer-files/](https://awakened1712.github.io/oscp/oscp-transfer-files/)
 * [https://blog.ropnop.com/transferring-files-from-kali-to-windows/](https://blog.ropnop.com/transferring-files-from-kali-to-windows/)
 * [https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/bitsadmin-examples](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/bitsadmin-examples)
-* [DNSFTP](https://github.com/breenmachine/dnsftp) - Get file with DNS requests&#x20;
 * [https://linuxhandbook.com/transfer-files-ssh/](https://linuxhandbook.com/transfer-files-ssh/)
 * [https://xapax.github.io/security/#transferring\_files/transfering\_files/](https://xapax.github.io/security/#transferring\_files/transfering\_files/)
 * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/good\_to\_know/transferring\_files/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/good\_to\_know/transferring\_files/)
+* Transfer and Exfil tools
+  * [DNSFTP](https://github.com/breenmachine/dnsftp) - Get file with DNS requests&#x20;
+  * [https://github.com/Arno0x/DNSExfiltrator](https://github.com/Arno0x/DNSExfiltrator) - Data exfiltration over DNS request covert channel
+  * [SharpExfiltrate](https://github.com/Flangvik/SharpExfiltrate) - Modular C# framework to exfiltrate loot over secure and trusted channels.
 
 </details>
 

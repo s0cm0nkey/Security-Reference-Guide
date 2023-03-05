@@ -25,6 +25,7 @@
 * [SprayWMI](https://github.com/trustedsec/spraywmi) - SprayWMI is a method for mass spraying [Unicorn](https://github.com/trustedsec/unicorn) PowerShell injection to CIDR notations.
 * [LOLBAS](https://lolbas-project.github.io/) - Living Off The Land Binaries and Scripts (and also Libraries)
 * [MalSCCM](https://github.com/nettitude/MalSCCM) - This tool allows you to abuse local or remote SCCM servers to deploy malicious applications to hosts they manage.
+* [SCShell](https://github.com/Mr-Un1k0d3r/SCShell) - Fileless lateral movement tool that relies on ChangeServiceConfigA to run command
 
 </details>
 

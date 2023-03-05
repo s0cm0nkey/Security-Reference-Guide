@@ -57,7 +57,8 @@ Yara Rule Testing Tools
   * [https://yaraify.abuse.ch/yarahub/yaraify-rules.zip](https://yaraify.abuse.ch/yarahub/yaraify-rules.zip)
   * [https://www.nextron-systems.com/valhalla/](https://www.nextron-systems.com/valhalla/) - Huge YARA rule Repo
   * [https://github.com/deepfence/yara-rules](https://github.com/deepfence/yara-rules)
+  * [https://github.com/shellcromancer/DaysOfYARA-2023](https://github.com/shellcromancer/DaysOfYARA-2023)
 * _Operator Handbook: YARA - pg. 428_
 
-![](<../../.gitbook/assets/image (16).png>)
+![](<../.gitbook/assets/image (16).png>)
 

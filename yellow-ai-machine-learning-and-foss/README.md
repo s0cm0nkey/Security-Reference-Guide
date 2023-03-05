@@ -2,7 +2,7 @@
 
 ## AI Tools
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### AI Tool Collections
 
@@ -10,6 +10,14 @@
 * [https://www.futurepedia.io/](https://www.futurepedia.io/)
 * [https://www.aishrine.com/](https://www.aishrine.com/)
 * [https://theresanaiforthat.com/](https://theresanaiforthat.com/)
+
+### Interesting AI Articles
+
+* [https://www.computerweekly.com/news/252529081/Should-we-be-worried-about-malicious-use-of-AI-language-models](https://www.computerweekly.com/news/252529081/Should-we-be-worried-about-malicious-use-of-AI-language-models)
+
+### Prompt Crafting
+
+* [https://prmpts.carrd.co/](https://prmpts.carrd.co/) &#x20;
 
 ## FOSS - Free and Open Source Software
 

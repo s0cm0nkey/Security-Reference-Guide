@@ -30,6 +30,7 @@ Software for Adversary Simulations and Red Team Operations
 * [ElevateKit](https://github.com/rsmudge/ElevateKit) - Use 3rd party privilege escalation techniques with Cobalt Strike's beacon payload
 * [StayKit](https://github.com/0xthirteen/StayKit) - StayKit is an extension for Cobalt Strike persistence by leveraging the execute\_assembly function with the SharpStay .NET assembly.
 * [MoveKit](https://github.com/0xthirteen/MoveKit) - Movekit is an extension of built in Cobalt Strike lateral movement by leveraging the execute\_assembly function with the SharpMove and SharpRDP .NET assemblies.
+* [spawn](https://github.com/boku7/spawn) - Cobalt Strike BOF that spawns a sacrificial process, injects it with shellcode, and executes payload. Built to evade EDR/UserLand hooks by spawning sacrificial process with Arbitrary Code Guard (ACG), BlockDll, and PPID spoofing.
 * [CobaltStrike-Cheatsheet](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Cobalt%20Strike%20-%20Cheatsheet.md)
 * [https://www.ired.team/offensive-security/red-team-infrastructure/cobalt-strike-101-installation-and-interesting-commands](https://www.ired.team/offensive-security/red-team-infrastructure/cobalt-strike-101-installation-and-interesting-commands)
 * _Operator Handbook: Cobalt Strike - pg. 52_

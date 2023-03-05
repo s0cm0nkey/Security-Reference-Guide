@@ -84,6 +84,7 @@
   * [https://www.youtube.com/watch?v=Ig-HS6kxz4Q](https://www.youtube.com/watch?v=Ig-HS6kxz4Q)
 * [PyShell](https://github.com/JoelGMSec/PyShell) - Multiplatform Python WebShell. This tool helps you to obtain a shell-like interface on a web server to be remotely accessed. Unlike other webshells, the main goal of the tool is to use as little code as possible on the server side, regardless of the language used or the operating system of the server.
   * [https://www.kitploit.com/2022/03/pyshell-multiplatform-python-webshell.html?m=1](https://www.kitploit.com/2022/03/pyshell-multiplatform-python-webshell.html?m=1)
+* [SharPyShell](https://github.com/antonioCoco/SharPyShell) - tiny and obfuscated ASP.NET webshell for C# web applications
 
 </details>
 

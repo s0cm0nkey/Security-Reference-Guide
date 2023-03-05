@@ -141,6 +141,7 @@
   * Encrypting/Decrypting text or files
   * Reverse shell handling
   * Cracking and generating hashes
+* [https://sygnialabs.github.io/DROPS/](https://sygnialabs.github.io/DROPS/) - Dynamic Pentesting Cheatsheet.
 * [Interlace](https://github.com/codingo/Interlace) - Easily turn single threaded command line applications into a fast, multi-threaded application with CIDR and glob support.
   * [https://hakluke.medium.com/interlace-a-productivity-tool-for-pentesters-and-bug-hunters-automate-and-multithread-your-d18c81371d3d](https://hakluke.medium.com/interlace-a-productivity-tool-for-pentesters-and-bug-hunters-automate-and-multithread-your-d18c81371d3d)
 * [pyWhat](https://github.com/bee-san/pyWhat) - Command line to to identify...well anything.

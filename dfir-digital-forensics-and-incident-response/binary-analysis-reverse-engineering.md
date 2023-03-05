@@ -54,6 +54,7 @@ Binary analysis and Reverse Engineering is taking our malware/file analysis to t
 
 * [IDA ](https://hex-rays.com/IDA-pro/)- IDA Pro as a disassembler is capable of creating maps of their execution to show the binary instructions that are actually executed by the processor in a symbolic representation (assembly language).
   * [ Awesome Lists Collection: IDA](https://github.com/xrkk/awesome-ida/blob/master/Readme\_en.md)
+  * [Gepetto](https://github.com/JusticeRage/Gepetto) - IDA plugin which queries OpenAI's gpt-3.5-turbo language model to speed up reverse-engineering
 * [bincat](https://github.com/airbus-seclab/bincat) - Binary code static analyser, with IDA integration. Performs value and taint analysis, type reconstruction, use-after-free and double-free detection
 * [Rizin](https://github.com/rizinorg/rizin) - Rizin is a fork of the radare2 reverse engineering framework with a focus on usability, working features and code cleanliness.
 * [Frida](https://frida.re/) - Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers. Can be used offesively for injecting code into running processes.
