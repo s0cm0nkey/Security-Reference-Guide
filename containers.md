@@ -107,6 +107,7 @@ Container logging and analysis revolves around 3 areas:
   * [Hubble](https://github.com/cilium/hubble) is a Network, Service & Security Observability for Kubernetes using eBPF.
 * Offensive tools
   * [peirates](https://www.kali.org/tools/peirates/)  - a Kubernetes penetration tool, enables an attacker to escalate privilege and pivot through a Kubernetes cluster. It automates known techniques to steal and collect service accounts, obtain further code execution, and gain control of the cluster.
+  * [Kubestroyer](https://github.com/Rolix44/Kubestroyer) - Kubestroyer aims to exploit Kubernetes clusters misconfigurations and be the swiss army knife of your Kubernetes pentests
 * Security auditing
   * [kubesec](https://github.com/controlplaneio/kubesec) - Security risk analysis for Kubernetes resources
   * [netassert](https://github.com/controlplaneio/netassert) - This is a security testing framework for fast, safe iteration on firewall, routing, and NACL rules for Kubernetes ([Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/), services) and non-containerised hosts (cloud provider instances, VMs, bare metal).

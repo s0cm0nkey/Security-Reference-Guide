@@ -35,6 +35,7 @@
 * [RedTeam\_toolkit](https://github.com/signorrayan/RedTeam\_toolkit) - an Open-Source Django Offensive Web-App containing useful offensive tools used in the red-teamming together for the security specialist to identify vulnerabilities.
   * [https://reconshell.com/redteam-toolkit/](https://reconshell.com/redteam-toolkit/)
 * [https://houdini.secsi.io/](https://houdini.secsi.io/) - **HOUDINI** (Hundreds of Offensive and Useful Docker Images for Network Intrusion) is a curated list of **Network Security** related Docker Images for Network Intrusion purposes.
+* [TangledWinExec](https://github.com/daem0nc0re/TangledWinExec) - PoCs and tools for investigation of Windows process execution techniques
 
 </details>
 
@@ -77,6 +78,7 @@
 * [threatbox](https://github.com/threatexpress/threatbox) - Offensive distribution loaded with Ansible scripts for offensive automation.Utility techniques are ones you might not use every engagement, but are still super important to have. Sometimes these supplementary techniques will be the only way you can exploit your target.
 * [https://offensive-terraform.github.io](https://offensive-terraform.github.io/) - Automated multi step offensive attack modules with Infrastructure as Code(IaC)
   * [https://www.ired.team/offensive-security/red-team-infrastructure/automating-red-team-infrastructure-with-terraform](https://www.ired.team/offensive-security/red-team-infrastructure/automating-red-team-infrastructure-with-terraform)
+* [https://trickest.com/](https://trickest.com/) - Workflow powered automation platform for security testing.
 * [expect](https://www.kali.org/tools/expect/) - Expect is a tool for automating interactive applications according to a script. Following the script, Expect knows what can be expected from a program and what the correct response should be.
 * [ warhorse](https://github.com/warhorse/warhorse) - Warhorse consists of a fully-featured Ansible playbook to deploy infrastructure in the cloud for conducting security assessments. The Playbook combines Terraform & Ansible to deploy and configure virtual machines for a wide range of use cases. This Playbook is highly customizable and includes operational security. No experience with Ansible or Terraform is required to use this Playbook.
   * [https://docs.war-horse.io/](https://docs.war-horse.io/)

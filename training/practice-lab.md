@@ -39,6 +39,7 @@
 
 * [Awesome Lists Collection: Vulnerable](https://github.com/kaiiyer/awesome-vulnerable)
 * [Vulnerable By Design \~ VulnHub](https://www.vulnhub.com/) - Full VMs that you can download and pwn on your own local machine.
+* [https://github.com/Samsar4/Ethical-Hacking-Labs](https://github.com/Samsar4/Ethical-Hacking-Labs)
 
 ### Web Apps&#x20;
 

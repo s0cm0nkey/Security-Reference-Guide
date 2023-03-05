@@ -32,6 +32,7 @@ DeTTECT Resources
 * [https://www.mbsecure.nl/blog/2019/5/dettact-mapping-your-blue-team-to-mitre-attack](https://www.mbsecure.nl/blog/2019/5/dettact-mapping-your-blue-team-to-mitre-attack)
 * [https://www.siriussecurity.nl/blog/2019/5/8/mapping-your-blue-team-to-mitre-attack](https://www.siriussecurity.nl/blog/2019/5/8/mapping-your-blue-team-to-mitre-attack)
 * [https://github.com/siriussecurity/dettectinator](https://github.com/siriussecurity/dettectinator) - The Python library to your DeTT\&CT YAML files.
+  * [https://blog.nviso.eu/2023/01/04/dettct-automate-your-detection-coverage-with-dettectinator/](https://blog.nviso.eu/2023/01/04/dettct-automate-your-detection-coverage-with-dettectinator/)
 
 ## ATTACKDataMap
 

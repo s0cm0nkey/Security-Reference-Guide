@@ -139,6 +139,7 @@ These sections have guides on how to practice your offensive an defensive skills
 * [https://securitytrainings.net/security-trainings/](https://securitytrainings.net/security-trainings/)
 * [Hackersploit's Malware Analaysis Bootcamp](https://hackersploit.org/malware-analysis-tutorials/)
 * [Digital Forensics Beginner to Expert - Google class by Shannon Brazil](https://classroom.google.com/c/NDQ0MTUzMjU5NzE0)
+* [https://training.xintra.org/](https://training.xintra.org/)
 
 ## Red Team Training
 

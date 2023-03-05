@@ -70,8 +70,8 @@ For those wanting to build up their certifications and progress in your career, 
 [device-hardening](device-hardening/)
 {% endcontent-ref %}
 
-{% content-ref url="../yellow-ai-machine-learning-and-foss/attack-research-and-machine-learning.md" %}
-[attack-research-and-machine-learning.md](../yellow-ai-machine-learning-and-foss/attack-research-and-machine-learning.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="vulnerability-management..md" %}

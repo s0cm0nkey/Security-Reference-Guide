@@ -115,6 +115,7 @@ This tool is designed to create an encrypted command-and-control (C\&C) channel 
 * [TripleCross](https://github.com/h3xduck/TripleCross) - A Linux eBPF rootkit with a backdoor, C2, library injection, execution hijacking, persistence and stealth capabilities.
 * [iscariot-suite](https://gitlab.com/badsectorlabs/iscariot-suite) - The Iscariot Suite is a collection of tools to enhance and augment trusted open-source and commercial Blue Team/Sysadmin products, turning them into traitorware to achieve offensive security goals.
 * [shad0w](https://github.com/bats3c/shad0w) - A post exploitation framework designed to operate covertly on heavily monitored environments
+* [Covenant](https://github.com/cobbr/Covenant) - Covenant is a collaborative .NET C2 framework for red teamers.
 * _PTFM: C2 Tools - pg. 62_
 
 </details>

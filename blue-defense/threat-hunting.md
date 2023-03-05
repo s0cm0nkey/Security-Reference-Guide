@@ -21,6 +21,7 @@ Threat hunting doesn’t have to be complex, but it’s not for everyone. Knowin
 * [HowToHunt](https://github.com/KathanP19/HowToHunt) - Tutorials and Things to Do while Hunting Vulnerability.&#x20;
 * [ThreatHunting Home](https://www.threathunting.net/) - Links and Blog on popular threat hunting proceedures
 * [Tool Analysis Result Sheet](https://jpcertcc.github.io/ToolAnalysisResultSheet/) - JP-CERT analysis on detecting the use of multiple popular tools within an network environment.
+* [https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE5aC6y?culture=en-us\&country=US](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE5aC6y?culture=en-us\&country=US) - Microsoft's Threat Hunting Survival Guide
 * [https://drive.google.com/file/d/14DluguBRjlUt9GWTUpGIB802qnHD2Olp/view](https://drive.google.com/file/d/14DluguBRjlUt9GWTUpGIB802qnHD2Olp/view) - Introduciton to Threat Hunting part 1
 {% endtab %}
 
@@ -74,6 +75,7 @@ Threat hunting doesn’t have to be complex, but it’s not for everyone. Knowin
 * [https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries)
 * [https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)
 * [https://expel.io/blog/seven-ways-to-spot-business-email-compromise-office-365/](https://expel.io/blog/seven-ways-to-spot-business-email-compromise-office-365/)
+* [https://github.com/Bert-JanP/Hunting-Queries-Detection-Rules](https://github.com/Bert-JanP/Hunting-Queries-Detection-Rules)
 
 </details>
 
