@@ -145,6 +145,7 @@
     * [Common Commands](code-tools/powershell/common-commands.md)
   * [Regex](code-tools/regex.md)
   * [Learn to Code](code-tools/learn-to-code.md)
+* [Yellow - AI, Machine Learning, and FOSS](yellow-ai-machine-learning-and-foss.md)
 * [Grey - Privacy/TOR/OPSEC](grey-privacy-tor-opsec/README.md)
   * [Jolly Roger's Security for Beginners](grey-privacy-tor-opsec/jolly-rogers-security-for-beginners.md)
   * [PGP Guide](grey-privacy-tor-opsec/pgp-guide.md)
@@ -155,4 +156,3 @@
   * [The Awesome Lists](training/the-awesome-lists.md)
   * [Practice Lab](training/practice-lab.md)
   * [CTF](training/ctf-practice.md)
-* [Yellow - AI and Machine Learning](yellow-ai-and-machine-learning.md)

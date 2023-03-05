@@ -1,4 +1,4 @@
-# Yellow - AI and Machine Learning
+# Yellow - AI, Machine Learning, and FOSS
 
 ## AI Tools
 
@@ -10,3 +10,7 @@
 * [https://www.futurepedia.io/](https://www.futurepedia.io/)
 * [https://www.aishrine.com/](https://www.aishrine.com/)
 * [https://theresanaiforthat.com/](https://theresanaiforthat.com/)
+
+## FOSS - Free and Open Source Software
+
+* [https://www.opensourcealternative.to/](https://www.opensourcealternative.to/)

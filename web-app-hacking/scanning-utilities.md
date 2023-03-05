@@ -141,6 +141,7 @@ The content on your target pages can provide a wealth of information as well as 
 <summary>Misc Tools</summary>
 
 * [BFAC](https://github.com/mazen160/bfac) - BFAC (Backup File Artifacts Checker): An automated tool that checks for backup artifacts that may disclose the web-application's source code.
+* [csprecon](https://github.com/edoardottt/csprecon) - Discover new target domains using Content Security Policy
 * [RetireJS](https://retirejs.github.io/retire.js/) - Scanner to detect javascript libraries and known vulnerabilities within them.
 * [SnallyGaster](https://github.com/hannob/snallygaster) - Snallygaster is a tool that looks for files accessible on web servers that shouldn't be public and can pose a security risk.
 * [Broken Link Checker](https://github.com/stevenvachon/broken-link-checker) - Find broken links, missing images, etc within your HTML.

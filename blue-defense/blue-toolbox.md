@@ -51,6 +51,7 @@ This section contains handy links and tools for anything else not mentioned in t
 * [IPFire Open Source Firewall](https://www.ipfire.org/)&#x20;
 * [pfSense](https://www.pfsense.org/) is a free and open source firewall and router that also features unified threat management, load balancing, multi WAN, and more.
 * [Pi-hole](https://pi-hole.net/) is a [DNS sinkhole](https://en.wikipedia.org/wiki/DNS\_Sinkhole) that protects your devices from unwanted content, without installing any client-side software, intended for use on a private network. It is designed for use on embedded devices with network capability, such as the Raspberry Pi, but it can be used on other machines running Linux and cloud implementations.
+* [https://github.com/SpyGuard/SpyGuard](https://github.com/SpyGuard/SpyGuard) -&#x20;
 
 ### **Misc Tools**
 
