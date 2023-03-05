@@ -1,11 +1,13 @@
-# SQL Methodology
+# SQL Basics
 
 ## **Types of SQL Databases**
 
 * Mysql
 * MSSQL
 * PostgreSQL - v9.5 and earlier
+  * [https://www.pcwdld.com/sql-cheat-sheet](https://www.pcwdld.com/sql-cheat-sheet)
 * Oracle
+  * [https://www.pcwdld.com/sql-cheat-sheet](https://www.pcwdld.com/sql-cheat-sheet)
 * NoSQL
   * Couch/MongoDB
   * Unstructured Data, grows horizontally

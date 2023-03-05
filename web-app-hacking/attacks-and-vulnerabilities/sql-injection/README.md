@@ -14,6 +14,7 @@
 * [https://cheatsheetseries.owasp.org/cheatsheets/SQL\_Injection\_Prevention\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/SQL\_Injection\_Prevention\_Cheat\_Sheet.html)
 * [https://pentestbook.six2dez.com/enumeration/web/sqli](https://pentestbook.six2dez.com/enumeration/web/sqli)
 * [https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet](https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet)
+* [https://www.pcwdld.com/sql-cheat-sheet](https://www.pcwdld.com/sql-cheat-sheet)
 * _SQL Injection Vulnerabilities - Bug Bounty Hunting Essentials, pg 29_
 {% endtab %}
 
