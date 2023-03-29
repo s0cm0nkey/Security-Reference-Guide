@@ -111,8 +111,8 @@ For resources including offensive security courses, books, CTFs and much more, p
 
 ## Section Contents
 
-{% content-ref url="testing-methodology/" %}
-[testing-methodology](testing-methodology/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="offensive-toolbox/" %}

@@ -1,4 +1,4 @@
-# Red - Web App Hacking
+# Web App Hacking
 
 ## **Web App Testing Resources**
 
@@ -94,41 +94,16 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 
 ![](<../.gitbook/assets/image (25).png>)
 
-<details>
-
-<summary>Misc Tools</summary>
-
-* [https://www.webgap.io/](https://www.webgap.io/) - [WEBGAP](https://www.urbandictionary.com/define.php?term=webgap) remote browser isolation physically isolates you from the risks of using the internet by isolating your web browsing activity away from your local device.
-* [https://requestbin.com/](https://requestbin.com/) - A modern request bin to collect, inspect and debug HTTP requests and webhooks
-* [Race-the-web](https://github.com/TheHackerDev/race-the-web) - Tests for race conditions in web applications. Includes a RESTful API to integrate into a continuous integration pipeline.
-* [DVCS-Ripper](https://github.com/kost/dvcs-ripper) - Rip web accessible (distributed) version control systems: SVN, GIT, Mercurial/hg, bzr, etc.
-* [SSLStrip](https://github.com/LeonardoNve/sslstrip2) - This is a new version of \[Moxie´s SSLstrip] ([http://www.thoughtcrime.org/software/sslstrip/](http://www.thoughtcrime.org/software/sslstrip/)) with the new feature to avoid HTTP Strict Transport Security (HSTS) protection mechanism.
-* [BB King's Quieter Firefox template](https://bitbucket.org/mrbbking/quieter-firefox/src/master/) - Stripped down Firefox with no callouts to throw off traffic. Great for testing of all sorts.
-* [Unfurl](https://dfir.blog/unfurl/) - Tool for breaking down a URL to better understand its components.Fake credit card numbers for testing payment systems
-* [Credit Cards numbers](https://stripe.com/docs/testing#cards) for use in testing
-* [interactsh](https://github.com/projectdiscovery/interactsh) - An OOB interaction gathering server and client library
-  * [https://app.interactsh.com/](https://app.interactsh.com/)
-* [Firebounty](https://firebounty.com) — Bug bounty search engine
-* [https://github.com/brevityinmotion/goodfaith](https://github.com/brevityinmotion/goodfaith) - A tool that helps you stay within scope for bug bounty recon automation.
-
-</details>
-
-## **Mapping the Site**
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
 ## Web Technologies
 
-{% content-ref url="web-technologies/" %}
-[web-technologies](web-technologies/)
+{% content-ref url="exploitation-and-targets/web-technologies/" %}
+[web-technologies](exploitation-and-targets/web-technologies/)
 {% endcontent-ref %}
 
 ## **Attacks and Vulnerabilities**
 
-{% content-ref url="attacks-and-vulnerabilities/" %}
-[attacks-and-vulnerabilities](attacks-and-vulnerabilities/)
+{% content-ref url="exploitation-and-targets/attacks-and-vulnerabilities/" %}
+[attacks-and-vulnerabilities](exploitation-and-targets/attacks-and-vulnerabilities/)
 {% endcontent-ref %}
 
 ## **Training and Resources**

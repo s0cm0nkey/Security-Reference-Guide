@@ -61,8 +61,8 @@
 
 **Bash is the default command line shell for Linux operating systems**
 
-{% content-ref url="../code-tools/bash/" %}
-[bash](../code-tools/bash/)
+{% content-ref url="code-tools/bash/" %}
+[bash](code-tools/bash/)
 {% endcontent-ref %}
 
 ### **Windows**
@@ -79,8 +79,8 @@
   * [https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
   * _Cyber Operations: Active Directory - pg.235_
 
-{% content-ref url="../red-offensive/testing-methodology/active-directory.md" %}
-[active-directory.md](../red-offensive/testing-methodology/active-directory.md)
+{% content-ref url="red-offensive/active-directory.md" %}
+[active-directory.md](red-offensive/active-directory.md)
 {% endcontent-ref %}
 
 * Windows Command Line
@@ -91,8 +91,8 @@
 * Windows Powershell
   * [https://docs.microsoft.com/en-us/powershell/](https://docs.microsoft.com/en-us/powershell/)
 
-{% content-ref url="../code-tools/powershell/" %}
-[powershell](../code-tools/powershell/)
+{% content-ref url="code-tools/powershell/" %}
+[powershell](code-tools/powershell/)
 {% endcontent-ref %}
 
 * Misc
