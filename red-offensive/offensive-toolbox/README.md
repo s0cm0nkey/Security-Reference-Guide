@@ -164,8 +164,8 @@
 [recon-frameworks.md](../scanning-active-recon/recon-frameworks.md)
 {% endcontent-ref %}
 
-{% content-ref url="offensive-frameworks.md" %}
-[offensive-frameworks.md](offensive-frameworks.md)
+{% content-ref url="../exploitation-and-targets/offensive-frameworks.md" %}
+[offensive-frameworks.md](../exploitation-and-targets/offensive-frameworks.md)
 {% endcontent-ref %}
 
 {% content-ref url="c2-frameworks.md" %}

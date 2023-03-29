@@ -96,14 +96,14 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 
 ## Web Technologies
 
-{% content-ref url="exploitation-and-targets/web-technologies/" %}
-[web-technologies](exploitation-and-targets/web-technologies/)
+{% content-ref url="web-technologies/" %}
+[web-technologies](web-technologies/)
 {% endcontent-ref %}
 
 ## **Attacks and Vulnerabilities**
 
-{% content-ref url="exploitation-and-targets/attacks-and-vulnerabilities/" %}
-[attacks-and-vulnerabilities](exploitation-and-targets/attacks-and-vulnerabilities/)
+{% content-ref url="attacks-and-vulnerabilities/" %}
+[attacks-and-vulnerabilities](attacks-and-vulnerabilities/)
 {% endcontent-ref %}
 
 ## **Training and Resources**

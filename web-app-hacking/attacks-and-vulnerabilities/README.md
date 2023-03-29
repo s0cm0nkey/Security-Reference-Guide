@@ -357,7 +357,7 @@ Security misconfigurations include:\
 * _Template Injection - Bug Bounty Hunting Essentials, pg.189_
 *
 
-    <figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 __
 
