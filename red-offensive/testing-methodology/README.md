@@ -1,15 +1,5 @@
 # Testing Methodology
 
-##
-
-{% hint style="info" %}
-Note: Many Recon Frameworks have both passive and active reconnaissance capabilities.
-{% endhint %}
-
-*
-
-## **Active Recon and Scanning**
-
 ## Exploitation
 
 {% content-ref url="exploit-research.md" %}

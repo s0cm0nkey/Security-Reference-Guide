@@ -94,20 +94,6 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 
 ![](<../.gitbook/assets/image (25).png>)
 
-## Tools
-
-{% content-ref url="burp-suite.md" %}
-[burp-suite.md](burp-suite.md)
-{% endcontent-ref %}
-
-{% content-ref url="web-app-testing-frameworks.md" %}
-[web-app-testing-frameworks.md](web-app-testing-frameworks.md)
-{% endcontent-ref %}
-
-{% content-ref url="scanning-utilities.md" %}
-[scanning-utilities.md](scanning-utilities.md)
-{% endcontent-ref %}
-
 <details>
 
 <summary>Misc Tools</summary>

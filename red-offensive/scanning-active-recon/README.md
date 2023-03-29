@@ -1,7 +1,5 @@
 # Reconnaissance and Scanning
 
-
-
 ## Passive Reconnaissance
 
 This section focuses on the very first part of a penetration test: Passive Reconnaissance. This is where you use all the tools and resources at your disposal to gather up all of the information you can on your target, without interacting with the target in anyway (no scanning).
@@ -34,7 +32,99 @@ The following section will contain scanning tools and resources such as port sca
 
 * [https://tryhackme.com/room/activerecon](https://tryhackme.com/room/activerecon)
 
-### Host Discovery
+### Attack Surface Mapping and Discovery
+
+Attack Surface Mapping is the process of discovering, identifying, and analyzing all potential attack vectors on an organization’s IT infrastructure. This helps to identify vulnerabilities and threats to the system, as well as helping to decide how best to protect the system from malicious attack and exploitation. Attack surface mapping involves analyzing the assets and services available on a network, determining the boundaries of the system, and looking for potential attack vectors and vulnerabilities.
+
+The first step in attack surface mapping is asset discovery. This involves gathering information about the system, including the hardware, software, and services that are running on the network. This includes both internal and external assets, such as web applications, databases, and other services. This information can be gathered manually, or with the help of automated tools.
+
+The next step is to identify the attack vectors. Attack vectors are the various methods and techniques attackers can use to gain access to the network and its services. These include physical access, remote access, phishing attacks, malware, and social engineering. Once the attack vectors have been identified, the security team can then analyze them to determine the potential for exploitation.
+
+The third step is to analyze the attack vectors and identify any vulnerabilities. This involves looking for any weaknesses in the system that could be exploited by an attacker. This can include weak passwords, unpatched software, and insecure configurations. Once the vulnerabilities have been identified, the security team can then decide on the best course of action to protect the system from potential attacks.
+
+* [Awesome Lists Collection: Asset Discovery](https://github.com/redhuntlabs/Awesome-Asset-Discovery)
+* [https://cheatsheetseries.owasp.org/cheatsheets/Attack\_Surface\_Analysis\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Attack\_Surface\_Analysis\_Cheat\_Sheet.html)
+* [https://redhuntlabs.com/](https://redhuntlabs.com/)
+* [https://github.com/hasr00t/Frameworthy](https://github.com/hasr00t/Frameworthy) - The best collection of Attack Surface Management tooling out there.
+  * Shout out to @hasr00t and thier amazing ASM Class.
+
+{% hint style="info" %}
+Many Recon Frameworks can be excellent for Attack Surface Management.
+{% endhint %}
+
+{% content-ref url="recon-frameworks.md" %}
+[recon-frameworks.md](recon-frameworks.md)
+{% endcontent-ref %}
+
+{% tabs %}
+{% tab title="Amass" %}
+### [Amass](https://github.com/OWASP/Amass)&#x20;
+
+The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and active reconnaissance techniques.
+
+* Hakluke's Amass Guide - [https://medium.com/@hakluke/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7](https://medium.com/@hakluke/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7)
+* Dionach's Amass Guide - [https://www.dionach.com/blog/how-to-use-owasp-amass-an-extensive-tutorial/](https://www.dionach.com/blog/how-to-use-owasp-amass-an-extensive-tutorial/)
+* [https://medium.com/@nynan/automated-and-continuous-recon-attack-surface-management-amass-track-and-db-fabcaffce3c3](https://medium.com/@nynan/automated-and-continuous-recon-attack-surface-management-amass-track-and-db-fabcaffce3c3)
+* [https://www.youtube.com/watch?v=mEQnVkSG19M](https://www.youtube.com/watch?v=mEQnVkSG19M)
+{% endtab %}
+
+{% tab title="Project Discovery" %}
+### [projectdiscovery.io](https://projectdiscovery.io/#/)
+
+&#x20;Collection of open source tools for attack surface management or Bug Bounties.
+
+* [nuclei](https://github.com/projectdiscovery/nuclei) - Fast and customizable vulnerability scanner based on simple YAML based DSL.
+  * [https://github.com/projectdiscovery/nuclei-templates](https://github.com/projectdiscovery/nuclei-templates)
+  * [https://github.com/projectdiscovery/nuclei-docs](https://github.com/projectdiscovery/nuclei-docs)
+* [subfinder](https://github.com/projectdiscovery/subfinder) - Subfinder is a subdomain discovery tool that discovers valid subdomains for websites. Designed as a passive framework to be useful for bug bounties and safe for penetration testing.
+  * To get better results remember to use api keys. The following need them, [Binaryedge](https://binaryedge.io/), [C99](https://api.c99.nl/), [Certspotter](https://sslmate.com/certspotter/api/), [Chinaz](http://my.chinaz.com/ChinazAPI/DataCenter/MyDataApi), [Censys](https://censys.io/), [Chaos](https://chaos.projectdiscovery.io/), [DnsDB](https://api.dnsdb.info/), [Fofa](https://fofa.so/static\_pages/api\_help), [Github](https://github.com/), [Intelx](https://intelx.io/), [Passivetotal](http://passivetotal.org/), [Robtex](https://www.robtex.com/api/), [SecurityTrails](http://securitytrails.com/), [Shodan](https://shodan.io/), [Spyse](https://spyse.com/), [Threatbook](https://x.threatbook.cn/en), [Virustotal](https://www.virustotal.com/), [Zoomeye](https://www.zoomeye.org/)
+  * API key file is located at $HOME/.config/subfinder/provider-config.yaml and the github has an example
+* [naabu](https://github.com/projectdiscovery/naabu) - A fast port scanner written in go with a focus on reliability and simplicity. Designed to be used in combination with other tools for attack surface discovery in bug bounties and pentests
+* [httpx](https://github.com/projectdiscovery/httpx) - httpx is a fast and multi-purpose HTTP toolkit allows to run multiple probers using retryablehttp library, it is designed to maintain the result reliability with increased threads.
+* [proxify](https://github.com/projectdiscovery/proxify) - Swiss Army knife Proxy tool for HTTP/HTTPS traffic capture, manipulation, and replay on the go.
+* [dnsx](https://github.com/projectdiscovery/dnsx) - dnsx is a fast and multi-purpose DNS toolkit allow to run multiple DNS queries of your choice with a list of user-supplied resolvers.
+{% endtab %}
+
+{% tab title="OSINT for ASM" %}
+* URL: [https://www.runzero.com/](https://www.runzero.com/) About: runZero is a network discovery and asset inventory platform that uncovers every network in use and identifies every device connected–without credentials. \*\* Free Trial is available. \*\*
+* [https://www.reconness.com/](https://www.reconness.com/) About: ReconNess helps you to run and keep all your recon in the same place allowing you to focus only on the potentially vulnerable targets without distraction and without required a lot of bash skill or programing skill in general.
+* [https://github.com/yogeshojha/rengine](https://github.com/yogeshojha/rengine) About: reNgine is a web application reconnaissance suite with focus on a highly configurable streamlined recon process via Engines, recon data correlation, continuous monitoring, recon data backed by a database, and a simple yet intuitive User Interface. With features such as sub-scan, deeper co-relation, report generation, etc. reNgine aims to fix the gap in the traditional recon tools and probably a better alternative for existing commercial tools.\
+  reNgine makes it easy for penetration testers and security auditors to gather reconnaissance data with bare minimal configuration.
+* [https://github.com/slithery0/eReKon](https://github.com/slithery0/eReKon) About: Web reconnaissance tool, only available in dark mode. Provides subdomain scanning, port scanning, version fingerprinting and screenshots of web applications. \
+  \*\* While it appears there is some development being done, the overall application appears to be under development still and should be used with caution. \*\*
+{% endtab %}
+
+{% tab title="ASM Frameworks" %}
+* [https://github.com/archerysec/archerysec](https://github.com/archerysec/archerysec) About: ArcherySec allow to interact with continuous integration/continuous delivery (CI/CD) toolchains to specify testing, and control the release of a given build based on results. Its include prioritization functions, enabling you to focus on the most critical vulnerabilities. ArcherySec uses popular opensource tools to perform comprehensive scanning for web application and network. The developers can also utilize the tool for implementation of their DevOps CI/CD environment.
+  * [https://www.archerysec.com/](https://www.archerysec.com/)&#x20;
+* [https://github.com/microsoft/AttackSurfaceAnalyzer](https://github.com/microsoft/AttackSurfaceAnalyzer) About: Attack Surface Analyzer is a Microsoft developed open source security tool that analyzes the attack surface of a target system and reports on potential security vulnerabilities introduced during the installation of software or system misconfiguration.
+* [https://github.com/vmware-labs/attack-surface-framework](https://github.com/vmware-labs/attack-surface-framework) About: ASF aims to protect organizations acting as an attack surface watchdog, provided an “Object” which might be a: Domain, IP address or CIDR (Internal or External), ASF will discover assets/subdomains, enumerate their ports and services, track deltas and serve as a continuous and flexible attacking and alerting framework leveraging an additional layer of support against 0 day vulnerabilities with publicly available POCs.
+* [https://github.com/superhedgy/AttackSurfaceMapper](https://github.com/superhedgy/AttackSurfaceMapper) About: AttackSurfaceMapper (ASM) is a reconnaissance tool that uses a mixture of open source intelligence and active techniques to expand the attack surface of your target. You feed in a mixture of one or more domains, subdomains and IP addresses and it uses numerous techniques to find more targets. It enumerates subdomains with bruteforcing and passive lookups, Other IPs of the same network block owner, IPs that have multiple domain names pointing to them and so on.\
+  Once the target list is fully expanded it performs passive reconnaissance on them, taking screenshots of websites, generating visual maps, looking up credentials in public breaches, passive port scanning with Shodan/Censys and scraping employees from LinkedIn.
+* [https://github.com/pry0cc/axiom](https://github.com/pry0cc/axiom) About: Axiom is a dynamic infrastructure framework to efficiently work with multi-cloud environments, build and deploy repeatable infrastructure focussed on offensive and defensive security.\
+  Axiom works by pre-installing your tools of choice onto a 'base image', and then using that image to deploy fresh instances. From there, you can connect and instantly gain access to many tools useful for both bug hunters and pentesters. With the power of immutable infrastructure, most of which is done for you, you can just spin up 15 boxes, perform a distributed nmap/ffuf/screenshotting scan, and then shut them down.\
+  Axiom supports several cloud providers, eventually, axiom should be completely cloud agnostic allowing unified control of a wide variety of different cloud environments with ease. Currently, DigitalOcean, IBM Cloud, Linode, Azure and AWS are officially supported providers. GCP isnt supported but is partially implemented and on the roadmap.
+* [https://github.com/riskprofiler/CloudFrontier](https://github.com/riskprofiler/CloudFrontier) About: Monitor the internet attack surface of various public cloud environments. Currently supports AWS, GCP, Azure, DigitalOcean and Oracle Cloud. \
+  \*\* It should be noted that this project has not been updated in some time and there are open issues. \*\*
+* [https://github.com/Findomain/Findomain](https://github.com/Findomain/Findomain) About: The complete solution for domain recognition. Supports screenshoting, port scan, HTTP check, data import from other tools, subdomain monitoring, alerts via Discord, Slack and Telegram, multiple API Keys for sources and much more.
+* [https://core.intrigue.io/](https://core.intrigue.io/) About: Intrigue Core is a framework for discovering attack surface. It discovers security-relevant assets and exposures within the context of projects and can be used with a human-in-the-loop running individual tasks, and/or automated through the use of workflows. With a flexible entity model and an incredibly deep enrichment system, it is the most full-featured attack surface discovery framework of its kind.\
+  \*\* A slack channel is available for support. Also, as of October 1, 2021, this component of the Intrigue project is no longer actively maintained on Github, and the code in Github has been re-licensed under the terms of the Mandiant Limited Open Source License Agreement. \*\*
+* [https://ivre.rocks/](https://ivre.rocks/) - IVRE is an open-source framework for network recon. It relies on open-source well-known tools ([Nmap](https://nmap.org/), [Masscan](https://github.com/robertdavidgraham/masscan), [ZGrab2](https://github.com/zmap/zgrab2), [ZDNS](https://github.com/zmap/zdns) and [Zeek (Bro)](https://www.zeek.org/)) to gather data (_network intelligence_), stores it in a database ([MongoDB](https://www.mongodb.com/) is the recommended backend), and provides tools to analyze it.
+{% endtab %}
+
+{% tab title="Other Tools" %}
+* [Odin](https://github.com/chrismaddalena/ODIN) - ODIN is Python tool for automating intelligence gathering, asset discovery, and reporting.
+* [Asnip](https://github.com/harleo/asnip) - Asnip retrieves all IPs of a target organization—used for attack surface mapping in reconnaissance phases.
+{% endtab %}
+{% endtabs %}
+
+### Host/Asset discovery
+
+Once on or apart of a target network we can perform a more detailed round of enumeration and discovery. By directly interacting with local network applications, host discovery can be used to identify vulnerable systems, services, and network topology.
+
+Once the active devices on the network have been identified, the penetration tester can move on to the next steps in the penetration test process, such as vulnerability analysis and exploitation.
+
+Host discovery can be performed by a few handy tools as well as command to enumerate hosts via various services.
 
 * [https://book.hacktricks.xyz/pentesting/pentesting-network#discovering-hosts](https://book.hacktricks.xyz/pentesting/pentesting-network#discovering-hosts)
 * [https://www.secjuice.com/osint-detecting-enumerating-firewalls-gateways/](https://www.secjuice.com/osint-detecting-enumerating-firewalls-gateways/)
@@ -113,29 +203,6 @@ $ host -t mx domain.com
 ```
 {% endtab %}
 
-{% tab title="NBTSCAN" %}
-Just like DNS, the NTB-NS (NetBIOS name service) protocol is used to translate names to IP addresses. By default, it's used as a fallback in AD-DS.
-
-[https://wiki.wireshark.org/NetBIOS/NBNS](https://wiki.wireshark.org/NetBIOS/NBNS)
-
-```
-nbtscan -r 192.168.0.1/24 #Search in Domain
-```
-{% endtab %}
-
-{% tab title="Bettercap2" %}
-```
-net.probe on/off #Activate all service discover and ARP
-net.probe.mdns #Search local mDNS services (Discover local)
-net.probe.nbns #Ask for NetBios name (Discover local)
-net.probe.upnp # Search services (Discover local)
-net.probe.wsd # Search Web Services Discovery (Discover local)
-net.probe.throttle 10 #10ms between requests sent (Discover local)
-```
-
-[https://github.com/bettercap/bettercap](https://github.com/bettercap/bettercap)
-{% endtab %}
-
 {% tab title="WOL" %}
 Wake On Lan is used to turn on computers through a network message. The magic packet used to turn on the computer is only a packet where a MAC Dst is provided and then it is repeated 16 times inside the same paket. Then this kind of packets are usually sent in an ethernet 0x0842 or in a UDP packet to port 9. If no \[MAC] is provided, the packet is sent to broadcast ethernet (and the broadcast MAC will be the one being repeated).
 
@@ -172,52 +239,41 @@ The following command will enable the analyze modes and will give interesting in
 [https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/responder-20-owning-windows-networks-part-3/](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/responder-20-owning-windows-networks-part-3/)
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="NBTSCAN" %}
+Just like DNS, the NTB-NS (NetBIOS name service) protocol is used to translate names to IP addresses. By default, it's used as a fallback in AD-DS.
 
+[https://wiki.wireshark.org/NetBIOS/NBNS](https://wiki.wireshark.org/NetBIOS/NBNS)
+
+```
+nbtscan -r 192.168.0.1/24 #Search in Domain
+```
+{% endtab %}
+
+{% tab title="Bettercap2" %}
+```
+net.probe on/off #Activate all service discover and ARP
+net.probe.mdns #Search local mDNS services (Discover local)
+net.probe.nbns #Ask for NetBios name (Discover local)
+net.probe.upnp # Search services (Discover local)
+net.probe.wsd # Search Web Services Discovery (Discover local)
+net.probe.throttle 10 #10ms between requests sent (Discover local)
+```
+
+[https://github.com/bettercap/bettercap](https://github.com/bettercap/bettercap)
 {% endtab %}
 {% endtabs %}
 
-## **Port-Scanning**
+### **Port-Scanning**
 
-<details>
+Port Scanning is a security penetration test that involves the use of software to identify open ports on a network and the services running on those ports. It is an important part of a security assessment because it can uncover security vulnerabilities that may otherwise be overlooked.
 
-<summary>Manual Port Checks</summary>
+During a port scan, the software sends packets to each port on the target system and listens for a response. Depending on the response, the software can determine whether a port is open or closed. If a port is open, the software can also determine the service running on it. This information can help the tester identify any vulnerable services that can be exploited.
 
-Netcat banner grab
+Port Scanning can help determine if there are any unauthorized access points, such as open ports or services running without authentication. It can also help determine if any services are running outdated versions of software that could be vulnerable to exploits.
 
-```
-nc -v 10.10.10.10 port
-```
+Port status and other details can be gathered via manual requests, or through port scanning tools.&#x20;
 
-Telnet banner grab
-
-```
-telnet 10.10.10.10 port
-```
-
-</details>
-
-<details>
-
-<summary>Probe Response CheatSheet</summary>
-
-* **Open** port: _SYN --> SYN/ACK --> RST_
-
-<!---->
-
-* **Closed** port: _SYN --> RST/ACK_
-
-<!---->
-
-* **Filtered** port: _SYN --> \[NO RESPONSE]_
-
-<!---->
-
-* **Filtered** port: _SYN --> ICMP message_
-
-</details>
-
-### **Tools**
+The tool NMAP has long been the standard for port scanning is an essential tool for all security testers to know.
 
 {% content-ref url="nmap.md" %}
 [nmap.md](nmap.md)
@@ -277,7 +333,47 @@ Unicornscan is an attempt at a User-land Distributed TCP/IP stack. It is intende
 
 </details>
 
-## Application Detection
+<details>
+
+<summary>Manual Port Checks</summary>
+
+Netcat banner grab
+
+```
+nc -v 10.10.10.10 port
+```
+
+Telnet banner grab
+
+```
+telnet 10.10.10.10 port
+```
+
+</details>
+
+<details>
+
+<summary>Probe Response CheatSheet</summary>
+
+* **Open** port: _SYN --> SYN/ACK --> RST_
+
+<!---->
+
+* **Closed** port: _SYN --> RST/ACK_
+
+<!---->
+
+* **Filtered** port: _SYN --> \[NO RESPONSE]_
+
+<!---->
+
+* **Filtered** port: _SYN --> ICMP message_
+
+</details>
+
+### Application Detection
+
+For more detailed identification of running appications, even if they are running on a non-standard port, we can use Application Detection tools to enumerate these.
 
 [AMAP](https://www.kali.org/tools/amap/) - Attempts to identify applications even if they are running on a different port than normal.
 
@@ -286,6 +382,12 @@ $ amap -d $ip <port>
 ```
 
 ## **Vulnerability Scanning**
+
+Vulnerability scanning is a process of identifying, detecting, and assessing security vulnerabilities in a computer system. It is designed to find known and unknown security risks in a network or computer system. Vulnerability scanning helps organizations identify and address any weaknesses in their systems before they can be exploited by attackers.
+
+A vulnerability scan usually involves using automated tools to scan a system for known vulnerabilities. The scan looks for known weaknesses, such as incorrect settings, outdated software, missing patches, or other security flaws that could be exploited by attackers. After the scan is complete, a report is generated outlining the weaknesses found and providing recommendations on how to address them.
+
+Vulnerability scanning is an important part of a comprehensive security program, and helps organizations identify and address weaknesses before attackers can exploit them. Conversely, vulnerability scanners are often used by offensive security testers to identify weak targets for exploitation.
 
 * _BTFM: Scanning and Vulnerabilities - pg. 11_
 * _Penetration Testing: Finding Vulnerabilities - pg.133_
@@ -328,6 +430,10 @@ Commands
   * \#ss -lnt4
 * Navigate to WebUI
   * https://127.0.0.1:939[NSE Nmap Scripts](https://nmap.org/nsedoc/) - NSE Scripts can perform various scanning techniques for enumerating services and scanning targets for specific vulnerabilities.
+
+{% embed url="https://youtu.be/fEANg6gyV5A" %}
+
+{% embed url="https://youtu.be/koMo_fSQGlk" %}
 {% endtab %}
 
 {% tab title="NSE Scripts" %}
@@ -353,36 +459,91 @@ Commands
 {% endtab %}
 {% endtabs %}
 
-{% embed url="https://youtu.be/fEANg6gyV5A" %}
+## Web Application Scanning and Testing
 
-{% embed url="https://youtu.be/koMo_fSQGlk" %}
+Web Application Security Testing is a type of security testing that is used to identify and address security vulnerabilities in web applications. It is a process that involves testing the security of web applications for weaknesses that could potentially be exploited by attackers. The goal of this type of testing is to identify and fix any security issues that could lead to the unauthorized access, manipulation, or destruction of data, or any other malicious activity.
 
-## **Attack Surface Mapping/Asset Discovery**
+Dynamic application security testing (DAST) is a process used to assess the security of a web application while it is running. This type of testing can be used to identify application-level vulnerabilities, such as cross-site scripting (XSS) and SQL injection.
 
-* [Awesome Lists Collection: Asset Discovery](https://github.com/redhuntlabs/Awesome-Asset-Discovery)
-* [https://redhuntlabs.com/](https://redhuntlabs.com/)
+For testing various web applications there are a multitude of testing tools for both individual vulnerabilities, as well as comprehensive suites. The foremost of these is Burp Suite.
+
+{% content-ref url="burp-suite.md" %}
+[burp-suite.md](burp-suite.md)
+{% endcontent-ref %}
+
+{% content-ref url="web-app-testing-frameworks.md" %}
+[web-app-testing-frameworks.md](web-app-testing-frameworks.md)
+{% endcontent-ref %}
+
+{% content-ref url="scanning-utilities.md" %}
+[scanning-utilities.md](scanning-utilities.md)
+{% endcontent-ref %}
 
 {% tabs %}
-{% tab title="Amass" %}
-### [Amass](https://github.com/OWASP/Amass)&#x20;
+{% tab title="Web Content Discovery" %}
+...burp...
 
-The OWASP Amass Project performs network mapping of attack surfaces and external asset discovery using open source information gathering and active reconnaissance techniques.
-
-* Hakluke's Amass Guide - [https://medium.com/@hakluke/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7](https://medium.com/@hakluke/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7)
-* Dionach's Amass Guide - [https://www.dionach.com/blog/how-to-use-owasp-amass-an-extensive-tutorial/](https://www.dionach.com/blog/how-to-use-owasp-amass-an-extensive-tutorial/)
-* [https://medium.com/@nynan/automated-and-continuous-recon-attack-surface-management-amass-track-and-db-fabcaffce3c3](https://medium.com/@nynan/automated-and-continuous-recon-attack-surface-management-amass-track-and-db-fabcaffce3c3)
-* [https://www.youtube.com/watch?v=mEQnVkSG19M](https://www.youtube.com/watch?v=mEQnVkSG19M)
+* [Photon](https://github.com/s0md3v/Photon) - Incredibly fast crawler designed for OSINT.
+* [URLgrab](https://github.com/IAmStoxe/urlgrab) - A golang utility to spider through a website searching for additional links.
+* [hakrawler](https://github.com/hakluke/hakrawler) - Simple, fast web crawler designed for easy, quick discovery of endpoints and assets within a web application. Also built by the Legendary Hakluke
+* [gospider](https://www.kali.org/tools/gospider/) - This package contains a Fast web spider written in Go.&#x20;
+* [filebuster](https://github.com/henshin/filebuster) - Filebuster is a HTTP fuzzer / content discovery script with loads of features and built to be easy to use and fast! It uses one of the fastest HTTP classes in the world (of PERL) - Furl::HTTP. Also the thread modelling is optimized to run as fast as possible.
+* [feroxbuster](https://www.kali.org/tools/feroxbuster/) - feroxbuster is a tool designed to perform Forced Browsing. Forced browsing is an attack where the aim is to enumerate and access resources that are not referenced by the web application, but are still accessible by an attacker.
 {% endtab %}
 
-{% tab title="Other Tools" %}
-* [Intrigue](https://github.com/intrigueio/intrigue-core) - Intrigue Core is a framework for discovering attack surface. It discovers security-relevant assets and exposures within the context of projects and can be used with a human-in-the-loop running individual tasks, and/or automated through the use of workflows.
-* [Odin](https://github.com/chrismaddalena/ODIN) - ODIN is Python tool for automating intelligence gathering, asset discovery, and reporting.
-* [AttackSurfaceMapper](https://github.com/superhedgy/AttackSurfaceMapper) - AttackSurfaceMapper (ASM) is a reconnaissance tool that uses a mixture of open source intelligence and active techniques to expand the attack surface of your target. You feed in a mixture of one or more domains, subdomains and IP addresses and it uses numerous techniques to find more targets.
-* [Asnip](https://github.com/harleo/asnip) - Asnip retrieves all IPs of a target organization—used for attack surface mapping in reconnaissance phases.
-* [Microsoft Attack Surface Analyzer](https://github.com/Microsoft/AttackSurfaceAnalyzer) - Attack Surface Analyzer is a [Microsoft](https://github.com/microsoft/) developed open source security tool that analyzes the attack surface of a target system and reports on potential security vulnerabilities introduced during the installation of software or system misconfiguration.
-* [https://ivre.rocks/](https://ivre.rocks/) - IVRE is an open-source framework for network recon. It relies on open-source well-known tools ([Nmap](https://nmap.org/), [Masscan](https://github.com/robertdavidgraham/masscan), [ZGrab2](https://github.com/zmap/zgrab2), [ZDNS](https://github.com/zmap/zdns) and [Zeek (Bro)](https://www.zeek.org/)) to gather data (_network intelligence_), stores it in a database ([MongoDB](https://www.mongodb.com/) is the recommended backend), and provides tools to analyze it.
+{% tab title="Second Tab" %}
+
 {% endtab %}
 {% endtabs %}
+
+<details>
+
+<summary>Misc Web App Testing Tools</summary>
+
+* [https://www.webgap.io/](https://www.webgap.io/) - [WEBGAP](https://www.urbandictionary.com/define.php?term=webgap) remote browser isolation physically isolates you from the risks of using the internet by isolating your web browsing activity away from your local device.
+
+<!---->
+
+* [https://requestbin.com/](https://requestbin.com/) - A modern request bin to collect, inspect and debug HTTP requests and webhooks
+
+<!---->
+
+* [Race-the-web](https://github.com/TheHackerDev/race-the-web) - Tests for race conditions in web applications. Includes a RESTful API to integrate into a continuous integration pipeline.
+
+<!---->
+
+* [DVCS-Ripper](https://github.com/kost/dvcs-ripper) - Rip web accessible (distributed) version control systems: SVN, GIT, Mercurial/hg, bzr, etc.
+
+<!---->
+
+* [SSLStrip](https://github.com/LeonardoNve/sslstrip2) - This is a new version of \[Moxie´s SSLstrip] ([http://www.thoughtcrime.org/software/sslstrip/](http://www.thoughtcrime.org/software/sslstrip/)) with the new feature to avoid HTTP Strict Transport Security (HSTS) protection mechanism.
+
+<!---->
+
+* [BB King's Quieter Firefox template](https://bitbucket.org/mrbbking/quieter-firefox/src/master/) - Stripped down Firefox with no callouts to throw off traffic. Great for testing of all sorts.
+
+<!---->
+
+* [Unfurl](https://dfir.blog/unfurl/) - Tool for breaking down a URL to better understand its components.Fake credit card numbers for testing payment systems
+
+<!---->
+
+* [Credit Cards numbers](https://stripe.com/docs/testing#cards) for use in testing
+
+<!---->
+
+* [interactsh](https://github.com/projectdiscovery/interactsh) - An OOB interaction gathering server and client library
+  * [https://app.interactsh.com/](https://app.interactsh.com/)
+
+<!---->
+
+* [Firebounty](https://firebounty.com) — Bug bounty search engine
+
+<!---->
+
+* [https://github.com/brevityinmotion/goodfaith](https://github.com/brevityinmotion/goodfaith) - A tool that helps you stay within scope for bug bounty recon automation.
+
+</details>
 
 ## Other Scanning Utilities
 
@@ -398,10 +559,6 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 * [https://pentestbook.six2dez.com/enumeration/ssl-tls](https://pentestbook.six2dez.com/enumeration/ssl-tls) - List of commads to test for specific SSL/TLS Vulnerabilities.
 
 </details>
-
-{% content-ref url="../../web-app-hacking/mapping-the-site.md" %}
-[mapping-the-site.md](../../web-app-hacking/mapping-the-site.md)
-{% endcontent-ref %}
 
 <details>
 
