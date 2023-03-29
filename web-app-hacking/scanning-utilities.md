@@ -4,7 +4,7 @@ description: >-
   to understand how to break it.
 ---
 
-# Scanning Utilities
+# Web App Scanning Utilities
 
 ## **Visual scanning with Screenshots**
 

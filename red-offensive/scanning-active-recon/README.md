@@ -115,6 +115,15 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 {% tab title="Other Tools" %}
 * [Odin](https://github.com/chrismaddalena/ODIN) - ODIN is Python tool for automating intelligence gathering, asset discovery, and reporting.
 * [Asnip](https://github.com/harleo/asnip) - Asnip retrieves all IPs of a target organization—used for attack surface mapping in reconnaissance phases.
+* [https://github.com/edoardottt/csprecon](https://github.com/edoardottt/csprecon) - Discover new target domains using Content Security Policy
+* [https://github.com/ayoubfathi/leaky-paths](https://github.com/ayoubfathi/leaky-paths) - A collection of special paths linked to major web CVEs, known misconfigurations, juicy APIs ..etc. It could be used as a part of web content discovery, to scan passively for high-quality endpoints and quick-wins
+* [https://github.com/hakluke/hakcertstream](https://github.com/hakluke/hakcertstream) - Use CertStream to get lists of new domains and subdomains registered with a certificate authority.
+* [https://dehashed.com/](https://dehashed.com/) - Scan domain for indicators found in breaches
+* [https://www.riskiq.com/](https://www.riskiq.com/) - RiskIQ Digital Footprint gives complete visibility beyond the firewall. Unlike scanners and IP-dependent data vendors, RiskIQ Digital Footprint is the only solution with composite intelligence, code-level discovery and automated threat detection and exposure monitoring—security intelligence mapped to your attack surface.
+* [https://www.whoisxmlapi.com/](https://www.whoisxmlapi.com/) - Domain & IP Data Intelligence for Greater Enterprise Security
+* [https://securitytrails.com/](https://securitytrails.com/) - Powerful tools for third-party risk, attack surface management, and total intel
+* [Goby](https://github.com/gobysec/Goby) - **Goby** is a new generation network security assessment tool. It can efficiently and practically scan vulnerabilities while sorting out the most complete attack surface information for a target enterprise.
+  * [https://gobies.org/](https://gobies.org/)
 {% endtab %}
 {% endtabs %}
 
@@ -371,8 +380,6 @@ telnet 10.10.10.10 port
 
 </details>
 
-### Application Detection
-
 For more detailed identification of running appications, even if they are running on a non-standard port, we can use Application Detection tools to enumerate these.
 
 [AMAP](https://www.kali.org/tools/amap/) - Attempts to identify applications even if they are running on a different port than normal.
@@ -380,6 +387,132 @@ For more detailed identification of running appications, even if they are runnin
 ```
 $ amap -d $ip <port>
 ```
+
+### DNS Recon
+
+DNS reconnaissance is the process of gathering information about a domain by querying various DNS records. DNS reconnaissance is often used to identify hosts, subdomains, and services associated with a domain. It can also provide insight into the network infrastructure, such as the type of DNS servers being used and the type of records they are responding with.
+
+DNS Enumeration tools can give detail not just on DNS services related to your target, but also be used to identify other assets such as related domains and IP addresses.
+
+<details>
+
+<summary>DNS Enumeration Tools</summary>
+
+* [dnsdumpster](https://github.com/nmmapper/dnsdumpster) - A tool to perform DNS reconnaissance on target networks. Among the DNS information got from include subdomains, mx records, web application firewall detection and more fingerprinting and lookups
+
+<!---->
+
+* [DNSRecon](https://github.com/darkoperator/dnsrecon) - The Original DNS recon script.
+  * [https://www.kali.org/tools/dnsrecon/](https://www.kali.org/tools/dnsrecon/)
+
+<!---->
+
+* [dnscan](https://github.com/rbsec/dnscan) - dnscan is a python wordlist-based DNS subdomain scanner.
+
+<!---->
+
+* [dnsenum](https://www.kali.org/tools/dnsenum/) - Dnsenum is a multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks.
+
+<!---->
+
+* [dnsmap](https://www.kali.org/tools/dnsmap/) - dnsmap scans a domain for common subdomains using a built-in or an external wordlist
+
+<!---->
+
+* [dnstracer](https://www.kali.org/tools/dnstracer/) - determines where a given Domain Name Server (DNS) gets its information from for a given hostname, and follows the chain of DNS servers back to the authoritative answer.
+
+<!---->
+
+* [Lepus](https://github.com/gfek/Lepus) - A tool for enumerating subdomains, checking for subdomain takeovers and perform port scans - and boy, is it fast!
+
+<!---->
+
+* [Knock](https://github.com/guelfoweb/knock) - Knockpy is a python3 tool designed to enumerate subdomains on a target domain through dictionary attack.
+
+<!---->
+
+* [HostileSubBruteForcer](https://github.com/nahamsec/HostileSubBruteforcer) - Aggressive SubDomain brute forcing tool  written by Nahamsec.
+
+<!---->
+
+* [altdns](https://www.kali.org/tools/altdns/) - a DNS recon tool that allows for the discovery of subdomains that conform to patterns.
+
+<!---->
+
+* [assetfinder](https://www.kali.org/tools/assetfinder/) - A tool to find domains and subdomains potentially related to a given domain.
+
+<!---->
+
+* [fierce](https://www.kali.org/tools/fierce/) - Fierce is a semi-lightweight scanner that helps locate non-contiguous IP space and hostnames against specified domains. It’s really meant as a pre-cursor to nmap, unicornscan, nessus, nikto, etc, since all of those require that you already know what IP space you are looking for.
+
+<!---->
+
+* [cansina](https://github.com/deibit/cansina) - a Web Content Discovery Application. Help you making requests and filtering and inspecting the responses to tell apart if it is an existing resource or just an annoying or disguised 404.
+
+<!---->
+
+* [Sublist3r](https://github.com/aboul3la/Sublist3r) - Sublist3r is a python tool designed to enumerate subdomains of websites using OSINT. It helps penetration testers and bug hunters collect and gather subdomains for the domain they are targeting. Sublist3r enumerates subdomains using many search engines such as Google, Yahoo, Bing, Baidu and Ask. Sublist3r also enumerates subdomains using Netcraft, Virustotal, ThreatCrowd, DNSdumpster and ReverseDNS. This tool can do both scraping and Bruteforce which makes it a nice combined tool. The downside how ever is the wordlist cannot be specified.
+  * [https://tryhackme.com/room/rpsublist3r](https://tryhackme.com/room/rpsublist3r)
+  * [subbrute](https://github.com/TheRook/subbrute) - A DNS meta-query spider that enumerates DNS records, and subdomains. (included in Sublist3r)
+
+<!---->
+
+* [dnsx](https://github.com/projectdiscovery/dnsx) - dnsx is a fast and multi-purpose DNS toolkit allow to run multiple DNS queries of your choice with a list of user-supplied resolvers.
+
+<!---->
+
+* [massdns](https://github.com/blechschmidt/massdns) - A high-performance DNS stub resolver for bulk lookups and reconnaissance (subdomain enumeration)
+  * Due to how many requests sent, we should use a list of resolvers to not get our connection banned. More on rate limiting here: [https://github.com/blechschmidt/massdns#rate-limiting-evasion](https://github.com/blechschmidt/massdns#rate-limiting-evasion)
+  * [shuffledns](https://github.com/projectdiscovery/shuffledns) - MassDNS wrapper written in go that allows you to enumerate valid subdomains using active bruteforce as well as resolve subdomains with wildcard handling and easy input-output support.
+
+<!---->
+
+* [SubDomainizer](https://github.com/nsonaniya2010/SubDomainizer) - A tool to find subdomains and interesting things hidden inside, external Javascript files of page, folder, and Github.
+
+<!---->
+
+* [shosubgo](https://github.com/incogbyte/shosubgo) - Small tool to Grab subdomains using Shodan api.
+
+<!---->
+
+* [zdns](https://github.com/zmap/zdns) - Fast CLI DNS Lookup Tool
+
+<!---->
+
+* [aiodnsbrute](https://github.com/blark/aiodnsbrute) - A Python 3.5+ tool that uses asyncio to brute force domain names asynchronously. This is a bruteforcer with insane speed, and a very large number of built in wordlists. Use a list of resolvers with it
+
+<!---->
+
+* [Altdns](https://github.com/infosec-au/altdns): Altdns is a DNS recon tool that allows for the discovery of subdomains that conform to patterns. Altdns takes in words that could be present in subdomains under a domain (such as test, dev, staging), as well as a list of known subdomains.
+
+<!---->
+
+* [Findomain](https://github.com/Findomain/Findomain): Findomain offers a dedicated monitoring service hosted in Amazon (only the local version is free), that allows you to monitor your target domains and send alerts to Discord and Slack webhooks or Telegram chats when new subdomains are found.
+
+<!---->
+
+* [Dome](https://github.com/v4d1/Dome) - Fast and reliable python script that makes active and/or passive scan to obtain subdomains and search for open ports.
+
+</details>
+
+Sub-domains are subsections of larger domains used to create separate sections of a website or to organize content into different categories. Each subdomain can provide a wealth of new attack vectors and vulnerabilities to map.
+
+Discovering Sub-Domains can involve dynamic crawling of a website, brute forcing of common sub-domain names, and then visually parsing and flying through subdomains looking for anything fun and interesting. This process is called Sub-Domain Fly-Over.
+
+{% embed url="https://pentestbook.six2dez.com/others/subdomain-tools-review" %}
+
+{% tabs %}
+{% tab title="Sub-Domain Fly-Over" %}
+* [Aquatone](https://github.com/michenriksen/aquatone) - Aquatone is a tool for visual inspection of websites across a large amount of hosts and is convenient for quickly gaining an overview of HTTP-based attack surface.
+  * [https://blog.intigriti.com/2021/07/20/hacker-tools-aquatone/](https://blog.intigriti.com/2021/07/20/hacker-tools-aquatone/)&#x20;
+* [EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness) - EyeWitness is designed to take screenshots of websites, provide some server header info, and identify default credentials if possible
+* [Meg](https://github.com/tomnomnom/meg): Meg is a tool for fetching lots of URLs without taking a toll on the servers. It can be used to fetch many paths for many hosts, or fetching a single path for all hosts before moving on to the next path and repeating.
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 
 ## **Vulnerability Scanning**
 
@@ -467,16 +600,16 @@ Dynamic application security testing (DAST) is a process used to assess the secu
 
 For testing various web applications there are a multitude of testing tools for both individual vulnerabilities, as well as comprehensive suites. The foremost of these is Burp Suite.
 
-{% content-ref url="burp-suite.md" %}
-[burp-suite.md](burp-suite.md)
+{% content-ref url="../../web-app-hacking/burp-suite.md" %}
+[burp-suite.md](../../web-app-hacking/burp-suite.md)
 {% endcontent-ref %}
 
-{% content-ref url="web-app-testing-frameworks.md" %}
-[web-app-testing-frameworks.md](web-app-testing-frameworks.md)
+{% content-ref url="../../web-app-hacking/web-app-testing-frameworks.md" %}
+[web-app-testing-frameworks.md](../../web-app-hacking/web-app-testing-frameworks.md)
 {% endcontent-ref %}
 
-{% content-ref url="scanning-utilities.md" %}
-[scanning-utilities.md](scanning-utilities.md)
+{% content-ref url="../../web-app-hacking/scanning-utilities.md" %}
+[scanning-utilities.md](../../web-app-hacking/scanning-utilities.md)
 {% endcontent-ref %}
 
 {% tabs %}

@@ -115,8 +115,8 @@ There is a bug bounty focused search engine at [https://www.bugbountyhunting.com
 
 ## **Mapping the Site**
 
-{% content-ref url="mapping-the-site.md" %}
-[mapping-the-site.md](mapping-the-site.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## Web Technologies
