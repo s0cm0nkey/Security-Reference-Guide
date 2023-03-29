@@ -1,20 +1,43 @@
-# Scanning/Active-Recon
+# Reconnaissance and Scanning
 
 
+
+## Passive Reconnaissance
+
+This section focuses on the very first part of a penetration test: Passive Reconnaissance. This is where you use all the tools and resources at your disposal to gather up all of the information you can on your target, without interacting with the target in anyway (no scanning).
+
+For more tools and resources on intelligence gathering outside of the below frameworks, please see the OSINT section under Cyber Intelligence.
 
 After your passive reconnaissance phase, the next step is active scanning of your target. This usually involves port scanning and scanning for any vulnerabilities that your target might have, preferably with out them noticing. Active scanning does have direct interaction with your target and does run the risk of being detected. There are ways to subtle scan your target and not draw too much attention. This can include slowing the rate of your scanning or performing them in such a way as to not create a full connection request that would trigger any defensive alerts.
+
+{% content-ref url="../../cyber-intelligence/osint/" %}
+[osint](../../cyber-intelligence/osint/)
+{% endcontent-ref %}
+
+For ease of collection, there are many Recon Frameworks available that can gather intel from multiple sources and leverage multiple tools. They are a great way to save time on your Recon tasks.
+
+{% hint style="info" %}
+Note: Many Recon Frameworks have both passive and active reconnaissance capabilities.
+{% endhint %}
+
+{% content-ref url="recon-frameworks.md" %}
+[recon-frameworks.md](recon-frameworks.md)
+{% endcontent-ref %}
+
+* [https://tryhackme.com/room/passiverecon](https://tryhackme.com/room/passiverecon)
+* [https://tryhackme.com/room/redteamrecon](https://tryhackme.com/room/redteamrecon)
+* _Penetration Testing: Information Gathering - pg.113_
+
+## Active Recon and Scanning
 
 The following section will contain scanning tools and resources such as port scanners, vulnerability scanners, and so much more!
 
 * [https://tryhackme.com/room/activerecon](https://tryhackme.com/room/activerecon)
 
-## Host Discovery
+### Host Discovery
 
 * [https://book.hacktricks.xyz/pentesting/pentesting-network#discovering-hosts](https://book.hacktricks.xyz/pentesting/pentesting-network#discovering-hosts)
 * [https://www.secjuice.com/osint-detecting-enumerating-firewalls-gateways/](https://www.secjuice.com/osint-detecting-enumerating-firewalls-gateways/)
-
-### Tools
-
 * [fierce](https://www.kali.org/tools/fierce/) - Fierce is a semi-lightweight scanner that helps locate non-contiguous IP space and hostnames against specified domains. It’s really meant as a pre-cursor to nmap, unicornscan, nessus, nikto, etc, since all of those require that you already know what IP space you are looking for.
 * [hosthunter](https://www.kali.org/tools/hosthunter/) - This package contains a tool to efficiently discover and extract hostnames providing a large set of target IP addresses. HostHunter utilises simple OSINT techniques to map IP addresses with virtual hostnames.
 
@@ -376,8 +399,8 @@ The OWASP Amass Project performs network mapping of attack surfaces and external
 
 </details>
 
-{% content-ref url="../../../web-app-hacking/mapping-the-site.md" %}
-[mapping-the-site.md](../../../web-app-hacking/mapping-the-site.md)
+{% content-ref url="../../web-app-hacking/mapping-the-site.md" %}
+[mapping-the-site.md](../../web-app-hacking/mapping-the-site.md)
 {% endcontent-ref %}
 
 <details>

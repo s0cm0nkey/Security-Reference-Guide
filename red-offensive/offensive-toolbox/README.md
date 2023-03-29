@@ -160,8 +160,8 @@
 
 </details>
 
-{% content-ref url="recon-frameworks.md" %}
-[recon-frameworks.md](recon-frameworks.md)
+{% content-ref url="../scanning-active-recon/recon-frameworks.md" %}
+[recon-frameworks.md](../scanning-active-recon/recon-frameworks.md)
 {% endcontent-ref %}
 
 {% content-ref url="offensive-frameworks.md" %}

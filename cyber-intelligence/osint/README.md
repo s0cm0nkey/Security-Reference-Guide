@@ -249,8 +249,8 @@ These are misc tools and collections out there. Many overlap, but there are fant
 
 </details>
 
-{% content-ref url="../../red-offensive/offensive-toolbox/recon-frameworks.md" %}
-[recon-frameworks.md](../../red-offensive/offensive-toolbox/recon-frameworks.md)
+{% content-ref url="../../red-offensive/scanning-active-recon/recon-frameworks.md" %}
+[recon-frameworks.md](../../red-offensive/scanning-active-recon/recon-frameworks.md)
 {% endcontent-ref %}
 
 ### Tools by Category

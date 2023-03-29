@@ -1,30 +1,12 @@
 # Testing Methodology
 
-## Passive Reconnaissance
-
-This section focuses on the very first part of a penetration test: Passive Reconnaissance. This is where you use all the tools and resources at your disposal to gather up all of the information you can on your target, without interacting with the target in anyway (no scanning).
-
-For more tools and resources on intelligence gathering outside of the below frameworks, please see the OSINT section under Cyber Intelligence.
-
-{% content-ref url="../../cyber-intelligence/osint/" %}
-[osint](../../cyber-intelligence/osint/)
-{% endcontent-ref %}
-
-{% content-ref url="../offensive-toolbox/recon-frameworks.md" %}
-[recon-frameworks.md](../offensive-toolbox/recon-frameworks.md)
-{% endcontent-ref %}
-
-{% content-ref url="../../web-app-hacking/mapping-the-site.md" %}
-[mapping-the-site.md](../../web-app-hacking/mapping-the-site.md)
-{% endcontent-ref %}
+##
 
 {% hint style="info" %}
 Note: Many Recon Frameworks have both passive and active reconnaissance capabilities.
 {% endhint %}
 
-* [https://tryhackme.com/room/passiverecon](https://tryhackme.com/room/passiverecon)
-* [https://tryhackme.com/room/redteamrecon](https://tryhackme.com/room/redteamrecon)
-* _Penetration Testing: Information Gathering - pg.113_
+*
 
 ## **Active Recon and Scanning**
 
