@@ -1,33 +1,33 @@
 # Lateral Movement
 
-## Guides and Reference
+## Concepts Techniques and Tools
 
-<details>
+Lateral movement is where an attacker moves within a network to gain access to additional systems. This type of attack is commonly referred to as “pivoting” because the attacker “pivots” from one system to another. The purpose of lateral movement is to gain access to additional systems and data, or to use the compromised systems as a way to launch further attacks.
 
-<summary>Guides and Reference</summary>
+The two primary methods of lateral movement are credential-based and non-credential-based. In credential-based lateral movement, the attacker uses valid credentials to move from one system to another. This type of attack is often used to gain access to additional systems that the attacker would not have been able to access otherwise.
+
+Non-credential-based lateral movement does not require the attacker to use valid credentials. Instead, the attacker uses methods such as exploiting vulnerabilities, using exploits, or scanning for open ports to gain access to the target system.
 
 * [https://www.ired.team/offensive-security/lateral-movement](https://www.ired.team/offensive-security/lateral-movement)
 * [https://xapax.github.io/security/#attacking\_active\_directory\_domain/remote\_access/remote\_access/](https://xapax.github.io/security/#attacking\_active\_directory\_domain/remote\_access/remote\_access/)
 * [PSExec Pass the Hash - Metasploit Unleashed](https://www.offensive-security.com/metasploit-unleashed/psexec-pass-hash/)&#x20;
 * [Lateral Movement via DCOM: Round 2 | enigma0x3](https://enigma0x3.net/2017/01/23/lateral-movement-via-dcom-round-2/)
-* [https://enigma0x3.net/2017/01/05/lateral-movement-using-the-mmc20-application-com-object/](https://enigma0x3.net/2017/01/05/lateral-movement-using-the-mmc20-application-com-object/)
-
-</details>
-
-## Tools
-
-<details>
-
-<summary>Tools</summary>
-
-* [keimpx](https://github.com/nccgroup/keimpx) - quickly check for valid credentials across a network over SMB.
-* [Sonar.js](https://github.com/mandatoryprogrammer/sonar.js) - A framework for identifying and launching exploits against internal network hosts. Works via WebRTC IP enumeration combined with WebSockets and external resource fingerprinting.&#x20;
-* [SprayWMI](https://github.com/trustedsec/spraywmi) - SprayWMI is a method for mass spraying [Unicorn](https://github.com/trustedsec/unicorn) PowerShell injection to CIDR notations.
-* [LOLBAS](https://lolbas-project.github.io/) - Living Off The Land Binaries and Scripts (and also Libraries)
-* [MalSCCM](https://github.com/nettitude/MalSCCM) - This tool allows you to abuse local or remote SCCM servers to deploy malicious applications to hosts they manage.
-* [SCShell](https://github.com/Mr-Un1k0d3r/SCShell) - Fileless lateral movement tool that relies on ChangeServiceConfigA to run command
-
-</details>
+* [https://medium.com/@kuwaitison/pivoting-and-tunneling-for-oscp-and-beyond-cheat-sheet-3435d1d6022](https://medium.com/@kuwaitison/pivoting-and-tunneling-for-oscp-and-beyond-cheat-sheet-3435d1d6022)
+* [http://pwnwiki.io/#!pivoting/linux/index.md](http://pwnwiki.io/#!pivoting/linux/index.md)
+* [https://xapax.github.io/security/#random\_tips\_and\_tricks/pivoting/](https://xapax.github.io/security/#random\_tips\_and\_tricks/pivoting/)
+* [https://xapax.github.io/security/#random\_tips\_and\_tricks/port\_forwarding\_and\_tunneling/](https://xapax.github.io/security/#random\_tips\_and\_tricks/port\_forwarding\_and\_tunneling/)
+* [https://www.cynet.com/attack-techniques-hands-on/how-hackers-use-icmp-tunneling-to-own-your-network/](https://www.cynet.com/attack-techniques-hands-on/how-hackers-use-icmp-tunneling-to-own-your-network/)
+* Port Forwarding
+* [Abachy's Port Forwarding Guide](https://www.abatchy.com/2017/01/port-forwarding-practical-hands-on-guide)&#x20;
+* [https://0xdf.gitlab.io/2019/01/28/pwk-notes-tunneling-update1.html](https://0xdf.gitlab.io/2019/01/28/pwk-notes-tunneling-update1.html)
+* [https://www.offensive-security.com/metasploit-unleashed/proxytunnels/](https://www.offensive-security.com/metasploit-unleashed/proxytunnels/)
+* [https://chamibuddhika.wordpress.com/2012/03/21/ssh-tunnelling-explained/](https://chamibuddhika.wordpress.com/2012/03/21/ssh-tunnelling-explained/)
+* [https://fumenoid.github.io/posts/port-forwarding](https://fumenoid.github.io/posts/port-forwarding)
+* [https://pentest.blog/explore-hidden-networks-with-double-pivoting/](https://pentest.blog/explore-hidden-networks-with-double-pivoting/)
+* [https://www.offensive-security.com/metasploit-unleashed/portfwd/](https://www.offensive-security.com/metasploit-unleashed/portfwd/)
+* [http://woshub.com/port-forwarding-in-windows/](http://woshub.com/port-forwarding-in-windows/)
+* [NetworkPivotingTechniques](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Network%20Pivoting%20Techniques.md)
+* _Attacking Network Protocols: Network Proxies - pg.20_
 
 {% tabs %}
 {% tab title="PSExec" %}
@@ -65,9 +65,20 @@
     * [http://harmj0y.net/blog/empire/empire-1-5](http://harmj0y.net/blog/empire/empire-1-5)
   * _PTFM: Empire Admin Tools - pg. 52_
 {% endtab %}
+
+{% tab title="Other Tools" %}
+* [keimpx](https://github.com/nccgroup/keimpx) - quickly check for valid credentials across a network over SMB.
+* [Sonar.js](https://github.com/mandatoryprogrammer/sonar.js) - A framework for identifying and launching exploits against internal network hosts. Works via WebRTC IP enumeration combined with WebSockets and external resource fingerprinting.&#x20;
+* [SprayWMI](https://github.com/trustedsec/spraywmi) - SprayWMI is a method for mass spraying [Unicorn](https://github.com/trustedsec/unicorn) PowerShell injection to CIDR notations.
+* [LOLBAS](https://lolbas-project.github.io/) - Living Off The Land Binaries and Scripts (and also Libraries)
+* [MalSCCM](https://github.com/nettitude/MalSCCM) - This tool allows you to abuse local or remote SCCM servers to deploy malicious applications to hosts they manage.
+* [SCShell](https://github.com/Mr-Un1k0d3r/SCShell) - Fileless lateral movement tool that relies on ChangeServiceConfigA to run commandG
+{% endtab %}
 {% endtabs %}
 
-## Techniques
+### Techniques
+
+* [https://enigma0x3.net/2017/01/05/lateral-movement-using-the-mmc20-application-com-object/](https://enigma0x3.net/2017/01/05/lateral-movement-using-the-mmc20-application-com-object/)
 
 {% tabs %}
 {% tab title="WMI" %}
@@ -167,14 +178,6 @@
   * Next we must hardcode an additional tunnel into our payload.&#x20;
 
 </details>
-
-#### Password Spraying
-
-{% content-ref url="password-attacks.md" %}
-[password-attacks.md](password-attacks.md)
-{% endcontent-ref %}
-
-#### **Misc Techniques**
 
 * Admin Shares
   * _PTFM: Admin Shares - pg. 51_
