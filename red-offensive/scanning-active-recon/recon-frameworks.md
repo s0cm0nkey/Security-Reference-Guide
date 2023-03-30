@@ -75,5 +75,8 @@ These other frameworks do many of the same tasks that the previous two perform. 
 *   [blacklanternsecurity/bbot](https://github.com/blacklanternsecurity/bbot) - **BBOT** is a **recursive**, **modular** OSINT framework inspired by Spiderfoot and written in Python. Capable of executing the entire OSINT process in a single command, BBOT does subdomain enumeration, port scanning, web screenshots (with its `gowitness` module), vulnerability scanning (with `nuclei`), and much more.
 
     BBOT currently has over **60 modules** and counting.
+* [https://github.com/slithery0/eReKon](https://github.com/slithery0/eReKon) - Yet another web recon tool But beautiful
+* [https://www.reconness.com/](https://www.reconness.com/)
+* [https://www.runzero.com/](https://www.runzero.com/)
 
 </details>

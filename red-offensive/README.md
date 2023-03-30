@@ -108,29 +108,3 @@ Notekeeping becomes incredibly important in recreating exploits, storing essenti
 ## **Training and Resources**
 
 For resources including offensive security courses, books, CTFs and much more, please check out the Training and Resources section of this guide.
-
-## Section Contents
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="offensive-toolbox/" %}
-[offensive-toolbox](offensive-toolbox/)
-{% endcontent-ref %}
-
-{% content-ref url="red-purple-teaming.md" %}
-[red-purple-teaming.md](red-purple-teaming.md)
-{% endcontent-ref %}
-
-{% content-ref url="physical-security-testing.md" %}
-[physical-security-testing.md](physical-security-testing.md)
-{% endcontent-ref %}
-
-{% content-ref url="wireless-hacking.md" %}
-[wireless-hacking.md](wireless-hacking.md)
-{% endcontent-ref %}
-
-{% content-ref url="social-engineering.md" %}
-[social-engineering.md](social-engineering.md)
-{% endcontent-ref %}

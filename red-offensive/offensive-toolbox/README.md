@@ -160,22 +160,6 @@
 
 </details>
 
-{% content-ref url="../scanning-active-recon/recon-frameworks.md" %}
-[recon-frameworks.md](../scanning-active-recon/recon-frameworks.md)
-{% endcontent-ref %}
-
-{% content-ref url="../exploitation-and-targets/offensive-frameworks.md" %}
-[offensive-frameworks.md](../exploitation-and-targets/offensive-frameworks.md)
-{% endcontent-ref %}
-
-{% content-ref url="c2-frameworks.md" %}
-[c2-frameworks.md](c2-frameworks.md)
-{% endcontent-ref %}
-
-{% content-ref url="shells.md" %}
-[shells.md](shells.md)
-{% endcontent-ref %}
-
 {% content-ref url="utility-commands.md" %}
 [utility-commands.md](utility-commands.md)
 {% endcontent-ref %}

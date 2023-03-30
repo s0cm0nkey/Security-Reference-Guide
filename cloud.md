@@ -12,6 +12,7 @@
 ### Cloud Security and Hardening
 
 * [SANS Cloud Security Checklist](https://www.sans.org/cloud-security/securing-web-application-technologies/?msc=cloud-security-lp) - Best practices and references for hardening your cloud infrastructure.
+* [https://github.com/riskprofiler/CloudFrontier](https://github.com/riskprofiler/CloudFrontier) - Monitor the internet attack surface of various public cloud environments. Currently supports AWS, GCP, Azure, DigitalOcean and Oracle Cloud.
 * [https://cloudsecdocs.com/](https://cloudsecdocs.com/) - Great page with tons of detail on cloud and container security
 * [https://cloudsecwiki.com/](https://cloudsecwiki.com/) - Handy page with a few resources and hardening tips for cloud deployments.
 * [https://medium.com/mitre-engenuity/research-partnership-matures-att-ck-for-cloud-d232998968ce](https://medium.com/mitre-engenuity/research-partnership-matures-att-ck-for-cloud-d232998968ce)
