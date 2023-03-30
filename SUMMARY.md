@@ -64,7 +64,6 @@
     * [Meterpreter Post-Auth Runbook](red-offensive/testing-methodology/post-exploitation/meterpreter-post-auth-runbook.md)
   * [Attacking Active Directory](red-offensive/testing-methodology/active-directory.md)
   * [Lateral Movement](red-offensive/testing-methodology/lateral-movement.md)
-  * [Pivot/Proxy/Tunnel/Redirect](red-offensive/testing-methodology/pivot-proxy-tunnel-redirect.md)
   * [Password Attacks](red-offensive/testing-methodology/password-attacks.md)
   * [Web App Hacking](web-app-hacking/README.md)
   * [Red/Purple Teaming](red-offensive/red-purple-teaming.md)
