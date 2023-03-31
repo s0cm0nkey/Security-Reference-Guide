@@ -32,4 +32,6 @@ Warning: Do not use any of the mentioned tools referenced here for illegal, unet
 
 **Other Publications:**
 
-\*\*\*\*[https://www.deepwatch.com/blog/logging-strategy/](https://www.deepwatch.com/blog/logging-strategy/)
+[https://www.deepwatch.com/blog/logging-strategy/](https://www.deepwatch.com/blog/logging-strategy/)
+
+[https://s0cm0nkey.gitbook.io/port-scanner-shootout](https://s0cm0nkey.gitbook.io/port-scanner-shootout)
