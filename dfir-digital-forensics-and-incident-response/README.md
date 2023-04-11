@@ -161,10 +161,6 @@ IREC.exe -ad "\\MACHINE\IREC-DIR" --triage-ruleset MyYaraRules --triage-memory
 {% endtab %}
 {% endtabs %}
 
-{% content-ref url="yara.md" %}
-[yara.md](yara.md)
-{% endcontent-ref %}
-
 ## DFIR Commands
 
 {% content-ref url="interact-with-remote-machine.md" %}
