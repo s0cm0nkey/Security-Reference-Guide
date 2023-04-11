@@ -118,6 +118,10 @@ CrowdResponse -v -i config.txt -o out.xml
 {% endtab %}
 
 {% tab title="Yara Scanners" %}
+{% content-ref url="yara.md" %}
+[yara.md](yara.md)
+{% endcontent-ref %}
+
 * [Yara](https://github.com/virustotal/yara/releases/latest)
 
 ```
