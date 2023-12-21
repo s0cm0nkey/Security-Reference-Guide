@@ -31,6 +31,7 @@ These two tools often go hand in hand with results often overlapping. Still, it 
 * [https://analyzeid.com/username/](https://analyzeid.com/username/) - Social media username checker. Gather information on the taken username and get a summary of who the person is.
 * [https://www.idcrawl.com/](https://www.idcrawl.com/) - A free people search engine that organizes social network information, deep web information, phone numbers, email addresses and more.
 * [https://knowem.com/](https://knowem.com/) - Allows you to check for a username or real name instantly on over 500 popular and emerging social media sites.
+* [https://www.user-searcher.com](https://www.user-searcher.com) - A free OSINT tool to search username in 2000+ websites, including social networks, dating sites, crypto forums, etc.
 
 </details>
 
