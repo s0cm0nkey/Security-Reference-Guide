@@ -1,21 +1,9 @@
 # Grey - Privacy/TOR/OPSEC
 
-## Privacy
-
-###
+## Privacy Resources
 
 {% tabs %}
 {% tab title="Guides and Reference" %}
-
-{% endtab %}
-
-{% tab title="Second Tab" %}
-
-{% endtab %}
-{% endtabs %}
-
-### Guides and Reference
-
 * [Hitch Hiker's Guide to Online Anonymity ](https://anonymousplanet.github.io/thgtoa/guide.html)
 * [Infosec\_Reference/AnonOpSecPrivacy](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/AnonOpSecPrivacy.md)
 * [personal-security-checklist](https://github.com/Lissy93/personal-security-checklist)
@@ -28,15 +16,29 @@
 * [https://exposingtheinvisible.org/resources/watching-out-yourself/](https://exposingtheinvisible.org/resources/watching-out-yourself/) - Personal security guide for investigators
 * [AmIunique](https://amiunique.org/) - Learn how identifiable you are on the Internet
 * [Surveillance Self-Defense](https://ssd.eff.org/) - Tips, Tools and How-tos for Safer Online Communications.
+{% endtab %}
 
-### Altnets
+{% tab title="Browser Privacy/Check-Your-Self" %}
+* [tps://coveryourtracks.eff.org/](https://coveryourtracks.eff.org/) - EFF sponsored Browser tracking checker
+* [**Panopticlick 3.0**](https://panopticlick.eff.org/) - is your browser safe against tracking?
+* [**Privacy Analyzer**](https://privacy.net/analyzer/) - see what data is exposed from your browser.
+* [Browser Mirror](https://centralops.net/asp/co/BrowserMirror.vbs.asp) - See what your browser says about you
+* [Webkay](https://webkay.robinlinus.com/) - A demonstration of all the data your browser knows about you. All this data can be accessed by any website without asking you.
+* [Logger](https://inteltechniques.com/logger/) - IntelTechniques custom tool for seeing what data can be tracked in your browser.
+* [https://tenta.com/test/](https://tenta.com/test/) - Site for checking DNS Leakage and other browser security issues.
+* [https://www.grc.com/shieldsup](https://www.grc.com/shieldsup) - Great tool for profiling your internet connection and router for exposure, potential vulnerabilities, and open ports.
+* [https://ipleak.net](https://ipleak.net) - See what information you are giving away while browsing the internet. IP addresses, DNS leaks, WebRTC leaks, fingerprints and user-agent.
+* [https://browserleaks.com](https://browserleaks.com) - Here you will find a gallery of security testing tools that will show you what kind of personal data can be leaked, and how to protect yourself from it.
+* [https://shutuptrackers.com/browser/tweaks.php](https://shutuptrackers.com/browser/tweaks.php) - Firefox Privacy Settings
+* [What every Browser knows about you](https://webkay.robinlinus.com) — This site not only shows what information your browser provides to third-party sites, but also explains how it can be dangerous and suggests what extensions will help to ensure your anonymity.
+* [https://socradar.io/labs/vpnradar/](https://socradar.io/labs/vpnradar/) - VPN privacy checker
+{% endtab %}
+{% endtabs %}
 
-* [https://www.whonix.org/wiki/ZeroNet](https://www.whonix.org/wiki/ZeroNet) - Excellent guide on how to securely setup ZeroNet. Also provides a decent list of common ZeroNet sites.
-* [https://nodehist.fidonet.org.ua](https://nodehist.fidonet.org.ua) - A large list of FidoNet nodes. Searchable by node address or sysop name.
-* [https://nzbfriends.com/](https://nzbfriends.com/) - A search engine for Usenet.
+## Privacy Apps
 
-### Tools
-
+{% tabs %}
+{% tab title="General Tools" %}
 * [Awesome Lists Collection: Anti-Forensics](https://github.com/shadawck/awesome-anti-forensic)
 * [Awesome Lists Collection: Anti-Censorship](https://github.com/danoctavian/awesome-anti-censorship)
 * Identity Scrubbers
@@ -57,38 +59,30 @@
 * [How to set up ProxyChains - Change IP](https://youtu.be/FtFTh-KVjsA)
 * [Changing/Masking your DNS Traffic](https://youtu.be/SVW1-4ft8d0)
 * [VPN + ProxyChains = Maximum Anonymity](https://youtu.be/TMHGcnuNoyw)
+{% endtab %}
 
-### Privacy Comms
-
+{% tab title="Secure Comms" %}
 * [TorChat](https://github.com/prof7bit/TorChat) - Decentralized anaonymous IM that uses Tor networks. Creates a new randomly generated .onion address for each client launch
   * [http://kpvz7ki2v5agwt35.onion/wiki/index.php/Hacking\_TorChat](http://kpvz7ki2v5agwt35.onion/wiki/index.php/Hacking_TorChat)
 * [https://matrix.org/](https://matrix.org/) - An open network for secure, decentralized, real-time communication.
 * [https://wire.com/en/](https://wire.com/en/) - Secure messaging, file sharing, voice calls and video conferences. All protected with end-to-end
 * [https://www.signal.org/](https://www.signal.org/) - an encrypted communications app.
+{% endtab %}
 
-### **Secure Webmail Providers**
-
+{% tab title="Secure Webmail" %}
 * [**CounterMail**](https://countermail.com/) - online email service, designed to provide maximum security and privacy.
 * [**Mail2Tor**](http://mail2tor.com/) - is a Tor Hidden Service that allows anyone to send and receive emails anonymously.
 * [**Tutanota**](https://tutanota.com/) - is the world's most secure email service and amazingly easy to use.
 * [**Protonmail**](https://protonmail.com/) - is the world's largest secure email service, developed by CERN and MIT scientists.
 * [**Startmail**](https://www.startmail.com/en/) - private & encrypted email made easy.
+{% endtab %}
 
-### Browser Privacy/Check yourself
-
-* [https://coveryourtracks.eff.org/](https://coveryourtracks.eff.org/) - EFF sponsored Browser tracking checker
-* [**Panopticlick 3.0**](https://panopticlick.eff.org/) - is your browser safe against tracking?
-* [**Privacy Analyzer**](https://privacy.net/analyzer/) - see what data is exposed from your browser.
-* [Browser Mirror](https://centralops.net/asp/co/BrowserMirror.vbs.asp) - See what your browser says about you
-* [Webkay](https://webkay.robinlinus.com/) - A demonstration of all the data your browser knows about you. All this data can be accessed by any website without asking you.
-* [Logger](https://inteltechniques.com/logger/) - IntelTechniques custom tool for seeing what data can be tracked in your browser.
-* [https://tenta.com/test/](https://tenta.com/test/) - Site for checking DNS Leakage and other browser security issues.
-* [https://www.grc.com/shieldsup](https://www.grc.com/shieldsup) - Great tool for profiling your internet connection and router for exposure, potential vulnerabilities, and open ports.
-* [https://ipleak.net](https://ipleak.net) - See what information you are giving away while browsing the internet. IP addresses, DNS leaks, WebRTC leaks, fingerprints and user-agent.
-* [https://browserleaks.com](https://browserleaks.com) - Here you will find a gallery of security testing tools that will show you what kind of personal data can be leaked, and how to protect yourself from it.
-* [https://shutuptrackers.com/browser/tweaks.php](https://shutuptrackers.com/browser/tweaks.php) - Firefox Privacy Settings
-* [What every Browser knows about you](https://webkay.robinlinus.com) — This site not only shows what information your browser provides to third-party sites, but also explains how it can be dangerous and suggests what extensions will help to ensure your anonymity.
-* [https://socradar.io/labs/vpnradar/](https://socradar.io/labs/vpnradar/) - VPN privacy checker
+{% tab title="Altnets" %}
+* [https://www.whonix.org/wiki/ZeroNet](https://www.whonix.org/wiki/ZeroNet) - Excellent guide on how to securely setup ZeroNet. Also provides a decent list of common ZeroNet sites.
+* [https://nodehist.fidonet.org.ua](https://nodehist.fidonet.org.ua) - A large list of FidoNet nodes. Searchable by node address or sysop name.
+* [https://nzbfriends.com/](https://nzbfriends.com/) - A search engine for Usenet.
+{% endtab %}
+{% endtabs %}
 
 ## Personal Network Security
 
@@ -96,10 +90,12 @@
 
 ## OPSEC
 
+{% tabs %}
+{% tab title="Guides" %}
 * [https://www.intelligencewithsteve.com/post/a-5-minute-guide-to-creating-a-covert-account-for-internet-investigations-osint](https://www.intelligencewithsteve.com/post/a-5-minute-guide-to-creating-a-covert-account-for-internet-investigations-osint)
+{% endtab %}
 
-### Good habits
-
+{% tab title="Good Habits" %}
 • Your "work" computer should never ever have anything personally related to your real identity. Ever!\
 • Your host machine should have Anti-Virus or Windows Defender enabled.\
 • Your host machine should always be kept up to date with current updates.\
@@ -116,62 +112,10 @@
 • Be conscious of other devices you may have on your person that are giving away your location (cell phones are not your friends).\
 • PGP encryption for secure emailing\
 • Only wired keyboards and mice\
-• Read [http://grugq.github.io/](http://grugq.github.io/)
+• Read [http://grugq.github.io](http://grugq.github.io/)
+{% endtab %}
 
-### Command line history
-
-* Disable PS logging
-  * [https://github.com/leechristensen/Random/blob/master/CSharp/DisablePSLogging.cs](https://github.com/leechristensen/Random/blob/master/CSharp/DisablePSLogging.cs)
-*   **.i. Leave Bash without history:**
-
-    Tell Bash to use _/dev/null_ instead of _\~/.bash\_history_. This is the first command we execute on every shell. It will stop the Bash from logging your commands.
-
-    ```
-    export HISTFILE=/dev/null
-    ```
-
-    It is good housekeeping to 'commit suicide' when exiting a shell:
-
-    ```
-    alias exit='kill -9 $$'
-    ```
-
-    Any command starting with a " " (space) will [not get logged to history](https://unix.stackexchange.com/questions/115917/why-is-bash-not-storing-commands-that-start-with-spaces) either.
-
-    ```
-    $  id
-    ```
-
-    **1.ii. Hide your command**
-
-    ```
-    /bin/bash -c "exec -a syslogd nmap -T0 10.0.2.1/24"
-    # or starting as a background process:
-    exec -a syslogd nmap -T0 10.0.2.1/24 &>nmap.log &
-    ```
-
-    Alternatively if there is no Bash:
-
-    ```
-    cp `which nmap` syslogd
-    PATH=.:$PATH syslogd -T0 10.0.2.1/24
-    ```
-
-    In this example we execute _nmap_ but let it appear with the name _syslogd_ in _ps alxwww_ process list.
-
-    **1.iii. Hide your arguments**
-
-    Download [zap-args.c](https://github.com/hackerschoice/thc-tips-tricks-hacks-cheat-sheet/blob/master/src/zap-args.c). This example will execute _nmap_ but will make it appear as 'syslogd' without any arguments in the _ps alxww_ output.
-
-    ```
-    gcc -Wall -O2 -fpic -shared -o zap-args.so zap-args.c -ldl
-    LD_PRELOAD=./zap-args.so exec -a syslogd nmap -T0 10.0.0.1/24
-    ```
-
-{% embed url="https://youtu.be/TgquV_OA-lU" %}
-
-### Web Opsec
-
+{% tab title="WebOpsec" %}
 * Disable Javascript
 * Set security to safest setting
 * Use Cached version of website when on network instead of net requests.
@@ -193,10 +137,10 @@
 * Doublecheck
   * Display all the information your browser is currently showing about you
     * Use the above Browser
+{% endtab %}
 
-### File management
-
-* &#x20;File verification
+{% tab title="FileManagement" %}
+* File verification
   * [http://www.gpg4win.org/](http://www.gpg4win.org/) - Verifes files via PGP signature
   * &#x20;MD5 and Sha-1 hash verification
 * File shredding\
@@ -280,26 +224,70 @@
     ```
     openssl enc -d -aes-256-cbc -pbkdf2 -k fOUGsg1BJdXPt0CY4I <input.txt.enc >input.txt
     ```
+{% endtab %}
+{% endtabs %}
 
-### Email Opsec
+{% tabs %}
+{% tab title="Command Line History" %}
+* Disable PS logging
+  * [https://github.com/leechristensen/Random/blob/master/CSharp/DisablePSLogging.cs](https://github.com/leechristensen/Random/blob/master/CSharp/DisablePSLogging.cs)
+*   **.i. Leave Bash without history:**
 
-• Always use tor to create emails and to check that email.\
-• Never use your home wifi\
-• If email registration requires a phone number, use a burner phone that can recieve texts.\
-• Wait at least 1 month before using the phone, and purchase far away from your home.\
-• Use email providers that operate on Tor and use PGP when dealing with clients\
-◇ [http://secmailw453j7piv.onion](http://secmailw453j7piv.onion)\
-◇ [http://eludemaillhqfkh5.onion](http://eludemaillhqfkh5.onion)\
-◇ [http://mail2tor2zyjdctd.onion](http://mail2tor2zyjdctd.onion)\
-◇ http://cockmailwwfvrtqj.onion
+    Tell Bash to use _/dev/null_ instead of _\~/.bash\_history_. This is the first command we execute on every shell. It will stop the Bash from logging your commands.
 
-### PGP Encryption&#x20;
+    ```
+    export HISTFILE=/dev/null
+    ```
 
+    It is good housekeeping to 'commit suicide' when exiting a shell:
+
+    ```
+    alias exit='kill -9 $$'
+    ```
+
+    Any command starting with a " " (space) will [not get logged to history](https://unix.stackexchange.com/questions/115917/why-is-bash-not-storing-commands-that-start-with-spaces) either.
+
+    ```
+    $  id
+    ```
+
+    **1.ii. Hide your command**
+
+    ```
+    /bin/bash -c "exec -a syslogd nmap -T0 10.0.2.1/24"
+    # or starting as a background process:
+    exec -a syslogd nmap -T0 10.0.2.1/24 &>nmap.log &
+    ```
+
+    Alternatively if there is no Bash:
+
+    ```
+    cp `which nmap` syslogd
+    PATH=.:$PATH syslogd -T0 10.0.2.1/24
+    ```
+
+    In this example we execute _nmap_ but let it appear with the name _syslogd_ in _ps alxwww_ process list.
+
+    **1.iii. Hide your arguments**
+
+    Download [zap-args.c](https://github.com/hackerschoice/thc-tips-tricks-hacks-cheat-sheet/blob/master/src/zap-args.c). This example will execute _nmap_ but will make it appear as 'syslogd' without any arguments in the _ps alxww_ output.
+
+    ```
+    gcc -Wall -O2 -fpic -shared -o zap-args.so zap-args.c -ldl
+    LD_PRELOAD=./zap-args.so exec -a syslogd nmap -T0 10.0.0.1/24
+    ```
+
+{% embed url="https://youtu.be/TgquV_OA-lU" %}
+{% endtab %}
+
+{% tab title="PGP Encryption" %}
 * [Nulltrace](http://nulltc777uyenqhqvtms46lhqzpzsj6fhac5xnubhko4uqwvqgosoead.onion/index.html) - An onion site that offers an easy to use PGP toolkit. Allows a user to create PGP keypairs, sign, verify, encrypt and decrypt.
 
 {% content-ref url="pgp-guide.md" %}
 [pgp-guide.md](pgp-guide.md)
 {% endcontent-ref %}
+{% endtab %}
+{% endtabs %}
 
 ### Dread OPSEC Guide
 
