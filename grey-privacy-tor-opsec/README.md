@@ -162,6 +162,34 @@ Closing: Hopefully you found this Tor Browser Security Guide a helpful source of
 
 <details>
 
+<summary>MacOS Opsec</summary>
+
+To set up your MacOS box, there will be many steps to follow. The best and most comprehensive list is in the book "Extreme Privacy: What it takes to disappear" by Michael Bazzell.
+
+Extreme Privacy: What it takes to disappear 5th edition - pg. 39
+
+* [LittleSnitch](https://www.obdev.at/products/littlesnitch/index.html) - MacOS Open source firewall app
+* [Tools by ObjectiveSee](https://objective-see.org/tools.html) - Great suite of open source MacOS tools to keep you safe and private.
+  * [Lulu](https://objective-see.org/products/lulu.html) - MacOS Open source firewall app. Great alternative. ObjectiveSee tools are great.
+  * [KnockKnock](https://objective-see.org/products/knockknock.html) - KnockKnock uncovers persistently installed software in order to generically reveal such malware.
+
+</details>
+
+<details>
+
+<summary>Linux Opsec</summary>
+
+To set up your Linux box, there will be many steps to follow. The best and most comprehensive list is in the book "Extreme Privacy: What it takes to disappear" by Michael Bazzell.&#x20;
+
+Extreme Privacy: What it takes to disappear 5th edition - pg. 21
+
+* [Pop!\_OS](https://pop.system76.com/) - Secure linux distro of choice.
+* [OpenSnitch](https://github.com/evilsocket/opensnitch) - Open source personal firewall
+
+</details>
+
+<details>
+
 <summary>WebOpsec</summary>
 
 
@@ -298,6 +326,16 @@ Closing: Hopefully you found this Tor Browser Security Guide a helpful source of
 
 <details>
 
+<summary>Email Opsec</summary>
+
+* [Nulltrace](http://nulltc777uyenqhqvtms46lhqzpzsj6fhac5xnubhko4uqwvqgosoead.onion/index.html) - An onion site that offers an easy to use PGP toolkit. Allows a user to create PGP keypairs, sign, verify, encrypt and decrypt.
+
+
+
+</details>
+
+<details>
+
 <summary>Command Line HIstory</summary>
 
 * Disable PS logging
@@ -351,44 +389,8 @@ Closing: Hopefully you found this Tor Browser Security Guide a helpful source of
 
 </details>
 
-{% tabs %}
-{% tab title="Command Line History" %}
 {% embed url="https://youtu.be/TgquV_OA-lU" %}
-{% endtab %}
-
-{% tab title="PGP Encryption" %}
-* [Nulltrace](http://nulltc777uyenqhqvtms46lhqzpzsj6fhac5xnubhko4uqwvqgosoead.onion/index.html) - An onion site that offers an easy to use PGP toolkit. Allows a user to create PGP keypairs, sign, verify, encrypt and decrypt.
 
 {% content-ref url="pgp-guide.md" %}
 [pgp-guide.md](pgp-guide.md)
 {% endcontent-ref %}
-{% endtab %}
-{% endtabs %}
-
-<details>
-
-<summary>Linux Opsec</summary>
-
-To set up your Linux box, there will be many steps to follow. The best and most comprehensive list is in the book "Extreme Privacy: What it takes to disappear" by Michael Bazzell.&#x20;
-
-Extreme Privacy: What it takes to disappear 5th edition - pg. 21
-
-* [Pop!\_OS](https://pop.system76.com/) - Secure linux distro of choice.
-* [OpenSnitch](https://github.com/evilsocket/opensnitch) - Open source personal firewall
-
-</details>
-
-<details>
-
-<summary>MacOS Opsec</summary>
-
-To set up your MacOS box, there will be many steps to follow. The best and most comprehensive list is in the book "Extreme Privacy: What it takes to disappear" by Michael Bazzell.
-
-Extreme Privacy: What it takes to disappear 5th edition - pg. 39
-
-* [LittleSnitch](https://www.obdev.at/products/littlesnitch/index.html) - MacOS Open source firewall app
-* [Tools by ObjectiveSee](https://objective-see.org/tools.html) - Great suite of open source MacOS tools to keep you safe and private.
-  * [Lulu](https://objective-see.org/products/lulu.html) - MacOS Open source firewall app. Great alternative. ObjectiveSee tools are great.
-  * [KnockKnock](https://objective-see.org/products/knockknock.html) - KnockKnock uncovers persistently installed software in order to generically reveal such malware.
-
-</details>
