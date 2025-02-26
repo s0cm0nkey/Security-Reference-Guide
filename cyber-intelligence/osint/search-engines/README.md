@@ -18,7 +18,7 @@ Google is the most powerful and scary information gathering tool today. Beyond s
 
 <summary>Google search utility</summary>
 
-* [Google Advanced Search](https://www.google.com/advanced\_search) - Google search with multiple special options for your search parameters
+* [Google Advanced Search](https://www.google.com/advanced_search) - Google search with multiple special options for your search parameters
 * [Keyword Tool](https://keywordtool.io) - Tool for assisting in analyzing the efficacy of searching for certain keywords
 * [Google keyword monitor](https://www.google.com/alerts) - An awesome tool that can alert you on new search hits on certain keywords.
 * [ISearchFrom](https://isearchfrom.com/) - Tool that allows you to search google as if you are in different locations to analyze the differences in results.
@@ -30,7 +30,7 @@ Google is the most powerful and scary information gathering tool today. Beyond s
 * [Google Hacking Database](https://www.exploit-db.com/google-hacking-database) - Repository of google search tricks for searching for exactly what you need.
 * [SANS Google Cheatsheet](https://www.sans.org/security-resources/GoogleCheatSheet.pdf)
 * [https://ahrefs.com/blog/google-advanced-search-operators/](https://ahrefs.com/blog/google-advanced-search-operators/)
-* [http://www.googleguide.com/advanced\_operators\_reference.html](http://www.googleguide.com/advanced\_operators\_reference.html)
+* [http://www.googleguide.com/advanced\_operators\_reference.html](http://www.googleguide.com/advanced_operators_reference.html)
 
 
 
@@ -89,9 +89,7 @@ Sometimes the page you are trying to find is no longer available. But it still m
   * [https://archive.ph](https://archive.ph) - A time capsule for web pages!
   * [https://www.webcitation.org](https://www.webcitation.org) (Depreciated) - WebCite is an on-demand archive site, designed to digitally preserve scientific and educationally important material on the web by making snapshots of Internet contents as they existed at the time when a blogger, or a scholar cited or quoted from it.
 
-<!---->
-
-* [gau](https://github.com/lc/gau) - Get All URLs - Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.
+- [gau](https://github.com/lc/gau) - Get All URLs - Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.
   * [https://commoncrawl.org/](https://commoncrawl.org/) - Cached data from public web crawlers since 2008
 
 </details>
@@ -141,6 +139,5 @@ This section contains miscellaneous search engines and utilities.
 ## **Training**
 
 * [https://tryhackme.com/room/googledorking](https://tryhackme.com/room/googledorking)
-* [https://www.blackhat.com/presentations/bh-europe-05/BH\_EU\_05-Long.pdf](https://www.blackhat.com/presentations/bh-europe-05/BH\_EU\_05-Long.pdf) - Blackhat presentation on Google Hacking
+* [https://www.blackhat.com/presentations/bh-europe-05/BH\_EU\_05-Long.pdf](https://www.blackhat.com/presentations/bh-europe-05/BH_EU_05-Long.pdf) - Blackhat presentation on Google Hacking
 
-****

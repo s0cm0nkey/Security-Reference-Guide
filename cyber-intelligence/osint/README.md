@@ -22,13 +22,13 @@ Specific for what you need to look for and how to find it, during the passive re
 * [IntelTechniques](https://inteltechniques.com/osintbook) - One of the best resources for OSINT has been Michael Bazzell's OSINT book and his website. I highly recommend you order his book. The HTML search tools I reference here come from his collection, available on his website for free. He also runs the Privacy and Security Podcast which is a highly recommended resource for both OSINT techniques and personal privacy.
 * [https://ohshint.gitbook.io/](https://ohshint.gitbook.io/) - One of the most detailed OSINT resources available. Chocked full of search tools.
 * [Security Sift ](http://www.securitysift.com/passive-reconnaissance/) - This write up is a great guide to Passive recon when preparing for a penetration test. For building up your own workflow, start with this.&#x20;
-* [Pen Test Standard](http://www.pentest-standard.org/index.php/Intelligence\_Gathering) - Great guides for every step of a penetration test, but the recon section is especially useful as a reference here.&#x20;
-* [OSINT\_Handbook\_2020.pdf](https://i-intelligence.eu/uploads/public-documents/OSINT\_Handbook\_2020.pdf) - OSINT Tools and Techniques by I-Intelligence
+* [Pen Test Standard](http://www.pentest-standard.org/index.php/Intelligence_Gathering) - Great guides for every step of a penetration test, but the recon section is especially useful as a reference here.&#x20;
+* [OSINT\_Handbook\_2020.pdf](https://i-intelligence.eu/uploads/public-documents/OSINT_Handbook_2020.pdf) - OSINT Tools and Techniques by I-Intelligence
 * [https://www.randhome.io/blog/2019/01/05/2019-osint-guide/](https://www.randhome.io/blog/2019/01/05/2019-osint-guide/) - Great guide of some newer tools and techniques.
 * [https://nixintel.info/osint/using-gap-analysis-to-keep-osint-investigations-on-track/](https://nixintel.info/osint/using-gap-analysis-to-keep-osint-investigations-on-track/) - Great article on investigation methodology to hasten your OSINT research.
-* Methodology of how to investigate a website - [https://twitter.com/aware\_online/status/1308312883248467975](https://twitter.com/aware\_online/status/1308312883248467975)
+* Methodology of how to investigate a website - [https://twitter.com/aware\_online/status/1308312883248467975](https://twitter.com/aware_online/status/1308312883248467975)
 * [OSINT x UCCU Workshop on Open Source Intelligence](https://www.slideshare.net/miaoski/osint-x-uccu-workshop-on-open-source-intelligence)  - Slide deck from a workshop by Miaoski, one of the Senior Intel Analysts for Trend Micro.
-* [102 Deep Dive in the Dark Web OSINT](https://www.youtube.com/watch?v=fzd3zkAI\_o4) - Great video presentation on Dark Web OSINT techniques
+* [102 Deep Dive in the Dark Web OSINT](https://www.youtube.com/watch?v=fzd3zkAI_o4) - Great video presentation on Dark Web OSINT techniques
 * [Verification handbook](https://datajournalism.com/read/handbook/verification-3) - Designed for journalists but still quite useful, the Verification handbook provides a wealth of resources on investigative procedure
 
 </details>
@@ -72,7 +72,7 @@ Specific for what you need to look for and how to find it, during the passive re
 
 * 0x4rkØ OSINT videos - [https://www.youtube.com/c/0x4rk%C3%98/videos](https://www.youtube.com/c/0x4rk%C3%98/videos)
 * OSINTCurious - [https://www.youtube.com/channel/UCjzceWf-OT3ImIKztzGkipA/videos](https://www.youtube.com/channel/UCjzceWf-OT3ImIKztzGkipA/videos)
-  * OSINTCurious 10 minute tips - [https://www.youtube.com/playlist?list=PL423I\_gHbWUUOs09899rex4t2l5py9YIk](https://www.youtube.com/playlist?list=PL423I\_gHbWUUOs09899rex4t2l5py9YIk)
+  * OSINTCurious 10 minute tips - [https://www.youtube.com/playlist?list=PL423I\_gHbWUUOs09899rex4t2l5py9YIk](https://www.youtube.com/playlist?list=PL423I_gHbWUUOs09899rex4t2l5py9YIk)
   * OSINTCurious Webcasts - [https://osintcurio.us/osintvideosandpodcasts/](https://osintcurio.us/osintvideosandpodcasts/)
 * Adrian Crenshaw OSINT videos - [https://www.youtube.com/user/irongeek/search?query=OSINT](https://www.youtube.com/user/irongeek/search?query=OSINT)
 * Authentic8 - [https://www.youtube.com/user/Authentic8TV](https://www.youtube.com/user/Authentic8TV)
@@ -92,7 +92,7 @@ Specific for what you need to look for and how to find it, during the passive re
 <summary>OSINT communities and thier resources</summary>
 
 * [OSINTCurious](https://osintcurio.us/) - Great community and training for those who are interested in OSINT skills and tools.&#x20;
-  * [Osint Curious OSINT Resource List](https://docs.google.com/document/d/14li22wAG2Wh2y0UhgBjbqEvZJCDsNZY8vpUAJ\_jJ5X8/edit)
+  * [Osint Curious OSINT Resource List](https://docs.google.com/document/d/14li22wAG2Wh2y0UhgBjbqEvZJCDsNZY8vpUAJ_jJ5X8/edit)
 * [OSINT Techniques Blog](https://www.osinttechniques.com/) - Fantastic site with tool lists, video guides, and blog on the latest techniques.
   * [osinttechniques.com Tool List](https://www.osinttechniques.com/osint-tools.html)
 * [Osintion](https://www.theosintion.com/) - OSINT and Social Engineering master Joe Grey's website. Resources, OSINT Courses, and consultation services.
@@ -114,7 +114,7 @@ All of these are fantastic resource. Check them regularly for new tools and tech
 
 * [https://benjaminstrick.com/blog/](https://benjaminstrick.com/blog/)
 * [https://blog.bushidotoken.net/](https://blog.bushidotoken.net/)
-* [https://threadreaderapp.com/user/cyb\_detective](https://threadreaderapp.com/user/cyb\_detective)
+* [https://threadreaderapp.com/user/cyb\_detective](https://threadreaderapp.com/user/cyb_detective)
 * [https://dutchosintguy.com/events-and-blogs/](https://dutchosintguy.com/events-and-blogs/)
 * [https://www.intelligencewithsteve.com/blog](https://www.intelligencewithsteve.com/blog)
 * [https://inteltechniques.com/blog/](https://inteltechniques.com/blog/)
@@ -199,7 +199,7 @@ These are misc tools and collections out there. Many overlap, but there are fant
 * [https://start.me/p/DPYPMz/the-ultimate-osint-collection](https://start.me/p/DPYPMz/the-ultimate-osint-collection)
 * [https://www.aware-online.com/en/osint-tools/](https://www.aware-online.com/en/osint-tools/)
 * [OSINT Framework](https://osintframework.com/)&#x20;
-* [OpenOSINT Team Tools](https://github.com/IVMachiavelli/OSINT\_Team\_Links)
+* [OpenOSINT Team Tools](https://github.com/IVMachiavelli/OSINT_Team_Links)
 * [Sector035 OSINT Links](https://sector035.nl/links)
 * [Technisette OSINT Links](https://www.technisette.com/p/tools)
 * [Trouble Fake - start.me](https://start.me/p/QRQb0O/trouble-fake)&#x20;
@@ -207,9 +207,9 @@ These are misc tools and collections out there. Many overlap, but there are fant
 * [OSINT Combine Bookmarks](https://www.osintcombine.com/osint-bookmarks)
 * [Andy Black and Associates OSINT Toolkit](https://www.andyblackassociates.co.uk/resources-andy-black-associates/osint-toolkit/)
 * [Palliscope OSINT Bookmarks](https://www.paliscope.com/2020/11/04/200-of-our-best-osint-investigation-tools-free-download/)
-* [OSINT Stuff's Pile of OSINT links](https://cipher387.github.io/osint\_stuff\_tool\_collection/)
-* [Terrorism & Radicalisation Research Dashboard - start.me](https://start.me/p/OmExgb/terrorism-radicalisation-research-dashboard)****
-* [OSINT\_Encyclopedia](https://github.com/optiv/OSINT\_Encyclopedia)
+* [OSINT Stuff's Pile of OSINT links](https://cipher387.github.io/osint_stuff_tool_collection/)
+* [Terrorism & Radicalisation Research Dashboard - start.me](https://start.me/p/OmExgb/terrorism-radicalisation-research-dashboard)
+* [OSINT\_Encyclopedia](https://github.com/optiv/OSINT_Encyclopedia)
 * [https://start.me/p/rxeRqr/aml-toolbox](https://start.me/p/rxeRqr/aml-toolbox)
 * [https://www.aware-online.com/en/osint-tools/](https://www.aware-online.com/en/osint-tools/)
 * [https://start.me/p/rxRbpo/ti?locale=en](https://start.me/p/rxRbpo/ti?locale=en)
@@ -221,7 +221,7 @@ These are misc tools and collections out there. Many overlap, but there are fant
 * [https://start.me/p/ZGAzN7/verification-toolset](https://start.me/p/ZGAzN7/verification-toolset)
 * [https://map.malfrats.industries/](https://map.malfrats.industries/)
 * [https://github.com/cipher387/API-s-for-OSINT](https://github.com/cipher387/API-s-for-OSINT)
-* [https://github.com/cipher387/osint\_stuff\_tool\_collection](https://github.com/cipher387/osint\_stuff\_tool\_collection)
+* [https://github.com/cipher387/osint\_stuff\_tool\_collection](https://github.com/cipher387/osint_stuff_tool_collection)
 
 </details>
 
@@ -231,10 +231,8 @@ These are misc tools and collections out there. Many overlap, but there are fant
 
 * [https://www.tracelabs.org/initiatives/osint-vm](https://www.tracelabs.org/initiatives/osint-vm) - specialized OSINT VM specifically to bring together the most effective OSINT tools and customized scripts
 
-<!---->
-
-* [https://tsurugi-linux.org/](https://tsurugi-linux.org/) - 64 bit Linux version to perform digital forensics analysis and OSINT research.
-  * [https://tsurugi-linux.org/documentation\_tsurugi\_linux\_tools\_listing\_2021.php](https://tsurugi-linux.org/documentation\_tsurugi\_linux\_tools\_listing\_2021.php)
+- [https://tsurugi-linux.org/](https://tsurugi-linux.org/) - 64 bit Linux version to perform digital forensics analysis and OSINT research.
+  * [https://tsurugi-linux.org/documentation\_tsurugi\_linux\_tools\_listing\_2021.php](https://tsurugi-linux.org/documentation_tsurugi_linux_tools_listing_2021.php)
 
 </details>
 

@@ -78,11 +78,11 @@ Each of these steps is integral to producing intelligence, but this is not condu
 
 ### **Reference and Theory**
 
-* Intelligence Cycle - [https://www.intel.gov/how-the-ic-works#:\~:text=the%20SIX%20STEPS%20in%20the%20INTELLIGENCE%20CYCLE](https://www.intel.gov/how-the-ic-works#:\~:text=the%20SIX%20STEPS%20in%20the%20INTELLIGENCE%20CYCLE)
+* Intelligence Cycle - [https://www.intel.gov/how-the-ic-works#:\~:text=the%20SIX%20STEPS%20in%20the%20INTELLIGENCE%20CYCLE](https://www.intel.gov/how-the-ic-works)
 * Intelligence Cycle Concepts **-** [https://sroberts.io/posts/intelligence-concepts-the-intelligence-cycle/](https://sroberts.io/posts/intelligence-concepts-the-intelligence-cycle/)
 * Intelligence F3EAD - [https://sroberts.io/posts/intelligence-concepts-f3ead/](https://sroberts.io/posts/intelligence-concepts-f3ead/)
-* [US Intelligence Doctrine](https://www.jcs.mil/Portals/36/Documents/Doctrine/pubs/jp2\_0.pdf) - Great resource for learning the process of intelligence gathering and putting it to use.
-* Psychology of Intelligence Analysis- Huer - [https://www.ialeia.org/docs/Psychology\_of\_Intelligence\_Analysis.pdf](https://www.ialeia.org/docs/Psychology\_of\_Intelligence\_Analysis.pdf)
+* [US Intelligence Doctrine](https://www.jcs.mil/Portals/36/Documents/Doctrine/pubs/jp2_0.pdf) - Great resource for learning the process of intelligence gathering and putting it to use.
+* Psychology of Intelligence Analysis- Huer - [https://www.ialeia.org/docs/Psychology\_of\_Intelligence\_Analysis.pdf](https://www.ialeia.org/docs/Psychology_of_Intelligence_Analysis.pdf)
 * MITRE ATT\&CK and Threat Intelligence
   * [FIRST CTI Symposium: Turning intelligence into action with MITRE ATT\&CK™](https://www.slideshare.net/KatieNickels/first-cti-symposium-turning-intelligence-into-action-with-mitre-attck)
   * [Getting Started with ATT\&CK: Threat Intelligence](https://medium.com/mitre-attack/getting-started-with-attack-cti-4eb205be4b2f)
@@ -100,4 +100,3 @@ Each of these steps is integral to producing intelligence, but this is not condu
 
 ![](<../.gitbook/assets/image (14).png>)
 
-****

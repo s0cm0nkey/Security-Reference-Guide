@@ -144,6 +144,7 @@
 * [Grey - Privacy/TOR/OPSEC](grey-privacy-tor-opsec/README.md)
   * [Jolly Roger's Security for Beginners](grey-privacy-tor-opsec/jolly-rogers-security-for-beginners.md)
   * [PGP Guide](grey-privacy-tor-opsec/pgp-guide.md)
+  * [TOR](grey-privacy-tor-opsec/tor.md)
 * [Training and Resources](training/README.md)
   * [Cyber Security Certifications](training/cyber-security-certifications/README.md)
     * [OSCP](training/cyber-security-certifications/oscp.md)
