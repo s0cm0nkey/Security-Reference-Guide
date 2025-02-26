@@ -334,6 +334,10 @@ Extreme Privacy: What it takes to disappear 5th edition - pg. 21
 
 </details>
 
+{% content-ref url="pgp-guide.md" %}
+[pgp-guide.md](pgp-guide.md)
+{% endcontent-ref %}
+
 <details>
 
 <summary>Command Line HIstory</summary>
@@ -390,7 +394,3 @@ Extreme Privacy: What it takes to disappear 5th edition - pg. 21
 </details>
 
 {% embed url="https://youtu.be/TgquV_OA-lU" %}
-
-{% content-ref url="pgp-guide.md" %}
-[pgp-guide.md](pgp-guide.md)
-{% endcontent-ref %}
