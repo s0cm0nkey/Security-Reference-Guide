@@ -4,6 +4,10 @@
 
 {% tabs %}
 {% tab title="Guides and Reference" %}
+{% embed url="https://www.amazon.com/Extreme-Privacy-Takes-Disappear-America/dp/1093757620" %}
+Read this first!
+{% endembed %}
+
 * [Hitch Hiker's Guide to Online Anonymity ](https://anonymousplanet.github.io/thgtoa/guide.html)
 * [Infosec\_Reference/AnonOpSecPrivacy](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/AnonOpSecPrivacy.md)
 * [personal-security-checklist](https://github.com/Lissy93/personal-security-checklist)
@@ -16,6 +20,10 @@
 * [https://exposingtheinvisible.org/resources/watching-out-yourself/](https://exposingtheinvisible.org/resources/watching-out-yourself/) - Personal security guide for investigators
 * [AmIunique](https://amiunique.org/) - Learn how identifiable you are on the Internet
 * [Surveillance Self-Defense](https://ssd.eff.org/) - Tips, Tools and How-tos for Safer Online Communications.
+
+{% content-ref url="jolly-rogers-security-for-beginners.md" %}
+[jolly-rogers-security-for-beginners.md](jolly-rogers-security-for-beginners.md)
+{% endcontent-ref %}
 {% endtab %}
 
 {% tab title="Browser Privacy/Check-Your-Self" %}
@@ -92,7 +100,40 @@
 
 {% tabs %}
 {% tab title="Guides" %}
+* Inteltechniaues' Opsec Prep Checklist - Start Here: [https://inteltechniques.com/EP/tasks.pdf](https://inteltechniques.com/EP/tasks.pdf)
 * [https://www.intelligencewithsteve.com/post/a-5-minute-guide-to-creating-a-covert-account-for-internet-investigations-osint](https://www.intelligencewithsteve.com/post/a-5-minute-guide-to-creating-a-covert-account-for-internet-investigations-osint)
+{% endtab %}
+
+{% tab title="Dread Opsec Guide" %}
+### Dread OPSEC Guide
+
+Security Settings: Click on the shield icon at the top of the Tor browser and click "Advanced Security Settings" and set the value to "Safest". Note For Tails Users: Tails will reset this value on system restarts, so make sure you do this everytime you launch Tor on Tails!
+
+Privacy Checking: To check that your I.P. address is a Tor exit node, and that your security settings are correct, go to [https://whatsmybrowser.org/](https://whatsmybrowser.org/) and ensure the following:
+
+-Javascript is disabled! -No browser details can be detected!
+
+Plugins: Additional addons/plugins should not be installed. Plugins not supported by the TorProject run the risk of bypassing the Tor network and accessing the net directly, which runs the risk of leaking your real I.P. address. It should be a clear indication to anyone why this is an issue, but people sometimes disregard this risk and lose a large part of their OpSec over this mistake.
+
+Tails: Tails is a live operating system that you can start on almost any computer from a DVD, USB stick, or SD card. It aims at preserving your privacy and anonymity and helps you to: use the internet anonymously and circumvent censorship; route all connections to the internet through the Tor network; leave no trace on the computer you are using unless you explicitly ask it to; encrypts your files, emails, and instant messaging using state-of-the-art cryptography.
+
+Official Site: [https://tails.boum.org/](https://tails.boum.org/) Tails For The Darknet Markets: [http://archivecaslytosk.onion/fyYz5](http://archivecaslytosk.onion/fyYz5)
+
+Whonix: An alternative to Tails and also an open source project. Whonix is an operating system focused on anonymity, privacy, and security. It's based on the Tor anonymity network, Debian GNU/Linux, and security by isolation. DNS leaks are impossible and not even malware with root privileges can find out the user's real I.P. address.
+
+Official Site: [https://www.whonix.org/](https://www.whonix.org/) Whonix For The Darknet Markets: [http://archivecaslytosk.onion/COfTH](http://archivecaslytosk.onion/COfTH)
+
+Shredding History / Footprints: This section only applies to users who use the Tor browser while not using Tails or Whonix.
+
+The recommended tool for cleaning footprints, history, cache, etc. from your drive(s) is using a program known as CCleaner. When using the program it is recommended to go to 'Options' > 'Settings' and then selecting "Complex Overwrite" (7 passes) and "Secure File Deletion". Make sure all the boxes are ticked when cleaning including the 'Windows' and 'Application' tabs.
+
+This is normally recommended before the connection to Tor, and after you've left Tor, to wipe all cookies etc. Remember that although this may clear a good deal of the tracks left behind on your PC, wiping your drive(s) with random data and zeros from a live operating system is the only way to permanently clean your tracks. It is also good to note that there is no reliable way to wipe solid state drives so using hard drives is the preferred hardware.
+
+Cookies - How The NSA Is Using Them To Track Tor Users: Let's suppose that there is an online shopping website, owned, or controlled by the NSA. When a normal user will open that website from his/her real I.P. address, the website creates a cookie on the user's browser and stores the real I.P. address and other personal information about the user. When the same user will again visit the same NSA owned website, enabling Tor this time on the same browser - the website will read the last stored cookies from the browser, which includes the user's real I.P. address, and other personal Information. Furthermore, the website just needs to maintain a database of real I.P. addresses against the Tor Proxy enabled fake I.P. addresses to track anonymous users. The more popular the site is, the more users can be tracked easily. Documents show that the NSA is using online advertisements, i.e. Google Ads to make their tracking sites popular on the internet.
+
+How You Can Avoid Cookie Tracking? By using the Tor browser exclusively for darknet activities. Browsers can't read cookies created by other browsers so using your standard browser for clearnet use can save you from this issue. However, you should always clear the cookies (with CCleaner or alike) after you’re done so any stored information, such as login information will not be stored on the computer's drive. If you're doing something very interesting, you should use Tor on an amnesic operating system, such as Tails, so that any data is dumped when the machine is closed.
+
+Closing: Hopefully you found this Tor Browser Security Guide a helpful source of information on the various steps needed to maintain your security and privacy. Don't take your freedom, nor your livelihood, for granted. You never know what could happen so never let the odds be stacked against you!
 {% endtab %}
 
 {% tab title="Good Habits" %}
@@ -289,32 +330,30 @@
 {% endtab %}
 {% endtabs %}
 
-### Dread OPSEC Guide
+<details>
 
-Security Settings: Click on the shield icon at the top of the Tor browser and click "Advanced Security Settings" and set the value to "Safest". Note For Tails Users: Tails will reset this value on system restarts, so make sure you do this everytime you launch Tor on Tails!
+<summary>Linux Opsec</summary>
 
-Privacy Checking: To check that your I.P. address is a Tor exit node, and that your security settings are correct, go to [https://whatsmybrowser.org/](https://whatsmybrowser.org/) and ensure the following:
+To set up your Linux box, there will be many steps to follow. The best and most comprehensive list is in the book "Extreme Privacy: What it takes to disappear" by Michael Bazzell.&#x20;
 
--Javascript is disabled! -No browser details can be detected!
+Extreme Privacy: What it takes to disappear 5th edition - pg. 21
 
-Plugins: Additional addons/plugins should not be installed. Plugins not supported by the TorProject run the risk of bypassing the Tor network and accessing the net directly, which runs the risk of leaking your real I.P. address. It should be a clear indication to anyone why this is an issue, but people sometimes disregard this risk and lose a large part of their OpSec over this mistake.
+* [Pop!\_OS](https://pop.system76.com/) - Secure linux distro of choice.
+* [OpenSnitch](https://github.com/evilsocket/opensnitch) - Open source personal firewall
 
-Tails: Tails is a live operating system that you can start on almost any computer from a DVD, USB stick, or SD card. It aims at preserving your privacy and anonymity and helps you to: use the internet anonymously and circumvent censorship; route all connections to the internet through the Tor network; leave no trace on the computer you are using unless you explicitly ask it to; encrypts your files, emails, and instant messaging using state-of-the-art cryptography.
+</details>
 
-Official Site: [https://tails.boum.org/](https://tails.boum.org/) Tails For The Darknet Markets: [http://archivecaslytosk.onion/fyYz5](http://archivecaslytosk.onion/fyYz5)
+<details>
 
-Whonix: An alternative to Tails and also an open source project. Whonix is an operating system focused on anonymity, privacy, and security. It's based on the Tor anonymity network, Debian GNU/Linux, and security by isolation. DNS leaks are impossible and not even malware with root privileges can find out the user's real I.P. address.
+<summary>MacOS Opsec</summary>
 
-Official Site: [https://www.whonix.org/](https://www.whonix.org/) Whonix For The Darknet Markets: [http://archivecaslytosk.onion/COfTH](http://archivecaslytosk.onion/COfTH)
+To set up your MacOS box, there will be many steps to follow. The best and most comprehensive list is in the book "Extreme Privacy: What it takes to disappear" by Michael Bazzell.
 
-Shredding History / Footprints: This section only applies to users who use the Tor browser while not using Tails or Whonix.
+Extreme Privacy: What it takes to disappear 5th edition - pg. 39
 
-The recommended tool for cleaning footprints, history, cache, etc. from your drive(s) is using a program known as CCleaner. When using the program it is recommended to go to 'Options' > 'Settings' and then selecting "Complex Overwrite" (7 passes) and "Secure File Deletion". Make sure all the boxes are ticked when cleaning including the 'Windows' and 'Application' tabs.
+* [LittleSnitch](https://www.obdev.at/products/littlesnitch/index.html) - MacOS Open source firewall app
+* [Tools by ObjectiveSee](https://objective-see.org/tools.html) - Great suite of open source MacOS tools to keep you safe and private.
+  * [Lulu](https://objective-see.org/products/lulu.html) - MacOS Open source firewall app. Great alternative. ObjectiveSee tools are great.
+  * [KnockKnock](https://objective-see.org/products/knockknock.html) - KnockKnock uncovers persistently installed software in order to generically reveal such malware.
 
-This is normally recommended before the connection to Tor, and after you've left Tor, to wipe all cookies etc. Remember that although this may clear a good deal of the tracks left behind on your PC, wiping your drive(s) with random data and zeros from a live operating system is the only way to permanently clean your tracks. It is also good to note that there is no reliable way to wipe solid state drives so using hard drives is the preferred hardware.
-
-Cookies - How The NSA Is Using Them To Track Tor Users: Let's suppose that there is an online shopping website, owned, or controlled by the NSA. When a normal user will open that website from his/her real I.P. address, the website creates a cookie on the user's browser and stores the real I.P. address and other personal information about the user. When the same user will again visit the same NSA owned website, enabling Tor this time on the same browser - the website will read the last stored cookies from the browser, which includes the user's real I.P. address, and other personal Information. Furthermore, the website just needs to maintain a database of real I.P. addresses against the Tor Proxy enabled fake I.P. addresses to track anonymous users. The more popular the site is, the more users can be tracked easily. Documents show that the NSA is using online advertisements, i.e. Google Ads to make their tracking sites popular on the internet.
-
-How You Can Avoid Cookie Tracking? By using the Tor browser exclusively for darknet activities. Browsers can't read cookies created by other browsers so using your standard browser for clearnet use can save you from this issue. However, you should always clear the cookies (with CCleaner or alike) after you’re done so any stored information, such as login information will not be stored on the computer's drive. If you're doing something very interesting, you should use Tor on an amnesic operating system, such as Tails, so that any data is dumped when the machine is closed.
-
-Closing: Hopefully you found this Tor Browser Security Guide a helpful source of information on the various steps needed to maintain your security and privacy. Don't take your freedom, nor your livelihood, for granted. You never know what could happen so never let the odds be stacked against you!
+</details>
