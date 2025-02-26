@@ -51,52 +51,69 @@ Read this first!
 
 ## Privacy Apps
 
-{% tabs %}
-{% tab title="General Tools" %}
-* [Awesome Lists Collection: Anti-Forensics](https://github.com/shadawck/awesome-anti-forensic)
+<details>
+
+<summary>General Tools</summary>
+
 * [Awesome Lists Collection: Anti-Censorship](https://github.com/danoctavian/awesome-anti-censorship)
+* [Awesome Lists Collection: Anti-Forensics](https://github.com/shadawck/awesome-anti-forensic)
 * Identity Scrubbers
   * [https://onerep.com/](https://onerep.com/)
 * [PrivacyTools - Encryption Against Global Mass Surveillance](https://privacytools.io/)&#x20;
-* [SnowHaze Browser](https://www.snowhaze.com/en/browser.html) - SnowHaze is a browser with your privacy and security in mind. SnowHaze is open source and offers you the most extensive tools on iOS to reclaim the control over your personal data and move freely on the internet.
-* [MySudo](https://mysudo.com/) - Handy tool for creating entire personal profiles with numbers and emails you can use in place of your personal information.
-* [https://privacy.com/](https://privacy.com/) -  A wonderful platform for placing anonymous purchases. Allows you to create a digital preloaded credit card so your real number isnt stored by amazon or google.
-* [7-Day Free Phone Number Trial - Get Temporary Phone Numbers | Burner](https://www.burnerapp.com/)&#x20;
-* [Syncthing](https://syncthing.net/) - Open Source, secure file synchronization program.
-* [Tails - Home](https://tails.boum.org/) - Portable linux distribution focused on extreme privacy and security.
-* [Anonymouse.org](http://anonymouse.org/anonwww.html) - Proxied "anonymous" web searching tool.
-* [Privoxy - Home Page](https://www.privoxy.org/) - Privoxy is a non-caching web proxy with advanced filtering capabilities for enhancing privacy, modifying web page data and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.
-* [Kali Anonsurf ](https://github.com/Und3rf10w/kali-anonsurf)- ParrotSec's anonsurf and stealth, ported to work with Kali Linux.
-  * [ParrotSec/anonsurf](https://github.com/ParrotSec/anonsurf) - Anonsurf routes all your traffic through Tor, and it also lets you start i2p services and clear any traces left on the user disk. Anonsurf also kills away all dangerous applications by virtue of the Pandora bomb, so you do not need to worry about having a Tor browser and other scripts running to hide your system.
-* [cryptsetup-nuke-password](https://www.kali.org/tools/cryptsetup-nuke-password/) - Installing this package lets you configure a special “nuke password” that can be used to destroy the encryption keys required to unlock the encrypted partitions. This password can be entered in the usual early-boot prompt asking the passphrase to unlock the encrypted partition(s).
-* [How to set up ProxyChains - Stay Anonymous](./#linux-ssh-tunneling)
-* [How to set up ProxyChains - Change IP](https://youtu.be/FtFTh-KVjsA)
-* [Changing/Masking your DNS Traffic](https://youtu.be/SVW1-4ft8d0)
-* [VPN + ProxyChains = Maximum Anonymity](https://youtu.be/TMHGcnuNoyw)
-{% endtab %}
 
-{% tab title="Secure Comms" %}
+- [SnowHaze Browser](https://www.snowhaze.com/en/browser.html) - SnowHaze is a browser with your privacy and security in mind. SnowHaze is open source and offers you the most extensive tools on iOS to reclaim the control over your personal data and move freely on the internet.
+- [MySudo](https://mysudo.com/) - Handy tool for creating entire personal profiles with numbers and emails you can use in place of your personal information.
+- [https://privacy.com/](https://privacy.com/) -  A wonderful platform for placing anonymous purchases. Allows you to create a digital preloaded credit card so your real number isnt stored by amazon or google.
+- [7-Day Free Phone Number Trial - Get Temporary Phone Numbers | Burner](https://www.burnerapp.com/)&#x20;
+- [Syncthing](https://syncthing.net/) - Open Source, secure file synchronization program.
+- [Tails - Home](https://tails.boum.org/) - Portable linux distribution focused on extreme privacy and security.
+- [Anonymouse.org](http://anonymouse.org/anonwww.html) - Proxied "anonymous" web searching tool.
+- [Privoxy - Home Page](https://www.privoxy.org/) - Privoxy is a non-caching web proxy with advanced filtering capabilities for enhancing privacy, modifying web page data and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.
+- [Kali Anonsurf ](https://github.com/Und3rf10w/kali-anonsurf)- ParrotSec's anonsurf and stealth, ported to work with Kali Linux.
+  * [ParrotSec/anonsurf](https://github.com/ParrotSec/anonsurf) - Anonsurf routes all your traffic through Tor, and it also lets you start i2p services and clear any traces left on the user disk. Anonsurf also kills away all dangerous applications by virtue of the Pandora bomb, so you do not need to worry about having a Tor browser and other scripts running to hide your system.
+- [cryptsetup-nuke-password](https://www.kali.org/tools/cryptsetup-nuke-password/) - Installing this package lets you configure a special “nuke password” that can be used to destroy the encryption keys required to unlock the encrypted partitions. This password can be entered in the usual early-boot prompt asking the passphrase to unlock the encrypted partition(s).
+- [How to set up ProxyChains - Change IP](https://youtu.be/FtFTh-KVjsA)
+- [How to set up ProxyChains - Stay Anonymous](./#linux-ssh-tunneling)
+- [VPN + ProxyChains = Maximum Anonymity](https://youtu.be/TMHGcnuNoyw)
+- [Changing/Masking your DNS Traffic](https://youtu.be/SVW1-4ft8d0)
+
+</details>
+
+<details>
+
+<summary>Secure Coms</summary>
+
 * [TorChat](https://github.com/prof7bit/TorChat) - Decentralized anaonymous IM that uses Tor networks. Creates a new randomly generated .onion address for each client launch
   * [http://kpvz7ki2v5agwt35.onion/wiki/index.php/Hacking\_TorChat](http://kpvz7ki2v5agwt35.onion/wiki/index.php/Hacking_TorChat)
 * [https://matrix.org/](https://matrix.org/) - An open network for secure, decentralized, real-time communication.
 * [https://wire.com/en/](https://wire.com/en/) - Secure messaging, file sharing, voice calls and video conferences. All protected with end-to-end
 * [https://www.signal.org/](https://www.signal.org/) - an encrypted communications app.
-{% endtab %}
 
-{% tab title="Secure Webmail" %}
+</details>
+
+<details>
+
+<summary>Secure Webmail</summary>
+
 * [**CounterMail**](https://countermail.com/) - online email service, designed to provide maximum security and privacy.
 * [**Mail2Tor**](http://mail2tor.com/) - is a Tor Hidden Service that allows anyone to send and receive emails anonymously.
 * [**Tutanota**](https://tutanota.com/) - is the world's most secure email service and amazingly easy to use.
 * [**Protonmail**](https://protonmail.com/) - is the world's largest secure email service, developed by CERN and MIT scientists.
 * [**Startmail**](https://www.startmail.com/en/) - private & encrypted email made easy.
-{% endtab %}
 
-{% tab title="Altnets" %}
+</details>
+
+<details>
+
+<summary>Altnets</summary>
+
 * [https://www.whonix.org/wiki/ZeroNet](https://www.whonix.org/wiki/ZeroNet) - Excellent guide on how to securely setup ZeroNet. Also provides a decent list of common ZeroNet sites.
 * [https://nodehist.fidonet.org.ua](https://nodehist.fidonet.org.ua) - A large list of FidoNet nodes. Searchable by node address or sysop name.
 * [https://nzbfriends.com/](https://nzbfriends.com/) - A search engine for Usenet.
-{% endtab %}
-{% endtabs %}
+
+
+
+</details>
 
 ## Personal Network Security
 
@@ -104,13 +121,13 @@ Read this first!
 
 ## OPSEC
 
-{% tabs %}
-{% tab title="Guides" %}
 * Inteltechniaues' Opsec Prep Checklist - Start Here: [https://inteltechniques.com/EP/tasks.pdf](https://inteltechniques.com/EP/tasks.pdf)
 * [https://www.intelligencewithsteve.com/post/a-5-minute-guide-to-creating-a-covert-account-for-internet-investigations-osint](https://www.intelligencewithsteve.com/post/a-5-minute-guide-to-creating-a-covert-account-for-internet-investigations-osint)
-{% endtab %}
 
-{% tab title="Dread Opsec Guide" %}
+<details>
+
+<summary>Dread OpSec Guide</summary>
+
 ### Dread OPSEC Guide
 
 Security Settings: Click on the shield icon at the top of the Tor browser and click "Advanced Security Settings" and set the value to "Safest". Note For Tails Users: Tails will reset this value on system restarts, so make sure you do this everytime you launch Tor on Tails!
@@ -140,36 +157,26 @@ Cookies - How The NSA Is Using Them To Track Tor Users: Let's suppose that there
 How You Can Avoid Cookie Tracking? By using the Tor browser exclusively for darknet activities. Browsers can't read cookies created by other browsers so using your standard browser for clearnet use can save you from this issue. However, you should always clear the cookies (with CCleaner or alike) after you’re done so any stored information, such as login information will not be stored on the computer's drive. If you're doing something very interesting, you should use Tor on an amnesic operating system, such as Tails, so that any data is dumped when the machine is closed.
 
 Closing: Hopefully you found this Tor Browser Security Guide a helpful source of information on the various steps needed to maintain your security and privacy. Don't take your freedom, nor your livelihood, for granted. You never know what could happen so never let the odds be stacked against you!
-{% endtab %}
 
-{% tab title="Good Habits" %}
-• Your "work" computer should never ever have anything personally related to your real identity. Ever!\
-• Your host machine should have Anti-Virus or Windows Defender enabled.\
-• Your host machine should always be kept up to date with current updates.\
-• Your host machine should have full HD encryption.\
-• Your host machine should have opensnitch, Glasswire, or Littlesnitch installed.\
-• Your host machine should have booting from USB disabled in the BIOS settings (see how to get into your BIOS and disable it).\
-• Your host machine should have a VPN running on it.\
-• Everything should be saved to the USB and never the HD.\
-• A password manager should be used for storing your passwords.\
-• VM should be saved onto on a USB/Micro SD and encrypted.\
-• Whonix should be used to conduct all your Darkweb activities.\
-• Spoof your MAC and Computer Name every time on start-up and shutdown.\
-• Use CCleaner, bleachbit, or similar programs on your host machine before each shutdown.\
-• Be conscious of other devices you may have on your person that are giving away your location (cell phones are not your friends).\
-• PGP encryption for secure emailing\
-• Only wired keyboards and mice\
-• Read [http://grugq.github.io](http://grugq.github.io/)
-{% endtab %}
+</details>
 
-{% tab title="WebOpsec" %}
+<details>
+
+<summary>WebOpsec</summary>
+
+
+
 * Disable Javascript
-* Set security to safest setting
+
+- Set security to safest setting
+
 * Use Cached version of website when on network instead of net requests.
   * cache.example.co.uk
-* Use a search engine that does not track its users
+
+- Use a search engine that does not track its users
   * [https://www.duckduckgo.com](https://www.duckduckgo.com)
   * [http://3g2upl4pq6kufc4m.onion/](http://3g2upl4pq6kufc4m.onion/)
+
 * Tracking cookies
   * NSA uses things like Google Ads and other tracking cookies to identify users over TOR
   * [http://www.washingtonpost.com/blogs//theswitch/wp/2013/12/10/nsausesgooglecookiestopinpointtargetsforhacking/](http://www.washingtonpost.com/blogs/theswitch/wp/2013/12/10/nsausesgooglecookiestopinpointtargetsforhacking/)
@@ -179,27 +186,38 @@ Closing: Hopefully you found this Tor Browser Security Guide a helpful source of
     * via about:config in URL bar
     * type “storage” in filter bar
     * set dom.storage.enabled to false
-* Website settings
+
+- Website settings
   * Disable “Show others my online status”
+
 * Doublecheck
   * Display all the information your browser is currently showing about you
     * Use the above Browser
-{% endtab %}
 
-{% tab title="FileManagement" %}
+</details>
+
+<details>
+
+<summary>File Management</summary>
+
+
+
 * File verification
   * [http://www.gpg4win.org/](http://www.gpg4win.org/) - Verifes files via PGP signature
   * &#x20;MD5 and Sha-1 hash verification
-* File shredding\
+
+- File shredding\
   ◇ [http://www.dban.org](http://www.dban.org)\
   ◇ [http://www.fileshredder.org](http://www.fileshredder.org)\
   ◇ [http://www.piriform.com/ccleaner](http://www.piriform.com/ccleaner)
+
 *   &#x20;**Shred & Erase a file**
 
     ```
     shred -z foobar.txt
     ```
-*   &#x20;**Shred & Erase without&#x20;**_**shred**_
+
+-   &#x20;**Shred & Erase without&#x20;**_**shred**_
 
     ```
     FN=foobar.txt; dd bs=1k count="`du -sk \"${FN}\" | cut -f1`" if=/dev/urandom >"${FN}"; rm -f "${FN}"
@@ -208,6 +226,7 @@ Closing: Hopefully you found this Tor Browser Security Guide a helpful source of
     Note: Or deploy your files in _/dev/shm_ directory so that no data is written to the harddrive. Data will be deleted on reboot.
 
     Note: Or delete the file and then fill the entire harddrive with /dev/urandom and then rm -rf the dump file.
+
 *   **Restore the date of a file**
 
     Let's say you have modified _/etc/passwd_ but the file date now shows that _/etc/passwd_ has been modifed. Use _touch_ to change the file data to the date of another file (in this example, _/etc/shadow_)
@@ -215,7 +234,8 @@ Closing: Hopefully you found this Tor Browser Security Guide a helpful source of
     ```
     touch -r /etc/shadow /etc/passwd
     ```
-*   **Clear logfile**
+
+-   **Clear logfile**
 
     This will reset the logfile to 0 without having to restart syslogd etc:
 
@@ -229,6 +249,7 @@ Closing: Hopefully you found this Tor Browser Security Guide a helpful source of
     cd /dev/shm
     grep -v 'thc\.org' /var/log/auth.log >a.log; cat a.log >/var/log/auth.log; rm -f a.log
     ```
+
 *   **Hide files from that User without root privileges**
 
     Our favorite working directory is _/dev/shm/_. This location is volatile memory and will be lost on reboot. NO LOGZ == NO CRIME.
@@ -256,7 +277,8 @@ Closing: Hopefully you found this Tor Browser Security Guide a helpful source of
     mkdir $'\t'
     cd $'\t'
     ```
-*   **Encrypting a file**
+
+-   **Encrypting a file**
 
     Encrypt your 0-Days and log files before transfering them - please. (and pick your own password):
 
@@ -271,14 +293,17 @@ Closing: Hopefully you found this Tor Browser Security Guide a helpful source of
     ```
     openssl enc -d -aes-256-cbc -pbkdf2 -k fOUGsg1BJdXPt0CY4I <input.txt.enc >input.txt
     ```
-{% endtab %}
-{% endtabs %}
 
-{% tabs %}
-{% tab title="Command Line History" %}
+</details>
+
+<details>
+
+<summary>Command Line HIstory</summary>
+
 * Disable PS logging
   * [https://github.com/leechristensen/Random/blob/master/CSharp/DisablePSLogging.cs](https://github.com/leechristensen/Random/blob/master/CSharp/DisablePSLogging.cs)
-*   **.i. Leave Bash without history:**
+
+-   **.i. Leave Bash without history:**
 
     Tell Bash to use _/dev/null_ instead of _\~/.bash\_history_. This is the first command we execute on every shell. It will stop the Bash from logging your commands.
 
@@ -324,6 +349,10 @@ Closing: Hopefully you found this Tor Browser Security Guide a helpful source of
     LD_PRELOAD=./zap-args.so exec -a syslogd nmap -T0 10.0.0.1/24
     ```
 
+</details>
+
+{% tabs %}
+{% tab title="Command Line History" %}
 {% embed url="https://youtu.be/TgquV_OA-lU" %}
 {% endtab %}
 
