@@ -1,12 +1,14 @@
 # Grey - Privacy/TOR/OPSEC
 
-## Privacy Resources
+## Privacy Guides and How-To
 
-{% tabs %}
-{% tab title="Guides and Reference" %}
 {% embed url="https://www.amazon.com/Extreme-Privacy-Takes-Disappear-America/dp/1093757620" %}
 Read this first!
 {% endembed %}
+
+<details>
+
+<summary>General Guides and Reference</summary>
 
 * [Hitch Hiker's Guide to Online Anonymity ](https://anonymousplanet.github.io/thgtoa/guide.html)
 * [Infosec\_Reference/AnonOpSecPrivacy](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/AnonOpSecPrivacy.md)
@@ -21,12 +23,16 @@ Read this first!
 * [AmIunique](https://amiunique.org/) - Learn how identifiable you are on the Internet
 * [Surveillance Self-Defense](https://ssd.eff.org/) - Tips, Tools and How-tos for Safer Online Communications.
 
+</details>
+
 {% content-ref url="jolly-rogers-security-for-beginners.md" %}
 [jolly-rogers-security-for-beginners.md](jolly-rogers-security-for-beginners.md)
 {% endcontent-ref %}
-{% endtab %}
 
-{% tab title="Browser Privacy/Check-Your-Self" %}
+<details>
+
+<summary>Browser Security/Check-your-self</summary>
+
 * [tps://coveryourtracks.eff.org/](https://coveryourtracks.eff.org/) - EFF sponsored Browser tracking checker
 * [**Panopticlick 3.0**](https://panopticlick.eff.org/) - is your browser safe against tracking?
 * [**Privacy Analyzer**](https://privacy.net/analyzer/) - see what data is exposed from your browser.
@@ -40,8 +46,8 @@ Read this first!
 * [https://shutuptrackers.com/browser/tweaks.php](https://shutuptrackers.com/browser/tweaks.php) - Firefox Privacy Settings
 * [What every Browser knows about you](https://webkay.robinlinus.com) — This site not only shows what information your browser provides to third-party sites, but also explains how it can be dangerous and suggests what extensions will help to ensure your anonymity.
 * [https://socradar.io/labs/vpnradar/](https://socradar.io/labs/vpnradar/) - VPN privacy checker
-{% endtab %}
-{% endtabs %}
+
+</details>
 
 ## Privacy Apps
 
