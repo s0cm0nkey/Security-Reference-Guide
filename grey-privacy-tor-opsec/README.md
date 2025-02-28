@@ -190,6 +190,21 @@ Extreme Privacy: What it takes to disappear 5th edition - pg. 21
 
 <details>
 
+<summary>Mobile Device Opsec</summary>
+
+To set up your Linux box, there will be many steps to follow. The best and most comprehensive list is in the book "Extreme Privacy: What it takes to disappear" by Michael Bazzell.&#x20;
+
+Extreme Privacy: What it takes to disappear 5th edition - pg. 75
+
+Extreme Privacy: What it takes to disappear 5th edition - pg. 117
+
+* [https://grapheneos.org/](https://grapheneos.org/) - Private and Secure Mobile OS
+  * Recommend Google Pixel 8 for this OS
+
+</details>
+
+<details>
+
 <summary>WebOpsec</summary>
 
 
