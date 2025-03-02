@@ -81,13 +81,27 @@ Read this first!
 
 <details>
 
-<summary>Secure Coms</summary>
+<summary>Secure Comms</summary>
+
+**Primary Tools**
+
+These are the go-to tools before others for combination of security and features.
+
+* [https://www.signal.org/](https://www.signal.org/) - an encrypted communications app.
+  * Secure Setup - Extreme Privacy: What it takes to disappear 5th edition - pg. 130
+  * [https://molly.im/](https://molly.im/) - A Signal fork that will allow you to have and use a second account.
+* [https://wire.com/en/](https://wire.com/en/) - Secure messaging, file sharing, voice calls and video conferences. All protected with end-to-end
+
+**Alternative tooling**
+
+* [https://matrix.org/](https://matrix.org/) - An open network for secure, decentralized, real-time communication.
+
+Depreciated
 
 * [TorChat](https://github.com/prof7bit/TorChat) - Decentralized anaonymous IM that uses Tor networks. Creates a new randomly generated .onion address for each client launch
   * [http://kpvz7ki2v5agwt35.onion/wiki/index.php/Hacking\_TorChat](http://kpvz7ki2v5agwt35.onion/wiki/index.php/Hacking_TorChat)
-* [https://matrix.org/](https://matrix.org/) - An open network for secure, decentralized, real-time communication.
-* [https://wire.com/en/](https://wire.com/en/) - Secure messaging, file sharing, voice calls and video conferences. All protected with end-to-end
-* [https://www.signal.org/](https://www.signal.org/) - an encrypted communications app.
+
+
 
 </details>
 
