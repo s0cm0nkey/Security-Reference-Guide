@@ -94,12 +94,20 @@ These are the go-to tools before others for combination of security and features
 
 **Alternative tooling**
 
+* [https://threema.ch/en](https://threema.ch/en) - Secure, open-source, premium secure chat.
 * [https://matrix.org/](https://matrix.org/) - An open network for secure, decentralized, real-time communication.
+* [https://getsession.org/](https://getsession.org/) - Session is an end-to-end encrypted messenger that minimises sensitive metadata, designed and built for people who want absolute privacy and freedom from any form of surveillance.
 
-Depreciated
+**Depreciated**
 
 * [TorChat](https://github.com/prof7bit/TorChat) - Decentralized anaonymous IM that uses Tor networks. Creates a new randomly generated .onion address for each client launch
   * [http://kpvz7ki2v5agwt35.onion/wiki/index.php/Hacking\_TorChat](http://kpvz7ki2v5agwt35.onion/wiki/index.php/Hacking_TorChat)
+
+DO NOT USER
+
+* Wickr
+* Whatsapp
+* Telegram
 
 
 
