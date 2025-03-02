@@ -33,6 +33,19 @@ Read this first!
 
 <summary>Browser Security/Check-your-self</summary>
 
+Due to the invasive tracking of almost everything by google, Chrome and most Chromium based browsers are to be avoided. Firefox is the defacto choice for secure web browser.
+
+[https://www.mozilla.org/en-US/firefox/](https://www.mozilla.org/en-US/firefox/)
+
+* Firefox Secure Install and Setup - Extreme Privacy: What it takes to disappear 5th edition - pg. 39
+
+**Search Engines**
+
+* [https://duckduckgo.com/](https://duckduckgo.com/) - Private and Secure but not the best search results
+  * [https://docs.searxng.org/](https://docs.searxng.org/) -&#x20;
+
+Misc Resources
+
 * [tps://coveryourtracks.eff.org/](https://coveryourtracks.eff.org/) - EFF sponsored Browser tracking checker
 * [**Panopticlick 3.0**](https://panopticlick.eff.org/) - is your browser safe against tracking?
 * [**Privacy Analyzer**](https://privacy.net/analyzer/) - see what data is exposed from your browser.
@@ -110,6 +123,15 @@ DO NOT USER
 * Telegram
 
 
+
+</details>
+
+<details>
+
+<summary>Secure File Transfer</summary>
+
+* &#x20;[https://proton.me/drive](https://proton.me/drive) - The best option out there.&#x20;
+* &#x20;[https://tresorit.com/](https://tresorit.com/) - Free version allows up to 5gb file upload and share. Share link expires after 7 days and the file is deleted.
 
 </details>
 
