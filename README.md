@@ -12,6 +12,9 @@ s0cm0nkey@protonmail.com
 
 @s0cm0nkey@infosec.exchange
 
+Check out my online course with Applied Network Defense: Command Line Essentials for Security Analysts!\
+[https://www.networkdefense.co/courses/cli/](https://www.networkdefense.co/courses/cli/)
+
 ### What is this?
 
 There are so many guides for security floating around the internet, it is hard to know where they all are and which ones are worth their salt. I am writing this reference guide by leveraging my true skill in security: _finding other people's hard work_. I am not smart enough or skilled enough to top the creators of these tools or the professionals that have used them twice as long as I have.&#x20;
