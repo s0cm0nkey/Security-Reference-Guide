@@ -57,6 +57,7 @@ Asset Search Engines are fantastic tools that regular scan the internet taking i
 * [Censys.io ](https://search.censys.io/)- A cyber search engine focused around asset management. Helps with asset discovery and alerting.
 * [https://leakix.net/](https://leakix.net/) - Search LeakIX for host data leaks, open ports, software and geoip.
 * [Riddler](https://riddler.io/) - Allows you to search in a high quality dataset
+* [Hudson Rock](https://www.hudsonrock.com/threat-intelligence-cybercrime-tools) - Free cybercrime intelligence toolset to check if a specific asset was compromised in a global Infostealer malware attack.
 
 </details>
 
