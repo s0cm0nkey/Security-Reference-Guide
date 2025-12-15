@@ -2,15 +2,15 @@
 
 ## Intro
 
-Intelligence programs are essential to good security. Every company should stay on top of cyber security news for the latest trending attacks and vulnerabilities. An intelligence analysts job is to sift through the metric ton of intelligence data generated every day, and pull out what is applicable to their organization.
+Intelligence programs are essential to effective security operations. Every organization should stay current with cybersecurity news to understand emerging attacks and vulnerabilities. An intelligence analyst's job is to sift through the vast amount of intelligence data generated daily and extract what is applicable to their organization.
 
-The role of an Intelligence analyst is threefold:
+The role of an intelligence analyst is threefold:
 
-First and foremost, their job is to collect actionable intelligence. This can be news articles, reports, white papers, blog posts, tweets, reddit posts, or anything that can provide value. Within these you will be looking for Indicators of compromise that can be added to block lists, or searched for in your network. You will also look for configurations or vulnerabilities that pose a great threat to your operations.
+**1. Collect Actionable Intelligence** - Analysts gather valuable information from diverse sources including news articles, reports, white papers, blog posts, social media, and forums. Within these sources, analysts identify indicators of compromise (IOCs) that can be added to blocklists or searched for across the network. They also identify configurations or vulnerabilities that pose significant threats to operations.
 
-The second responsibility is indicator management. Lists of indicators come in feeds that can be fed into security tools for alerting. Some will have value, some wont. It is the intelligence analyst's role to determine which sources of intel feeds to use, as well as to curate those indicators.
+**2. Manage Indicators** - Analysts curate threat intelligence feeds that integrate with security tools for alerting. Since not all indicators have equal value, analysts must evaluate which intelligence sources to use and maintain the quality of those indicators through ongoing curation.
 
-Lastly, intelligence analysts manage indicator enrichment. Any indicator reported is completely useless without context. Intelligence analysts can manage toolsets that add context and enrichment to the indicators they manage. Details like where/how an indicator was first reported, or how many blacklists it may show up on, can add much needed context when a security analyst investigating interaction with an indicator.
+**3. Enrich Indicators** - Context is critical; an indicator without context provides little value. Analysts manage toolsets that add enrichment data to indicators, such as the origin of the threat, associated campaigns, prevalence across threat intelligence sources, and blacklist appearances. This context enables security analysts to make informed decisions when investigating potential threats.
 
 {% content-ref url="osint/" %}
 [osint](osint/)
@@ -24,14 +24,14 @@ Lastly, intelligence analysts manage indicator enrichment. Any indicator reporte
 [threat-data.md](threat-data.md)
 {% endcontent-ref %}
 
-## **What is Intelligence?**&#x20;
+## **What is Intelligence?**
 
-Intelligence is information gathered that involves threats to an organization. Intelligence can provide insights not available elsewhere that warn of potential threats and opportunities, assess probable risk and opportunities to an organization of proposed policy options, provide leadership profiles on competitors.
+Intelligence is information that has been collected, processed, and analyzed to address threats to an organization. It provides unique insights that warn of potential threats and opportunities, assesses probable risks associated with policy options, and can include profiles of threat actors or competitors.
 
-There are several “domains” or disciplines that comprise intelligence: those are&#x20;
+There are several domains or disciplines that comprise intelligence:
 
-* **Human intelligence (HUMINT)** - Human intelligence comes from other humans. HUMINT is still associated with espionage and covert operations in the public mind; nevertheless, most HUMINT is collected by overt collectors such as strategic debriefers and military attachés. It is the oldest way of gathering data, and it was the dominant source of intelligence until the mid-to-late twentieth century's technological revolution.
-* **Signal intelligence (SIGINT)** - Signal intelligence comprises all communications intelligence (COMINT), electronic intelligence (ELINT), and foreign instrumentation signals intelligence (FISINT) are generated through signal intercepts, which can be sent separately or in combination.
+* **Human intelligence (HUMINT)** - Human intelligence is derived from human sources. While commonly associated with espionage and covert operations, most HUMINT is collected through overt means by strategic debriefers, military attachés, and other authorized collectors. HUMINT is the oldest intelligence discipline and was the dominant source of intelligence until the technological revolution of the mid-to-late twentieth century.
+* **Signal intelligence (SIGINT)** - Signal intelligence comprises communications intelligence (COMINT), electronic intelligence (ELINT), and foreign instrumentation signals intelligence (FISINT). These intelligence types are generated through signal intercepts and can be collected separately or in combination.
   * [OSHINT SIGINT Links](https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/signals-intelligence-sigint)
 * **Cyber threat intelligence** - Cyber threat intelligence is the collection, processing, analysis, and dissemination of information from all sources of intelligence on threat actors’ cyber programs, intentions, capabilities, research and development, tactics, targets, operational activities and indicators, and their impact or potential effects on U.S. national security interests. Cyber threat intelligence also includes information on cyber threat actor information systems, infrastructure, and data; and network characterization, or insight into the components, structures, use, and vulnerabilities of threat actors information systems.
 
@@ -49,37 +49,37 @@ There are several “domains” or disciplines that comprise intelligence: those
 [files-media-breach-paste-code.md](osint/files-media-breach-paste-code.md)
 {% endcontent-ref %}
 
-* **Measurement and signature intelligence (MASINT)** - Measurement and Signature Intelligence is information produced by quantitative and qualitative analysis of physical attributes of targets and events to characterize, locate, and identify them. MASINT exploits a variety of phenomenologies, from a variety of sensors and platforms, to support signature development and analysis, to perform technical analysis, and to detect, characterize, locate and identify targets and events. MASINT is derived from specialized, technically derived measurements of physical phenomenon intrinsic to an object or event and it includes the use of quantitative signatures to interpret the data.
-* **Geospatial intelligence (GEOINT)** - Geospatial Intelligence is the analysis and visual representation of security-related activities on the earth. It is produced through an integration of imagery, imagery intelligence, and geospatial information.
+* **Measurement and signature intelligence (MASINT)** - Measurement and Signature Intelligence is information produced through quantitative and qualitative analysis of the physical attributes of targets and events. MASINT exploits various phenomenologies using diverse sensors and platforms to develop signatures, perform technical analysis, and detect, characterize, locate, and identify targets and events. It derives from specialized measurements of physical phenomena intrinsic to objects or events, using quantitative signatures to interpret data.
+* **Geospatial intelligence (GEOINT)** - Geospatial Intelligence is the analysis and visual representation of security-related activities on Earth. It is produced through the integration of imagery, imagery intelligence, and geospatial information.
   * [OSHINT GEOINT Links](https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/mapping-and-geo-spatial-intelligence-geoint)
-* **Open-source intelligence (OSINT)** - Open-Source Intelligence is open-source information that is publicly available and collected that has undergone a rigorous and methodical analysis process to satisfy a stakeholders intelligence requirement.
+* **Open-source intelligence (OSINT)** - Open-Source Intelligence is publicly available information that has been collected and subjected to rigorous, methodical analysis to satisfy a stakeholder's intelligence requirements.
 
 {% content-ref url="osint/" %}
 [osint](osint/)
 {% endcontent-ref %}
 
-## **How is Intelligence Conducted?**&#x20;
+## **How is Intelligence Conducted?**
 
-The process to develop intelligence from many different sources is called “The Intelligence Cycle”. The intelligence cycle is comprised of the following steps:
+The process of developing intelligence from multiple sources is called the "Intelligence Cycle." The intelligence cycle comprises the following steps:
 
-* Planning and Direction - Defining the question that the intelligence is intended to answer
-* Collection  - Collecting  the data needed to answer the original question. Redundant data is useful here as it corroborates other data points, adding fidelity to the reported data.&#x20;
-* Processing - The process of making our data useful. This includes some of the following
-  * Normalization - Converting all of the data into a similar format to allow easy parsing and manipulation. This should also include any translation, filtering, or editing.
-  * Indexing - Organizing and tagging the data so that certain data points and categories so can be easily searched.
-  * Enrichment - Adding additional data points to enhance the function of the data, as well as manipulating the presentation of the data for greater usability, such as with data visualization utilities.
-* Analysis & Production - Taking in the post-processing data, using it to answer the original question, then subsequently turning it into new data that can be ingested and used by applicable parties.
-* Dissemination - Delivering the analysis to relevant stakeholders
-* Feedback and Evaluation - Gathering response data about the delivered analysis and evaluating it for potential improvements in content or presentation. This increases the overall effectiveness of the intelligence.
+* **Planning and Direction** - Defining the intelligence requirements and questions that need to be answered.
+* **Collection** - Gathering the data needed to answer the intelligence requirements. Redundant data from multiple sources is valuable as it corroborates findings and increases confidence in the analysis.
+* **Processing** - Transforming raw data into a usable format through:
+  * **Normalization** - Converting data into a consistent format to enable parsing and manipulation, including translation, filtering, and editing.
+  * **Indexing** - Organizing and tagging data to enable efficient searching of specific data points and categories.
+  * **Enrichment** - Adding contextual information to enhance data value and manipulating presentation for improved usability, such as through data visualization.
+* **Analysis & Production** - Analyzing processed data to answer intelligence requirements, then producing finished intelligence products that can be consumed by stakeholders.
+* **Dissemination** - Delivering intelligence products to relevant stakeholders through appropriate channels.
+* **Feedback and Evaluation** - Collecting feedback on intelligence products and evaluating effectiveness to identify improvements in content, presentation, or timeliness.
 
-Each of these steps is integral to producing intelligence, but this is not conducted in a linear fashion. Instead some steps are conducted at the same time or you may need to go back and forth between two steps before progressing. An example of this is after you collected and processed all the information you believe is needed to answer stakeholder requirements and you start conducting analysis on the information, you may realize that you need more information or you do not have the information to answer the requirements. Another possibility could be that during the analysis and production phase you should collect feedback from stakeholders through reviews and make adjustments along the way.
+Each step is integral to producing intelligence, but the cycle is not strictly linear. Steps may be conducted simultaneously, or analysts may move back and forth between stages before progressing. For example, during analysis you may discover gaps requiring additional collection, or stakeholder feedback during production may require returning to earlier stages. This iterative approach ensures the final intelligence product fully addresses requirements.
 
 ## **Resources**
 
 ### **Reference and Theory**
 
-* Intelligence Cycle - [https://www.intel.gov/how-the-ic-works#:\~:text=the%20SIX%20STEPS%20in%20the%20INTELLIGENCE%20CYCLE](https://www.intel.gov/how-the-ic-works)
-* Intelligence Cycle Concepts **-** [https://sroberts.io/posts/intelligence-concepts-the-intelligence-cycle/](https://sroberts.io/posts/intelligence-concepts-the-intelligence-cycle/)
+* Intelligence Cycle - [https://www.intel.gov/how-the-ic-works](https://www.intel.gov/how-the-ic-works)
+* Intelligence Cycle Concepts - [https://sroberts.io/posts/intelligence-concepts-the-intelligence-cycle/](https://sroberts.io/posts/intelligence-concepts-the-intelligence-cycle/)
 * Intelligence F3EAD - [https://sroberts.io/posts/intelligence-concepts-f3ead/](https://sroberts.io/posts/intelligence-concepts-f3ead/)
 * [US Intelligence Doctrine](https://www.jcs.mil/Portals/36/Documents/Doctrine/pubs/jp2_0.pdf) - Great resource for learning the process of intelligence gathering and putting it to use.
 * Psychology of Intelligence Analysis- Huer - [https://www.ialeia.org/docs/Psychology\_of\_Intelligence\_Analysis.pdf](https://www.ialeia.org/docs/Psychology_of_Intelligence_Analysis.pdf)
@@ -93,10 +93,10 @@ Each of these steps is integral to producing intelligence, but this is not condu
 
 ### Intel Training
 
-* [Katie Nickels's Cyber Threat Intelligence Self Study Plan](https://medium.com/katies-five-cents/a-cyber-threat-intelligence-self-study-plan-part-1-968b5a8daf9a) - Self study plan crafted by the instructor for the SANS Threat Intelligence course. Start here.
-* [https://attack.mitre.org/resources/training/cti/](https://attack.mitre.org/resources/training/cti/) - This training by Katie Nickels and Adam Pennington of the ATT\&CK team will help you learn how to apply ATT\&CK and improve your threat intelligence practices.
-* [https://academy.attackiq.com/courses/introduction-to-the-easy-framework](https://academy.attackiq.com/courses/introduction-to-the-easy-framework) - Threat intelligence couse focusing on building your own threat intelligence workflow and program.
-* [https://www.shadowscape.io/cyber-intelligence-analytics-operat](https://www.shadowscape.io/cyber-intelligence-analytics-operat) - Learn the ins and outs of all stages of the intelligence cycle from collection to analysis from seasoned intel professionals. How to employ threat intelligence to conduct comprehensive defense strategies to mitigate potential compromise. How to use TI to respond to and minimize impact of cyber incidents. How to generate comprehensive and actionable reports to communicate gaps in defenses and intelligence findings to decision makers.
+* [Katie Nickels's Cyber Threat Intelligence Self Study Plan](https://medium.com/katies-five-cents/a-cyber-threat-intelligence-self-study-plan-part-1-968b5a8daf9a) - Self-study plan created by the instructor of the SANS Threat Intelligence course. An excellent starting point for CTI learning.
+* [MITRE ATT&CK CTI Training](https://attack.mitre.org/resources/training/cti/) - Training by Katie Nickels and Adam Pennington of the ATT&CK team on applying ATT&CK to improve threat intelligence practices.
+* [Introduction to the EASY Framework](https://academy.attackiq.com/courses/introduction-to-the-easy-framework) - Threat intelligence course focusing on building your own threat intelligence workflow and program.
+* [Shadowscape Cyber Intelligence Analytics Operations](https://www.shadowscape.io/cyber-intelligence-analytics-operat) - Comprehensive course covering all stages of the intelligence cycle from collection to analysis, taught by experienced intelligence professionals. Learn to employ threat intelligence for defense strategies, incident response, and creating actionable reports for decision makers.
 
 ![](<../.gitbook/assets/image (14).png>)
 
