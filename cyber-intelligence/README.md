@@ -93,10 +93,29 @@ Each step is integral to producing intelligence, but the cycle is not strictly l
 
 ### Intel Training
 
+#### Free Training Resources
+
 * [Katie Nickels's Cyber Threat Intelligence Self Study Plan](https://medium.com/katies-five-cents/a-cyber-threat-intelligence-self-study-plan-part-1-968b5a8daf9a) - Self-study plan created by the instructor of the SANS Threat Intelligence course. An excellent starting point for CTI learning.
 * [MITRE ATT&CK CTI Training](https://attack.mitre.org/resources/training/cti/) - Training by Katie Nickels and Adam Pennington of the ATT&CK team on applying ATT&CK to improve threat intelligence practices.
 * [Introduction to the EASY Framework](https://academy.attackiq.com/courses/introduction-to-the-easy-framework) - Threat intelligence course focusing on building your own threat intelligence workflow and program.
+* [Cybrary Threat Intelligence Path](https://www.cybrary.it/) - Free CTI courses and learning paths covering fundamentals to advanced topics.
+* [SANS Reading Room - Threat Intelligence Papers](https://www.sans.org/white-papers/?focus-area=threat-intelligence) - Free white papers on various threat intelligence topics and methodologies.
+* [APTnotes](https://github.com/aptnotes/data) - Collection of publicly available threat intelligence reports for study and analysis practice.
+* [FIRST CTI SIG Resources](https://www.first.org/global/sigs/cti/) - Special Interest Group materials, presentations, and best practices from the Forum of Incident Response and Security Teams.
+
+#### Professional Training & Certifications
+
+* [SANS FOR578: Cyber Threat Intelligence](https://www.sans.org/cyber-security-courses/cyber-threat-intelligence/) - Premier certification course for CTI analysts, covering collection, analysis, and intelligence production.
+* [SANS FOR589: Cybersecurity Defense Essentials](https://www.sans.org/cyber-security-courses/cybersecurity-defense-essentials/) - Includes CTI fundamentals alongside defensive security essentials.
 * [Shadowscape Cyber Intelligence Analytics Operations](https://www.shadowscape.io/cyber-intelligence-analytics-operat) - Comprehensive course covering all stages of the intelligence cycle from collection to analysis, taught by experienced intelligence professionals. Learn to employ threat intelligence for defense strategies, incident response, and creating actionable reports for decision makers.
+* [ThreatConnect University](https://training.threatconnect.com/) - Platform-specific training that covers CTI principles and practical threat intelligence operations.
+* [Recorded Future Training](https://www.recordedfuture.com/training) - Professional training for threat intelligence analysts with focus on actionable intelligence.
+
+#### Community Resources
+
+* [Reddit r/ThreatIntelligence](https://www.reddit.com/r/ThreatIntelligence/) - Active community for CTI discussions, resource sharing, and industry news.
+* **Twitter CTI Community** - Follow CTI practitioners and researchers: @cyb3rops, @kbseccy, @malware_traffic, @IntelCritique, and others for real-time insights and discussions.
+* **CTI Slack/Discord Communities** - Various professional communities where CTI practitioners collaborate and share knowledge (search for CTI League and similar groups).
 
 ![](<../.gitbook/assets/image (14).png>)
 
