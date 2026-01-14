@@ -1,73 +1,110 @@
-# Blue ToolBox
+# Blue Team Toolbox
 
-This section contains handy links and tools for anything else not mentioned in the previous sections.
+This section collects useful tools and resources that don't fit neatly into the other specific categories but are essential for a robust defense strategy.
 
-### **Open Source AntiVirus/AntiMalware/AntiRootkit**
+### Open Source AntiVirus/AntiMalware/AntiRootkit
 
-* [ClamAV](https://www.clamav.net/downloads) - ClamAV is an open source antivirus engine for detecting trojans, viruses, malware & other malicious threats.
-  * [https://docs.clamav.net/Introduction.html](https://docs.clamav.net/Introduction.html)
-  * For Linux users, clamAV has a new on-access scanning option. Make sure you have it enabled! [https://docs.clamav.net/manual/OnAccess.html](https://docs.clamav.net/manual/OnAccess.html)
-* [Immunet](https://www.immunet.com/index) - Immunet is a malware and antivirus protection system that utilizes cloud computing to provide enhanced community-based security.
+* [ClamAV](https://www.clamav.net/) - An open source antivirus engine for detecting trojans, viruses, malware, and other malicious threats.
+  * [ClamAV Documentation](https://docs.clamav.net/Introduction.html)
+  * [On-Access Scanning](https://docs.clamav.net/manual/OnAccess.html) - For Linux users, ClamAV has an on-access scanning option. Ensure it is enabled for real-time protection.
+* [YARA](https://virustotal.github.io/yara/) - The pattern matching swiss knife for malware researchers (and everyone else).
+* [Rootkit Hunter (rkhunter)](https://rkhunter.sourceforge.net/) - A Unix-based tool that scans for rootkits, backdoors, and possible local exploits.
+* [Chkrootkit](http://www.chkrootkit.org/) - A tool to locally check for signs of a rootkit.
 
 ### Secure Firmware
 
-* [Coreboot](https://doc.coreboot.org/getting\_started/index.html) is a replacement for your BIOS / UEFI with a strong focus on boot speed, security and flexibility. It is designed to boot your operating system as fast as possible without any compromise to security, with no back doors.
-* [TianoCore](https://www.tianocore.org/) is a community project supporting an open source implementation of the Unified Extensible Firmware Interface (UEFI). EDK II is a modern, feature-rich, cross-platform firmware development environment for the UEFI and UEFI Platform Initialization (PI) specifications.
+* [Coreboot](https://doc.coreboot.org/getting_started/index.html) - A replacement for your BIOS / UEFI with a strong focus on boot speed, security, and flexibility. Designed to boot the operating system as fast as possible without compromising security.
+* [TianoCore](https://www.tianocore.org/) - A community project supporting an open source implementation of the Unified Extensible Firmware Interface (UEFI). EDK II is a modern, feature-rich, cross-platform firmware development environment for the UEFI and UEFI Platform Initialization (PI) specifications.
 
-### **Personal Firewall/Sandbox**
+### Personal Firewall/Sandbox
 
-* [PortMaster ](https://safing.io/)- Portmaster is a free and open-source application firewall with audjustable defense profiles, white/blacklisting, and amazing extra features.
-* [OpenSnitch](https://github.com/evilsocket/opensnitch) - Linux Application Firewall. The first thing I install.
-* [FireJail](https://github.com/netblue30/firejail) - Firejail is a SUID sandbox program that reduces the risk of security breaches by restricting the running environment of untrusted applications using Linux namespaces, seccomp-bpf and Linux capabilities.
-* [eBPF](https://ebpf.io/) is a technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading kernel modules. By making the Linux kernel programmable, infrastructure software can leverage existing layers, making them more intelligent and feature-rich without continuing to add additional layers of complexity to the system.
-* [eBPF for Windows](https://github.com/microsoft/ebpf-for-windows) is an eBPF implementation that runs on top of Windows. eBPF is a well-known technology for providing programmability and agility, especially for extending an OS kernel, for use cases such as DoS protection and observability.
+* [PortMaster](https://safing.io/) - A free and open-source application firewall with adjustable defense profiles, white/blacklisting, and privacy features.
+* [OpenSnitch](https://github.com/evilsocket/opensnitch) - A Linux Application Firewall.
+* [FireJail](https://github.com/netblue30/firejail) - A SUID sandbox program that reduces the risk of security breaches by restricting the running environment of untrusted applications using Linux namespaces, seccomp-bpf, and Linux capabilities.
+* [eBPF](https://ebpf.io/) - A technology that can run sandboxed programs in the Linux kernel without changing kernel source code or loading kernel modules.
+* [eBPF for Windows](https://github.com/microsoft/ebpf-for-windows) - An eBPF implementation that runs on top of Windows. eBPF is a well-known technology for providing programmability and agility, especially for extending an OS kernel, for use cases such as DoS protection and observability.
 
 ### OpenSource Email Security
 
-* [https://sublimesecurity.com/](https://sublimesecurity.com/) - Sublime lets you write and run custom detection and response rules to block phishing attacks, hunt for threats, and more.
+* [Sublime Security](https://sublimesecurity.com/) - Sublime lets you write and run custom detection and response rules to block phishing attacks, hunt for threats, and more.
 
-### **VMs/OSs**
+### Threat Intelligence Platforms (TIP)
 
-* [Security Onion](https://securityonionsolutions.com/) - Security Onion is a free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management.
-* [SANS SIFT ](https://digital-forensics.sans.org/community/downloads)- The SIFT Workstation is a collection of free and open-source incident response and forensic tools designed to perform detailed digital forensic examinations in a variety of settings.
-* [Flare](https://github.com/fireeye/flare-vm) - A fully customizable, Windows-based security distribution for malware analysis, incident response, penetration testing, etc.
-* [Remnux](https://remnux.org/) - REMnux® is a Linux toolkit for reverse-engineering and analyzing malicious software. REMnux provides a curated collection of free tools created by the community. Analysts can use it to investigate malware without having to find, install, and configure the tools.
-* [SOF-ELK](https://github.com/philhagen/sof-elk) - SOF-ELK® is a “big data analytics” platform focused on the typical needs of computer forensic investigators/analysts and information security operations personnel. The platform is a customized build of the open source Elastic stack, consisting of the Elasticsearch storage and search engine, Logstash ingest and enrichment system, Kibana dashboard frontend, and Elastic Beats log shipper (specifically filebeat).
+* [MISP](https://www.misp-project.org/) - Malware Information Sharing Platform and Threat Sharing. Open source software for collecting, storing, distributing and sharing cyber security indicators.
+* [OpenCTI](https://www.opencti.io/en/) - Open Cyber Threat Intelligence Platform. A unified platform to manage and analyze cyber threat intelligence.
 
-### **MacOS**
+### Malware Analysis & Sandboxing
 
-* [Venator-Swift](https://github.com/richiercyrus/Venator-Swifthttps:/github.com/richiercyrus/Venator-Swift) - Swift Command line tool used for proactive detection of malicious activity on macOS systems.
-* [Santa](https://github.com/google/santa) - Santa is a binary authorization system for macOS
-* [KnockKnock](https://www.objective-see.com/products/knockknock.html) - KnockKnock uncovers persistently installed software in order to generically reveal such malware.
-* [LuLu](https://objective-see.com/products/lulu.html) - Open-source firewall that aims to block unknown outgoing connections, protecting your privacy and your Mac!
-* _Operator Handbook: MacOS Defend - pg.162_
+* [CyberChef](https://gchq.github.io/CyberChef/) - The "Cyber Swiss Army Knife" - a web app for encryption, encoding, compression and data analysis.
+* [Any.Run](https://any.run/) - Interactive online malware sandbox service.
+* [Hybrid Analysis](https://www.hybrid-analysis.com/) - Free automated malware analysis service.
+* [VirusTotal](https://www.virustotal.com/) - Analyze suspicious files, domains, IPs and URLs to detect malware and other breaches.
+* [UrlScan.io](https://urlscan.io/) - A service to scan and analyse websites.
+
+### Forensics & Incident Response
+
+* [Velociraptor](https://docs.velociraptor.app/) - An advanced digital forensic and incident response tool that enhances your visibility into your endpoints.
+* [Volatility](https://www.volatilityfoundation.org/) - The world's most widely used framework for extracting digital artifacts from volatile memory (RAM) samples.
+* [Eric Zimmerman's Tools](https://ericzimmerman.github.io/#!index.md) - A collection of highly regarded forensic tools for Windows (including KAPE, LECmd, etc.).
+* [Sysinternals Suite](https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite) - The classic suite of troubleshooting and security tools for Windows.
+
+### Network Analysis
+
+* [Wireshark](https://www.wireshark.org/) - The world’s foremost and widely-used network protocol analyzer.
+* [Zeek](https://zeek.org/) - A powerful network analysis framework that is much different from the typical IDS you may know.
+* [Suricata](https://suricata.io/) - A high performance Network IDS, IPS and Network Security Monitoring engine.
+* [Zui (formerly Brim)](https://zui.brimdata.io/) - Desktop application to efficiently search and analyze super-structured network data (Zeek logs, PCAP).
+
+### VMs/OSs
+
+* [Security Onion](https://securityonionsolutions.com/) - A free and open source Linux distribution for threat hunting, enterprise security monitoring, and log management.
+* [SANS SIFT](https://www.sans.org/tools/sift-workstation/) - The SIFT Workstation is a collection of free and open-source incident response and forensic tools designed to perform detailed digital forensic examinations in a variety of settings.
+* [Flare](https://github.com/mandiant/flare-vm) - A fully customizable, Windows-based security distribution for malware analysis, incident response, penetration testing, etc.
+* [REMnux](https://remnux.org/) - A Linux toolkit for reverse-engineering and analyzing malicious software. REMnux provides a curated collection of free tools so analysts can investigate malware without having to find, install, and configure them individually.
+* [SOF-ELK](https://github.com/philhagen/sof-elk) - A “big data analytics” platform focused on the typical needs of computer forensic investigators/analysts and information security operations personnel. It is a customized build of the open source Elastic stack, pre-configured for forensic use.
+
+### MacOS
+
+* [Santa](https://github.com/google/santa) - A binary authorization system for macOS.
+* [KnockKnock](https://objective-see.org/products/knockknock.html) - Uncovers persistently installed software to reveal malware.
+* [LuLu](https://objective-see.org/products/lulu.html) - An open-source firewall that aims to block unknown outgoing connections, protecting your privacy and your Mac.
+* *Operator Handbook: MacOS Defend - pg.162*
 
 ### Security Infrastructure Tools
 
-* [MADCert](https://github.com/NationalSecurityAgency/MADCert) is a cross-platform tool that consists of a certificate generator, a file system certificate manager, and a command line interface for the purposes of testing.
-* [BLESS(Bastion's Lambda Ephemeral SSH Service)](https://github.com/Netflix/bless) is an SSH Certificate Authority that runs as an AWS Lambda function and is used to sign SSH public keys.
-* [Zuul](https://github.com/Netflix/zuul) is an [L7 application gateway](https://www.f5.com/services/resources/glossary/application-layer-gateway) that provides capabilities for dynamic routing, monitoring, resiliency, security, and more.
-* [D4 DDOS detection tool ](https://d4-project.org/)
-* [IPFire Open Source Firewall](https://www.ipfire.org/)&#x20;
-* [pfSense](https://www.pfsense.org/) is a free and open source firewall and router that also features unified threat management, load balancing, multi WAN, and more.
-* [Pi-hole](https://pi-hole.net/) is a [DNS sinkhole](https://en.wikipedia.org/wiki/DNS\_Sinkhole) that protects your devices from unwanted content, without installing any client-side software, intended for use on a private network. It is designed for use on embedded devices with network capability, such as the Raspberry Pi, but it can be used on other machines running Linux and cloud implementations.
-* [https://github.com/SpyGuard/SpyGuard](https://github.com/SpyGuard/SpyGuard) -&#x20;
+* [Zuul](https://github.com/Netflix/zuul) - An [L7 application gateway](https://www.f5.com/services/resources/glossary/application-layer-gateway) providing dynamic routing, monitoring, resiliency, and security.
+* [IPFire](https://www.ipfire.org/) - An open source firewall distribution.
+* [pfSense](https://www.pfsense.org/) - A free and open source firewall and router featuring unified threat management, load balancing, and more.
+* [Pi-hole](https://pi-hole.net/) - A [DNS sinkhole](https://en.wikipedia.org/wiki/DNS_Sinkhole) that protects devices from unwanted content without client-side software.
 
-### **Misc Tools**
+### Browser Security
 
-* [SELinux](https://github.com/SELinuxProject/selinux) is a security enhancement to Linux which allows users and administrators more control over access control. Access can be constrained on such variables as which users and applications can access which resources. These resources may take the form of files. Standard Linux access controls, such as file modes (-rwxr-xr-x) are modifiable by the user and the applications which the user runs. Conversely, SELinux access controls are determined by a policy loaded on the system which may not be changed by careless users or misbehaving applications.
-* [AppArmor](https://www.apparmor.net/) is an effective and easy-to-use Linux application security system. AppArmor proactively protects the operating system and applications from external or internal threats, even zero-day attacks, by enforcing good behavior and preventing both known and unknown application flaws from being exploited. AppArmor supplements the traditional Unix discretionary access control (DAC) model by providing mandatory access control (MAC). It has been included in the mainline Linux kernel since version 2.6.36 and its development has been supported by Canonical since 2009.
-* Graph and Charting tools
-  * [https://developers.google.com/chart](https://developers.google.com/chart)
-  * [http://www.gnuplot.info/](http://www.gnuplot.info/)
-  * [http://afterglow.sourceforge.net/](http://afterglow.sourceforge.net/)
-* [Veracrypt](https://archive.codeplex.com/?p=veracrypt) - Open source disk encryption&#x20;
-* [Network Tools](https://network-tools.com/) - Free online network toolset
-* IP address ranges by country - [https://lite.ip2location.com/ip-address-ranges-by-country](https://lite.ip2location.com/ip-address-ranges-by-country)
-* [TheHive  (SOAR/Ticket system) ](https://github.com/TheHive-Project/TheHive)- [TheHive](https://thehive-project.org/) is a scalable 3-in-1 open source and free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly
-* [Cortex](https://github.com/TheHive-Project/Cortex) - Tool for analyzing TheHive Observables at scale.
-* [SANS Security Policy Templates](https://www.sans.org/information-security-policy/)
-* [CrowdSec collective behavior engine](https://github.com/crowdsecurity/crowdsec/)
-* [Google Toolbox](https://toolbox.googleapps.com/apps/main/) - Misc Web based utilities
-* [https://grsecurity.net/](https://grsecurity.net/)
+* [uBlock Origin](https://github.com/gorhill/uBlock) - An efficient wide-spectrum content blocker.
+* [Privacy Badger](https://privacybadger.org/) - Automatically learns to block invisible trackers.
 
+### Misc Tools
+
+* [SELinux](https://github.com/SELinuxProject/selinux) - A security enhancement to Linux providing mandatory access control (MAC) to support confidentiality and integrity requirements.
+* [AppArmor](https://www.apparmor.net/) - A Linux application security system that proactively protects the OS and applications from threats by enforcing good behavior.
+* [Veracrypt](https://veracrypt.fr/en/Home.html) - Open source disk encryption.
+* [Network Tools](https://network-tools.com/) - Free online network toolset.
+* [IP Location](https://lite.ip2location.com/ip-address-ranges-by-country) - IP address ranges by country.
+* [TheHive](https://thehive-project.org/) - A scalable, open source Security Incident Response Platform.
+* [Cortex](https://github.com/TheHive-Project/Cortex) - A tool for analyzing TheHive Observables at scale.
+* [SANS Security Policy Templates](https://www.sans.org/information-security-policy/) - A collection of security policy templates.
+* [CrowdSec](https://github.com/crowdsecurity/crowdsec/) - A collective behavior engine that analyzes behaviors to detect and block attacks.
+* [Google Admin Toolbox](https://toolbox.googleapps.com/apps/main/) - Miscellaneous web-based utilities.
+* [Grsecurity](https://grsecurity.net/) - Extensive security enhancement to the Linux kernel.
+* **Graph and Charting Tools**
+  * [Google Charts](https://developers.google.com/chart)
+  * [Gnuplot](http://www.gnuplot.info/)
+
+### Archived / Deprecated Projects
+
+These tools are no longer actively maintained but remain here for reference or legacy compatibility.
+
+* [Venator-Swift](https://github.com/richiercyrus/Venator-Swift) - (Archived) Proactive detection of malicious activity on macOS systems.
+* [MADCert](https://github.com/NationalSecurityAgency/MADCert) - (Archived) Certificate generator and manager.
+* [BLESS](https://github.com/Netflix/bless) - (Archived) Bastion's Lambda Ephemeral SSH Service.
+* [D4 Project](https://d4-project.org/) - (Inactive) Distributed denial-of-service (DDoS) detection tool.
+* [AfterGlow](http://afterglow.sourceforge.net/) - (Legacy) Network visualization tool.
