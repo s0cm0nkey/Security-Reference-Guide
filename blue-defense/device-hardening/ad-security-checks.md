@@ -3,80 +3,98 @@
 ### Defensive/Hardening Tools
 
 * [PingCastle](https://www.pingcastle.com/) - A tool designed to assess quickly the Active Directory security level with a methodology based on risk assessment and a maturity framework
-* [Aorato Skeleton Key Malware Remote DC Scanner](https://gallery.technet.microsoft.com/Aorato-Skeleton-Key-24e46b73) - Remotely scans for the existence of the Skeleton Key Malware
-* [RiskySPN](https://github.com/cyberark/RiskySPN) - RiskySPNs is a collection of PowerShell scripts focused on detecting and abusing accounts associated with SPNs (Service Principal Name).
-* [Deploy-Deception](https://github.com/samratashok/Deploy-Deception) - A PowerShell module to deploy active directory decoy objects
-* [SpoolerScanner](https://github.com/vletoux/SpoolerScanner) - Check if MS-RPRN is remotely available with powershell/c#
-* [dcept](https://github.com/secureworks/dcept) - A tool for deploying and detecting use of Active Directory honeytokens
-* [DCSYNCMonitor](https://github.com/shellster/DCSYNCMonitor) - Monitors for DCSYNC and DCSHADOW attacks and create custom Windows Events for these events
-* [jackdaw](https://github.com/skelsec/jackdaw) - Jackdaw is here to collect all information in your domain, store it in a SQL database and show you nice graphs on how your domain objects interact with each-other an how a potential attacker may exploit these interactions. It also comes with a handy feature to help you in a password-cracking project by storing/looking up/reporting hashes/passowrds/users.
+* [BloodHound Community Edition](https://github.com/SpecterOps/BloodHound) - Uses graph theory to reveal the hidden and often unintended relationships within an Active Directory environment. Defenders can use it to identify and eliminate highly complex attack paths.
+* [Purple Knight](https://www.purple-knight.com/) - A security assessment tool that scans your Active Directory environment for indicators of exposure (IOEs) and provides a report with a security score.
+* [SpoolerScanner](https://github.com/vletoux/SpoolerScanner) - Check if MS-RPRN is remotely available using PowerShell or C#.
+* [DCSYNCMonitor](https://github.com/shellster/DCSYNCMonitor) - Monitors for DCSYNC and DCSHADOW attacks and create custom Windows Events for these events.
 
-## **General Recommendations**
+### Deprecated / Archive Tools
+*The following tools may be unmaintained but contain useful concepts or scripts.*
+* [jackdaw](https://github.com/skelsec/jackdaw) - AD visualization tool (similar goal to BloodHound) focusing on object interactions. 
+* [RiskySPN](https://github.com/cyberark/RiskySPN) - PowerShell scripts focused on detecting and abusing accounts associated with SPNs.
+* [Deploy-Deception](https://github.com/samratashok/Deploy-Deception) - A PowerShell module to deploy active directory decoy objects.
+* [dcept](https://github.com/secureworks/dcept) - A tool for deploying and detecting use of Active Directory honeytokens.
 
-* Manage local Administrator passwords (LAPS).
+## General Recommendations
+
+* Manage local Administrator passwords using Windows LAPS (built-in) or Legacy LAPS.
 * Implement RDP Restricted Admin mode (as needed).
 * Remove unsupported OSs from the network.
 * Monitor scheduled tasks on sensitive systems (DCs, etc.).
+* Scan SYSVOL for legacy GPP Passwords (MS14-025) in fragments (groups.xml, scheduledtasks.xml).
 * Ensure that OOB management passwords (DSRM) are changed regularly & securely stored.
-* Use SMB v2/v3+
-* Default domain Administrator & KRBTGT password should be changed every year & when an AD admin leaves.
+* Disable SMBv1 and enforce SMB v2/v3 signing.
+* Default domain Administrator password should be changed every year & when an AD admin leaves. The KRBTGT password should be rotated twice annually and when an AD admin leaves.
 * Remove trusts that are no longer necessary & enable SID filtering as appropriate.
-* All domain authentications should be set (when possible) to: "Send NTLMv2 response onlyrefuse LM & NTLM."
+* Enforce LDAP Signing and Channel Binding to prevent relay attacks.
+* All domain authentications should be set (when possible) to: "Send NTLMv2 response only. Refuse LM & NTLM."
 * Block internet access for DCs, servers, & all administration systems.
 
-## **Protect Admin Credentials**
+## Protect Admin Credentials
 
 * No "user" or computer accounts in admin groups.
 * Ensure all admin accounts are "sensitive & cannot be delegated".
 * Add admin accounts to "Protected Users" group (requires Windows Server 2012 R2 Domain Controllers, 2012R2 DFL for domain protection).
 * Disable all inactive admin accounts and remove from privileged groups.
 
-## **Protect AD Admin Credentials**
+## Protect AD Admin Credentials
 
 * Limit AD admin membership (DA, EA, Schema Admins, etc.) & only use custom delegation groups.
-* ‘Tiered’ Administration mitigating credential theft impact.
+* Tiered Administration to mitigate credential theft impact.
 * Ensure admins only logon to approved admin workstations & servers.
 * Leverage time-based, temporary group membership for all admin accounts
 
-## **Protect Service Account Credentials**
+## Protect Service Account Credentials
 
 * Limit to systems of the same security level.
-* Leverage “(Group) Managed Service Accounts” (or PW >20 characters) to mitigate credential theft (kerberoast).
-* Implement FGPP (DFL =>2008) to increase PW requirements for SAs and administrators.
+* Leverage “(Group) Managed Service Accounts” (or password >20 characters) to mitigate credential theft (kerberoast).
+* Implement Fine-Grained Password Policies (FGPP) (starting at DFL 2008) to increase password requirements for SAs and administrators.
 * Logon restrictions – prevent interactive logon & limit logon capability to specific computers.
 * Disable inactive SAs & remove from privileged groups.
 
-## **Protect Resources**
+## Protect Resources
 
 * Segment network to protect admin & critical systems.
 * Deploy IDS to monitor the internal corporate network.
 * Network device & OOB management on separate network.
 
-## **Protect Domain Controllers**
+## Protect Domain Controllers
 
 * Only run software & services to support AD.
 * Minimal groups (& users) with DC admin/logon rights.
-* Ensure patches are applied before running DCPromo (especially MS14-068 and other critical patches).
+* Disable the Print Spooler service on all Domain Controllers (to mitigate PrintNightmare and coercion attacks).
+* Ensure critical patches are applied before running DCPromo (e.g., Zerologon [CVE-2020-1472]).
 * Validate scheduled tasks & scripts.
 
-## **Protect Workstations (& Servers)**
+## Protect AD CS (Certificate Services)
+
+* Treat Certificate Authorities (CAs) as Tier 0 assets (same security level as Domain Controllers).
+* Regularly audit Certificate Templates for misconfigurations (e.g., ESC1-ESC8 vulnerabilities).
+* Remove "Enroll" permissions for "Domain Users" on sensitive templates.
+* Prevent "Enrollee Supplies Subject" flag on templates that allow authentication.
+* Monitor for new certificate requests and template changes.
+
+## Protect Workstations (& Servers)
 
 * Patch quickly, especially privilege escalation vulnerabilities.
-* Deploy security back-port patch (KB2871997).
-* Set Wdigest reg key to 0 (KB2871997/Windows 8.1/2012R2+): HKEY\_LOCAL\_MACHINESYSTEMCurrentControlSetControlSecurityProvidersWdigest
-* Deploy workstation whitelisting (Microsoft AppLocker) to block code exec in user folders – home dir & profile path.
-* Deploy workstation app sandboxing technology (EMET) to mitigate application memory exploits (0-days).
+* Set WDigest `UseLogonCredential` registry value to 0:
+    *   Path: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\Wdigest`
+    *   Value Name: `UseLogonCredential`
+    *   Type: `DWORD`
+    *   Value: `0`
+* Deploy workstation whitelisting (Microsoft AppLocker or Windows Defender Application Control) to block code execution in user folders – home directory & profile path.
+* Deploy workstation app sandboxing technology (Windows Defender Exploit Guard) to mitigate application memory exploits (0-days).
 
-## **Logging**
+## Logging
 
-* Enable enhanced auditing
+* Enable enhanced auditing.Creation Events" enabled
 * “Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings”
 * Enable PowerShell module logging (“\*”) & forward logs to central log server (WEF or other method).
 * Enable CMD Process logging & enhancement (KB3004375) and forward logs to central log server.
 * SIEM or equivalent to centralize as much log data as possible.
-* User Behavioural Analysis system for enhanced knowledge of user activity (such as Microsoft ATA).
+* User Behavior Analysis system for enhanced knowledge of user activity (such as Microsoft Defender for Identity).
 
-## **Security Pro’s Checks**
+## Security Pro’s Checks
 
 * Identify who has AD admin rights (domain/forest).
 * Identify who can logon to Domain Controllers (& admin rights to virtual environment hosting virtual DCs).
