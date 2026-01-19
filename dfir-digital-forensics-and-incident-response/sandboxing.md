@@ -1,59 +1,84 @@
 # Sandboxing
 
+## Overview
+
+**Online Sandboxes -** The "Easy Button" for Malware Analysis.
+
+The first step in analyzing any potentially malicious file often involves running it through a sandbox. Sandboxes provide detailed analysis of the file, its structure, its contents, its metadata, and can even "detonate" (execute) the file to observe the activity resulting from opening or running it.
+
+Malware analysis typically falls into two categories:
+
+*   **Static Analysis**: The contents and structure of the file are analyzed for indicators of purpose or nature without executing the code. This includes hashing, string extraction, and analyzing file headers. If the file is an executable, code structure can be analyzed via disassembly (though this often crosses into Reverse Engineering).
+*   **Dynamic Analysis (Behavioral Analysis)**: The file is opened or executed in a controlled environment (sandbox) to determine what actions it performs. This allows analysts to observe network connections, file system changes, and process injections without risking the host device.
+
+Use discretion when choosing a tool. A simple scan might not reveal complex malware.
+
 ## Online Sandbox Services
 
-**Online Sandboxes -** The malware analysis easy button
+For analyzing potentially malicious files, a common workflow starts with submitting the file to services like **JoeSandbox**, **Hybrid-Analysis**, or **Any.run**. These platforms provide detailed reports on the file's nature, contents, and related threat intelligence.
 
-The first step in analyzing any potentially malicious file is running it through a sandbox. Sandboxes can provide detailed analysis of the file, its structure, its contents, its metadata, and even detonate the file to see what activity comes from opening/running the file.
-
-There are two types of analysis on files that can be performed:
-
-* Static analysis - Where the contents and structure of the file are analyzed for indicators of purpose or nature. If the file is an executable in an uncompiled state, the code structure can also be analyzed.&#x20;
-* Dynamic analysis - Where the files is opened or executed, to determine what action it performs. This is usually done in a sandboxed environment, in order to prevent any potentially harmful actions being performed on the host device.
-
-For analyzing potentially malicious files, i usually start with submitting the file to JoeSandbox and Hybrid-Analysis. These two provide detailed reports about the nature of the file, its contents, and intelligence available on the file, and so much more. If these two do not yield the answers needed, Any.run will provide a dynamic environment to detonate the file and monitor the actions it performs.
-
-All of the below online sandboxes can provide detailed analysis with one or more popular engines. Remember, just because its not found to be malicious by the scanner, does not mean it is 100% safe. Always use discretion.
+*   **Hybrid-Analysis** and **JoeSandbox** are excellent for deep static and dynamic analysis.
+*   **Any.run** provides an interactive dynamic environment, allowing you to manipulate the VM while the malware runs (useful for malware requiring user interaction, like installers or password-protected docs).
 
 {% hint style="warning" %}
-\*\*\*WARNING - Do NOT submit a document to a public sandbox that might contain PII. This can be considered a data leak and could violate company policy. If you need to inspect a file that might have PII, use either a premium sandboxing service that does not disclose analysis results/contents, or use a sandboxing tool on your own local virtual machine.
+\*\*\*WARNING - OPSEC & Privacy\*\*\*
+Do **NOT** submit a document to a public sandbox if it might contain Personally Identifiable Information (PII) or sensitive corporate data.
+Submitting a file to a public sandbox (like VirusTotal or Hybrid-Analysis) shares that file with the security community and potentially the public. This can be considered a data leak.
+If you need to inspect a sensitive file:
+1. Use a premium sandboxing service with a "private" submission option.
+2. Use a local sandboxing tool on an isolated virtual machine.
 {% endhint %}
 
-* [https://www.hybrid-analysis.com/](https://www.hybrid-analysis.com/)
-* [https://www.joesandbox.com](https://www.joesandbox.com)
-* [https://app.any.run/](https://app.any.run/)
-* [https://sandbox.anlyz.io/dashboard](https://sandbox.anlyz.io/dashboard)
-* [https://sandbox.pikker.ee/](https://sandbox.pikker.ee/) (Online version of cuckoo)
-* [https://analyze.intezer.com](https://analyze.intezer.com)
-* [https://iris-h.services/pages/submit](https://iris-h.services/pages/submit)
-* [https://intelligence.gatewatcher.com/](https://intelligence.gatewatcher.com/)
-* [https://tria.ge/](https://tria.ge/)
-* [https://labs.inquest.net/dfi](https://labs.inquest.net/dfi)
-* [https://manalyzer.org/](https://manalyzer.org/)
-* [https://threatpoint.checkpoint.com/ThreatPortal/emulation](https://threatpoint.checkpoint.com/ThreatPortal/emulation)
-* [http://firmware.re/](http://firmware.re/)
-* [https://malwareconfig.com/](https://malwareconfig.com/)
-* [https://id-ransomware.malwarehunterteam.com/](https://id-ransomware.malwarehunterteam.com/)
-* [https://virusscan.jotti.org/en](https://virusscan.jotti.org/en)
-* [https://pandora.circl.lu/submit](https://pandora.circl.lu/submit)
-* [https://exchange.xforce.ibmcloud.com/](https://exchange.xforce.ibmcloud.com/)
-* [https://koodous.com/](https://koodous.com/) - (APK Sandbox)
-* [https://yaraify.abuse.ch/](https://yaraify.abuse.ch/)
+### General Purpose Sandboxes
+*   [https://www.hybrid-analysis.com/](https://www.hybrid-analysis.com/) (Powered by Falcon Sandbox)
+*   [https://www.joesandbox.com](https://www.joesandbox.com)
+*   [https://app.any.run/](https://app.any.run/) (Interactive Sandbox)
+*   [https://tria.ge/](https://tria.ge/) (High-speed malware analysis)
+*   [https://analyze.intezer.com](https://analyze.intezer.com) (Code reuse analysis)
+*   [https://intelligence.gatewatcher.com/](https://intelligence.gatewatcher.com/) (Threat Intelligence & Sandbox)
+*   [https://labs.inquest.net/dfi](https://labs.inquest.net/dfi) (Deep File Inspection)
+*   [https://manalyzer.org/](https://manalyzer.org/)
+*   [https://threatpoint.checkpoint.com/ThreatPortal/emulation](https://threatpoint.checkpoint.com/ThreatPortal/emulation)
+*   [https://pandora.circl.lu/submit](https://pandora.circl.lu/submit)
+*   [https://exchange.xforce.ibmcloud.com/](https://exchange.xforce.ibmcloud.com/)
 
-## **Local Sandbox tools**
+### Specialized Analysis (Firmware, Android, Configs)
+*   [https://koodous.com/](https://koodous.com/) - APK (Android) Sandbox
+*   [http://firmware.re/](http://firmware.re/) - Firmware Analysis
+*   [https://malwareconfig.com/](https://malwareconfig.com/) - Extract configuration from RATs/C2s
+*   [https://id-ransomware.malwarehunterteam.com/](https://id-ransomware.malwarehunterteam.com/) - Identify Ransomware variants
+*   [https://yaraify.abuse.ch/](https://yaraify.abuse.ch/) - Scan files against public YARA rules
 
-Local sandboxes - There are a few options for local sandboxing that can help you. Cuckoo sandbox is the standard for local automated malware analysis. This is a great option for when you need to analyze a file that might contain PII that you do not want disclosed to a public sandbox. Another great option is to use Fireeye's Flare-VM. Not only does it come loaded with a slew of malware analysis tools, it runs as a virtual machine where malware can be analyzed and event detonated with out fear of impacting the host operating system. You will encounter files that pass muster with most automated analysis tools and the only way to determine what it does, is to detonate it. A great and simple way to do this, is to load the suspicious file into your Flare-VM, turn on a web proxy like fiddler to monitor your outdoing web requests, open local tools like event viewer or a process monitor, and detonate the file to see if it makes any unwanted actions on the device.
+### Community & Legacy Instances
+*   [https://sandbox.pikker.ee/](https://sandbox.pikker.ee/)
+*   [https://sandbox.anlyz.io/dashboard](https://sandbox.anlyz.io/dashboard)
+*   [https://iris-h.services/pages/submit](https://iris-h.services/pages/submit)
+*   [https://virusscan.jotti.org/en](https://virusscan.jotti.org/en) (Multi-engine scanner, primarily static)
 
-* [https://github.com/pandora-analysis/pandora](https://github.com/pandora-analysis/pandora) - Pandora is an analysis framework to discover if a file is suspicious and conveniently show the results.
-* [https://cuckoosandbox.org/](https://cuckoosandbox.org/) - The standard for local sandboxing and analysis.
-  * [cuckoo3](https://github.com/cert-ee/cuckoo3) - Cuckoo 3 is a Python 3 open source automated malware analysis system.
-* [https://github.com/fireeye/flare-vm](https://github.com/fireeye/flare-vm) - The fireeye VM for malware analysis.&#x20;
-* [ThePhish](https://github.com/emalderson/ThePhish) - ThePhish is an automated phishing email analysis tool based on [TheHive](https://github.com/TheHive-Project/TheHive), [Cortex](https://github.com/TheHive-Project/Cortex/) and [MISP](https://github.com/MISP/MISP). It is a web application written in Python 3 and based on Flask that automates the entire analysis process starting from the extraction of the observables from the header and the body of an email to the elaboration of a verdict which is final in most cases.
-  * [https://secsi.io/blog/thephish-an-automated-phishing-email-analysis-tool/](https://secsi.io/blog/thephish-an-automated-phishing-email-analysis-tool/)
-* Local VM and Proxies
-  * [https://www.telerik.com/fiddler](https://www.telerik.com/fiddler) - While not a sandbox, it is a simple web proxy that can be used with any other VM. By detonating your target file in a cirtual machine with this running, you can see if the file makes any outbound web requests when it is opened.
-  * [https://github.com/iphelix/dnschef](https://github.com/iphelix/dnschef) - DNS proxy for Penetration Testers and Malware Analysts
+## **Local Sandbox Tools**
 
-![](<../../.gitbook/assets/image (8) (1).png>)
+Local sandboxes are the preferred method when handling PII or highly sensitive targeted malware. They run on your own infrastructure, ensuring data does not leave your control.
 
-![](<../../.gitbook/assets/image (9) (1).png>)
+*   **[CAPE Sandbox](https://github.com/kevoreilly/CAPEv2)** - CAPE (Config And Payload Extraction) is a major fork of Cuckoo Sandbox designed to extract payloads and configurations from malware automatically. It is currently more actively maintained than the original Cuckoo v2.
+*   **[Cuckoo Sandbox](https://cuckoosandbox.org/)** - The classic standard for local automated malware analysis.
+    *   [cuckoo3](https://github.com/cert-ee/cuckoo3) - The next generation (Python 3) of Cuckoo.
+*   **[Mandiant Flare-VM](https://github.com/mandiant/flare-vm)** - (Previously FireEye) A fully customizable, Windows-based security distribution for malware analysis, incident response, and penetration testing. It runs as a virtual machine, allowing you to detonate malware without impacting your host OS.
+*   **[REMnux](https://remnux.org/)** - A Linux toolkit for reverse engineering and analyzing malicious software. Often used in tandem with Flare-VM to analyze Linux malware or to provide network services (DNS, HTTP) to the Windows malware victim.
+
+### Analysis Utilities & Frameworks
+*   **[Pandora](https://github.com/pandora-analysis/pandora)** - An analysis framework to discover if a file is suspicious and conveniently show the results.
+*   **[ThePhish](https://github.com/emalderson/ThePhish)** - An automated phishing email analysis tool based on [TheHive](https://github.com/TheHive-Project/TheHive), [Cortex](https://github.com/TheHive-Project/Cortex/) and [MISP](https://github.com/MISP/MISP).
+*   **[Fiddler](https://www.telerik.com/fiddler)** - A web debugging proxy. While not a sandbox, it is essential for dynamic analysis. run Fiddler in your VM to intercept and inspect HTTP/HTTPS traffic generated by the malware.
+*   **[DNSChef](https://github.com/iphelix/dnschef)** - A highly configurable DNS proxy for Penetration Testers and Malware Analysts.
+
+## **Manual Dynamic Analysis**
+A simple yet effective way to analyze malware is to manually detonate it in a controlled VM (like Flare-VM).
+1.  **Isolate**: ensure the VM has no path to your production network (Host-only networking or strictly controlled NAT).
+2.  **Instrumentation**: Open monitoring tools (Process Monitor, Process Hacker, Fiddler, Wireshark).
+3.  **Detonate**: Run the suspicious file.
+4.  **Observe**: Watch for process creation, registry changes, and outbound network requests.
+
+![Analysis Flow](<../../.gitbook/assets/image (8) (1).png>)
+
+![Dashboard Example](<../../.gitbook/assets/image (9) (1).png>)
+
