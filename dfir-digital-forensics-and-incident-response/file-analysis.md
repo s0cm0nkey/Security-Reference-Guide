@@ -1,14 +1,14 @@
 ---
-description: What is this? I didn't put this file here...
+description: Methodology and tools for analyzing suspicious files and binaries.
 ---
 
 # File/Binary Analysis
 
 ## **File Analysis Methodology**
 
-* [https://zeltser.com/analyzing-malicious-documents/](https://zeltser.com/analyzing-malicious-documents/)
+* [Analyzing Malicious Documents (Zeltser)](https://zeltser.com/analyzing-malicious-documents/)
 * [SANS Malicious File Analysis Cheatsheet](https://sansorg.egnyte.com/dl/IQ3GhaH868/?)
-* [https://hunter.jorgetesta.tech/malware/tips/analisis-estatico](https://hunter.jorgetesta.tech/malware/tips/analisis-estatico)
+* [Static Analysis Tips (Jorge Testa)](https://hunter.jorgetesta.tech/malware/tips/analisis-estatico)
 
 ### Static Analysis Tasklist
 
@@ -21,18 +21,19 @@ description: What is this? I didn't put this file here...
   * Too many meaningless strings (Possible obfuscation)
   * Internal/external messages
   * Referenced (invoked) functions
-  * Sections used by the PE
+  * Sections used by the PE (e.g., RWX sections often indicate packing or shellcode)
   * IPs and/or Domains
   * Error messages or exceptions
   * Names or keywords
 * Libraries
-  * Low number of libraries?
+  * Low number of libraries? (Could indicate packing)
   * Cryptography Libraries - Why does this need a crypto library?
-* Imports/VirtualAlloc
+* Imports
+  * Check for suspicious imports (e.g., `VirtualAlloc`, `WriteProcessMemory`, `CreateRemoteThread`) which may indicate injection or packing.
 
 ### Dynamic Analysis Task List
 
-* Run file through available/allowed Sandboxing utilties
+* Run file through available/allowed Sandboxing utilities
 
 {% content-ref url="sandboxing.md" %}
 [sandboxing.md](sandboxing.md)
@@ -48,9 +49,10 @@ description: What is this? I didn't put this file here...
   * Organize and clean Process Monitor data
 * Wireshark
   * Record network activity
-  * Give the malware what it wants and redirect its request to a local web server in your lab. You can use IPTABLES on linux (your lab's gateway) to intercept and redirect all internal traffic and reinfect your victim machine
-    * Use FAKEDNS in REMnux
-    * What happens if you let malware connect to your web server?
+  * **Network Simulation**: Give the malware what it wants and redirect its requests to a local web server (sinkhole) in your lab.
+    * Use IPTABLES on linux (your lab's gateway) to intercept and redirect all internal traffic.
+    * Use FAKEDNS in REMnux to simulate DNS resolutions.
+    * **Observation**: What happens if you let malware connect to your web server? Does it drop a second stage payload?
 
 ## **File Analysis Tools**
 
@@ -58,7 +60,6 @@ description: What is this? I didn't put this file here...
 
 Often the metadata surrounding a file can yield a trove of useful information. The below tools can be used to pull handy exif data from images or metadata from other files.
 
-* [http://www.exifdataviewer.com/](http://www.exifdataviewer.com/)
 * [https://www.extractmetadata.com/](https://www.extractmetadata.com/)
 * [https://exifinfo.org/](https://exifinfo.org/)
 * [http://exif.regex.info/exif.cgi](http://exif.regex.info/exif.cgi)
@@ -76,7 +77,7 @@ Often the metadata surrounding a file can yield a trove of useful information. T
 A package of python tools to analyze [Microsoft OLE2 files](http://en.wikipedia.org/wiki/Compound\_File\_Binary\_Format) (also called Structured Storage, Compound File Binary Format or Compound Document File Format), such as Microsoft Office documents or Outlook messages, mainly for malware analysis, forensics and debugging.
 
 * Tools for analyzing objects within an OLE file:
-  * Pre-2oleid - analyses OLE files to detect specific characteristics usually found in malicious files.
+  * oleid - analyses OLE files to detect specific characteristics usually found in malicious files.
   * olevba - extracts and analyses VBA Macro source code from MS Office documents (OLE and OpenXML).
   * mraptor - detects malicious VBA Macros.
   * msodde - detects and extracts DDE/DDEAUTO links from MS Office documents, RTF and CSV.
@@ -92,16 +93,20 @@ A package of python tools to analyze [Microsoft OLE2 files](http://en.wikipedia.
 
 ### Binary Analysis Tools
 
+* [Ghidra](https://ghidra-sre.org/) - A software reverse engineering (SRE) suite of tools developed by NSA's Research Directorate.
+* [x64dbg](https://x64dbg.com/) - An open-source x64/x32 debugger for windows.
+* [Cutter](https://cutter.re/) - Free and open-source reverse engineering platform powered by Rizin.
+* [PEStudio](https://www.winitor.com/) - A tool to perform static analysis of Windows executable files.
+* [Capa](https://github.com/mandiant/capa) - Detects capabilities in executable files. You run it against a PE, ELF, or shellcode and it tells you what it thinks the program can do.
 * [binwalk](https://www.kali.org/tools/binwalk/) - Binwalk is a tool for searching a given binary image for embedded files and executable code.
 * [de4dot](https://www.kali.org/tools/de4dot/) - de4dot is a .NET deobfuscator and unpacker.
 * [pev](https://www.kali.org/tools/pev/) - pev is a tool to get information of PE32/PE32+ executables (EXE, DLL, OCX etc) like headers, sections, resources and more.
 * [ropper](https://www.kali.org/tools/ropper/) - This package contains scripts that display info about files in different formats and find gadgets to build ROPs chains for different architectures (x86/x86\_64, ARM/ARM64, MIPS, PowerPC). For disassembly ropper uses the Capstone Framework.
-* [https://malcat.fr/index.html](https://malcat.fr/index.html) - Malcat is a feature-rich hexadecimal editor / disassembler for Windows and Linux targeted to IT-security professionals.\
-  Inspect [dozens of binary file formats](https://malcat.fr/features.html#file-formats), dissassemble and decompile different [CPU architectures](https://malcat.fr/features.html#cpu-architectures), extract embedded files and scan for Yara signatures or anomalies in a fast and easy-to-use graphical interface.
+* [Malcat](https://malcat.fr/index.html) - Malcat is a feature-rich hexadecimal editor / disassembler for Windows and Linux targeted to IT-security professionals. Inspect dozens of binary file formats, dissassemble and decompile different CPU architectures.
 
 ### Email Analysis Tools
 
-* [https://www.phishtool.com/products/community](https://www.phishtool.com/products/community) - PhishTool automatically retrieves all of the relevant metadata from a phishing email, providing you with the most comprehensive technical view of a phishing email possible. This combined with thier OSINT and heuristic detection. It performs strings analysis as well as attachments and embedded hyperlinks.
+* [https://www.phishtool.com/products/community](https://www.phishtool.com/products/community) - PhishTool automatically retrieves all of the relevant metadata from a phishing email, providing you with the most comprehensive technical view of a phishing email possible. This combined with their OSINT and heuristic detection. It performs strings analysis as well as attachments and embedded hyperlinks.
 
 ### Doc Analysis Tools
 
@@ -134,10 +139,12 @@ A package of python tools to analyze [Microsoft OLE2 files](http://en.wikipedia.
 
 ## **File Encrypt/Decrypt/Crack**
 
+* [Hashcat](https://hashcat.net/hashcat/) - World's fastest and most advanced password recovery utility.
+* [John the Ripper](https://www.openwall.com/john/) - Fast password cracker, currently available for many flavors of Unix, Windows, DOS, and OpenVMS.
+* [CyberChef](https://gchq.github.io/CyberChef/) - "The Cyber Swiss Army Knife". A web app for encryption, encoding, compression and data analysis.
 * [Pem File Cracking](https://github.com/robertdavidgraham/pemcrack) - Cracks SSL PEM files that hold encrypted private keys. Brute forces or dictionary cracks.
-*   [PKZip File Cracking](https://www.unix-ag.uni-kl.de/\~conrad/krypto/pkcrack.html) - Breaking Pkzip encryption.  This package implements an algorithm that was developed by Eli Biham and Paul Kocher and that is described in [this paper (Postscript, 80k)](ftp://utopia.hacktic.nl/pub/crypto/cracking/pkzip.ps.gz).
-
-    &#x20;The attack is a _known plaintext attack_, which means you have to know part of the encrypted data in order to break the cipher.
+* [PKZip File Cracking (pkcrack)](https://github.com/keyunluo/pkcrack) - Breaking Pkzip encryption. This package implements an algorithm that was developed by Eli Biham and Paul Kocher.
+    The attack is a _known plaintext attack_, which means you have to know part of the encrypted data in order to break the cipher.
 * [bruteforce-salted-openssl](https://www.kali.org/tools/bruteforce-salted-openssl/) - Try to find the passphrase or password of a file that was encrypted with the openssl command.
 * [ccrypt](https://www.kali.org/tools/ccrypt/) - ccrypt is a utility for encrypting and decrypting files and streams.
 * [fcrackzip](https://www.kali.org/tools/fcrackzip/) - fcrackzip is a fast password cracker partly written in assembler. It is able to crack password protected zip files with brute force or dictionary based attacks, optionally testing with unzip its results. It can also crack cpmask’ed images.
