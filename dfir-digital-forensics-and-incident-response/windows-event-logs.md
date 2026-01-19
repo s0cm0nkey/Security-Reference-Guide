@@ -1,61 +1,101 @@
 # Windows Event Logs
 
-## Get available Logs
+## Enumerating Available Logs
 
 {% embed url="https://wiki.sans.blue/Tools/pdfs/Get-WinEvent.pdf" %}
 
-### Powershell logs <a href="#powershell-logs" id="powershell-logs"></a>
+### PowerShell Logs <a href="#powershell-logs" id="powershell-logs"></a>
 
 ```
 Get-WinEvent -LogName "Windows Powershell"
 ```
 
-### Event logs available <a href="#event-logs-available" id="event-logs-available"></a>
+### List Available Event Logs <a href="#event-logs-available" id="event-logs-available"></a>
 
 ```
-Get-EventLog -list
 Get-WinEvent -Listlog * | Select RecordCount,LogName 
 Get-WinEvent -Listlog *operational | Select RecordCount,LogName
 wmic nteventlog list brief
 ```
 
-### Event Logs per Application Source <a href="#event-logs-per-application-source" id="event-logs-per-application-source"></a>
+### Filter Event Logs by Source <a href="#event-logs-per-application-source" id="event-logs-per-application-source"></a>
 
 ```
-Get-EventLog Application | Select -Unique Source
 Get-WinEvent -FilterHashtable @{ LogName='Application'; ProviderName='Outlook'}
 Get-WinEvent -FilterHashtable @{ LogName='OAlerts';} | FL TimeCreated, Message
 ```
 
-### Event Logs per Severity Source <a href="#event-logs-per-severity-source" id="event-logs-per-severity-source"></a>
+### Filter Event Logs by Severity <a href="#event-logs-per-severity-source" id="event-logs-per-severity-source"></a>
 
-**Critical Logs**
+**Critical Logs (Level 1)**
 
 ```
 Get-WinEvent -FilterHashtable @{ LogName='Application'; Level='1';}
 ```
 
-**Error Logs**
+**Error Logs (Level 2)**
 
 ```
 Get-WinEvent -FilterHashtable @{ LogName='Application'; Level='2';}
 ```
 
-**Warning Logs**
+**Warning Logs (Level 3)**
 
 ```
 Get-WinEvent -FilterHashtable @{ LogName='Application'; Level='3';}
 ```
 
-**Information Logs**
+**Information Logs (Level 4)**
 
 ```
 Get-WinEvent -FilterHashtable @{ LogName='Application'; Level='4';}
 ```
 
-## Event Logs for offline analysis <a href="#event-logs-for-offline-analysis" id="event-logs-for-offline-analysis"></a>
+### Reviewing Audit Policy
 
-Event logs can be found: %SystemRoot%\System32\winevt\Logs
+To uLegacy Commands
+
+> **Note:** `Get-EventLog` is deprecated and only supports classic event logs. It is recommended to use `Get-WinEvent`.
+
+```
+# List logs
+Get-EventLog -list
+
+# Get Application logs by source
+Get-EventLog Application | Select -Unique Source
+```
+
+### nderstand what is being logged, it is crucial to review the current audit policy configuration.
+
+```
+auditpol /get /category:*
+```
+
+### System Monitor (Sysmon)
+
+[Sysmon](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon) provides detailed information about process creations, network connections, and changes to the file system.
+
+**Check if Sysmon is running**
+
+```
+Get-Service sysmon
+```
+
+**Get Sysmon Configuration**
+
+```
+sysmon -c
+```
+
+**Get Sysmon Events**
+
+```
+Get-WinEvent -LogName "Microsoft-Windows-Sysmon/Operational"
+```
+
+## Exporting Event Logs for Offline Analysis <a href="#event-logs-for-offline-analysis" id="event-logs-for-offline-analysis"></a>
+
+Event logs are typically located in: `%SystemRoot%\System32\winevt\Logs`
 
 ```
 wevtutil epl System [Location]\System.evtx
@@ -93,13 +133,15 @@ mdb Files are found at the below:
 
 More information available on the [CrowdStrike Blog - Patrick Bennett](https://www.crowdstrike.com/blog/user-access-logging-ual-overview/)
 
-### Quickly scan event logs with [DeepblueCLI](https://github.com/sans-blue-team/DeepBlueCLI) <a href="#quickly-scan-event-logs-with-deepbluecli" id="quickly-scan-event-logs-with-deepbluecli"></a>
+### Quickly Scan Event Logs with [DeepBlueCLI](https://github.com/sans-blue-team/DeepBlueCLI) <a href="#quickly-scan-event-logs-with-deepbluecli" id="quickly-scan-event-logs-with-deepbluecli"></a>
 
 ```
 .\DeepBlue.ps1 .\evtx\psattack-security.evtx | FL
 ```
 
-### Event Tracing for Windows (ETW). <a href="#event-tracing-for-windows-etw" id="event-tracing-for-windows-etw"></a>
+For faster analysis of large datasets, consider using Rust-based tools such as [Chainsaw](https://github.com/WithSecureLabs/chainsaw) or [Hayabusa](https://github.com/Yamato-Security/hayabusa).
+
+### Event Tracing for Windows (ETW) <a href="#event-tracing-for-windows-etw" id="event-tracing-for-windows-etw"></a>
 
 Event tracing is how a Provider (an application that contains event tracing instrumentation) creates items within the Windows Event Log for a consumer. This is how event logs are generated, and is also a way they can be tampered with. More information on this architecture can be found below.
 
@@ -113,7 +155,7 @@ A great [post by Matt Graeber](https://medium.com/palantir/tampering-with-window
 logman query -ets
 ```
 
-### **List Providers That a Trace Session is Subscribed to**
+### **List Providers Subscribed to a Session**
 
 ```
 logman query "EventLog-System" -ets
@@ -126,7 +168,7 @@ logman query providers
 reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers\
 ```
 
-### **View providers process is sending events to**
+### **View Providers a Process is Sending Events To**
 
 ```
 logman query providers -pid {PID}
@@ -136,7 +178,7 @@ logman query providers -pid {PID}
 
 Special thanks to [Spotless](https://twitter.com/spotheplanet) for his [crash course](https://www.ired.team/miscellaneous-reversing-forensics/etw-event-tracing-for-windows-101)
 
-### **Query Providers Available and their keyword values**
+### **Query Available Providers and Keywords**
 
 ```
 logman query providers
@@ -152,7 +194,7 @@ logman create trace <TRACENAMEHERE> -ets
 logman query <TRACENAMEHERE> -ets
 ```
 
-### Update trace with wanted providers <a href="#update-trace-with-wanted-providers" id="update-trace-with-wanted-providers"></a>
+### Update Trace with Wanted Providers <a href="#update-trace-with-wanted-providers" id="update-trace-with-wanted-providers"></a>
 
 Note: the mask is the combined values wanted. For example if a keyword was 0x1 and another 0x16 and you wanted both you’d use 0x17.
 
@@ -178,7 +220,7 @@ gci REGISTRY::HKLM\SYSTEM\CurrentControlSet\Control\WMI\Autologger\ -recurse
 reg query HKLM\SYSTEM\CurrentControlSet\control\WMI\AutoLogger\ /s /v enable*
 ```
 
-### Timeline Windows Event Logs. <a href="#timeline-windows-event-logs" id="timeline-windows-event-logs"></a>
+### Timelining Windows Event Logs <a href="#timeline-windows-event-logs" id="timeline-windows-event-logs"></a>
 
 An easy way to explore Windows event logs is to dump them into a normalized csv format using EvtxExplorer.
 
@@ -192,32 +234,34 @@ From here you can analyse the CSV using Timeline explorer to view relevant infor
 
 [TimelineExplorer:](https://ericzimmerman.github.io/#!index.md)
 
-### Super Timeline a host: <a href="#super-timeline-a-host" id="super-timeline-a-host"></a>
+### Creating a Super Timeline <a href="#super-timeline-a-host" id="super-timeline-a-host"></a>
 
 This can be done using [Plaso (Log2Timeline)](https://plaso.readthedocs.io/en/latest/)
 
+### Application and Server Logs
+
 Common IIS logs can often be found in the below locations:
 
-* %SystemDrive%\inetpub\logs\LogFiles
-* %SystemRoot%\System32\LogFiles\W3SVC1
-* %SystemDrive%\inetpub\logs\LogFiles\W3SVC1
+* `%SystemDrive%\inetpub\logs\LogFiles`
+* `%SystemRoot%\System32\LogFiles\W3SVC1`
+* `%SystemDrive%\inetpub\logs\LogFiles\W3SVC1`
   * Note: replace 1 with the number for your IIS website ID
-* %SystemDrive%\Windows\System32\LogFiles\HTTPERR
+* `%SystemDrive%\Windows\System32\LogFiles\HTTPERR`
 
 Common Apache logs can often be found in the below locations:
 
-* /var/log
-* /var/log/httpd/access.log
-* /var/log/apache/access.log
-* /var/log/apache2/access.log
-* /var/log/httpd-access.log
+* `/var/log`
+* `/var/log/httpd/access.log`
+* `/var/log/apache/access.log`
+* `/var/log/apache2/access.log`
+* `/var/log/httpd-access.log`
 
 Other logs can be found in the below, often using the Event Trace Log (ETL) format:
 
-* C:\Windows\System32\LogFiles
-* C:\Windows\Panther
+* `C:\Windows\System32\LogFiles`
+* `C:\Windows\Panther`
 
-ETL format can be parsed using tracerpt which is included in Windows, some examples below.
+ETL format can be parsed using `tracerpt` which is included in Windows, some examples below.
 
 ```
 tracerpt C:\Windows\System32\LogFiles\WMI\Terminal-Services-RPC-Client.etl
