@@ -8,6 +8,7 @@ Regular expressions allow us to search for patterns in datasets and are processe
   * [RegExr](https://regexr.com/) - Learn, Build, & Test RegEx&#x20;
   * [RegEx Testing](https://www.regextester.com/) - online regex testing tool.
   * [RegEx Pal](https://www.regexpal.com/) - online regex testing tool + other tools.
+  * [Pyrexp](https://pythonium.net/regex) - online visual regex testing tool.
 * Regex Training Material
   * [RegexOne](https://regexone.com/) - Learn Regular Expressions - Lesson 1: An Introduction, and the ABCs&#x20;
   * [Regex101](https://regex101.com/) - Online regex tester and debugger: PHP, PCRE, Python, Golang and JavaScript&#x20;
