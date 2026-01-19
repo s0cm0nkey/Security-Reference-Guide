@@ -1,16 +1,5 @@
 # MacOS DFIR Commands
 
-### Dumping Memory <a href="#dumping-memory-1" id="dumping-memory-1"></a>
-
-[OSXPMem](https://github.com/wrmsr/pmem/tree/master/OSXPMem)
-
-[MacPmem](https://github.com/google/rekall/releases/download/1.7.2rc1/rekall-OSX-1.7.2rc1.zip)
-
-```
-sudo kextload MacPmem.kext
-sudo dd if=/dev/pmem of=memorydump.raw
-```
-
 ### Live Mac IR / Triage <a href="#live-mac-ir--triage" id="live-mac-ir--triage"></a>
 
 #### System Information <a href="#system-information-2" id="system-information-2"></a>
@@ -18,31 +7,41 @@ sudo dd if=/dev/pmem of=memorydump.raw
 ```
 date
 sw_vers
-uname –a
+uname -a
 hostname
+csrutil status
+spctl --status
 cat /System/Library/CoreServices/SystemVersion.plist
 cat /private/var/log/daily.out
 cat /Library/preferences/.Globalpreferences.plist
 ```
 
+#### TCC (Privacy) Database Locations <a href="#tcc-privacy" id="tcc-privacy"></a>
+
+```
+# Requires Full Disk Access to read
+ls -l ~/Library/Application\ Support/com.apple.TCC/TCC.db
+ls -l /Library/Application\ Support/com.apple.TCC/TCC.db
+```
+
 #### Network Connections <a href="#network-connections-1" id="network-connections-1"></a>
 
 ```
-netstat –an
-netstat –anf
+netstat -an
+netstat -anf inet
 lsof -i
 ```
 
 #### Routing Table <a href="#routing-table" id="routing-table"></a>
 
 ```
-netstat –rn
+netstat -rn
 ```
 
 #### Network Information <a href="#network-information-2" id="network-information-2"></a>
 
 ```
-arp –an
+arp -an
 ndp -an
 ifconfig
 ```
@@ -62,10 +61,11 @@ sudo fs_usage -f network
 sudo fs_usage pid [PID]
 ```
 
-#### Bash History <a href="#bash-history" id="bash-history"></a>
+#### Shell History <a href="#shell-history" id="shell-history"></a>
 
 ```
 cat ~/.bash_history
+cat ~/.zsh_history
 history
 ```
 
@@ -121,6 +121,13 @@ ls /users/*/Library/LaunchDaemons/
 ```
 cat ~/Library/Preferences/com.apple.loginitems.plist
 ls <application>.app/Contents/Library/LoginItems/
+```
+
+**Cron Jobs**
+
+```
+crontab -l
+ls /usr/lib/cron/tabs/
 ```
 
 #### Disable Persistent Launch Daemon <a href="#disable-persistent-launch-daemon" id="disable-persistent-launch-daemon"></a>
@@ -190,26 +197,36 @@ ls /Users/<user>/Library/Caches/Java/cache
 ```
 ls /private/var/log/asl/
 ls /private/var/audit/
+cat /private/var/log/install.log
 cat /private/var/log/appfirewall.log
 ls ~/Library/Logs
-ls /Library/Application Support/<app> 
-ls /Applications/ 
 ls /Library/Logs/
 ```
 
-#### Specific Log Analysis <a href="#specific-log-analysis" id="specific-log-analysis"></a>
+#### Unified Log Analysis (Modern) <a href="#unified-log-analysis" id="unified-log-analysis"></a>
+
+```
+# Collect logs to a diagnostic archive
+sudo log collect --output diagnostic.logarchive
+
+# Show logs from last 1 hour
+log show --last 1h
+
+# Stream logs live
+log stream --level info
+
+# Predicate filtering (e.g., specific process)
+log show --predicate 'process == "sudo"' --last 1d
+```
+
+#### Legacy Log Analysis <a href="#legacy-log-analysis" id="legacy-log-analysis"></a>
 
 ```
 bzcat system.log.1.bz2 
-system.log.0.bz2 >> system_all.log 
-cat system.log >> system_all.log
+cat system.log
 syslog -f <file>
-syslog –T utc –F raw –d /asl
-syslog -d /asl
+syslog -T utc -F raw -d /asl
 praudit –xn /var/audit/*
-sudo log collect
-log show
-log stream
 ```
 
 #### Files Quarantined <a href="#files-quarantined" id="files-quarantined"></a>
@@ -243,7 +260,7 @@ nm -arch x86_64 <filename>
 otool -L <filename>
 sudo vmmap <pid>
 sudo lsof -p <pid>
-xattr –xl <file>
+xattr -xl <file>
 ```
 
 #### Connected Disks and Partitions <a href="#connected-disks-and-partitions" id="connected-disks-and-partitions"></a>
@@ -251,10 +268,10 @@ xattr –xl <file>
 ```
 diskutil list
 diskutil info <disk>
-diskutil cs
-ap list
-gpt –r show 
-gpt -r show -l
+diskutil cs list
+diskutil apfs list
+tmutil listlocalsnapshots /
+sudo gpt -r show /dev/disk0
 ```
 
 #### Disk File Image Information <a href="#disk-file-image-information" id="disk-file-image-information"></a>
@@ -273,6 +290,21 @@ security dump-keychains -d <keychain>
 #### Spotlight Metadata <a href="#spotlight-metadata" id="spotlight-metadata"></a>
 
 ```
-mdimport –X | -A
+mdimport -X | -A
 mdls <file>
+```
+
+### Deprecated / Legacy Tools
+
+#### Dumping Memory (Legacy)
+*Note: Tools like OSXPMem and MacPmem rely on Kernel Extensions (kexts) which are deprecated and blocked by default on modern macOS (High Sierra and later). Using them requires disabling SIP and allowing kexts, which alters the system state.*
+
+[OSXPMem](https://github.com/wrmsr/pmem/tree/master/OSXPMem) (Unmaintained)
+
+[MacPmem](https://github.com/google/rekall/releases/download/1.7.2rc1/rekall-OSX-1.7.2rc1.zip) (Rekall Project - Unmaintained)
+
+```
+# Requires SIP disabled and Kext allowed
+sudo kextload MacPmem.kext
+sudo dd if=/dev/pmem of=memorydump.raw
 ```
