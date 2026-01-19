@@ -1,70 +1,97 @@
-# Interact with remote machine
+# Interact with Remote Machine
 
-## Set up connection
+## PowerShell Remoting (WinRM)
 
-Enable Powershell remoting:
+PowerShell Remoting is the preferred method for interacting with Windows systems. It relies on the Windows Remote Management (WinRM) service.
 
+### Enable PowerShell Remoting
+
+To enable remoting on a target machine if it isn't already (requires local access or another remote method like PsExec or WMI).
+
+**Using PsExec (Sysinternals):**
+```powershell
+psexec.exe \\TARGET -s powershell Enable-PSRemoting -Force
 ```
+
+**Using WMIC (Legacy/Deprecated):**
+```cmd
 wmic /node:[IP] process call create "powershell enable-psremoting -force"
 ```
 
-[Powershell](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/enter-pssession?view=powershell-6):
+### Establish Remote Session
 
-```
+**Interactive Session (One-off):**
+[Enter-PSSession Documentation](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/enter-pssession)
+
+```powershell
 Enter-PSSession -ComputerName [IP]
 ```
 
-PSExec:
+**Persistent Session Variable:**
+Useful for running multiple commands or scripts against the same host.
 
-```
-PsExec: psexec \\IP -c cmd.exe
-```
-
-### Enable PS Remoting using PsExec <a href="#enable-ps-remoting-using-psexec" id="enable-ps-remoting-using-psexec"></a>
-
-```
-psexec.exe \\TARGET -s powershell Enable-PSRemoting -Force;
+```powershell
+$s1 = New-PSSession -ComputerName remotehost -SessionOption (New-PSSessionOption -NoMachineProfile) -ErrorAction Stop
 ```
 
-### Setup logging for IR <a href="#setup-logging-for-ir" id="setup-logging-for-ir"></a>
+**Enter or Exit Remote Session:**
 
-Note: If you enter a PSSession, the logging won’t persist, so you will need to enable it on the remote host and pull the file back afterwards. Otherwise refer to PowerShell ♥ the Blue Team mentioned above.
-
-```
-Start-Transcript -Path "C:\[location]\investigation-1.log" -NoClobber
-```
-
-[Thanks Barnaby Skeggs](https://b2dfir.blogspot.com/2018/11/windows-powershell-remoting-host-based.html)
-
-### Establish Remote Session <a href="#establish-remote-session" id="establish-remote-session"></a>
-
-```
-$s1 = New-PSsession -ComputerName remotehost -SessionOption (New-PSSessionOption -NoMachineProfile) -ErrorAction Stop
-```
-
-### Enter or exit remote session <a href="#enter-or-exit-remote-session" id="enter-or-exit-remote-session"></a>
-
-```
+```powershell
 Enter-PSSession -Session $s1
-Exit-PSSEssion
+# Do work...
+Exit-PSSession
 ```
 
-### Issuing remote command/shell <a href="#issuing-remote-commandshell" id="issuing-remote-commandshell"></a>
+### Issuing Remote Commands
 
-```
+Execute a script block or file without entering an interactive shell.
+
+```powershell
 Invoke-Command -ScriptBlock {whoami} -Session $s1
-Invoke-Command -file file.ps1 -Session $s1
+Invoke-Command -FilePath ./file.ps1 -Session $s1
 ```
 
-### Retrieving/downloading files <a href="#retrievingdownloading-files" id="retrievingdownloading-files"></a>
+### Retrieving/Downloading Files
 
+```powershell
+Copy-Item -Path "C:\Remote\Path\file.ext" -Destination "C:\Local\Path\" -FromSession $s1
 ```
-Copy-Item -Path "[RemoteHostFilePath]" -Destination "[LocalDestination]" -FromSession $s1
+
+### Setup Logging for IR
+
+When participating in a remote session, it is critical to log your actions.
+**Note:** If you run `Start-Transcript` inside a PSSession, the log file is generated **on the remote host**. You must retrieve this file (using `Copy-Item`) before closing the session or after finishing your investigation.
+
+```powershell
+Start-Transcript -Path "C:\Temp\investigation-1.log" -NoClobber
+# Run commands...
+Stop-Transcript
 ```
 
-## Credentials and Exposure <a href="#credentials-and-exposure" id="credentials-and-exposure"></a>
+*Reference:* [Barnaby Skeggs - Windows PowerShell Remoting Host Based](https://b2dfir.blogspot.com/2018/11/windows-powershell-remoting-host-based.html)
 
-When investigating a compromised asset, it’s important to know what remote triage methods leave your credentials on the infected endpoint, and what ones don’t. Reference can be found on [Microsoft Documentation](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material#administrative-tools-and-logon-types)
+## SSH (Secure Shell)
+
+The standard for Linux and macOS remote management, and increasingly available on Windows (OpenSSH Server).
+
+```bash
+ssh user@hostname
+```
+
+## Legacy & Alternative Tools
+
+### PsExec (Sysinternals)
+
+PsExec allows you to execute processes on other systems. It typically uses SMB (port 445) and leaves artifacts (PSEXESVC service) on the target.
+
+```cmd
+PsExec.exe \\IP -c cmd.exe
+```
+
+## Credentials and Exposure
+
+When investigating a compromised asset, it’s important to know which remote triage methods expose your credentials to the infected endpoint.
+*Reference:* [Microsoft Securing Privileged Access](https://learn.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material#administrative-tools-and-logon-types)
 
 | Connection Method                       | Logon Type           | Reusable credentials on destination | Notes                                                                                     |
 | --------------------------------------- | -------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------- |
@@ -73,13 +100,13 @@ When investigating a compromised asset, it’s important to know what remote tri
 | RUNAS/NETWORK                           | NewCredentials       | Y                                   | Clones LSA session, but uses new creds when connecting to network resources.              |
 | Remote Desktop                          | RemoteInteractive    | Y                                   | Nil                                                                                       |
 | Remote Desktop Failure                  | RemoteInteractive    | N                                   | Only stored briefly                                                                       |
-| Net Use \* \SERVER                      | Network              | N                                   | Nil                                                                                       |
-| Net Use \* \ SERVER /user               | Network              | N                                   | Nil                                                                                       |
+| Net Use * \\SERVER                      | Network              | N                                   | Nil                                                                                       |
+| Net Use * \\SERVER /user                | Network              | N                                   | Nil                                                                                       |
 | MMC snap-ins to remote computer         | Network              | N                                   | Nil                                                                                       |
 | PowerShell WinRM                        | Network              | N                                   | e.g. Enter-PSSession SERVER                                                               |
 | PowerShell WinRM with CredSSP           | NetworkClearText     | Y                                   | e.g. New-PSSession SERVER -Authentication Credssp -Credential PWD                         |
-| PsExec without explicit creds           | Network              | N                                   | e.g. PsExec \SERVER cmd                                                                   |
-| PsExec with explicit creds              | Network\&Interactive | Y                                   | PsExec \SERVER -u USER -p PWD cmd                                                         |
+| PsExec without explicit creds           | Network              | N                                   | e.g. PsExec \\SERVER cmd                                                                   |
+| PsExec with explicit creds              | Network&Interactive  | Y                                   | PsExec \\SERVER -u USER -p PWD cmd                                                         |
 | Remote Registry                         | Network              | N                                   | Nil                                                                                       |
 | Remote Desktop Gateway                  | Network              | N                                   | Authenticating to Remote Desktop Gateway                                                  |
 | Scheduled Task                          | Batch                | Y                                   | Also saved as LSA secret on disk                                                          |
@@ -88,18 +115,18 @@ When investigating a compromised asset, it’s important to know what remote tri
 | IIS “Basic Authentication”              | NetworkCleartext     | Y                                   | Nil                                                                                       |
 | IIS “Integrated Windows Authentication” | Network              | N                                   | NTLM/Kerberos Providers                                                                   |
 
-### Kerberos Tickets and Exposure <a href="#kerberos-tickets-and-exposure" id="kerberos-tickets-and-exposure"></a>
+## Kerberos Tickets and Exposure
 
-Special thanks to [Cert EU](https://cert.europa.eu/static/WhitePapers/CERT-EU\_SWP\_17-002\_Lateral\_Movements.pdf) for this. When comparing Pass-the-Hash to Pass-the-Ticket attacks, the following key differences apply:
+Special thanks to [Cert EU](https://cert.europa.eu/static/WhitePapers/CERT-EU_SWP_17-002_Lateral_Movements.pdf) for this. When comparing Pass-the-Hash to Pass-the-Ticket attacks, the following key differences apply:
 
-* Administrative privileges are required to steal credentials, but NOT to use an obtained Kerberos ticket.
-* A password change does NOT make Kerberos tickets invalid. By default Kerberos has a max lifetime of 10hrs before the ticket must be renewed, and a max renewal time of 7 days after being granted.
+*   Administrative privileges are required to steal credentials, but **NOT** to use an obtained Kerberos ticket.
+*   A password change does **NOT** make Kerberos tickets invalid instantly. By default, Kerberos has a max lifetime of 10 hours before the ticket must be renewed, and a max renewal time of 7 days after being granted.
 
-Due to this disabling accounts may not be enough to prevent ongoing compromise, and you may have to purge the users kerberos ticket. Locate the user in question using ‘sessions’ and purge by specifying the user session prior to logging them off.
+Due to this, simply disabling accounts may not be enough to prevent ongoing compromise. You may have to purge the user's Kerberos tickets. Locate the user in question using `sessions` and purge by specifying the user session prior to logging them off.
 
-```
+```cmd
 klist.exe sessions
-klist purge –li 0x2e079217 
+klist purge -li 0x2e079217 
 query user
 logoff <session id>
 ```
