@@ -1,5 +1,7 @@
 # Windows System Enumeration
 
+This guide details commands and techniques for enumerating Windows systems during Digital Forensics and Incident Response (DFIR) engagements. It covers artifact collection, system information gathering, file analysis, network connection auditing, and persistence mechanism detection.
+
 ## Gather artifacts <a href="#gather-artifacts" id="gather-artifacts"></a>
 
 ```
@@ -66,6 +68,8 @@ wmic qfe
 ```
 reg query HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\ /s /f DisplayName
 reg query HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\ /s /f DisplayName
+
+(Note: Win32_Product/wmic product can be slow and trigger MSI consistency checks)
 wmic product get name,version /format:csv
 wmic product get /ALL
 dism /online /get-packages
@@ -159,6 +163,12 @@ ls C:\Users\[username]\AppData\Local\GroupPolicy\DataStore
 ls C:\Windows\system32\GroupPolicy\DataStore
 ```
 
+### Audit Policy <a href="#audit-policy" id="audit-policy"></a>
+
+```
+auditpol /get /category:*
+```
+
 ### Obtain mode settings for ports <a href="#obtain-mode-settings-for-ports" id="obtain-mode-settings-for-ports"></a>
 
 ```
@@ -175,7 +185,7 @@ Get-Service
 #### View Named Pipes <a href="#view-named-pipes" id="view-named-pipes"></a>
 
 ```
-[System.IO.Directory]::GetFiles("\\.\\pipe\\")
+[System.IO.Directory]::GetFiles('\\.\pipe\')
 get-childitem \\.\pipe\
 dir \\.\pipe\\
 ```
@@ -250,16 +260,23 @@ reg add "HKU\{SID}\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" 
 Stop-Process -processname explorer
 ```
 
-### Files greater than a 10mb <a href="#files-greater-than-a-10mb" id="files-greater-than-a-10mb"></a>
+### Files greater than 10MB <a href="#files-greater-than-10mb" id="files-greater-than-10mb"></a>
 
 ```
 FOR /R C:\ %i in (*) do @if %~zi gtr 10000000 echo %i %~zi
 ```
 
-### Temp files greater than 10mb <a href="#temp-files-greater-than-10mb" id="temp-files-greater-than-10mb"></a>
+### Temp files greater than 10MB <a href="#temp-files-greater-than-10mb" id="temp-files-greater-than-10mb"></a>
 
 ```
 FOR /R C:\Users\[User]\AppData %i in (*) do @if %~zi gtr 10000000 echo %i %~zi
+```
+
+### Volume Shadow Copies <a href="#volume-shadow-copies" id="volume-shadow-copies"></a>
+
+```
+vssadmin list shadows
+wmic shadowcopy list brief
 ```
 
 ## Alternate Data Streams
@@ -292,7 +309,6 @@ gci -Recurse -Path $env:APPDATA\..\ -include *.txt -ea SilentlyContinue |gi -s *
 ### Firewall Information <a href="#firewall-information" id="firewall-information"></a>
 
 ```
-netsh Firewall show state
 netsh advfirewall firewall show rule name=all dir=in type=dynamic
 netsh advfirewall firewall show rule name=all dir=out type=dynamic
 netsh advfirewall firewall show rule name=all dir=in type=static
@@ -300,8 +316,7 @@ netsh advfirewall firewall show rule name=all dir=out type=static
 ```
 
 ```
-netsh firewall show config
-advfirewall firewall show rule name=all verbose
+netsh advfirewall firewall show rule name=all verbose
 ```
 
 ### Firewall Changes <a href="#firewall-changes" id="firewall-changes"></a>
@@ -310,7 +325,14 @@ advfirewall firewall show rule name=all verbose
 Get-WinEvent -FilterHashtable @{LogName='Microsoft-Windows-Windows Firewall With Advanced Security/Firewall';} | FL TimeCreated, Message
 ```
 
-## Start-up/Autoruns <a href="#cookies" id="cookies"></a>
+### Windows Defender Status <a href="#windows-defender-status" id="windows-defender-status"></a>
+
+```
+Get-MpComputerStatus
+Get-MpPreference
+```
+
+## Start-up/Autoruns <a href="#startup-autoruns" id="startup-autoruns"></a>
 
 ### Startup process information <a href="#startup-process-information" id="startup-process-information"></a>
 
@@ -350,7 +372,6 @@ if ($Startup2) {echo "ProgramData Startup Link Found!";$Startup2} else {echo "No
 ### Scheduled task/job information <a href="#scheduled-taskjob-information" id="scheduled-taskjob-information"></a>
 
 ```
-at (For older OS)
 schtasks
 schtasks /query /fo LIST /v
 schtasks /query /fo LIST /v | findstr "Task To Run:"
@@ -534,7 +555,7 @@ Invoke-Command -ScriptBlock {Get-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\Win
 ### Review Hivelist <a href="#review-hivelist" id="review-hivelist"></a>
 
 ```
-gp REGISTRY::HKLM\SYSTEM\CurrentControlSet\Control\hivelist | Select *USER*
+gp HKLM:\SYSTEM\CurrentControlSet\Control\hivelist | Select *USER*
 ```
 
 ### Locate all user registry keys <a href="#locate-all-user-registry-keys" id="locate-all-user-registry-keys"></a>
@@ -570,7 +591,7 @@ Function Get-WmiNamespace ($Path = 'root')
 Get-WMINamespace -Recurse
 ```
 
-## Network Connections <a href="#obtain-hash-for-all-running-executables" id="obtain-hash-for-all-running-executables"></a>
+## Network Connections <a href="#network-connections-main" id="network-connections-main"></a>
 
 ### Network connections <a href="#network-connections" id="network-connections"></a>
 
@@ -910,3 +931,18 @@ esentutl /p /o C:\Audit\ntds.dit
 Analyzing this file offline can be done with tactics such as:
 
 * [Ropnop - Extract Hashes and Domain Info](https://blog.ropnop.com/extracting-hashes-and-domain-info-from-ntds-dit/)
+
+## Legacy / Deprecated Commands <a href="#legacy-deprecated-commands" id="legacy-deprecated-commands"></a>
+
+### Scheduled Tasks (Legacy)
+
+```
+at
+```
+
+### Firewall (Legacy)
+
+```
+netsh firewall show config
+netsh firewall show state
+```
