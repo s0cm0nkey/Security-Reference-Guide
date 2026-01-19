@@ -1,6 +1,6 @@
 # Blue - DFIR: Digital Forensics and Incident Response
 
-DFIR: Digital Forensics and Incident Response is a hugely important important sector of cyber security, where your everyday security analysis is take to the next level. While most security analysts will work out of a SIEM or SOAR platform, Incident Responders and Forensic analysts typically work directly with a potentially compromised device. With this, they are required to not only be familiar with a larger array of tools for analysis, but also a much stricter set of process and procedures as their actions are often subject to legal requirements.
+DFIR: Digital Forensics and Incident Response is a hugely important sector of cyber security, where your everyday security analysis is taken to the next level. While most security analysts will work out of a SIEM or SOAR platform, Incident Responders and Forensic analysts typically work directly with a potentially compromised device. With this, they are required to not only be familiar with a larger array of tools for analysis, but also a much stricter set of process and procedures as their actions are often subject to legal requirements.
 
 ## **DFIR Resource Collections**
 
@@ -9,7 +9,7 @@ DFIR: Digital Forensics and Incident Response is a hugely important important se
 * [https://start.me/p/jj0B26/dfir](https://start.me/p/jj0B26/dfir) - Collection of more DFIR resources
 * [https://www.jaiminton.com/cheatsheet/DFIR/](https://www.jaiminton.com/cheatsheet/DFIR/) - Huge collection of DFIR commands  and methodology
 * Training
-  * [DFIR Tra](https://www.dfir.training/)[ning](https://www.dfir.training/) - Tools, resources, and training classes for DFIR professionals
+  * [DFIR Training](https://www.dfir.training/) - Tools, resources, and training classes for DFIR professionals
   * [https://dfirmadness.com/](https://dfirmadness.com/) - Collection of training use cases to hone your DFIR skills
 
 ## **Incident Response**
@@ -52,7 +52,7 @@ DFIR: Digital Forensics and Incident Response is a hugely important important se
 {% endtab %}
 
 {% tab title="Training" %}
-* [Incident Response Challange](https://incident-response-challenge.com/?utm\_source=thn) - IR CTF Style Training Scenarios&#x20;
+* [Incident Response Challenge](https://incident-response-challenge.com/?utm_source=thn) - IR CTF Style Training Scenarios 
 
 
 {% endtab %}
@@ -62,11 +62,11 @@ DFIR: Digital Forensics and Incident Response is a hugely important important se
 
 {% tabs %}
 {% tab title="Frameworks/Collections" %}
-* [Kansa (Powershell)](https://github.com/davehull/kansa) - A modular incident response framework in Powershell. It uses Powershell Remoting to run user contributed, ahem, user contri- buted modules across hosts in an enterprise to collect data for use during incident response, breach hunts, or for building an environmental baseline.
+* [Kansa (Powershell)](https://github.com/davehull/kansa) - A modular incident response framework in Powershell. It uses Powershell Remoting to run user contributed modules across hosts in an enterprise to collect data for use during incident response, breach hunts, or for building an environmental baseline.
 * [Windows Forensic Toolchest](https://www.foolmoon.net/security/wft/) - The Windows Forensic Toolchest™ (WFT) is designed to provide a structured and repeatable automated Live Forensic Response, Incident Response, or Audit on a Windows system while collecting security-relevant information from the system.
-* [Veliciraptor](https://github.com/Velocidex/velociraptor) - A tool for collecting host based state information.
-  * [Velociraptor Deep Dive Video training](https://www.youtube.com/watch?app=desktop\&v=PiYPLEjYXnw)
-* [Meerkat](https://github.com/TonyPhipps/Meerkat) - Meerkat is collection of PowerShell modules designed for artifact gathering and reconnaisreconnaissanceance of Windows-based endpoints without requiring a pre-deployed agent.
+* [Velociraptor](https://github.com/Velocidex/velociraptor) - A tool for collecting host based state information.
+  * [Velociraptor Deep Dive Video training](https://www.youtube.com/watch?app=desktop&v=PiYPLEjYXnw)
+* [Meerkat](https://github.com/TonyPhipps/Meerkat) - Meerkat is collection of PowerShell modules designed for artifact gathering and reconnaissance of Windows-based endpoints without requiring a pre-deployed agent.
 * [https://www.cadosecurity.com/cado-community-edition/](https://www.cadosecurity.com/cado-community-edition/) - The Cado Community Edition leverages the scale and speed of the cloud to simplify deep-dive investigations. With the free community edition, data can be processed in minutes compared to days when using traditional methods. Stop wasting time, money, or effort. Achieve forensic-level detail without forensic-level effort. Only Cado empowers the security community to investigate and respond at cloud speed.
 {% endtab %}
 
@@ -76,8 +76,7 @@ DFIR: Digital Forensics and Incident Response is a hugely important important se
 * [ClamAV](https://www.clamav.net/downloads) - ClamAV is an open source antivirus engine for detecting trojans, viruses, malware & other malicious threats. Can be used with a USB for portable scanning of devices.
 * [Microsoft Safety Scanner ](https://docs.microsoft.com/en-us/windows/security/threat-protection/intelligence/safety-scanner-download)- Microsoft Safety Scanner is a scan tool designed to find and remove malware from Windows computers. Simply download it and run a scan to find malware and try to reverse changes made by identified threats.
 * [hashlookup-forensic-analyser](https://github.com/hashlookup/hashlookup-forensic-analyser) - Analyse a forensic target (such as a directory) to find and report files found and not found from CIRCL hashlookup public service - [https://circl.lu/services/hashlookup/](https://circl.lu/services/hashlookup/)
-* [Redline by Fireeye ](https://www.fireeye.com/services/freeware/redline.html)- Redline®, FireEye's premier free endpoint security tool, provides host investigative capabilities to users to find signs of malicious activity through memory and file analysis and the development of a threat assessment profile.
-* [https://www.herdprotect.com/](https://www.herdprotect.com/) - herdProtect is a second line of defense malware scanning platform powered by [68 anti-malware engines](https://www.herdprotect.com/engines.aspx) in the cloud. Since no single anti-malware program is perfect 100% of the time, herdProtect utilizes a 'herd' of multiple engines to guarantee the widest coverage and the earliest possible detection. As a second line of defense anti-malware solution, herdProtect is designed to run with any existing anti-virus program already installed on a user's PC. herdProtect is a free service to help user's find and remove malicious software.
+* [https://www.herdprotect.com/](https://www.herdprotect.com/) - herdProtect is a second line of defense malware scanning platform powered by [68 anti-malware engines](https://www.herdprotect.com/engines.aspx) in the cloud. Since no single anti-malware program is perfect 100% of the time, herdProtect utilizes a 'herd' of multiple engines to guarantee the widest coverage and the earliest possible detection. As a second line of defense anti-malware solution, herdProtect is designed to run with any existing anti-virus program already installed on a user's PC. herdProtect is a free service to help users find and remove malicious software.
   * [https://www.herdprotect.com/knowledgebase.aspx](https://www.herdprotect.com/knowledgebase.aspx)
 *   Windows Defender Scan
 
@@ -101,20 +100,9 @@ DFIR: Digital Forensics and Incident Response is a hugely important important se
     Get-MpPreference | Select Exclusion*
     Get-MpPreference | Select *DefaultAction
     ```
-* [Crowdstrike's CrowdResponse Scanner ](https://www.crowdstrike.com/resources/community-tools/crowdresponse/)- Static Host Data Collection Tool
-
-```
-CrowdResponse -v -i config.txt -o out.xml
-```
-
 * [CobaltStrikeScan](https://github.com/Apr4h/CobaltStrikeScan) - Scan files or process memory for CobaltStrike beacons and parse their configuration.
 * [pe-sieve](https://github.com/hasherezade/pe-sieve) - Scans a given process. Recognizes and dumps a variety of potentially malicious implants (replaced/injected PEs, shellcodes, hooks, in-memory patches).
   * [https://hshrzd.wordpress.com/pe-sieve/](https://hshrzd.wordpress.com/pe-sieve/)
-* [gmer Rootkit scanner](https://www.gmer.net/) - An application that detects and removes [rootkits](http://en.wikipedia.org/wiki/Rootkit)
-* [chkrootkit](http://www.chkrootkit.org/) - A tool to locally check for signs of a [rootkit](http://www.chkrootkit.org/links/).&#x20;
-  * [https://www.kali.org/tools/chkrootkit/](https://www.kali.org/tools/chkrootkit/)
-* [RKHunter](https://github.com/installation/rkhunter) - scans systems for known and unknown rootkits, backdoors, sniffers and exploits.
-  * [https://www.kali.org/tools/rkhunter/](https://www.kali.org/tools/rkhunter/)
 {% endtab %}
 
 {% tab title="Yara Scanners" %}
@@ -151,7 +139,8 @@ IREC.exe -ad "\\MACHINE\IREC-DIR" --triage-ruleset MyYaraRules --triage-memory
 {% endtab %}
 
 {% tab title="Scanning Utilities" %}
-* [AWS\_IR](https://github.com/ThreatResponse/aws\_ir) - Python installable command line utility for mitigation of instance and key compromises.
+* [Sysinternals Suite](https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite) - The Sysinternals Suite is a collection of utilities for Windows that help you manage, troubleshoot and diagnose your Windows systems and applications. Essential for any Windows DFIR work.
+* [AWS_IR](https://github.com/ThreatResponse/aws_ir) - Python installable command line utility for mitigation of instance and key compromises.
 * [https://processhacker.sourceforge.io/](https://processhacker.sourceforge.io/) - A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware.
 * [ADTimeline](https://github.com/ANSSI-FR/ADTimeline) - The ADTimeline script generates a timeline based on Active Directory replication metadata for objects considered of interest.
 * [Azure-AD-Incident-Response-PowerShell-Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module) - The Azure Active Directory Incident Response PowerShell module provides a number of tools, developed by the Azure Active Directory Product Group in conjunction with the Microsoft Detection and Response Team (DART), to assist in compromise response.
@@ -267,8 +256,7 @@ IREC.exe -ad "\\MACHINE\IREC-DIR" --triage-ruleset MyYaraRules --triage-memory
 
 {% tabs %}
 {% tab title="Extraction Tools" %}
-* [bulk-extractor](https://www.kali.org/tools/bulk-extractor/) - bulk\_extractor is a C++ program that scans a disk image, a file, or a directory of files and extracts useful information without parsing the file system or file system structures.
-* [dumpzilla](https://www.kali.org/tools/dumpzilla/) - Dumpzilla application is developed in Python 3.x and has as purpose extract all forensic interesting information of Firefox, Iceweasel and Seamonkey browsers to be analyzed.
+* [bulk-extractor](https://www.kali.org/tools/bulk-extractor/) - bulk_extractor is a C++ program that scans a disk image, a file, or a directory of files and extracts useful information without parsing the file system or file system structures.
 * [regripper](https://www.kali.org/tools/regripper/) - RegRipper is an open source tool, written in Perl, for extracting/parsing information (keys, values, data) from the Registry and presenting it for analysis.
 * [safecopy](https://www.kali.org/tools/safecopy/) - safecopy tries to get as much data from SOURCE as possible, even resorting to device specific low level operations if applicable.
 
@@ -276,10 +264,7 @@ IREC.exe -ad "\\MACHINE\IREC-DIR" --triage-ruleset MyYaraRules --triage-memory
 {% endtab %}
 
 {% tab title="Browser Tools" %}
-* [galleta](https://www.kali.org/tools/galleta/) - Galleta is a forensics tool that examines the content of cookie files produced by Microsoft Internet Explorer (MSIE). It parses the file and outputs a field separated that can be loaded in a spreadsheet.
-* [pasco](https://www.kali.org/tools/pasco/) - Pasco is a forensic tool that examines the content of cache files (index.dat) produced by Microsoft Internet Explorer.
-
-
+* [dumpzilla](https://www.kali.org/tools/dumpzilla/) - Dumpzilla application is developed in Python 3.x and has as purpose extract all forensic interesting information of Firefox, Iceweasel and Seamonkey browsers to be analyzed.
 {% endtab %}
 
 {% tab title="Misc Utility" %}
@@ -441,3 +426,15 @@ Remember: it is always advised to perform your malware analysis on a virtual mac
 {% content-ref url="binary-analysis-reverse-engineering.md" %}
 [binary-analysis-reverse-engineering.md](binary-analysis-reverse-engineering.md)
 {% endcontent-ref %}
+
+## Legacy / Deprecated Tools
+
+The following tools are considered legacy or deprecated but are kept for reference or specific edge cases.
+
+*   **Redline by FireEye/Mandiant**: Provides host investigative capabilities. [Redline](https://www.fireeye.com/services/freeware/redline.html)
+*   **CrowdResponse**: Static Host Data Collection Tool. [CrowdResponse](https://www.crowdstrike.com/resources/community-tools/crowdresponse/)
+*   **Gmer Rootkit Scanner**: Detects and removes rootkits. [Gmer](https://www.gmer.net/)
+*   **chkrootkit**: Locally checks for signs of a rootkit. [chkrootkit](http://www.chkrootkit.org/)
+*   **RKHunter**: Scans systems for known and unknown rootkits. [RKHunter](https://github.com/installation/rkhunter)
+*   **Galleta**: Examines Internet Explorer cookie files. [Galleta](https://www.kali.org/tools/galleta/)
+*   **Pasco**: Examines Internet Explorer cache files. [Pasco](https://www.kali.org/tools/pasco/)
