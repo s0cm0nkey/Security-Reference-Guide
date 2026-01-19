@@ -16,7 +16,7 @@ auditpol /set /category:* /success:enable /failure:enable
 auditpol /set /subcategory:"Process Creation" /success:enable /failure:enable
 ```
 
-### Enable logging of non non-Windows module loads via WDAC code integrity <a href="#enable-logging-of-non-non-windows-module-loads-via-wdac-code-integrity" id="enable-logging-of-non-non-windows-module-loads-via-wdac-code-integrity"></a>
+### Enable logging of non-Windows module loads via WDAC code integrity <a href="#enable-logging-of-non-windows-module-loads-via-wdac-code-integrity" id="enable-logging-of-non-windows-module-loads-via-wdac-code-integrity"></a>
 
 Note 1: Special thanks to [Matt Graeber](https://twitter.com/mattifestation/status/1366435525272481799) for this.
 
@@ -33,7 +33,7 @@ Store the converted policy on a Win10 system to be monitored at: Windows\System3
 ### Kill “Unstoppable” Service/Process <a href="#kill-unstoppable-serviceprocess" id="kill-unstoppable-serviceprocess"></a>
 
 ```
-reg add HKLM\SYSTEM\CurrentControlSet\Services\{SERVICENAME}\XblAuthManager\Parameters /V start /T reg_dword /D 4 /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\{SERVICENAME}" /V Start /T REG_DWORD /D 4 /f
 sc.exe sdset {SERVICENAME} "D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)S:(AU;FA;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;WD)"
 Get-Service -Name {SERVICENAME} | Set-Service -Status Paused
 sc.exe config {SERVICENAME} start= disabled
@@ -45,17 +45,17 @@ taskkill /F /t /IM "{SERVICEEXENAME}"
 ### Kill malicious process <a href="#kill-malicious-process" id="kill-malicious-process"></a>
 
 ```
-wmic process where name="malware.exe" call terminate
-wmic process where processid=[PID] delete
-taskkill /IM malware.exe
-taskkill /PID [PID] /T
+taskkill /IM malware.exe /F
+taskkill /PID [PID] /T /F
+Stop-Process -Name "malware" -Force
+Stop-Process -Id [PID] -Force
 ```
-
-Note: Call terminate allows you to specify an exit status in terms of a signed integer or a quoted negative value. Both methods essentially function the same by calling TerminateProcess.
 
 
 
 **Locate Possible Shellcode within process via Injected Thread**
+
+*Requires `Get-InjectedThread.ps1` from [Jared Atkinson](https://gist.github.com/jaredcatkinson/23905d34537ce4b5b1818c3e6405c1d2).*
 
 ```
 Import-Module .\Get-InjectedThread.ps1
@@ -69,7 +69,7 @@ Get-InjectedThread
 (Get-InjectedThread|? {$_.ThreadId -match '{PID}'}|Select -exp Bytes|ForEach-Object ToString X2) -join ''
 ```
 
-**Obtain Possible Shellcode within process as Hex**
+**Obtain Possible Shellcode within process as Hex (Escaped)**
 
 ```
 (Get-InjectedThread|Select -exp Bytes|ForEach-Object ToString X2) -join '\x'
@@ -117,11 +117,10 @@ attrib -s -h C:\{DESIREDFOLDERPATH}\*.*
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /v NtfsDisableLastAccessUpdate /d 0 /t REG_DWORD /f
 ```
 
-### Remove BITSAdmin Persistence <a href="#remove-bitsadmin-persistence" id="remove-bitsadmin-persistence"></a>
+### Remove BITS Persistence <a href="#remove-bitsadmin-persistence" id="remove-bitsadmin-persistence"></a>
 
 ```
-bitsadmin /reset /allusers
-import-module bitstransfer
+Import-Module BitsTransfer
 Get-BitsTransfer -AllUsers | Remove-BitsTransfer
 ```
 
@@ -189,12 +188,14 @@ Unregister-ScheduledTask -TaskPath [taskname]
 ### Unload all users registry keys <a href="#unload-all-users-registry-keys" id="unload-all-users-registry-keys"></a>
 
 ```
+$UserProfiles = Get-WmiObject Win32_UserProfile;
 Foreach ($UserProfile in $UserProfiles) {reg unload HKU\$($UserProfile.SID)};
 ```
 
 ### Remediate Automatic Load/Run Reg Keys <a href="#remediate-automatic-loadrun-reg-keys" id="remediate-automatic-loadrun-reg-keys"></a>
 
 ```
+$UserProfiles = Get-WmiObject Win32_UserProfile;
 reg delete [keyname] /v [ValueName] /f
 reg delete [keyname] /f
 Foreach ($UserProfile in $UserProfiles) {reg delete HKU\$($UserProfile.SID)\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce /f}
@@ -216,3 +217,52 @@ reg add "HKU\{SID}\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" 
 reg add "HKU\{SID}\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /v malware.exe /t REG_SZ /d "malware.exe" /f
 ```
 
+### Terminate Active RDP Sessions
+
+```
+qwinsta
+rwinsta [session_id]
+```
+
+### Reset Network Stack (DNS, Winsock, Proxy)
+
+```
+ipconfig /flushdns
+netsh int ip reset
+netsh winsock reset
+netsh winhttp reset proxy
+```
+
+### List and Disable Local Users
+
+```
+net user
+Get-LocalUser
+Disable-LocalUser -Name "Guest"
+```
+
+### Check Hosts File
+
+```
+type C:\Windows\System32\drivers\etc\hosts
+```
+
+
+
+## Legacy / Deprecated Commands
+
+### Kill Process (WMIC)
+*WMIC is deprecated as of Windows 10 21H1.*
+
+```
+wmic process where name="malware.exe" call terminate
+wmic process where processid=[PID] delete
+```
+*Note: Call terminate allows you to specify an exit status in terms of a signed integer or a quoted negative value. Both methods essentially function the same by calling TerminateProcess.*
+
+### Reset BITS (bitsadmin)
+*bitsadmin is deprecated.*
+
+```
+bitsadmin /reset /allusers
+```
