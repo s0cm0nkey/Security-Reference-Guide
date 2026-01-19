@@ -1,10 +1,16 @@
 # Reverse Engineering
 
-Binary analysis and Reverse Engineering is taking our malware/file analysis to the next level. When we have a suspicious executable where we need to know not only is it malicious, but what exactly it does, we attempt to disassemble and/or reverse engineer the file to better understand its functions. There are different types of tools that can be used for this. While you can use a whole slew of coding support tools, most of the below tools have a specific context to reverse engineering and analyzing malware.
+Binary analysis and Reverse Engineering take our malware and file analysis to the next level. When analyzing a suspicious executable, determining *if* it is malicious is often insufficient; we need to understand *what* it does. To achieve this, we attempt to disassemble and/or reverse engineer the file to inspect its internal logic and functions.
+
+### Concepts
+* **Static Analysis**: Analyzing the code without running it (e.g., disassembly, decompilation, string analysis).
+* **Dynamic Analysis**: Analyzing the code while it is running (e.g., debugging, sandboxing, behavior monitoring).
+
+There are different types of tools that can be used for this. While generalized coding support tools exist, most of the below tools have a specific context to reverse engineering and analyzing malware.
 
 ## **Radare2**
 
-[Radare2](https://github.com/radare/radare2)  is a considerable open-source reverse engineering framework with a hex editor and debugger at its core, multiple supporting tools to assist in analysis, and even plugins for enhancing your reversing tasks.&#x20;
+[Radare2](https://github.com/radare/radare2) is a powerful open-source reverse engineering framework with a hex editor and debugger at its core, multiple supporting tools to assist in analysis, and even plugins for enhancing your reversing tasks. 
 
 ### Components
 
@@ -21,13 +27,13 @@ Binary analysis and Reverse Engineering is taking our malware/file analysis to t
 
 ### Basic Use
 
-* \#radare2 \<filename> - This launches the Radare engine with the specified file
-* To check what commands are available to you at any time, simply enter ‘?’
-  * This will show you various available tools and each letter corresponds to a tooling engine; for example, to use the rabin2 engine inside Radare2, simply enter ‘i’. Enter ‘i?’ to see further functionality.
-* $rabin2 -I \<binary name> -  pull important overview info about the binary
-* $rabin2 -z \<binary name> -  List all strings from the data section of the binary
-* $rabin2 -zz \<binary name> - List all strings in the binary
-* $r2 \<binary> -  launch radare2 to view assembly code
+* `radare2 <filename>` - This launches the Radare engine with the specified file
+* To check what commands are available to you at any time, simply enter `?`
+  * This will show you various available tools and each letter corresponds to a tooling engine; for example, to use the rabin2 engine inside Radare2, simply enter `i`. Enter `i?` to see further functionality.
+* `rabin2 -I <binary name>` -  pull important overview info about the binary
+* `rabin2 -z <binary name>` -  List all strings from the data section of the binary
+* `rabin2 -zz <binary name>` - List all strings in the binary
+* `r2 <binary>` -  launch radare2 to view assembly code
 
 ### Resources
 
@@ -40,7 +46,7 @@ Binary analysis and Reverse Engineering is taking our malware/file analysis to t
 
 {% embed url="https://www.youtube.com/watch?v=8rLhX_v66O4" %}
 
-## **Other Reverse Engineering Frameworks**
+## **Other Reverse Engineering Frameworks & Debuggers**
 
 * [Ghidra](https://github.com/NationalSecurityAgency/ghidra) - Ghidra is a software reverse engineering (SRE) framework created and maintained by the [National Security Agency](https://www.nsa.gov) Research Directorate. This framework includes a suite of full-featured, high-end software analysis tools that enable users to analyze compiled code on a variety of platforms including Windows, macOS, and Linux.
   * [https://www.intezer.com/blog/intezer-analyze/community-ghidra-plugin-is-here/](https://www.intezer.com/blog/intezer-analyze/community-ghidra-plugin-is-here/)
@@ -52,30 +58,38 @@ Binary analysis and Reverse Engineering is taking our malware/file analysis to t
 
 {% embed url="https://www.youtube.com/watch?v=d4Pgi5XML8E" %}
 
-* [IDA ](https://hex-rays.com/IDA-pro/)- IDA Pro as a disassembler is capable of creating maps of their execution to show the binary instructions that are actually executed by the processor in a symbolic representation (assembly language).
+* [IDA Pro](https://hex-rays.com/IDA-pro/) - IDA Pro is the industry standard disassembler and debugger, capable of creating execution maps to show binary instructions executed by the processor in a symbolic representation (assembly language).
   * [ Awesome Lists Collection: IDA](https://github.com/xrkk/awesome-ida/blob/master/Readme\_en.md)
-  * [Gepetto](https://github.com/JusticeRage/Gepetto) - IDA plugin which queries OpenAI's gpt-3.5-turbo language model to speed up reverse-engineering
-* [bincat](https://github.com/airbus-seclab/bincat) - Binary code static analyser, with IDA integration. Performs value and taint analysis, type reconstruction, use-after-free and double-free detection
+* [x64dbg](https://x64dbg.com/) - An open-source x64/x32 debugger for Windows. It is a modern replacement for the classic OllyDbg and offers a comprehensive plugin system.
+* [Binary Ninja](https://binary.ninja/) - A modern, commercial reverse engineering platform known for its clean API, high-quality intermediate languages (BNIL), and strong community support.
+* [dnSpy](https://github.com/dnSpy/dnSpy) / [dnSpyEx](https://github.com/dnSpyEx/dnSpy) - A debugger and .NET assembly editor. You can use it to edit and debug assemblies even if you don't have available source code.
 * [Rizin](https://github.com/rizinorg/rizin) - Rizin is a fork of the radare2 reverse engineering framework with a focus on usability, working features and code cleanliness.
-* [Frida](https://frida.re/) - Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers. Can be used offesively for injecting code into running processes.
-* [BARF](https://github.com/programa-stic/barf-project) - An open source binary analysis framework that aims to support a wide range of binary code analysis tasks that are common in the information security discipline.
-* [ODA](https://onlinedisassembler.com) - A lightweight, online service for when you don’t have the time, resources, or requirements to use a heavier-weight alternative. Explore executables by dissecting its sections, strings, symbols, raw hex and machine level instructions.
+* [Frida](https://frida.re/) - Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers. Can be used offensively for injecting code into running processes.
 * [retoolkit](https://github.com/mentebinaria/retoolkit) - Reverse Engineer's Toolkit
 * [alexey-kleymenov/reverse\_engineering\_tools](https://github.com/alexey-kleymenov/reverse\_engineering\_tools) - Various code samples and useful tips and tricks from reverse engineering and malware analysis fields.
 
 ## **Hex Editors**
 
 * [HexEdit.js](https://hexed.it/) – Browser-based hex editing.
-* [Hexinator](https://hexinator.com/) – World’s finest (proprietary, commercial) Hex Editor.
-* [Frhed](http://frhed.sourceforge.net/) – Binary file editor for Windows.
+* [Hexinator](https://hexinator.com/) – A robust proprietary Hex Editor.
+* [HxD](https://mh-nexus.de/en/hxd/) - A carefully designed and fast hex editor which, additionally to raw disk editing and modifying of main memory (RAM), handles files of any size.
 
 ## **Binary Analysis and Parsing Tools**
 
+* [PEStudio](https://www.winitor.com/) - A tool to perform the initial assessment of a malware file (static analysis) without even running it.
 * [capstone](https://www.kali.org/tools/capstone/) - a lightweight multi-platform, multi-architecture disassembly framework.
   * This package contains cstool, a command-line tool to disassemble hexadecimal strings.
 * [Kaitai Struct](http://kaitai.io/) – File formats and network protocols dissection language and web IDE, generating parsers in C++, C#, Java, JavaScript, Perl, PHP, Python, Ruby.
-* [Veles](https://codisec.com/veles/) – Binary data visualization and analysis tool.
 * [Hachoir](https://github.com/vstinner/hachoir) – Python library to view and edit a binary stream as the tree of fields and tools for metadata extraction.
+
+## **Legacy or Deprecated Tools**
+
+* [ODA (Online Disassembler)](https://onlinedisassembler.com) - *Deprecated/Offline*. Ideally used for lightweight online disassembly.
+* [BARF](https://github.com/programa-stic/barf-project) - Open source binary analysis framework. *Last updated ~2018*.
+* [bincat](https://github.com/airbus-seclab/bincat) - Binary code static analyser. *Maintenance status unclear*.
+* [Veles](https://codisec.com/veles/) – Binary data visualization tool. *Archived/Unmaintained*.
+* [Frhed](http://frhed.sourceforge.net/) – Binary file editor for Windows. *Legacy/Old*.
+* [Gepetto](https://github.com/JusticeRage/Gepetto) - IDA plugin for OpenAI integration. *May require updates for newer models*.
 
 ## **Resources**
 
