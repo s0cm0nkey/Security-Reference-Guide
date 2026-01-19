@@ -1,6 +1,8 @@
 # Windows DFIR Check by MITRE Tactic
 
-## T1015 Accessibility Features <a href="#t1015-accessibility-features" id="t1015-accessibility-features"></a>
+## T1546.008 Accessibility Features <a href="#t1015-accessibility-features" id="t1015-accessibility-features"></a>
+
+Attackers may replace binary files associated with Windows accessibility features (like Sticky Keys `sethc.exe`) with a command shell (`cmd.exe`) to execute commands as SYSTEM from the login screen.
 
 ```
 reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sethc.exe" /v "Debugger"
@@ -19,19 +21,21 @@ sfc /VERIFYFILE=C:\Windows\System32\DisplaySwitch.exe
 sfc /VERIFYFILE=C:\Windows\System32\osk.exe
 ```
 
+Adversaries may manipulate accounts to maintain access. This includes modifying password filters, adding additional credentials (like SSH keys), or modifying groups.
+
 ## T1098 Account Manipulation <a href="#t1098-account-manipulation" id="t1098-account-manipulation"></a>
 
 ```
 N/A
 ```
 
-## T1182 AppCert DLLs <a href="#t1182-appcert-dlls" id="t1182-appcert-dlls"></a>
+## T1546.009 AppCert DLLs <a href="#t1182-appcert-dlls" id="t1182-appcert-dlls"></a>
 
 ```
 reg query "HKLM\System\CurrentControlSet\Control\Session Manager" /v AppCertDlls
 ```
 
-## T1103 AppInit DLLs <a href="#t1103-appinit-dlls" id="t1103-appinit-dlls"></a>
+## T1546.010 AppInit DLLs <a href="#t1103-appinit-dlls" id="t1103-appinit-dlls"></a>
 
 ```
 reg query "HKLM\Software\Microsoft\Windows NT\CurrentVersion\Windows" /v Appinit_Dlls
@@ -41,7 +45,9 @@ reg query "HKU\{SID}\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Wi
 Get-WinEvent -FilterHashtable @{ LogName='System'; Id='11'} | FL TimeCreated,Message
 ```
 
-## T1138 Application Shimming <a href="#t1138-application-shimming" id="t1138-application-shimming"></a>
+The Microsoft Windows Application Compatibility Infrastructure (Shims) can be used to insert malicious code into applications.
+
+## T1546.011 Application Shimming <a href="#t1138-application-shimming" id="t1138-application-shimming"></a>
 
 ```
 reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Custom"
@@ -67,9 +73,10 @@ Get-WinEvent -FilterHashtable @{ LogName='Microsoft-Windows-Bits-Client/Operatio
 ls 'C:\ProgramData\Microsoft\Network\Downloader\qmgr.db'
 ```
 
-## T1067 Bootkit <a href="#t1067-bootkit" id="t1067-bootkit"></a>
+## T1542.003 Bootkit <a href="#t1067-bootkit" id="t1067-bootkit"></a>
 
-Note: This exists below the OS in the Master Boot Record or Volume Boot Record. The system must be booted through Advanced Startup Options with a Command Prompt, or through a recovery cd.
+Bootkits reside in the MBR/VBR or UEFI. Detection often requires offline analysis or specific tools like `bootrec` to repair/detect boot config changes.
+Note: The system must be booted through Advanced Startup Options with a Command Prompt, or through a recovery cd.
 
 ```
 bootrec /FIXMBR
@@ -212,7 +219,7 @@ reg query 'HKU\{SID}\Software\Microsoft\Internet Explorer\Explorer Bars'
 reg query 'HKLM\SOFTWARE\Microsoft\Internet Explorer\Extensions'
 ```
 
-## T1109 Component Firmware <a href="#t1109-component-firmware" id="t1109-component-firmware"></a>
+## T1542.001 Component Firmware <a href="#t1109-component-firmware" id="t1109-component-firmware"></a>
 
 Note: This is incredibly rare, and doesn’t have an easy detection/remediation mechanism. Using the Windows CheckDisk utility, System File Checker, or Deployment Image Servicing and Management may assist but isn’t guaranteed.
 
@@ -224,7 +231,7 @@ dism /Online /Cleanup-Image /RestoreHealth
 dism /Online /Cleanup-Image /StartComponentCleanup /ResetBase
 ```
 
-## T1122 Component Object Model (COM) Hijacking <a href="#t1122-component-object-model-com-hijacking" id="t1122-component-object-model-com-hijacking"></a>
+## T1546.015 Component Object Model (COM) Hijacking <a href="#t1122-component-object-model-com-hijacking" id="t1122-component-object-model-com-hijacking"></a>
 
 Note: This involves replacing legitimate components with malicious ones, and as such the legitimate components will likely no longer function. If you have a detection based on DLLHost.exe with /Processid:{xyz}, you can match xyz with the CLSID (COM Class Object) or AppID mentioned below to check for any malicious EXE or DLL.
 
@@ -281,6 +288,8 @@ reg query "HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAcc
 
 ## T1574.001 - Hijack Execution Flow: DLL Search Order Hijacking <a href="#t1038-dll-search-order-hijacking" id="t1038-dll-search-order-hijacking"></a>
 
+Adversaries may place a malicious DLL in a directory that is searched before the legitimate DLL directory. This exploits the way Windows loads DLLs.
+
 ```
 reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\KnownDLLs"
 gci -path C:\Windows\* -include *.dll | Get-AuthenticodeSignature | Where-Object Status -NE "Valid"
@@ -330,20 +339,20 @@ If SafeDllSearchMode is disabled (SafeDllSearchMode has a reg value of 0), the s
 N/A
 ```
 
-## T1044 File System Permissions Weakness <a href="#t1044-file-system-permissions-weakness" id="t1044-file-system-permissions-weakness"></a>
+## T1574.010 Services File Permissions Weakness <a href="#t1044-file-system-permissions-weakness" id="t1044-file-system-permissions-weakness"></a>
 
 ```
 Get-WmiObject win32_service | FL name,PathName
 get-acl "C:\Program Files (x86)\Google\Update\GoogleUpdate.exe" | FL | findstr "FullControl"
 ```
 
-## T1158 Hidden Files and Directories <a href="#t1158-hidden-files-and-directories" id="t1158-hidden-files-and-directories"></a>
+## T1564.001 Hidden Files and Directories <a href="#t1158-hidden-files-and-directories" id="t1158-hidden-files-and-directories"></a>
 
 ```
 dir /S /A:H
 ```
 
-## T1179 Hooking <a href="#t1179-hooking" id="t1179-hooking"></a>
+## T1056.004 Hooking <a href="#t1179-hooking" id="t1179-hooking"></a>
 
 ### **Finding EasyHook Injection**
 
@@ -355,26 +364,36 @@ More Material:
 
 * [GetHooks](https://github.com/jay/gethooks/releases/tag/1.01)
 
-## T1062 Hypervisor <a href="#t1062-hypervisor" id="t1062-hypervisor"></a>
 
-```
-N/A
-```
 
-## T1183 Image File Execution Options Injection <a href="#t1183-image-file-execution-options-injection" id="t1183-image-file-execution-options-injection"></a>
+## T1546.012 Image File Execution Options Injection <a href="#t1183-image-file-execution-options-injection" id="t1183-image-file-execution-options-injection"></a>
+
+The `Image File Execution Options` (IFEO) registry key allows developers to attach a debugger to an application. Attackers use this to execute malware instead of the intended application.
 
 ```
 reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit" /s /f "MonitorProcess"
 reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options" /s /f "Debugger"
 ```
 
+## T1562.001 Impair Defenses: Disable or Modify Tools <a href="#t1562-impair-defenses" id="t1562-impair-defenses"></a>
+
+Adversaries may modify and/or disable security tools to avoid possible detection.
+
+```
+reg query "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /s
+Get-MpComputerStatus
+sc query windefend
+```
+
 ## T1037 Logon Scripts <a href="#t1037-logon-scripts" id="t1037-logon-scripts"></a>
+Logon scripts are run automatically when a user logs in. Attackers can modify these to run persistence payloads.
+
 
 ```
 reg query "HKU\{SID}\Environment" /v UserInitMprLogonScript
 ```
 
-## T1177 LSASS Driver <a href="#t1177-lsass-driver" id="t1177-lsass-driver"></a>
+## T1547.008 LSASS Driver <a href="#t1177-lsass-driver" id="t1177-lsass-driver"></a>
 
 ```
 Get-WinEvent -FilterHashtable @{ LogName='Security'; Id='4614';} | FL TimeCreated,Message
@@ -382,7 +401,7 @@ Get-WinEvent -FilterHashtable @{ LogName='Security'; Id='3033';} | FL TimeCreate
 Get-WinEvent -FilterHashtable @{ LogName='Security'; Id='3063';} | FL TimeCreated,Message
 ```
 
-## T1031 Modify Existing Service <a href="#t1031-modify-existing-service" id="t1031-modify-existing-service"></a>
+## T1543.003 Modify Existing Service <a href="#t1031-modify-existing-service" id="t1031-modify-existing-service"></a>
 
 ```
 reg query HKLM\SYSTEM\CurrentControlSet\Services /s /v "ImagePath"
@@ -392,13 +411,13 @@ Get-ItemProperty REGISTRY::HKLM\SYSTEM\CurrentControlSet\Services\*\* -ea 0 | wh
 Get-ItemProperty REGISTRY::HKLM\SYSTEM\CurrentControlSet\Services\*\* -ea 0 | where {($_.ServiceDll -ne $null)} | select -uniq ServiceDll -ea 0 | foreach {filehash $_.ServiceDll} | select -uniq -exp hash
 ```
 
-## T1128 Netsh Helper DLL <a href="#t1128-netsh-helper-dll" id="t1128-netsh-helper-dll"></a>
+## T1546.007 Netsh Helper DLL <a href="#t1128-netsh-helper-dll" id="t1128-netsh-helper-dll"></a>
 
 ```
 reg query HKLM\SOFTWARE\Microsoft\Netsh
 ```
 
-## T1050 New Service <a href="#t1050-new-service" id="t1050-new-service"></a>
+## T1543.003 New Service <a href="#t1050-new-service" id="t1050-new-service"></a>
 
 ```
 reg query HKLM\SYSTEM\CurrentControlSet\Services /s /v "ImagePath"
@@ -434,7 +453,18 @@ Get-ChildItem -path registry::HKLM\SOFTWARE\Wow6432node\Microsoft\Office\*\Addin
 Get-ChildItem -path registry::HKLM\SOFTWARE\Wow6432node\Microsoft\Office\*\Addins\*
 Get-ChildItem -path "C:\Users\*\AppData\Roaming\Microsoft\Templates\*" -erroraction SilentlyContinue
 Get-ChildItem -path "C:\Users\*\AppData\Roaming\Microsoft\Excel\XLSTART\*" -erroraction SilentlyContinue
-Get-ChildItem -path C:\ -recurse -include Startup -ea 0
+Get-Ch03 OS Credential Dumping <a href="#t1003-os-credential-dumping" id="t1003-os-credential-dumping"></a>
+
+Adversaries may dump credentials from the operating system to obtain account login and credential material.
+
+```
+dir /s /b C:\Windows\Temp\*.dmp
+dir /s /b C:\Users\*\AppData\Local\Temp\*.dmp
+reg query "HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest" /v "UseLogonCredential"
+reg query "HKLM\SYSTEM\CurrentControlSet\Control\Lsa" /v "RunAsPPL"
+```
+
+## T10ildItem -path C:\ -recurse -include Startup -ea 0
 ls 'C:\Program Files\Microsoft Office\root\*\XLSTART\*'
 ls 'C:\Program Files\Microsoft Office\root\*\STARTUP\*'
 reg query HKCU\Software\Microsoft\Office\<Outlook Version>\Outlook\WebView\Inbox
@@ -444,19 +474,19 @@ reg query HKCU\Software\Microsoft\Office\<Outlook Version>\Outlook\WebView\Calen
 Get-WinEvent -FilterHashtable @{ LogName='Microsoft Office Alerts'; Id='300';} | FL TimeCreated,Message
 ```
 
-## T1034 Path Interception <a href="#t1034-path-interception" id="t1034-path-interception"></a>
+## T1574.009 Path Interception <a href="#t1034-path-interception" id="t1034-path-interception"></a>
 
 ```
 N/A
 ```
 
-## T1013 Port Monitors <a href="#t1013-port-monitors" id="t1013-port-monitors"></a>
+## T1547.003 Port Monitors <a href="#t1013-port-monitors" id="t1013-port-monitors"></a>
 
 ```
 reg query "HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors" /s /v "Driver"
 ```
 
-## T1504 PowerShell Profile <a href="#t1504-powershell-profile" id="t1504-powershell-profile"></a>
+## T1546.013 PowerShell Profile <a href="#t1504-powershell-profile" id="t1504-powershell-profile"></a>
 
 ```
 ls C:\Windows\System32\WindowsPowerShell\v1.0\Profile.ps1
@@ -464,15 +494,11 @@ ls C:\Windows\System32\WindowsPowerShell\v1.0\Microsoft.*Profile.ps1
 ls C:\Windows\System32\WindowsPowerShell\v1.0\Microsoft.*Profile.ps1
 gci -path "C:\Users\*\Documents\PowerShell\Profile.ps1"
 gci -path "C:\Users\*\Documents\PowerShell\Microsoft.*Profile.ps1"
-```
 
-## T1108 Redundant Access <a href="#t1108-redundant-access" id="t1108-redundant-access"></a>
-
-```
 N/A
 ```
 
-## T1060 Registry Run Keys / Startup Folder <a href="#t1060-registry-run-keys--startup-folder" id="t1060-registry-run-keys--startup-folder"></a>
+## T1547.001 Registry Run Keys / Startup Folder <a href="#t1060-registry-run-keys--startup-folder" id="t1060-registry-run-keys--startup-folder"></a>
 
 ```
 reg query "HKU\{SID}\Software\Microsoft\Windows\CurrentVersion\Run"
@@ -500,6 +526,8 @@ gci -path "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\*" -incl
 Get-WinEvent -FilterHashtable @{ LogName='Microsoft-Windows-Shell-Core/Operational'; Id='9707'} | FL TimeCreated,Message
 Get-WinEvent -FilterHashtable @{ LogName='Microsoft-Windows-Shell-Core/Operational'; Id='9708'} | FL TimeCreated,Message
 ```
+Scheduled Tasks are a common persistence mechanism. Malicious tasks can be hidden or set to run at specific times/events.
+
 
 ## T1053 Scheduled Task <a href="#t1053-scheduled-task" id="t1053-scheduled-task"></a>
 
@@ -514,7 +542,7 @@ ls 'C:\Windows\System32\WptsExtensions.dll'
 
 Note: thanks to [Markus Piéton](https://twitter.com/markus\_pieton/status/1189559716453801991) for the WptsExtensions.dll one.
 
-## T1180 Screensaver <a href="#t1180-screensaver" id="t1180-screensaver"></a>
+## T1546.002 Screensaver <a href="#t1180-screensaver" id="t1180-screensaver"></a>
 
 ```
 reg query "HKU\{SID}\Control Panel\Desktop" /s /v "ScreenSaveActive"
@@ -522,7 +550,7 @@ reg query "HKU\{SID}\Control Panel\Desktop" /s /v "SCRNSAVE.exe"
 reg query "HKU\{SID}\Control Panel\Desktop" /s /v "ScreenSaverIsSecure"
 ```
 
-## T1101 Security Support Provider <a href="#t1101-security-support-provider" id="t1101-security-support-provider"></a>
+## T1547.005 Security Support Provider <a href="#t1101-security-support-provider" id="t1101-security-support-provider"></a>
 
 ```
 reg query "HKLM\SYSTEM\CurrentControlSet\Control\Lsa\OSConfig" /v "Security Packages"
@@ -535,14 +563,14 @@ reg query "HKLM\SYSTEM\CurrentControlSet\Control\Lsa" /v "Security Packages"
 N/A
 ```
 
-## T1058 Service Registry Permissions Weakness <a href="#t1058-service-registry-permissions-weakness" id="t1058-service-registry-permissions-weakness"></a>
+## T1574.011 Service Registry Permissions Weakness <a href="#t1058-service-registry-permissions-weakness" id="t1058-service-registry-permissions-weakness"></a>
 
 ```
 get-acl REGISTRY::HKLM\SYSTEM\CurrentControlSet\Services\* |FL
 get-acl REGISTRY::HKLM\SYSTEM\CurrentControlSet\Services\servicename |FL
 ```
 
-## T1023 Shortcut Modification <a href="#t1023-shortcut-modification" id="t1023-shortcut-modification"></a>
+## T1547.009 Shortcut Modification <a href="#t1023-shortcut-modification" id="t1023-shortcut-modification"></a>
 
 ```
 Select-String -Path "C:\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*.lnk" -Pattern "exe"
@@ -550,10 +578,14 @@ Select-String -Path "C:\Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Pro
 Select-String -Path "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\*" -Pattern "dll"
 Select-String -Path "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\*" -Pattern "exe"
 gci -path "C:\Users\" -recurse -include *.lnk -ea SilentlyContinue | Select-String -Pattern "exe" | FL
+
+
 gci -path "C:\Users\" -recurse -include *.lnk -ea SilentlyContinue | Select-String -Pattern "dll" | FL
 ```
 
-## T1198 SIP and Trust Provider Hijacking <a href="#t1198-sip-and-trust-provider-hijacking" id="t1198-sip-and-trust-provider-hijacking"></a>
+## T1553.003 SIP and Trust Provider Hijacking <a href="#t1198-sip-and-trust-provider-hijacking" id="t1198-sip-and-trust-provider-hijacking"></a>
+
+Subject Interface Packages (SIPs) and Trust Providers are used by Windows to verify digital signatures. Modifying these can allow unsigned code to appear signed.
 
 ```
 reg query "HKLM\SOFTWARE\Microsoft\Cryptography\OID\EncodingType 0\CryptSIPDllGetSignedDataMsg" /s /v "Dll"
@@ -564,7 +596,7 @@ reg query "HKLM\SOFTWARE\WOW6432Node\Microsoft\Cryptography\OID\EncodingType 0\C
 reg query "HKLM\SOFTWARE\WOW6432Node\Microsoft\Cryptography\Providers\Trust\FinalPolicy" /s /v "`$DLL"
 ```
 
-## T1019 System Firmware <a href="#t1019-system-firmware" id="t1019-system-firmware"></a>
+## T1542.001 System Firmware <a href="#t1019-system-firmware" id="t1019-system-firmware"></a>
 
 ```
 reg query HKLM\HARDWARE\DESCRIPTION\System\BIOS
@@ -572,7 +604,7 @@ Confirm-SecureBootUEFI
 Get-WmiObject win32_bios
 ```
 
-## T1209 Time Providers <a href="#t1209-time-providers" id="t1209-time-providers"></a>
+## T1547.003 Time Providers <a href="#t1209-time-providers" id="t1209-time-providers"></a>
 
 ```
 reg query "HKLM\System\CurrentControlSet\Services\W32Time\TimeProviders" /s /f "Dll"
@@ -586,7 +618,7 @@ net group /domain "Domain Admins"
 net users /domain <name>
 ```
 
-## T1100 Web Shell <a href="#t1100-web-shell" id="t1100-web-shell"></a>
+## T1505.003 Web Shell <a href="#t1100-web-shell" id="t1100-web-shell"></a>
 
 Note: The presence of files with these values isn’t necessarily indicative of a webshell, review output.
 
@@ -602,7 +634,7 @@ Get-WinEvent -FilterHashtable @{LogName='MSExchange Management';} | ? {$_.Messag
 Get-WinEvent -FilterHashtable @{LogName='MSExchange Management';} | ? {$_.Message -match 'aspx'} | FL TimeCreated, Message
 ```
 
-## T1084 Windows Management Instrumentation Event Subscription <a href="#t1084-windows-management-instrumentation-event-subscription" id="t1084-windows-management-instrumentation-event-subscription"></a>
+## T1546.003 Windows Management Instrumentation Event Subscription <a href="#t1084-windows-management-instrumentation-event-subscription" id="t1084-windows-management-instrumentation-event-subscription"></a>
 
 ### **Get WMI Namespaces**
 
@@ -627,7 +659,7 @@ Get-WmiObject -Class __EventFilter -Namespace root\subscription
 Get-WmiObject -Class __EventConsumer -Namespace root\subscription
 ```
 
-## T1004 Winlogon Helper DLL <a href="#t1004-winlogon-helper-dll" id="t1004-winlogon-helper-dll"></a>
+## T1547.004 Winlogon Helper DLL <a href="#t1004-winlogon-helper-dll" id="t1004-winlogon-helper-dll"></a>
 
 ```
 reg query "HKU\{SID}\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify" /s
