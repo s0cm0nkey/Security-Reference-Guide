@@ -1,8 +1,8 @@
 # Learn to Code
 
-## **Learn to Code** Platforms
+## General Learning Platforms
 
-There are so many options for this out there that I am not going to be able to mention all of them. Instead I will list the ones that I have found helpful from a security context. Its mostly Python.
+There are countless options available for learning to code. This list focuses on resources that are particularly helpful from a security context, with a strong emphasis on Python due to its prevalence in the industry.
 
 * [Codecademy](https://www.codecademy.com/) - Top code learning platform on the market
 * [edX | Free Online Courses by Harvard, MIT, & more](https://www.edx.org/)
@@ -10,9 +10,7 @@ There are so many options for this out there that I am not going to be able to m
 * [W3Schools Online Web Tutorials](https://www.w3schools.com/) - Best resource for learning HTML
 * [Codewars](https://www.codewars.com/) - CTF like challanges specifically for code building
 * [PowerShell vs Python Reference](https://blog.ironmansoftware.com/powershell-vs-python/)
-* [Python Tutor - Visualize Python, Java, C, C++, JavaScript, TypeScript, and Ruby code execution](http://pythontutor.com/)&#x20;
-* [C++ Language - C++ Tutorials](https://www.cplusplus.com/doc/tutorial/)&#x20;
-* [Learn Java - Free Interactive Java Tutorial](https://www.learnjavaonline.org/)
+* [Python Tutor - Visualize Python, Java, C, C++, JavaScript, TypeScript, and Ruby code execution](http://pythontutor.com/)
 * [https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md)
 * [https://academy.wehackpurple.com/collections](https://academy.wehackpurple.com/collections) - Great secure coding learning platform
 
@@ -48,12 +46,9 @@ There are so many options for this out there that I am not going to be able to m
 * [Creating HTML Reports in PowerShell](https://leanpub.com/creatinghtmlreportsinwindowspowershell) - The DevOps Collective, Inc. (PDF, ePub, MOBI, HTML) _(Leanpub account or valid email requested)_
 * [DevOps: The Ops Perspective](https://leanpub.com/devopstheopsperspective) - The DevOps Collective, Inc. (PDF, ePub, MOBI, HTML) _(Leanpub account or valid email requested)_
 * [Ditch Excel: Making Historical & Trend Reports in PowerShell](https://leanpub.com/ditchexcelmakinghistoricalandtrendreportsinpowershell) - The DevOps Collective, Inc. (PDF, ePub, MOBI, HTML) _(Leanpub account or valid email requested)_
-* [Layman’s Guide to PowerShell 2.0 remoting](https://ravichaganti.com/ebooks/AlaymansguidetoPowerShell2remotingv2.pdf) (PDF)
 * [Learn PowerShell Core 6.0](https://www.packtpub.com/free-ebooks/learn-powershell-core-60) - David das Neves, Jan-Hendrik Peters (Packt account _required_)
 * [Learn PowerShell in Y Minutes](https://learnxinyminutes.com/docs/powershell/)
-* [Mastering PowerShell v2](http://community.idera.com/powershell/powertips/b/ebookv2#pi619PostSortOrder=Ascending)
 * [PowerShell 101: The No-Nonsense Beginner’s Guide to PowerShell](https://leanpub.com/powershell101) - Mike F. Robbins _(Leanpub account or valid email requested)_
-* [PowerShell 2.0 – One CMDLET At A Time](http://www.jonathanmedd.net/wp-content/uploads/2010/09/PowerShell\_2\_One\_Cmdlet\_at\_a\_Time.pdf) (PDF)
 * [PowerShell Notes for Professionals](http://goalkicker.com/PowerShellBook/) - Compiled from StackOverflow documentation (PDF)
 * [PowerShell Succinctly, Syncfusion](https://www.syncfusion.com/resources/techportal/ebooks/powershell) (PDF, Kindle) (email address _requested_, not required)
 * [PowerShell Tips to Write By](https://leanpub.com/powershelltips) - Adam Bertram _(Leanpub account or valid email requested)_ (🚧 _in process_)
@@ -72,15 +67,15 @@ There are so many options for this out there that I am not going to be able to m
 
 ## Python
 
-* [BeginnersGuide/NonProgrammers - Python Wiki](https://wiki.python.org/moin/BeginnersGuide/NonProgrammers)&#x20;
+* [BeginnersGuide/NonProgrammers - Python Wiki](https://wiki.python.org/moin/BeginnersGuide/NonProgrammers)
 * [https://www.learnpython.org/](https://www.learnpython.org/)
-* [Introduction · HonKit](https://python.swaroopch.com/)&#x20;
-* [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)&#x20;
-* [comp3321 NSA Python Training Document : NSA : Free Download, Borrow, and Streaming : Internet Archive](https://archive.org/details/comp3321/page/n1/mode/2up/search/device?utm\_source=share\&utm\_medium=ios\_app\&utm\_name=iossmf)&#x20;
-* [Cracking Codes with Python](https://inventwithpython.com/cracking/)&#x20;
-* [vinta/awesome-python: A curated list of awesome Python frameworks, libraries, software and resources](https://github.com/vinta/awesome-python)&#x20;
+* [Introduction · HonKit](https://python.swaroopch.com/)
+* [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
+* [comp3321 NSA Python Training Document : NSA : Free Download, Borrow, and Streaming : Internet Archive](https://archive.org/details/comp3321/page/n1/mode/2up/search/device?utm_source=share\&utm_medium=ios_app\&utm_name=iossmf)
+* [Cracking Codes with Python](https://inventwithpython.com/cracking/)
+* [vinta/awesome-python: A curated list of awesome Python frameworks, libraries, software and resources](https://github.com/vinta/awesome-python)
 * [py.CheckiO - Python coding challenges and exercises with solutions for beginners and advanced](https://py.checkio.org/)
-* &#x20;[Invent with Python](https://inventwithpython.com/)&#x20;
+* [Invent with Python](https://inventwithpython.com/)
 
 ## Go
 
@@ -88,7 +83,7 @@ There are so many options for this out there that I am not going to be able to m
 * [Build Web Application with Golang](https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/)
 * [Building Web Apps with Go](https://codegangsta.gitbooks.io/building-web-apps-with-go/content/)
 * [Darker Corners of Go](https://rytisbiel.com/2021/03/06/darker-corners-of-go/) - Rytis Bieliunas
-* [Effective Go](https://golang.org/doc/effective\_go.html)
+* [Effective Go](https://go.dev/doc/effective_go)
 * [Go 101](https://go101.org/article/101.html) - [@TapirLiu](https://twitter.com/TapirLiu)
 * [Go Bootcamp](http://www.golangbootcamp.com/book) - Matt Aimonetti
 * [Go by Example](https://gobyexample.com)
@@ -98,7 +93,7 @@ There are so many options for this out there that I am not going to be able to m
 * [Learning Go](https://miek.nl/go/)
 * [Let's learn Go!](http://go-book.readthedocs.io/en/latest/)
 * [Practical Cryptography With Go](https://leanpub.com/gocrypto/read) - Kyle Isom
-* [The Go Tutorial](http://tour.golang.org)
+* [The Go Tutorial](https://go.dev/tour/)
 * [The Little Go Book](https://github.com/karlseguin/the-little-go-book) - Karl Seguin ([PDF](https://www.openmymind.net/assets/go/go.pdf), [ePUB](https://www.openmymind.net/assets/go/go.epub))
 * [Web apps in Go, the anti textbook](https://github.com/thewhitetulip/web-dev-golang-anti-textbook/)
 
@@ -108,3 +103,33 @@ There are so many options for this out there that I am not going to be able to m
 * [https://www.begin.re/](https://www.begin.re/) - Reverse Engineering for Beginners
 * [https://beginners.re/main.html](https://beginners.re/main.html) - Understanding Assembly Language
 * [Reversing-Secrets-Engineering](https://www.amazon.com/Reversing-Secrets-Engineering-Eldad-Eilam/dp/0764574817)
+
+## C/C++
+
+* [C++ Language - C++ Tutorials](https://www.cplusplus.com/doc/tutorial/)
+* [Learn C](https://www.learn-c.org/) - Free Interactive C Tutorial
+* [SEI CERT C Coding Standard](https://wiki.sei.cmu.edu/confluence/display/c/SEI+CERT+C+Coding+Standard)
+
+## Java
+
+* [Learn Java - Free Interactive Java Tutorial](https://www.learnjavaonline.org/)
+* [Java Programming - MOOC.fi](https://java-programming.mooc.fi/) - University of Helsinki's free Java course
+
+## Rust
+
+* [The Rust Programming Language](https://doc.rust-lang.org/book/)
+* [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
+* [Black Hat Rust](https://github.com/skerkour/black-hat-rust) - Applied information security with Rust
+
+## Ruby
+
+* [Ruby in 20 Minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
+* [Learn Ruby the Hard Way](https://learnrubythehardway.org/book/)
+
+## Legacy / Archived Resources
+
+The following resources may successfully still teach concepts but reference older versions of languages (e.g., PowerShell v2).
+
+* [Layman’s Guide to PowerShell 2.0 remoting](https://ravichaganti.com/ebooks/AlaymansguidetoPowerShell2remotingv2.pdf) (PDF)
+* [Mastering PowerShell v2](http://community.idera.com/powershell/powertips/b/ebookv2#pi619PostSortOrder=Ascending)
+* [PowerShell 2.0 – One CMDLET At A Time](http://www.jonathanmedd.net/wp-content/uploads/2010/09/PowerShell\_2\_One\_Cmdlet\_at\_a\_Time.pdf) (PDF)
