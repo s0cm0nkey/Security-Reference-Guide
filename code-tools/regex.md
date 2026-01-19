@@ -8,6 +8,7 @@ Regular expressions allow us to search for patterns in datasets and are processe
   * [RegExr](https://regexr.com/) - Learn, Build, & Test RegEx&#x20;
   * [RegEx Testing](https://www.regextester.com/) - online regex testing tool.
   * [RegEx Pal](https://www.regexpal.com/) - online regex testing tool + other tools.
+  * [CyberChef](https://gchq.github.io/CyberChef/) - The "Cyber Swiss Army Knife" includes a powerful Regex operation.
 * Regex Training Material
   * [RegexOne](https://regexone.com/) - Learn Regular Expressions - Lesson 1: An Introduction, and the ABCs&#x20;
   * [Regex101](https://regex101.com/) - Online regex tester and debugger: PHP, PCRE, Python, Golang and JavaScript&#x20;
@@ -30,7 +31,7 @@ Regular expressions allow us to search for patterns in datasets and are processe
 
 ◇ **`\s`** – this represents any whitespace character, such as a tab, space, or carriage return.\
 ◇ **`\w`** – this tells the regex engine to search for any alphanumeric character.\
-◇  – this represents a carriage return.
+◇ **`\r`** – this represents a carriage return.
 
 ### Grep and Regex
 
@@ -43,7 +44,7 @@ Here are some examples:\
 • **`\d`** – this represents any digit\
 • **`\w`** – this represents any alphanumeric character\
 • **`\s`** – this represents any whitespace character\
-• **–** this represents a tab\
+• **`\t`** – this represents a tab\
 The first three examples can capture the reverse group through capitalisation, such that **`\D`**, **`\W`**, and **`\S`** represent any non-digit, non-alphanumeric, or non-whitespace character respectively.
 
 ### Groupings
@@ -74,7 +75,11 @@ The awk command can utilise regex to search files for a specified pattern and th
 `awk ‘/regex-pattern/{print $0}’ input-file > output-file`
 
 You can use the sed command with regex to perform more comprehensive searching. It is capable of searching for files and manipulating them within a single command. The basic syntax to use regex with the sed command is as follows: `sed -rn ‘/regex-pattern/p’`
+Modern Alternatives
 
+*   [Ripgrep (rg)](https://github.com/BurntSushi/ripgrep): A distinctively fast line-oriented search tool that recursively searches the current directory for a regex pattern. It is generally faster than grep.
+
+### 
 ### Repetitions
 
 Repetitions, denoted by **`*`**, **`+`**, or **`{}`**, can be used when the number of characters of a certain type in a desired search string is unknown. The appropriate repetition metacharacter is placed immediately after the character or grouping which is repeated.\
@@ -83,7 +88,13 @@ Repetitions, denoted by **`*`**, **`+`**, or **`{}`**, can be used when the numb
 ◇ **`{m}`**  – ‘m’ repetitions.\
 ◇ **`{m,n}`** – Between ‘m’ and ‘n’ (inclusive) repetitions.\
 Repetitions can provide a level of optionality to your search pattern. For example, in the search pattern **`.*abc`**, the user does not care which characters, if any, appear before the string `abc`.
+Greedy vs Lazy Quantification
 
+By default, quantifiers like `*` and `+` are "greedy", meaning they will match as many characters as possible. Adding a `?` after makes them "lazy" or "reluctant", matching as few as possible.
+*   `.*` : Greedy match.
+*   `.*?` : Lazy match.
+
+### 
 ### Logical operators
 
 Logical operators enable the AND, OR, and NOT logic functions within a search pattern.
@@ -112,12 +123,12 @@ Parentheses can be used in regular expressions to capture part of a matched patt
 `sed -rn ‘s/.*(capture).*/\1/p' file_name.txt`\
 This command replaces the entirety of the matched string with the string inside the capturing parentheses.\
 In grep, an additional `-o` flag can be passed to only output the exactly matched text so that a carefully constructed regex can be used to create an equivalent output to a regex capture. When doing this, it is often necessary to use anchors or specifically exclude the characters which surround the desired region.
-
+Java Pattern Class (Docs)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base
 ### Anchors
 
 Anchors are used in a search pattern to match positions.
 
-The caret `^` anchor matches the start of a line and the dollar sign **`$`** anchor matches the end a line.
+The caret `^` anchor matches the start of a line and the dollar sign **`$`** anchor matches the end of a line.
 
 The boundary **`\b`** special character sequence is an anchor used to match word boundaries, often to perform searches for whole words only. It matches the position between a 'word character' and a ‘non-word character’. In most flavours of regex, a word character is simply any alphanumeric. For example, the search pattern **`^abc\b.*123$`** will match any line that starts with `abc` and a non-alphanumeric character, has any characters in the middle, and ends in `123`.
 
@@ -139,9 +150,7 @@ In JavaScript, regexes can be created either by calling the constructor function
   * i – Case-insensitive search.
   * m – Multi-line search; by default regexes separate strings by line breaks.
   * s – The dot **`.`** wildcard matches newline characters; it does not match these by default.
-* For example, `var my_regex = /`**`abc`**`/gi;` will look for all instances of the string ‘abc’ and be case-insensitive, so will also match ‘aBc’.
-* To use a regex in JavaScript, it must be paired with a method which supports regular expressions. The `match()`, `replace()`, or `search()` methods can be called on a String object. Alternatively, the `test()` or `exec()` methods can be called on a RegExp object.
-
+* For example, `vfollowing JavaScript code will assign the index of the matched substring, ‘2’, to the `my_index` variable
 | Method    | Action                                                                                                                                                                   |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | match()   | Returns either an array of the first match, the captured substring, the index and the input, or, if it is told to match globally, an array of all matches in the string. |
@@ -161,8 +170,7 @@ View and execute the 'regex\_methods.js' script to see how these methods functio
 \
 ◇ Python has a built-in module called 're' which must be imported in the script and can be used to work with Perl-based regex.\
 ◇ Unlike in JavaScript, regexes in Python are not created as objects but given as an argument to functions of the 're' module.&#x20;
-
-| Function  | Action                                                               |
+following Python code will assign the list of split substrings, `['one: ‘, ’two: ‘, ’three: ‘, ’']`, to the `my_list` variable   |
 | --------- | -------------------------------------------------------------------- |
 | findall() | Returns a list containing all matches.                               |
 | search()  | Returns a ‘Match’ object if there is a match anywhere in the string. |
