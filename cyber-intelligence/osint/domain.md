@@ -207,6 +207,7 @@ Monitoring websites for changes can be valuable during ongoing investigations or
 
 * [Follow That Page](https://followthatpage.com/) - Change detection and notification service that sends email alerts when monitored web pages are modified.
 * [VisualPing](https://visualping.io/) - Advanced monitoring tool that tracks multiple types of changes on web pages and provides alerts based on specific conditions you define.
+* [Snaplert](https://snaplert.com) - Website change monitoring with AI-powered visual diffs, element-level zone picker, and email alerts. Useful for tracking target page changes with before/after screenshots.
 
 </details>
 
