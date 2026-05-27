@@ -23,10 +23,10 @@
   * .bashrc and .bash\_profile changes
     * _PTFM: Bash changes- pg. 90 (Requires Bash File Audit)_
 * PrivEsc Detection
-  * UAC Bypas
+  * UAC Bypass
     * _PTFM: UAC Bypass  via Event Viewer - pg. 34 (Requires Registry Changes)_
     * _PTFM: UAC Bypass  via fodhelper.exe - pg. 34 (Requires Registry Changes)_
-  * Poorly configed Cron Jobs
+  * Poorly configured Cron Jobs
     * _PTFM: Poorly configured Cron Jobs - pg. 96_
   * Mimikatz Use
     * Operator Handbook: Detect Mimikatz - pg.207

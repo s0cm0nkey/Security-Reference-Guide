@@ -12,8 +12,11 @@
 *The following tools may be unmaintained but contain useful concepts or scripts.*
 * [jackdaw](https://github.com/skelsec/jackdaw) - AD visualization tool (similar goal to BloodHound) focusing on object interactions. 
 * [RiskySPN](https://github.com/cyberark/RiskySPN) - PowerShell scripts focused on detecting and abusing accounts associated with SPNs.
-* [Deploy-Deception](https://github.com/samratashok/Deploy-Deception) - A PowerShell module to deploy active directory decoy objects.
-* [dcept](https://github.com/secureworks/dcept) - A tool for deploying and detecting use of Active Directory honeytokens.
+* AD deception tools such as Deploy-Deception and dcept are preserved in Active Defense.
+
+{% content-ref url="../active-defense.md" %}
+[active-defense.md](../active-defense.md)
+{% endcontent-ref %}
 
 ## General Recommendations
 
@@ -87,7 +90,7 @@
 
 ## Logging
 
-* Enable enhanced auditing.Creation Events" enabled
+* Enable enhanced auditing and ensure process creation events are enabled.
 * “Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings”
 * Enable PowerShell module logging (“\*”) & forward logs to central log server (WEF or other method).
 * Enable CMD Process logging & enhancement (KB3004375) and forward logs to central log server.

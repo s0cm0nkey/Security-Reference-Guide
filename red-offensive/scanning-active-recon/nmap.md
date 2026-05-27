@@ -7,7 +7,7 @@
 * [https://nmap.org/book/toc.html](https://nmap.org/book/toc.html)&#x20;
 * [NSEDoc Reference Portal](https://nmap.org/nsedoc/)&#x20;
 * [https://www.amazon.com/Nmap-Network-Scanning-Official-Discovery/dp/0979958717](https://www.amazon.com/Nmap-Network-Scanning-Official-Discovery/dp/0979958717)&#x20;
-* [https://blogs.sans.org/pen-testing/files/2013/10/NmapCheatSheetv1.1.pdf](https://blogs.sans.org/pen-testing/files/2013/10/NmapCheatSheetv1.1.pdf)&#x20;
+* [SANS Nmap Cheat Sheet](https://blogs.sans.org/pen-testing/files/2013/10/NmapCheatSheetv1.1.pdf) - Useful quick reference, but dated.
 * [https://blog.zsec.uk/nmap-rtfm/](https://blog.zsec.uk/nmap-rtfm/)&#x20;
 * [https://gtfobins.github.io/gtfobins/nmap/](https://gtfobins.github.io/gtfobins/nmap/)
 * _Operator Handbook: NMAP - pg. 222_
@@ -30,8 +30,11 @@
 {% endtab %}
 
 {% tab title="Training" %}
-* [https://tryhackme.com/room/nmap01](https://tryhackme.com/room/nmap01)
-* [https://tryhackme.com/room/furthernmap](https://tryhackme.com/room/furthernmap)
+Nmap training rooms are maintained in Training.
+
+{% content-ref url="../../training/" %}
+[training](../../training/)
+{% endcontent-ref %}
 {% endtab %}
 {% endtabs %}
 
@@ -45,7 +48,7 @@
 * \-sV - Loud version scan, will make complete connection, grab banner, and version info&#x20;
 * \-A - run service enumeration scripts&#x20;
 * \-oA \[filename] - Print nmap output to file name&#x20;
-* \-Pn - disable ping. Most big companies will have ping diabled on most external entities&#x20;
+* \-Pn - disable host discovery. Most large organizations block ping on many external assets.&#x20;
 * \-n - disable DNS resolution, helps speed up scan
 
 </details>
@@ -159,7 +162,7 @@ nmap -sV -v -p- [IP Address]
 
 ## NSE - Nmap scripting Engine&#x20;
 
-Nmap Scripting Engine (NSE) allows users to run custom and community generated scripts. ◇ stored in /usr/share/nmap/scripts&#x20;
+Nmap Scripting Engine (NSE) allows users to run custom and community-generated scripts stored in `/usr/share/nmap/scripts`.
 
 {% tabs %}
 {% tab title="Basics" %}
@@ -185,7 +188,7 @@ As well as specifying the name of the script, it is sometimes necessary to speci
 Run all NSE scripts against found ports
 
 ```
-$nmap -Pn -sV -O -pT:{TCP ports found},U:{UDP ports found} --script *vuln* $ip
+nmap -Pn -sV -O -p T:80,443,U:53 --script "*vuln*" $ip
 ```
 {% endtab %}
 
@@ -228,7 +231,7 @@ Just add garbage data to the packets so the IPS/IDS signature is avoided.
 {% tab title="Fragmentation" %}
 Just fragment the packets and send them. If the IDS/IPS doesn't have the ability to reassemble them, they will arrive to the final host.
 
-**Nmap option**
+**Nmap option:** `-f` or `--mtu <multiple of 8>`
 {% endtab %}
 
 {% tab title="Invalid checksum" %}

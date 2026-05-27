@@ -1,5 +1,7 @@
 # Web Technologies
 
+This page tracks security notes and tools for common web platforms, frameworks, identity technologies, APIs, and CMSs. Keep passive domain discovery in Cyber Intelligence, O365 spraying in Password Attacks, and malware/API cheat sheets in DFIR or exploit-development pages.
+
 <details>
 
 <summary><a href="https://www.adobe.com/marketing/experience-manager.html">Adobe AEM</a></summary>
@@ -26,7 +28,7 @@
 <summary>APIs</summary>
 
 * [https://github.com/shieldfy/API-Security-Checklist](https://github.com/shieldfy/API-Security-Checklist)
-* [https://github.com/OWASP/API-Security/blob/master/2019/en/dist/owasp-api-security-top-10.pdf](https://github.com/OWASP/API-Security/blob/master/2019/en/dist/owasp-api-security-top-10.pdf)
+* [OWASP API Security Top 10](https://owasp.org/www-project-api-security/) - Use the current project page rather than only the older 2019 PDF.
 * [https://hackanythingfor.blogspot.com/2020/07/api-testing-checklist.html](https://hackanythingfor.blogspot.com/2020/07/api-testing-checklist.html)
 * [https://cheatsheetseries.owasp.org/cheatsheets/REST\_Assessment\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/REST\_Assessment\_Cheat\_Sheet.html)
 * [https://cheatsheetseries.owasp.org/cheatsheets/REST\_Security\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/REST\_Security\_Cheat\_Sheet.html)
@@ -40,14 +42,14 @@
 * [imperva/automatic-api-attack-tool](https://github.com/imperva/automatic-api-attack-tool) - Imperva's customizable API attack tool takes an API specification as an input, generates and runs attacks that are based on it as an output.
 * [Astra](https://github.com/flipkart-incubator/Astra) - Automated Security Testing For REST API's
 * [OWASP API check](https://owasp.org/www-project-apicheck/#div-tools) - APICheck is an environment for integrating existing HTTP APIs tools and create execution chains easily.
-* [VX-API](https://github.com/vxunderground/VX-API) - Collection of various WINAPI tricks / features used or abused by Malware
-* [https://malapi.io/](https://malapi.io/) - Cheatsheet for commands that could be potentially used for malicious activity.
+* [VX-API](https://github.com/vxunderground/VX-API) - Windows API tricks and malware-oriented API notes. This is not a web API resource; keep here only as a pointer for API terminology overlap.
+* [malapi.io](https://malapi.io/) - Windows API reference for malware behavior. Better fit for malware/reverse engineering workflows.
 * [crAPI](https://github.com/OWASP/crAPI) - **c**ompletely **r**idiculous **API** (crAPI) will help you to understand the ten most critical API security risks. crAPI is vulnerable by design, but you'll be able to safely run it to educate/train yourself.
 * [https://github.com/Net-hunter121/API-Wordlist](https://github.com/Net-hunter121/API-Wordlist) - A wordlist of API names used for fuzzing web application APIs.
 * [https://github.com/metlo-labs/metlo](https://github.com/metlo-labs/metlo) - Metlo is an open-source API security platform
 * _Hacking: The next generation - Application Protocol Handlers, pg. 96_
 
-_For training on APIs and API hacking, please see_ [_https://github.com/jassics/security-study-plan/blob/main/api-security-study-plan.md_](https://github.com/jassics/security-study-plan/blob/main/api-security-study-plan.md)__
+_For training on APIs and API hacking, please see_ [_https://github.com/jassics/security-study-plan/blob/main/api-security-study-plan.md_](https://github.com/jassics/security-study-plan/blob/main/api-security-study-plan.md)_._
 
 </details>
 
@@ -85,7 +87,7 @@ _For training on APIs and API hacking, please see_ [_https://github.com/jassics/
 
 <summary>Cloudflare</summary>
 
-* [cloudflare\_enum](https://github.com/mandatoryprogrammer/cloudflare\_enum) - Cloudflare DNS Enumeration Tool for Pentesters
+* [cloudflare_enum](https://github.com/mandatoryprogrammer/cloudflare_enum) - Cloudflare DNS enumeration tool. Passive DNS/domain investigation belongs in Cyber Intelligence.
 
 
 
@@ -213,7 +215,7 @@ _For training on APIs and API hacking, please see_ [_https://github.com/jassics/
 <summary>Jenkins</summary>
 
 * [pwn\_jenkins](https://github.com/gquere/pwn\_jenkins) - Notes about attacking Jenkins servers
-* [Accenture/jenkins-attack-framework](https://github.com/Accenture/jenkins-attack-framework) - Project fpr enumerating and attacking Jenkins
+* [Accenture/jenkins-attack-framework](https://github.com/Accenture/jenkins-attack-framework) - Project for enumerating and attacking Jenkins.
 * [https://pentestbook.six2dez.com/enumeration/webservices/jenkins](https://pentestbook.six2dez.com/enumeration/webservices/jenkins)
 * [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jenkins.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/Jenkins.md)
 
@@ -248,8 +250,8 @@ _For training on APIs and API hacking, please see_ [_https://github.com/jassics/
   * [https://github.com/ticarpi/jwt\_tool/wiki/Attack-Methodology](https://github.com/ticarpi/jwt\_tool/wiki/Attack-Methodology)
 * [jwt-hack](https://github.com/hahwul/jwt-hack) - jwt-hack is tool for hacking / security testing to JWT. Supported for En/decoding JWT, Generate payload for JWT attack and very fast cracking(dict/brutefoce)
 * [jwt-pwn](https://github.com/mazen160/jwt-pwn) - Security Testing Scripts for JWT
-* [https://trustfoundry.net/jwt-hacking-101/](https://trustfoundry.net/jwt-hacking-101/https://hackernoon.com/can-timing-attack-be-a-practical-security-threat-on-jwt-signature-ba3c8340dea9https://www.sjoerdlangkemper.nl/2016/09/28/attacking-jwt-authentication/https://medium.com/swlh/hacking-json-web-tokens-jwts-9122efe91e4a)
-* [https://hackernoon.com/can-timing-attack-be-a-practical-security-threat-on-jwt-signature-ba3c8340dea9](https://trustfoundry.net/jwt-hacking-101/https://hackernoon.com/can-timing-attack-be-a-practical-security-threat-on-jwt-signature-ba3c8340dea9https://www.sjoerdlangkemper.nl/2016/09/28/attacking-jwt-authentication/https://medium.com/swlh/hacking-json-web-tokens-jwts-9122efe91e4a)
+* [JWT Hacking 101](https://trustfoundry.net/jwt-hacking-101/)
+* [Can timing attacks be a practical security threat on JWT signatures?](https://hackernoon.com/can-timing-attack-be-a-practical-security-threat-on-jwt-signature-ba3c8340dea9)
 * [https://www.sjoerdlangkemper.nl/2016/09/28/attacking-jwt-authentication/](https://www.sjoerdlangkemper.nl/2016/09/28/attacking-jwt-authentication/)
 * [https://medium.com/swlh/hacking-json-web-tokens-jwts-9122efe91e4a](https://medium.com/swlh/hacking-json-web-tokens-jwts-9122efe91e4a)
 * [https://medium.com/101-writeups/hacking-json-web-token-jwt-233fe6c862e6](https://medium.com/101-writeups/hacking-json-web-token-jwt-233fe6c862e6)
@@ -258,7 +260,7 @@ _For training on APIs and API hacking, please see_ [_https://github.com/jassics/
 
 <details>
 
-<summary>Megento</summary>
+<summary>Magento</summary>
 
 * [magescan](https://github.com/steverobbins/magescan) - Scan a Magento site for information
 * [https://magescan.com/](https://magescan.com/)
@@ -299,6 +301,12 @@ _For training on APIs and API hacking, please see_ [_https://github.com/jassics/
 <details>
 
 <summary>OWA/O365</summary>
+
+Microsoft 365 username enumeration, spraying, and mailbox search tooling is maintained with Password Attacks and Cloud. The links below are kept here only because OWA is a web-facing technology.
+
+{% content-ref url="../../red-offensive/testing-methodology/password-attacks.md" %}
+[password-attacks.md](../../red-offensive/testing-methodology/password-attacks.md)
+{% endcontent-ref %}
 
 * [MailSniper](https://github.com/dafthack/MailSniper) - MailSniper is a penetration testing tool for searching through email in a Microsoft Exchange environment for specific terms (passwords, insider intel, network architecture information, etc.). It can be used as a non-administrative user to search their own email, or by an administrator to search the mailboxes of every user in a domain.
 * [byt3bl33d3r/SprayingToolkit](https://github.com/byt3bl33d3r/SprayingToolkit) - Scripts to make password spraying attacks against Lync/S4B, OWA & O365 a lot quicker, less painful and more efficient

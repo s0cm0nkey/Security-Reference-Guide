@@ -13,8 +13,17 @@
 * [mdk4](https://www.kali.org/tools/mdk4/) - A Wi-Fi testing tool from E7mer, ASPj of k2wrlz, it uses the osdep library from the aircrack-ng project to inject frames on several operating systems.
 * [c41n](https://github.com/MS-WEB-BN/c41n) - Automated rogue access point setup tool.
   * [https://hakin9.org/c41n-an-automated-rogue-access-point-setup-tool/](https://hakin9.org/c41n-an-automated-rogue-access-point-setup-tool/)
-* Training
-  * [https://tryhackme.com/room/wifihacking101](https://tryhackme.com/room/wifihacking101)
+Training rooms are maintained in Training.
+
+{% content-ref url="../training/" %}
+[training](../training/)
+{% endcontent-ref %}
+
+Bettercap wireless and MITM usage overlaps with the network attacks page.
+
+{% content-ref url="post-exploitation/network-attacks-harvesting-mitm.md" %}
+[network-attacks-harvesting-mitm.md](post-exploitation/network-attacks-harvesting-mitm.md)
+{% endcontent-ref %}
 
 ## Bluetooth
 

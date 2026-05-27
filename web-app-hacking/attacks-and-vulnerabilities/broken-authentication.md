@@ -33,7 +33,7 @@
 * Brute forcing passwords
 * Username Enumeration
   * Observe changes in the websites behavior depending on input
-  * Notice changes in Status Codes, Error Messages, and [Response times](https://app.gitbook.com/s/-MQCNQTNhvnXD58Vo8Mf/web-app-hacking/Web\_Applications--Attack\_types--OWASP\_2\_-\_Broken\_Auth\_Attacks--Vuls\_in\_password-based\_login--Username\_enumeration\_via\_different\_responses.html)
+  * Notice changes in status codes, error messages, and [response times](https://portswigger.net/web-security/authentication/password-based)
 
 </details>
 
@@ -51,11 +51,11 @@
     * Create a shortlist of passwords. Quantity should match the lockout attempts
     * Use intruder to try each of the passwords with each candidate
 * Credential Stuffing
-  * Massive dictionary of username/passwrod pairs
+  * Massive dictionary of username/password pairs
   * Account locking does not protect against this
 * User Rate Limiting
   * In this case, making too many login requests within a short period of time causes your IP address to be blocked
-  * Can only be unblocked by: After a certain amount of time, by an admin, by the user after a successful CAPCHA
+  * Can only be unblocked after a certain amount of time, by an admin, or by the user after a successful CAPTCHA.
 * HTTP Basic Auth
   * `Authorization: Basic base64(username:password)`
   * Easy to decrypt

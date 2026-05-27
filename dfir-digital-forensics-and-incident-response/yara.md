@@ -1,5 +1,5 @@
 ---
-description: Virustotal's file scanning engine and ruleset
+description: Pattern-matching rules for malware identification and signature hunting
 ---
 
 # YARA
@@ -96,8 +96,6 @@ When writing rules, look for unique artifacts that are unlikely to change or dis
 *   [Elastic Protection Artifacts](https://github.com/elastic/protections-artifacts)
 *   [Deepfence YARA Rules](https://github.com/deepfence/yara-rules)
 *   [DaysOfYARA](https://github.com/shellcromancer/DaysOfYARA-2023)
-
-_Operator Handbook: YARA - pg. 428_
 
 ![](<../.gitbook/assets/image (16).png>)
 

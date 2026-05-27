@@ -41,7 +41,6 @@ There are different types of tools that can be used for this. While generalized 
 * [https://r2wiki.readthedocs.io/en/latest/](https://r2wiki.readthedocs.io/en/latest/)
 * [https://radare.gitbooks.io/radare2book/content/refcard/intro.html](https://radare.gitbooks.io/radare2book/content/refcard/intro.html)
 * [https://www.megabeets.net/a-journey-into-radare-2-part-1/](https://www.megabeets.net/a-journey-into-radare-2-part-1/)
-* [https://tryhackme.com/room/ccradare2](https://tryhackme.com/room/ccradare2)
 * [https://artik.blue/reversing](https://artik.blue/reversing) - Reverse engineering with radare2 course.
 
 {% embed url="https://www.youtube.com/watch?v=8rLhX_v66O4" %}
@@ -53,18 +52,24 @@ There are different types of tools that can be used for this. While generalized 
   * [https://ghidra-sre.org/CheatSheet.html](https://ghidra-sre.org/CheatSheet.html)
   * [https://www.shogunlab.com/blog/2019/12/22/here-be-dragons-ghidra-1.html](https://www.shogunlab.com/blog/2019/12/22/here-be-dragons-ghidra-1.html)
   * [https://hackaday.io/course/172292-introduction-to-reverse-engineering-with-ghidra](https://hackaday.io/course/172292-introduction-to-reverse-engineering-with-ghidra)
-  * [https://tryhackme.com/room/ccghidra](https://tryhackme.com/room/ccghidra)
-  * _Operator Handbook: Ghidra - pg. 76_
+  * Ghidra training rooms have moved to Training.
 
 {% embed url="https://www.youtube.com/watch?v=d4Pgi5XML8E" %}
 
 * [IDA Pro](https://hex-rays.com/IDA-pro/) - IDA Pro is the industry standard disassembler and debugger, capable of creating execution maps to show binary instructions executed by the processor in a symbolic representation (assembly language).
   * [ Awesome Lists Collection: IDA](https://github.com/xrkk/awesome-ida/blob/master/Readme\_en.md)
 * [x64dbg](https://x64dbg.com/) - An open-source x64/x32 debugger for Windows. It is a modern replacement for the classic OllyDbg and offers a comprehensive plugin system.
+* [OllyDbg](https://www.kali.org/tools/ollydbg/) - Classic 32-bit Windows assembler-level debugger. Largely historical, but still useful for understanding older reversing material.
+* [edb-debugger](https://www.kali.org/tools/edb-debugger/) - Cross-platform x86/x86-64 graphical debugger.
+* [GDB](https://www.kali.org/tools/gdb/) - Command-line debugger for Linux binaries.
+  * [PEDA](https://github.com/longld/peda) - Older GDB extension for exploit development and binary analysis.
+  * [GEF](https://github.com/hugsy/gef) - Modern GDB extension for exploit development and reverse engineering.
+  * [pwndbg](https://github.com/pwndbg/pwndbg) - GDB plugin for exploit development and reverse engineering.
 * [Binary Ninja](https://binary.ninja/) - A modern, commercial reverse engineering platform known for its clean API, high-quality intermediate languages (BNIL), and strong community support.
 * [dnSpy](https://github.com/dnSpy/dnSpy) / [dnSpyEx](https://github.com/dnSpyEx/dnSpy) - A debugger and .NET assembly editor. You can use it to edit and debug assemblies even if you don't have available source code.
 * [Rizin](https://github.com/rizinorg/rizin) - Rizin is a fork of the radare2 reverse engineering framework with a focus on usability, working features and code cleanliness.
-* [Frida](https://frida.re/) - Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers. Can be used offensively for injecting code into running processes.
+* [Frida](https://frida.re/) - Dynamic instrumentation toolkit for developers, reverse engineers, and security researchers. This is dual-use; use it only in authorized labs or investigations.
+* [OpenOCD](https://www.kali.org/tools/openocd/) - Debugging, in-system programming, and boundary-scan testing for embedded devices.
 * [retoolkit](https://github.com/mentebinaria/retoolkit) - Reverse Engineer's Toolkit
 * [alexey-kleymenov/reverse\_engineering\_tools](https://github.com/alexey-kleymenov/reverse\_engineering\_tools) - Various code samples and useful tips and tricks from reverse engineering and malware analysis fields.
 
@@ -72,6 +77,7 @@ There are different types of tools that can be used for this. While generalized 
 
 * [HexEdit.js](https://hexed.it/) – Browser-based hex editing.
 * [Hexinator](https://hexinator.com/) – A robust proprietary Hex Editor.
+* [ImHex](https://github.com/WerWolv/ImHex) - Modern hex editor with a pattern language for reverse engineering.
 * [HxD](https://mh-nexus.de/en/hxd/) - A carefully designed and fast hex editor which, additionally to raw disk editing and modifying of main memory (RAM), handles files of any size.
 
 ## **Binary Analysis and Parsing Tools**
@@ -110,13 +116,8 @@ There are different types of tools that can be used for this. While generalized 
   * [iOS App Reverse Engineering](https://github.com/iosre/iOSAppReverseEngineering) (PDF)
   * [ProgrammingGroundUp.pdf](https://download-mirror.savannah.gnu.org/releases/pgubook/ProgrammingGroundUp-1-0-booksize.pdf)
   * [Reversing-Secrets-Engineering](https://www.amazon.com/Reversing-Secrets-Engineering-Eldad-Eilam/dp/0764574817)
-* RE Training Courses
-  * [https://guyinatuxedo.github.io/?mc\_cid=d676bd61c6\&mc\_eid=c18a7def31](https://guyinatuxedo.github.io/?mc\_cid=d676bd61c6\&mc\_eid=c18a7def31) - Nightmare
-  * [https://malwareunicorn.org/workshops/re101.html#0](https://malwareunicorn.org/workshops/re101.html#0)
-  * [https://www.begin.re/](https://www.begin.re/) - Reverse Engineering for Beginners
-  * [https://beginners.re/main.html](https://beginners.re/main.html) - Understanding Assembly Language
-  * [https://github.com/mytechnotalent/Reverse-Engineering](https://github.com/mytechnotalent/Reverse-Engineering) - A FREE comprehensive reverse engineering tutorial covering x86, x64, 32-bit ARM & 64-bit ARM architectures.
-  * [https://fumalwareanalysis.blogspot.com/p/malware-analysis-tutorials-reverse.html](https://fumalwareanalysis.blogspot.com/p/malware-analysis-tutorials-reverse.html)
-  * [https://tryhackme.com/room/introtox8664](https://tryhackme.com/room/introtox8664)
-  * [https://tryhackme.com/room/basicmalwarere](https://tryhackme.com/room/basicmalwarere)
-  * [https://tryhackme.com/room/reverseengineering](https://tryhackme.com/room/reverseengineering)
+* RE training courses and TryHackMe rooms have moved to Training.
+
+{% content-ref url="../training/" %}
+[training](../training/)
+{% endcontent-ref %}

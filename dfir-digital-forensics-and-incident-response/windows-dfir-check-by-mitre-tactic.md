@@ -67,6 +67,8 @@ reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCo
 
 ## T1197 BITS Jobs <a href="#t1197-bits-jobs" id="t1197-bits-jobs"></a>
 
+`bitsadmin` is deprecated, but it is still useful during DFIR because older systems and attacker tradecraft may leave BITS artifacts behind.
+
 ```
 bitsadmin /list /allusers /verbose
 Get-WinEvent -FilterHashtable @{ LogName='Microsoft-Windows-Bits-Client/Operational'; Id='59'} | FL TimeCreated,Message
@@ -306,7 +308,7 @@ $dll = gps | Where {$_.Modules -like '*{DLLNAME}*' } | Select Modules;$dll.Modul
 
 Note: A legitimate clean executable can be used to run malicious DLLs based on how the software searches for them.
 
-More information on [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-search-order)
+More information on [Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-search-order)
 
 ```
 reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\KnownDLLs"
@@ -453,7 +455,17 @@ Get-ChildItem -path registry::HKLM\SOFTWARE\Wow6432node\Microsoft\Office\*\Addin
 Get-ChildItem -path registry::HKLM\SOFTWARE\Wow6432node\Microsoft\Office\*\Addins\*
 Get-ChildItem -path "C:\Users\*\AppData\Roaming\Microsoft\Templates\*" -erroraction SilentlyContinue
 Get-ChildItem -path "C:\Users\*\AppData\Roaming\Microsoft\Excel\XLSTART\*" -erroraction SilentlyContinue
-Get-Ch03 OS Credential Dumping <a href="#t1003-os-credential-dumping" id="t1003-os-credential-dumping"></a>
+Get-ChildItem -path C:\ -recurse -include Startup -ea 0
+ls 'C:\Program Files\Microsoft Office\root\*\XLSTART\*'
+ls 'C:\Program Files\Microsoft Office\root\*\STARTUP\*'
+reg query HKCU\Software\Microsoft\Office\<Outlook Version>\Outlook\WebView\Inbox
+reg query HKCU\Software\Microsoft\Office\<Outlook Version>\Outlook\Security
+reg query HKCU\Software\Microsoft\Office\<Outlook Version>\Outlook\Today\UserDefinedUrl
+reg query HKCU\Software\Microsoft\Office\<Outlook Version>\Outlook\WebView\Calendar\URL
+Get-WinEvent -FilterHashtable @{ LogName='Microsoft Office Alerts'; Id='300';} | FL TimeCreated,Message
+```
+
+## T1003 OS Credential Dumping <a href="#t1003-os-credential-dumping" id="t1003-os-credential-dumping"></a>
 
 Adversaries may dump credentials from the operating system to obtain account login and credential material.
 
@@ -464,23 +476,13 @@ reg query "HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest" /v "
 reg query "HKLM\SYSTEM\CurrentControlSet\Control\Lsa" /v "RunAsPPL"
 ```
 
-## T10ildItem -path C:\ -recurse -include Startup -ea 0
-ls 'C:\Program Files\Microsoft Office\root\*\XLSTART\*'
-ls 'C:\Program Files\Microsoft Office\root\*\STARTUP\*'
-reg query HKCU\Software\Microsoft\Office\<Outlook Version>\Outlook\WebView\Inbox
-reg query HKCU\Software\Microsoft\Office\<Outlook Version>\Outlook\Security
-reg query HKCU\Software\Microsoft\Office\<Outlook Version>\Outlook\Today\UserDefinedUrl
-reg query HKCU\Software\Microsoft\Office\<Outlook Version>\Outlook\WebView\Calendar\URL
-Get-WinEvent -FilterHashtable @{ LogName='Microsoft Office Alerts'; Id='300';} | FL TimeCreated,Message
-```
-
 ## T1574.009 Path Interception <a href="#t1034-path-interception" id="t1034-path-interception"></a>
 
 ```
 N/A
 ```
 
-## T1547.003 Port Monitors <a href="#t1013-port-monitors" id="t1013-port-monitors"></a>
+## T1547.010 Port Monitors <a href="#t1547010-port-monitors" id="t1547010-port-monitors"></a>
 
 ```
 reg query "HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors" /s /v "Driver"
@@ -494,8 +496,6 @@ ls C:\Windows\System32\WindowsPowerShell\v1.0\Microsoft.*Profile.ps1
 ls C:\Windows\System32\WindowsPowerShell\v1.0\Microsoft.*Profile.ps1
 gci -path "C:\Users\*\Documents\PowerShell\Profile.ps1"
 gci -path "C:\Users\*\Documents\PowerShell\Microsoft.*Profile.ps1"
-
-N/A
 ```
 
 ## T1547.001 Registry Run Keys / Startup Folder <a href="#t1060-registry-run-keys--startup-folder" id="t1060-registry-run-keys--startup-folder"></a>
@@ -648,7 +648,7 @@ Function Get-WmiNamespace ($Path = 'root')
 		Get-WmiNamespace -Path $FullPath
 	}
 }
-Get-WMINamespace -Recurse
+Get-WmiNamespace
 ```
 
 ### **Query WMI Persistence**

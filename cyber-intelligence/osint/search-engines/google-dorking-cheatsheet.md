@@ -14,14 +14,11 @@ Google Dorking (also known as Google Hacking) is a technique that uses advanced 
   * [https://github.com/sushiwushi/bug-bounty-dorks](https://github.com/sushiwushi/bug-bounty-dorks)
   * [https://github.com/hackingbharat/bug-bounty-dorks-archive/blob/main/bbdorks](https://github.com/hackingbharat/bug-bounty-dorks-archive/blob/main/bbdorks)
   * [https://github.com/Vinod-1122/bug-bounty-dorks/blob/main/Dorks.txt](https://github.com/Vinod-1122/bug-bounty-dorks/blob/main/Dorks.txt)
-* Backlinks
-  * [https://github.com/alfazzafashion/Backlink-dorks](https://github.com/alfazzafashion/Backlink-dorks)
-  * [https://www.techywebtech.com/2021/08/backlink-dorks.html](https://www.techywebtech.com/2021/08/backlink-dorks.html)
-  * [https://www.blackhatworld.com/seo/get-backlinks-yourself-1150-dorks-for-forum-hunting.380843/](https://www.blackhatworld.com/seo/get-backlinks-yourself-1150-dorks-for-forum-hunting.380843/)
-  * CMS Dorks
-    * Wordpress [https://pastebin.com/A9dsmgHQ](https://pastebin.com/A9dsmgHQ)
-    * Magento [https://pastebin.com/k75Y2QhF](https://pastebin.com/k75Y2QhF)
-    * Joomla [https://pastebin.com/vVQFTzVC](https://pastebin.com/vVQFTzVC)
+* CMS and SQL injection dork collections are useful for web application testing. Keep exploitation context in the web application and offensive testing sections.
+
+{% content-ref url="../../../web-app-hacking/" %}
+[web-app-hacking](../../../web-app-hacking/)
+{% endcontent-ref %}
 
 ## Google Dorking Cheatsheet
 

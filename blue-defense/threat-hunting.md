@@ -2,8 +2,6 @@
 
 ## **Intro**
 
-![](https://gblobscdn.gitbook.com/assets%2F-MQCNQTNhvnXD58Vo8Mf%2F-MS-KB8awA05FAZQytVw%2F-MS-KvDnsqWVg5ExVPRO%2Fimage.png?alt=media\&token=d9850058-0275-4b4c-ab63-92a82092b6d0)![](https://gblobscdn.gitbook.com/assets%2F-MQCNQTNhvnXD58Vo8Mf%2F-MS-KB8awA05FAZQytVw%2F-MS-Kx3vVxBJowwth4L5%2Fimage.png?alt=media\&token=2e0300fe-81d9-4e51-83cb-7fab2fb2aec7)
-
 Threat hunting doesn’t have to be complex, but it isn't for everyone. Knowing how to begin and end a hunt is more important than knowing how to carry out a hunt. If you need a place to start, look at trends in the threat landscape and focus on threats that you do not have automated alerts/detections for. Hunting is a creative process that rewards those who take chances. Finish with something — anything actionable — so long as it provides value.
 
 ## Guides and Reference
@@ -19,7 +17,6 @@ Threat hunting doesn’t have to be complex, but it isn't for everyone. Knowing 
   * [awesome-threat-detection/The-Hunters-Handbook.pdf](https://github.com/0x4D31/awesome-threat-detection/blob/master/docs/The-Hunters-Handbook.pdf)
 * [ACM's Threat Hunting Labs](https://activecm.github.io/threat-hunting-labs/) - These are a series of labs that cover different types of analysis that can be done on network data when threat hunting.
 * [A Simple Hunting Maturity Model | Enterprise Detection & Response](https://detect-respond.blogspot.com/2015/10/a-simple-hunting-maturity-model.html)&#x20;
-* [HowToHunt](https://github.com/KathanP19/HowToHunt) - Tutorials and Things to Do while Hunting Vulnerability.&#x20;
 * [ThreatHunting Home](https://www.threathunting.net/) - Links and Blog on popular threat hunting procedures
 * [Tool Analysis Result Sheet](https://jpcertcc.github.io/ToolAnalysisResultSheet/) - JP-CERT analysis on detecting the use of multiple popular tools within a network environment.
 * [Microsoft's Threat Hunting Survival Guide](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE5aC6y?culture=en-us\&country=US)
@@ -73,8 +70,7 @@ Threat hunting doesn’t have to be complex, but it isn't for everyone. Knowing 
 * [Threat Hunting in Azure with AC-Hunter - Active Countermeasures](https://www.activecountermeasures.com/threat-hunting-in-azure-with-ac-hunter/)
 * [ThreatHunting/Microsoft Sentinel (formerly Azure Sentinel) at master · GossiTheDog/ThreatHunting](https://github.com/GossiTheDog/ThreatHunting/tree/master/AzureSentinel)
 * [GitHub - darkquasar/AzureHunter: A Cloud Forensics Powershell module to run threat hunting playbooks on data from Azure and O365](https://github.com/darkquasar/AzureHunter)
-* [Microsoft 365 Defender Hunting Queries](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries)
-* [Microsoft Defender for Endpoint (formerly ATP) Advanced Hunting Schema Reference](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)
+* [Microsoft Defender Advanced Hunting Schema Reference](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-schema-tables)
 * [Seven ways to spot business email compromise Office 365](https://expel.io/blog/seven-ways-to-spot-business-email-compromise-office-365/)
 * [Hunting Queries Detection Rules](https://github.com/Bert-JanP/Hunting-Queries-Detection-Rules)
 
@@ -98,7 +94,6 @@ Threat hunting doesn’t have to be complex, but it isn't for everyone. Knowing 
 
 {% tabs %}
 {% tab title="OS/VM " %}
-* [Commando VM](https://github.com/mandiant/commando-vm) - Complete Mandiant Offensive VM (Commando VM), a fully customizable Windows-based security distribution for penetration testing and red teaming.
 * [RedHunt-OS](https://github.com/redhuntlabs/RedHunt-OS) - Virtual Machine for Adversary Emulation and Threat Hunting by [RedHunt Labs](https://redhuntlabs.com/)
 {% endtab %}
 
@@ -116,7 +111,11 @@ Threat hunting doesn’t have to be complex, but it isn't for everyone. Knowing 
 {% tab title="DNS" %}
 * [freq.py](https://github.com/sans-blue-team/freq.py) - Mark Baggett's tool for detecting randomness using NLP techniques rather than pure entropy calculations. Uses character pair frequency analysis to determine the likelihood of tested strings of characters occurring.&#x20;
 * [domain\_stats](https://github.com/MarkBaggett/domain\_stats) - Domain\_stats is a log enhancement utility that is intended to help you find threats in your environment. It will identify the following possible threats in your environment.
-* [dnstwist](https://github.com/elceef/dnstwist) -  Domain name permutation engine for detecting homograph phishing attacks, typo squatting, and brand impersonation
+* Domain permutation and typo-squatting tools such as dnstwist are covered in Domain OSINT.
+
+{% content-ref url="../cyber-intelligence/osint/domain.md" %}
+[domain.md](../cyber-intelligence/osint/domain.md)
+{% endcontent-ref %}
 
 
 {% endtab %}
@@ -127,14 +126,14 @@ Threat hunting doesn’t have to be complex, but it isn't for everyone. Knowing 
 * [LogonTracer](https://github.com/JPCERTCC/LogonTracer) - LogonTracer is a tool to investigate malicious logon by visualizing and analyzing Windows Active Directory event logs.
 * [APT-Hunter](https://github.com/ahmedkhlief/APT-Hunter) - Threat Hunting tool for windows event logs which made by purple team mindset to provide detect APT movements hidden in the sea of windows event logs to decrease the time to uncover suspicious activity
 * [CyberChef](https://gchq.github.io/CyberChef/) - The "Cyber Swiss Army Knife" - a web app for encryption, encoding, compression and data analysis.
-* [Mihari ](https://github.com/ninoseki/mihari)-  A framework for continuous OSINT based threat hunting
 * [Oriana](https://github.com/mvelazc0/Oriana) - A threat hunting tool that leverages a subset of Windows events to build relationships, calculate totals and run analytics. The results are presented in a Web layer to help defenders identify outliers and suspicious behavior on corporate environments.
 * [Zircolite](https://github.com/wagga40/Zircolite) - A standalone SIGMA-based detection tool for EVTX.
 * [chainsaw](https://github.com/WithSecureLabs/chainsaw) - Rapidly Search and Hunt through Windows Event Logs
-* [THOR Lite](https://www.nextron-systems.com/thor-lite/) - fast and flexible multi-platform IOC and [YARA](http://virustotal.github.io/yara/) scanner
-  * [LOKI](https://github.com/Neo23x0/LOKI) - Simple IOC and Incident Response Scanner
-  * [Signature Base](https://github.com/Neo23x0/signature-base)
-  * [Valhalla](https://www.nextron-systems.com/valhalla/)
+* For THOR Lite, Loki, signature-base, Valhalla, and YARA scanning, use DFIR.
+
+{% content-ref url="../dfir-digital-forensics-and-incident-response/" %}
+[dfir-digital-forensics-and-incident-response](../dfir-digital-forensics-and-incident-response/)
+{% endcontent-ref %}
 
 
 {% endtab %}

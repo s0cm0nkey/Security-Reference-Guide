@@ -100,6 +100,9 @@ Plink.exe&#x20;
 * \#sudo proxychains nmap --top-ports=20 -sT -Pn 192.168.1.110
 * [How to set up ProxyChains - Stay Anonymous](lateral-movement.md#linux-ssh-tunneling)
 * [How to set up ProxyChains - Change IP](https://youtu.be/FtFTh-KVjsA)
+* [Kalitorify](https://github.com/brainfuckSec/kalitorify) - Kali-focused transparent proxying through Tor for authorized lab/pentest routing.
+* [multitor](https://github.com/trimstray/multitor) - Creates multiple Tor instances with load balancing. Useful for lab routing tests, not a substitute for OPSEC planning.
+* [CrowdStrike/Tortilla](https://github.com/CrowdStrike/Tortilla) - Historical Windows Tor routing tool; useful context for older workflows but verify platform support before use.
 {% endtab %}
 
 {% tab title="Other Tools" %}
@@ -154,7 +157,7 @@ Plink.exe&#x20;
 * [Performing Pass-the-hash Attacks With Mimikatz](https://blog.stealthbits.com/passing-the-hash-with-mimikatz)
 * [How to Pass-the-Hash with Mimikatz](https://blog.cobaltstrike.com/2015/05/21/how-to-pass-the-hash-with-mimikatz/)
 * [Pass-the-Hash Is Dead: Long Live LocalAccountTokenFilterPolicy](https://www.harmj0y.net/blog/redteaming/pass-the-hash-is-dead-long-live-localaccounttokenfilterpolicy/)
-* _PTFM: Metasploit/Emipre Pass-the-hash - pg. 52_
+* _PTFM: Metasploit/Empire Pass-the-hash - pg. 52_
 {% endtab %}
 
 {% tab title="SSH Tunnel and Port Fwd" %}
@@ -163,7 +166,7 @@ Plink.exe&#x20;
   * \# ssh -N -L \[bind\_address:]port:host:hostport \[username@address]&#x20;
   * \# sudo ssh -N -L 0.0.0.0:445:192.168.1.110:445 student@10.11.0.128&#x20;
 * SSH Remote port forwarding&#x20;
-  * \# cat /root/port\_forwarding\_and\_tunneling/ssh\_remote\_port\_forwarding.sh ◇# ssh -N -R \[bind\_address:]port:host:hostport \[username@address]&#x20;
+  * \# ssh -N -R \[bind\_address:]port:host:hostport \[username@address]&#x20;
   * &#x20;ssh -N -R 10.11.0.4:2221:127.0.0.1:3306 kali@10.11.0.4&#x20;
 * SSH Dynamic Port forwarding&#x20;
   * \# ssh -N -D : \<username>@&#x20;

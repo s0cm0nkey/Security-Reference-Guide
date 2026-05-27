@@ -4,17 +4,18 @@ description: Am I leet yet?
 
 # OSCP
 
-The OSCP has become the big cert goal for all aspiring hackers. Beyond being filled with content, it is a practical exam, which means no multiple choice. You will be dropped into a network where you have to compromise 5 boxes, one of which will require a buffer overflow attack to compromise. The big kicker is that you cannot use any auto exploitation tools, and you can only use Metasploit once.&#x20;
+The OSCP has become a major certification goal for aspiring penetration testers. It is a practical exam, so always read the current OffSec exam guide before planning your prep: box counts, point values, bonus points, tooling restrictions, and buffer-overflow expectations have changed over time.
 
 ## **Official Documentation** &#x20;
 
 As always, read the documentation. There are tons of helpful hints and suggestions in the official docs. It also clearly defines the rules of engagement for the exam. Do not use a tool that will invalidate your exam. They give you everything you need in the official course material, use it and stay within bounds.
 
-* [https://www.offensive-security.com/offsec/oscp-exam-structure/](https://www.offensive-security.com/offsec/oscp-exam-structure/)
-* [https://www.offensive-security.com/metasploit-unleashed/](https://www.offensive-security.com/metasploit-unleashed/)
+* [https://www.offsec.com/courses/pen-200/](https://www.offsec.com/courses/pen-200/)
+* [https://www.offsec.com/offsec/oscp-exam-structure/](https://www.offsec.com/offsec/oscp-exam-structure/)
+* [https://www.offsec.com/metasploit-unleashed/](https://www.offsec.com/metasploit-unleashed/)
 * [https://help.offensive-security.com/hc/en-us](https://help.offensive-security.com/hc/en-us)
 * [https://help.offensive-security.com/hc/en-us/articles/360050473812](https://help.offensive-security.com/hc/en-us/articles/360050473812)
-* [https://www.offensive-security.com/documentation/penetration-testing-with-kali.pdf](https://www.offensive-security.com/documentation/penetration-testing-with-kali.pdf)
+* [https://www.offsec.com/documentation/penetration-testing-with-kali.pdf](https://www.offsec.com/documentation/penetration-testing-with-kali.pdf)
 * [https://forums.offensive-security.com/](https://forums.offensive-security.com/)
 
 ## **Tools and Resources**
@@ -73,8 +74,7 @@ There are plenty of write ups and training classes out there for the OSCP but th
 These are boxes that are similar to those that you will find on the exam. They will be focusing around certain tasks like buffer overflow, or exploiting a certain service. Beware that some of them are retired HTB boxes that will require a subscription to get access to.
 
 * TJNull's List - [https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=1839402159](https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=1839402159)
-* HackTheBox List -[https://docs.google.com/spreadsheets/d/1PVH3athOru-rHirsy30R1r8692R6J44W7uuHTrquqnk/edit#gid=1638926857](https://docs.google.com/spreadsheets/d/1PVH3athOru-rHirsy30R1r8692R6J44W7uuHTrquqnk/edit#gid=1638926857)[https://hyd3.home.blog/2020/06/22/oscp-prep-hackthebox-list/](https://hyd3.home.blog/2020/06/22/oscp-prep-hackthebox-list/)
+* HackTheBox List - [spreadsheet](https://docs.google.com/spreadsheets/d/1PVH3athOru-rHirsy30R1r8692R6J44W7uuHTrquqnk/edit#gid=1638926857)
+  * [Hyd3 OSCP prep HTB list](https://hyd3.home.blog/2020/06/22/oscp-prep-hackthebox-list/)
 * NoobSec List - [https://docs.google.com/spreadsheets/d/1PVH3athOru-rHirsy30R1r8692R6J44W7uuHTrquqnk/edit#gid=1638926857](https://docs.google.com/spreadsheets/d/1PVH3athOru-rHirsy30R1r8692R6J44W7uuHTrquqnk/edit#gid=1638926857)
-* OSCP-like Boxes -[https://nopresearcher.github.io/OSCP-Like-Boxes/](https://nopresearcher.github.io/OSCP-Like-Boxes/)
-
-****
+* OSCP-like Boxes - [https://nopresearcher.github.io/OSCP-Like-Boxes/](https://nopresearcher.github.io/OSCP-Like-Boxes/)

@@ -10,8 +10,8 @@ There are far too many command options to list here. However there is a handy re
 * &#x20;Open file you do not have permission for
   * In the folder, view owner, permissions and UUID
     * \# ls -la
-  * Add new user
-    * \# sudo add user pwn
+  * Add a new user
+    * \# sudo adduser pwn
   * Change the UUID of the new user to that of the user that created the file
     * \# sudo sed -i -e ‘s/\[pwnUUID]/\[targetUUID]/g’ /etc/passwd
   * Check the new UUID
@@ -47,7 +47,8 @@ There are far too many command options to list here. However there is a handy re
 
 ## **WMIC**
 
-* Impacket scripts
-  * [wmiquery.py:](https://github.com/SecureAuthCorp/impacket/blob/impacket\_0\_9\_21/examples/wmiquery.py) It allows to issue WQL queries and get description of WMI objects at the target system (e.g. select name from win32\_account).
-  * [wmipersist.py:](https://github.com/SecureAuthCorp/impacket/blob/impacket\_0\_9\_21/examples/wmipersist.py) This script creates/removes a WMI Event Consumer/Filter and link between both to execute Visual Basic based on the WQL filter or timer spec
+* Impacket scripts are maintained in the Offensive Toolbox Impacket section.
+  {% content-ref url="./" %}
+  [Offensive Toolbox](./)
+  {% endcontent-ref %}
 * _RTFM: WMIC Commands - pg. 20_

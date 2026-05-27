@@ -141,7 +141,6 @@ Paste sites like Pastebin have recently restricted their search capabilities. Pa
 * [https://leaked.site/](https://leaked.site/) - Leaked database search with extensive coverage. Requires paid subscription.
 * [Snusbase](https://snusbase.com/) - Breach database search with frequent updates and large collection. Paid subscription required.
 * [LeakCheck.io](https://leakcheck.io/) - Breach database search service. Offers both API access and web interface. Paid plans available.
-* [BreachForums](https://breached.to/) - Community forum for breach discussions and data sharing. Domain may change due to law enforcement actions. Exercise caution.
 * [Intelligence X](https://intelx.io/) - Search engine and data archive with breach data, darknet sources, pastes, and historical internet data. Offers free searches with limitations and paid plans.
 * [Pwndb](http://pwndb2am4tzkvold.onion/) - Tor-based breach database search (requires Tor browser)
 * [h8mail](https://github.com/khast3x/h8mail) - Email OSINT and breach hunting tool that queries multiple breach data sources via API
@@ -249,8 +248,11 @@ You can manually parse these by user or subject but there are some handy tools t
 
 ## **Training**
 
-* [https://tryhackme.com/room/geolocatingimages](https://tryhackme.com/room/geolocatingimages)
-* [https://tryhackme.com/room/searchlightosint](https://tryhackme.com/room/searchlightosint)
+Hands-on OSINT labs have been moved to the Training section.
+
+{% content-ref url="../../training/" %}
+[training](../../training/)
+{% endcontent-ref %}
 
 ---
 
@@ -281,6 +283,7 @@ The following tools are no longer maintained, have been shut down, or have bette
 <summary>Deprecated Breach Search Tools</summary>
 
 * [WeLeakInfo.to](https://weleakinfo.to/) - Seized by law enforcement in 2020. Was a major breach database search site.
+* [BreachForums at breached.to](https://breached.to/) - Seized/disrupted and no longer a stable source. Breach forums frequently rebrand or move domains; verify current legal and safety implications before researching any successor.
 * [GhostProject.fr](https://ghostproject.fr/) - Free breach database search (Site frequently unavailable/unreliable)
 * [MyPwd.io](https://mypwd.io/) - Password leak monitoring (Service status unreliable)
 * [pwd query](https://pwdquery.xyz/) - Password breach checking (Site frequently down)

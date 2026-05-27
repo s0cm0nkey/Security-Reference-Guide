@@ -1,107 +1,94 @@
 # IP Address
 
-## Overview
+Use this page for passive IP investigation: registration data, ASN ownership, BGP/routing context, geolocation, anonymization checks, and related infrastructure pivots. Active port scanning belongs in Red Offensive; reputation and blacklist checks belong in Threat Data.
 
-When researching IP addresses, understanding the context of your investigation is critical. The tools and methods you use will vary depending on whether you're conducting offensive or defensive operations.
+{% content-ref url="../threat-data.md" %}
+[threat-data.md](../threat-data.md)
+{% endcontent-ref %}
 
-**Offensive Security & Reconnaissance:**
-For offensive security, threat hunting, and attack surface mapping, focus on current registration data and associated artifacts such as:
-- Hosted domains
-- Autonomous System Numbers (ASN)
-- Network infrastructure
-- Related services and ports
-
-**Defensive Security Operations:**
-For defensive operations (blue team), prioritize historical activity data and behavioral patterns. These defensive tools are covered in the threat research section. This page focuses primarily on offensive intelligence gathering and reconnaissance.
+{% content-ref url="../../red-offensive/scanning-active-recon/" %}
+[scanning-active-recon](../../red-offensive/scanning-active-recon/)
+{% endcontent-ref %}
 
 ## IP.html Tool
 
-IP.html is a convenient automation tool created by Michael Bazzel that streamlines initial IP address reconnaissance. The tool automatically populates multiple search queries across various intelligence platforms, allowing you to quickly gather comprehensive information about your target.
+IP.html is a Michael Bazzell helper that opens multiple IP research sources from one input.
 
-> **Important Note:** Some platforms included in this tool are no longer available or have been deprecated (see Deprecated Tools section below). Always verify tool functionality before relying on results.
+{% hint style="info" %}
+Some entries in older IP.html workflows may be stale or active recon oriented. Treat port scanning as active testing, and verify each external service before relying on it.
+{% endhint %}
 
-**Included search platforms (currently active):**
-- **Search Engines:** Bing
-- **Network Analysis:** Reverse IP, Port Scan, TraceRoute
-- **Registration Data:** IP Whois, Who.IS IP
-- **Threat Intelligence:** Shodan, ZoomEye
-- **Public Records:** "That's Them", Dehashed (requires authentication)
-- **Miscellaneous:** Locate IP, Torrents, UltraTools IP
+Current useful lookup categories include:
+
+* **Search engines** - Bing and other indexed references.
+* **Registration data** - IP WHOIS and RDAP.
+* **Network ownership** - ASN, routing, reverse IP, and infrastructure pivots.
+* **Cyber search** - Shodan, ZoomEye, and similar indexed scan data.
+* **Public records** - Identity or breach pivots where legally appropriate.
 
 {% file src="../../.gitbook/assets/IP (1).html" %}
 
-
-
 ## WHOIS vs. RDAP
 
-WHOIS has been the traditional protocol for gathering registration data on IP addresses and domains. However, it lacks a standardized structure for organizing and maintaining registration data, which can lead to inconsistent results.
+WHOIS is the older protocol for IP and domain registration lookups. It is useful, but response formatting varies between registries.
 
-**RDAP (Registration Data Access Protocol)** addresses these limitations. Standardized in 2015 (RFCs 7480-7485), RDAP provides a structured, modern alternative to WHOIS with consistent data formatting and better security features. RDAP is gradually replacing WHOIS as the preferred protocol for registration data queries.
+RDAP (Registration Data Access Protocol) is the modern structured replacement. The RFC 7480 series was published in 2015, and RDAP adoption has continued across registries since then.
 
-**Resources:**
-* RDAP lookup tool: [https://client.rdap.org](https://client.rdap.org)
-* RDAP documentation: [https://www.icann.org/rdap](https://www.icann.org/rdap)
+* [RDAP Lookup](https://client.rdap.org)
+* [ICANN RDAP](https://www.icann.org/rdap)
 
-## ASN (Autonomous System Number) Lookup
+## ASN Lookup
 
-Understanding the Autonomous System Number (ASN) associated with an IP address is crucial for mapping network ownership, identifying infrastructure relationships, and conducting thorough reconnaissance. ASNs are assigned to networks and internet service providers, providing insight into who controls the routing of specific IP ranges.
+Autonomous System Numbers (ASNs) help identify who controls routed IP space and how infrastructure relates to providers, peers, and prefixes.
 
-**ASN Lookup Tools:**
-* [https://bgp.he.net/](https://bgp.he.net/) - Hurricane Electric BGP Toolkit - Comprehensive ASN information, prefixes, and peering data
-* [https://asnlookup.com/](https://asnlookup.com/) - Quick ASN lookup with network prefix information
-* [https://stat.ripe.net/](https://stat.ripe.net/) - RIPE Stat - Detailed statistics and data about IP addresses, ASNs, and prefixes
-* [https://mxtoolbox.com/asn.aspx](https://mxtoolbox.com/asn.aspx) - MXToolbox ASN Lookup - ASN information with network details
-* [https://ipinfo.io/](https://ipinfo.io/) - IP address data including ASN, geolocation, and company information
-* [https://www.ultratools.com/tools/asnInfo](https://www.ultratools.com/tools/asnInfo) - UltraTools ASN Information lookup
+* [Hurricane Electric BGP Toolkit](https://bgp.he.net/) - ASN, prefix, peering, WHOIS, and DNS context.
+* [ASNLookup](https://asnlookup.com/) - Quick ASN and prefix lookup.
+* [RIPE Stat](https://stat.ripe.net/) - IP, ASN, and routing statistics.
+* [MXToolbox ASN Lookup](https://mxtoolbox.com/asn.aspx) - ASN lookup with network details.
+* [ipinfo.io](https://ipinfo.io/) - ASN, geolocation, organization, and IP metadata.
+* [UltraTools ASN Info](https://www.ultratools.com/tools/asnInfo)
 
-## BGP & Routing Information
+## BGP and Routing Information
 
-Border Gateway Protocol (BGP) is the routing protocol of the internet. Analyzing BGP data provides visibility into how networks are interconnected, routing paths, and network relationships. This information is valuable for understanding internet infrastructure, identifying upstream providers, and detecting routing anomalies.
-
-**BGP Analysis Tools:**
-* [https://bgpview.io/](https://bgpview.io/) - BGP routing information, ASN details, peer relationships, and prefix announcements
-* [https://www.ripe.net/analyse/internet-measurements/routing-information-service-ris](https://www.ripe.net/analyse/internet-measurements/routing-information-service-ris) - RIPE RIS - Real-time BGP routing data collection
-* [https://www.routeviews.org/](https://www.routeviews.org/) - University of Oregon Route Views Project - BGP routing table archives and analysis
-* [https://bgp.tools/](https://bgp.tools/) - Modern BGP analysis and monitoring platform
-* [https://www.peeringdb.com/](https://www.peeringdb.com/) - Database of networks and interconnection data for peering coordination
+* [BGPView](https://bgpview.io/) - ASN details, prefixes, peers, and routing data.
+* [RIPE RIS](https://www.ripe.net/analyse/internet-measurements/routing-information-service-ris) - Real-time BGP routing data.
+* [Route Views](https://www.routeviews.org/) - BGP route archives.
+* [bgp.tools](https://bgp.tools/) - Modern BGP and ASN analysis.
+* [PeeringDB](https://www.peeringdb.com/) - Peering and interconnection data.
 
 ## IP Anonymization Detection
 
-Determining whether an IP address is associated with anonymization services is crucial for threat intelligence and investigation work.
+These tools help identify Tor exits, VPN/proxy services, and other anonymization infrastructure. Cross-reference results before making enforcement decisions.
 
-### Tor Node Detection
+* [ExoneraTor](https://metrics.torproject.org/exonerator.html) - Check whether an IP was a Tor relay on a specific date.
+* [SEON IP Analysis](https://seon.io/intelligence-tool/#ip-analysis-module) - IP risk, Tor, VPN, proxy, and blacklist context.
+* [IPQualityScore VPN IP Check](https://www.ipqualityscore.com/vpn-ip-address-check) - VPN and proxy detection.
+* [I Know What You Download](https://iknowwhatyoudownload.com) - Torrent activity associated with an IP address.
 
-**ExoneraTor** - Check if an IP address was a Tor relay on a specific date:
-* [https://metrics.torproject.org/exonerator.html](https://metrics.torproject.org/exonerator.html)
+Tor and VPN OPSEC guidance lives in the privacy section.
 
-**SEON Intelligence Tool** - Comprehensive IP analysis including Tor detection, VPN, proxy, and blacklist checks:
-* [https://seon.io/intelligence-tool/#ip-analysis-module](https://seon.io/intelligence-tool/#ip-analysis-module)
-
-### VPN Detection
-
-**IPQualityScore** - Identify VPN exit nodes and proxy services:
-* [https://www.ipqualityscore.com/vpn-ip-address-check](https://www.ipqualityscore.com/vpn-ip-address-check)
-
-### Torrent Activity
-
-**I Know What You Download** - Search for torrent activity associated with an IP address:
-* [https://iknowwhatyoudownload.com](https://iknowwhatyoudownload.com)
+{% content-ref url="../../grey-privacy-tor-opsec/" %}
+[grey-privacy-tor-opsec](../../grey-privacy-tor-opsec/)
+{% endcontent-ref %}
 
 ## IP Geolocation
 
-IP [geolocation](https://www.iplocation.net/geolocation) can be determined through various methods including HTML5 API, cellular signal triangulation, and IP address databases. The following services use different geolocation databases and methodologies to approximate the physical location of an IP address.
+IP geolocation is approximate. Results can reflect ISP registration, VPN/proxy exit location, cloud region, or mobile carrier infrastructure rather than a user's physical location.
 
-> **Important Note:** Always cross-reference multiple geolocation tools for accuracy. Results may show the registrant's location rather than the actual IP location. Geographic precision varies based on the IP type (data center, residential, mobile) and the quality of the geolocation database.
-
-**Geolocation Tools:**
-* [https://www.iplocation.net/](https://www.iplocation.net/) - Comprehensive IP location and network information
-* [https://www.ip2location.com/](https://www.ip2location.com/) - IP geolocation with ISP and domain data
-* [https://ipapi.com/](https://ipapi.com/) - Real-time IP geolocation with comprehensive location and ISP data
-* [https://ipstack.com/](https://ipstack.com/) - IP geolocation API with detailed location information
-* [https://www.maxmind.com/en/geoip-demo](https://www.maxmind.com/en/geoip-demo) - MaxMind GeoIP2 lookup (industry-standard geolocation database)
+* [IPLocation.net](https://www.iplocation.net/)
+* [IP2Location](https://www.ip2location.com/)
+* [ipapi](https://ipapi.com/)
+* [ipstack](https://ipstack.com/)
+* [MaxMind GeoIP Demo](https://www.maxmind.com/en/geoip-demo)
 
 ## Additional IP Intelligence Tools
 
-* [https://focsec.com/](https://focsec.com/) - Comprehensive IP reputation check for VPN, proxy, Tor, and malicious bot detection
+* [Focsec](https://focsec.com/) - IP reputation API for VPN, proxy, Tor, and bot detection.
 
+## Deprecated or Unreliable Tools
 
+These are preserved for historical reference or because they may appear in older IP.html workflows.
+
+* **Google cached pages** - Google removed the classic cached-page feature from search results.
+* **Legacy public port-scan widgets** - Treat as active testing and use current authorized scanning workflows instead.
+* **Unmaintained IP reputation mirrors** - Prefer current providers listed on Threat Data.

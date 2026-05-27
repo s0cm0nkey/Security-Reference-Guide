@@ -31,9 +31,15 @@
       * AND
       * NOT Logon Type = 7 (device unlock)
     * AND
-      * EventID 4624 OR EventID 4624
+      * EventID 4624
       * AND
       * Logon Type = 7 (device unlock) NOT within the past 24 hours
+
+For Windows Event ID references used by this page, see:
+
+{% content-ref url="windows-event-id-logging-list.md" %}
+[windows-event-id-logging-list.md](windows-event-id-logging-list.md)
+{% endcontent-ref %}
 
 **Anonymous Impersonation level**
 

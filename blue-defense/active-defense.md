@@ -36,6 +36,8 @@ Honeypots are a cornerstone of Active Defense. Beyond their value in gathering i
 Tarpits are designed to slow down or stall automated attacks and scanners. Unlike honeypots which monitor, tarpits actively consume attacker resources (time) by keeping connections open indefinitely or responding very slowly.
 
 * [**Endlessh**](https://github.com/skeeto/endlessh) - An SSH tarpit that sends an endless, random SSH banner. It can trap SSH clients and scripted attacks, keeping them occupied for hours or days without using significant server resources.
+* [**Portspoof**](https://github.com/drk1wi/portspoof) - Confuses port scanners by returning false port information.
+  * [Black Hills Infosec: How to use Portspoof](https://www.blackhillsinfosec.com/how-to-use-portspoof-cyber-deception/)
 {% endtab %}
 
 {% tab title="Honeyports" %}
@@ -56,6 +58,7 @@ Honey-assets act as "tripwires." These are files, objects, accounts, or other re
 * [**Canary Tokens**](http://canarytokens.org/) - Deceptive objects that beacon back to a server when activated. Examples include a Word document that alerts when opened or an HTML snippet that calls home when a page is accessed.
   * [Reference: ADHD Project - CanaryTokens](https://adhdproject.github.io/#!Tools/Attribution/CanaryTokens.md)
   * [Video: Canary Tokens Overview](https://www.youtube.com/watch?v=mDnaEmpO1C4)
+* [**Deploy-Deception**](https://github.com/samratashok/Deploy-Deception) - PowerShell module for deploying Active Directory decoy objects.
 * [**CryptoLocked**](https://github.com/PrometheanInfoSec/cryptolocked-ng) - An anti-ransomware toolkit designed to detect and impede ransomware activity.
   * *Note: Verify current maintenance status before deployment.*
 {% endtab %}
@@ -69,6 +72,7 @@ Active Response involves taking automated, direct action against a detected thre
 
 * [**Fail2Ban**](https://github.com/fail2ban/fail2ban) - A widely-used intrusion prevention software that scans log files (e.g., `/var/log/auth.log`) and bans IPs that show malicious signs like too many password failures.
 * [**CrowdSec**](https://github.com/crowdsecurity/crowdsec) - A modern collaborative security automation engine. It analyzes behaviors, responds to attacks (by blocking IPs, presenting captchas, etc.), and shares threat intelligence across the community.
+  * [cs-php-bouncer](https://github.com/crowdsecurity/cs-php-bouncer) - CrowdSec PHP bouncer using the `auto_prepend` mechanism.
 * [**PSAD**](https://github.com/mrash/psad) (Port Scan Attack Detection) - Analyzes iptables log messages to detect, alert, and (optionally) block port scans and other suspect traffic.
 
 ### **Attribution**

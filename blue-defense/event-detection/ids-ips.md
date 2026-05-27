@@ -1,5 +1,7 @@
 # IDS/IPS
 
+Use this page as the Blue section's canonical home for Snort, Suricata, Zeek, Security Onion, IDS/IPS rule syntax, and network security monitoring platforms.
+
 ## **Intrusion Detection Systems**
 
 Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS) are critical components of network defense. They analyze network traffic and logs to deny or alert on potential threats based on defined rule sets. Open-source IDS solutions are widely respected for their detection capabilities, often rivaling premium products due to active community support and publicly shared detection rules.
@@ -8,9 +10,9 @@ Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS) are cri
 
 Suricata is a high-performance, open-source network analysis and threat detection software. It combines intrusion detection (IDS), intrusion prevention (IPS), network security monitoring (NSM), and PCAP processing. Suricata is capable of identifying, stopping, and assessing sophisticated attacks. It is widely adopted and often integrated into other security products.
 
-* Can collect logs with syslog, [Unified2](https://www.snort.org/faq/readme-unified2), flat files, or the preferred method of [EVE](https://suricata.readthedocs.io/en/suricata-6.0.0/output/eve/eve-json-output.html)
+* Can collect logs with syslog, [Unified2](https://www.snort.org/faq/readme-unified2), flat files, or the preferred method of [EVE](https://docs.suricata.io/en/latest/output/eve/eve-json-output.html)
   * EVE is a highly configurable JSON format that can support multiple files.
-* [https://suricata.readthedocs.io/en/suricata-6.0.3/](https://suricata.readthedocs.io/en/suricata-6.0.3/)
+* [Suricata User Guide](https://docs.suricata.io/en/latest/)
 * [Evebox Suricata event viewer](https://github.com/jasonish/evebox) - EveBox is a web based Suricata "eve" event viewer for Elastic Search.
 * [suricata-language-server](https://github.com/StamusNetworks/suricata-language-server) - An implementation of the Language Server Protocol for Suricata signatures. It adds syntax check, hints and auto-completion to your preferred editor once it is configured.
 * [https://rules.emergingthreats.net/open/suricata/rules/](https://rules.emergingthreats.net/open/suricata/rules/)
@@ -36,7 +38,7 @@ Snort is a widely deployed open-source network intrusion prevention system (NIPS
 
 ### **Writing a SNORT Rule**
 
-* [Snort Manual: Rules](http://manual-snort-org.s3-website-us-east-1.amazonaws.com/node29.html)
+* [Snort Rule Docs](https://docs.snort.org/rules/)
 * [Understanding and Configuring Snort Rules (Rapid7)](https://blog.rapid7.com/2016/12/09/understanding-and-configuring-snort-rules/)
 
 A standard rule is broken down as follows:

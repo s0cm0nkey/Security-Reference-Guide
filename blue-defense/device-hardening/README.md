@@ -23,20 +23,15 @@ The best way to understand device hardening and how to perform it is to follow [
 ## Hardening Tools
 
 * [Microsoft Attack Surface Analyzer](https://github.com/Microsoft/AttackSurfaceAnalyzer) - Attack Surface Analyzer is a [Microsoft](https://github.com/microsoft/) developed open source security tool that analyzes the attack surface of a target system and reports on potential security vulnerabilities introduced during the installation of software or system misconfiguration.
-* [Portspoof](https://github.com/drk1wi/portspoof) - A tool for confusing port scanners by returning false port information.
-  * [Black Hills Infosec: How to use Portspoof](https://www.blackhillsinfosec.com/how-to-use-portspoof-cyber-deception/)
 * [HardenTools](https://github.com/securitywithoutborders/hardentools) - A collection of simple utilities designed to disable a number of "features" exposed by operating systems (Microsoft Windows, for now), and primary consumer applications.
 * [O&O ShutUp10++](https://www.oo-software.com/en/shutup10) - Free anti-spy and telemetry logging tool for Windows 10 and 11.
 * [Google's Browser Info Checker](https://toolbox.googleapps.com/apps/browserinfo/) - Checks what info you might be sharing to others through your browser. Requires Javascript.
 * [Google's MXChecker](https://toolbox.googleapps.com/apps/checkmx/) - Checks for common MX domain security settings.
-*   [cs-php-bouncer](https://github.com/crowdsecurity/cs-php-bouncer) - This bouncer leverages the PHP `auto_prepend` mechanism.
-
-    New/unknown IP are checked against crowdsec API, and if request should be blocked, a **403** or a captcha can be returned to the user, and put in cache.
 * [dev-sec](https://github.com/dev-sec/) - Security + DevOps: Automatic Server Hardening.
 * [grapheneX](https://github.com/grapheneX/grapheneX) - Automated System Hardening Framework.
 * [Legit-Labs/legitify](https://github.com/Legit-Labs/legitify) - Detect and remediate misconfigurations and security risks across all your GitHub assets.
 * [ScubaGear](https://github.com/cisagov/ScubaGear) - Automation to assess the state of your M365 tenant against CISA's baselines.
-Cloud & Container Hardening
+### Cloud & Container Hardening
 
 * [Prowler](https://github.com/prowler-cloud/prowler) - An Open Source security tool to perform AWS, Azure, and Google Cloud security best practices assessments, audits, incident response, continuous monitoring, hardening, and forensics readiness.
 * [ScoutSuite](https://github.com/nccgroup/ScoutSuite) - An open source multi-cloud security-auditing tool, which enables security posture assessment of cloud environments.
@@ -59,8 +54,6 @@ Cloud & Container Hardening
 * [TechNet: Security Hardening Tips and Recommendations](https://social.technet.microsoft.com/wiki/contents/articles/18931.security-hardening-tips-and-recommendations.aspx)
 * [DoD Cyber Exchange: STIGs](https://public.cyber.mil/stigs/) - The Security Technical Implementation Guides (STIGs) are the configuration standards for United States Department of Defense (DoD) Information Assurance (IA) and IA-enabled devices/systems.
 * [Developing a Secure Baseline](https://adsecurity.org/?p=3299)
-* [OWASP Cryptographic Storage Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html) - Guide and Reference for best standards for encrypting stored data.
-* [OWASP Authorization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
 * [NSA's Secure Windows Baseline](https://github.com/nsacyber/Windows-Secure-Host-Baseline)
 * [Top 20 Linux Security Tips](https://www.cyberciti.biz/tips/linux-security.html) - Classic guide for securing Linux servers.
 * [NSA Network Infrastructure Security Guidance (2022)](https://media.defense.gov/2022/Mar/01/2002947139/-1/-1/0/CTR_NSA_NETWORK_INFRASTRUCTURE_SECURITY_GUIDANCE_20220301.PDF)
@@ -95,8 +88,16 @@ Cloud & Container Hardening
 *   [OSChameleon](https://github.com/mushorg/oschameleon) - **(Archived/Legacy)** OS Fingerprint Obfuscation for Linux. Requires Python 2.7.
     *   [ADHD Project - OsChameleon](https://adhdproject.github.io/#!Tools/Annoyance/OsChameleon.md)
 *   [atc-mitigation](https://github.com/atc-project/atc-mitigation) - **(Deprecated)** Analytics for combatting threats based on MITRE ATT&CK. No longer actively maintained.
-*   [mod_evasive](https://github.com/jzdziarski/mod_evasive) - **(Legacy)** Apache module for DoS/Brute Force protection. Not updated in many years; consider modern WAF solutions.
-*   [ModSecurity-apache](https://github.com/SpiderLabs/ModSecurity-apache) - **(Legacy)** Traditional ModSecurity 2.x for Apache. For modern deployments, consider ModSecurity v3 (libmodsecurity).
+
+Active deception tools such as Portspoof and CrowdSec bouncers live in Active Defense. Web application firewall resources such as ModSecurity and mod_evasive live in Web App Hacking.
+
+{% content-ref url="../active-defense.md" %}
+[active-defense.md](../active-defense.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../web-app-hacking/web-technologies/web-application-firewall.md" %}
+[web-application-firewall.md](../../web-app-hacking/web-technologies/web-application-firewall.md)
+{% endcontent-ref %}
 
 ## **Hardening Commands**
 

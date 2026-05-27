@@ -100,6 +100,12 @@ tasklist /svc | findstr "svchost"
 
 **Note: This script uses the VirusTotal API v3. It requires an API Key.**
 
+VirusTotal and other reputation services are maintained in Threat Data.
+
+{% content-ref url="../cyber-intelligence/threat-data.md" %}
+[threat-data.md](../cyber-intelligence/threat-data.md)
+{% endcontent-ref %}
+
 ```powershell
 $APIKey = "[VTAPIKey]"
 $Header = @{ "x-apikey" = $APIKey }
@@ -206,7 +212,7 @@ Select-String -Path "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\
 
 #### Master File Table <a href="#master-file-table" id="master-file-table"></a>
 
-The Master File Table (MFT) is an incredibly important artifact; however, this can only be read or obtained using low-level disk reading. This contains an entry for every file or directory on the filesystem including metadata about these files, and may provide evidence on files which have been removed (MFT entries marked as ‘free’). More information can be found on [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/fileio/master-file-table).
+The Master File Table (MFT) is an incredibly important artifact; however, this can only be read or obtained using low-level disk reading. This contains an entry for every file or directory on the filesystem including metadata about these files, and may provide evidence on files which have been removed (MFT entries marked as ‘free’). More information can be found on [Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/fileio/master-file-table).
 
 ### Determine Timestomping <a href="#determine-timestomping" id="determine-timestomping"></a>
 
@@ -369,7 +375,7 @@ Get-CimInstance -Namespace root\subscription -ClassName __EventConsumer
 
 ### Investigate WMI Usage <a href="#investigate-wmi-usage" id="investigate-wmi-usage"></a>
 
-Note: Requires [Strings](https://docs.microsoft.com/en-us/sysinternals/downloads/strings)
+Note: Requires [Strings](https://learn.microsoft.com/en-us/sysinternals/downloads/strings)
 
 ```
 strings -q C:\windows\system32\wbem\repository\objects.data
@@ -448,7 +454,7 @@ get-item C:\Windows\system32\drivers\srv.sys | FL VersionInfo
 get-hotfix -id KB<111111>
 ```
 
-More information on [ACE Strings](https://docs.microsoft.com/en-us/windows/win32/secauthz/ace-strings) and the level of access they can provide.
+More information on [ACE Strings](https://learn.microsoft.com/en-us/windows/win32/secauthz/ace-strings) and the level of access they can provide.
 
 ## Lateral Movement Checks
 

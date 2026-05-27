@@ -17,7 +17,7 @@
 3. [https://sethsec.blogspot.com/2017/05/pentest-home-lab-0x1-building-your-ad.html](https://sethsec.blogspot.com/2017/05/pentest-home-lab-0x1-building-your-ad.html)
 4. [https://www.fatrodzianko.com/2019/08/05/creating-an-active-directory-lab-in-aws/](https://www.fatrodzianko.com/2019/08/05/creating-an-active-directory-lab-in-aws/)
 5. [Conda's AD Lab Video](https://www.youtube.com/watch?v=Bm3mihQNGI4\&list=PLDrNMcTNhhYqZj7WZt2GfNhBDqBnhW6AT\&index=2)
-6. [https://blog.spookysec.net//ad-lab-2/](https://blog.spookysec.net/ad-lab-2/) - Building your own AD Lab: Part 2 (2022)
+6. [https://blog.spookysec.net/ad-lab-2/](https://blog.spookysec.net/ad-lab-2/) - Building your own AD Lab: Part 2 (2022)
 
 ## Blue Team Lab Tools
 
@@ -33,7 +33,7 @@
 * [PowerShellClassLab](https://github.com/jaredhaight/PowerShellClassLab) - This is a set of Azure Resource Manager Templates that generates an Active Directory lab consisting of a Domain Controller, two Windows servers and a Linux server.
 * [SysmonSimulator](https://github.com/ScarredMonk/SysmonSimulator) - Sysmon event simulation utility which can be used to simulate the attacks to generate the Sysmon Event logs for testing the EDR detections and correlation rules by Blue teams.
 * [https://www.microsoft.com/en-us/evalcenter/evaluate-lab-kit](https://www.microsoft.com/en-us/evalcenter/evaluate-lab-kit) - The Windows 10 and Office 365 Deployment Lab Kit is designed to help you plan, test, and validate modern desktops running Windows 10 Enterprise and Microsoft 365 Enterprise apps, managed by Enterprise Mobility + Security. The lab kit is free to download and uses evaluation software.
-  * [https://docs.microsoft.com/en-us/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab?view=o365-worldwide](https://docs.microsoft.com/en-us/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab?view=o365-worldwide)
+  * [https://learn.microsoft.com/en-us/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab?view=o365-worldwide](https://learn.microsoft.com/en-us/microsoft-365/enterprise/modern-desktop-deployment-and-management-lab?view=o365-worldwide)
 
 ## Practice&#x20;
 

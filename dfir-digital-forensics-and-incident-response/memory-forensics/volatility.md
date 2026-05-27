@@ -18,7 +18,7 @@ Volatility is a memory forensics framework for extracting and analyzing data fro
 * [Evolve](https://github.com/JamesHabben/evolve): Volatility Web UI (for Volatility 2)
 * [volatility-autoruns](https://github.com/tomchop/volatility-autoruns/) - Automates most of the tasks you would need to run when trying to find out where malware is persisting from. (for Volatility 2)
 * [Memory Forensics and Analysis Using Volatility (InfoSec Institute)](https://resources.infosecinstitute.com/topic/memory-forensics-and-analysis-using-volatility/)
-* _Operator Handbook: Volatility - pg. 315_
+* Volatility command references change between Volatility 2 and Volatility 3; verify plugin names against the version you are using.
 
 ## Volatility 3.x Basics
 

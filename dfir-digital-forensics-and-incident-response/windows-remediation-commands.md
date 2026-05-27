@@ -50,31 +50,12 @@ taskkill /PID [PID] /T /F
 Stop-Process -Name "malware" -Force
 Stop-Process -Id [PID] -Force
 ```
+Memory triage commands for injected threads and shellcode extraction are maintained in Memory Forensics. Use them to confirm what is running before terminating processes or deleting artifacts.
 
+{% content-ref url="memory-forensics/" %}
+[memory-forensics](memory-forensics/)
+{% endcontent-ref %}
 
-
-**Locate Possible Shellcode within process via Injected Thread**
-
-*Requires `Get-InjectedThread.ps1` from [Jared Atkinson](https://gist.github.com/jaredcatkinson/23905d34537ce4b5b1818c3e6405c1d2).*
-
-```
-Import-Module .\Get-InjectedThread.ps1
-Get-InjectedThread
-```
-
-**Obtain Possible Shellcode within process as Hex**
-
-```
-(Get-InjectedThread|Select -exp Bytes|ForEach-Object ToString X2) -join ''
-(Get-InjectedThread|? {$_.ThreadId -match '{PID}'}|Select -exp Bytes|ForEach-Object ToString X2) -join ''
-```
-
-**Obtain Possible Shellcode within process as Hex (Escaped)**
-
-```
-(Get-InjectedThread|Select -exp Bytes|ForEach-Object ToString X2) -join '\x'
-(Get-InjectedThread|? {$_.ThreadId -match '{PID}'}|Select -exp Bytes|ForEach-Object ToString X2) -join '\x'
-```
 
 ### **Remove ACE entries for “everyone”**
 

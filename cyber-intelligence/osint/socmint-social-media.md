@@ -17,14 +17,16 @@
 * [https://findmyfbid.in/](https://findmyfbid.in/) - Multi-platform toolkit for Facebook, Twitter, Instagram, Reddit, and YouTube. Features include finding user IDs, searching Reddit comments, and calculating YouTube channel earnings.
 * [Orion](https://github.com/Araekiel/orion) - Open-source search engine for social networking websites.
 * [Hashatit.com](https://www.hashatit.com/) - Hashtag search engine supporting Twitter, Instagram, Facebook, YouTube, and Pinterest.
-* [https://github.com/p1ngul1n0/blackbird](https://github.com/p1ngul1n0/blackbird) - OSINT tool for searching and discovering social media accounts by username across multiple platforms.
-* [Sherlock](https://github.com/sherlock-project/sherlock) - Hunt down social media accounts by username across 400+ social networks. Fast, efficient, and actively maintained.
-* [WhatsMyName](https://whatsmyname.app/) - Web-based username enumeration tool that checks for username availability across 600+ platforms.
-* [Maigret](https://github.com/soxoj/maigret) - Advanced username search tool that collects detailed information from 3000+ sites, including profile data and account creation dates.
 * [https://www.crowdtangle.com/features](https://www.crowdtangle.com/features) - **DEPRECATED:** CrowdTangle was shut down by Meta in August 2024. Replaced by Meta Content Library (requires academic/research access).
 * [Social-Analyzer](https://github.com/qeeqbox/social-analyzer) - API, CLI, and web app for analyzing and finding a person's profile across 1000+ social media/websites.
 
 </details>
+
+General username enumeration tools such as Sherlock, WhatsMyName, Maigret, and Blackbird are maintained on the Username/Email page.
+
+{% content-ref url="username-email.md" %}
+[username-email.md](username-email.md)
+{% endcontent-ref %}
 
 {% file src="../../.gitbook/assets/Communities.html" %}
 
@@ -343,6 +345,12 @@
   * [Bellingcat's Online Investigation Toolkit](https://bit.ly/bcattools) - Curated OSINT resource list
 
 </details>
+
+For Tor, VPN, privacy, and persona OPSEC guidance, use the privacy section.
+
+{% content-ref url="../../grey-privacy-tor-opsec/" %}
+[grey-privacy-tor-opsec](../../grey-privacy-tor-opsec/)
+{% endcontent-ref %}
 
 <details>
 

@@ -1,6 +1,8 @@
 # Web App Vulnerabilities
 
-## Broke**n Authentication**
+This page is the hub for common web application vulnerability classes. Detailed pages are linked where they already exist; shorter entries stay inline until they grow enough to deserve their own page.
+
+## Broken Authentication
 
 {% content-ref url="broken-authentication.md" %}
 [broken-authentication.md](broken-authentication.md)
@@ -36,8 +38,6 @@
 * [https://systemweakness.com/give-me-a-browser-ill-give-you-a-shell-de19811defa0?gi=a6af0aee993e](https://systemweakness.com/give-me-a-browser-ill-give-you-a-shell-de19811defa0?gi=a6af0aee993e)
 * _Advanced Penetration Testing: Browser Pivoting - pg. 23_
 
-__
-
 </details>
 
 ## Business logic flaws
@@ -56,7 +56,7 @@ __
 * [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20304.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20304.md)
 * [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20Captcha.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20Captcha.md)
 * [https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20Rate%20Limit.md](https://github.com/daffainfo/AllAboutBugBounty/blob/master/Bypass/Bypass%20Rate%20Limit.md)
-* [byp4xx](https://github.com/lobuhi/byp4xx) - Pyhhton script for HTTP 40X responses bypassing. Features: Verb tampering, headers, #bugbountytips tricks and 2454 User-Agents.
+* [byp4xx](https://github.com/lobuhi/byp4xx) - Python script for HTTP 40X response bypass testing. Features include verb tampering, header tricks, and user-agent rotation.
 * [403bypasser](https://github.com/yunemse48/403bypasser) - automates the techniques used to circumvent access control restrictions on target pages.
 * [bypass-403](https://github.com/iamj0ker/bypass-403) - A simple script just made for self use for bypassing 403
 
@@ -78,10 +78,10 @@ __
 
 <details>
 
-<summary>CORS MIsconfig</summary>
+<summary>CORS Misconfig</summary>
 
 * [Corsy](https://github.com/s0md3v/Corsy) - CORS Misconfiguration Scanner
-* [CORScanner](https://github.com/chenjj/CORScanner) - Fast CORS misconfiguration vulnerabilities scanner🍻
+* [CORScanner](https://github.com/chenjj/CORScanner) - Fast CORS misconfiguration scanner.
 * [CORStest](https://github.com/RUB-NDS/CORStest) - A simple CORS misconfiguration scanner
 * [CorsMe](https://github.com/Shivangx01b/CorsMe) - Cross Origin Resource Sharing MisConfiguration Scanner
 * [of-CORS](https://github.com/trufflesecurity/of-CORS) - [Truffle Security's](https://trufflesecurity.com/) tool suite for identifying and exploiting CORS misconfigurations on the internal networks of bug bounty targets using typosquatting.
@@ -110,7 +110,7 @@ __
 [csrf.md](csrf.md)
 {% endcontent-ref %}
 
-## **Carriage Return and Line Feed Injection**
+## **Carriage Return and Line Feed (CRLF) Injection**
 
 <details>
 
@@ -132,7 +132,7 @@ __
 
 * [http://georgemauer.net/2017/10/07/csv-injection.html](http://georgemauer.net/2017/10/07/csv-injection.html)
 
-## Dependancy Confusion
+## Dependency Confusion
 
 * [https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610](https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610)
 
@@ -142,7 +142,7 @@ __
 [deserialization.md](deserialization.md)
 {% endcontent-ref %}
 
-## **Directory Transversal**
+## **Directory Traversal**
 
 Directory traversal (also known as file path traversal) is a web security vulnerability that allows an attacker to read arbitrary files on the server that is running an application. This might include application code and data, credentials for back-end systems, and sensitive operating system files.
 
@@ -185,7 +185,7 @@ Directory traversal (also known as file path traversal) is a web security vulner
 
 ## **File Inclusion Vulnerabilities**
 
-File inclusion vulnerabilities allow an attacker to include a file into the applications running code. **** In order to actually exploit a file inclusion vulnerability, we must be able to not only execute code, but also to write our shell payload somewhere.
+File inclusion vulnerabilities allow an attacker to include a file into the application's running code. In order to actually exploit a file inclusion vulnerability, we must be able to not only execute code, but also to write our shell payload somewhere.
 
 {% tabs %}
 {% tab title="Identification" %}
@@ -208,13 +208,13 @@ File inclusion vulnerabilities allow an attacker to include a file into the appl
 
 {% tab title="Reference" %}
 * [LFI CheatSheet](https://highon.coffee/blog/lfi-cheat-sheet/)
-* [File Inclusion Vulnerability Guide ](https://www.offensive-security.com/metasploit-unleashed/file-inclusion-vulnerabilities/)
+* [File Inclusion Vulnerability Guide](https://www.offsec.com/metasploit-unleashed/file-inclusion-vulnerabilities/)
 * [https://xapax.github.io/security/#attacking\_web\_applications/local\_file\_inclusion/](https://xapax.github.io/security/#attacking\_web\_applications/local\_file\_inclusion/)
 * [https://xapax.github.io/security/#attacking\_web\_applications/remote\_file\_inclusion/](https://xapax.github.io/security/#attacking\_web\_applications/remote\_file\_inclusion/)
 * [https://pentestbook.six2dez.com/enumeration/web/lfi-rfi](https://pentestbook.six2dez.com/enumeration/web/lfi-rfi)
 * [Comprehensive Guide on Local File Inclusion (LFI)](https://www.hackingarticles.in/comprehensive-guide-to-local-file-inclusion/)
 * [Comprehensive Guide to Remote File Inclusion (RFI)](https://www.hackingarticles.in/comprehensive-guide-to-remote-file-inclusion-rfi/)
-* [https://tryhackme.com/room/lfibasics](https://tryhackme.com/room/lfibasics)
+* [TryHackMe LFI Basics](https://tryhackme.com/room/lfibasics) - Training resource; canonical training links are maintained in Training.
 {% endtab %}
 {% endtabs %}
 
@@ -307,15 +307,15 @@ File inclusion vulnerabilities allow an attacker to include a file into the appl
 ## Security Misconfigurations
 
 Security misconfigurations include:\
-• Poorly configured permissions on cloud services, like S3 buckets\
-• Having unnecessary features enabled, like services, pages, accounts or privileges\
-• Default accounts with unchanged passwords\
-• Error messages that are overly detailed and allow an attacker to find out more about the system\
-• Not using [HTTP security headers](https://owasp.org/www-project-secure-headers/), or revealing too much detail in the Server: HTTP header
+* Poorly configured permissions on cloud services, like S3 buckets.
+* Unnecessary features enabled, like services, pages, accounts, or privileges.
+* Default accounts with unchanged passwords.
+* Error messages that are overly detailed and expose system information.
+* Missing [HTTP security headers](https://owasp.org/www-project-secure-headers/) or overly detailed `Server` headers.
 
 ## Sidejacking
 
-* [hamster-sidejack](https://www.kali.org/tools/hamster-sidejack/) - Hamster is tool or “sidejacking”. It acts as a proxy server that replaces your cookies with session cookies stolen from somebody else, allowing you to hijack their sessions.
+* [hamster-sidejack](https://www.kali.org/tools/hamster-sidejack/) - Legacy sidejacking tool. Kept as historical context; modern session protections and HTTPS make the original workflow much less broadly applicable.
 
 ## **SQL Injection**
 
@@ -350,16 +350,14 @@ Security misconfigurations include:\
 * [TPLmap](https://github.com/epinna/tplmap) - Server-Side Template Injection and Code Injection Detection and Exploitation Tool
 * [https://www.blackhat.com/docs/us-15/materials/us-15-Kettle-Server-Side-Template-Injection-RCE-For-The-Modern-Web-App-wp.pdf](https://www.blackhat.com/docs/us-15/materials/us-15-Kettle-Server-Side-Template-Injection-RCE-For-The-Modern-Web-App-wp.pdf)
 * [https://akenofu.gitbook.io/hackallthethings/web-applications/attacks/ssti](https://akenofu.gitbook.io/hackallthethings/web-applications/attacks/ssti)
-* [https://owasp.org/www-community/attacks/Server\_Side\_Request\_Forgery](https://owasp.org/www-community/attacks/Server\_Side\_Request\_Forgery)
+* [https://portswigger.net/web-security/server-side-template-injection](https://portswigger.net/web-security/server-side-template-injection)
 * [https://github.com/ambionics/symfony-exploits](https://github.com/ambionics/symfony-exploits)
 * [https://medium.com/server-side-template-injection/server-side-template-injection-faf88d0c7f34](https://medium.com/server-side-template-injection/server-side-template-injection-faf88d0c7f34)
-* [https://tryhackme.com/room/learnssti](https://tryhackme.com/room/learnssti)
+* [TryHackMe SSTI](https://tryhackme.com/room/learnssti) - Training resource; canonical training links are maintained in Training.
 * _Template Injection - Bug Bounty Hunting Essentials, pg.189_
 *
 
     <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
-
-__
 
 </details>
 
@@ -376,7 +374,7 @@ __
 
 ## **Web Man-In-The-Middle**
 
-* [Evilginx2](https://github.com/kgretzky/evilginx2) - Standalone man-in-the-middle attack framework used for phishing login credentials along with session cookies, allowing for the bypass of 2-factor authentication
+* [Evilginx2](https://github.com/kgretzky/evilginx2) - Standalone web phishing/MITM framework used to capture credentials and session cookies. This belongs primarily with social engineering and MITM workflows, not routine web-app testing.
 * [MITM Proxy](https://mitmproxy.org/) - Mitmproxy is your swiss-army knife for debugging, testing, privacy measurements, and penetration testing. It can be used to intercept, inspect, modify and replay web traffic such as HTTP/1, HTTP/2, WebSockets, or any other SSL/TLS-protected protocols.
 
 ## **Web Sockets**

@@ -147,6 +147,8 @@ ls ~/Library/Application Support/Firefox/Profiles/********.default/prefs.js
 
 #### Safari Internet History <a href="#safari-internet-history" id="safari-internet-history"></a>
 
+Some Safari artifacts below are legacy plist/cache locations. Modern Safari versions may store history and cache data in SQLite databases or changed container paths, so verify paths against the macOS version under investigation.
+
 ```
 cat ~/Library/Safari/Downloads.plist
 cat ~/Library/Safari/History.plist 

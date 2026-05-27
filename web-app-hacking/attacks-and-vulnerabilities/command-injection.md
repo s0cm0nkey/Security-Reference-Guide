@@ -25,15 +25,15 @@ We know that active command injection occurs when you can see the response from 
 
 ## **Tools and Resources**
 
-* [Commix](https://github.com/commixproject/commix) - Commix is an open source penetration testing tool that automates the detection and exploitation of [command injection](https://www.owasp.org/index.php/Command\_Injection) vulnerabilities.
+* [Commix](https://github.com/commixproject/commix) - Commix is an open source penetration testing tool that automates the detection and exploitation of [command injection](https://owasp.org/www-community/attacks/Command_Injection) vulnerabilities.
   * [https://www.kali.org/tools/commix/](https://www.kali.org/tools/commix/)
   * [Command Injection to Meterpreter using Commix](https://www.hackingarticles.in/command-injection-meterpreter-using-commix/)
   * [Exploit Command Injection Vulnerability with Commix and Netcat](https://www.hackingarticles.in/exploit-command-injection-vulnearbility-commix-netcat/)
   * [Powershell Injection Attacks using Commix and Magic Unicorn](https://www.hackingarticles.in/powershell-injection-attacks-using-commix-magic-unicorn/)
   * [Commix-Command Injection Exploiter (Beginner’s Guide)](https://www.hackingarticles.in/commix-command-injection-exploiter-beginners-guide/)
-* [OWASP Guide to Command Injection](https://owasp.org/www-community/attacks/Command\_Injection)&#x20;
+* [OWASP Guide to Command Injection](https://owasp.org/www-community/attacks/Command_Injection)
 * [Comprehensive Guide on OS Command Injection](https://www.hackingarticles.in/comprehensive-guide-on-os-command-injection/)
 * [payloadbox/command-injection-payload-list](https://github.com/payloadbox/command-injection-payload-list)
 * [PayloadsAllTheThings/CommandInjection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Command%20Injection)
 * [https://cheatsheetseries.owasp.org/cheatsheets/OS\_Command\_Injection\_Defense\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/OS\_Command\_Injection\_Defense\_Cheat\_Sheet.html)
-* [https://tryhackme.com/room/injection](https://tryhackme.com/room/injection)
+* [TryHackMe Injection](https://tryhackme.com/room/injection) - Training resource; canonical training links are maintained in Training.

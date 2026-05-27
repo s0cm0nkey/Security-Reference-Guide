@@ -1,10 +1,16 @@
 ---
-description: Common Security Events, how to analyze them, and the tools to do so.
+description: Common security events, log interpretation, and analyst techniques
 ---
 
-# Event and Log analysis
+# Event and Log Analysis
 
-## Types of data we work with
+Use this page for understanding alert data, event data, raw logs, and the analysis techniques defenders use during investigations. Logging architecture, collection design, and source onboarding live in the Logging and Security Architecture section.
+
+{% content-ref url="../security-logging/" %}
+[security-logging](../security-logging/)
+{% endcontent-ref %}
+
+## Types of Data
 
 Security professionals typically work with parsed and normalized versions of log information within a SIEM. This structured data enables field-specific searching, the creation of use cases that map across various log sources, and provides a deeper level of detail than what appears in a standard alert.
 
@@ -12,10 +18,9 @@ Security professionals typically work with parsed and normalized versions of log
 
 When investigating an event, alert, or incident, there are generally three levels of data to consider:
 
-
-* Alert data - These are essentially searches made in your data to look for specific matches. If working out of an alert queue like most security analysts, this is what you will get first. The alert should show you the search logic as well as the data points that are matched in the search.
-* Event data - These are the event logs that your searches and use cases work off of. They are typically normalized for processing by your SIEM, parsed so you know which fields you need, and possibly filtered to limit the scope of the data you might find relevant.
-* Log data - This is the raw, unedited, un-normalized data, before it is processed by another tool. Generally if you are working with an EDR platform, application logs, or system logs, these will be giving you raw log data.
+* **Alert data** - Searches, rules, or detections that matched specific conditions in your data. If you work from an alert queue, this is usually what you see first. Good alerts should show the search logic and the data points that matched.
+* **Event data** - The normalized records that searches and detection use cases operate on. Event data is usually parsed into fields and may be filtered or enriched by a SIEM.
+* **Log data** - Raw, unedited, un-normalized records before another tool processes them. EDR platforms, applications, operating systems, and network devices often expose this level of detail.
 
 Alert data and Event data can vary depending on the platform in use. Log data and its format are specific to the type of log being generated.
 
@@ -31,10 +36,15 @@ While tools provide alerts, analysts often need to hunt through data manually. H
 
 ## **Understanding Log results and their contents**
 
-Logging formats will change depending on the log, log source, application, and manufacturer. Most are dense with information and can be difficult to parse without any reference. Below are some collections of cheatsheets and tool outputs that can help you make sense of the various log types you might encounter during an investigation.
+Logging formats change depending on the source, application, operating system, and vendor. Most are dense with information and can be difficult to parse without a reference. The resources below help explain fields, event IDs, tool outputs, and artifacts you may encounter during an investigation.
+
+For SIEM search languages and detection rule syntax, use the Query Languages page.
+
+{% content-ref url="query-languages.md" %}
+[query-languages.md](query-languages.md)
+{% endcontent-ref %}
 
 * Platform Logs
-  * [SigmaHQ](https://github.com/SigmaHQ/sigma) - The "Snort" for log events. Sigma is a generic signature format that allows you to describe detection methods once and convert them for use in Splunk, Elastic, Microsoft Sentinel, and others.
   * [What2Log](https://what2log.com/platformselection/) - What2Log is an amazing platform that breaks down the different logs and data points found within those logs, and gives fantastic guidance on what exactly they mean.
   * [Cheat-Sheets — Malware Archaeology](https://www.malwarearchaeology.com/cheat-sheets) - Collection of logging cheatsheets for various windows log types.
   * [Linux Logs Explained - Full overview of Linux Log Files - Plesk](https://www.plesk.com/blog/featured/linux-logs-explained/) - Breakdown of the files and paths of the various logs created by Linux

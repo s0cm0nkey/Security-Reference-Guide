@@ -32,6 +32,10 @@
 {% tab title="Attack Phases" %}
 * **OSINT** - The research performed on the target using Open-Source Intelligence tools. This phase does not interact with the target in anyway.
   * _Social Engineering: Christopher Hadnagy - pg.17_
+  * OSINT tools and methodology are maintained under Cyber Intelligence.
+    {% content-ref url="../cyber-intelligence/osint/" %}
+    [osint](../cyber-intelligence/osint/)
+    {% endcontent-ref %}
 * **Pretext Development** - This is where an attacker develops their reason for initial interaction.&#x20;
 * **Attack Plan** - Planning out the Who, What, When, Where, Why, and How of the attack.
 * **Attack Launch**&#x20;
@@ -60,7 +64,7 @@
 * [SocialFish](https://github.com/UndeadSec/SocialFish) - Educational Phishing Tool & Information Collector
 * [shellphish](https://github.com/suljot/shellphish) - Phishing Tool for Instagram, Facebook, Twitter, Snapchat, Github
   * [https://www.hackingarticles.in/shellphish-a-phishing-tool/](https://www.hackingarticles.in/shellphish-a-phishing-tool/)
-* [saycheese](https://github.com/hangetzzu/saycheese) - Take webcam shots from target just sending a malicious link
+* [saycheese](https://github.com/hangetzzu/saycheese) - Webcam-capture proof-of-concept. High-abuse potential; only use in tightly scoped, written-authorized social engineering tests.
 {% endtab %}
 
 {% tab title="Guides and Methodology" %}
@@ -68,7 +72,7 @@
 * [https://www.blackhillsinfosec.com/how-to-phish-for-geniuses/](https://www.blackhillsinfosec.com/how-to-phish-for-geniuses/)
 * [https://sidb.in/2021/08/03/Phishing-0-to-100.html](https://sidb.in/2021/08/03/Phishing-0-to-100.html)
 * [https://xapax.github.io/security/#initial\_access/social\_engineering\_-\_phishing/](https://xapax.github.io/security/#initial\_access/social\_engineering\_-\_phishing/)
-* Phishing Defense
+* Understanding Phishing Defenses for Engagement Planning
   * [https://www.blackhillsinfosec.com/offensive-spf-how-to-automate-anti-phishing-reconnaissance-using-sender-policy-framework/](https://www.blackhillsinfosec.com/offensive-spf-how-to-automate-anti-phishing-reconnaissance-using-sender-policy-framework/)
   * [https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/the-attack-of-the-chameleon-phishing-page/](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/the-attack-of-the-chameleon-phishing-page/)
 * Auth attacks
@@ -97,6 +101,7 @@
 * [I-See-You](https://github.com/Viralmaniar/I-See-You) - A Bash and Javascript tool to find the exact location of the users during social engineering or phishing engagements. Using exact location coordinates an attacker can perform preliminary reconnaissance which will help them in performing further targeted attacks.
 * [https://iplogger.org/](https://iplogger.org/)
 * [http://canarytokens.org/generate](http://canarytokens.org/generate)
+  * Canarytokens are primarily defensive deception tools. In this context, use them only to understand how a client may detect engagement activity.
 * [http://www.urlbiggy.com/](http://www.urlbiggy.com/)
 * [https://getnotify.com/](https://getnotify.com/)
 * User tracking with Wireshark and Google Maps -[https://youtu.be/xuNuy8n8u-Y](https://youtu.be/xuNuy8n8u-Y)

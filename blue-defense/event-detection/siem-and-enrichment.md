@@ -1,5 +1,7 @@
 # SIEM and Enrichment
 
+Use this page for SIEM platforms and enrichment techniques used during alert triage, detection, and investigation. Threat intelligence platforms and feeds live in Cyber Intelligence, while case management and incident response workflows live in DFIR.
+
 ## Open Source SIEMs
 
 * [Elastic Stack: Kibana](https://www.elastic.co/siem/) - One of the most popular and flexible tools out there, Elastic Stack is a data mining platform where you can parse logs of all kinds for all different purposes. Kibana is the interface for the Elastic Stack, containing the Elastic Security solution. It comes with an event manager, alerting tools, and even a set of default alerting use cases.
@@ -7,7 +9,7 @@
   * [SIEMonster | Affordable Security Monitoring Software Solution](https://siemonster.com/community-edition/) - An all in one VM that has Elastic Stack as well as all of the other logging and alerting tools you might want.
   * [Cyber Wardog Lab: Building a Sysmon Dashboard with an ELK Stack](https://cyberwardog.blogspot.com/2017/03/building-sysmon-dashboard-with-elk-stack.html)
   * [Elasticsearch Guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) - The official documentation.
-  * [https://training.elastic.co/learn-from-home\*](https://training.elastic.co/learn-from-home\*)
+  * [Elastic Training](https://www.elastic.co/training/)
 * [Graylog](https://www.graylog.org/) - Graylog is a fantastically flexible logging solution that also has its own security correlation engine with Graylog Illuminate.
   * [Enhance Windows Security with Sysmon, Winlogbeat and Graylog | Graylog](https://www.graylog.org/post/back-to-basics-enhance-windows-security-with-sysmon-and-graylog)
 * [OSSIM: The Open Source SIEM | AlienVault](https://cybersecurity.att.com/products/ossim) - OSSIM is a super handy security platform that focuses less on the data mining and more of the security alerting. It has an incredibly easy to use security rule generation tool and also can perform cross correlation between data sources.
@@ -34,7 +36,12 @@ With most SIEMs you can add in plugins or apps that can perform a myriad of supp
   * [Majestic Millions](https://majestic.com/reports/majestic-million)
   * [Cisco Umbrella Top 1 Million](https://umbrella.cisco.com/blog/cisco-umbrella-1-million)
 * Pre-loaded data - These are files and sets of data that can be used for reference, comparison, or enhancement. These can be white/black lists, the above domain lists, Mitre attack tables, or anything you might want to use. For easy storage and later recall, we can use a utility like [Memcached](https://memcached.org/) for storing key-value pair knowledge objects.
-* Threat Intelligence - _Please see the Intelligence Section of this guide._
+* Threat Intelligence - Use Cyber Intelligence for feeds, platforms, enrichment sources, and indicator reputation.
+
+{% content-ref url="../../cyber-intelligence/" %}
+[cyber-intelligence](../../cyber-intelligence/)
+{% endcontent-ref %}
+
 * [Fuzzy Searching](https://github.com/seatgeek/fuzzywuzzy) - For SIEMs that do not have integrated fuzzy searching ability, tools like [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy) uses python to calculate [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein\_distance) for fuzzy searching of strings up to a couple characters different from the searched string.
 * [APIify](https://github.com/MarkBaggett/apiify) - First and foremost on the list, APIify is a fantastic tool that you can apply to just about every security tool you have that doesn't have its own API. It essentially takes any standalone Binary and wraps it into a cached web server. Super handy for being able to integrate the functions of your favorite tools into your SIEM.
 * [Domain\_stats](https://github.com/MarkBaggett/domain\_stats) - Combine this with the above APIify tool to be able to dynamically pull out useful information on your domains that might raise a security eyebrow. Honestly, every tool Mark Baggett creates is gold.
@@ -43,12 +50,16 @@ With most SIEMs you can add in plugins or apps that can perform a myriad of supp
 * [PRADS: Passive Real-time Asset Detection System](https://github.com/gamelinux/prads/) - PRADS is a tool that can passively build an asset list with useful details like operating system and open ports. When you do not have access to an asset list or CMDB from the engineering team, this can be a huge help when adding context to security investigations.
 * [hallucinate](https://github.com/SySS-Research/hallucinate/) - One-stop TLS traffic inspection and manipulation using dynamic instrumentation.
 * [Sigma](https://github.com/SigmaHQ/sigma) - Generic Signature Format for SIEM Systems. Sigma is for log files what Snort is for network traffic. It allows you to describe relevant log events in a flexible and standardized format, allowing you to share rules across different SIEM implementations.
-* [TheHive](https://thehive-project.org/) - A scalable, open source and free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents. It acts as a great enrichment and case management platform.
 * [CyberChef](https://gchq.github.io/CyberChef/) - "The Cyber Swiss Army Knife". A web app for encryption, encoding, compression and data analysis. Extremely useful for decoding obfuscated data found in logs.
-* [MISP](https://www.misp-project.org/) - Open Source Threat Intelligence Platform & Open Standards For Threat Information Sharing. It helps in storing, sharing, and enriching indicators of compromise (IOCs).
 * [phishing\_catcher](https://github.com/x0rz/phishing\_catcher) - Catch possible phishing domains in near real time by looking for suspicious TLS certificate issuances reported to the [Certificate Transparency Log (CTL)](https://www.certificate-transparency.org/) via the [CertStream](https://certstream.calidog.io/) API.
 * [guac](https://github.com/guacsec/guac) - Graph for Understanding Artifact Composition (GUAC) aggregates software security metadata into a high fidelity graph database—normalizing entity identities and mapping standard relationships between them. Querying this graph can drive higher-level organizational outcomes such as audit, policy, risk management, and even developer assistance.
 * _Threat Hunting with Elastic Stack: Enriching Data to Make Intelligence - pg. 329_
+
+For TheHive, Cortex, and incident-response case management, use the DFIR section.
+
+{% content-ref url="../../dfir-digital-forensics-and-incident-response/" %}
+[dfir-digital-forensics-and-incident-response](../../dfir-digital-forensics-and-incident-response/)
+{% endcontent-ref %}
 
 {% embed url="https://www.youtube.com/watch?v=lb2M7-UOqVI" %}
 ## Deprecated / Archived Projects

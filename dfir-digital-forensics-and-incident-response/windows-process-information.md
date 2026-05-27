@@ -46,7 +46,7 @@ tasklist /svc /fi "imagename eq svchost.exe"
 
 ### Sysinternals
 
-*Note: `pslist` is part of the [Sysinternals Suite](https://docs.microsoft.com/en-us/sysinternals/).*
+*Note: `pslist` is part of the [Sysinternals Suite](https://learn.microsoft.com/en-us/sysinternals/).*
 
 ```cmd
 pslist
@@ -233,6 +233,6 @@ FOR /F %i IN ('wmic process where "ExecutablePath is not null" get ExecutablePat
 
 ## Recommended Functional Resources
 
-*   **[Sysinternals Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer)**: Advanced Task Manager replacement.
-*   **[Sysinternals Process Monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)**: Real-time file system, Registry, and process/thread activity.
+*   **[Sysinternals Process Explorer](https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer)**: Advanced Task Manager replacement.
+*   **[Sysinternals Process Monitor](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon)**: Real-time file system, Registry, and process/thread activity.
 *   **[System Informer](https://systeminformer.sourceforge.io/)** (formerly Process Hacker): A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware.

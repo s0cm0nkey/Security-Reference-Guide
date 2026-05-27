@@ -1,110 +1,122 @@
 ---
-description: Offensive Security and Penetration Testing
+description: Authorized offensive security resources for reconnaissance, exploitation, post-exploitation, Active Directory attacks, password attacks, and red team operations.
 ---
 
 # Red - Offensive Operations
 
-## **Intro**
+Red Offensive is the home for authorized offensive security work: reconnaissance, scanning, exploitation, payloads, post-exploitation, lateral movement, Active Directory attacks, password attacks, red/purple teaming, wireless, social engineering, and physical security testing.
 
-Offensive security is a huge realm with dozens of different paths and specialties for aspiring hackers of all types. It can be daunting at first, with the sheer volume of tools you can use, technologies you have to learn about, processes,  and procedures. For those getting started, under stand one thing: If it works, then its the right thing for you! As the saying goes, "there are many ways to skin a cat". Same goes for hacking your target.\
-My personal advice is to try test every tool and technique you come across. There are gems hidden out there that work famously or will work famously for you. Even if it fails, you will learn the technical reason why and that can even lead you to developing your own cool hacking tool!
+This section should not become a catch-all for every security resource. Passive OSINT belongs in Cyber Intelligence, web application testing belongs in Web App Hacking, malware analysis belongs in DFIR, and detection engineering belongs in Blue Defense.
 
-## Resources: Offensive Security/ Penetration Testing&#x20;
+## How to Use This Section
 
-When on an offensive security team, there are different levels of engagement that you will have, as well as different sets of rules you must follow, sometimes from engagement to engagement. Of those, one of the most common you will face is a simple Vulnerability assessment. This is little more than testing for the presence of a vulnerability. Sometimes its for a popular vulnerability that is trending in the news, or for an outdated server that reported poorly on the last vulnerability scan. Either way, they are quick, easy, but tedious and tend to have plenty of paperwork to go along with them.\
-The other type of tasks will be a full penetration test. Some times its a white box test with full knowledge of your target, as well as the target having full knowledge of you. Other times it will be a black box stealth mission to see how badly you can compromise your target.
+Start with the engagement scope and rules of engagement. Then move through the pages based on where you are in the test:
 
-When performing a structured penetration test, following/documenting proper procedure will be key to explaining your success and justifying your findings. Below are some formal and informal resources that should help you set up your own processes, toolkit, and documentation.
+{% content-ref url="scanning-active-recon/" %}
+[scanning-active-recon](scanning-active-recon/)
+{% endcontent-ref %}
 
-<details>
+{% content-ref url="exploitation-and-targets/" %}
+[exploitation-and-targets](exploitation-and-targets/)
+{% endcontent-ref %}
 
-<summary>Official Penetration Testing Guides</summary>
+{% content-ref url="testing-methodology/post-exploitation/" %}
+[post-exploitation](testing-methodology/post-exploitation/)
+{% endcontent-ref %}
 
-* Pen Test Standard Guide - [http://www.pentest-standard.org/index.php/PTES\_Technical\_Guidelines](http://www.pentest-standard.org/index.php/PTES\_Technical\_Guidelines)
-* Vulnerability Assessment Guide - [http://www.vulnerabilityassessment.co.uk/Penetration%20Test.html](http://www.vulnerabilityassessment.co.uk/Penetration%20Test.html)
-* OSSTMM3 - [https://www.isecom.org/OSSTMM.3.pdf](https://www.isecom.org/OSSTMM.3.pdf)
-* [NIST SP:800-115](https://csrc.nist.gov/publications/detail/sp/800-115/final) - Technical Guide to Information Security Testing and Assessment
+{% content-ref url="testing-methodology/active-directory.md" %}
+[active-directory.md](testing-methodology/active-directory.md)
+{% endcontent-ref %}
 
-</details>
+{% content-ref url="testing-methodology/lateral-movement.md" %}
+[lateral-movement.md](testing-methodology/lateral-movement.md)
+{% endcontent-ref %}
 
-<details>
+{% content-ref url="testing-methodology/password-attacks.md" %}
+[password-attacks.md](testing-methodology/password-attacks.md)
+{% endcontent-ref %}
 
-<summary>Researcher Developed Guides and Resources</summary>
+{% content-ref url="red-purple-teaming.md" %}
+[red-purple-teaming.md](red-purple-teaming.md)
+{% endcontent-ref %}
 
-* [https://book.hacktricks.xyz](https://book.hacktricks.xyz)&#x20;
-* [https://www.thehacker.recipes/](https://www.thehacker.recipes/)
-* [https://www.ired.team/](https://www.ired.team/)
-* [https://guif.re/](https://guif.re/)
-* [https://www.0daysecurity.com/penetration-testing/penetration.html](https://www.0daysecurity.com/penetration-testing/penetration.html)
-* Hacking without Metasploit - [https://hakluke.medium.com/haklukes-guide-to-hacking-without-metasploit-1bbbe3d14f90](https://hakluke.medium.com/haklukes-guide-to-hacking-without-metasploit-1bbbe3d14f90)
-* [https://github.com/nixawk/pentest-wiki](https://github.com/nixawk/pentest-wiki)
-* [https://danielmiessler.com/projects/webappsec\_testing\_resources/](https://danielmiessler.com/projects/webappsec\_testing\_resources/)
-* [https://threatexpress.com/blogs/2019/penetration-testing-pasties/](https://threatexpress.com/blogs/2019/penetration-testing-pasties/)
-* [https://kwcsec.gitbook.io/the-red-team-handbook/](https://kwcsec.gitbook.io/the-red-team-handbook/)
+{% content-ref url="offensive-toolbox/" %}
+[offensive-toolbox](offensive-toolbox/)
+{% endcontent-ref %}
 
-</details>
+## Methodology and Engagement References
 
-<details>
+* [PTES Technical Guidelines](http://www.pentest-standard.org/index.php/PTES_Technical_Guidelines) - Penetration Testing Execution Standard.
+* [OSSTMM 3](https://www.isecom.org/OSSTMM.3.pdf) - Open Source Security Testing Methodology Manual.
+* [ISECOM](https://www.isecom.org/) - Community behind OSSTMM and related security methodology resources.
+* [NIST SP 800-115](https://csrc.nist.gov/publications/detail/sp/800-115/final) - Technical Guide to Information Security Testing and Assessment.
+* [HackTricks](https://book.hacktricks.xyz/)
+* [The Hacker Recipes](https://www.thehacker.recipes/)
+* [iRed Team](https://www.ired.team/)
+* [Guif.re](https://guif.re/)
+* [Hakluke: Hacking Without Metasploit](https://hakluke.medium.com/haklukes-guide-to-hacking-without-metasploit-1bbbe3d14f90)
+* [Pentest Wiki](https://github.com/nixawk/pentest-wiki)
+* [Penetration Testing Pasties](https://threatexpress.com/blogs/2019/penetration-testing-pasties/)
+* [The Red Team Handbook](https://kwcsec.gitbook.io/the-red-team-handbook/)
 
-<summary>CheatSheets</summary>
+Web application testing resource lists are maintained in Web App Hacking.
 
-* [https://github.com/coreb1t/awesome-pentest-cheat-sheets](https://github.com/coreb1t/awesome-pentest-cheat-sheets)
-* [https://owasp.org/www-project-cheat-sheets/](https://owasp.org/www-project-cheat-sheets/)
-* [https://github.com/OlivierLaflamme/Cheatsheet-God](https://github.com/OlivierLaflamme/Cheatsheet-God)
-* [https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/](https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/)
-* [https://www.sans.org/blog/the-ultimate-list-of-sans-cheat-sheets/](https://www.sans.org/blog/the-ultimate-list-of-sans-cheat-sheets/)
+{% content-ref url="../web-app-hacking/" %}
+[web-app-hacking](../web-app-hacking/)
+{% endcontent-ref %}
 
-</details>
+## Cheat Sheets
 
-## Notekeeping/Report Writing
+* [Awesome Pentest Cheat Sheets](https://github.com/coreb1t/awesome-pentest-cheat-sheets)
+* [Cheatsheet God](https://github.com/OlivierLaflamme/Cheatsheet-God)
+* [HighOn.Coffee Penetration Testing Cheat Sheet](https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/)
+* [SANS Cheat Sheets](https://www.sans.org/blog/the-ultimate-list-of-sans-cheat-sheets/)
 
-Notekeeping becomes incredibly important in recreating exploits, storing essential findings, keeping screenshots, common commands you ran to reach an outcome and more. Without sufficient notekeeping you’re only setting yourself up to fail.
+OWASP cheat sheets are kept with web application testing unless they are directly tied to an offensive workflow on a Red page.
 
-<details>
+## Notes and Reporting
 
-<summary>Report Writing Guides</summary>
+Good offensive work depends on clean notes, reproducible commands, screenshots, and clear reporting.
 
-* [https://www.trustedsec.com/tools/physical-security-assessment-documentation/](https://www.trustedsec.com/tools/physical-security-assessment-documentation/)
-* [https://www.blackhillsinfosec.com/tag/pentest-reports/](https://www.blackhillsinfosec.com/tag/pentest-reports/)
-* [https://zeltser.com/writing-tips-for-it-professionals/](https://zeltser.com/writing-tips-for-it-professionals/)
-* [https://zeltser.com/security-assessment-report-cheat-sheet/](https://zeltser.com/security-assessment-report-cheat-sheet/)
-* [https://zeltser.com/human-communications-cheat-sheet/](https://zeltser.com/human-communications-cheat-sheet/)
+### Report Writing
 
-</details>
+* [TrustedSec Physical Security Assessment Documentation](https://www.trustedsec.com/tools/physical-security-assessment-documentation/)
+* [Black Hills Pentest Reports](https://www.blackhillsinfosec.com/tag/pentest-reports/)
+* [Zeltser: Writing Tips for IT Professionals](https://zeltser.com/writing-tips-for-it-professionals/)
+* [Zeltser: Security Assessment Report Cheat Sheet](https://zeltser.com/security-assessment-report-cheat-sheet/)
+* [Zeltser: Human Communications Cheat Sheet](https://zeltser.com/human-communications-cheat-sheet/)
 
-{% tabs %}
-{% tab title="Note Taking Apps" %}
+### Note Taking
+
 * [CherryTree](https://www.giuspen.com/cherrytree/)
 * [Joplin](https://joplinapp.org/)
 * [OneNote](https://www.onenote.com)
 * [Obsidian](https://obsidian.md/)
-* Trilium: [https://github.com/zadam/trilium](https://github.com/zadam/trilium)
-* KeepNote: [http://keepnote.org/](http://keepnote.org/)
-* [https://asciinema.org/](https://asciinema.org/)
-{% endtab %}
+* [Trilium](https://github.com/zadam/trilium)
+* [asciinema](https://asciinema.org/) - Terminal session recording.
+* **KeepNote** - Legacy note-taking tool. Kept only for historical references and old OSCP-style workflows.
 
-{% tab title="Screenshot Tools" %}
-* [https://github.com/flameshot-org/flameshot](https://github.com/flameshot-org/flameshot)
-* [https://getgreenshot.org/](https://getgreenshot.org/)
-* Linux Native utility - Ctrl +Shift+PrintSreen
-{% endtab %}
+### Screenshots
 
-{% tab title="Report Generation Tools" %}
-* [Ghostwriter](https://github.com/GhostManager/Ghostwriter) - The SpecterOps project management and reporting engine
-* [APTRS](https://github.com/Anof-cyber/APTRS) - APTRS (Automated Penetration Testing Reporting System) is an automated reporting tool in Python and Django. The tool allows Penetration testers to create a report directly without using the Traditional Docx file. It also provides an approach to keeping track of the projects and vulnerabilities.
-{% endtab %}
+* [Flameshot](https://github.com/flameshot-org/flameshot)
+* [Greenshot](https://getgreenshot.org/)
+* Native Linux screenshot shortcut: `Ctrl+Shift+PrintScreen`
 
-{% tab title="Templates/Examples" %}
-* [https://github.com/nationalcptc/report\_examples](https://github.com/nationalcptc/report\_examples)
-* [https://github.com/tjnull/TJ-JPT](https://github.com/tjnull/TJ-JPT)
-* [https://noraj.github.io/OSCP-Exam-Report-Template-Markdown/](https://noraj.github.io/OSCP-Exam-Report-Template-Markdown/)
-* [https://github.com/fransr/template-generator](https://github.com/fransr/template-generator)
-* [https://github.com/ZephrFish/BugBountyTemplates](https://github.com/ZephrFish/BugBountyTemplates)
-* [https://github.com/juliocesarfort/public-pentesting-reports](https://github.com/juliocesarfort/public-pentesting-reports)
-* [https://411hall.github.io/assets/files/CTF\_template.ctb](https://411hall.github.io/assets/files/CTF\_template.ctb)
-{% endtab %}
-{% endtabs %}
+### Report Generation
 
-## **Training and Resources**
+* [Ghostwriter](https://github.com/GhostManager/Ghostwriter)
+* [APTRS](https://github.com/Anof-cyber/APTRS)
+* [National CPTC Report Examples](https://github.com/nationalcptc/report_examples)
+* [TJ-JPT](https://github.com/tjnull/TJ-JPT)
+* [OSCP Exam Report Template](https://noraj.github.io/OSCP-Exam-Report-Template-Markdown/)
+* [Fransr Template Generator](https://github.com/fransr/template-generator)
+* [BugBountyTemplates](https://github.com/ZephrFish/BugBountyTemplates)
+* [Public Pentesting Reports](https://github.com/juliocesarfort/public-pentesting-reports)
 
-For resources including offensive security courses, books, CTFs and much more, please check out the Training and Resources section of this guide.
+## Training
+
+Offensive courses, labs, CTFs, TryHackMe rooms, and books live in Training.
+
+{% content-ref url="../training/" %}
+[training](../training/)
+{% endcontent-ref %}

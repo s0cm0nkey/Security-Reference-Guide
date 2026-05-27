@@ -1,6 +1,6 @@
 # CTF
 
-Capture The Flag competitions and challenges are the fun part of being a hacker. There isnt any other feeling like compromising a box and getting your name on a score board. They are also a fantastic tool for honing your skills both offensively and defensively.
+Capture The Flag competitions and challenges are the fun part of being a hacker. There is nothing quite like compromising a box and getting your name on a scoreboard. They are also a fantastic way to hone offensive and defensive skills in a legal environment.
 
 ## **CTF Resources**
 
@@ -8,8 +8,8 @@ Capture The Flag competitions and challenges are the fun part of being a hacker.
 * [Tools and Resources to Prepare for a Hacker CTF Competition or Challenge](https://resources.infosecinstitute.com/tools-of-trade-and-resources-to-prepare-in-a-hacker-ctf-competition-or-challenge/)&#x20;
 * [Shiva108's CTF Notes](https://github.com/Shiva108/CTF-notes)
 * [CTF Resources](http://ctfs.github.io/resources/) - This repository aims to be an archive of information, tools, and references regarding CTF competitions.
-* [Rawsec](https://rawsec.ml/) - Guides and challange writeups
-* [home - 0xRick](https://0xrick.github.io/) - One of the best set of challange write ups i have been able to find. Very detailed and easy to read.
+* [Rawsec Inventory](https://inventory.raw.pm/) - Guides, tools, and challenge writeups.
+* [home - 0xRick](https://0xrick.github.io/) - Detailed challenge writeups.
 * Bishop Fox Pocket CTF Guide - [https://know.bishopfox.com/hubfs/mkt-coll/Bishop-Fox-Breaking-and-Entering-Pocket-Guide.pdf](https://know.bishopfox.com/hubfs/mkt-coll/Bishop-Fox-Breaking-and-Entering-Pocket-Guide.pdf)
 * [https://bitsdeep.com/posts/attacking-rsa-for-fun-and-ctf-points-part-1/](https://bitsdeep.com/posts/attacking-rsa-for-fun-and-ctf-points-part-1/)
 * [https://cheatsheet.haax.fr/cryptography/rsa/](https://cheatsheet.haax.fr/cryptography/rsa/)
@@ -21,35 +21,35 @@ Capture The Flag competitions and challenges are the fun part of being a hacker.
 * [ctf tools](https://github.com/zardus/ctf-tools) - This is a collection of setup scripts to create an install of various security research tool that are super valuable in CTF settings
 * [CTF.Party](https://noraj.github.io/ctf-party/#/) - A Ruby CLI tool & library to enhance and speed up script/exploit writing for CTF players.
 * [pwntools](https://github.com/Gallopsled/pwntools) - Pwntools is a CTF framework and exploit development library. Written in Python, it is designed for rapid prototyping and development, and intended to make exploit writing as simple as possible.
-* [RsaCtfTool](https://github.com/Ganapati/RsaCtfTool) -  RSA attack tool (mainly for ctf) - retreive private key from weak public key and/or uncipher data&#x20;
+* [RsaCtfTool](https://github.com/Ganapati/RsaCtfTool) - RSA attack tool for CTFs; retrieves private keys from weak public keys and decrypts data.
 * [ShellPop](https://github.com/0x00-0x00/shellpop) - Shellpop is all about popping shells. With this tool you can generate easy and sophisticated reverse or bind shell commands to help you during penetration tests.
 * [Karkinos -](https://hakin9.org/karkinos-penetration-testing-and-hacking-ctfs-swiss-army-knife/) Karkinos is a light-weight 'Swiss Army Knife' for penetration testing and/or hacking CTF's. Currently, Karkinos offers the following:
   * Encoding/Decoding characters
   * Encrypting/Decrypting text or files
   * Reverse shell handling
   * Cracking and generating hashes
-* [pyWhat](https://github.com/bee-san/pyWhat) - Command line to to identify...well anything.
-* [https://github.com/hellman/xortool](https://github.com/hellman/xortoolhttps://github.com/tomchop/unxor)
-* [https://github.com/tomchop/unxor](https://github.com/hellman/xortoolhttps://github.com/tomchop/unxor)
+* [pyWhat](https://github.com/bee-san/pyWhat) - Command-line tool to identify files, hashes, tokens, and other strings.
+* [xortool](https://github.com/hellman/xortool)
+* [unxor](https://github.com/tomchop/unxor)
 
 ## CTF Events
 
 * [CTF Time Calendar](https://ctftime.org/calendar/) - Schedule of most of the major Cyber CTF events that are held throughout the year.
 * [NSA Codebreaker Challenge](https://codebreaker.ltsnet.net/challenge) - Super fun NSA CTF.
-* [TryHackMe | 25 Days of Cyber](https://tryhackme.com/christmas) - Holiday themed ctf-a-thon
-* [Metasploit community CTF](https://blog.rapid7.com/2020/11/19/announcing-the-2020-december-metasploit-community-ctf/)&#x20;
+* [TryHackMe | 25 Days of Cyber](https://tryhackme.com/christmas) - Seasonal holiday CTF.
+* [Metasploit community CTF 2020](https://blog.rapid7.com/2020/11/19/announcing-the-2020-december-metasploit-community-ctf/) - Historical event announcement.
 * [Holiday Hack Challenge](https://kringlecon.com/) - SANS Christmas themed hack challenges. Super fun.
 * [SANS Netwars](https://www.sans.org/cyber-ranges/netwars-tournaments/cyber-defense/) - SANS CTF that happens along with each of their in person courses. There is an offensive and defensive version.
-* [https://metactf.com/](https://metactf.com/) - Great platform for hosting your ow CTFs. They also will host public ones regularly.
+* [MetaCTF](https://metactf.com/) - Platform for hosting your own CTFs and joining public events.
 
 ## CTF Sites
 
-* [Hack The Box](https://www.hackthebox.eu/) - Virtual machines that you can connect to in a secure VPN. Pwn it boot to root.
+* [Hack The Box](https://www.hackthebox.com/) - Virtual machines and challenges that you can access through a VPN.
 * [CyberSecLabs](https://www.cyberseclabs.co.uk/profile) - Great platform with free and premium CTF challenges. Some are set up as labs with helpful video walk-throughs
 * [https://pwnable.kr/](https://pwnable.kr/) - 'pwnable.kr' is a non-commercial [wargame site](https://en.wikipedia.org/wiki/Wargame\_\(hacking\)) which provides various pwn challenges regarding system exploitation.
 * [Embedded Security CTF](https://microcorruption.com/login) - Grab a debugger and solve fun CTF challenges focused around the code of embedded devices.
 * [Underthewire](https://underthewire.tech/) - Powershell focused CTF challenges
-* [Commandline Challenge](https://cmdchallenge.com/) - CTF Style puzzles focusing on your SLI skills
+* [Commandline Challenge](https://cmdchallenge.com/) - CTF-style puzzles focused on CLI skills.
 * [Root-Me](https://www.root-me.org/?lang=en\&no\_js=oui) - Complete and create cyber CTF challenges with tons of learning resources.
 * [www.try2hack.nl](http://www.try2hack.nl/) - Classic iterative cyber puzzle
 * [hackthissite.org/](https://www.hackthissite.org/) - HackThisSite.org is a free, safe and legal training ground for hackers to test and expand their ethical hacking skills with challenges, CTFs, and more.
@@ -69,9 +69,9 @@ Capture The Flag competitions and challenges are the fun part of being a hacker.
 * [Pentester Academy](https://www.pentesteracademy.com/) - High quality learning courses and CTF style labs
 * [PentesterLab:](https://www.pentesterlab.com/) Learn practical penetration testing techniques with hands on CTF style labs
 * [Virtual Hacking Labs](https://www.virtualhackinglabs.com/) - Full offensive course with multiple real world vulnerability labs to practice your skills
-* [HackTheBox learning Academy](https://academy.hackthebox.eu/dashboard)  - A new offering from our favorite CTF platform, HTB now has training modules for teaching different elements of penetration testing.
-* [Immersive Labs](https://immersivelabs.online/) - My personal favorite platform with hundreds of different challanges both offensive and defense.
-* [CTFlearn](https://ctflearn.com/) - Great community and beginner set of CTF challanges to dip your toe in the water.
+* [Hack The Box Academy](https://academy.hackthebox.com/) - Training modules for penetration testing and defensive skills.
+* [Immersive Labs](https://immersivelabs.online/) - Platform with offensive and defensive challenges.
+* [CTFlearn](https://ctflearn.com/) - Beginner-friendly CTF challenge community.
 
 ## CTF Writeups
 

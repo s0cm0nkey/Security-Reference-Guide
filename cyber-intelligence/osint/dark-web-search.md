@@ -74,7 +74,7 @@ A peer-to-peer hypermedia protocol designed to preserve and grow humanity's know
 * **Nekhbet I2P Links** - Very outdated directory that hasn't been maintained. Historical reference only.
 * **I2P Search (i2psearch.com)** - This service's reliability is questionable. Use Ahmia I2P instead for verified I2P searching.
 * **Onion Search Engine (onionsearchengine.com)** - Frequently offline and unreliable. Use Ahmia or Dark Search instead.
-* **OSINT Party RSS Feed (osint.party/api/rss/fresh)** - Service status uncertain and may be discontinued.
+* **OSINT Party RSS Feed (osint.party/api/rss/fresh)** - Service status can vary. Verify before relying on it and treat returned onion links as untrusted.
 * **DarkTracer** - Service availability has become inconsistent.
 * **SOCRadar DarkMirror** - Access to this tool has become limited/restricted.
 * **Flare (flare.io)** - Service has undergone changes; verify current availability and offerings.

@@ -2,7 +2,7 @@
 
 ## **Types of SQL Databases**
 
-* Mysql
+* MySQL
 * MSSQL
 * PostgreSQL - v9.5 and earlier
   * [https://www.pcwdld.com/sql-cheat-sheet](https://www.pcwdld.com/sql-cheat-sheet)
@@ -13,8 +13,8 @@
   * Unstructured Data, grows horizontally
   * Vulnerabilities generally exist where a string is parsed or evaluated into a NoSQL call.
   * Vulnerability injections occur when:
-    * Endpoints accepts JSON data in the request to NoSQL databaseS
-    * We are able to maniPulate the query using NoSQL comparison operators to change the NoSQL query
+    * Endpoints accept JSON data in the request to NoSQL databases.
+    * You can manipulate the query using NoSQL comparison operators to change the NoSQL query.
   * [https://blog.websecurify.com/2014/08/hacking-nodejs-and-mongodb.html](https://blog.websecurify.com/2014/08/hacking-nodejs-and-mongodb.html)
   * [https://www.owasp.org/index.php/Testing\_for\_NoSQL\_injection](https://www.owasp.org/index.php/Testing\_for\_NoSQL\_injection)
 * SQL Platform Commands
@@ -34,16 +34,16 @@
 
 ## Classic Error-based SQLi
 
-This type is SQLi uses error-messages returned from the database as the method to gather information about the backend itself. For more information, see the Basics section above
+This type of SQLi uses database error messages to gather information about the backend.
 
 ## **UNION SQL Injection**&#x20;
 
-The SQL `UNION` operator is used to combine the result set of two or more `SELECT` statements, appending the results on the end of the original query. **** An attacker can leverage the SQL vulnerability and find information from other database tables using the `UNION` keyword.
+The SQL `UNION` operator is used to combine the result set of two or more `SELECT` statements, appending the results on the end of the original query. An attacker can leverage the SQL vulnerability and find information from other database tables using the `UNION` keyword.
 
 ### **UNION Operators**
 
 * The UNION operator, is a method that allows a query to retrieve data from other tables within the database
-* The UNION operator allows you to execute one or more additional SELECT queties and append the results to the original query
+* The UNION operator allows you to execute one or more additional SELECT queries and append the results to the original query.
 * In order to work, UNION queries have two key requirements
   * The individual queries must return the same number of columns.
   * The data types in each column must be compatible between the individual queries.
@@ -60,7 +60,7 @@ The SQL `UNION` operator is used to combine the result set of two or more `SELEC
   * This series of payloads modifies the original query to order the results by different columns in the result set. The column in an ORDER BY clause can be specified by its index, so you don't need to know the names of any columns. When the specified column index exceeds the number of actual columns in the result set, the database returns an error
   * The application might actually return the database error in its HTTP response, or it might return a generic error, or simply return no results. Provided you can detect some difference in the application's response, you can infer how many columns are being returned from the query.
 * Method 2 - Submitting a series of UNION SELECT payloads specifying a different number of null values:
-  * Start by using expanding null satements to find the number of columns
+  * Start by expanding `NULL` statements to find the number of columns.
     * ' UNION SELECT NULL--
     * ' UNION SELECT NULL,NULL--
     * ' UNION SELECT NULL,NULL,NULL--
@@ -142,7 +142,7 @@ Blind SQL comes in to types:
   * xyz' UNION SELECT 'a' WHERE 1=2--
 * Example:&#x20;
   * xyz' UNION SELECT 'a' FROM Users WHERE Username = 'Administrator' and SUBSTRING(Password, 1, 1) > 'm'--
-    * If this returns with the positive conditional statement, the first character of the password is create than ‘m’&#x20;
+    * If this returns the positive conditional statement, the first character of the password is greater than `m`.
   * xyz' UNION SELECT 'a' FROM Users WHERE Username = 'Administrator' and SUBSTRING(Password, 1, 1) > 't'--&#x20;
     * If this does not return with the positive conditional statement, the first character is less than ‘t’&#x20;
   * Repeat until the entire password is discovered
@@ -173,7 +173,7 @@ Blind SQL comes in to types:
 
 
 
-### **Blind SQL Inejction with OAST techniques**
+### **Blind SQL Injection with OAST techniques**
 
 * OAST - Out-of-band Application Security Testing
 * When will standard SQL injection not work?

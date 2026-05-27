@@ -4,254 +4,155 @@ description: Open Source Intelligence
 
 # OSINT
 
-## **Intro**
+Open-source intelligence (OSINT) is the disciplined collection and analysis of publicly available information. This section focuses on passive investigation: search engines, public records, domains, IP addresses, usernames, social media, files, breach data, dark web sources, geolocation, and other public data pivots.
 
-The focus of this section is to provide helpful resources for OSINT and Passive reconnaissance on a given target. There will be certain tools and sites you might be familiar with that could be applicable in this section, that I have omitted and with good reason.
+This section intentionally avoids most active scanning and exploitation tooling. Those resources belong in Red Offensive. Reputation and enrichment platforms belong in Threat Data.
 
-1. This section is "Passive" recon, which does not entail touching or interacting with your target in any way. For offensive operations, staying off radar is key. But can we check with other sources that may have already scanned out target? You bet.&#x20;
-2. There are many research tools that provide similar output to the ones listed in the later sections. The ones that I have specifically omitted (and will document in another section) are tailored more to defensive operations and contain information like reputation data and historical activity.
+{% content-ref url="../threat-data.md" %}
+[threat-data.md](../threat-data.md)
+{% endcontent-ref %}
 
-## **OSINT Resources**
+{% content-ref url="../../red-offensive/scanning-active-recon/" %}
+[scanning-active-recon](../../red-offensive/scanning-active-recon/)
+{% endcontent-ref %}
 
-<details>
+## OSINT Guides and Methodology
 
-<summary>OSINT Guides and Methodology</summary>
+* [IntelTechniques OSINT Book and Tools](https://inteltechniques.com/osintbook) - Michael Bazzell's OSINT resources and search tools.
+* [OH SHINT](https://ohshint.gitbook.io/) - Detailed OSINT link collection.
+* [Security Sift: Passive Reconnaissance](http://www.securitysift.com/passive-reconnaissance/) - Passive recon workflow reference.
+* [Penetration Testing Execution Standard: Intelligence Gathering](http://www.pentest-standard.org/index.php/Intelligence_Gathering) - Reconnaissance process reference.
+* [OSINT Handbook 2020](https://i-intelligence.eu/uploads/public-documents/OSINT_Handbook_2020.pdf) - Tools and techniques by I-Intelligence.
+* [Randhome OSINT Guide](https://www.randhome.io/blog/2019/01/05/2019-osint-guide/) - OSINT workflow and tools.
+* [NixIntel: Gap Analysis for OSINT](https://nixintel.info/osint/using-gap-analysis-to-keep-osint-investigations-on-track/) - Investigation methodology.
+* [Aware Online: Investigating a Website](https://twitter.com/aware_online/status/1308312883248467975)
+* [OSINT x UCCU Workshop](https://www.slideshare.net/miaoski/osint-x-uccu-workshop-on-open-source-intelligence)
+* [Dark Web OSINT Deep Dive](https://www.youtube.com/watch?v=fzd3zkAI_o4)
+* [Verification Handbook](https://datajournalism.com/read/handbook/verification-3) - Journalism-oriented verification guidance that maps well to OSINT.
 
-Specific for what you need to look for and how to find it, during the passive recon phase of a penetration test, or the proper way to OSINT.
+Training, CTFs, TryHackMe rooms, and OSINT practice labs are kept in Training.
 
-* [IntelTechniques](https://inteltechniques.com/osintbook) - One of the best resources for OSINT has been Michael Bazzell's OSINT book and his website. I highly recommend you order his book. The HTML search tools I reference here come from his collection, available on his website for free. He also runs the Privacy and Security Podcast which is a highly recommended resource for both OSINT techniques and personal privacy.
-* [https://ohshint.gitbook.io/](https://ohshint.gitbook.io/) - One of the most detailed OSINT resources available. Chocked full of search tools.
-* [Security Sift ](http://www.securitysift.com/passive-reconnaissance/) - This write up is a great guide to Passive recon when preparing for a penetration test. For building up your own workflow, start with this.&#x20;
-* [Pen Test Standard](http://www.pentest-standard.org/index.php/Intelligence_Gathering) - Great guides for every step of a penetration test, but the recon section is especially useful as a reference here.&#x20;
-* [OSINT\_Handbook\_2020.pdf](https://i-intelligence.eu/uploads/public-documents/OSINT_Handbook_2020.pdf) - OSINT Tools and Techniques by I-Intelligence
-* [https://www.randhome.io/blog/2019/01/05/2019-osint-guide/](https://www.randhome.io/blog/2019/01/05/2019-osint-guide/) - Great guide of some newer tools and techniques.
-* [https://nixintel.info/osint/using-gap-analysis-to-keep-osint-investigations-on-track/](https://nixintel.info/osint/using-gap-analysis-to-keep-osint-investigations-on-track/) - Great article on investigation methodology to hasten your OSINT research.
-* Methodology of how to investigate a website - [https://twitter.com/aware\_online/status/1308312883248467975](https://twitter.com/aware_online/status/1308312883248467975)
-* [OSINT x UCCU Workshop on Open Source Intelligence](https://www.slideshare.net/miaoski/osint-x-uccu-workshop-on-open-source-intelligence)  - Slide deck from a workshop by Miaoski, one of the Senior Intel Analysts for Trend Micro.
-* [102 Deep Dive in the Dark Web OSINT](https://www.youtube.com/watch?v=fzd3zkAI_o4) - Great video presentation on Dark Web OSINT techniques
-* [Verification handbook](https://datajournalism.com/read/handbook/verification-3) - Designed for journalists but still quite useful, the Verification handbook provides a wealth of resources on investigative procedure
+{% content-ref url="../../training/" %}
+[training](../../training/)
+{% endcontent-ref %}
 
-</details>
+## OSINT Communities and Resources
 
-<details>
+* [OSINTCurious](https://osintcurio.us/) - Community, videos, and resource lists.
+  * [OSINTCurious Resource List](https://docs.google.com/document/d/14li22wAG2Wh2Y0UhgBjbqEvZJCDsNZY8vpUAJ_jJ5X8/edit)
+* [OSINT Techniques](https://www.osinttechniques.com/) - Tool lists, videos, and OSINT blog.
+* [OSINTion](https://www.theosintion.com/) - Joe Grey's OSINT resources, courses, and consulting site.
+* [OSINT Dojo](https://www.osintdojo.com/) - Learning road map and OSINT challenges.
+* [Bellingcat OSINT How-Tos](https://www.bellingcat.com/category/resources/how-tos/)
+  * [Bellingcat Tool Collection](https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/edit#gid=930747607)
+* [Aware Online](https://www.aware-online.com/en/) - OSINT and SOCMINT training and tools.
+* [Exposing the Invisible](https://exposingtheinvisible.org/) - Investigative methods and verification guidance.
 
-<summary>OSINT training courses.</summary>
+## OSINT Blogs and Media
 
-* [https://courses.thecyberinst.org/courses/osint-challenge](https://courses.thecyberinst.org/courses/osint-challenge)
-* [https://courses.thecyberinst.org/courses/osintmini](https://courses.thecyberinst.org/courses/osintmini)
-* [https://www.tracelabs.org/initiatives/search-party](https://www.tracelabs.org/initiatives/search-party)
-* [https://www.geoguessr.com/](https://www.geoguessr.com/)
-* [https://kit.exposingtheinvisible.org/en/](https://kit.exposingtheinvisible.org/en/)
-* [https://advocacyassembly.org/en/courses/](https://advocacyassembly.org/en/courses/)
+* [Benjamin Strick](https://benjaminstrick.com/blog/)
+* [BushidoToken](https://blog.bushidotoken.net/)
+* [Cyb Detective](https://threadreaderapp.com/user/cyb_detective)
+* [Dutch OSINT Guy](https://dutchosintguy.com/events-and-blogs/)
+* [Intelligence with Steve](https://www.intelligencewithsteve.com/blog)
+  * [A 5-minute guide to creating a covert account for internet investigations](https://www.intelligencewithsteve.com/post/a-5-minute-guide-to-creating-a-covert-account-for-internet-investigations-osint)
+* [IntelTechniques Blog](https://inteltechniques.com/blog/)
+* [Key Findings](https://keyfindings.blog/)
+* [Lorand Bodo](https://www.lorandbodo.com/)
+* [Offensive OSINT](https://www.offensiveosint.io/)
+* [OSINT Combine Blog](https://www.osintcombine.com/blog)
+* [OSINT Editor](https://www.osinteditor.com/)
+* [OSINT Me](https://www.osintme.com/)
+* [The OSINT Journal](http://www.theosintjournal.org/)
+* [Bellingcat](https://www.bellingcat.com/)
+* [CQCore](https://www.cqcore.uk/blog-posts/)
+* [Sector035](https://sector035.nl/)
 
-</details>
+YouTube and webcast resources:
 
-<details>
+* [0x4rkØ OSINT Videos](https://www.youtube.com/c/0x4rk%C3%98/videos)
+* [OSINTCurious Videos](https://www.youtube.com/channel/UCjzceWf-OT3ImIKztzGkipA/videos)
+* [OSINTCurious 10 Minute Tips](https://www.youtube.com/playlist?list=PL423I_gHbWUUOs09899rex4t2l5py9YIk)
+* [OSINTCurious Webcasts](https://osintcurio.us/osintvideosandpodcasts/)
+* [Irongeek OSINT Videos](https://www.youtube.com/user/irongeek/search?query=OSINT)
+* [Authentic8](https://www.youtube.com/user/Authentic8TV)
+* [Toddington Drop In and Learn](https://www.toddington.com/drop-in-and-learn-webcasts/)
+* [Ben Strick OSINT at Home](https://www.youtube.com/playlist?list=PLrFPX1Vfqk3ehZKSFeb9pVIHqxqrNW8Sy)
+* [OSINT Dojo](https://www.youtube.com/osintdojo)
+* [Trace Labs YouTube](https://www.youtube.com/channel/UCezKbcbnYtrwRXfGzgQMI3w)
 
-<summary>OSINT CTFs and Modules</summary>
+## Forums and Chat
 
-* [https://cyberdefenders.org/labs/38](https://cyberdefenders.org/labs/38) - Intel101
-* [https://ctf.cybersoc.wales/](https://ctf.cybersoc.wales/)
-* [https://www.geoguessr.com/](https://www.geoguessr.com/)
-* [https://ictf.io/](https://ictf.io/)
-* [https://hacktoria.com/](https://hacktoria.com/)
-* [https://investigator.cybersoc.wales/](https://investigator.cybersoc.wales/)
-* [https://tryhackme.com/room/ohsint](https://tryhackme.com/room/ohsint)
-* [https://tryhackme.com/room/sakura](https://tryhackme.com/room/sakura)
-* [https://tryhackme.com/room/searchlightosint](https://tryhackme.com/room/searchlightosint)
-* [https://tryhackme.com/room/googledorking](https://tryhackme.com/room/googledorking)
-* [https://tryhackme.com/room/geolocatingimages](https://tryhackme.com/room/geolocatingimages)
-* [https://tryhackme.com/room/webosint](https://tryhackme.com/room/webosint)
-* [https://sourcing.games/game-1/](https://sourcing.games/game-1/)
+* [OSINT Matrix Room](https://app.element.io/#/room/#osint-chat:matrix.org)
+* [OSINT Team](https://osint.team/home)
+* [Websleuths](https://www.websleuths.com/forums/)
+* [r/OSINT](https://www.reddit.com/r/OSINT/)
+* [r/RBI](https://www.reddit.com/r/RBI/)
+* [Bellingcat Discord](https://discord.gg/nTaNPmz)
+* [OSINT-FR Discord](https://discord.osintfr.com)
+* [Project Owl Discord](https://discord.gg/projectowl)
+* [OSINT Curious Discord](https://discord.gg/eaz5AqHDfK)
+* [OSINTion Discord](https://discord.gg/p78TTGa)
+* [Trace Labs Slack](https://tracelabs.slack.com)
 
-</details>
+## Volunteer OSINT
 
-<details>
+These projects use OSINT skills for public-interest investigations. Review each group's mission, legal boundaries, and evidence-handling expectations before joining.
 
-<summary>Youtube Channels and Web Casts</summary>
+* [Trace Labs](https://www.tracelabs.org/)
+* [Innocent Lives Foundation](https://www.innocentlivesfoundation.org/)
+* [Badass Army](https://badassarmy.org/)
+* [Citizen Evidence Lab](https://citizenevidence.org/)
+* [CrisisMappers](https://crisismapping.ning.com/)
+* [FBI ECAP](https://www.fbi.gov/wanted/ecap)
+* [InformNapalm](https://informnapalm.org/en/)
+* [Locate International](https://locate.international/)
+* [National Center for Missing and Exploited Children](https://www.missingkids.org/)
+* [National Child Protection Task Force](https://www.ncptf.org/)
+* [Our Rescue](https://ourrescue.org/)
+* [Europol Stop Child Abuse](https://www.europol.europa.eu/stopchildabuse)
+* [Stop The Traffik](https://www.stopthetraffik.org/)
 
-* 0x4rkØ OSINT videos - [https://www.youtube.com/c/0x4rk%C3%98/videos](https://www.youtube.com/c/0x4rk%C3%98/videos)
-* OSINTCurious - [https://www.youtube.com/channel/UCjzceWf-OT3ImIKztzGkipA/videos](https://www.youtube.com/channel/UCjzceWf-OT3ImIKztzGkipA/videos)
-  * OSINTCurious 10 minute tips - [https://www.youtube.com/playlist?list=PL423I\_gHbWUUOs09899rex4t2l5py9YIk](https://www.youtube.com/playlist?list=PL423I_gHbWUUOs09899rex4t2l5py9YIk)
-  * OSINTCurious Webcasts - [https://osintcurio.us/osintvideosandpodcasts/](https://osintcurio.us/osintvideosandpodcasts/)
-* Adrian Crenshaw OSINT videos - [https://www.youtube.com/user/irongeek/search?query=OSINT](https://www.youtube.com/user/irongeek/search?query=OSINT)
-* Authentic8 - [https://www.youtube.com/user/Authentic8TV](https://www.youtube.com/user/Authentic8TV)
-* ConInt - [https://www.youtube.com/channel/UCBtSOceclpKcvunVNw82tFQ/videos](https://www.youtube.com/channel/UCBtSOceclpKcvunVNw82tFQ/videos)
-* Toddington - Drop in and Learn - [https://www.youtube.com/channel/UCAqnnQkeSVTC3ZJ7urNiD8Q](https://www.youtube.com/channel/UCAqnnQkeSVTC3ZJ7urNiD8Q)
-  * Drop in and Learn Web casts - [https://www.toddington.com/drop-in-and-learn-webcasts/](https://www.toddington.com/drop-in-and-learn-webcasts/)
-* Using Kali OSINT Tools - [https://www.youtube.com/playlist?list=PL0A5SH4w3NaIBKahXMaO29uToGLn3dARF](https://www.youtube.com/playlist?list=PL0A5SH4w3NaIBKahXMaO29uToGLn3dARF)
-* Ben Strick - OSINT at Home - [https://www.youtube.com/playlist?list=PLrFPX1Vfqk3ehZKSFeb9pVIHqxqrNW8Sy](https://www.youtube.com/playlist?list=PLrFPX1Vfqk3ehZKSFeb9pVIHqxqrNW8Sy)
-* OSINT Dojo - [https://www.youtube.com/osintdojo](https://www.youtube.com/osintdojo)
-* SCSP OSINT Series - [https://www.youtube.com/playlist?list=PL7yUP1guJz7fZNfZM-zkUieKSeA1TCG2S](https://www.youtube.com/playlist?list=PL7yUP1guJz7fZNfZM-zkUieKSeA1TCG2S)
-* Tracelabs Youtube - [https://www.youtube.com/channel/UCezKbcbnYtrwRXfGzgQMI3w](https://www.youtube.com/channel/UCezKbcbnYtrwRXfGzgQMI3w)
+## OSINT Tool and Resource Collections
 
-</details>
-
-<details>
-
-<summary>OSINT communities and thier resources</summary>
-
-* [OSINTCurious](https://osintcurio.us/) - Great community and training for those who are interested in OSINT skills and tools.&#x20;
-  * [Osint Curious OSINT Resource List](https://docs.google.com/document/d/14li22wAG2Wh2y0UhgBjbqEvZJCDsNZY8vpUAJ_jJ5X8/edit)
-* [OSINT Techniques Blog](https://www.osinttechniques.com/) - Fantastic site with tool lists, video guides, and blog on the latest techniques.
-  * [osinttechniques.com Tool List](https://www.osinttechniques.com/osint-tools.html)
-* [Osintion](https://www.theosintion.com/) - OSINT and Social Engineering master Joe Grey's website. Resources, OSINT Courses, and consultation services.
-* [OSINT Dojo](https://www.osintdojo.com/) - A project that provides those new to OSINT a number of free resources and simple challenges that build on one another to provide a simple road map for learning more about the field and polishing up related skills while also earning badges to show off your hard work.
-  * [OSINT Dojo Resources](https://www.osintdojo.com/resources/)
-* [Bellingcat's OSINT How-To](https://www.bellingcat.com/category/resources/how-tos/) - Bellingcat is a collective of researchers and journalists that use OSINT tools and techniques for a variety of purposes and that have come together to share thier latest and greatest tools and techniques. They have a slow of guides for researching specific things with OSINT.
-  * [Bellingcat's Tool Collection](https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/edit#gid=930747607)
-* [Aware-Online](https://www.aware-online.com/en/) - Aware Online is a Netherlands based training institute specialized in providing training in the field of Open Source intelligence (OSINT) and Social Media Intelligence (SOCMINT).
-* [https://exposingtheinvisible.org/](https://exposingtheinvisible.org/) - Exposing the Invisible is a project of [Tactical Tech](https://tacticaltech.org/), an international NGO that engages with citizens and civil-society organizations to explore and mitigate the impacts of technology on society.
-  * [https://kit.exposingtheinvisible.org/en/](https://kit.exposingtheinvisible.org/en/)
-
-</details>
-
-<details>
-
-<summary>OSINTer Blogs</summary>
-
-All of these are fantastic resource. Check them regularly for new tools and techniques.
-
-* [https://benjaminstrick.com/blog/](https://benjaminstrick.com/blog/)
-* [https://blog.bushidotoken.net/](https://blog.bushidotoken.net/)
-* [https://threadreaderapp.com/user/cyb\_detective](https://threadreaderapp.com/user/cyb_detective)
-* [https://dutchosintguy.com/events-and-blogs/](https://dutchosintguy.com/events-and-blogs/)
-* [https://www.intelligencewithsteve.com/blog](https://www.intelligencewithsteve.com/blog)
-* [https://inteltechniques.com/blog/](https://inteltechniques.com/blog/)
-* [https://keyfindings.blog/](https://keyfindings.blog/)
-* [https://www.lorandbodo.com/](https://www.lorandbodo.com/)
-* [https://www.offensiveosint.io/](https://www.offensiveosint.io/)
-* [https://www.osintcombine.com/blog](https://www.osintcombine.com/blog)
-* [https://www.osinteditor.com/](https://www.osinteditor.com/)
-* [https://www.osintme.com/](https://www.osintme.com/)
-* [http://www.theosintjournal.org/](http://www.theosintjournal.org/)
-* [https://www.bellingcat.com/](https://www.bellingcat.com/)
-* [https://www.cqcore.uk/blog-posts/](https://www.cqcore.uk/blog-posts/)
-* [https://keyfindings.blog/](https://keyfindings.blog/)
-* [https://www.offensiveosint.io/](https://www.offensiveosint.io/)
-* [https://sector035.nl/](https://sector035.nl/)
-
-</details>
-
-<details>
-
-<summary>Forums/Groups/Chatrooms</summary>
-
-### **Forums**
-
-* [https://app.element.io/#/room/#osint-chat:matrix.org](https://app.element.io/#/room/#osint-chat:matrix.org)
-* [https://osint.team/home](https://osint.team/home)
-* [https://www.websleuths.com/forums/](https://www.websleuths.com/forums/)
-* https://reddit.com
-  * r/InfoSecNews
-  * r/OSINT
-  * r/RBI
-
-### Discord/Slack
-
-* Bellingcat Discord - [https://discord.gg/nTaNPmz](https://discord.gg/nTaNPmz)
-* conInt Discord - [https://discord.gg/AJYUV7S](https://discord.gg/AJYUV7S)
-* Defcon Discord - [https://discord.gg.defcon](https://discord.gg.defcon)
-* Hack South Discord - [https://discord.gg/nTJFJrUwwT](https://discord.gg/nTJFJrUwwT)
-* Imaginary CTF Discord - [https://discord.gg/sjVcTTXg6a](https://discord.gg/sjVcTTXg6a)
-* OSINT Editor Discord - [https://discord.gg/M5pk9rE](https://discord.gg/M5pk9rE)
-* OSINT-FR Discord - [https://discord.osintfr.com](https://discord.osintfr.com)
-* Project Owl Discord - [https://discord.gg/projectowl](https://discord.gg/projectowl)
-* SANS Blue Team Discord - [https://discord.gg/ZvgwPtuusE](https://discord.gg/ZvgwPtuusE)
-* DeadpixelSec Discord - [https://discord.gg/infosec](https://discord.gg/infosec)
-* OSINT Curious Discord - [https://discord.gg/eaz5AqHDfK](https://discord.gg/eaz5AqHDfK)
-* OSINTion Discord - [https://discord.gg/p78TTGa](https://discord.gg/p78TTGa)
-* Tracelabs Slack - [https://tracelabs.slack.com](https://tracelabs.slack.com)
-
-</details>
-
-<details>
-
-<summary>Volunteer OSINT</summary>
-
-There are a few interesting organizations out there that take OSINT researchers and have them help with certain public good tasks like finding missing children or stopping pedophiles. It can be a heavy ask but can really do some good in the world with the skills that we have. Please check out and If you can donate some time to help, please do!
-
-* [https://www.tracelabs.org/](https://www.tracelabs.org/)&#x20;
-* [https://www.innocentlivesfoundation.org/](https://www.innocentlivesfoundation.org/)
-* [https://badassarmy.org/](https://badassarmy.org/)
-* [https://citizenevidence.org/](https://citizenevidence.org/)
-* [https://crisismapping.ning.com/](https://crisismapping.ning.com/)
-* [https://www.fbi.gov/wanted/ecap](https://www.fbi.gov/wanted/ecap)
-* [https://informnapalm.org/en/](https://informnapalm.org/en/)
-* [https://locate.international/](https://locate.international/)
-* [https://www.missingkids.org/](https://www.missingkids.org/)
-* [https://www.ncptf.org/](https://www.ncptf.org/)
-* [https://ourrescue.org/](https://ourrescue.org/)
-* [https://www.europol.europa.eu/stopchildabuse](https://www.europol.europa.eu/stopchildabuse)
-* [https://www.stopthetraffik.org/](https://www.stopthetraffik.org/)
-
-</details>
-
-## OSINT Tools
-
-<details>
-
-<summary>OSINT Tool and Resource Collections</summary>
-
-These are misc tools and collections out there. Many overlap, but there are fantastic things in each.
-
-* [Awesome Collection: OSINT](https://github.com/jivoi/awesome-osint)&#x20;
-* [https://start.me/p/DPYPMz/the-ultimate-osint-collection](https://start.me/p/DPYPMz/the-ultimate-osint-collection)
-* [https://www.aware-online.com/en/osint-tools/](https://www.aware-online.com/en/osint-tools/)
-* [OSINT Framework](https://osintframework.com/)&#x20;
+* [Awesome OSINT](https://github.com/jivoi/awesome-osint)
+* [OSINT Framework](https://osintframework.com/)
+* [Ultimate OSINT Collection](https://start.me/p/DPYPMz/the-ultimate-osint-collection)
+* [Aware Online OSINT Tools](https://www.aware-online.com/en/osint-tools/)
 * [OpenOSINT Team Tools](https://github.com/IVMachiavelli/OSINT_Team_Links)
 * [Sector035 OSINT Links](https://sector035.nl/links)
-* [Technisette OSINT Links](https://www.technisette.com/p/tools)
-* [Trouble Fake - start.me](https://start.me/p/QRQb0O/trouble-fake)&#x20;
+* [Technisette OSINT Tools](https://www.technisette.com/p/tools)
+* [Trouble Fake start.me](https://start.me/p/QRQb0O/trouble-fake)
 * [5nacks OSINT Bookmarks](https://github.com/5nacks/OSINTBookmarks)
 * [OSINT Combine Bookmarks](https://www.osintcombine.com/osint-bookmarks)
-* [Andy Black and Associates OSINT Toolkit](https://www.andyblackassociates.co.uk/resources-andy-black-associates/osint-toolkit/)
-* [Palliscope OSINT Bookmarks](https://www.paliscope.com/2020/11/04/200-of-our-best-osint-investigation-tools-free-download/)
-* [OSINT Stuff's Pile of OSINT links](https://cipher387.github.io/osint_stuff_tool_collection/)
-* [Terrorism & Radicalisation Research Dashboard - start.me](https://start.me/p/OmExgb/terrorism-radicalisation-research-dashboard)
-* [OSINT\_Encyclopedia](https://github.com/optiv/OSINT_Encyclopedia)
-* [https://start.me/p/rxeRqr/aml-toolbox](https://start.me/p/rxeRqr/aml-toolbox)
-* [https://www.aware-online.com/en/osint-tools/](https://www.aware-online.com/en/osint-tools/)
-* [https://start.me/p/rxRbpo/ti?locale=en](https://start.me/p/rxRbpo/ti?locale=en)
-* [https://start.me/p/W1AXYo/toolkit](https://start.me/p/W1AXYo/toolkit)
-* [https://start.me/p/ZME8nR/osint](https://start.me/p/ZME8nR/osint)
-* [https://www.osinttechniques.com/osint-tools.html](https://www.osinttechniques.com/osint-tools.html)
-* [https://start.me/p/4K0DXg/social-media](https://start.me/p/4K0DXg/social-media)
-* [https://thecyberpost.com/open-source-intelligence-osint-tools/](https://thecyberpost.com/open-source-intelligence-osint-tools/)
-* [https://start.me/p/ZGAzN7/verification-toolset](https://start.me/p/ZGAzN7/verification-toolset)
-* [https://map.malfrats.industries/](https://map.malfrats.industries/)
-* [https://github.com/cipher387/API-s-for-OSINT](https://github.com/cipher387/API-s-for-OSINT)
-* [https://github.com/cipher387/osint\_stuff\_tool\_collection](https://github.com/cipher387/osint_stuff_tool_collection)
+* [Andy Black OSINT Toolkit](https://www.andyblackassociates.co.uk/resources-andy-black-associates/osint-toolkit/)
+* [Paliscope OSINT Tools](https://www.paliscope.com/2020/11/04/200-of-our-best-osint-investigation-tools-free-download/)
+* [Cipher387 OSINT Stuff](https://cipher387.github.io/osint_stuff_tool_collection/)
+* [OSINT Encyclopedia](https://github.com/optiv/OSINT_Encyclopedia)
+* [OSINT APIs](https://github.com/cipher387/API-s-for-OSINT)
 
-</details>
+## OSINT Virtual Machines and Frameworks
 
-<details>
+* [Trace Labs OSINT VM](https://www.tracelabs.org/initiatives/osint-vm) - OSINT virtual machine for investigations.
+* [Tsurugi Linux](https://tsurugi-linux.org/) - DFIR-focused Linux distribution that also includes OSINT tools.
+  * [Tsurugi Tools Listing](https://tsurugi-linux.org/documentation_tsurugi_linux_tools_listing_2021.php)
+* [iHunt](https://nitinpandey.in/ihunt/) - OSINT framework grouped by investigation purpose.
+* [osrframework](https://www.kali.org/tools/osrframework/) - OSINT libraries and tools for username, DNS, leak, and deep-web research.
+* [Mr.Holmes](https://github.com/Lucksi/Mr.Holmes) - OSINT toolkit for domains, phone numbers, and social accounts.
 
-<summary>OSINT Virtual Machines</summary>
-
-* [https://www.tracelabs.org/initiatives/osint-vm](https://www.tracelabs.org/initiatives/osint-vm) - specialized OSINT VM specifically to bring together the most effective OSINT tools and customized scripts
-
-- [https://tsurugi-linux.org/](https://tsurugi-linux.org/) - 64 bit Linux version to perform digital forensics analysis and OSINT research.
-  * [https://tsurugi-linux.org/documentation\_tsurugi\_linux\_tools\_listing\_2021.php](https://tsurugi-linux.org/documentation_tsurugi_linux_tools_listing_2021.php)
-
-</details>
-
-<details>
-
-<summary>Frameworks</summary>
-
-* [https://nitinpandey.in/ihunt/#](https://nitinpandey.in/ihunt/)  - Detailed OSINT framework with dozens of tools grouped by purpose.
-* [osrframework](https://www.kali.org/tools/osrframework/) - This package contains a set of libraries developed by i3visio to perform Open Source Intelligence tasks. They include references to a bunch of different applications related to username checking, DNS lookups, information leaks research, deep web search, regular expressions extraction and many others.
-* [Scrummage](https://github.com/matamorphosis/Scrummage) — Ultimate OSINT and Threat Hunting Framework
-* [Mr.Holmes](https://github.com/Lucksi/Mr.Holmes) — osint toolkit for gathering information about domains, phone numbers and social media accounts
-
-</details>
+Recon-ng, SpiderFoot, Sn1per, and similar broad recon frameworks are maintained with Red Offensive recon tooling.
 
 {% content-ref url="../../red-offensive/scanning-active-recon/recon-frameworks.md" %}
 [recon-frameworks.md](../../red-offensive/scanning-active-recon/recon-frameworks.md)
 {% endcontent-ref %}
 
-### Tools by Category
+Scrummage is better treated as a threat-hunting/OSINT framework and is cross-referenced from Threat Hunting.
+
+{% content-ref url="../../blue-defense/threat-hunting.md" %}
+[threat-hunting.md](../../blue-defense/threat-hunting.md)
+{% endcontent-ref %}
+
+## Tools by Category
 
 {% content-ref url="search-engines/" %}
 [search-engines](search-engines/)

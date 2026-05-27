@@ -31,3 +31,13 @@ description: Detection, Enrichment, and Use cases
 * Direct out connection detection
   * There are very few instances that outbound traffic will not have a DNS entry. This will occur when an application or malware is reaching out to a hard-coded IP address and does not make a DNS request. By matching outbound traffic with DNS requests, and looking for all of those that do not show in the DNS entry, we can detect this activity.
   * Exceptions can include Microsoft IP addresses, CDN addresses like Akamai, Root DNS server addresses, and functions of specific vendor tools. Will require white listing.
+
+For domain investigation, passive DNS, and enrichment tools such as dnstwist and domain reputation lookups, use the OSINT and Threat Data pages.
+
+{% content-ref url="../../../cyber-intelligence/osint/domain.md" %}
+[domain.md](../../../cyber-intelligence/osint/domain.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../../cyber-intelligence/threat-data.md" %}
+[threat-data.md](../../../cyber-intelligence/threat-data.md)
+{% endcontent-ref %}

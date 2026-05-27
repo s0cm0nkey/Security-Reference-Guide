@@ -416,7 +416,7 @@ reg query HKCU\Software\Classes\ms-settings\shell\open\command
 reg query HKU\{SID}\Software\Classes\ms-settings\shell\open\command
 ```
 
-#### [Quick overview of persistent locations (AutoRuns)](https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns) <a href="#quick-overview-of-persistent-locations-autoruns" id="quick-overview-of-persistent-locations-autoruns"></a>
+#### [Quick overview of persistent locations (AutoRuns)](https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns) <a href="#quick-overview-of-persistent-locations-autoruns" id="quick-overview-of-persistent-locations-autoruns"></a>
 
 ```
 autorunsc.exe -accepteula -a * -c -h -v -m > autoruns.csv
@@ -588,7 +588,7 @@ Function Get-WmiNamespace ($Path = 'root')
 		Get-WmiNamespace -Path $FullPath
 	}
 }
-Get-WMINamespace -Recurse
+Get-WmiNamespace
 ```
 
 ## Network Connections <a href="#network-connections-main" id="network-connections-main"></a>
@@ -787,7 +787,7 @@ $CIEvents = Get-WinEvent -FilterHashtable @{ LogName = 'Microsoft-Windows-CodeIn
 $CIEvents
 ```
 
-### Obtain DLL information [ListDLLs](https://docs.microsoft.com/en-us/sysinternals/downloads/listdlls) <a href="#obtain-dll-information-listdlls" id="obtain-dll-information-listdlls"></a>
+### Obtain DLL information [ListDLLs](https://learn.microsoft.com/en-us/sysinternals/downloads/listdlls) <a href="#obtain-dll-information-listdlls" id="obtain-dll-information-listdlls"></a>
 
 ```
 listdlls [-r] [-v | -u] [processname|pid]
@@ -828,7 +828,7 @@ foreach ($domains in Get-DnsClientCache){Resolve-DnsName $domains.Entry -Type "T
 
 ### Active Directory Investigation <a href="#active-directory-investigation" id="active-directory-investigation"></a>
 
-Note: Live information can be found using [DSQuery](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732952\(v=ws.11\)) or [Netdom](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc772217\(v=ws.11\)).
+Note: Live information can be found using [DSQuery](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732952\(v=ws.11\)) or [Netdom](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc772217\(v=ws.11\)).
 
 ```
 dsquery computer

@@ -10,10 +10,11 @@
 * [https://github.com/rmusser01/Infosec\_Reference/blob/master/Draft/RT.md](https://github.com/rmusser01/Infosec\_Reference/blob/master/Draft/RT.md)
 * [https://kwcsec.gitbook.io/the-red-team-handbook/](https://kwcsec.gitbook.io/the-red-team-handbook/)
 * [https://github.com/magoo/redteam-plan](https://github.com/magoo/redteam-plan)
-* [https://tryhackme.com/module/red-team-fundamentals](https://tryhackme.com/module/red-team-fundamentals)
-* [https://tryhackme.com/room/redteamfundamentals](https://tryhackme.com/room/redteamfundamentals)
-* [https://tryhackme.com/room/redteamengagements](https://tryhackme.com/room/redteamengagements)
-* [https://tryhackme.com/module/red-team-fundamentals](https://tryhackme.com/module/red-team-fundamentals)
+Training rooms are maintained in Training.
+
+{% content-ref url="../training/" %}
+[training](../training/)
+{% endcontent-ref %}
 
 ### Tools
 
@@ -25,9 +26,12 @@
 ### Adversary Emulation
 
 * Tool Collections
-  * [Atomic Red Team](https://atomicredteam.io/) - Atomic Red Team™ is a library of simple tests that every security team can execute to test their defenses. Tests are focused, have few dependencies, and are defined in a structured format that can be used by automation frameworks.
-    * [https://github.com/cyberbuff/TheAtomicPlaybook](https://github.com/cyberbuff/TheAtomicPlaybook)
-    * [https://docs.google.com/document/d/1c8\_WRHp68Py9kyMYqMrs6aQ6ppcfLouV8jQ07UY27yE/mobilebasic](https://docs.google.com/document/d/1c8\_WRHp68Py9kyMYqMrs6aQ6ppcfLouV8jQ07UY27yE/mobilebasic)
+  * Atomic Red Team is maintained in Blue Defense because its primary use in this guide is detection/control validation. It is still useful during purple-team exercises.
+    {% content-ref url="../blue-defense/" %}
+    [blue-defense](../blue-defense/)
+    {% endcontent-ref %}
+    * [The Atomic Playbook](https://github.com/cyberbuff/TheAtomicPlaybook)
+    * [Atomic Red Team Reference Document](https://docs.google.com/document/d/1c8_WRHp68Py9kyMYqMrs6aQ6ppcfLouV8jQ07UY27yE/mobilebasic)
   * [stratus-red-team](https://github.com/DataDog/stratus-red-team) - Stratus Red Team is "[Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)™" for the cloud, allowing to emulate offensive attack techniques in a granular and self-contained manner.
   * [caldera](https://github.com/mitre/caldera) - Automated Adversary Emulation Platform by MITRE
     * [https://www.kali.org/tools/caldera/](https://www.kali.org/tools/caldera/)

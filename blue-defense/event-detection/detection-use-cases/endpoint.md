@@ -8,7 +8,7 @@
   * USB connections will create new events in the System log when connection, but not removed or plugged in a second time, by default.
 * Detection Requirements
   * Logging of EventID 2003, 2010, 2100, and 2101
-  * Enable Event IDs in the Microsoft\Windows\DriverFrameworks-UserMode Operations Channel to detect ALL USB plug and unplug events, not just the first time (Defualt). Will add device serial and unique session to log data.
+  * Enable Event IDs in the Microsoft\Windows\DriverFrameworks-UserMode Operations Channel to detect all USB plug and unplug events, not just the first time (default). This will add device serial and unique session data to log records.
     * Default is to be disabled
     *   Enable with Powershell
 
@@ -19,7 +19,7 @@
 
         * `$log.IsEnabled=$true # change to $false if disabling`
         * `$log.SaveChanges()`
-  * \*Optional\* -[ NirSoft USBDeview](https://www.nirsoft.net/utils/usb\_devices\_view.html) tool can run regularly and export details USB logs to a CSV file for lookup and ingest. Power shell can be used to invoke the tool and create a Windows Event from it as well.
+  * \*Optional\* - [NirSoft USBDeview](https://www.nirsoft.net/utils/usb\_devices\_view.html) can run regularly and export USB details to a CSV file for lookup and ingest. PowerShell can invoke the tool and create a Windows event from the output.
 * Logic 1 - Windows USB Insertion events
   * Where
     * These events occur in succession with the same device
@@ -66,7 +66,7 @@
     * AND
       * The service name has a high entropy value
 * Reference
-  * [h](https://www.rapid7.com/blog/post/2018/03/05/cis-critical-control-9-limitation-and-control-of-ports-protocols-and-services/)[ttps://www.rapid7.com/blog/post/2018/03/05/cis-critical-control-9-limitation-and-control-of-ports-protocols-and-services/](https://www.rapid7.com/blog/post/2018/03/05/cis-critical-control-9-limitation-and-control-of-ports-protocols-and-services/)
+  * [Rapid7: CIS Critical Control 9 - Limitation and Control of Ports, Protocols, and Services](https://www.rapid7.com/blog/post/2018/03/05/cis-critical-control-9-limitation-and-control-of-ports-protocols-and-services/)
 
 **New Scheduled task**
 
@@ -86,7 +86,7 @@
     * The following event occurs on an endpoint
       * EventID 4657
       * AND
-      * Manipulation of one fo the following target Registry key is one of the following:
+      * Manipulation of one of the following registry keys:
         * HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run&#x20;
         * HKEY\_CURRENT\_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
         * HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
@@ -99,7 +99,7 @@
 * Theory
   * Pass-the-hash attacks often use local administrator accounts to log in to other devices using the local admin's NTLM password hash instead of the password itself. Local accounts are rarely seen/used for logging into another device. NTLM use for local accounts is disabled by default, but still enabled for RID 500 (Administrator) accounts. Best practice is to disable this account and provision a specific user account with administrator privileges.
   * Some offensive tools will create a random Workstation name when performing a Pass-The-Hash attack. By checking the entropy value of workstation names in EventID 4624 logs, we can potentially discover the use of these tools.
-  * Local accounts should never be used to attempt to login to a second device. This activity could indicate a pass the hash attempt or other malcious activity.
+  * Local accounts should never be used to attempt to login to a second device. This activity could indicate a pass-the-hash attempt or other malicious activity.
 * Detection Requirements
   * Logging of EventID 4624: Account was successfully logged on.
   * Logging of EventID 4625: An account failed to log in.
@@ -185,7 +185,7 @@
 **Logs Cleared**
 
 * Theory
-  * Threat actors will typically try to delete logs in order to cover thier tracks and make analysis more difficult. Looking for these actions can alert to when a threat actor is in your environment.
+  * Threat actors will typically try to delete logs in order to cover their tracks and make analysis more difficult. Looking for these actions can alert to when a threat actor is in your environment.
 * Detection Requirements
   * Logging of EventID 104: The System log file was cleared
   * Logging of EventID 1102 - The audit log was cleared
@@ -198,7 +198,7 @@
 **AppLocker Blocked Action**
 
 * Theory
-  * &#x20;AppLocker can log when and EXE, DLL, MSI, or script is allowed, blocked, or wouldhave been blocked but is in a pre-enforcement mode. Combined with a strong application whitelisting policy, this can greatly harden a device.
+  * AppLocker can log when an EXE, DLL, MSI, or script is allowed, blocked, or would have been blocked in pre-enforcement mode. Combined with a strong application allow-listing policy, this can greatly harden a device.
 * Detection requirements
   * Logging of EventID 8002: Allowed EXE or DLL
   * Logging of EventID 8003: Would have blocked EXE or DLL
@@ -214,3 +214,13 @@
   * Where
     * The following event occurs on an endpoint:
       * EventID 8003 OR EventID 8004 OR EventID 8006 OR EventID 8007
+
+For Sysmon configuration and Windows Event ID references, see:
+
+{% content-ref url="../sysmon.md" %}
+[sysmon.md](../sysmon.md)
+{% endcontent-ref %}
+
+{% content-ref url="windows-event-id-logging-list.md" %}
+[windows-event-id-logging-list.md](windows-event-id-logging-list.md)
+{% endcontent-ref %}
