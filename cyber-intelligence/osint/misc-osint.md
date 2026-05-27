@@ -38,6 +38,8 @@
 
 ## **Cryptocurrencies**
 
+Core blockchain explorers are also listed on Threat Data. This page keeps investigation-oriented cryptocurrency OSINT tools, reputation lookups, and wallet-tracing helpers.
+
 <details>
 
 <summary>Cryptocurrency Search Tools</summary>
@@ -94,17 +96,24 @@
 
 ## **Miscellaneous Utilities**
 
-* OSINT Browser Extensions
-  * [https://github.com/ninoseki/mitaka](https://github.com/ninoseki/mitaka)
-  * [https://chrome.google.com/webstore/detail/sputnik/manapjdamopgbpimgojkccikaabhmocd?hl=en](https://chrome.google.com/webstore/detail/sputnik/manapjdamopgbpimgojkccikaabhmocd?hl=en)
-  * [https://chrome.google.com/webstore/detail/threatpinch-lookup/ljdgplocfnmnofbhpkjclbefmjoikgke?hl=en](https://chrome.google.com/webstore/detail/threatpinch-lookup/ljdgplocfnmnofbhpkjclbefmjoikgke?hl=en)
+* OSINT browser extensions are maintained on Threat Data with other quick lookup tools.
+
+{% content-ref url="../threat-data.md" %}
+[threat-data.md](../threat-data.md)
+{% endcontent-ref %}
+
 * [https://www.webgap.io/](https://www.webgap.io/) - Remote browser service providing 12 months of free access for OSINT researchers.
 * [Hunchly](https://hunch.ly/) - Web capture tool that passively records web pages as you browse. Useful for tracking large volumes of pages or preserving content that may change after your visit.
 * [Carbon14](https://github.com/Lazza/Carbon14) - OSINT tool for estimating when a web page was written. Common CMS platforms easily allow modification of displayed content dates, affecting both websites and RSS feeds. Since the dynamic nature of most web pages prevents investigators from reliably using the `Last-Modified` HTTP header, this tool leverages the `Last-Modified` header of linked images to estimate the time period spent preparing content. This can be compared against CMS-displayed dates to detect discrepancies.
-* [JupyterPen](https://github.com/obheda12/JupyterPen) - OSINT framework built around Jupyter Notebooks that has expanded into a full penetration testing tool.
+* JupyterPen has moved to Red Offensive because it has expanded into a penetration testing toolkit.
+
+{% content-ref url="../../red-offensive/scanning-active-recon/recon-frameworks.md" %}
+[recon-frameworks.md](../../red-offensive/scanning-active-recon/recon-frameworks.md)
+{% endcontent-ref %}
+
 * [CardPwn](https://github.com/itsmehacker/CardPwn) - OSINT tool to find breached credit card information.
 * [https://api.c99.nl/](https://api.c99.nl/) - API platform with dozens of web-based utilities.
-* [https://www.tracelabs.org/initiatives/osint-vm](https://www.tracelabs.org/initiatives/osint-vm) - TraceLabs OSINT virtual machine for investigations.
+* Trace Labs OSINT VM is maintained on the OSINT hub page.
 * [https://start.me/p/0PeKwy/osint-russie-iec-ies](https://start.me/p/0PeKwy/osint-russie-iec-ies) - Curated OSINT resources focused on Russia.
 * [https://github.com/j3ssie/metabigor](https://github.com/j3ssie/metabigor) - Intelligence tool designed to perform OSINT tasks without requiring API keys.
 * [upi-recon-cli](https://github.com/LuD1161/upi-recon-cli) - Command-line reconnaissance tool using virtual payment addresses (VPA). Leverages the UPI platform to discover mobile numbers, Gmail accounts, and vehicle registration numbers.

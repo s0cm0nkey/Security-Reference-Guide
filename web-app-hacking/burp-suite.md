@@ -1,8 +1,8 @@
 # Burp Suite
 
-## [**Burp**](https://portswigger.net/burp) ****&#x20;
+## [Burp](https://portswigger.net/burp)
 
-The Leading Web application testing tool on the market. Has a community edition that is free and handy for basic web app testing and CTF level functionality. Also has a pro version that has advanced features like a powerful brute forcing too, vulnerability scanner and access to more extensions.
+The leading web application testing tool on the market. Burp has a free Community edition for basic web app testing and CTF workflows, and a Professional edition with a stronger Intruder, active scanner, Collaborator support, and access to more extensions.
 
 {% tabs %}
 {% tab title="Guides and Support Tools" %}
@@ -50,7 +50,7 @@ The Leading Web application testing tool on the market. Has a community edition 
   * [https://portswigger.net/burp/documentation/desktop/options](https://portswigger.net/burp/documentation/desktop/options)
   * [https://www.hackingarticles.in/burp-suite-for-pentester-burps-project-management/](https://www.hackingarticles.in/burp-suite-for-pentester-burps-project-management/)
   * [https://www.youtube.com/watch?v=CdcJcdp-ObQ](https://www.youtube.com/watch?v=CdcJcdp-ObQ)
-* Collaborater - Burp Collaborator is a network service that Burp Suite uses to help discover many kinds of vulnerabilities.
+* Collaborator - Burp Collaborator is a network service that Burp Suite uses to help discover many kinds of vulnerabilities.
   * [https://portswigger.net/burp/documentation/collaborator](https://portswigger.net/burp/documentation/collaborator)
   * [https://www.hackingarticles.in/burp-suite-for-pentester-burp-collaborator/](https://www.hackingarticles.in/burp-suite-for-pentester-burp-collaborator/)
 {% endtab %}
@@ -74,7 +74,7 @@ The Leading Web application testing tool on the market. Has a community edition 
 {% tab title="Multi-Vuln Scanners" %}
 * [HUNT](https://github.com/bugcrowd/HUNT) - HUNT Suite is a collection of Burp Suite Pro/Free and OWASP ZAP extensions, collected by Bug Crowd.
 * [BurpBounty](https://github.com/wagiro/BurpBounty) - This Burp Suite extension allows you, in a quick and simple way, to improve the active and passive Burp Suite scanner by means of personalized rules through a very intuitive graphical interface.
-  * [Burp Bounty Pro](https://burpbounty.net/) - Premium bundle of vulnerabilites to scan for.
+  * [Burp Bounty Pro](https://burpbounty.net/) - Premium bundle of vulnerability profiles to scan for.
 * [VulnersScan](https://github.com/vulnersCom/burp-vulners-scanner) - Burp Suite scanner plugin based on [Vulners.com](https://vulners.com) vulnerability database API
   * Same thing as [https://portswigger.net/bappstore/c9fb79369b56407792a7104e3c4352fb](https://portswigger.net/bappstore/c9fb79369b56407792a7104e3c4352fb)
 * [Active Scan++](https://portswigger.net/bappstore/3123d5b5f25c4128894d97ea1acc4976) - Burp Scanner automates the task of scanning web sites for content and vulnerabilities. Depending on configuration, the Scanner can [crawl the application](https://portswigger.net/burp/documentation/scanner/crawling) to discover its content and functionality, and [audit the application](https://portswigger.net/burp/documentation/scanner/auditing) to discover vulnerabilities. Active Scan++ is an extension that expands the scanning capabilities of Burp Suite.
@@ -87,15 +87,15 @@ The Leading Web application testing tool on the market. Has a community edition 
 * [Retire.JS](https://github.com/h3xstream/burp-retire-js) - Burp/ZAP/Maven extension that integrate Retire.js repository to find vulnerable Javascript libraries.
 * [sqlipy](https://github.com/codewatchorg/sqlipy) - SQLiPy is a Python plugin for Burp Suite that integrates SQLMap using the SQLMap API.
 * [Backslash powered scanner](https://portswigger.net/bappstore/9cff8c55432a45808432e26dbb2b41d8) - Active scan for SSTI detection
-* [CSFR Scanner](https://portswigger.net/bappstore/60f172f27a9b49a1b538ed414f9f27c3) - Passive CSRF detection
+* [CSRF Scanner](https://portswigger.net/bappstore/60f172f27a9b49a1b538ed414f9f27c3) - Passive CSRF detection.
 * [Freddy ](https://portswigger.net/bappstore/ae1cce0c6d6c47528b4af35faebc3ab3)- Find Deserialization Bugs
 * [JSON Web Tokens](https://portswigger.net/bappstore/f923cbf91698420890354c1d8958fee6) - decode and manipulate JSON web tokens
 * [Web cache deception scanner ](https://portswigger.net/bappstore/7c1ca94a61474d9e897d307c858d52f0)- Tests applications for the Web Cache Deception vulnerability.
 * [HTTP Request Smuggler](https://portswigger.net/bappstore/aaaa60ef945341e8a450217a54a11646) - Active scanner and launcher for HTTP Request Smuggling attacks
 * [Upload Scanner](https://portswigger.net/bappstore/b2244cbb6953442cb3c82fa0a0d908fa) - Tests various upload vulnerabilities
-* [SSRF-KIng](https://github.com/ethicalhackingplayground/ssrf-king?s=09) - SSRF plugin for burp Automates SSRF Detection in all of the Request
+* [SSRF-King](https://github.com/ethicalhackingplayground/ssrf-king?s=09) - Burp plugin that automates SSRF detection across requests.
 * [shelling](https://github.com/ewilded/shelling) - a comprehensive OS command injection payload generator
-* [Autorise](https://portswigger.net/bappstore/f9bbac8c4acf4aefa4d7dc92a991af2f) - Tool for detecting autorization vulerabilities such as Indirect Object Reference.
+* [Autorize](https://portswigger.net/bappstore/f9bbac8c4acf4aefa4d7dc92a991af2f) - Tool for detecting authorization vulnerabilities such as IDOR.
 * [Java Deserialization Scanner](https://portswigger.net/bappstore/228336544ebe4e68824b5146dbbd93ae) - Active and passive scanner to find Java deserialization vulnerabilities
 {% endtab %}
 

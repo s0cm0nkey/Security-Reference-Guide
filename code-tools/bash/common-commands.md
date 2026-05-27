@@ -24,9 +24,9 @@ Print working directory
 
 ```
 Show status of interfaces
-#ifconfig
+# ip addr show
 Show status of wireless interfaces
-#iwconfig
+# iw dev
 ```
 
 ## Services&#x20;
@@ -53,7 +53,7 @@ Start ssh on boot
 Start apache web service
 # sudo systemctl start apache2
 Verify http is up and listening
-# sudo ss -antlp } grep apache
+# sudo ss -antlp | grep apache
 start apache web service on boot
 # sudo systemctl enable apache2
 ```
@@ -72,9 +72,9 @@ Display all jobs running in current terminal sessions
 ## Users and privileges
 
 ```
-Adds user to sudoers file
+Create a user and add them to the sudo group
 # adduser (username)
-# adduser (username) sudo
+# usermod -aG sudo (username)
 ```
 
 ## File Manipulation
@@ -131,7 +131,7 @@ Change file permissions
 ```
 
 {% hint style="info" %}
-For more info on the permissions codes, see here: [https://www.guru99.com/file-permissions.html](https://www.guru99.com/file-permissions.html)
+`chmod 777` grants read, write, and execute permissions to everyone. It is useful for understanding permission bits, but it is usually too permissive for real systems. For more info on the permissions codes, see here: [https://www.guru99.com/file-permissions.html](https://www.guru99.com/file-permissions.html)
 {% endhint %}
 
 ### File manipulation and Searching in a file
@@ -153,11 +153,11 @@ Used for pattern matching
 ### Comparing files
 
 ```
-Compares two files and outputs resutls in 3 columns. first is unique to A, second is unique to B, third is shared
+Compares two files and outputs results in 3 columns. The first is unique to A, second is unique to B, third is shared.
 # comm [fileA.txt] [fileB.txt]
 Compares two files
 # diff -c [fileA.txt] [fileB.txt]
--c contect format - shows all entires in both files, “-” in the first, “+” in the second
+-c context format - shows all entries in both files, “-” in the first, “+” in the second
 -u unified format - same as above but does not show lines that match
 ```
 
@@ -184,10 +184,10 @@ Accelerated download with multiple connections
 ## Command History
 
 * Commands entered in the terminal are tracked using the `HISTFILE` environment variable and are written to the `~/.bash_history` file when a user logs off.
-* it is possible for credentials and passwords to be stored as plaintext in the `/.bash_history`
-* Variables can also be seen when stored in the bash config file, .bashrc
+* It is possible for credentials and passwords to be stored as plaintext in `~/.bash_history`.
+* Variables can also be seen when stored in Bash config files such as `.bashrc`.
 * One way a user can prevent credentials from being recorded is by starting each command with a leading space character. For example the command `" echo 'hello world'"` will not be saved, whereas `"echo 'hello world'"` will be.
-* To prevent users from hiding commands, the `HISTCONTROL` variable can be set to `"ignoredup"`, and users prevented from changing the environment variable. This will ensure all commands are captured and stored in the bash history.cat theywillneverfindmeheere
+* To prevent users from hiding commands with a leading space, the `HISTCONTROL` variable can be set to `"ignoredup"`, and users can be prevented from changing the environment variable. This helps ensure commands are captured and stored in Bash history.
 
 ### Sudo History
 

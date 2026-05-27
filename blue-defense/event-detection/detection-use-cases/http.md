@@ -5,7 +5,7 @@
 * Unauthorized proxy detection and WPAD attacks
   * If the XFF field is present, a proxy is being used. We can look for the presence of the XFF field in HTTP logs where the source IP does not match approved Web Servers. This will discover policy violations, and WPAD based MITM attacks
 * Meterpreter over HTTP
-  * Default Merterpreter configurations will perform an HTTP GET request about every 3 seconds and will continue constantly
+  * Default Meterpreter configurations will perform an HTTP GET request about every 3 seconds and will continue constantly
 * Scan/crawl of a web server detection by HTTP Method
   * \~1000 get requests in a 5 minute period
   * \>100 POST requests in a 5 minute period
@@ -22,9 +22,9 @@
   * A good starting place is looking at URL lengths of over 250 characters, but may require tuning per your environment.
   * Note: This is intended for organization controlled Web Servers. Using this technique to monitor standard HTTP traffic will yield a ton of noise, as many ad domains have long URLs.
 * Malicious/Unauthorized User-Agent
-  * A high-value add data point, User-Agents can be used to identify sloppy malware, where the User-agent has a typo in it, or the malware author is so bold they even put its name in the User-Agent field.
+  * User-Agent is a high-value data point. It can identify sloppy malware when the User-Agent has a typo or when the malware author puts the malware name directly in the field.
   * Older User-agents can be used to identify older operating systems that might have slipped past Vulnerability management.
-  * While this Use Case does require the creation of an allow list based on expected traffic within your organization, it will be a high fidelity alert for all unauthorized traffic.Most websites tend to fall below a certain URL character length. Certain web attacks like SQL injection will make the URL length quite large, especially when using HTML encoding to bypass any SQL injection defenses. This is usually a built in use case for most Web App Firewalls, but if you do not have one, it is still an easy use case to implement.
+  * While this use case requires an allow list based on expected traffic within your organization, it can become a high-fidelity alert for unauthorized traffic. Most websites tend to fall below a certain URL character length. Certain web attacks, like SQL injection, can make the URL length quite large, especially when using HTML encoding to bypass SQL injection defenses. This is usually a built-in use case for most web application firewalls, but if you do not have one, it is still an easy use case to implement.
 
 ## **HTTPS DETECTION Use Cases - Certificates**
 
@@ -33,8 +33,8 @@
 * Potential Malware SSL Certificate
   * One or more missing fields - Similar to Meterpreter, many types of malware will use a self-signed certificate and be missing one or more common fields. These are typically Organization, Organization Unit, State, and Country code.&#x20;
   * Improper field content - We can also look at improper data in fields such as Country Code. Simply looking at the country code field for non existent country codes, can be rather effective.
-  * Uncommon Common Names - The Common Name fields often look liek DNS domains. Malware can sometimes generate Common names that dismiss the TLD suffix. Simply, finding a certificate with a common name missing a "." is abnormal.
-  * We can look at malware dumps like [Contagio](https://contagiodump.blogspot.com/) for evidence of the disparity of presence of certificate fields. Country code and Organization fields are missing in about 33% of malware certificates, and state/country code are missing in almost 75%.&#x20;
+  * Uncommon Common Names - The Common Name fields often look like DNS domains. Malware can sometimes generate common names that omit the TLD suffix. Finding a certificate with a common name missing a "." is abnormal.
+  * We can look at malware dumps like [Contagio](https://contagiodump.blogspot.com/) for evidence of the disparity of presence of certificate fields. Country code and organization fields are missing in about 33% of malware certificates, and state/country code are missing in almost 75%.&#x20;
   * Certificates should constantly be inspected for field combinations that would raise suspicion.
 * Expired SSL Certificate
   * Sometimes legitimate certificates can be collected by malicious actors by various means and used long after they have expired. Sometimes the use of an expired SSL certificate can indicate interaction with an older machine that has not been maintained and may be compromised. Either way, there is little to no justification for legitimate interaction with a device that uses an expired SSL Certificate.
@@ -43,7 +43,13 @@
 * Self-Signed Certificate
   * While this Use Case will require filtering and tuning, it is rare that you will see legitimate external traffic using a self-signed SSL certificate. Internal traffic will take some work to filter out as internal traffic has a higher occurrence of using self-signed certificates. That being said, you should do all you can to limit self-signed certificate use within your organization.
 * Unauthorized certificate issuer
-  * Signed certificates dont mean anything if we do not trust the Certificate Authority that signed them. It is possible to find and export a list of trusted root certificate authorities that can be used as a lookup and white list. Conversely, a blacklist could be made for those that we would not trust.
+  * Signed certificates do not mean anything if we do not trust the Certificate Authority that signed them. It is possible to find and export a list of trusted root certificate authorities that can be used as a lookup and allow list. Conversely, a deny list could be made for those that we would not trust.
   * Beware of free CAs like Let's Encrypt that are becoming increasingly more popular. They allow [malware and phishing campaigns](https://www.trendmicro.com/en\_us/research/16/a/lets-encrypt-now-being-abused-by-malvertisers.html) to use legitimately signed certificates.
 * High entropy of Certificate field entries
   * As mentioned with the Meterpreter Use Case, some malware will create a random string to fill in certificate data fields. We can use frequency analysis tools like [freq.py](https://github.com/markbaggett/freq) to calculate entropy of the field.
+
+For malware samples, sandboxing, and DFIR malware analysis resources, use the DFIR malware pages.
+
+{% content-ref url="../../../dfir-digital-forensics-and-incident-response/malware.md" %}
+[malware.md](../../../dfir-digital-forensics-and-incident-response/malware.md)
+{% endcontent-ref %}

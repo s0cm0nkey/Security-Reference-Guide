@@ -1,137 +1,162 @@
+---
+description: Container security resources for Docker, Kubernetes, image scanning, runtime security, platform hardening, and authorized container testing.
+---
+
 # Yellow - Containers
+
+This page covers container and Kubernetes operations, hardening, vulnerability scanning, DFIR, and authorized testing. Keep centralized logging strategy in Security Logging and generic vulnerability management tooling in Blue Defense unless the tool is container-specific.
+
+## Related Sections
+
+Container logging should feed the broader logging strategy.
+
+{% content-ref url="security-logging/" %}
+[security-logging](security-logging/)
+{% endcontent-ref %}
+
+Container image and dependency scanners also belong with vulnerability management.
+
+{% content-ref url="blue-defense/vulnerability-management.md" %}
+[vulnerability-management.md](blue-defense/vulnerability-management.md)
+{% endcontent-ref %}
+
+Container labs and vulnerable playgrounds belong in Training.
+
+{% content-ref url="training/practice-lab.md" %}
+[practice-lab.md](training/practice-lab.md)
+{% endcontent-ref %}
 
 ## Container Management
 
-### **CLI Tools**
+### CLI and Runtime Tools
 
-* [**gvisor**](https://github.com/google/gvisor) - container runtime sandbox.
-* [**ctop**](https://github.com/bcicen/ctop) - top-like interface for container metrics.
+* [gVisor](https://github.com/google/gvisor) - Container runtime sandbox.
+* [ctop](https://github.com/bcicen/ctop) - Top-like interface for container metrics.
 
-### **Web Tools**
+### Platforms and Web Tools
 
-* &#x20;[**Moby**](https://github.com/moby/moby) - a collaborative project for the container ecosystem to assemble container-based system.
-* [**Traefik**](https://traefik.io/) - open source reverse proxy/load balancer provides easier integration with Docker and Let's encrypt.
-* [**kong**](https://github.com/Kong/kong) - The Cloud-Native API Gateway.
-* [**rancher**](https://github.com/rancher/rancher) - complete container management platform.
+* [Moby](https://github.com/moby/moby) - Collaborative open source project for the Docker container ecosystem.
+* [Traefik](https://traefik.io/) - Reverse proxy and load balancer with Docker and Let's Encrypt integration.
+* [Kong](https://github.com/Kong/kong) - Cloud-native API gateway.
+* [Rancher](https://github.com/rancher/rancher) - Kubernetes and container management platform.
+* [Portainer](https://github.com/portainer/portainer) - Docker and Kubernetes management UI.
 
 ## Logging and Monitoring
 
-Container logging and analysis revolves around 3 areas:
+Container logging usually combines three layers:
 
-* Container Service Logs - Service daemons record key events
-  * Daemon events - Errors, status, and general events
-  * Remote calls to APIs
-  * Creation/Modification/Deletion of containers
-* Host operating system/platform logs
-  * Amazon EKS offers logging events to Cloudwatch
-* Service logs
+* **Container platform logs:** daemon events, API calls, and container create/modify/delete activity.
+* **Host logs:** operating system, kubelet, runtime, and platform logs. For example, Amazon EKS can ship control plane and workload logs to CloudWatch.
+* **Application logs:** service logs written to stdout/stderr, a bind mount, or an external collector.
 
-### Logging Methods
+Common collection patterns:
 
-* Persistent data volume or bind mount - Log data is sent to a persistent location outside of the container. Often with syslog directly to the host OS
-* Application inside container - If the application itself has logging capabilities, they can be logged to locations outside of the container
-* Monitoring container (Sidecar) - A container for collecting logs from other containers
-* Daemon log drivers - Captures stdout and stderr of containers
+* Persistent volume or bind mount for applications that write to files.
+* Application-native logging to an external destination.
+* Sidecar or DaemonSet collectors for Kubernetes workloads.
+* Runtime log drivers that capture stdout and stderr.
 
 ## Container Defense
 
-### Tools
+### Vulnerability and Configuration Scanning
 
-* Security Auditing and Vulnerability Scanners
-  * [Clair](https://github.com/quay/clair) - Vulnerability Static Analysis for Containers
-  * [WhaleScan](https://github.com/nccgroup/whalescan) - Whalescan is a vulnerability scanner for Windows containers, which performs several benchmark checks, as well as checking for CVEs/vulnerable packages on the container
-  * [Trivy](https://github.com/aquasecurity/trivy) - Scanner for vulnerabilities in container images, file systems, and Git repositories, as well as for configuration issues
-  * [SecretScanner](https://github.com/deepfence/SecretScanner) - Find secrets and passwords in container images and file systems
-  * [sandbox-attacksurface-analysis-tools](https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools) - Set of tools to analyze Windows sandboxes for exposed attack surface.
-* DFIR
-  * [sysdig-inspect](https://github.com/draios/sysdig-inspect) - A powerful opensource interface for container troubleshooting and security investigation
-    * [https://github.com/draios/sysdig](https://github.com/draios/sysdig)
-* Container Management
-  * [rancher](https://github.com/rancher/rancher) - Complete container management platform
-  * [portainer](https://github.com/portainer/portainer) - Making Docker and Kubernetes management easy.
+* [Clair](https://github.com/quay/clair) - Static vulnerability analysis for container images.
+* [WhaleScan](https://github.com/nccgroup/whalescan) - Windows container vulnerability and benchmark scanner. Verify maintenance before relying on it for current coverage.
+* [Trivy](https://github.com/aquasecurity/trivy) - Scanner for container images, filesystems, repositories, and IaC misconfigurations.
+* [SecretScanner](https://github.com/deepfence/SecretScanner) - Finds secrets in container images and filesystems.
+* [sandbox-attacksurface-analysis-tools](https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools) - Tools for analyzing Windows sandbox attack surface.
+* [Docker Bench for Security](https://github.com/docker/docker-bench-security) - Checks Docker hosts against common security best practices.
+* [Anchore Engine](https://github.com/anchore/anchore-engine) - Legacy Anchore image analysis service. Modern Anchore workflows generally use [Grype](https://github.com/anchore/grype) and [Syft](https://github.com/anchore/syft).
+* [GitGuardian Docker security cheat sheet](https://blog.gitguardian.com/how-to-improve-your-docker-containers-security-cheat-sheet/)
+* [OWASP Docker Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html)
 
-## Container Pen Testing
+### DFIR and Investigation
 
-* Enumeration
-  * [https://pentestbook.six2dez.com/enumeration/cloud/docker-and-and-kubernetes](https://pentestbook.six2dez.com/enumeration/cloud/docker-and-and-kubernetes)
-* Container Escapes
-  * [https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/)
-  * [https://pwning.systems/posts/escaping-containers-for-fun/](https://pwning.systems/posts/escaping-containers-for-fun/)
-  * Container Breakout - _PTFM: Container Breakout - pg. 145_
-* Tools
-  * [kubesploit](https://github.com/cyberark/kubesploit) - Kubesploit is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in Golang, focused on containerized environments.
+* [sysdig-inspect](https://github.com/draios/sysdig-inspect) - Interface for container troubleshooting and security investigation.
+  * [sysdig](https://github.com/draios/sysdig)
+
+## Container Pentesting
+
+Use these references only for environments where you have explicit authorization.
+
+### Enumeration and Escapes
+
+* [Pentest Book - Docker and Kubernetes](https://pentestbook.six2dez.com/enumeration/cloud/docker-and-kubernetes)
+* [Understanding Docker container escapes](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/)
+* [Escaping containers for fun](https://pwning.systems/posts/escaping-containers-for-fun/)
+* _PTFM: Container Breakout - pg. 145_
+
+### Offensive Tools
+
+* [kubesploit](https://github.com/cyberark/kubesploit) - Kubernetes-focused post-exploitation C2 framework.
+* [deepce](https://github.com/stealthcopter/deepce) - Docker enumeration, privilege escalation, and container escape checks.
+* [PENTESTING-BIBLE Docker for Pentesters](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE/blob/master/8-part-100-article/62_article/Docker%20for%20Pentesters.pdf)
+* [PayloadsAllTheThings - Docker Pentest](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Container%20-%20Docker%20Pentest.md)
+* [Docker for Pentesters](https://blog.ropnop.com/docker-for-pentesters/)
+* _Operator Handbook: Docker Exploit - pg. 64_
 
 ## Docker
 
-[Docker](https://www.docker.com/) - A Docker container is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
+[Docker](https://www.docker.com/) packages an application with its runtime, dependencies, system tools, and settings.
 
-* Basic and Reference
-  * [https://www.docker.com/101-tutorial](https://www.docker.com/101-tutorial)
-  * [https://hub.docker.com/r/docker/getting-started](https://hub.docker.com/r/docker/getting-started)
-  * [https://docker-handbook.farhan.dev/](https://docker-handbook.farhan.dev/)
-  * [https://devopswithdocker.com/](https://devopswithdocker.com/)
-  * [https://tbhaxor.com/docker-containers-security/](https://tbhaxor.com/docker-containers-security/)
-  * [Docker Jumpstart](http://odewahn.github.io/docker-jumpstart/) - Andrew Odewahn
+### Basics and Reference
+
+* [Docker 101 tutorial](https://www.docker.com/101-tutorial)
+* [Docker getting started image](https://hub.docker.com/r/docker/getting-started)
+* [Docker Handbook](https://docker-handbook.farhan.dev/)
+* [DevOps with Docker](https://devopswithdocker.com/)
+* [Docker containers security](https://tbhaxor.com/docker-containers-security/)
+* [Docker Jumpstart](http://odewahn.github.io/docker-jumpstart/) - Older but still useful introductory material.
 * _Operator Handbook: Docker Commands - pg. 61_
-* Offensive Testing
-  * [deepce](https://github.com/stealthcopter/deepce) - Docker Enumeration, Escalation of Privileges and Container Escapes (DEEPCE)
-  * [PENTESTING-BIBLE/DockerforPentesters](https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE/blob/master/8-part-100-article/62\_article/Docker%20for%20Pentesters.pdf)
-  * [PayloadsAllTheThings/DockerPentest](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Container%20-%20Docker%20Pentest.md)
-  * [https://blog.ropnop.com/docker-for-pentesters/](https://blog.ropnop.com/docker-for-pentesters/)
-  * _Operator Handbook: Docker Exploit- pg. 64_
-* Defense and Hardening
-  * [docker-bench-security](https://github.com/docker/docker-bench-security) - The Docker Bench for Security is a script that checks for dozens of common best-practices around deploying Docker containers in production.
-  * [Anchore](https://github.com/anchore/anchore-engine) - A service that analyzes docker images and applies user-defined acceptance policies to allow automated container image validation and certification
-  * [https://blog.gitguardian.com/how-to-improve-your-docker-containers-security-cheat-sheet/](https://blog.gitguardian.com/how-to-improve-your-docker-containers-security-cheat-sheet/)
-  * [https://cheatsheetseries.owasp.org/cheatsheets/Docker\_Security\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Docker\_Security\_Cheat\_Sheet.html)
-* Misc
-  * [Whaler](https://github.com/P3GLEG/Whaler) - Program to reverse Docker images into Docker files
+
+### Misc
+
+* [Whaler](https://github.com/P3GLEG/Whaler) - Reconstructs Dockerfiles from Docker images.
 
 {% file src=".gitbook/assets/Docker-Security-Cheatsheet_hp8lh3.pdf" %}
 
 {% embed url="https://youtu.be/KINjI1tlo2w" %}
 
-## [Kubernetes](https://kubernetes.io/)
+## Kubernetes
 
-### Tools
+### Management and Observability
 
-* Container Management
-  * KubeCTL Kubernetes command line tool
-    * [https://kubernetes.io/docs/reference/kubectl/cheatsheet/](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
-    * [GitHub - lightspin-tech/red-kube: Red Team KubeCTL Cheat Sheet](https://github.com/lightspin-tech/red-kube)&#x20;
-    * _Operator Handbook: KubeCTL- pg. 111_
-  * [kubebox](https://github.com/astefanutti/kubebox) - Terminal and Web console for Kubernetes
-    * [https://hakin9.org/kubebox-terminal-and-web-console-for-kubernetes/](https://hakin9.org/kubebox-terminal-and-web-console-for-kubernetes/)
-  * [**kubernetes-the-hard-way**](https://github.com/kelseyhightower/kubernetes-the-hard-way) - bootstrap Kubernetes the hard way on Google Cloud Platform. No scripts.
-  * [**kubernetes-the-easy-way**](https://github.com/jamesward/kubernetes-the-easy-way) - bootstrap Kubernetes the easy way on Google Cloud Platform. No scripts.
-  * [Hubble](https://github.com/cilium/hubble) is a Network, Service & Security Observability for Kubernetes using eBPF.
-* Offensive tools
-  * [peirates](https://www.kali.org/tools/peirates/)  - a Kubernetes penetration tool, enables an attacker to escalate privilege and pivot through a Kubernetes cluster. It automates known techniques to steal and collect service accounts, obtain further code execution, and gain control of the cluster.
-  * [Kubestroyer](https://github.com/Rolix44/Kubestroyer) - Kubestroyer aims to exploit Kubernetes clusters misconfigurations and be the swiss army knife of your Kubernetes pentests
-* Security auditing
-  * [kubesec](https://github.com/controlplaneio/kubesec) - Security risk analysis for Kubernetes resources
-  * [netassert](https://github.com/controlplaneio/netassert) - This is a security testing framework for fast, safe iteration on firewall, routing, and NACL rules for Kubernetes ([Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/), services) and non-containerised hosts (cloud provider instances, VMs, bare metal).
-  * [KubiScan](https://github.com/cyberark/KubiScan) - A tool to scan Kubernetes cluster for risky permissions
-  * [rbac-police](https://github.com/PaloAltoNetworks/rbac-police) - Evaluate the RBAC permissions of Kubernetes identities through policies written in Rego
-    * [https://www.paloaltonetworks.com/resources/whitepapers/kubernetes-privilege-escalation-excessive-permissions-in-popular-platforms](https://www.paloaltonetworks.com/resources/whitepapers/kubernetes-privilege-escalation-excessive-permissions-in-popular-platforms)
+* [Kubernetes](https://kubernetes.io/)
+* [kubectl cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+* [red-kube](https://github.com/lightspin-tech/red-kube) - Red-team kubectl cheat sheet.
+* _Operator Handbook: KubeCTL - pg. 111_
+* [kubebox](https://github.com/astefanutti/kubebox) - Terminal and web console for Kubernetes.
+  * [kubebox overview](https://hakin9.org/kubebox-terminal-and-web-console-for-kubernetes/)
+* [Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
+* [Kubernetes the Easy Way](https://github.com/jamesward/kubernetes-the-easy-way)
+* [Hubble](https://github.com/cilium/hubble) - Kubernetes network, service, and security observability using eBPF.
+
+### Offensive Tools
+
+* [peirates](https://www.kali.org/tools/peirates/) - Kubernetes penetration tool for authorized privilege escalation and pivot testing.
+* [Kubestroyer](https://github.com/Rolix44/Kubestroyer) - Kubernetes misconfiguration exploitation toolkit.
+
+### Security Auditing
+
+* [kubesec](https://github.com/controlplaneio/kubesec) - Kubernetes resource security risk analysis.
+* [netassert](https://github.com/controlplaneio/netassert) - Tests Kubernetes NetworkPolicy and related network controls.
+* [KubiScan](https://github.com/cyberark/KubiScan) - Scans Kubernetes clusters for risky permissions.
+* [rbac-police](https://github.com/PaloAltoNetworks/rbac-police) - Evaluates RBAC permissions with Rego policies.
+  * [Kubernetes privilege escalation from excessive permissions](https://www.paloaltonetworks.com/resources/whitepapers/kubernetes-privilege-escalation-excessive-permissions-in-popular-platforms)
 
 ### Resources
 
-* Basics and Reference
-  * [https://xapax.github.io/security/#attacking\_kubernetes/basics\_of\_kubernetes/](https://xapax.github.io/security/#attacking\_kubernetes/basics\_of\_kubernetes/)
-  * [https://intellipaat.com/blog/tutorial/devops-tutorial/kubernetes-cheat-sheet/](https://intellipaat.com/blog/tutorial/devops-tutorial/kubernetes-cheat-sheet/)
-  * [kubernetes-production-best-practices](https://learnk8s.io/production-best-practices/) - checklists with best-practices for production-ready Kubernetes.
-  * _Operator Handbook: Kubernetes - pg. 107_
-* Security Auditing and Hardening
-  * [NSA Kubernetes hardening guide](https://media.defense.gov/2021/Aug/03/2002820425/-1/-1/1/CTR\_KUBERNETES%20HARDENING%20GUIDANCE.PDF)
-    * [https://research.nccgroup.com/2021/09/09/nsa-cisa-kubernetes-security-guidance-a-critical-review/](https://research.nccgroup.com/2021/09/09/nsa-cisa-kubernetes-security-guidance-a-critical-review/)
-  * [https://cheatsheetseries.owasp.org/cheatsheets/Kubernetes\_Security\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Kubernetes\_Security\_Cheat\_Sheet.html)
-  * [kubernetes-security-best-practice](https://github.com/freach/kubernetes-security-best-practice)
-  * [k8s-security](https://github.com/kabachook/k8s-security) - kubernetes security notes and best practices.
-* Pen Testing
-  * [https://xapax.github.io/security/#attacking\_kubernetes/attacking\_kubernetes/](https://xapax.github.io/security/#attacking\_kubernetes/attacking\_kubernetes/)
-  * [https://xapax.github.io/security/#attacking\_kubernetes/attacking\_kubernetes\_checklist/](https://xapax.github.io/security/#attacking\_kubernetes/attacking\_kubernetes\_checklist/)
-  * _Operator Handbook: Kubernetes Exploit - pg. 108_
-* Training
-  * [kubernetes-simulator](https://github.com/kubernetes-simulator/simulator) - Kubernetes Security Training Platform - Focusing on security mitigation
-  * [https://madhuakula.com/kubernetes-goat/](https://madhuakula.com/kubernetes-goat/) - Interactive Kubernetes Security Learning Playground
+* [Kubernetes basics](https://xapax.github.io/security/#attacking_kubernetes/basics_of_kubernetes/)
+* [Kubernetes cheat sheet](https://intellipaat.com/blog/tutorial/devops-tutorial/kubernetes-cheat-sheet/)
+* [Kubernetes production best practices](https://learnk8s.io/production-best-practices/)
+* _Operator Handbook: Kubernetes - pg. 107_
+* [NSA/CISA Kubernetes hardening guidance](https://media.defense.gov/2021/Aug/03/2002820425/-1/-1/1/CTR_KUBERNETES%20HARDENING%20GUIDANCE.PDF)
+  * [NCC Group review of the guidance](https://research.nccgroup.com/2021/09/09/nsa-cisa-kubernetes-security-guidance-a-critical-review/)
+* [OWASP Kubernetes Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Kubernetes_Security_Cheat_Sheet.html)
+* [kubernetes-security-best-practice](https://github.com/freach/kubernetes-security-best-practice)
+* [k8s-security](https://github.com/kabachook/k8s-security)
+* [Kubernetes pentesting](https://xapax.github.io/security/#attacking_kubernetes/attacking_kubernetes/)
+* [Kubernetes pentesting checklist](https://xapax.github.io/security/#attacking_kubernetes/attacking_kubernetes_checklist/)
+* _Operator Handbook: Kubernetes Exploit - pg. 108_
+* [kubernetes-simulator](https://github.com/kubernetes-simulator/simulator) - Kubernetes security training platform.
+* [Kubernetes Goat](https://madhuakula.com/kubernetes-goat/) - Interactive Kubernetes security learning playground.

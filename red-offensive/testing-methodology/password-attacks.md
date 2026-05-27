@@ -46,13 +46,7 @@ description: Password1234!
 * [BruteScrape](https://github.com/cheetz/brutescrape) - A web scraper for generating password files based on plain text found
 * [Mentalist](https://github.com/sc0tfree/mentalist) - Mentalist is a graphical tool for custom wordlist generation. It utilizes common human paradigms for constructing passwords and can output the full wordlist as well as rules compatible with [Hashcat](https://hashcat.net/hashcat) and [John the Ripper](http://www.openwall.com/john).
 
-**Wordlist Rules**
-
-* [https://github.com/hashcat/hashcat/tree/master/rules](https://github.com/hashcat/hashcat/tree/master/rules)
-* [http://contest-2010.korelogic.com/rules-hashcat.html](http://contest-2010.korelogic.com/rules-hashcat.html)
-* [https://github.com/cyberspacekittens/nsa-rules](https://github.com/cyberspacekittens/nsa-rules)
-* [https://github.com/cyberspacekittens/Hob0Rules](https://github.com/cyberspacekittens/Hob0Rules)
-* [https://github.com/cyberspacekittens/password\_cracking\_rules](https://github.com/cyberspacekittens/password\_cracking\_rules)
+Hashcat rules are maintained in the Hashcat tab below.
 {% endtab %}
 {% endtabs %}
 
@@ -118,7 +112,7 @@ Reference
 
 {% tabs %}
 {% tab title="Online Cracking" %}
-* [https://crackstation.net/](https://crackstation.net/)
+* [CrackStation](https://crackstation.net/)
 * [https://www.cmd5.org/](https://www.cmd5.org/)
 * [https://hashkiller.io/listmanager](https://hashkiller.io/listmanager)
 * [https://www.onlinehashcrack.com/](https://www.onlinehashcrack.com/)
@@ -136,6 +130,7 @@ Reference
   * [MDXfind Bible | Infosec and Password Cracking Blog](https://0xln.pw/MDXfindbible)
   * _Operator Handbook: MDXFind - pg. 195_
 * [Ciphey](https://github.com/Ciphey/Ciphey) - Fully automated decryption/decoding/cracking tool using natural language processing & artificial intelligence, along with some common sense.
+* [MD5 Decrypt](https://md5decrypt.net/en/) - Online hash lookup and hash conversion utility.
 * [cmospwd](https://www.kali.org/tools/cmospwd/) - a cross-platform tool to decrypt password stored in CMOS used to access a computer’s BIOS setup.
 * [crack](https://www.kali.org/tools/crack/) - Crack is program designed to quickly locate vulnerabilities in Unix (or other) password files by scanning the contents of a password file, looking for users who have misguidedly chosen a weak login password.
 * [rainbowcrack](https://www.kali.org/tools/rainbowcrack/)  - RainbowCrack is a general propose implementation of Philippe Oechslin’s faster time-memory trade-off technique. It crack hashes with rainbow tables.
@@ -157,6 +152,9 @@ World's fastest and most advanced password recovery utility
 * [https://www.blackhillsinfosec.com/hashcat-4-10-cheat-sheet-v-1-2018-1/](https://www.blackhillsinfosec.com/hashcat-4-10-cheat-sheet-v-1-2018-1/)
 * [https://github.com/hashcat/hashcat/tree/master/rules](https://github.com/hashcat/hashcat/tree/master/rules)
 * [http://contest-2010.korelogic.com/rules-hashcat.html](http://contest-2010.korelogic.com/rules-hashcat.html)
+* [NSA Rules](https://github.com/cyberspacekittens/nsa-rules)
+* [Hob0Rules](https://github.com/cyberspacekittens/Hob0Rules)
+* [password_cracking_rules](https://github.com/cyberspacekittens/password_cracking_rules)
 * _Operator Handbook: Hashcat - pg. 90_
 
 GPU cracking:
@@ -172,7 +170,6 @@ $ hashcat -m 500 -a 0 -o output.txt -remove hashes.txt /usr/share/wordlists/rock
 [John The Ripper](https://www.offensive-security.com/metasploit-unleashed/john-ripper/) - The John The Ripper module is used to identify weak passwords that have been acquired as hashed files (loot) or raw LANMAN/NTLM hashes (hashdump). The goal of this module is to find trivial passwords in a short amount of time. To crack complex passwords or use large wordlists, John the Ripper should be used outside of Metasploit.
 
 * [https://github.com/openwall/john](https://github.com/openwall/john)
-* [https://tryhackme.com/room/johntheripper0](https://tryhackme.com/room/johntheripper0)
 * Jumbo John - John the Ripper distro with added features
 * [https://www.openwall.com/john/k/john-1.9.0-jumbo-1-win64.zip](https://www.openwall.com/john/k/john-1.9.0-jumbo-1-win64.zip)
 * Operator Handbook: John the Ripper - pg. 104

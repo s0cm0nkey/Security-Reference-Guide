@@ -134,13 +134,13 @@ swapfile.sys (Used by Windows Store (UWP) apps for swapping)
 * [LiME, Linux Memory Extractor](https://github.com/504ensicsLabs/LiME)
 * [https://github.com/jschicht/RawCopy](https://github.com/jschicht/RawCopy) - Commandline low level file extractor for NTFS
 * [Belkasoft Live RAM Capture Tool](https://belkasoft.com/get?product=ram) - Belkasoft Live RAM Capturer is a tiny free forensic tool that allows to reliably extract the entire contents of computer’s volatile memory—even if protected by an active anti-debugging or anti-dumping system.
-* [Redline](https://www.fireeye.com/services/freeware/redline.html) - Redline®, FireEye's premier free endpoint security tool, provides host investigative capabilities to users to find signs of malicious activity through memory and file analysis and the development of a threat assessment profile.
-  * [https://resources.infosecinstitute.com/topic/memory-analysis-using-redline/](https://resources.infosecinstitute.com/topic/memory-analysis-using-redline/)
-* [Memoryze](https://www.fireeye.com/services/freeware/memoryze.html) - Mandiant’s Memoryze™ is free memory forensic software that helps incident responders find evil in live memory. Memoryze can acquire and/or analyze memory images and on live systems can include the paging file in its analysis.
+* **Redline** - Legacy FireEye/Mandiant host investigation tool. Original FireEye freeware links may no longer be maintained.
+  * [Memory Analysis Using Redline](https://resources.infosecinstitute.com/topic/memory-analysis-using-redline/)
+* **Memoryze** - Legacy Mandiant memory forensic software. Original FireEye freeware links may no longer be maintained.
 * [MAGNET RAM Capture](https://www.magnetforensics.com/resources/magnet-ram-capture/) - MAGNET RAM Capture is a free imaging tool designed to capture the physical memory of a suspect’s computer, allowing investigators to recover and analyze valuable artifacts that are often only found in memory.
 * [Volexity Surge](https://www.volexity.com/products-overview/surge/) - Volexity’s Surge Collect offers flexible storage options and an intuitive interface that any responder can run to eliminate the issues associated with the corrupt data samples, crashed target computers, and ultimately, unusable data that commonly results from using other tools.
   * [https://www.volexity.com/blog/2018/06/12/surge-collect-provides-reliable-memory-acquisition-across-windows-linux-and-macos/](https://www.volexity.com/blog/2018/06/12/surge-collect-provides-reliable-memory-acquisition-across-windows-linux-and-macos/)
-* [LiveKD](https://docs.microsoft.com/en-us/sysinternals/downloads/livekd) - Written by Mark Russinovich, _LiveKD_ allows you to run the Kd and Windbg Microsoft kernel debuggers locally on a live system.
+* [LiveKD](https://learn.microsoft.com/en-us/sysinternals/downloads/livekd) - Written by Mark Russinovich, _LiveKD_ allows you to run the Kd and Windbg Microsoft kernel debuggers locally on a live system.
 * [WinPMem](https://github.com/Velocidex/WinPmem/releases) - The Memory forensics utility found within the [Velociraptor](https://github.com/Velocidex/velociraptor) toolset.
   * [https://winpmem.velocidex.com/docs/memory/](https://winpmem.velocidex.com/docs/memory/)
 * [dumpscan](https://github.com/daddycocoaman/dumpscan) - **Dumpscan** is a command-line tool designed to extract and dump secrets from kernel and Windows Minidump formats. Kernel-dump parsing is provided by [volatility3](https://github.com/volatilityfoundation/volatility3).
@@ -160,7 +160,12 @@ winpmem.exe -o test.raw --format raw -dd
 
 ## **Resources**
 
-* [MemLabs](https://github.com/stuxnet999/MemLabs) - Educational, CTF-styled labs for individuals interested in Memory Forensics&#x20;
+* Memory forensics labs and CTFs have moved to Training.
+
+{% content-ref url="../../training/" %}
+[training](../../training/)
+{% endcontent-ref %}
+
 * [https://www.howtogeek.com/196672/windows-memory-dumps-what-exactly-are-they-for/](https://www.howtogeek.com/196672/windows-memory-dumps-what-exactly-are-they-for/)
 * SANS Memory Forensics CheatSheet
 

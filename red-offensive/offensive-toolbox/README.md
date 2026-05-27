@@ -24,7 +24,7 @@
 * [Awesome Lists Collection: Security Tools](https://github.com/tina1998612/Awesome-Security-Tool-List)
 * [A Complete Penetration Testing & Hacking Tools List for Hackers & Security Professionals : ](https://www.reddit.com/r/HowToHack/comments/ewm1ax/a\_complete\_penetration\_testing\_hacking\_tools\_list/)
 * [HowToHack](https://www.reddit.com/r/HowToHack/comments/ewm1ax/a\_complete\_penetration\_testing\_hacking\_tools\_list/) - Reddit's Penetration tools list
-* [Rawsec's CyberSecurity Inventory](https://inventory.rawsec.ml/tools.html)&#x20;
+* [Rawsec's CyberSecurity Inventory](https://inventory.raw.pm/)&#x20;
 * [ToolsWatch.org – The Hackers Arsenal Tools Portal](http://www.toolswatch.org/)
 * [The Penetration Testers Framework](https://github.com/trustedsec/ptf) - Installation script for a huge collection of security tools to be installed on any linux distro
 * [The only Penetration testing resources you need - kalitut](https://kalitut.com/penetration-testing-resources/)
@@ -98,19 +98,20 @@
 
 <details>
 
-<summary>Stress Testing (DDOS)</summary>
+<summary>Authorized Stress Testing</summary>
+
+Only use these tools for explicitly authorized load, resilience, or lab testing. Do not run denial-of-service tooling against systems you do not own or have written permission to test.
 
 * [https://cheatsheetseries.owasp.org/cheatsheets/Denial\_of\_Service\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Denial\_of\_Service\_Cheat\_Sheet.html)
 * [https://github.com/ddosify/ddosify](https://github.com/ddosify/ddosify) - High-performance load testing tool, written in Golang.
 * [https://github.com/rozgo/anevicon](https://github.com/rozgo/anevicon)
-* [https://sourceforge.net/projects/high-orbit-ion-cannon/](https://sourceforge.net/projects/high-orbit-ion-cannon/)
-* [https://github.com/NewEraCracker/LOIC](https://github.com/NewEraCracker/LOIC)
-* [https://github.com/649/Memcrashed-DDoS-Exploit](https://github.com/649/Memcrashed-DDoS-Exploit)
+* **HOIC / LOIC / Memcrashed-style tools** - Historical denial-of-service tooling. Kept as references only; prefer legitimate load-testing tools such as Ddosify or Siege for authorized testing.
 * [https://github.com/gkbrk/slowloris](https://github.com/gkbrk/slowloris)
 * [https://github.com/epsylon/ufonet](https://github.com/epsylon/ufonet)
 * [https://github.com/s1l3nt78/Dark-Star](https://github.com/s1l3nt78/Dark-Star)
 * [https://github.com/LimerBoy/Impulse](https://github.com/LimerBoy/Impulse)
 * [https://github.com/RoseSecurity/DNS-Fender](https://github.com/RoseSecurity/DNS-Fender)
+* [dos-over-tor](https://github.com/skizap/dos-over-tor) - Historical DoS-over-Tor reference. Keep as a cautionary archive item; do not use outside explicit, written authorization.
 * [goldeneye](https://www.kali.org/tools/goldeneye/) - GoldenEye is a HTTP DoS Test Tool. This tool can be used to test if a site is susceptible to Deny of Service (DoS) attacks. Is possible to open several parallel connections against a URL to check if the web server can be compromised.
 * [siege](https://www.kali.org/tools/siege/) - Siege is an regression test and benchmark utility. It can stress test a single URL with a user defined number of simulated users, or it can read many URLs into memory and stress them simultaneously.
 * [**DOS Attack Penetration Testing (Part 1)**](https://www.hackingarticles.in/dos-penetration-testing-part-1/)
@@ -156,8 +157,6 @@
 * [erfs](https://github.com/hackerschoice/erfs) - An easy-to-use, easy-to-setup, hassle-free secure file system with the encrypted data being stored on a remote cloud server without having to trust the server.
   * [https://hackerschoice.medium.com/thcs-encrypted-cloud-based-file-system-a39234bd7cac](https://hackerschoice.medium.com/thcs-encrypted-cloud-based-file-system-a39234bd7cac)
 * [LDAPmonitor](https://github.com/p0dalirius/LDAPmonitor) - Monitor creation, deletion and changes to LDAP objects live during your pentest or system administration!
-* [https://github.com/codingo/Interlace](https://github.com/codingo/Interlace) - Easily turn single threaded command line applications into a fast, multi-threaded application with CIDR and glob support.
-
 </details>
 
 {% content-ref url="utility-commands.md" %}

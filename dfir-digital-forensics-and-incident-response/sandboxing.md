@@ -35,21 +35,26 @@ If you need to inspect a sensitive file:
 *   [https://app.any.run/](https://app.any.run/) (Interactive Sandbox)
 *   [https://tria.ge/](https://tria.ge/) (High-speed malware analysis)
 *   [https://analyze.intezer.com](https://analyze.intezer.com) (Code reuse analysis)
-*   [https://intelligence.gatewatcher.com/](https://intelligence.gatewatcher.com/) (Threat Intelligence & Sandbox)
 *   [https://labs.inquest.net/dfi](https://labs.inquest.net/dfi) (Deep File Inspection)
 *   [https://manalyzer.org/](https://manalyzer.org/)
 *   [https://threatpoint.checkpoint.com/ThreatPortal/emulation](https://threatpoint.checkpoint.com/ThreatPortal/emulation)
 *   [https://pandora.circl.lu/submit](https://pandora.circl.lu/submit)
-*   [https://exchange.xforce.ibmcloud.com/](https://exchange.xforce.ibmcloud.com/)
 
 ### Specialized Analysis (Firmware, Android, Configs)
 *   [https://koodous.com/](https://koodous.com/) - APK (Android) Sandbox
-*   [http://firmware.re/](http://firmware.re/) - Firmware Analysis
+*   [http://firmware.re/](http://firmware.re/) - Firmware analysis. Verify availability before relying on it.
 *   [https://malwareconfig.com/](https://malwareconfig.com/) - Extract configuration from RATs/C2s
 *   [https://id-ransomware.malwarehunterteam.com/](https://id-ransomware.malwarehunterteam.com/) - Identify Ransomware variants
-*   [https://yaraify.abuse.ch/](https://yaraify.abuse.ch/) - Scan files against public YARA rules
+
+YARAify and public YARA rule workflows are maintained on the YARA page.
+
+{% content-ref url="yara.md" %}
+[yara.md](yara.md)
+{% endcontent-ref %}
 
 ### Community & Legacy Instances
+Community sandbox availability can change quickly. Verify current status before using these in a workflow.
+
 *   [https://sandbox.pikker.ee/](https://sandbox.pikker.ee/)
 *   [https://sandbox.anlyz.io/dashboard](https://sandbox.anlyz.io/dashboard)
 *   [https://iris-h.services/pages/submit](https://iris-h.services/pages/submit)

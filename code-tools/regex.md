@@ -1,194 +1,212 @@
 # Regex
 
+Regular expressions search for text patterns. They are useful for log analysis, scripting, validation, parsing, and detection engineering, but each tool or language may use a slightly different regex engine.
+
 ## Regex Tools and Reference
 
-Regular expressions allow us to search for patterns in datasets and are processed by regular expression engines – pieces of software which match strings to a given pattern.For example, a search pattern with a sequence **`a1\d`** would find any sequence of characters, or string, in which the letter `a` is followed by a `1` and then any digit. Here, the **`\d`** is a metacharacter that tells the regex engine to search for any digit.
+### Testers
 
-* Regex Testers
-  * [RegExr](https://regexr.com/) - Learn, Build, & Test RegEx&#x20;
-  * [RegEx Testing](https://www.regextester.com/) - online regex testing tool.
-  * [RegEx Pal](https://www.regexpal.com/) - online regex testing tool + other tools.
-  * [CyberChef](https://gchq.github.io/CyberChef/) - The "Cyber Swiss Army Knife" includes a powerful Regex operation.
-* Regex Training Material
-  * [RegexOne](https://regexone.com/) - Learn Regular Expressions - Lesson 1: An Introduction, and the ABCs&#x20;
-  * [Regex101](https://regex101.com/) - Online regex tester and debugger: PHP, PCRE, Python, Golang and JavaScript&#x20;
-  * [RexEgg](http://www.rexegg.com)
-  * [https://regexcrossword.com/](https://regexcrossword.com/) - Fun regex training with a crossword.
-  * [The 30 Minute Regex Tutorial](http://www.codeproject.com/Articles/9099/The-Minute-Regex-Tutorial) - Jim Hollenhorst
-  * [https://tryhackme.com/room/catregex](https://tryhackme.com/room/catregex)
-* Books, Articles, and Cheatsheets
-  * [Regular Expression Cheat Sheet](https://github.com/niklongstone/regular-expression-cheat-sheet)
-  * [i Hate Regex - The Regex Cheat Sheet](https://ihateregex.io/)
-  * [JavaScript RegExp](https://learnbyexample.github.io/learn\_js\_regexp/) - Sundeep Agarwal
-  * [Python re(gex)?](https://learnbyexample.github.io/py\_regular\_expressions/) - Sundeep Agarwal
-  * [Regular Expressions for Regular Folk](https://refrf.shreyasminocha.me) - Shreyas Minocha
-  * [Ruby Regexp](https://learnbyexample.github.io/Ruby\_Regexp/) - Sundeep Agarwal
-  * [The Bastards Book of Regular Expressions: Finding Patterns in Everyday Text](https://leanpub.com/bastards-regexes) - Dan Nguyen _(Leanpub account or valid email r_equested)
+* [Regex101](https://regex101.com/) - Regex tester and debugger for PCRE, PHP, Python, Go, JavaScript, and more.
+* [RegExr](https://regexr.com/) - Interactive regex builder and tester.
+* [RegEx Testing](https://www.regextester.com/) - Online regex testing tool.
+* [RegEx Pal](https://www.regexpal.com/) - Online regex testing tool.
+* [CyberChef](https://gchq.github.io/CyberChef/) - Includes regex operations alongside encoding, decoding, and data transformation tools.
+
+### Training
+
+* [RegexOne](https://regexone.com/) - Introductory regular expression lessons.
+* [RexEgg](https://www.rexegg.com/) - Detailed regex reference and tutorial site.
+* [Regex Crossword](https://regexcrossword.com/) - Regex practice through puzzles.
+* [The 30 Minute Regex Tutorial](https://www.codeproject.com/Articles/9099/The-30-Minute-Regex-Tutorial) - Jim Hollenhorst.
+* [TryHackMe: Cat Regex](https://tryhackme.com/room/catregex)
+
+### Cheatsheets and Books
+
+* [Regular Expression Cheat Sheet](https://github.com/niklongstone/regular-expression-cheat-sheet)
+* [i Hate Regex](https://ihateregex.io/)
+* [JavaScript RegExp](https://learnbyexample.github.io/learn_js_regexp/) - Sundeep Agarwal.
+* [Python re(gex)?](https://learnbyexample.github.io/py_regular_expressions/) - Sundeep Agarwal.
+* [Regular Expressions for Regular Folk](https://refrf.shreyasminocha.me/)
+* [Ruby Regexp](https://learnbyexample.github.io/Ruby_Regexp/) - Sundeep Agarwal.
+* [The Bastards Book of Regular Expressions](https://leanpub.com/bastards-regexes) - Dan Nguyen.
 
 ## Basics
 
-### Metacharacters
+### Common Character Classes
 
-◇ **`\s`** – this represents any whitespace character, such as a tab, space, or carriage return.\
-◇ **`\w`** – this tells the regex engine to search for any alphanumeric character.\
-◇ **`\r`** – this represents a carriage return.
+| Pattern | Meaning |
+| --- | --- |
+| `\d` | Any digit |
+| `\D` | Any non-digit |
+| `\w` | Any word character, usually letters, digits, and underscore |
+| `\W` | Any non-word character |
+| `\s` | Any whitespace character |
+| `\S` | Any non-whitespace character |
+| `\t` | Tab |
+| `\r` | Carriage return |
+| `\n` | Newline |
 
-### Grep and Regex
+### Character Groups
 
-◇ `grep -P "`**`regex`**`" input_file`
+Square brackets define a set or range of characters.
 
-### Special character sequences
-
-These normally consist of a backslash, **`\`**, followed by a letter and represent either non-printable characters or entire categories of ASCII characters.\
-Here are some examples:\
-• **`\d`** – this represents any digit\
-• **`\w`** – this represents any alphanumeric character\
-• **`\s`** – this represents any whitespace character\
-• **`\t`** – this represents a tab\
-The first three examples can capture the reverse group through capitalisation, such that **`\D`**, **`\W`**, and **`\S`** represent any non-digit, non-alphanumeric, or non-whitespace character respectively.
-
-### Groupings
-
-Groupings are made using the square brackets, **`[`** and **`]`**. They are used to represent specified sets of characters and can therefore be more precise than special character sequences. Within a grouping, individual characters or a range of characters can be specified. Ranges are specified using a hyphen, **`-`**.
-
-The regex pattern **`[ce]`** would match any instances of the letters `c` or `e`, whereas the pattern **`[c-e]`** would match instances of `c`, `d`, or `e`.
-
-Multiple individual characters or ranges of characters can be specified within the same grouping, and their order does not matter. For example, the pattern **`[dt-v9]`** would match instances of `d`, `t`, `u`, `v`, or `9`.&#x20;
+* `[ce]` matches `c` or `e`.
+* `[c-e]` matches `c`, `d`, or `e`.
+* `[^abc]` matches any character except `a`, `b`, or `c`.
 
 ### Escapes
 
-You can see above that the backslash or square brackets are not used as their literal characters in regex; nor are any of the other metacharacters. But what if you want to search for square brackets, or periods in a string? Well, this is where escape characters are required.
+Regex metacharacters such as `.`, `*`, `+`, `?`, `(`, `)`, `[`, `]`, `{`, `}`, `|`, `^`, `$`, and `\` need escaping when you want to match them literally.
 
-Usually, a metacharacter can be escaped using a backslash, **`\`**. In some cases, when escaping certain metacharacters, it is necessary to change the syntax of the command within which the regex is used. This is because the backslash escape character is not exclusive to regex and can affect, for example, the quotes that encapsulate command arguments. An example of this can be seen in the video below, with the grep command.
+```text
+\.example\.com
+```
 
-### Tips
+### Repetition
 
-Pipe the output of your search to the word count command, `wc -l`, to quickly count the number of results returned.\
-Print a line until a specific character (-)\
-`$ sed 's/-[^-]*$//' file`
+| Pattern | Meaning |
+| --- | --- |
+| `*` | Zero or more of the previous token |
+| `+` | One or more of the previous token |
+| `?` | Zero or one of the previous token |
+| `{m}` | Exactly `m` repetitions |
+| `{m,n}` | Between `m` and `n` repetitions |
 
-## Using regex in Linux
+By default, quantifiers are greedy. Adding `?` makes many quantifiers lazy.
 
-While grep can use regex to search files for patterns, it is not the only command capable of utilising this powerful searching tool.
+* `.*` - Greedy match.
+* `.*?` - Lazy match.
 
-The awk command can utilise regex to search files for a specified pattern and then perform a specified action on the search results. The basic usage of regex in awk is as follows:\
-`awk ‘/regex-pattern/{print $0}’ input-file > output-file`
+### Anchors
 
-You can use the sed command with regex to perform more comprehensive searching. It is capable of searching for files and manipulating them within a single command. The basic syntax to use regex with the sed command is as follows: `sed -rn ‘/regex-pattern/p’`
-Modern Alternatives
+| Pattern | Meaning |
+| --- | --- |
+| `^` | Start of line or string |
+| `$` | End of line or string |
+| `\b` | Word boundary |
 
-*   [Ripgrep (rg)](https://github.com/BurntSushi/ripgrep): A distinctively fast line-oriented search tool that recursively searches the current directory for a regex pattern. It is generally faster than grep.
+Example:
 
-### 
-### Repetitions
+```text
+^abc\b.*123$
+```
 
-Repetitions, denoted by **`*`**, **`+`**, or **`{}`**, can be used when the number of characters of a certain type in a desired search string is unknown. The appropriate repetition metacharacter is placed immediately after the character or grouping which is repeated.\
-◇ **`*`**     – Zero or more repetitions of the previous character or grouping.\
-◇ **`+`**     – One or more repetitions.\
-◇ **`{m}`**  – ‘m’ repetitions.\
-◇ **`{m,n}`** – Between ‘m’ and ‘n’ (inclusive) repetitions.\
-Repetitions can provide a level of optionality to your search pattern. For example, in the search pattern **`.*abc`**, the user does not care which characters, if any, appear before the string `abc`.
-Greedy vs Lazy Quantification
-
-By default, quantifiers like `*` and `+` are "greedy", meaning they will match as many characters as possible. Adding a `?` after makes them "lazy" or "reluctant", matching as few as possible.
-*   `.*` : Greedy match.
-*   `.*?` : Lazy match.
-
-### 
-### Logical operators
-
-Logical operators enable the AND, OR, and NOT logic functions within a search pattern.
-
-* NOT
-  * The caret **`^`** can denote a NOT logic function within a set or POSIX character class. Not to be confused with the use of the caret as an anchor, it is used as follows:
-    * **`[^abc]`** or **`[^[:alnum:]]`**
-  * These would match any character except `a`, `b`, or `c`, or any character which is non-alphanumeric respectively.
-* OR
-  * The pipe **`|`** denotes an OR logic function and is used within parentheses. Parentheses containing an OR pipe still define a capture group.
-    * **`(abc|def)`** matches and captures `abc` or `def`.
-  * The **`?`** question mark denotes optionality of the previous token.\
-    **`files?`** matches `file` or `files`.
-* AND
-  * While the AND logic function is inherent in regex for sequential characters in a search pattern, there are cases where you may want to match a string which contains both one pattern and another.
-  * This can be easily done by chaining multiple commands in sed, awk, or grep. However, many regex engines, including the Perl regex engine used by grep, introduce the **`(?=)`** positive lookahead so that you can perform the same task in a single command.
-  * The positive lookahead matches the regex pattern before the opening parentheses if the pattern before is followed by the characters within the parentheses. For example, **`He(?=llo)`** would match the `He` in `Hello` but not in `Hey`.
-  * By placing the lookahead at the start of your search pattern and using the **`.*`** wildcard within the lookahead, you tell the regex engine to match any line which contains zero or more repetitions of any characters followed by the remaining characters within the lookahead.
-  * You can see for yourself that the following two commands produce the same result.\
-    ▪ `grep -P "[pP]" Countries.txt | grep -P “[cC]”`\
-    ▪ `grep -P "(?=.*[pP])(?=.*[cC])" Countries.txt`
+This matches a line that starts with `abc` as a whole word and ends with `123`.
 
 ### Captures
 
-Parentheses can be used in regular expressions to capture part of a matched pattern. This can then be used for a range of purposes, including 'Find and Replace' functions. While true regex captures require more complicated syntax within the grep and awk commands, they can be written in sed using the following format:\
-`sed -rn ‘s/.*(capture).*/\1/p' file_name.txt`\
-This command replaces the entirety of the matched string with the string inside the capturing parentheses.\
-In grep, an additional `-o` flag can be passed to only output the exactly matched text so that a carefully constructed regex can be used to create an equivalent output to a regex capture. When doing this, it is often necessary to use anchors or specifically exclude the characters which surround the desired region.
-Java Pattern Class (Docs)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base
-### Anchors
+Parentheses capture part of a matched pattern. Captures are useful for extraction and replacement.
 
-Anchors are used in a search pattern to match positions.
+```bash
+sed -rn 's/.*(capture).*/\1/p' file_name.txt
+```
 
-The caret `^` anchor matches the start of a line and the dollar sign **`$`** anchor matches the end of a line.
+In `grep`, `-o` prints only the matched portion:
 
-The boundary **`\b`** special character sequence is an anchor used to match word boundaries, often to perform searches for whole words only. It matches the position between a 'word character' and a ‘non-word character’. In most flavours of regex, a word character is simply any alphanumeric. For example, the search pattern **`^abc\b.*123$`** will match any line that starts with `abc` and a non-alphanumeric character, has any characters in the middle, and ends in `123`.
-
-## Regex in Java
-
-* [https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html)
-
-## Regex in JavaScript
-
-\
-In JavaScript, regexes can be created either by calling the constructor function of the RegExp object, or by using a regex literal, as follows:
-
-* Constructor function
-  * `var my_regex_variable = new RegExp(/my_regex_pattern/flags);`
-* Regex literal
-  * `var my_regex_variable = /my_regex_pattern/flags;`
-* Flags can be passed to the regex for additional functionality, affecting how and what the regex matches in a string. Below are some examples:
-  * g – Global search, so the method using the regex will act on all matches within the string, not just the first match.
-  * i – Case-insensitive search.
-  * m – Multi-line search; by default regexes separate strings by line breaks.
-  * s – The dot **`.`** wildcard matches newline characters; it does not match these by default.
-* For example, `vfollowing JavaScript code will assign the index of the matched substring, ‘2’, to the `my_index` variable
-| Method    | Action                                                                                                                                                                   |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| match()   | Returns either an array of the first match, the captured substring, the index and the input, or, if it is told to match globally, an array of all matches in the string. |
-| replace() | Searches for a match and replaces the matched substring with a replacement substring. You can use $n to refer to the nth capture group in the regex.                     |
-| search()  | Returns the index of the first match found or determines that no match exists.                                                                                           |
-| test()    | Returns true or false for if a match exists.                                                                                                                             |
-| exec()    | Returns an array including the first match, the captured substring, the index of the match and the input.                                                                |
-
-For example, the JavaScript code in the panel below will assign the index of the matched substring, ‘2’, to the `my_index` variable.
-
-View and execute the 'regex\_methods.js' script to see how these methods function.
-
-`var my_index = “abracadabra”.search(/Ra/gi);`
-
-## Regex in Python
-
-\
-◇ Python has a built-in module called 're' which must be imported in the script and can be used to work with Perl-based regex.\
-◇ Unlike in JavaScript, regexes in Python are not created as objects but given as an argument to functions of the 're' module.&#x20;
-following Python code will assign the list of split substrings, `['one: ‘, ’two: ‘, ’three: ‘, ’']`, to the `my_list` variable   |
-| --------- | -------------------------------------------------------------------- |
-| findall() | Returns a list containing all matches.                               |
-| search()  | Returns a ‘Match’ object if there is a match anywhere in the string. |
-| split()   | Returns a list where the string has been split at each match.        |
-| sub()     | Replaces one or many matches within a string.                        |
-
-◇ A regex pattern can be specified as an argument to the functions using the syntax `r'`**`pattern`**`'`, or alternatively, a simple string can be used.\
-◇ For example, the Python code in the panel below will assign the list of split substrings, `['one: ‘, ’two: ‘, ’three: ‘, ’']`, to the `my_list` variable.\
-◇ View and execute the 're\_functions.py' script to see how these functions work.\
-▪ `my_list = re.split(r'\d', “one: 1 two: 2 three: 3”)`
+```bash
+grep -Po 'user=\K[^ ]+' auth.log
+```
 
 ### Lookarounds
 
-Lookarounds are regex assertions which match characters in a string based on the surrounding characters. There are four kinds:\
-**`(?=regex)`** Positive lookahead\
-**`(?!regex)`** Negative lookahead\
-**`(?<=regex)`** Positive lookbehind\
-**`(?<!regex)`** Negative lookbehind\
-\
-◇ Positive and negative lookaheads match the regex characters before the parentheses if they are, or are not, respectively followed by the characters within the lookahead. Positive and negative lookbehinds match the regex characters after the parentheses if they are, or are not, respectively preceded by the characters within the lookbehind. \
-◇ For example, **`(?<![0-2])a`** will match any occurrence of the letter ‘a’ which is not preceded by the numbers ‘0’, ‘1’, or ‘2’.
+Lookarounds are zero-width assertions. They match based on surrounding text without consuming that text.
+
+| Pattern | Meaning |
+| --- | --- |
+| `(?=regex)` | Positive lookahead |
+| `(?!regex)` | Negative lookahead |
+| `(?<=regex)` | Positive lookbehind |
+| `(?<!regex)` | Negative lookbehind |
+
+Example:
+
+```text
+(?<![0-2])a
+```
+
+This matches `a` when it is not preceded by `0`, `1`, or `2`.
+
+## Regex in Linux Tools
+
+### grep
+
+```bash
+grep -P "regex" input_file
+```
+
+### awk
+
+```bash
+awk '/regex-pattern/{print $0}' input-file > output-file
+```
+
+### sed
+
+```bash
+sed -rn '/regex-pattern/p' input-file
+```
+
+### rg
+
+```bash
+rg "regex-pattern"
+```
+
+* [ripgrep](https://github.com/BurntSushi/ripgrep) is a fast line-oriented search tool that recursively searches directories.
+
+## Regex in Java
+
+* [Java Pattern Class](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Pattern.html)
+
+## Regex in JavaScript
+
+JavaScript regexes can be created with a literal or the `RegExp` constructor.
+
+```javascript
+const literal = /my_regex_pattern/gi;
+const constructed = new RegExp("my_regex_pattern", "gi");
+```
+
+Common flags:
+
+| Flag | Meaning |
+| --- | --- |
+| `g` | Global search |
+| `i` | Case-insensitive search |
+| `m` | Multi-line search |
+| `s` | Dot matches newline |
+
+Common methods:
+
+| Method | Action |
+| --- | --- |
+| `match()` | Returns matches from a string |
+| `replace()` | Replaces matching text |
+| `search()` | Returns the index of the first match |
+| `test()` | Returns true or false for whether a match exists |
+| `exec()` | Returns match details from a regex object |
+
+Example:
+
+```javascript
+const myIndex = "abracadabra".search(/ra/gi);
+```
+
+## Regex in Python
+
+Python's built-in `re` module supports regular expressions.
+
+```python
+import re
+
+my_list = re.split(r"\d", "one: 1 two: 2 three: 3")
+```
+
+Common functions:
+
+| Function | Action |
+| --- | --- |
+| `findall()` | Returns all matches |
+| `search()` | Returns a match object if the pattern matches anywhere |
+| `split()` | Splits a string at each match |
+| `sub()` | Replaces matches |

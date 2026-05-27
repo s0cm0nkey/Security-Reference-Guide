@@ -1,3 +1,7 @@
+---
+description: Cyber security training resources, courses, certifications, books, labs, CTF practice, TryHackMe rooms, and Awesome lists.
+---
+
 # Training and Resources
 
 ## **Beginner Training**
@@ -8,7 +12,7 @@
 * [https://www.cyberaces.org/courses.html](https://www.cyberaces.org/courses.html) - Free SANS intro to security course.
 * [EC Council Essential's Series](https://codered.eccouncil.org/essentials-series-bundle/) - The Essential Series includes three courses, each covering essential skills in [Network Defense](https://codered.eccouncil.org/essentials-series-bundle/#network-defense-essentials), [Ethical Hacking](https://codered.eccouncil.org/essentials-series-bundle/#ethical-hacking-essentials), and [Digital Forensics](https://codered.eccouncil.org/essentials-series-bundle/#digital-forensics-essentials). This introductory course series is designed for today's entry-level careers in information security, network defense, and digital forensics and is ideal for learners aspiring to pursue a career in cybersecurity.
 * [Cisco Networking Academy: Intro to Cyber Security](https://www.netacad.com/portal/web/self-enroll/c/course-1003729) - Learn how to protect your personal data and privacy online and in social media, and why more and more IT jobs require cybersecurity awareness and understanding. Receive a certificate of completion.
-* [Cisco Netwoking Academy: Cyber Security Essentials](https://www.netacad.com/portal/web/self-enroll/c/course-1003733) - Foundational knowledge and essential skills for all cybersecurity domains, including info security, systems sec, network sec, ethics and laws, and defense and mitigation techniques used in protecting businesses.
+* [Cisco Networking Academy: Cyber Security Essentials](https://www.netacad.com/portal/web/self-enroll/c/course-1003733) - Foundational knowledge and essential skills for all cybersecurity domains, including info security, systems sec, network sec, ethics and laws, and defense and mitigation techniques used in protecting businesses.
 * [https://www.hoppersroppers.org/training.html](https://www.hoppersroppers.org/training.html) - The training portion of the site is designed to teach core competencies and more importantly, provide a wide base of knowledge on how to find and use the resources available.
 * [MICS - Introduction to Cyber Security](https://www.mosse-institute.com/certifications/mics-introduction-to-cyber-security.html) - MICS teaches entry-level cyber security skills in domains such as open-source intelligence, security tools, operational security, network reconnaissance and threat hunting. Students who have successfully achieved their MICS Certification from MCSI can apply for winter/summer internships worldwide with the confidence that they have the competencies the industry is seeking.
 * [Cybersecurity 101: The Fundamentals of Cybersecurity by Crowdstrike.](https://www.crowdstrike.com/cybersecurity-101/)
@@ -80,7 +84,7 @@ This goes perfectly between Career resources and Training material as cyber cert
 * [https://academy.attackiq.com/](https://academy.attackiq.com/) - Free courses taught by cybersecurity practitioners at the cutting edge of the field, students gain realistic, hands-on experience in building a threat-informed defense to improve cybersecurity effectiveness.
 * [https://opensecuritytraining.info/](https://opensecuritytraining.info/) - Open source platform that provides crowd sources free training on various cyber topics.
 * [https://www.thecybermentor.com/](https://www.thecybermentor.com/) - The platform of the Cyber Mentor. This site offers both free and premium training material and even their own practical penetration testing certification.
-* [https://www.udemy.com/](https://www.udemy.com/) - Video learning platform with thousands of courses on various topics. Look for the security related topics and sort bby popularity.
+* [https://www.udemy.com/](https://www.udemy.com/) - Video learning platform with thousands of courses on various topics. Look for security-related topics and sort by popularity.
   * [https://www.pythonstacks.com/blog/post/ethical-hacking-courses-udemy/](https://www.pythonstacks.com/blog/post/ethical-hacking-courses-udemy/)
 * [https://my.ine.com/](https://my.ine.com/) - The official training platform for [https://elearnsecurity.com/](https://elearnsecurity.com/) and their collection of certifications.
 * [https://www.cybrary.it/](https://www.cybrary.it/) - Cybrary is the fastest growing, fastest-moving catalog in the industry. By working with an elite community of instructors, experts, and thought leaders, as well as cutting edge hands-on learning providers, we deliver relevant and high-quality content that is accessible anytime, anywhere.
@@ -103,7 +107,7 @@ This goes perfectly between Career resources and Training material as cyber cert
 
 ### Practical Hands-on and CTFs
 
-These sections have guides on how to practice your offensive an defensive skills in either a hosted CTF/CTF style platform, or even how to build everythingyou need in a local environment.
+These sections have guides on how to practice offensive and defensive skills in hosted CTF/CTF-style platforms or by building a local environment.
 
 {% content-ref url="practice-lab.md" %}
 [practice-lab.md](practice-lab.md)
@@ -115,15 +119,46 @@ These sections have guides on how to practice your offensive an defensive skills
 
 ## **Blue Team Training**
 
-* [Blue Team Labs Online » SECURITY BLUE TEAM](https://securityblue.team/blue-team-labs-online/) - A new CTF style learning platform focused on blue teaming. They offer certification tracks for thier platform and are adding more content daily.
+* [Blue Team Labs Online](https://blueteamlabs.online/) - A practical, scenario-based training platform focused on security operations, incident response, and digital forensics.
+  * [Security Blue Team: Blue Team Labs Online](https://securityblue.team/blue-team-labs-online/) - Certification-oriented blue-team lab track from Security Blue Team.
 * [Blue Team Training Toolkit (BT3) - Defensive Security Training Software](https://www.bt3.no/)  - Blue Team Training Toolkit (BT3) is software for defensive security training, which will bring your network analysis training sessions, incident response drills and red team engagements to a new level.
 * [OpenSOC - Network Defense Simulation](https://opensoc.io/) - OpenSOC is a free blue team defensive competition that is as close to "the real thing" as it gets.
 * [https://cyberdefenders.org/](https://cyberdefenders.org/) - CyberDefenders is a training platform focused on the defensive side of cybersecurity, aiming to provide a place for blue teams to practice, validate the skills they have, and acquire the ones they need.
 * [TryHackMe](https://tryhackme.com/) - Bite sized gamified lessons on various offensive and defensive topics.
+  * [TryHackMe | MITRE Room](https://tryhackme.com/room/mitre)
+  * [TryHackMe | Security Operations and Monitoring](https://tryhackme.com/r/path/outline/security-operations-monitoring)
   * [TryhackMe | Blue Team Path](https://tryhackme.com/path/outline/blueteam)
   * [TryHackMe | Splunk](https://tryhackme.com/room/bpsplunk)&#x20;
+  * [TryHackMe | TShark](https://tryhackme.com/room/tshark)
+  * [TryHackMe | CC Stego](https://tryhackme.com/room/ccstego)
 * [Applied Network Defense](https://www.networkdefense.io/library/) - Fantastic sets of courses by some of the best defenders in the industry.
 * [https://letsdefend.io/](https://letsdefend.io/) - Practical Blue team training.
+* [Boss of the SOC (BOTS)](https://github.com/splunk/security-content) - Splunk's public security datasets and CTF-style material for practicing investigations in Splunk.
+* [Hack The Box Academy: Introduction to Network Traffic Analysis](https://academy.hackthebox.com/course/preview/intro-to-network-traffic-analysis) - Packet analysis training.
+* [Antisyphon: Getting Started with Packet Decoding](https://www.antisyphontraining.com/getting-started-with-packet-decoding-w-chris-brenton/) - Packet decoding training with Chris Brenton.
+* [Katie Nickels's Cyber Threat Intelligence Self-Study Plan](https://medium.com/katies-five-cents/a-cyber-threat-intelligence-self-study-plan-part-1-968b5a8daf9a) - Self-study plan for building CTI fundamentals.
+* [MITRE ATT&CK CTI Training](https://attack.mitre.org/resources/training/cti/) - Training on applying ATT&CK to cyber threat intelligence.
+* [AttackIQ Academy: Introduction to the EASY Framework](https://academy.attackiq.com/courses/introduction-to-the-easy-framework) - Threat intelligence workflow course.
+* [SANS FOR578: Cyber Threat Intelligence](https://www.sans.org/cyber-security-courses/cyber-threat-intelligence/) - Professional CTI course.
+* [ThreatConnect University](https://training.threatconnect.com/) - ThreatConnect platform and CTI training.
+* [Recorded Future Training](https://www.recordedfuture.com/training) - Threat intelligence analyst training.
+* [FIRST CTI SIG Resources](https://www.first.org/global/sigs/cti/) - CTI presentations, community materials, and best practices.
+* [APTnotes](https://github.com/aptnotes/data) - Public threat intelligence reports for study and analysis practice.
+* [Cyber Institute OSINT Challenge](https://courses.thecyberinst.org/courses/osint-challenge) - OSINT practice course.
+* [Cyber Institute OSINT Mini](https://courses.thecyberinst.org/courses/osintmini) - Short OSINT training course.
+* [Trace Labs Search Party](https://www.tracelabs.org/initiatives/search-party) - Volunteer OSINT event focused on missing persons.
+* [Exposing the Invisible Kit](https://kit.exposingtheinvisible.org/en/) - Investigation and verification training.
+* [Advocacy Assembly Courses](https://advocacyassembly.org/en/courses/) - Digital research and safety courses.
+* [CyberDefenders Intel101](https://cyberdefenders.org/labs/38) - Introductory CTI/OSINT lab.
+* [TryHackMe | OhSINT](https://tryhackme.com/room/ohsint)
+* [TryHackMe | Sakura Room](https://tryhackme.com/room/sakura)
+* [TryHackMe | Searchlight OSINT](https://tryhackme.com/room/searchlightosint)
+* [TryHackMe | Google Dorking](https://tryhackme.com/room/googledorking)
+* [TryHackMe | Shodan](https://tryhackme.com/room/shodan)
+* [TryHackMe | Geolocating Images](https://tryhackme.com/room/geolocatingimages)
+* [TryHackMe | WebOSINT](https://tryhackme.com/room/webosint)
+* [GeoGuessr](https://www.geoguessr.com/) - Geolocation practice.
+* [Hacktoria](https://hacktoria.com/) - OSINT-style investigation games.
 * [How to start RE/malware analysis](https://hshrzd.wordpress.com/how-to-start/) - Amazing free class on getting started in Reverse Engineering and Malware Analysis.
 * [https://phishing.livingsecurity.com/](https://phishing.livingsecurity.com/) - Training for analyzing phishing emails and their indicators.
 * [CNIT 129S: Securing Web Applications](https://samsclass.info/129S/129S\_F16.shtml)
@@ -131,13 +166,36 @@ These sections have guides on how to practice your offensive an defensive skills
 
 ### DFIR Training
 
+* [DFIR Training](https://www.dfir.training/) - Tools, resources, and training references for DFIR professionals.
+* [DFIR Madness](https://dfirmadness.com/) - DFIR practice scenarios and training use cases.
+* [Incident Response Challenge](https://incident-response-challenge.com/?utm_source=thn) - IR CTF-style training scenarios.
+* [SANS FOR508: Advanced Incident Response, Threat Hunting, and Digital Forensics](https://www.sans.org/cyber-security-courses/advanced-incident-response-threat-hunting-training/) - Professional DFIR course.
+* [SANS SIFT Workstation YouTube Series](https://www.youtube.com/playlist?list=PL60DFAE759FCDF36A)
+* [Autopsy Training](https://dfir-training.basistech.com/)
+* [TryHackMe | Windows Forensics 1](https://tryhackme.com/room/windowsforensics1)
+* [TryHackMe | Autopsy](https://tryhackme.com/room/autopsy2ze0)
+* [TryHackMe | Malware Researching](https://tryhackme.com/room/malresearching)
+* [MemLabs](https://github.com/stuxnet999/MemLabs) - CTF-style memory forensics labs.
+* [RPISEC Malware Analysis](https://class.malware.re/) - Malware analysis and reverse engineering course.
+* [Malware Unicorn Workshops](https://malwareunicorn.org/#/) - Malware analysis and reverse engineering training.
+* [Max Kersten Binary Analysis Course](https://maxkersten.nl/binary-analysis-course/)
+* [Reverse Engineering for Beginners](https://www.begin.re/)
+* [Understanding Assembly Language](https://beginners.re/main.html)
+* [MyTechnoTalent Reverse Engineering Tutorial](https://github.com/mytechnotalent/Reverse-Engineering) - Free reverse engineering tutorial covering x86, x64, ARM, and ARM64.
+* [Fumik0 Malware Analysis Tutorials](https://fumalwareanalysis.blogspot.com/p/malware-analysis-tutorials-reverse.html)
+* [TryHackMe | Intro to x86-64](https://tryhackme.com/room/introtox8664)
+* [TryHackMe | Basic Malware RE](https://tryhackme.com/room/basicmalwarere)
+* [TryHackMe | Reverse Engineering](https://tryhackme.com/room/reverseengineering)
+* [TryHackMe | Radare2](https://tryhackme.com/room/ccradare2)
+* [TryHackMe | Ghidra](https://tryhackme.com/room/ccghidra)
+* [InfoSec Institute Malware Analysis and Reverse Engineering](https://www.infosecinstitute.com/skills/learning-paths/malware-analysis-reverse-engineering/)
 * [Introduction to windows forensics Youtube Series](https://www.youtube.com/playlist?list=PLlv3b9B16ZadqDQH0lTRO4kqn2P1g9Mve)
 * [https://www.amanhardikar.com/mindmaps/ForensicChallenges.html](https://www.amanhardikar.com/mindmaps/ForensicChallenges.html)
 * [https://dfrws.org/forensic-challenges/](https://dfrws.org/forensic-challenges/)
 * [https://cyberdefenders.org/labs/71](https://cyberdefenders.org/labs/71)
 * [https://cfreds.nist.gov/](https://cfreds.nist.gov/)
 * [https://securitytrainings.net/security-trainings/](https://securitytrainings.net/security-trainings/)
-* [Hackersploit's Malware Analaysis Bootcamp](https://hackersploit.org/malware-analysis-tutorials/)
+* [Hackersploit's Malware Analysis Bootcamp](https://hackersploit.org/malware-analysis-tutorials/)
 * [Digital Forensics Beginner to Expert - Google class by Shannon Brazil](https://classroom.google.com/c/NDQ0MTUzMjU5NzE0)
 * [https://training.xintra.org/](https://training.xintra.org/)
 
@@ -145,6 +203,26 @@ These sections have guides on how to practice your offensive an defensive skills
 
 * [TryHackMe](https://tryhackme.com/) - Bite sized gamified lessons on various offensive and defensive topics.
   * [https://tryhackme.com/resources/blog/going-from-zero-to-hero](https://tryhackme.com/resources/blog/going-from-zero-to-hero)
+  * [TryHackMe | Passive Reconnaissance](https://tryhackme.com/room/passiverecon)
+  * [TryHackMe | Red Team Recon](https://tryhackme.com/room/redteamrecon)
+  * [TryHackMe | Active Reconnaissance](https://tryhackme.com/room/activerecon)
+  * [TryHackMe | Nmap](https://tryhackme.com/room/nmap01)
+  * [TryHackMe | Further Nmap](https://tryhackme.com/room/furthernmap)
+  * [TryHackMe | RustScan](https://tryhackme.com/room/rustscan)
+  * [TryHackMe | OpenVAS](https://tryhackme.com/room/openvas)
+  * [TryHackMe | Sublist3r](https://tryhackme.com/room/rpsublist3r)
+  * [TryHackMe | Attacktive Directory](https://tryhackme.com/room/attacktivedirectory)
+  * [TryHackMe | AttackerKB](https://tryhackme.com/room/attackerkb)
+  * [TryHackMe | Metasploit Introduction](https://tryhackme.com/room/metasploitintro)
+  * [TryHackMe | Metasploit](https://tryhackme.com/room/rpmetasploit)
+  * [TryHackMe | PowerShell Empire](https://tryhackme.com/room/rppsempire)
+  * [TryHackMe | John the Ripper](https://tryhackme.com/room/johntheripper0)
+  * [TryHackMe | Red Team Fundamentals Module](https://tryhackme.com/module/red-team-fundamentals)
+  * [TryHackMe | Red Team Fundamentals](https://tryhackme.com/room/redteamfundamentals)
+  * [TryHackMe | Red Team Engagements](https://tryhackme.com/room/redteamengagements)
+  * [TryHackMe | Tor for Beginners](https://tryhackme.com/room/torforbeginners)
+  * [TryHackMe | WiFi Hacking 101](https://tryhackme.com/room/wifihacking101)
+  * [TryHackMe | Printer Hacking 101](https://tryhackme.com/room/printerhacking101)
 * [Red Team Ops Course Overview — Zero-Point Security](https://www.zeropointsecurity.co.uk/red-team-ops)
 * [Metasploit Unleashed - Free Online Ethical Hacking Course](https://www.offensive-security.com/metasploit-unleashed/)&#x20;
 * [Practical Ethical Hacking - The Complete Course | Udemy](https://www.udemy.com/course/practical-ethical-hacking/)&#x20;
@@ -159,12 +237,12 @@ These sections have guides on how to practice your offensive an defensive skills
 ### Web Application Testing Training
 
 * [All learning materials | Web Security Academy](https://portswigger.net/web-security/all-materials) - This platform has replaced the Web Application Hackers Handbook as the go to learning resource for web application knowledge. Huge list of attacks, resources, and documentation on how to exploit or defend them. There are also amazingly handy hands on labs that you can complete with the community version of Burp!
+* [TryHackMe - Intro to Web Hacking](https://tryhackme.com/module/intro-to-web-hacking)
 * [Burp Suite Certified Practitioner ](https://portswigger.net/web-security/certification)- The official Burp Suite user certification from PortSwigger
 * [Bugcrowd University | Bugcrowd](https://www.bugcrowd.com/hackers/bugcrowd-university/) - Resources and training from one of the top Bug Bounty platforms on the market.
 * [Burp Suite: In Depth Survival Guide | Udemy](https://www.udemy.com/course/burp-suite-in-depth-survival-guide/) - Burp Suite is huge and complex. This course is a fantastic way to start making sense of all the utility in the tool
-* [Web Application Penetration Testing Training Course | (ISC)²](https://www.isc2.org/Development/Express-Learning-Courses/Web-Application-Penetration-Testing)
+* [Web Application Penetration Testing Training Course | ISC2](https://www.isc2.org/Development/Express-Learning-Courses/Web-Application-Penetration-Testing)
 * [Cyber Mentor's Intro to Bug Bounty](https://www.youtube.com/watch?v=24fHLWXGS-M)
-* [https://www.isc2.org/Development/Express-Learning-Courses/Web-Application-Penetration-Testing](https://www.isc2.org/Development/Express-Learning-Courses/Web-Application-Penetration-Testing)
 * [https://www.hacksec.in/](https://www.hacksec.in/)
 * [crAPI](https://github.com/OWASP/crAPI) - **c**ompletely **r**idiculous **API** (crAPI) will help you to understand the ten most critical API security risks. crAPI is vulnerable by design, but you'll be able to safely run it to educate/train yourself.
 * [https://github.com/jassics/security-study-plan/blob/main/web-pentest-study-plan.md](https://github.com/jassics/security-study-plan/blob/main/web-pentest-study-plan.md)
@@ -193,7 +271,7 @@ Check these every day for new tools and tactics for offensive and defensive secu
 ## **Workshops and Conventions**
 
 * [https://infosec-conferences.com/](https://infosec-conferences.com/) - List of all cons over the course of the year, world wide.
-* [ConCollector](https://cc.thinkst.com/) - An awesome tool that allows you to parse content from thousands of secrity Cons.
+* [ConCollector](https://cc.thinkst.com/) - Tool that parses content from thousands of security conference talks.
 * [https://wildwesthackinfest.com/training-schedule/](https://wildwesthackinfest.com/training-schedule/) - Keep an eye out for their Pay-What-You-Can SOC Core skills class. Absolute gold for everyone regardless of skill level.
 * Hacker Summer Camp
   * [DEF CON](https://defcon.org/) - The one, the only. The biggest hacker conference in the world.
@@ -232,7 +310,6 @@ Check these every day for new tools and tactics for offensive and defensive secu
 
 * [https://book.hacktricks.xyz/](https://book.hacktricks.xyz/)
 * [http://0xc0ffee.io/blog/OSCP-Goldmine](http://0xc0ffee.io/blog/OSCP-Goldmine)
-* [https://www.sans.org/blog/the-ultimate-list-of-sans-cheat-sheets/](https://www.sans.org/blog/the-ultimate-list-of-sans-cheat-sheets/)
 * [https://www.explainshell.com/](https://www.explainshell.com/)
 * [https://isc.sans.edu/links.html](https://isc.sans.edu/links.html)
 * [https://www.sans.org/blog/the-ultimate-list-of-sans-cheat-sheets/](https://www.sans.org/blog/the-ultimate-list-of-sans-cheat-sheets/)

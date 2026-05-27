@@ -1,4 +1,10 @@
+---
+description: Web application hacking resources for OWASP testing, Burp Suite, bug bounty methodology, APIs, OAuth, SQL injection, XSS, WAFs, and web vulnerabilities.
+---
+
 # Web App Hacking
+
+Web App Hacking covers methodology, web technologies, web-specific tooling, and application vulnerabilities. Keep general host/port scanning in Red Recon, passive OSINT in Cyber Intelligence, and courses or vulnerable apps in Training.
 
 ## **Web App Testing Resources**
 
@@ -7,6 +13,8 @@
 * [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) - Comprehensive guide to testing the security of web applications and web services created by the OWASP foundation.
   * [OWASP Top Ten](https://owasp.org/www-project-top-ten/) - Guide to the top ten most common vulnerabilities encountered in web app pentesting.
   * [OWASP API Security Top 10](https://owasp.org/API_Security) - Focuses on the top ten vulnerabilities in API security.
+  * [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html) - Guidance for protecting stored secrets and sensitive data.
+  * [OWASP Authorization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html) - Guidance for access control and authorization design.
   * [CREST OVS Programme](https://www.crest-approved.org/membership/crest-ovs-programme/) - CREST's new application security standard built with OWASP ASVS.
 * [Hacktricks Web Pentesting Guide](https://book.hacktricks.xyz/pentesting/pentesting-web) - Written by Carlos Polop, the creator of [WinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite) and [LinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite). Highly recommended resource for creative techniques and tricks.
 * [The Bug Hunters Methodology](https://github.com/jhaddix/tbhm) - Written by Jason Haddix, this repo details his toolset and methodology for web app penetration testing.
@@ -75,8 +83,8 @@ There is a bug bounty focused search engine at [BugBountyHunting.com](https://ww
 
 {% tab title="Resources and Reference" %}
 * Methodology
-  * [https://github.com/Cyber-Guy1/theCyberGuy\_Recon\_V1.0](https://github.com/Cyber-Guy1/theCyberGuy\_Recon\_V1.0) - Great Methodology MindMap
-  * [https://labs.detectify.com/2021/11/30/hak_Recon_V1.0](https://github.com/Cyber-Guy1/theCyberGuy_Recon_V1.0) - A comprehensive methodology mindmap.ating-the-perfect-bug-bounty-automation/)
+  * [theCyberGuy Recon V1.0](https://github.com/Cyber-Guy1/theCyberGuy_Recon_V1.0) - Bug bounty methodology mind map.
+  * [Creating the perfect bug bounty automation](https://labs.detectify.com/2021/11/30/hakluke-creating-the-perfect-bug-bounty-automation/) - Detectify/Hakluke automation writeup.
 * Resource collections
   * [awesome-bug-bounty](https://github.com/djadmin/awesome-bug-bounty) - is a comprehensive curated list of available Bug Bounty.
 * [Firebounty](https://firebounty.com) — Bug bounty search engine
@@ -87,9 +95,9 @@ There is a bug bounty focused search engine at [BugBountyHunting.com](https://ww
     * [https://honoki.net/2020/10/08/introducing-bbrf-yet-another-bug-bounty-reconnaissance-framework/](https://honoki.net/2020/10/08/introducing-bbrf-yet-another-bug-bounty-reconnaissance-framework/)
 * Write-ups and Scopes
   * [Awesome-Bugbounty-Writeups](https://github.com/devanshbatham/Awesome-Bugbounty-Writeups) - is a curated list of bugbounty writeups.
-  * ****[**bounty-targets-data**](https://github.com/arkadiyt/bounty-targets-data) **-** This repo contains hourly-updated data dumps of bug bounty platform scopes (like Hackerone/Bugcrowd/Intigriti/etc) that are eligible for reports
+  * [bounty-targets-data](https://github.com/arkadiyt/bounty-targets-data) - Hourly-updated data dumps of in-scope bug bounty targets from HackerOne, Bugcrowd, Intigriti, and others.
   * [bug-bounty-reference](https://github.com/ngalongc/bug-bounty-reference) - is a list of bug bounty write-ups.
-  * [Bug bounty writeups](https://pentester.land/list-of-bug-bounty-writeups.html) - list of bug bounty writeups (2012-2020).
+  * [Bug bounty writeups](https://pentester.land/list-of-bug-bounty-writeups.html) - Historical bug bounty writeup index from 2012-2020.
 {% endtab %}
 {% endtabs %}
 
@@ -109,12 +117,7 @@ There is a bug bounty focused search engine at [BugBountyHunting.com](https://ww
 
 ## **Training and Resources**
 
-**For resources including offensive security courses, books, CTFs and much more, please check out the Training and Resources section of this guide.**
-
-* [PortSwigger Web Security Academy](https://portswigger.net/web-security) - Free, interactive training labs from the creators of Burp Suite. Contains learning materials and labs on a wide range of web vulnerabilities.
-* [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/) - Probably the most modern and sophisticated insecure web application for security trainings.
-* [TryHackMe - Intro to Web Hacking](https://tryhackme.com/module/intro-to-web-hacking)
-* [crAPI](https://github.com/OWASP/crAPI) - **c**ompletely **r**idiculous **API** (crAPI) will help you to understand the ten most critical API security risks. crAPI is vulnerable by design, but you'll be able to safely run it to educate/train yourself.
+Courses, books, CTFs, and vulnerable training apps are maintained in Training.
 
 {% content-ref url="../training/" %}
 [training](../training/)

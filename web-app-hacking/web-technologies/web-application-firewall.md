@@ -4,13 +4,19 @@
 
 [Awesome-WAF](https://github.com/0xInfection/Awesome-WAF) - The Definitive Guide.
 
+## WAF and HTTP Defense Tools
+
+* [ModSecurity](https://github.com/SpiderLabs/ModSecurity) - Open-source web application firewall engine.
+* [ModSecurity-apache](https://github.com/SpiderLabs/ModSecurity-apache) - Legacy ModSecurity 2.x connector for Apache. For modern deployments, review ModSecurity v3/libmodsecurity.
+* [mod_evasive](https://github.com/jzdziarski/mod_evasive) - Legacy Apache module for DoS and brute-force protection. Evaluate maintenance status before deployment.
+
 <details>
 
 <summary>Detection and Fingerprinting Tools</summary>
 
 * [WhatWaf](https://github.com/Ekultek/WhatWaf) - Detect and bypass web application firewalls and protection systems
 * [WAFW00F](https://github.com/enablesecurity/wafw00f) - The ultimate WAF fingerprinting tool with the largest fingerprint database from [@EnableSecurity](https://github.com/enablesecurity).
-* [IdentYwaf](https://github.com/stamparm/identywaf) - A blind WAF detection tool which utlises a unique method of identifying WAFs based upon previously collected fingerprints by [@stamparm](https://github.com/stamparm).
+* [IdentYwaf](https://github.com/stamparm/identywaf) - A blind WAF detection tool which uses a unique method of identifying WAFs based upon previously collected fingerprints by [@stamparm](https://github.com/stamparm).
 
 </details>
 
@@ -57,7 +63,7 @@
 * [How To Exploit PHP Remotely To Bypass Filters & WAF Rules](https://www.secjuice.com/php-rce-bypass-filters-sanitization-waf/)- By [@Secjuice](https://secjuice.com)
 * [ModSecurity SQL Injection Challenge: Lessons Learned](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/modsecurity-sql-injection-challenge-lessons-learned/) - By [@SpiderLabs](https://trustwave.com).
 * [XXE that can Bypass WAF](https://lab.wallarm.com/xxe-that-can-bypass-waf-protection-98f679452ce0) - By [@WallArm](https://labs.wallarm.com).
-* [SQL Injection Bypassing WAF](https://www.owasp.org/index.php/SQL\_Injection\_Bypassing\_WAF) - By [@OWASP](https://owasp.com).
+* [SQL Injection Bypassing WAF](https://owasp.org/www-community/attacks/SQL_Injection_Bypassing_WAF) - By [OWASP](https://owasp.org).
 * [How To Reverse Engineer A Web Application Firewall Using Regular Expression Reversing](https://www.sunnyhoi.com/reverse-engineer-web-application-firewall-using-regular-expression-reversing/) - By [@SunnyHoi](https://twitter.com/sunnyhoi).
 * [Bypassing Web-Application Firewalls by abusing SSL/TLS](https://0x09al.github.io/waf/bypass/ssl/2018/07/02/web-application-firewall-bypass.html) - By [@0x09AL](https://twitter.com/0x09al).
 * [Request Encoding to Bypass WAFs](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/august/request-encoding-to-bypass-web-application-firewalls/) - By [@Soroush Dalili](https://twitter.com/irsdl)

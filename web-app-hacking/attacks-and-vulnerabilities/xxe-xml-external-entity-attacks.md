@@ -3,7 +3,7 @@
 {% tabs %}
 {% tab title="Tools and Resources" %}
 * [PayloadsAllTheThings/XXEInjection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XXE%20Injection#classic-xxe)
-* [XEE Payload collection](https://gist.github.com/staaldraad/01415b990939494879b4)
+* [XXE Payload collection](https://gist.github.com/staaldraad/01415b990939494879b4)
 * [XXEinjector](https://github.com/enjoiz/XXEinjector) - XXEinjector automates retrieving files using direct and out of band methods. Directory listing only works in Java applications.
 * [xxe-recursive-download](https://github.com/AonCyberLabs/xxe-recursive-download) - This tool exploits XXE to retrieve files from a target server. It obtains directory listings and recursively downloads file contents.
 * [https://xapax.github.io/security/#attacking\_web\_applications/xml\_external\_entity\_attack/](https://xapax.github.io/security/#attacking\_web\_applications/xml\_external\_entity\_attack/)

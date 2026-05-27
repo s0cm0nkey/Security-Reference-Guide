@@ -1,5 +1,7 @@
 # Standards, Frameworks, and Benchmarks
 
+Use this page for defensive frameworks, control catalogs, maturity models, and mapping references that help defenders organize security programs and detection coverage. Tool-specific resources should live on the operational pages that use them.
+
 ### [MITRE ATT\&CK™](https://attack.mitre.org/)&#x20;
 
 With over a dozen tactics and hundreds of techniques, MITRE ATT\&CK has become the de facto standard for event mapping. It can be used defensively to map attacks against your network and to map your current visibility coverage, helping identify areas for growth.
@@ -10,7 +12,6 @@ With over a dozen tactics and hundreds of techniques, MITRE ATT\&CK has become t
 * [ATT\&CK Navigator](https://mitre-attack.github.io/attack-navigator/) - A web-based tool for annotating and exploring ATT\&CK matrices. It can be used to visualize defensive coverage, red/blue team planning, the frequency of detected techniques, and more.
 * [C.A.R. Cyber Analytics Repository](https://car.mitre.org/) - A knowledge base of analytics developed by [MITRE](https://www.mitre.org), based on the [MITRE ATT\&CK](https://attack.mitre.org/) adversary model.
 * [Malware Archaeology Windows Logging Cheat Sheets](https://github.com/MalwareArchaeology/ATTACK) - The gold standard for mapping Windows Event Logs to MITRE ATT\&CK techniques.
-* [Caldera](https://github.com/mitre/caldera) - A scalable Automated Adversary Emulation Platform built around MITRE techniques.
 * [ATT\&CK® EVALUATIONS](https://attackevals.mitre-engenuity.org/) - Evaluations of security tools based on MITRE technique coverage.
 * [ATT\&CK Flow](https://github.com/center-for-threat-informed-defense/attack-flow) - Helps executives, SOC managers, and defenders understand how attackers compose techniques into attacks by modeling suspicious flows.
   * [Center for Threat-Informed Defense Work](https://ctid.mitre-engenuity.org/our-work/attack-flow)
@@ -18,7 +19,6 @@ With over a dozen tactics and hundreds of techniques, MITRE ATT\&CK has become t
 * [Enterprise ATT\&CK Python Module](https://github.com/xakepnz/enterpriseattack) - A lightweight Python module to interact with the MITRE ATT\&CK Enterprise dataset.
 * [Mapping MITRE ATT\&CK with Windows Event Log IDs](https://www.socinvestigation.com/mapping-mitre-attck-with-window-event-log-ids/)
 * [Jai Minton's MITRE ATT\&CK Resources](https://www.jaiminton.com/mitreatt\&ck)
-* [TryHackMe MITRE Room](https://tryhackme.com/room/mitre)
 
 ### Deprecated / Archived Projects
 
@@ -38,9 +38,19 @@ Understanding both of these is valuable for both your organization and your own 
 
 * [CIS Controls](https://www.cisecurity.org/controls/)
 * [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks/)
+* [CIS Controls Guide](https://www.cisecurity.org/controls/) - Official implementation guidance and resources for the CIS Controls.
 * [CIS Community Defense Model](https://www.cisecurity.org/insights/white-papers/cis-community-defense-model)
 * [Cyber Attack Defense: CIS Benchmarks, CDM, and MITRE ATT\&CK](https://www.cisecurity.org/blog/cyber-attack-defense-cis-benchmarks-cdm-mitre-attck/)
 * [Why You Should Care About CIS v8](https://www.blackhillsinfosec.com/center-for-internet-security-cis-v8-why-you-should-care/)
+
+### NIST Cybersecurity and Risk Management
+
+NIST publications are useful for building security programs, selecting controls, and understanding risk management at an organizational level.
+
+* [NIST Cybersecurity Framework (CSF)](https://www.nist.gov/cyberframework) - Voluntary guidance for organizing and improving cybersecurity risk management.
+* [NIST-to-Tech](https://github.com/mikeprivette/NIST-to-Tech) - Open-source mapping of cybersecurity technologies to the NIST Cybersecurity Framework.
+* [NIST SP 800-37 Rev. 2](https://csrc.nist.gov/pubs/sp/800/37/r2/final) - Risk Management Framework for Information Systems and Organizations.
+* [NIST SP 800-53 Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) - Security and privacy control catalog for information systems and organizations.
 
 ### Lockheed-Martin Cyber Kill-Chain&#x20;
 
@@ -75,7 +85,6 @@ A common and reasonably popular format, though it lacks some granular classifica
 ### Other Standards
 
 * [CVSS (Common Vulnerability Scoring System)](https://www.first.org/cvss/) - The open industry standard for assessing the severity of computer system security vulnerabilities.
-* [OWASP Top 10](https://owasp.org/www-project-top-ten/) - The standard awareness document for developers and web application security. It represents a broad consensus about the most critical security risks to web applications.
 * [STIX/TAXII](https://oasis-open.github.io/cti-documentation/) - Structured Threat Information Expression (STIX) is a language for describing cyber threat intelligence. Trusted Automated Exchange of Intelligence Information (TAXII) defines how STIX information is shared.
 * [STRIDE](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats) - A threat modeling methodology. The acronym stands for Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege.
 * [YARA](https://github.com/VirusTotal/yara) - The de facto standard mechanism for classifying and matching malware samples based on textual or binary patterns.
@@ -90,6 +99,5 @@ A common and reasonably popular format, though it lacks some granular classifica
 * [CCPA (California Consumer Privacy Act)](https://www.oag.ca.gov/privacy/ccpa) is a data privacy law that took effect on January 1, 2020, in the State of California. It applies to businesses that collect California residents’ personal information, and its privacy requirements are similar to those of the EU’s GDPR (General Data Protection Regulation).
 * [Payment Card Industry (PCI) Data Security Standards (DSS)](https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-pci-dss) is a global information security standard designed to prevent fraud through increased control of credit card data.
 * [SOC 2](https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/aicpasoc2report.html) is an auditing procedure that ensures your service providers securely manage your data to protect the interests of your company/organization and the privacy of their clients.
-* [NIST CSF](https://www.nist.gov/national-security-standards) is a voluntary framework primarily intended for critical infrastructure organizations to manage and mitigate cybersecurity risk based on existing best practices.
 * [Landlock LSM (Linux Security Module)](https://www.kernel.org/doc/html/latest/security/landlock.html) is a framework to create scoped access-control (sandboxing). Landlock is designed to be usable by unprivileged processes while following the system security policy enforced by other access control mechanisms (DAC, LSM, etc.).
 * [Secure Boot](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot) is a security standard developed by members of the PC industry to help make sure that a device boots (Unified Extensible Firmware Interface (UEFI) BIOS) using only software (such as bootloaders, OS, UEFI drivers, and utilities) that is trusted by the Original Equipment Manufacturer (OEM).

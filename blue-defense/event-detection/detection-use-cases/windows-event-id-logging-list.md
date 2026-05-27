@@ -1,4 +1,4 @@
-# Windows Event ID logging list
+# Windows Event ID Logging List
 
 * EventID 104: The System log file was  cleared
   * Use Case - Clearing of logs
@@ -85,9 +85,9 @@
 * EventID 8007: Blocked MSI or Script
   * Use Case - Applocker performed a blocking action
 
-Reference
+## Reference
 
-* [https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor)
+* [Microsoft: Events to Monitor](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor)
 
 #### AD Attack Detection
 

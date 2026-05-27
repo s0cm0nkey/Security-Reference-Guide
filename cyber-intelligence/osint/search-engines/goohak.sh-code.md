@@ -4,6 +4,14 @@ description: https://github.com/1N3/Goohak/blob/master/goohak
 
 # Goohak.sh Code
 
+{% hint style="warning" %}
+This page is a historical reference for the original Goohak script. Several embedded URLs in the script are now stale or discontinued, including older Censys paths, XSSposed, PunkSpider, and ThreatCrowd. Use the maintained Google dorking page and EasyRecon for current workflows.
+{% endhint %}
+
+{% content-ref url="google-dorking-cheatsheet.md" %}
+[google-dorking-cheatsheet.md](google-dorking-cheatsheet.md)
+{% endcontent-ref %}
+
 ```
 #!/bin/bash
 # + -- --=[GooHak by @xer0dayz

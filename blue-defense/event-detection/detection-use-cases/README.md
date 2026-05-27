@@ -1,6 +1,6 @@
 # Detection Use Cases
 
-While many security products have built in detection use cases, there will always be situations where a custom detection use case will need to be developed. In order to create a successful use cases, we need to have a few key elements.
+While many security products have built-in detection use cases, there will always be situations where a custom detection use case must be developed. In order to create a successful use case, we need to have a few key elements.
 
 ## Theory
 
@@ -19,7 +19,7 @@ The first step in building a use case is the theory behind it. While the protoco
 
 The most effective security monitoring programs, undergo a constant state of tuning and refinement. This allows the highest degree of detection while not overwhelming your analysts with alerts to investigate. High volumes of false positives are typically either a poorly written rule, or noise in your environment that needs to be tuned out. All alerts should have a set of exclusions that should be placed within the use case logic to accommodate any known issues, and therefore not create an alert on those circumstances.
 
-Sometimes you will have to perform a cost benefit analysis on each use case. Is there value in spending gobs of time on every port scan alert you receive? That is up to you. (You shoudnt)
+Sometimes you will have to perform a cost-benefit analysis on each use case. Is there value in spending a large amount of time on every port scan alert you receive? That is up to you, but in most environments the answer is no.
 
 ## Detection Guides
 
@@ -44,9 +44,15 @@ Sometimes you will have to perform a cost benefit analysis on each use case. Is 
 [windows-event-id-logging-list.md](windows-event-id-logging-list.md)
 {% endcontent-ref %}
 
+For SIEM query languages and detection rule syntax, use the Query Languages page.
+
+{% content-ref url="../../query-languages.md" %}
+[query-languages.md](../../query-languages.md)
+{% endcontent-ref %}
+
 ## **Detection Use Case Collections**
 
-If you ever want to take the easy way of development, and simply purchase search rules or copy some that are existing on other platforms, there are a few places available on the web. Many poopular SIEMs have sets of rules included in the software. For more, please review the Event Detection section.
+If you want to start from existing searches, many SIEMs include rule packs and several communities publish detection content. Treat these as starting points: test them against your data, tune them for your environment, and document any assumptions.
 
 * [sigma/rules at master · SigmaHQ/sigma · GitHub](https://github.com/SigmaHQ/sigma/tree/master/rules)&#x20;
 * [https://github.com/elastic/protections-artifacts](https://github.com/elastic/protections-artifacts)

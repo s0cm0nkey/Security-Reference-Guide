@@ -35,47 +35,11 @@ Name search records can become ambiguous quickly when dealing with common names 
 
 {% file src="../../.gitbook/assets/Name (1).html" %}
 
-## Email OSINT
+Email and username OSINT has its own canonical page. Use this page when the investigation starts from a person, phone number, public record, business record, vehicle, property, or government source; pivot to Username/Email when the identifier becomes an email address or handle.
 
-<details>
-
-<summary>Email Search and Verification Tools</summary>
-
-Email addresses are valuable identifiers that can reveal connected accounts, data breaches, and professional affiliations. Email OSINT encompasses finding email addresses associated with individuals or organizations, verifying their validity, and discovering what services or breaches they're connected to.
-
-* [Hunter.io](https://hunter.io/) - Find and verify professional email addresses associated with domains. Useful for discovering email patterns within organizations (limited free searches, subscription required for extensive use).
-* [Have I Been Pwned](https://haveibeenpwned.com/) - Check if an email address has been compromised in known data breaches. Provides breach details and compromised data types.
-* [DeHashed](https://dehashed.com/) - Search engine for leaked credentials and breach data. Allows searching by email, username, IP address, or other identifiers (requires paid subscription for full access).
-* [Epieos](https://epieos.com/) - Advanced OSINT tool for investigating Google and Microsoft accounts. Reveals associated services, profile information, and account activity.
-* [EmailRep.io](https://emailrep.io/) - Email reputation and threat intelligence service. Identifies suspicious or malicious email addresses.
-* [Holehe](https://github.com/megadose/holehe) - Tool to check if an email is attached to an account on various websites like Twitter, Instagram, Imgur, and more.
-* [GHunt](https://github.com/mxrch/GHunt) - Investigate Google accounts using email addresses. Reveals YouTube channels, Google Maps reviews, profile photos, and more.
-* [h8mail](https://github.com/khast3x/h8mail) - Email OSINT and breach hunting tool using multiple data breach sources and APIs.
-* [Clearbit Connect](https://connect.clearbit.com/) - Browser extension for finding email addresses and company information.
-* [Email Permutator+](https://github.com/Tedixx/Email-Permutator-Plus) - Generate possible email address permutations based on name and domain.
-
-</details>
-
-## Username Enumeration
-
-<details>
-
-<summary>Username Search Tools</summary>
-
-Username enumeration allows investigators to track individuals across multiple platforms and services using their chosen usernames. Many people reuse usernames across different platforms, making this a powerful technique for building comprehensive profiles.
-
-* [Sherlock](https://github.com/sherlock-project/sherlock) - Hunt down social media accounts by username across 400+ social networks. Command-line tool with extensive platform coverage.
-* [WhatsMyName](https://whatsmyname.app/) - Search for username availability and existence across 600+ websites. Web-based interface with detailed results.
-* [Namechk](https://namechk.com/) - Check username and domain availability across multiple platforms simultaneously.
-* [Social-Analyzer](https://github.com/qeeqbox/social-analyzer) - Analyze and find profiles across 1000+ websites and extract information from identified accounts.
-* [Maigret](https://github.com/soxoj/maigret) - Collect dossiers on people by username. Fork of Sherlock with additional features and over 3000 sites.
-* [Instant Username Search](https://instantusername.com/) - Real-time username availability checker across major social platforms.
-* [UserSearch.org](https://usersearch.org/) - Find usernames across social media and other platforms.
-* [Knowem](https://knowem.com/) - Search over 500 social networks and websites to check username availability and find registered accounts.
-* [CheckUsernames](https://checkusernames.com/) - Quick username search across multiple platforms.
-* [NameCheckup](https://namecheckup.com/) - Check username availability on social media sites.
-
-</details>
+{% content-ref url="username-email.md" %}
+[username-email.md](username-email.md)
+{% endcontent-ref %}
 
 ## Telephone Numbers
 
@@ -231,10 +195,6 @@ Voter registration records are public in many states and can provide address his
 <summary>Tools No Longer Recommended</summary>
 
 These tools were previously included but are now deprecated, shut down, or have become unreliable. They are kept here for historical reference.
-
-**Email OSINT:**
-* [Phonebook.cz](https://phonebook.cz/) - Service has been shut down and is no longer accessible.
-* [Skymem](http://www.skymem.info/) - Mailing list archive search service that is outdated and no longer maintained reliably.
 
 **Phone Number Lookup:**
 * [sync.me](https://sync.me/) - Service has significantly changed or shut down, no longer reliable for caller identification.

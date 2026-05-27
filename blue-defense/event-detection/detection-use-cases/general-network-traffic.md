@@ -2,7 +2,7 @@
 
 **Network Baselining - Anomaly Reports**
 
-When monitoring network traffic, we can identify anomalies of traffic by statistical outliers. These are important to review regularly for suspicious activity as well as for opportunities to add to any available white/black lists.These are typically a very large amount of data to return, so it is recommended to use these detections as regularly scheduled reports to be reviewed, rather than alerts.
+When monitoring network traffic, we can identify anomalous traffic with statistical outliers. These are important to review regularly for suspicious activity as well as opportunities to tune allow and deny lists. These detections usually return a large amount of data, so it is often better to run them as scheduled reports rather than alerts.
 
 * **Large Volumes of Internal Blocked Traffic -** Traffic within your network should all be legitimate and not require any blocking. That being said, a default network setup will have TONS of internal blocked traffic. Vuln scanners, default Windows utilities, Broadcast/multicast traffic, etc. Tune these out before enabling this use case.
   * Great for detecting unauthorized internal recon and pivoting.
@@ -27,7 +27,7 @@ When monitoring network traffic, we can identify anomalies of traffic by statist
     * Look for network connections, or the sum of like network connections that start/stop in sequence that add up to anything longer than 24 hours.
 * **Top Connections** - Reviewing top source and destination IPs can identify potentially unauthorized or malicious network traffic. This is  further enhanced if you can see a trendline of the traffic to detect abnormal spikes in activity.
 * **Potential Data Exfiltration -** Looking at the summed byte count of of traffic between a source and destination where the session appears to be the same, can potentially expose large, unauthorized file transfers.&#x20;
-* **Abnormal Upload/Download Ratio** - Depending on the purpose of the device, connections will typically have an upload/download ratio that reflect that purpose. Example: Most end user devices will have web requests that are heavily trended towards download rather than upload. If that changes, it could undicate beaconing or exfiltration. This should always be correlated with spikes in connection counts as well.
+* **Abnormal Upload/Download Ratio** - Depending on the purpose of the device, connections will typically have an upload/download ratio that reflects that purpose. Example: Most end user devices will have web requests that trend heavily toward download rather than upload. If that changes, it could indicate beaconing or exfiltration. This should always be correlated with spikes in connection counts as well.
 * **Per subnet event count anomalies.**
 
 **Unauthorized RDP Use**
@@ -73,7 +73,7 @@ When monitoring network traffic, we can identify anomalies of traffic by statist
     * Detected use of SMB
       * EventID 4624
       * OR
-      * Dest Port = 3389
+      * Dest Port = 445 or 139
     * AND
     * Source is
       * 192.168.0.0/16 OR 172.16.0.0/12 OR 10.0.0.0/8
@@ -92,9 +92,15 @@ When monitoring network traffic, we can identify anomalies of traffic by statist
 **Traffic to New Port**
 
 * Theory
-  * Business activity is regular and repetitive. One a device is fully deployed in a network, it will rarely see connections with previously unused ports. By detecting connections with ports that have never previously been used, we can detect various types of potentially malicious traffic within our network.
+  * Business activity is regular and repetitive. Once a device is fully deployed in a network, it will rarely see connections with previously unused ports. By detecting connections with ports that have never previously been used, we can detect various types of potentially malicious traffic within our network.
 * Requirements
 * Logic
   * Where
-    * Internal asset and traffic destination port combination has not been seen wihtin the past 90 days.
+    * Internal asset and traffic destination port combination has not been seen within the past 90 days.
+
+For packet capture, beaconing, and protocol analysis references, use Packet Analysis.
+
+{% content-ref url="../../packet-analysis.md" %}
+[packet-analysis.md](../../packet-analysis.md)
+{% endcontent-ref %}
 

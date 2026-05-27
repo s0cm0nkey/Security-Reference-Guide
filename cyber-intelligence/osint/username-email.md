@@ -119,19 +119,11 @@ Verify whether an email address is valid and actively registered before conducti
 
 </details>
 
-<details>
+Broad recon frameworks such as SpiderFoot, Recon-ng, Maltego, and Sn1per are maintained with recon frameworks. Use this page for username and email-specific pivots.
 
-<summary>Comprehensive OSINT Frameworks</summary>
-
-These frameworks automate multiple OSINT techniques including username and email enumeration:
-
-* [SpiderFoot](https://github.com/smicallef/spiderfoot) - Automated OSINT reconnaissance tool that integrates with 200+ data sources. Performs comprehensive email, username, and domain analysis.
-* [Recon-ng](https://github.com/lanmaster53/recon-ng) - Full-featured web reconnaissance framework with modules for email harvesting, breach data searches, and account enumeration
-* [Maltego](https://www.maltego.com/) - Data mining and link analysis tool excellent for visualizing relationships between usernames, emails, domains, and social media accounts
-* [OSINT Framework](https://osintframework.com/) - Comprehensive directory of OSINT tools organized by category (reference this for additional username/email tools)
-* [Sn1per](https://github.com/1N3/Sn1per) - Automated pentest reconnaissance scanner with OSINT capabilities including email and username discovery
-
-</details>
+{% content-ref url="../../red-offensive/scanning-active-recon/recon-frameworks.md" %}
+[recon-frameworks.md](../../red-offensive/scanning-active-recon/recon-frameworks.md)
+{% endcontent-ref %}
 
 <details>
 
@@ -205,6 +197,7 @@ These tools were previously included but are now deprecated, shut down, or have 
 * [Phonebook.cz](https://phonebook.cz/) - Service has been shut down and is no longer accessible. Consider using IntelligenceX or Hunter.io as alternatives.
 * [EmailCrawlr](https://emailcrawlr.com/) - Service appears to be offline or unreliable. Use Hunter.io or Apollo.io instead.
 * [Public Mail Records](https://publicemailrecords.com/) - Service reliability has declined significantly.
+* [Skymem](http://www.skymem.info/) - Mailing list archive search service that is outdated and no longer maintained reliably.
 
 **Email Verification:**
 * [TruMail](https://trumail.io/) - API service is no longer reliably accessible. Use Email Hippo or NeverBounce as alternatives.

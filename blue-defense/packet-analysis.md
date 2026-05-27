@@ -27,8 +27,17 @@ Raw packet captures are a staple for security analysis since they can be a compl
 * [Stenographer by Google](https://github.com/google/stenographer) - A full-packet-capture utility for buffering packets to disk for intrusion detection and incident response purposes. It provides a high-performance implementation of NIC-to-disk packet writing, handles deleting those files as disk fills up, and provides methods for reading back specific sets of packets quickly and easily.
 * [CapMe](https://github.com/Security-Onion-Solutions/security-onion/wiki/CapMe) - The Web Interface for easy interaction with packet captures, located within Security Onion.
 * [NTOP / ntopng](https://www.ntop.org/) - Handy and flexible tool stack that can create packet captures, netflow logs, and network probes for recording traffic of different types. `ntopng` is the modern, high-speed version of the original `ntop`.
+* [Fprobe](https://github.com/digitalocean/fprobe) - libpcap-based tool that collects network traffic and exports it as NetFlow.
+* [YAF](https://tools.netsa.cert.org/yaf/) - Yet Another Flowmeter; processes PCAP or live traffic into bidirectional IPFIX flows.
+* [SiLK](https://tools.netsa.cert.org/silk/) - CERT NetSA flow analysis toolkit for large-scale network traffic analysis.
+  * [SiLK Analysis Handbook](https://tools.netsa.cert.org/silk/analysis-handbook.pdf)
+* [super_mediator](https://tools.netsa.cert.org/super_mediator/) - IPFIX mediator commonly used with YAF and SiLK workflows.
+* [OpenArgus](https://openargus.org/) - Real-time flow monitor for comprehensive network traffic auditing.
 * [Dumpcap](https://www.wireshark.org/docs/man-pages/dumpcap.html) **-** Tool included with Wireshark for simple capture of packet data and writing to a disk.
 * [Netsniff-ng](http://netsniff-ng.org/) - A fast network analyzer based on packet mmap(2) mechanisms. It can record pcap files to disk, replay them and also do an offline and online analysis.
+* [URLSnarf](https://linux.die.net/man/8/urlsnarf) - Extracts requested URLs from HTTP traffic.
+* [httpry](https://github.com/jbittel/httpry) - Captures and logs HTTP traffic for later analysis.
+* [justniffer](https://onotelli.github.io/justniffer/) - Network protocol analyzer that can produce web-server-like logs from captured HTTP traffic.
 * _Attacking Network Protocols: Ch. 2 Capturing Application Traffic - pg. 11_
 
 </details>
@@ -41,10 +50,11 @@ Raw packet captures are a staple for security analysis since they can be a compl
 
 This can be done in a few ways:
 
-Man-in-the-middle (MITM)
+Man-in-the-middle (MITM) interception is primarily a web application testing and offensive security topic. For defensive packet analysis, focus on decrypting traffic you are authorized to inspect with keys or session secrets.
 
-* [MITM Through mitmproxy](https://mitmproxy.org/)
-* [MITM Through SSLStrip](https://github.com/moxie0/sslstrip) (Note: This is a legacy technique and is largely ineffective against modern HSTS-enabled sites).
+{% content-ref url="../web-app-hacking/attacks-and-vulnerabilities/" %}
+[attacks-and-vulnerabilities](../web-app-hacking/attacks-and-vulnerabilities/)
+{% endcontent-ref %}
 
 Using Keys/Secrets:
 
@@ -100,7 +110,7 @@ Command line version of Wireshark
 * [Beginners Guide to TShark (Part 1)](https://www.hackingarticles.in/beginners-guide-to-tshark-part-1/)
 * [Beginners Guide to TShark (Part 2)](https://www.hackingarticles.in/beginners-guide-to-tshark-part-2/)
 * [Beginners Guide to TShark (Part 3)](https://www.hackingarticles.in/beginners-guide-to-tshark-part-3/)
-* [https://tryhackme.com/room/tshark](https://tryhackme.com/room/tshark)
+* TryHackMe's TShark room is preserved in Training.
 {% endtab %}
 
 {% tab title="Basic Commands" %}
@@ -303,9 +313,11 @@ PowerShell.exe -ExecutionPolicy bypass .\raw-socket-sniffer.ps1 `
 * [Malware Traffic Analysis](https://www.malware-traffic-analysis.net/) - A comprehensive source for traffic analysis exercises and tutorials.
 * [https://www.sans.org/reading-room/whitepapers/tools/extracting-files-network-packet-captures-36562](https://www.sans.org/reading-room/whitepapers/tools/extracting-files-network-packet-captures-36562)
 * [Detecting Network Attacks with Wireshark - InfosecMatter](https://www.infosecmatter.com/detecting-network-attacks-with-wireshark/)
-* Hack-the-box Packet Analysis Course - [https://academy.hackthebox.eu/course/preview/intro-to-network-traffic-analysis](https://academy.hackthebox.eu/course/preview/intro-to-network-traffic-analysis)
+* Hack The Box packet analysis training is preserved in Training.
 * [https://dfirmadness.com/case-001-pcap-analysis/](https://dfirmadness.com/case-001-pcap-analysis/)
-* [https://www.antisyphontraining.com/getting-started-with-packet-decoding-w-chris-brenton/](https://www.antisyphontraining.com/getting-started-with-packet-decoding-w-chris-brenton/)
+* Antisyphon packet decoding training is preserved in Training.
 * _Packet Analysis - Applied Network Security Monitoring, pg.341_
 
-__
+{% content-ref url="../training/" %}
+[training](../training/)
+{% endcontent-ref %}

@@ -93,16 +93,17 @@ A package of python tools to analyze [Microsoft OLE2 files](http://en.wikipedia.
 
 ### Binary Analysis Tools
 
-* [Ghidra](https://ghidra-sre.org/) - A software reverse engineering (SRE) suite of tools developed by NSA's Research Directorate.
-* [x64dbg](https://x64dbg.com/) - An open-source x64/x32 debugger for windows.
-* [Cutter](https://cutter.re/) - Free and open-source reverse engineering platform powered by Rizin.
-* [PEStudio](https://www.winitor.com/) - A tool to perform static analysis of Windows executable files.
-* [Capa](https://github.com/mandiant/capa) - Detects capabilities in executable files. You run it against a PE, ELF, or shellcode and it tells you what it thinks the program can do.
-* [binwalk](https://www.kali.org/tools/binwalk/) - Binwalk is a tool for searching a given binary image for embedded files and executable code.
-* [de4dot](https://www.kali.org/tools/de4dot/) - de4dot is a .NET deobfuscator and unpacker.
-* [pev](https://www.kali.org/tools/pev/) - pev is a tool to get information of PE32/PE32+ executables (EXE, DLL, OCX etc) like headers, sections, resources and more.
-* [ropper](https://www.kali.org/tools/ropper/) - This package contains scripts that display info about files in different formats and find gadgets to build ROPs chains for different architectures (x86/x86\_64, ARM/ARM64, MIPS, PowerPC). For disassembly ropper uses the Capstone Framework.
-* [Malcat](https://malcat.fr/index.html) - Malcat is a feature-rich hexadecimal editor / disassembler for Windows and Linux targeted to IT-security professionals. Inspect dozens of binary file formats, dissassemble and decompile different CPU architectures.
+Reverse engineering, debuggers, disassemblers, decompilers, PE capability tools, and hex editors are maintained on the Reverse Engineering page.
+
+{% content-ref url="binary-analysis-reverse-engineering.md" %}
+[binary-analysis-reverse-engineering.md](binary-analysis-reverse-engineering.md)
+{% endcontent-ref %}
+
+File-oriented binary triage tools that also fit here:
+
+* [binwalk](https://www.kali.org/tools/binwalk/) - Search firmware or binary images for embedded files and executable code.
+* [de4dot](https://www.kali.org/tools/de4dot/) - .NET deobfuscator and unpacker.
+* [pev](https://www.kali.org/tools/pev/) - PE32/PE32+ executable header, section, resource, and metadata inspection.
 
 ### Email Analysis Tools
 
@@ -139,9 +140,16 @@ A package of python tools to analyze [Microsoft OLE2 files](http://en.wikipedia.
 
 ## **File Encrypt/Decrypt/Crack**
 
+Use these for protected evidence, encrypted malware samples, password-protected archives, and file recovery work. Password attack methodology lives in Red Offensive.
+
+{% content-ref url="../red-offensive/testing-methodology/password-attacks.md" %}
+[password-attacks.md](../red-offensive/testing-methodology/password-attacks.md)
+{% endcontent-ref %}
+
 * [Hashcat](https://hashcat.net/hashcat/) - World's fastest and most advanced password recovery utility.
 * [John the Ripper](https://www.openwall.com/john/) - Fast password cracker, currently available for many flavors of Unix, Windows, DOS, and OpenVMS.
 * [CyberChef](https://gchq.github.io/CyberChef/) - "The Cyber Swiss Army Knife". A web app for encryption, encoding, compression and data analysis.
+* [HashCalc](https://www.slavasoft.com/hashcalc/) - File hash, checksum, and HMAC calculator.
 * [Pem File Cracking](https://github.com/robertdavidgraham/pemcrack) - Cracks SSL PEM files that hold encrypted private keys. Brute forces or dictionary cracks.
 * [PKZip File Cracking (pkcrack)](https://github.com/keyunluo/pkcrack) - Breaking Pkzip encryption. This package implements an algorithm that was developed by Eli Biham and Paul Kocher.
     The attack is a _known plaintext attack_, which means you have to know part of the encrypted data in order to break the cipher.
@@ -210,6 +218,8 @@ $obj.sources.attributes.paths
 
 ## Binary Analysis Training
 
-* [https://maxkersten.nl/binary-analysis-course/](https://maxkersten.nl/binary-analysis-course/)
+Binary analysis and reverse engineering training links have moved to Training.
 
-****
+{% content-ref url="../training/" %}
+[training](../training/)
+{% endcontent-ref %}

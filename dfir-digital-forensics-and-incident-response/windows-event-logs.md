@@ -53,7 +53,13 @@ Get-WinEvent -FilterHashtable @{ LogName='Application'; Level='4';}
 
 ### Reviewing Audit Policy
 
-To uLegacy Commands
+To understand what is being logged, review the current audit policy configuration.
+
+```
+auditpol /get /category:*
+```
+
+### Legacy Commands
 
 > **Note:** `Get-EventLog` is deprecated and only supports classic event logs. It is recommended to use `Get-WinEvent`.
 
@@ -65,33 +71,13 @@ Get-EventLog -list
 Get-EventLog Application | Select -Unique Source
 ```
 
-### nderstand what is being logged, it is crucial to review the current audit policy configuration.
-
-```
-auditpol /get /category:*
-```
-
 ### System Monitor (Sysmon)
 
-[Sysmon](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon) provides detailed information about process creations, network connections, and changes to the file system.
+Sysmon setup, configuration, and detection use cases live in Event Detection. During DFIR, export `Microsoft-Windows-Sysmon/Operational` along with the other event logs so it can be reviewed offline.
 
-**Check if Sysmon is running**
-
-```
-Get-Service sysmon
-```
-
-**Get Sysmon Configuration**
-
-```
-sysmon -c
-```
-
-**Get Sysmon Events**
-
-```
-Get-WinEvent -LogName "Microsoft-Windows-Sysmon/Operational"
-```
+{% content-ref url="../blue-defense/event-detection/sysmon.md" %}
+[sysmon.md](../blue-defense/event-detection/sysmon.md)
+{% endcontent-ref %}
 
 ## Exporting Event Logs for Offline Analysis <a href="#event-logs-for-offline-analysis" id="event-logs-for-offline-analysis"></a>
 
@@ -119,7 +105,7 @@ XCOPY C:\WINDOWS\system32\LogFiles\ [Location] /i
 
 ### [User Access Logging (UAL) KStrike Parser](https://github.com/brimorlabs/KStrike) <a href="#user-access-logging-ual-kstrike-parser" id="user-access-logging-ual-kstrike-parser"></a>
 
-Note: More information can be found [here](https://docs.microsoft.com/en-us/windows-server/administration/user-access-logging/manage-user-access-logging). Special thanks to Brimor Labs.
+Note: More information can be found in [Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/user-access-logging/manage-user-access-logging). Special thanks to Brimor Labs.
 
 ```
 KStrike.py SYSTEMNAME\Current.mdb > Current_mdb.txt
@@ -139,13 +125,17 @@ More information available on the [CrowdStrike Blog - Patrick Bennett](https://w
 .\DeepBlue.ps1 .\evtx\psattack-security.evtx | FL
 ```
 
-For faster analysis of large datasets, consider using Rust-based tools such as [Chainsaw](https://github.com/WithSecureLabs/chainsaw) or [Hayabusa](https://github.com/Yamato-Security/hayabusa).
+For faster analysis of large datasets, consider using Rust-based tools such as [Chainsaw](https://github.com/WithSecureLabs/chainsaw) or [Hayabusa](https://github.com/Yamato-Security/hayabusa). Broader detection-engineering context for these tools belongs in Event Detection.
+
+{% content-ref url="../blue-defense/event-detection/" %}
+[event-detection](../blue-defense/event-detection/)
+{% endcontent-ref %}
 
 ### Event Tracing for Windows (ETW) <a href="#event-tracing-for-windows-etw" id="event-tracing-for-windows-etw"></a>
 
 Event tracing is how a Provider (an application that contains event tracing instrumentation) creates items within the Windows Event Log for a consumer. This is how event logs are generated, and is also a way they can be tampered with. More information on this architecture can be found below.
 
-[Event Tracing Architecture](https://docs.microsoft.com/en-us/windows/win32/etw/about-event-tracing)
+[Event Tracing Architecture](https://learn.microsoft.com/en-us/windows/win32/etw/about-event-tracing)
 
 A great [post by Matt Graeber](https://medium.com/palantir/tampering-with-windows-event-tracing-background-offense-and-defense-4be7ac62ac63) goes into some depth on how this works and some common ways of interacting with ETW Traces.
 

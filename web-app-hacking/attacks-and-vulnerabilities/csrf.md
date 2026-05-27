@@ -16,9 +16,9 @@ For a CSRF attack to be possible, three key conditions must be in place:
 
 * [https://portswigger.net/web-security/csrf/xss-vs-csrf](https://portswigger.net/web-security/csrf/xss-vs-csrf)
 * [https://portswigger.net/web-security/csrf/tokens](https://portswigger.net/web-security/csrf/tokens)
-* [http://tipstrickshack.blogspot.cl/2012/10/how-to-exploit-csfr-vulnerabilitycsrf.html](http://tipstrickshack.blogspot.cl/2012/10/how-to-exploit-csfr-vulnerabilitycsrf.html)
-* [https://www.owasp.org/index.php/Testing\_for\_CSRF\_(OTG-SESS-005)](https://www.owasp.org/index.php/Testing\_for\_CSRF\_\(OTG-SESS-005\))
-* [https://www.owasp.org/index.php/Cross-Site\_Request\_Forgery\_(CSRF)](https://www.owasp.org/index.php/Cross-Site\_Request\_Forgery\_\(CSRF\))
+* [How to Exploit CSRF Vulnerabilities](http://tipstrickshack.blogspot.cl/2012/10/how-to-exploit-csfr-vulnerabilitycsrf.html) - Older tutorial; validate examples against current browser behavior.
+* [OWASP WSTG: Testing for CSRF](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery)
+* [OWASP: Cross-Site Request Forgery](https://owasp.org/www-community/attacks/csrf)
 * [https://pentestbook.six2dez.com/enumeration/web/csrf](https://pentestbook.six2dez.com/enumeration/web/csrf)
 * [https://kathan19.gitbook.io/howtohunt/csrf/cross\_site\_request\_forgery\_bypass](https://kathan19.gitbook.io/howtohunt/csrf/cross\_site\_request\_forgery\_bypass)
 * _Cross-Site Request Forgery - Bug Bounty Hunting Essentials, pg 41_
@@ -47,7 +47,7 @@ For a CSRF attack to be possible, three key conditions must be in place:
   * [https://portswigger.net/web-security/csrf/lab-token-tied-to-non-session-cookie](https://portswigger.net/web-security/csrf/lab-token-tied-to-non-session-cookie)
 * CSRF token is simply duplicated in a cookie
   * [https://portswigger.net/web-security/csrf/lab-token-duplicated-in-cookie](https://portswigger.net/web-security/csrf/lab-token-duplicated-in-cookie)
-* Refereer based vulnerabilities
+* Referer-based vulnerabilities
   * [https://portswigger.net/web-security/csrf/lab-referer-validation-depends-on-header-being-present](https://portswigger.net/web-security/csrf/lab-referer-validation-depends-on-header-being-present)
   * [https://portswigger.net/web-security/csrf/lab-referer-validation-broken](https://portswigger.net/web-security/csrf/lab-referer-validation-broken)
 

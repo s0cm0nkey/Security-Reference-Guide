@@ -1,6 +1,6 @@
 # Sysmon
 
-### [Sysmon](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon)
+### [Sysmon](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)
 
 System Monitor (Sysmon) is a Windows system service and device driver that, once installed on a system, remains resident across system reboots to monitor and log system activity to the Windows event log. It provides detailed information about process creations, network connections, and changes to file creation time. It is a critical data source for Incident Response, Event Detection, and Threat Hunting.
 
@@ -27,6 +27,16 @@ System Monitor (Sysmon) is a Windows system service and device driver that, once
 * [Splunking the Endpoint: Threat Hunting with Sysmon](https://haggis-m.medium.com/splunking-the-endpoint-threat-hunting-with-sysmon-9dd956e3e1bd) - Blog post on using Splunk and Sysmon for threat hunting.
 * [Sysmon API MindMap](https://raw.githubusercontent.com/OTRF/API-To-Event/master/images/API-to-Sysmon.svg) - Visual map of Sysmon API to events.
 * [Sysmon Cheatsheet](https://github.com/olafhartong/sysmon-cheatsheet/blob/master/Sysmon-Cheatsheet-dark.pdf) - A quick reference cheatsheet for Sysmon.
+
+For endpoint and command-line detection ideas that use Sysmon data, see these detection use-case pages.
+
+{% content-ref url="detection-use-cases/endpoint.md" %}
+[endpoint.md](detection-use-cases/endpoint.md)
+{% endcontent-ref %}
+
+{% content-ref url="detection-use-cases/command-line.md" %}
+[command-line.md](detection-use-cases/command-line.md)
+{% endcontent-ref %}
 
 ### Key Sysmon Event IDs
 

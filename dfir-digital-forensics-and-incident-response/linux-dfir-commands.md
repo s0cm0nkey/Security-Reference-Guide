@@ -7,6 +7,8 @@ dd if=/dev/kmem of=/root/kmem
 dd if=/dev/mem of=/root/mem
 ```
 
+`/dev/kmem` and `/dev/mem` access is disabled or restricted on many modern Linux systems. Prefer supported memory acquisition tooling such as LiME, LinPMem, or an EDR-supported collection method when available.
+
 [LiME](https://github.com/504ensicsLabs/LiME/releases)
 
 ```bash

@@ -65,7 +65,7 @@
   * Logging of Event ID 400
 * Logic
   * Where
-    * EventID 400 Occcurs
+      * EventID 400 occurs
     * AND
     * EngineVersion!=5.0 or newer.
 * Reference
@@ -75,7 +75,7 @@
 * Theory
   * There are certain strings that can be used to detect certain types of activity that is either unwanted or should be monitored due to the context of the string.
   * "wmi" commands may be used internally, however they are a favorite for attackers exploiting a system. Filter and monitor its use.
-  * "DLL" commandlets should always be monitored, as there are no built-in commandlets containing "DLL" in thier name.
+  * "DLL" cmdlets should always be monitored, as there are no built-in cmdlets containing "DLL" in their name.
 * Detection Requirements
   * Command Line Logging
   * Logging of Event IDs 4103 and/or 4104, 4105, and 4106
@@ -89,6 +89,12 @@
       * "wmi" or "WMI"
 * Reference
   * [https://www.blackhillsinfosec.com/powershell-without-powershell-how-to-bypass-application-whitelisting-environment-restrictions-av/](https://www.blackhillsinfosec.com/powershell-without-powershell-how-to-bypass-application-whitelisting-environment-restrictions-av/)
+
+For Windows Event ID references used by this page, see:
+
+{% content-ref url="windows-event-id-logging-list.md" %}
+[windows-event-id-logging-list.md](windows-event-id-logging-list.md)
+{% endcontent-ref %}
 
 **Powershell cmdlet long tail analysis**
 

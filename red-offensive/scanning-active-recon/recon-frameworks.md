@@ -1,82 +1,72 @@
 # Recon Frameworks
 
-Recon Frameworks are the backbone of any recon phase of a penetration test. With the wealth of information they can retrieve, they can also be leveraged for assisting in actions such as threat hunting, threat intelligence, attack surface mapping, and many others.&#x20;
+Recon frameworks combine multiple data sources, command-line tools, APIs, scans, screenshots, and reports into repeatable workflows. Many support both passive and active techniques, so match modules to the engagement scope before running them.
 
-## Spiderfoot
+For purely passive OSINT investigation, use Cyber Intelligence.
 
-<details>
+{% content-ref url="../../cyber-intelligence/osint/" %}
+[osint](../../cyber-intelligence/osint/)
+{% endcontent-ref %}
 
-<summary><a href="recon-frameworks.md#undefined">Spiderfoot </a> </summary>
+## Primary Frameworks
 
-This is my go to for OSINT searches. Not only is it easy to use, it has a great web UI with loadable templates you can tailor to the scan that you want. It has over 200 different modules to collect different information about your target. These modules can call on other command line utilities as well as web services to pull in data.&#x20;
+### SpiderFoot
 
-Some of these modules will require an API key, but most services offer a free version. Getting as many of these free API keys as possible is preferable. Once you have your API keys, you can save them as part of a scan template that allows them to be imported and used at ease.
+[SpiderFoot](https://www.spiderfoot.net/) is an OSINT automation platform with a web UI, templates, and many modules for collecting target data from public sources and APIs.
 
-As with any great tool, make sure you read the [documentation](https://www.spiderfoot.net/documentation/), and check out some of the [video tutorials](https://asciinema.org/\~spiderfoot) on the tool.
+* [Documentation](https://www.spiderfoot.net/documentation/)
+* [SpiderFoot tutorials](https://asciinema.org/~spiderfoot)
+* [iRed Team: SpiderFoot 101 with Kali and Docker](https://www.ired.team/offensive-security/red-team-infrastructure/spiderfoot-101-with-kali-using-docker)
 
-* [https://www.ired.team/offensive-security/red-team-infrastructure/spiderfoot-101-with-kali-using-docker](https://www.ired.team/offensive-security/red-team-infrastructure/spiderfoot-101-with-kali-using-docker)
+### Recon-ng
 
-</details>
+[Recon-ng](https://github.com/lanmaster53/recon-ng) is a modular Python reconnaissance framework. It is useful when you want repeatable modules, API-backed lookups, and structured output.
 
-## Recon-NG
-
-<details>
-
-<summary><a href="recon-frameworks.md#undefined">Recon-ng </a></summary>
-
-This command line tool is the gold standard for recon. Tim Tomes (lanmaster53) has done an incredible job with it, making a plethora of modules for various needs. It is a flexible python framework that makes it ideal for automating tasks. After loading your API keys into a lookup file for the Recon-ng modules, you can select some or all of the modules to run and output the results into the file of your choice. Because the modules in Recon-ng can be run independently and can be scripted pretty easily, it is easy to incorporate its modules into other workflows outside of passive recon. Take a look at all of them, and see what you can use.
-
-Recon-ng has a ton of great resources, but by far the BlackHills Infosec walkthroughs are the best guides for how to use this tool. Also check out Tim's website with his training and other tools.
-
-* [Recon-ng Wiki](https://github.com/lanmaster53/recon-ng/wiki) - Read the documentation. Always.
-* [Website for the creator of Recon-ng, lanmaster53](https://www.lanmaster53.com) - Check out his training courses. Highly reccomended.
-* [PluralSight course on using Recon-ng](https://www.pluralsight.com/courses/technical-information-gathering-recon-ng) - Great structured training on this tool's use.
-* [Black Hills Infosec Intro to Recon-ng](https://www.blackhillsinfosec.com/whats-changed-in-recon-ng-5x/)
-* [Black Hills Infosec Recon-ng cheatsheet](https://www.blackhillsinfosec.com/wp-content/uploads/2019/11/recon-ng-5.x-cheat-sheet-Sheet1-1.pdf)
-
-</details>
+* [Recon-ng Wiki](https://github.com/lanmaster53/recon-ng/wiki)
+* [lanmaster53](https://www.lanmaster53.com/)
+* [Pluralsight: Technical Information Gathering with Recon-ng](https://www.pluralsight.com/courses/technical-information-gathering-recon-ng)
+* [Black Hills: What's Changed in Recon-ng 5.x](https://www.blackhillsinfosec.com/whats-changed-in-recon-ng-5x/)
+* [Black Hills Recon-ng Cheat Sheet](https://www.blackhillsinfosec.com/wp-content/uploads/2019/11/recon-ng-5.x-cheat-sheet-Sheet1-1.pdf)
 
 {% embed url="https://youtu.be/0J6Auz88iTY" %}
 
-## Maltego
+### Maltego
 
-<details>
+[Maltego](https://www.maltego.com/) is a graphical link-analysis and OSINT platform for connecting people, domains, infrastructure, social accounts, and other entities.
 
-<summary><a href="https://www.maltego.com/">Maltego</a></summary>
-
-* [Maltego](https://www.maltego.com/) - Maltego is an open source intelligence and graphical link analysis tool for gathering and connecting information for investigative tasks.
-  * [https://docs.maltego.com/support/home](https://docs.maltego.com/support/home)
-  * [https://static.maltego.com/cdn/Handbooks/Maltego-Handbook-for-Social-Media-Investigations-Short.pdf](https://static.maltego.com/cdn/Handbooks/Maltego-Handbook-for-Social-Media-Investigations-Short.pdf)
-
-</details>
+* [Maltego Support and Docs](https://docs.maltego.com/support/home)
+* [Maltego Handbook for Social Media Investigations](https://static.maltego.com/cdn/Handbooks/Maltego-Handbook-for-Social-Media-Investigations-Short.pdf)
 
 {% embed url="https://youtu.be/zemNLx0-LRw" %}
 
-## **Other Frameworks**
+## Offensive Recon and ASM Frameworks
 
-These other frameworks do many of the same tasks that the previous two perform. Some are still actively being developed and promise expanded functionality in the future.
+* [BBOT](https://github.com/blacklanternsecurity/bbot) - Recursive modular OSINT and recon framework with subdomain enumeration, port scanning, screenshots, and nuclei support.
+* [ReconFTW](https://github.com/six2dez/reconftw) - Automated recon workflow for domains, bug bounty, and pentest targets.
+* [Sn1per](https://github.com/1N3/Sn1per) - Automated recon and penetration testing framework with OSINT, scanning, and reporting.
+* [reNgine](https://github.com/yogeshojha/rengine) - Web application reconnaissance suite with engines, screenshots, correlation, reports, and continuous monitoring.
+* [OWASP Amass](https://github.com/OWASP/Amass) - External attack surface mapping and asset discovery.
+* [runZero](https://www.runzero.com/) - Network discovery and asset inventory platform.
+* [ReconNess](https://www.reconness.com/) - Recon management platform for organizing targets and findings.
+* [Axiom](https://github.com/pry0cc/axiom) - Dynamic infrastructure framework for distributed recon and offensive workflows.
+* [JupyterPen](https://github.com/obheda12/JupyterPen) - Jupyter-based OSINT and penetration testing toolkit.
 
-<details>
+## Other Frameworks and Toolkits
 
-<summary>Other Frameworks</summary>
+* [sn0int](https://github.com/kpcyrd/sn0int) - Semi-automatic OSINT framework and package manager.
+* [Raccoon](https://github.com/evyatarmeged/Raccoon) - Offensive recon framework with OSINT and active scanning.
+* [ReconSpider](https://github.com/bhavsec/reconspider) - Information-gathering tool with visual output.
+* [OWASP Maryam](https://github.com/saeeddhqan/Maryam) - Modular OSINT and data-gathering framework.
+* [Discover Scripts](https://github.com/leebaird/discover) - Early-stage penetration test discovery scripts.
+* [DMitry](https://www.kali.org/tools/dmitry/) - Finds subdomains, email addresses, uptime, WHOIS data, and TCP ports.
+* [finalrecon](https://www.kali.org/tools/finalrecon/) - Modular web reconnaissance script.
+* [gasmask](https://github.com/twelvesec/gasmask) - Information-gathering toolkit.
+* [machinae](https://github.com/HurricaneLabs/machinae) - Collects public intelligence about IPs, domains, URLs, emails, file hashes, and SSL fingerprints.
 
-* [sn0int ](https://github.com/kpcyrd/sn0int)- A semi-automatic OSINT framework and package manager. It was built for IT security professionals and bug hunters to gather intelligence about a given target or about yourself.
-* [Raccoon](https://github.com/evyatarmeged/Raccoon) - An offensive security focused framework that performs a good bit of OSINT as well as active scanning on your target to get everything you need before attempts at exploitation.
-* [ReconSpider ](https://github.com/bhavsec/reconspider)- Another great offensive recon tool that has a great option to present the data in different visuals to help you conceptualize the data around your target
-* [OWASP Maryam](https://github.com/saeeddhqan/Maryam) - A modular open-source framework based on OSINT and data gathering. It is designed to provide a robust environment to harvest data from open sources and search engines quickly and thoroughly.
-* [Discover Scripts ](https://github.com/leebaird/discover)- One of the first offensive reconnaissance tools, the discover scripts by Lee Baird are a set of custom scripts for automating the inital phases of a penetration test.
-* [DarkSide](https://github.com/ultrasecurity/DarkSide) - Tool Information Gathering & social engineering Write By \[Python,JS,PHP]
-* [ReconFTW](https://github.com/six2dez/reconftw) - ReconFTW is a tool designed to perform automated recon on a target domain by running the best set of tools to perform scanning and finding out vulnerabilities
-* [dmitry](https://www.kali.org/tools/dmitry/) - DMitry can find possible subdomains, email addresses, uptime information, perform tcp port scan, whois lookups, and more.
-* [Z4nzu/hackingtool](https://github.com/Z4nzu/hackingtool) - Thorough all-in-one tool for hacking.
-* [finalrecon](https://www.kali.org/tools/finalrecon/) - A fast and simple python script for web reconnaissance that follows a modular structure and provides detailed information on various areas.
-* [gasmask](https://github.com/twelvesec/gasmask) - All in one Information gathering tool
-* [machinae](https://github.com/HurricaneLabs/machinae) - Machinae is a tool for collecting intelligence from public sites/feeds about various security-related pieces of data: IP addresses, domain names, URLs, email addresses, file hashes and SSL fingerprints.
-*   [blacklanternsecurity/bbot](https://github.com/blacklanternsecurity/bbot) - **BBOT** is a **recursive**, **modular** OSINT framework inspired by Spiderfoot and written in Python. Capable of executing the entire OSINT process in a single command, BBOT does subdomain enumeration, port scanning, web screenshots (with its `gowitness` module), vulnerability scanning (with `nuclei`), and much more.
+## Low Signal or Validate Before Use
 
-    BBOT currently has over **60 modules** and counting.
-* [https://github.com/slithery0/eReKon](https://github.com/slithery0/eReKon) - Yet another web recon tool But beautiful
-* [https://www.reconness.com/](https://www.reconness.com/)
-* [https://www.runzero.com/](https://www.runzero.com/)
+These are preserved for resource completeness, but validate maintenance and quality before adding them to a workflow.
 
-</details>
+* [DarkSide](https://github.com/ultrasecurity/DarkSide) - Older information-gathering and social engineering toolkit.
+* [Z4nzu/hackingtool](https://github.com/Z4nzu/hackingtool) - Large all-in-one hacking tool menu; review modules carefully before use.
+* [eReKon](https://github.com/slithery0/eReKon) - Web recon tool that appears incomplete or under active development.

@@ -1,14 +1,15 @@
 # SSL/TLS and Certificates
 
+This page is for TLS configuration testing and certificate handling in a web context. Passive certificate discovery and domain investigation belong in Cyber Intelligence.
+
 ## Tools
 
 * [SSL Cipher Suite Enum](https://github.com/portcullislabs/ssl-cipher-suite-enum) - ssl-cipher-suite enum is a Perl script to enumerate supported SSL cipher suites supported by network services (principally HTTPS)
   * &#x20;[https://labs.portcullis.co.uk/tools/ssl-cipher-suite-enum/](https://labs.portcullis.co.uk/tools/ssl-cipher-suite-enum/)
-* Testssl.sh - a common tool used to audit the ciphers and protocols supported by remote servers, allowing people to determine if a secure configuration is enforced or not.
+* [testssl.sh](https://github.com/drwetter/testssl.sh) - Audits ciphers, protocols, certificate details, and common TLS vulnerabilities.
 * [sslScrape](https://github.com/cheetz/sslScrape) - strips hostnames form certs over port 443 connections
 * [SSLYZE ](https://github.com/nabla-c0d3/sslyze)- TLS/SSL config analyzer
 * [tls\_prober](https://github.com/WestpointLtd/tls\_prober) - A tool to fingerprint SSL/TLS servers
-* [testssl.sh](https://github.com/drwetter/testssl.sh)&#x20;
 * [https://github.com/IBM/tls-vuln-cheatsheet](https://github.com/IBM/tls-vuln-cheatsheet)
 
 #### Certificate search
@@ -19,7 +20,7 @@
 * [CertSpotter](https://sslmate.com/certspotter/) - Monitors your domains for expiring, unauthorized, and invalid SSL certificates
 * [SynapsInt](https://synapsint.com/) - The unified OSINT research tool
 * [Censys - Certificates](https://search.censys.io/certificates) - Certificates Search
-* [PassiveTotal](https://www.riskiq.com/products/passivetotal/) - Security intelligence that scales security operations and response
+* [Microsoft Defender Threat Intelligence](https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-defender-threat-intelligence) - RiskIQ PassiveTotal has been folded into Microsoft Defender Threat Intelligence.
 
 ## OpenSSL
 
@@ -28,7 +29,7 @@
 Used to create self signed certificates for SSL encryption
 
 ```
-# openssl req -newkey rsa:2048 -nodes -keyout bind_shell.key -x509 -days 362 -out cirtificate.crt
+# openssl req -newkey rsa:2048 -nodes -keyout bind_shell.key -x509 -days 362 -out certificate.crt
 ```
 
 * Tags

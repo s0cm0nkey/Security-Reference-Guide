@@ -13,10 +13,10 @@
 {% endtab %}
 
 {% tab title="OAuth Grant Types" %}
-&#x20; ****  The ways that OAuth can be implemented.
+Ways that OAuth can be implemented.
 
 * Authorization Code - the client application and OAuth service first use redirects to exchange a series of browser-based HTTP requests that initiate the flow. The user is asked whether they consent to the requested access. If they accept, the client application is granted an "authorization code". The client application then exchanges this code with the OAuth service to receive an "access token", which they can use to make API calls to fetch the relevant user data.
-* Implicit - the client application receives the access code immediately after the user gives their consent.
+* Implicit - the client application receives the token immediately after user consent. OAuth 2.1 removes the implicit grant; prefer authorization code with PKCE for modern browser-based applications.
 * [https://oauth.net/2/grant-types/authorization-code/](https://oauth.net/2/grant-types/authorization-code/)
 * [https://portswigger.net/web-security/oauth/grant-types](https://portswigger.net/web-security/oauth/grant-types)
 {% endtab %}
@@ -30,13 +30,13 @@
 * [https://medium.com/@Jacksonkv22/oauth-misconfiguration-lead-to-complete-account-takeover-c8e4e89a96a](https://medium.com/@Jacksonkv22/oauth-misconfiguration-lead-to-complete-account-takeover-c8e4e89a96a)
 * [https://medium.com/@logicbomb\_1/bugbounty-user-account-takeover-i-just-need-your-email-id-to-login-into-your-shopping-portal-7fd4fdd6dd56](https://medium.com/@logicbomb\_1/bugbounty-user-account-takeover-i-just-need-your-email-id-to-login-into-your-shopping-portal-7fd4fdd6dd56)
 * [https://medium.com/@protector47/full-account-takeover-via-referrer-header-oauth-token-steal-open-redirect-vulnerability-chaining-324a14a1567](https://medium.com/@protector47/full-account-takeover-via-referrer-header-oauth-token-steal-open-redirect-vulnerability-chaining-324a14a1567)
-* [https://hackerone.com/reports/49759](https://hackerone.com/reports/49759https:/hackerone.com/reports/131202https:/hackerone.com/reports/6017https:/hackerone.com/reports/7900https:/hackerone.com/reports/244958https:/hackerone.com/reports/405100https:/ysamm.com/?p=379)
-* [https://hackerone.com/reports/131202](https://hackerone.com/reports/49759https:/hackerone.com/reports/131202https:/hackerone.com/reports/6017https:/hackerone.com/reports/7900https:/hackerone.com/reports/244958https:/hackerone.com/reports/405100https:/ysamm.com/?p=379)
-* [https://hackerone.com/reports/6017](https://hackerone.com/reports/49759https:/hackerone.com/reports/131202https:/hackerone.com/reports/6017https:/hackerone.com/reports/7900https:/hackerone.com/reports/244958https:/hackerone.com/reports/405100https:/ysamm.com/?p=379)
-* [https://hackerone.com/reports/7900](https://hackerone.com/reports/49759https:/hackerone.com/reports/131202https:/hackerone.com/reports/6017https:/hackerone.com/reports/7900https:/hackerone.com/reports/244958https:/hackerone.com/reports/405100https:/ysamm.com/?p=379)
-* [https://hackerone.com/reports/244958](https://hackerone.com/reports/49759https:/hackerone.com/reports/131202https:/hackerone.com/reports/6017https:/hackerone.com/reports/7900https:/hackerone.com/reports/244958https:/hackerone.com/reports/405100https:/ysamm.com/?p=379)
-* [https://hackerone.com/reports/405100](https://hackerone.com/reports/49759https:/hackerone.com/reports/131202https:/hackerone.com/reports/6017https:/hackerone.com/reports/7900https:/hackerone.com/reports/244958https:/hackerone.com/reports/405100https:/ysamm.com/?p=379)
-* [https://ysamm.com/?p=379](https://hackerone.com/reports/49759https:/hackerone.com/reports/131202https:/hackerone.com/reports/6017https:/hackerone.com/reports/7900https:/hackerone.com/reports/244958https:/hackerone.com/reports/405100https:/ysamm.com/?p=379)
+* [https://hackerone.com/reports/49759](https://hackerone.com/reports/49759)
+* [https://hackerone.com/reports/131202](https://hackerone.com/reports/131202)
+* [https://hackerone.com/reports/6017](https://hackerone.com/reports/6017)
+* [https://hackerone.com/reports/7900](https://hackerone.com/reports/7900)
+* [https://hackerone.com/reports/244958](https://hackerone.com/reports/244958)
+* [https://hackerone.com/reports/405100](https://hackerone.com/reports/405100)
+* [https://ysamm.com/?p=379](https://ysamm.com/?p=379)
 * [https://www.amolbaikar.com/facebook-oauth-framework-vulnerability/](https://www.amolbaikar.com/facebook-oauth-framework-vulnerability/)
 * [http://blog.intothesymmetry.com/2014/02/oauth-2-attacks-and-bug-bounties.html](http://blog.intothesymmetry.com/2014/02/oauth-2-attacks-and-bug-bounties.html)
 * [https://xploitprotocol.medium.com/exploiting-oauth-2-0-authorization-code-grants-379798888893](https://xploitprotocol.medium.com/exploiting-oauth-2-0-authorization-code-grants-379798888893)
@@ -90,7 +90,7 @@
     * JS queries that handles URI parameters, XSS injections, HTML injections, etc.
     * [https://portswigger.net/web-security/oauth/lab-oauth-stealing-oauth-access-tokens-via-a-proxy-page](https://portswigger.net/web-security/oauth/lab-oauth-stealing-oauth-access-tokens-via-a-proxy-page)
 * Flawed scope validation
-  * Generally, when a token is granted, it is only for the scope defined in the request. However it is possible to "upgrade" the scope of access by exploiting a flawed OAuth implimentation.
+  * Generally, when a token is granted, it is only for the scope defined in the request. However it is possible to "upgrade" the scope of access by exploiting a flawed OAuth implementation.
   * With the authorization code flow, it may be possible for an attacker to register their own client application with the OAuth service.
   * With the implicit grant flow, tokens are sent via the browser and an attacker can steal tokens associated with innocent client applications and use them directly. Once they have stolen an access token, they can send a normal browser-based request to the OAuth service's `/userinfo` endpoint, manually adding a new `scope` parameter in the process.
 * Unverified user registration
@@ -120,7 +120,7 @@
 
 ## **OpenID**
 
-&#x20;**** [https://portswigger.net/web-security/oauth/openid](https://portswigger.net/web-security/oauth/openid)
+* [PortSwigger: OpenID Connect attacks](https://portswigger.net/web-security/oauth/openid)
 
 * OpenID Connect extends the OAuth protocol to provide a dedicated identity and authentication layer that sits on top of the basic OAuth implementation.
 * OpenID Connect slots neatly into the normal OAuth flows. From the client application's perspective, the key difference is that there is an additional, standardized set of scopes that are the same for all providers, and an extra response type: `id_token`.

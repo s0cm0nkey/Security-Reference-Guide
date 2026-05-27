@@ -4,6 +4,12 @@
 
 **Note:** modifications may disrupt device communication. Test thoroughly before deploying to production. May also require a restart.
 
+For Active Directory assessment context and related hardening recommendations, use AD Security Checks.
+
+{% content-ref url="ad-security-checks.md" %}
+[ad-security-checks.md](ad-security-checks.md)
+{% endcontent-ref %}
+
 ### **Disable remote interaction with services**
 
 ```cmd

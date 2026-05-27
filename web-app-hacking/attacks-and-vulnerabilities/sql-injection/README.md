@@ -7,7 +7,7 @@
 * [https://www.sqlinjection.net/](https://www.sqlinjection.net/)
 * [https://owasp.org/www-community/attacks/SQL\_Injection](https://owasp.org/www-community/attacks/SQL\_Injection)
 * [https://owasp.org/www-community/Injection\_Flaws](https://owasp.org/www-community/Injection\_Flaws)
-* [http://securityidiots.com/Web-Pentest/SQL-Injection/Part-1-Basic-of-SQL-for-SQLi.html](http://securityidiots.com/Web-Pentest/SQL-Injection/Part-1-Basic-of-SQL-for-SQLi.html)
+* [SecurityIdiots SQLi basics](http://securityidiots.com/Web-Pentest/SQL-Injection/Part-1-Basic-of-SQL-for-SQLi.html) - Older tutorial; verify examples against current DBMS behavior.
 * [https://www.w3schools.com/sql/default.asp](https://www.w3schools.com/sql/default.asp)
 * [https://forum.bugcrowd.com/t/sqlmap-tamper-scripts-sql-injection-and-waf-bypass/423](https://forum.bugcrowd.com/t/sqlmap-tamper-scripts-sql-injection-and-waf-bypass/423)
 * [https://cheatsheetseries.owasp.org/cheatsheets/Injection\_Prevention\_Cheat\_Sheet.html#sql-injection](https://cheatsheetseries.owasp.org/cheatsheets/Injection\_Prevention\_Cheat\_Sheet.html#sql-injection)
@@ -23,7 +23,7 @@
 * [https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection)
 * [https://github.com/payloadbox/sql-injection-payload-list/](https://github.com/payloadbox/sql-injection-payload-list/)
 * [https://websec.ca/kb/sql\_injection](https://websec.ca/kb/sql\_injection)
-* [http://pentestmonkey.net/category/cheat-sheet/sql-injection](http://pentestmonkey.net/category/cheat-sheet/sql-injection)
+* [Pentestmonkey SQL injection cheat sheets](http://pentestmonkey.net/category/cheat-sheet/sql-injection) - Older but still widely referenced.
 * [https://www.codecademy.com/articles/sql-commands](https://www.codecademy.com/articles/sql-commands)
 {% endtab %}
 {% endtabs %}
@@ -32,7 +32,7 @@
 [sql-tips-and-tricks.md](sql-tips-and-tricks.md)
 {% endcontent-ref %}
 
-## ****[**SQLmap**](https://github.com/sqlmapproject/sqlmap)  **** &#x20;
+## [SQLmap](https://github.com/sqlmapproject/sqlmap)
 
 SQL Injection tool that can spawn a meterpreter or VNC session back to attacker. Can return a decent number of false positives. Always verify. If you do not specify a value, SQLmap will attempt all by default
 
@@ -42,11 +42,10 @@ SQL Injection tool that can spawn a meterpreter or VNC session back to attacker.
   * &#x20;Maps out and locates admin panel
   * Query dorking for finding targets
   * hash lookup
-* [https://www.binarytides.com/sqlmap-hacking-tutorial/](https://www.binarytides.com/sqlmap-hacking-tutorial/)
 * [https://github.com/sqlmapproject/sqlmap/wiki/Usage](https://github.com/sqlmapproject/sqlmap/wiki/Usage)
-* __[https://www.binarytides.com/sqlmap-hacking-tutorial/](https://www.binarytides.com/sqlmap-hacking-tutorial/)
+* [https://www.binarytides.com/sqlmap-hacking-tutorial/](https://www.binarytides.com/sqlmap-hacking-tutorial/)
 * [https://forum.bugcrowd.com/t/sqlmap-tamper-scripts-sql-injection-and-waf-bypass/423](https://forum.bugcrowd.com/t/sqlmap-tamper-scripts-sql-injection-and-waf-bypass/423)
-* [https://tryhackme.com/room/sqlmap](https://tryhackme.com/room/sqlmap)
+* [TryHackMe sqlmap](https://tryhackme.com/room/sqlmap) - Training resource; canonical training links are maintained in Training.
 * _RTFM: SQLMap - pg. 71_
 * _Operator Handbook: SQLMap - pg. 284_
 {% endtab %}
@@ -147,13 +146,13 @@ Test if sql inject is valid (will return banner on success)
 * [PowerUpSQL](https://github.com/NetSPI/PowerUpSQL) - A PowerShell Toolkit for Attacking SQL Server
   * [https://github.com/NetSPI/PowerUpSQL/wiki](https://github.com/NetSPI/PowerUpSQL/wiki)
   * [https://github.com/NetSPI/PowerUpSQL/wiki/PowerUpSQL-Cheat-Sheet](https://github.com/NetSPI/PowerUpSQL/wiki/PowerUpSQL-Cheat-Sheet)
-* [**SQLninja**](http://sqlninja.sourceforge.net/)****
+* [SQLninja](http://sqlninja.sourceforge.net/) - Older SQL Server exploitation tool; verify current usefulness before relying on it.
   * [https://www.jedge.com/wordpress/sqlninja-sql-injection/](https://www.jedge.com/wordpress/sqlninja-sql-injection/)
   * Great for evading IDS and uploading shells
   * Often times IDS will either recognize SQLmap OR SQLninja but not both
   * With SQLninja you must specify the vulnerable variable to inject.
   * Takes more to set up with manipulation of the config file.
-* ****[**NOSQLmap**](https://github.com/codingo/NoSQLMap)****
+* [NOSQLmap](https://github.com/codingo/NoSQLMap)
   * Used for NOSQL databases
 * [https://github.com/torque59/Nosql-Exploitation-Framework](https://github.com/torque59/Nosql-Exploitation-Framework)
 * [https://github.com/Charlie-belmer/nosqli](https://github.com/Charlie-belmer/nosqli)

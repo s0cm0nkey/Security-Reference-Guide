@@ -6,10 +6,10 @@
 
 ## Basics
 
-[https://owasp.org/www-project-top-ten/2017/A5\_2017-Broken\_Access\_Control.html](https://owasp.org/www-project-top-ten/2017/A5\_2017-Broken\_Access\_Control.html)\
+[OWASP Top 10: Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/)\
 \
 For example, let's say we're logging into our bank account, and after correctly authenticating ourselves, we get taken to a URL like this [https://example.com/bank?account\_number=1234](https://example.com/bank?account\_number=1234). On that page we can see all our important bank details, and a user would do whatever they needed to do and move along their way thinking nothing is wrong.\
-There is however a potentially huge problem here, a hacker may be able to change the account\_number parameter to something else like 1235, and if the site is incorrectly configured, then he would have access to someone else's bank information.
+There is however a potentially huge problem here: an attacker may be able to change the `account_number` parameter to something else like `1235`, and if the site is incorrectly configured, then they would have access to someone else's bank information.
 
 ### **How to Find**
 

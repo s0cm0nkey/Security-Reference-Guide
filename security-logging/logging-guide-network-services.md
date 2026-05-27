@@ -1,265 +1,191 @@
 # Logging - Network Services
 
-When capturing data for detection and monitoring, defenders must make a careful cost benefit comparison on the richness of logs they store, and the cost associated with them. The target is always to have as much data as you need, but storage can rack up in cost. One of the most efficient ways of getting the data you need for detections, is capturing Flow data. Originating with the Cisco [NetFlow](https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-netflow/index.html) protocol, it takes a small set of data that provides just enough details about your traffic, to make basic detections, without looking into every detail of every packet.
+Network service logs provide visibility into communication patterns, service use, policy enforcement, and investigation context. This page focuses on collection and useful fields. Packet analysis tools, PCAP workflows, and deep NFAT analysis live in Blue Defense.
+
+{% content-ref url="../blue-defense/packet-analysis.md" %}
+[packet-analysis.md](../blue-defense/packet-analysis.md)
+{% endcontent-ref %}
 
 ## Logging Sources
 
-* **Network Device Utilities** - As the original [NetFlow](https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-netflow/index.html) protocol started with Cisco, it has quickly caught on and become a staple utility bundled with network device tools. Gathering [NetFlow](https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-netflow/index.html) from core routers or next-gen or layer 3 switches, is a good option for monitoring internal traffic.
-* **Next-Gen Firewalls** - Similar to other networking devices, NGFWs can provide traffic flow data as an added utility. This is one of the more common places to start gathering traffic data as you can get flow data on traffic entering and exiting the network.
-* **Network Sensors** - Sensors within a network environment set up with taps off of core infrastructure can capture anything from simple flow data to full packet captures.
-* **Cloud Infrastructure Utilities** - Certain cloud service providers can provide flow data within your cloud environment such as AWS's [VPCFlow](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html) logs to Cloudwatch.
+* **Network devices** - Routers, layer 3 switches, firewalls, VPN concentrators, and load balancers can export flow or session metadata.
+* **Next-generation firewalls** - Often provide flow logs, application labels, user identity, URL categories, actions, and threat signatures.
+* **Network sensors** - TAP/SPAN-connected sensors can generate Zeek/Corelight logs, flow records, PSTR, and PCAP.
+* **Cloud infrastructure** - Cloud providers can produce flow logs such as AWS VPC Flow Logs, Azure NSG Flow Logs, and Google VPC Flow Logs.
 
-{% content-ref url="../../blue-defense/packet-analysis.md" %}
-[packet-analysis.md](../../blue-defense/packet-analysis.md)
+Cloud flow logs are covered with other cloud audit sources on the Cloud Logging page.
+
+{% content-ref url="logging-cloud.md" %}
+[logging-cloud.md](logging-cloud.md)
 {% endcontent-ref %}
 
-## Session/Flow Basics
+## Session and Flow Basics
 
-**5-Tuple** - The core of a flow record and the minimum required fields. The first editition of flow data was based around 5 key data points that have been dubbed the "5-tuple". These data points are Source IP, Destionation IP, Source Port, Destination Port, and Protocol.
-
-**Flow Timout -** Incoming data is appeneded to a flow record if it matches the previously captured 5-tuple data. This flow record can be terminated under three conditions:
-
-* Natural Timout - When the traffic naturally ends based on the protocol, such as with packets containing RST or FIN.
-* Idle Timeout - When there is no data recieved within thirty seconds of the last packet. This time frame is configurable.
-* Active Timeout - When a flow has been open for 30 minutes.  This time frame is configurable.
-
-### **Types of Flow Logging**
-
-* [NetFlow](https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-netflow/index.html) - The original flow data captureing protocol developed by Cisco.
-  * V5 - The most common NetFlow standard available with 20 available data fields for tracking.
-  * V9 - The newer standard for netflow logging with 104 available data fields.
-  * [https://www.plixer.com/blog/netflow-v9-vs-netflow-v5/](https://www.plixer.com/blog/netflow-v9-vs-netflow-v5/)
-* [IPFIX](https://tools.ietf.org/html/rfc7011) - A recent flexible alternative to NetFlow that is template based and record-oriented.
-* JFlow - The Juniper version of Netflow V5 and V9. The only difference is the method of handling timestamps.
-* [sFlow](https://sflow.org/) - based on sampling of 1 out of X number of packets. The advantage is that it can capture layer 2 traffic.
-  * [https://www.plixer.com/blog/sflow-vs-netflow-comparison/](https://www.plixer.com/blog/sflow-vs-netflow-comparison/)
-* Many more.
-
-### **Reference**
-
-* [https://www.flowmon.com/en/solutions/network-and-cloud-operations/netflow-ipfix](https://www.flowmon.com/en/solutions/network-and-cloud-operations/netflow-ipfix)
-
-## Flow Tools
-
-Many networking devices have the ability to export Flow data. This includes security devices like firewalls, and even cloud infrastructure like AWS's VPCFlow. For everything else, practitioners can use software Flow generation tools.
-
-* [Fprobe](logging-guide-network-services.md#network-traffic-data-collection-and-logging) - libpcap-based tool that collect network traffic data and emit it as NetFlow flows towards the specified collector.
-* [YAF (Yet Another Flowmeter)](logging-guide-network-services.md#network-traffic-data-collection-and-logging) - It processes packet data from pcap(3) dumpfiles as generated by [tcpdump(1)](http://www.tcpdump.org/) or via live capture from an interface using pcap(3) into bidirectional flows, then exports those flows to [IPFIX](http://www.ietf.org/html.charters/ipfix-charter.html) Collecting Processes or in an IPFIX-based file format. YAF's output can be used with the [SiLK flow analysis tools](https://tools.netsa.cert.org/silk/index.html), [super\_mediator](https://tools.netsa.cert.org/super\_mediator/index.html), [Pipeline 5](https://tools.netsa.cert.org/analysis-pipeline5/index.html), and any other IPFIX compliant toolchain.
-* [SiLK](https://tools.netsa.cert.org/silk/) - The System for Internet-Level Knowledge, is a collection of traffic analysis tools developed by the CERT Network Situational Awareness Team (CERT NetSA) to facilitate security analysis of large networks.
-  * SiLK Analysis Handbook - [https://tools.netsa.cert.org/silk/analysis-handbook.pdf](https://tools.netsa.cert.org/silk/analysis-handbook.pdf)
-  * _Collecting and Analyzing Flow data with SiLK - Applied Network Security Monitoring - pg.83_
-* [OpenArgus ](https://openargus.org/)- Argus is a Real Time Flow Monitor that is designed to perform comprehensive data network traffic auditing.
-  * [https://qosient.com/argus/argusnetflow.shtml](https://qosient.com/argus/argusnetflow.shtml)
-  * _Collecting and Analyzing Flow data with Argus - Applied Network Security Monitoring - pg.92_
-* [NTOP](https://www.ntop.org/) - Handy an flexible tool stack that can create packet captures, netflow logs, and network probes for recording traffic of different types.
-
-## Packet String Data (PTSR)
-
-### Tools
-
-* [URLSnarf](https://linux.die.net/man/8/urlsnarf) - Part of the [Dsniff](https://www.monkey.org/\~dugsong/dsniff/) suite, this tool sniffs HTTP requests, and outputs all requested URLs sniffed from HTTP traffic in CLF (Common Log Format, used by almost all web servers), suitable for offline post-processing with your favorite web log analysis tool (analog, wwwstat, etc.).
-* [httpry](https://github.com/jbittel/httpry) - httpry is a tool designed for displaying and logging HTTP traffic. It is not intended to perform analysis itself, but instead to capture, parse and/or log the traffic for later analysis.
-* [justniffer](https://onotelli.github.io/justniffer/) - Justniffer is a network protocol analyzer that captures network traffic and produces logs in a customized way, can emulate Apache web server log files, track response times and extract all "intercepted" files from the HTTP traffic
-
-### Resources
-
-* _Packet String Data - Applied Network Security Monitoring - pg.121_
-
-## Required data points
+The **5-tuple** is the minimum connection identity for flow records:
 
 * Source IP
-* Source Port
+* Source port
 * Destination IP
-* Destination Port
+* Destination port
 * Protocol
-* TCP Flags
+
+Flow records end when traffic naturally closes, remains idle beyond a timeout, or exceeds an active timeout.
+
+Common flow formats:
+
+* [NetFlow](https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-netflow/index.html) - Cisco-originated flow export format.
+* NetFlow v5 - Widely deployed fixed-field format.
+* NetFlow v9 - Template-based NetFlow format with more fields.
+* [IPFIX](https://datatracker.ietf.org/doc/html/rfc7011) - Flexible, template-based flow standard.
+* JFlow - Juniper flow export.
+* [sFlow](https://sflow.org/) - Packet-sampling-based telemetry.
+
+## Flow Export and Collection Tools
+
+* [Fprobe](https://github.com/digitalocean/fprobe) - libpcap-based NetFlow exporter.
+* [YAF](https://tools.netsa.cert.org/yaf/) - Processes PCAP or live traffic into bidirectional IPFIX flows.
+* [OpenArgus](https://openargus.org/) - Real-time flow monitor for traffic auditing.
+* [NTOP / ntopng](https://www.ntop.org/) - Network visibility stack that can create packet captures, NetFlow logs, and traffic probes.
+
+Flow and packet analysis tooling such as SiLK, super_mediator, URLSnarf, httpry, and justniffer is preserved on the Packet Analysis page.
+
+{% content-ref url="../blue-defense/packet-analysis.md" %}
+[packet-analysis.md](../blue-defense/packet-analysis.md)
+{% endcontent-ref %}
+
+## Required Flow Fields
+
+* Timestamp
+* Source IP
+* Source port
+* Destination IP
+* Destination port
+* Protocol
+* TCP flags
 * Duration
-* Start/Stop Times
-* Byte Count
-* Packet Count
+* Start and stop times
+* Byte count
+* Packet count
+* Sensor or device name
 
-## Specific Protocols
+## DNS Logs
 
-### DNS
+DNS logs can come from DNS servers, resolvers, firewalls, endpoint agents, Zeek/Corelight, and cloud DNS services.
 
+### Collection Notes
 
+* **Windows DNS** - Event logging and debug logging can expose DNS requests. Analytical logs use ETL and may require tooling that can process ETL at scale.
+* **BIND DNS** - Common open source DNS service with configurable query logging.
+* **Zeek/Corelight DNS logs** - High-quality network-derived DNS logs with consistent fields.
+* **Cloud DNS logs** - Route 53 Resolver Query Logs, Azure DNS logs, and Google Cloud DNS logging can help cover cloud workloads.
 
-**Log Collection**
+### Encrypted DNS
 
-DNS logging can come from multiple methods. The most direct methodology is a push/pull of DNS logs from a DNS server. Pulling these from either a Windows or Linux based DNS server requires DNS debugging to be enabled. Typically the debugging level of logging can get both performance and volume intensive. The modern performance of DNS servers combined  with proper pruning of logs, makes both of these issues no longer a concern
+DoT and DoH reduce network-level visibility into DNS queries. Organizations that need internal DNS visibility should define browser, endpoint, and resolver policy rather than relying on ad hoc blocking alone.
 
-* Windows DNS - Servers will have event logging and debug logging. While typically only event level logging is enabled by default, it will require debug logging to actually see the requested query. You will also need to make sure your settings are for Response and not Request. You will want this so the server only sends a log of a request and response pair. Otherwise you will see a large volume of request only logs that are potential duplicates.
-  * Windows DNS logs are difficult to parse due to a large amount of optional fields. There are pre-developed parsers available for these on Github. You can also extract and reuse the logic in other SIEM solutions if needed.
-    * [HASecurity Solutions LogStash parsers](https://github.com/HASecuritySolutions/Logstash)
-  * Windows DNS Analytical Log - Newer Windows DNS logging solution that creates and stores them in ETL format. This newer method can allow an incredible volume of DNS logging with negligible impact to server performance. NXLog Enterprise Edition is one of the few agents that can process this new format.
-* [Bind DNS](https://www.isc.org/bind/) - Common opensource DNS logging solution
-* [ZEEK](https://github.com/zeek/zeek) Logging - One of the quickest and easiest ways to gather logs of any kind. Zeek DNS logs are easier to manage and parse with a great selection of default fields and defaulting to tab delimiting.
+Useful references:
 
-**Encrypted DNS**
+* [RFC 7858: DNS over TLS](https://datatracker.ietf.org/doc/html/rfc7858)
+* [RFC 8484: DNS over HTTPS](https://datatracker.ietf.org/doc/html/rfc8484)
+* [Mozilla Canary Domain](https://support.mozilla.org/en-US/kb/canary-domain-use-application-dnsnet)
+* [Black Hills: The DNS over HTTPS Mess](https://www.blackhillsinfosec.com/the-dns-over-https-doh-mess/) - Useful 2019-era discussion of defender visibility concerns.
 
-DNS solutions are now being set up with encrypted communication options with DNS over TLS (DoT) via port 853, or DNS over HTTPS (DoH) via HTTP. While this provides great privacy and protection for an individual user, this provides a big problem for defenders needing to see into DNS traffic.&#x20;
-
-To address visibility issues, we should perform the following in our networks.
-
-* Disable DoT functionality within your network and block UDP port 853.
-  * [https://datatracker.ietf.org/doc/html/rfc7858](https://datatracker.ietf.org/doc/html/rfc7858)
-  * [https://dnsprivacy.org/dns\_privacy\_daemon\_-\_stubby/](https://dnsprivacy.org/dns\_privacy\_daemon\_-\_stubby/)
-* Disable DoH functionality within your network by adjusting your enterprise's standard browser configuration.
-  * [https://datatracker.ietf.org/doc/html/rfc8484](https://datatracker.ietf.org/doc/html/rfc8484)
-  * [https://www.blackhillsinfosec.com/the-dns-over-https-doh-mess/](https://www.blackhillsinfosec.com/the-dns-over-https-doh-mess/)
-  * Public DoH services
-    * cloudflare-dns.com, and one.one.one.one
-      * Privacy policy statement here at [https://blog.cloudflare.com/announcing-the-results-of-the-1-1-1-1-public-dns-resolver-privacy-examination/](https://blog.cloudflare.com/announcing-the-results-of-the-1-1-1-1-public-dns-resolver-privacy-examination/).
-    * dns.adguard.com
-      * [https://kb.adguard.com/en/dns/overview](https://kb.adguard.com/en/dns/overview)
-    * dns.google, and dns.google.com
-      * mines data as revenue source
-    * dns.nextdns.io
-      * [Privacy Policy – NextDNS](https://nextdns.io/privacy)
-    * dns.opendns.com, and doh.umbrella.com (Cisco business service)
-      * [https://](https://www.opendns.com/website-terms-of-use/)[www.opendns.com/website-terms-of-use/](https://www.opendns.com/website-terms-of-use/)
-    * dns.quad9.net
-      * [https://www.quad9.net/service/privacy/](https://www.quad9.net/service/privacy/)
-* Create and monitor a canary domain that will detect the attempted use of DoH. These domains are typically requested by the clients DoH utility looking for handling instructions from their local resolver.
-  * [https://support.mozilla.org/en-US/kb/canary-domain-use-application-dnsnet](https://support.mozilla.org/en-US/kb/canary-domain-use-application-dnsnet)
-
-**Required Data points**
+### DNS Fields
 
 * Timestamp
 * Source IP
-* Source Hostname
-* DNS Server IP
-* DNS Server Hostname
-* Ephemeral port number - To help identify the session
-* Domain Query
-* Response to query
-* DNS Query type
+* Source hostname
+* DNS server IP
+* DNS server hostname
+* Client source port
+* Domain query
+* Response
+* Query type
+* Response code
 
-**Enrichment Data Points**
+DNS enrichment techniques such as domain age, entropy, popularity, GeoIP, RDAP, and passive DNS are maintained in SIEM Enrichment and Cyber Intelligence.
 
-* Top-Level Domains (TLD): Some SIEM solutions do not have regex patterns for pulling out current TLDs. HA Security Solutions has a great [tool ](https://github.com/HASecuritySolutions/tld\_pattern\_calculator)for calculating TLD patterns.
-* Parent Domain: High-level domain name
-* Subdomains
-* Frequency score - Test of domain entropy. If not a something that can be calculated in in your SIEM natively, Mark Bagget wrote a few[ fantastic tools](https://github.com/markbaggett/freq) specifically for this.
-  * freq.py - Tool for manual entropy checking
-  * freq\_server.py - Tool that when combined with [APIfy](https://github.com/MarkBaggett/apiify) or [Logstash REST Filter](https://github.com/lucashenning/logstash-filter-rest), can be leveraged by your SIEM for high-performance querying.
-* Domain Lengths
-* Domain Age - Can be easily found with the WHOIS or RDAP tool
-  * \#whois DOMAIN | grep 'Creation Date' | grep Z | cut -d':' -f2 | cut -d' ' -f2
-* GeoIP lookup
-* Tagging
-* [Domain\_stats](https://github.com/MarkBaggett/domain\_stats) - An amazing tool that allows enrichment of multiple data points like domain age and presence on a top 1 million list at scale. This should be leveraged at scale for enriching all your DNS requests.
+{% content-ref url="../blue-defense/event-detection/siem-and-enrichment.md" %}
+[siem-and-enrichment.md](../blue-defense/event-detection/siem-and-enrichment.md)
+{% endcontent-ref %}
 
-**Reference**
+{% content-ref url="../cyber-intelligence/threat-data.md" %}
+[threat-data.md](../cyber-intelligence/threat-data.md)
+{% endcontent-ref %}
 
-* [http://pubs.sciepub.com/jcsa/8/2/2/index.html](http://pubs.sciepub.com/jcsa/8/2/2/index.html)
-* [https://www.sans.org/white-papers/39160/](https://www.sans.org/white-papers/39160/)
+## HTTP and HTTPS Logs
 
-### HTTP/S
+HTTP/S logs can come from web servers, reverse proxies, WAFs, forward proxies, firewalls, Zeek/Corelight, packet sensors, cloud load balancers, and application platforms.
 
-**Log Collection**
+### Collection Notes
 
-HTTP logs are one of the riches log sources that we may deal with. Logs include so much more than simply port 80 or 443 access. That being said, there are multiple ways to gather HTTP logs, each with their varying context and level of detail. We must also be aware of the direction of traffic as certain tools can give more context to a certain direction.
+* **Web servers** - IIS, Apache, NGINX, and application servers provide request logs. Normalize field names and include X-Forwarded-For where applicable.
+* **Web proxies** - Strong source for outbound HTTP/S visibility, user mapping, URL categories, cache status, and actions.
+* **WAFs** - Useful for inbound application traffic, rule IDs, actions, and attack categories.
+* **Next-generation firewalls** - Can provide application IDs, URL categories, TLS metadata, and actions.
+* **Zeek/Corelight** - Useful source for HTTP logs and TLS metadata when sensor placement provides visibility.
+* **SSL/TLS inspection devices** - Can add decrypted or certificate-level details where lawful and authorized.
 
-* WAF: Web Application Firewall - Great source for inbound HTTP traffic, while also adding security context such as the firewall actions.
-* Next-Gen firewall - Many of these have their own network traffic logging capabilities. Some advanced features can include SSL inspection and extraction of SSL certificate data.
-* Web-Server logs - Generally contains a wealth of logs, but will need to focus on those that have security context. Web servers can log in many different formats.
-  * W3C extended - The default for Microsoft IIS Servers. Detailed logs with headers that allow you to easily add and remove fields. IIS server versions change their default data fields between versions, so make sure you set them to the same version format. You can also use powershell on newer IIS logs to format them.
-  * NCSA - Text file with common HTTP fields
-  * Combined - Default for Apache and NGINX. Can be converted to JSON.
-* Web Proxies - One of the best ways to log HTTP data as well as protect internal assets.
-  * [Squid Proxy](http://www.squid-cache.org/) - An incredibly flexible open-source web proxy that can cache content for improved network performance. It can also be used for SSL MITM content filtering and AV checks against content. By restricting traffic through a proxy, we can detect and block many types of malware that are not proxy aware.
-  * The logs in web proxies are similar to web servers but will contain a few extra fields specific to proxies, such as Cache status, MIME object type, and peer hierarchy information.
-  * When using a proxy we need to make sure we are tracking the original address that initiated the traffic. For this we use a field called XFF: X-forwarded-for. Zeek and most proxies will log this by default. Most web servers will not, and must be enabled.
-* Network traffic logging tools - [ZEEK](https://zeek.org/) is an incredible too that can easily grab HTTP logs flowing across a network. This is one of the more simple and easy to configure logging options. If the hosted extractor has the appropriate visibility, this can capture all of the logs we would need.
-  * This is also one of the best options for extracting TLS 1.2 and lower certificate data. it typically has more data fields than other logging options that support certificate data.
-* Decrypt port mirroring - When using port mirroring for the purposes of a network tap, certain devices with SSL inspection capability can log decrypted SSL/TLS communications out to a logging port. If your current toolset does not perform SSL inspection, you can use a tool such as[ hallucinate](https://github.com/SySS-Research/hallucinate/) to perform one-stop TLS traffic inspection and manipulation using dynamic instrumentation.
-* Specialty Sources - These would include Logging agents like [Packetbeat](https://www.elastic.co/beats/packetbeat), scripts, cloud logs, and those from other applications.
-
-**SSL/TLS**
-
-Encrypted web communications have recently become not only common, but standard for many applications. This is great for personal security and privacy, but adds a challenge for defenders needing to investigate potentially malicious traffic. That being said, there are a few more data points that are added with an SSL/TLS connection, that we can leverage for identification.
-
-One of the best data points for enrichment and detection Use cases, is the SSL certificate. In TLS 1.2 communications and lower, the traffic is encrypted but the certificate details are not. Because of this, we can use the certificate contents to identify malware.
-
-TLS 1.3 adds a large hurdle with detection, as it now encrypts the certificate data as well as the payload. The only way around this is SSL/TLS decryption and Inspection. This is further disrupted as with PFS: Perfect Forward Secrecy, Inspection will require a complete tear down of the connection in order to inspect the contents, therefore changing the connection into two separate tunnels.&#x20;
-
-**Certificate Analysis**
-
-SSL certificates can hold a slew of information that can be used to identify known good and known bad traffic. The presence of a revoked certificate ID or by a known malicious publisher, can be data points that produce high fidelity detections. Beyond this we should also look at what data is NOT present within the certificate. There are a lot of details in a proper certificate and malware authors can be lazy and malware will perform minimal tasks  to be successful as well as tend to fill in the minimum data point within a certificate.&#x20;
-
-**Required Data Points**
+### HTTP/S Fields
 
 * Timestamp
 * Source IP
-* Source Hostname/Domain (If available)
+* Source hostname or user, when available
 * Destination IP
-* Destination Hostname/Domain (If available)
-* Domain requested
+* Destination hostname
+* Host header or SNI
+* URI and query string
+* HTTP method
 * HTTP status code
-* User Agent
-* Web Application Firewall Logs
-  * Firewall Action
-  * Any available reputation or signature data
-  * Network level data (Connection type, protocol, byte count, etc.)
-* Next Gen Firewall/Network Traffic Logs.
-  * Firewall Action
-  * Any available reputation or signature data
-  * Network level data (Connection type, protocol, byte count, etc.)
+* User-Agent
+* Referrer
+* Request and response byte counts
+* Proxy, firewall, or WAF action
+* Rule ID, category, or signature name when available
 
-**Optional - If you have the storage.**
+### TLS Metadata
 
-* Full HTTP header information - Handy for more indepth analysis. Use for local storage only as this can get super loud. Can also be accomplished with a packet capture solution.
+TLS 1.3 and encrypted client hello reduce some passive visibility. When available, TLS metadata can still help investigations:
 
-**HTTP Enrichment Data Points**
+* SNI
+* JA3/JA4-style fingerprints
+* Certificate issuer and subject
+* Certificate validity window
+* TLS version and cipher suite
 
-* Frequency score of the web server or virtual host you are interacting with.
-* Field lengths of the URI and User-Agent.
-* Many DNS related enrichment opportunities can also carry over to HTTP
+JA3 and packet-level TLS fingerprinting are maintained in Packet Analysis.
 
-**HTTPS Enrichment Data Points -** These are in addition to the enrichment points for HTTP
+{% content-ref url="../blue-defense/packet-analysis.md" %}
+[packet-analysis.md](../blue-defense/packet-analysis.md)
+{% endcontent-ref %}
 
-* Certificate data. Available for TLS 1.2 and Lower. Please see [x509 certificate](https://en.wikipedia.org/wiki/X.509) details for available fields. Investigation of the certificate issuer is always recommended.
-* SSL/TLS Fingerprint - Certain tools like [JA3](https://github.com/salesforce/ja3) can create a fingerprint hash that can Identify a particular SSL/TLS connection based on the connection metadata. These in turn can be used for easy identification of known good and known bad connections, without looking at the traffic content
+## SMTP and Email Logs
 
-### SMTP
+Email logs should usually come from focused email infrastructure and security tooling first: mail servers, secure email gateways, cloud email audit logs, spam filters, and mail proxies. Network-derived SMTP logs can supplement this visibility.
 
-**Log Collection**
-
-As a rule, when focusing on email traffic, we should be letting focused security tools be our primary sources of information and security context. Email security appliances, mail proxies, spam filters, and other tools provide immense value and we should not be attempting to duplicate work that they perform. We can however supplement them by leveraging extra visibility.
-
-There are certain sources of logs that we should focus on when collecting data related to email and SMTP.
-
-* Email related security tools and SMTP Proxies.- These are helpful for identifying malicious attachments, blocking spam, and any other alerting the tool might generate.
-* Mail servers and Mail applications - While containing a significant amount of data, it can be a wealth of statistical knowledge if you have the storage for it.
-* Network traffic data - Amazingly useful for supplementary use cases to the above tools. Can help detect unauthorized SMTP traffic. By using Network Security Monitoring tools like ZEEK, we can collect everything we need.
-
-**Required Data Points**
+### SMTP Fields
 
 * Timestamp
 * Source IP
-* Source Hostname/Domain (If available)
+* Source hostname
 * Destination IP
-* Destination Hostname/Domain (If available)
-* Source email address
-* Destination email address
-* Return Address
-* Return Path
-* Message Receipt/Delivery action
-* Subject line
+* Destination hostname
+* Sender address
+* Recipient address
+* Return path
+* Message ID
+* Subject
 * Message size
-* X-Forwarded field
-* Email Security Appliance Logs
-  * Appliance action
-  * Any available reputation or signature data
-  * Network level data (Connection type, protocol, byte count, etc.)
+* Attachment names and hashes, when available
+* Delivery action
+* Security appliance action and rule ID
 
-**Optional Data Points**
+For phishing investigation and threat data enrichment, use Cyber Intelligence and DFIR pages rather than duplicating those sources here.
 
-* Full email headers.&#x20;
-  * Handy for more indepth analysis. Use for local storage only as this can get super loud. Can also be accomplished with email server logs or packet capture solution.
+{% content-ref url="../cyber-intelligence/threat-data.md" %}
+[threat-data.md](../cyber-intelligence/threat-data.md)
+{% endcontent-ref %}
 
-**Enrichment Data Points**
-
-* Display Names from users
-* GeoIP
+{% content-ref url="../dfir-digital-forensics-and-incident-response/" %}
+[dfir-digital-forensics-and-incident-response](../dfir-digital-forensics-and-incident-response/)
+{% endcontent-ref %}

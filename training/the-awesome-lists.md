@@ -1,11 +1,11 @@
 # The Awesome Lists
 
-The Awesome Lists are multiple collections various folks have made that try to condense some of the best resources for various cyber topics, all onto one list. These are great for finding out new tools to add to your arsenal, or techniques to add to your repertoire. You can use [awesome · GitHub Topics · GitHub](https://github.com/topics/awesome) and [Awesome Indexed - Searchable Awesome Lists](https://awesome-indexed.mathew-davies.co.uk/) to search for what ever content you want that might  be found in the awesome lists. \
+The Awesome Lists are collections people have made to condense strong resources for specific topics into one list. They are great for discovering tools, techniques, and reading paths. You can use [awesome · GitHub Topics · GitHub](https://github.com/topics/awesome) and [Awesome Indexed - Searchable Awesome Lists](https://awesome-indexed.mathew-davies.co.uk/) to search across many of them. \
 For those who love the command line, [https://github.com/chubin/cheat.sh](https://github.com/chubin/cheat.sh) is amazing for doing something similar, right in your bash shell.
 
-\*Note\* The below list is NOT comprehensive. These are cherry picked for what has been found to be relevant for security practicioners.&#x20;
+*Note:* The list below is not comprehensive. These are cherry-picked for security practitioners.
 
-General - These are general collections of security related resources that some awesome folks have gathered from across the internet. The first one by Sindresorhus has been come the basis for the above search tool.
+General - These are broad collections of security-related resources.
 
 * [Awesome Search](https://awesomelists.top/) [GitHub - sindresorhus/awesome: 😎 Awesome lists about all kinds of interesting topics](https://github.com/sindresorhus/awesome)
 * [GitHub - bayandin/awesome-awesomeness: A curated list of awesome awesomeness](https://github.com/bayandin/awesome-awesomeness)
@@ -75,15 +75,16 @@ Coding
 * [GitHub - secfigo/Awesome-Fuzzing: A curated list of fuzzing resources ( Books, courses - free and paid, videos, tools, tutorials and vulnerable applications to practice on ) for learning Fuzzing and initial phases of Exploit Development like root cause analysis.](https://github.com/secfigo/Awesome-Fuzzing)&#x20;
 * [GitHub - vinta/awesome-python: A curated list of awesome Python frameworks, libraries, software and resources](https://github.com/vinta/awesome-python)&#x20;
 * [GitHub - ziadoz/awesome-php: A curated list of amazingly awesome PHP libraries, resources and shiny things.](https://github.com/ziadoz/awesome-php)&#x20;
-* [GitHub - sorrycc/awesome-javascript: 🐢 A collection of awesome browser-side JavaScript libraries, resources and shiny things.](https://github.com/sorrycc/awesome-javascript#readme)&#x20;
-* [GitHub - matteocrippa/awesome-swift: A collaborative list of awesome Swift libraries and resources. Feel free to contribute!](https://github.com/matteocrippa/awesome-swift#readme)&#x20;
-* [GitHub - avelino/awesome-go: A curated list of awesome Go frameworks, libraries and software](https://github.com/avelino/awesome-go#readme)&#x20;
+* [GitHub - sorrycc/awesome-javascript: A collection of browser-side JavaScript libraries, resources, and shiny things.](https://github.com/sorrycc/awesome-javascript#readme)&#x20;
+* [GitHub - matteocrippa/awesome-swift: A collaborative list of Swift libraries and resources.](https://github.com/matteocrippa/awesome-swift#readme)&#x20;
+* [GitHub - avelino/awesome-go: A curated list of Go frameworks, libraries, and software](https://github.com/avelino/awesome-go#readme)&#x20;
 * [GitHub - inputsh/awesome-c: Continuing the development of awesome-c list on GitHub](https://github.com/inputsh/awesome-c#readme)&#x20;
-* [GitHub - fffaraz/awesome-cpp: A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff.](https://github.com/fffaraz/awesome-cpp#readme)&#x20;
-* [GitHub - hachiojipm/awesome-perl: A curated list of awesome Perl frameworks and libraries. Come on Pull Requests!](https://github.com/hachiojipm/awesome-perl#readme)&#x20;
-* [GitHub - akullpp/awesome-java: A curated list of awesome frameworks, libraries and software for the Java programming language.](https://github.com/akullpp/awesome-java#readme)&#x20;
-* [GitHub - diegocard/awesome-html5: A curated list of awesome HTML5 resources](https://github.com/diegocard/awesome-html5#readme)&#x20;
-* [GitHub - awesome-css-group/awesome-css: A curated contents of amazing CSS :)](https://github.com/awesome-css-group/awesome-css#readme) [GitHub - InQuest/awesome-yara: A curated list of awesome YARA rules, tools, and people.](https://github.com/InQuest/awesome-yara)&#x20;
+* [GitHub - fffaraz/awesome-cpp: A curated list of C/C++ frameworks, libraries, resources, and shiny things.](https://github.com/fffaraz/awesome-cpp#readme)&#x20;
+* [GitHub - hachiojipm/awesome-perl: A curated list of Perl frameworks and libraries.](https://github.com/hachiojipm/awesome-perl#readme)&#x20;
+* [GitHub - akullpp/awesome-java: A curated list of Java frameworks, libraries, and software.](https://github.com/akullpp/awesome-java#readme)&#x20;
+* [GitHub - diegocard/awesome-html5: A curated list of HTML5 resources](https://github.com/diegocard/awesome-html5#readme)&#x20;
+* [GitHub - awesome-css-group/awesome-css: Curated CSS resources](https://github.com/awesome-css-group/awesome-css#readme)
+* [GitHub - InQuest/awesome-yara: A curated list of YARA rules, tools, and people.](https://github.com/InQuest/awesome-yara)&#x20;
 * [https://github.com/beucismis/awesome-fetch](https://github.com/beucismis/awesome-fetch)
 
 Malware and Malware Analysis
@@ -91,7 +92,7 @@ Malware and Malware Analysis
 * [GitHub - fabacab/awesome-malware: A curated collection of awesome malware, botnets, and other post-exploitation tools.](https://github.com/fabacab/awesome-malware)&#x20;
 * [GitHub - milabs/awesome-linux-rootkits: awesome-linux-rootkits](https://github.com/milabs/awesome-linux-rootkits)&#x20;
 * [GitHub - cugu/awesome-forensics: A curated list of awesome forensic analysis tools and resources](https://github.com/Cugu/awesome-forensics)&#x20;
-* [GitHub - rshipp/awesome-malware-analysis: Defund the Police.](https://github.com/rshipp/awesome-malware-analysis)
+* [GitHub - rshipp/awesome-malware-analysis: Defund the Police.](https://github.com/rshipp/awesome-malware-analysis) - Also listed in DFIR because malware analysis spans both areas.
 
 CTF
 

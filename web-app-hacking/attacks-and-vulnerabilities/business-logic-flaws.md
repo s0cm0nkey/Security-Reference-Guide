@@ -42,7 +42,7 @@ One of the best starting places for looking for logic flaws, is to navigate  thr
    * Always check cookies or local storage to see if any variable is checking if the user should have access to premium features or not.
 6. Refund Feature Abuse
    * Purchase a product (usually some subscription) and ask for a refund to see if the feature is still accessible.
-   * Try for currency arbitrage explained yesterday.
+   * Try currency arbitrage when the application handles conversion or pricing logic.
    * Try making multiple requests for subscription cancellation (race conditions) to see if you can get multiple refunds.
 7. Cart/Wishlist Abuse
    * Add a product in negative quantity with other products in positive quantity to balance the amount.
@@ -86,7 +86,7 @@ One of the best starting places for looking for logic flaws, is to navigate  thr
 * **Making flawed assumptions about user behavior**
   * Trusted users wont always remain trustworthy
     * [https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-inconsistent-security-controls](https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-inconsistent-security-controls)
-  * Users wont alwasy supply mandatory input
+  * Users will not always supply mandatory input.
     * [https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-weak-isolation-on-dual-use-endpoint](https://portswigger.net/web-security/logic-flaws/examples/lab-logic-flaws-weak-isolation-on-dual-use-endpoint)
     * [https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-reset-broken-logic](https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-reset-broken-logic)
   * Users wont always follow the intended sequence

@@ -9,8 +9,7 @@ Shodan is often called the "Search Engine for the Internet of Everything" or "Ha
 **Key Resources:**
 * [Shodan CLI Documentation](https://cli.shodan.io/) - Command-line interface for Shodan queries and automation
 * [Shodan Search Filters](https://beta.shodan.io/search/filters) - Complete list of available search filters and operators
-* [TryHackMe Shodan Room](https://tryhackme.com/room/shodan) - Interactive training module for learning Shodan
-* _Operator Handbook: Shodan CLI - pg. 274_ - Command reference guide
+* Shodan training has been moved to the Training section.
 
 <details>
 

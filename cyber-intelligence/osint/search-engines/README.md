@@ -6,7 +6,7 @@ Cybersecurity-focused search engines are powerful tools that enable targeted res
 
 When beginning any OSINT investigation, consider starting with Search.html, a comprehensive HTML interface created by OSINT expert Michael Bazzell. This tool provides a unified interface for searching multiple sources simultaneously, allowing researchers to efficiently query various search engines and services with a single action. The tool's design facilitates manual analysis and enables investigators to follow multiple leads as they emerge during research.
 
-**Included Search Engines:** Google, Google Date, Bing, Yahoo, Searx, Yandex, Baidu, Exalead, DuckDuckGo, Startpage, Newsgroups, Blogs, FTP Servers, Indexes, Scholars, Patents, Qwant, News, Wayback Machine, and Ahmia.
+**Included Search Engines:** Google, Google Date, Bing, Yahoo, Searx, Yandex, Baidu, DuckDuckGo, Startpage, Newsgroups, Blogs, FTP Servers, Indexes, Scholars, Patents, Qwant, News, Wayback Machine, and Ahmia. Some older Search.html entries, such as Exalead, are no longer active public web search engines.
 
 The resources listed below provide a solid foundation for search engine-based investigation techniques, though they represent only a starting point for comprehensive OSINT research.
 
@@ -153,6 +153,11 @@ The following tools and services are no longer maintained or have been discontin
 
 ## **Training and Educational Resources**
 
-* [TryHackMe - Google Dorking Room](https://tryhackme.com/room/googledorking) - Interactive hands-on training module covering Google Dorking techniques and practical applications
 * [Google Hacking for Penetration Testers](https://www.blackhat.com/presentations/bh-europe-05/BH_EU_05-Long.pdf) - Classic Black Hat Europe presentation on Google Hacking techniques and methodology
+
+Hands-on training has been moved to the Training section.
+
+{% content-ref url="../../../training/" %}
+[training](../../../training/)
+{% endcontent-ref %}
 
