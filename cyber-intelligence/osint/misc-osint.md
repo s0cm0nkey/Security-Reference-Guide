@@ -34,7 +34,7 @@
 
 </details>
 
-{% file src="../../.gitbook/assets/License.html" %}
+Local helper copy: [License.html](../../.gitbook/assets/License.html)
 
 ## **Cryptocurrencies**
 
@@ -62,7 +62,7 @@ Core blockchain explorers are also listed on Threat Data. This page keeps invest
 
 </details>
 
-{% file src="../../.gitbook/assets/Currencies.html" %}
+Local helper copy: [Currencies.html](../../.gitbook/assets/Currencies.html)
 
 ## **Location**
 
@@ -78,7 +78,7 @@ Core blockchain explorers are also listed on Threat Data. This page keeps invest
 
 </details>
 
-{% file src="../../.gitbook/assets/Location.html" %}
+Local helper copy: [Location.html](../../.gitbook/assets/Location.html)
 
 ![](<../../.gitbook/assets/image (35).png>)
 

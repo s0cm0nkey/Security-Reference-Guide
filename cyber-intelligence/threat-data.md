@@ -165,7 +165,7 @@ Domain-focused passive investigation workflows live in Domain OSINT.
 Some tools require more complex URL structures than simple parameter appending. Additional functionality may be needed for full automation.
 {% endhint %}
 
-{% file src="../.gitbook/assets/EasyOSINT.html" %}
+Local helper copy: [EasyOSINT.html](../.gitbook/assets/EasyOSINT.html)
 
 {% embed url="https://github.com/s0cm0nkey/EasyOSINT" %}
 

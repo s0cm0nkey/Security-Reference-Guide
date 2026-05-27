@@ -22,7 +22,7 @@ Domain.html is a multi-lookup helper for pivoting through domain investigation s
 * **Threat Data** - Use the Threat Data page for reputation and enrichment.
 * **Shortened URL Metadata** - Shortener preview and redirect investigation.
 
-{% file src="../../.gitbook/assets/Domain.html" %}
+Local helper copy: [Domain.html](../../.gitbook/assets/Domain.html)
 
 ## Domain Toolboxes
 

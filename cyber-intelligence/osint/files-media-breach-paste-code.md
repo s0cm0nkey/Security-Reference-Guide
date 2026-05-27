@@ -22,7 +22,7 @@ Documents.html is a tool that enables you to search for various file types assoc
 
 </details>
 
-{% file src="../../.gitbook/assets/Documents (1).html" %}
+Local helper copy: [Documents.html](../../.gitbook/assets/Documents.html)
 
 <details>
 
@@ -117,9 +117,9 @@ Clothing/Shopping
 
 </details>
 
-{% file src="../../.gitbook/assets/Images.html" %}
+Local helper copy: [Images.html](../../.gitbook/assets/Images.html)
 
-{% file src="../../.gitbook/assets/Videos (1).html" %}
+Local helper copy: [Videos.html](../../.gitbook/assets/Videos.html)
 
 ## **Breach/Leak/Paste data**&#x20;
 
@@ -148,7 +148,7 @@ Paste sites like Pastebin have recently restricted their search capabilities. Pa
 
 </details>
 
-{% file src="../../.gitbook/assets/Breaches.html" %}
+Local helper copy: [Breaches.html](../../.gitbook/assets/Breaches.html)
 
 <details>
 

@@ -28,7 +28,7 @@ General username enumeration tools such as Sherlock, WhatsMyName, Maigret, and B
 [username-email.md](username-email.md)
 {% endcontent-ref %}
 
-{% file src="../../.gitbook/assets/Communities.html" %}
+Local helper copy: [Communities.html](../../.gitbook/assets/Communities.html)
 
 <details>
 
@@ -104,7 +104,7 @@ General username enumeration tools such as Sherlock, WhatsMyName, Maigret, and B
 
 </details>
 
-{% file src="../../.gitbook/assets/Instagram.html" %}
+Local helper copy: [Instagram.html](../../.gitbook/assets/Instagram.html)
 
 <details>
 
@@ -245,7 +245,7 @@ General username enumeration tools such as Sherlock, WhatsMyName, Maigret, and B
 
 </details>
 
-{% file src="../../.gitbook/assets/Twitter.html" %}
+Local helper copy: [Twitter.html](../../.gitbook/assets/Twitter.html)
 
 <details>
 

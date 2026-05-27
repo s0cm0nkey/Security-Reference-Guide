@@ -20,9 +20,9 @@ These complementary tools often produce overlapping results, but it's best pract
 1. **Presence Detection**: Verify if the username or email exists on various platforms
 2. **Exposure Analysis**: Identify any publicly available or leaked information associated with the credentials
 
-{% file src="../../.gitbook/assets/Username (1).html" %}
+Local helper copy: [Username.html](../../.gitbook/assets/Username.html)
 
-{% file src="../../.gitbook/assets/Email.html" %}
+Local helper copy: [Email.html](../../.gitbook/assets/Email.html)
 
 <details>
 

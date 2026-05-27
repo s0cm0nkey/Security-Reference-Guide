@@ -10,7 +10,7 @@ When beginning any OSINT investigation, consider starting with Search.html, a co
 
 The resources listed below provide a solid foundation for search engine-based investigation techniques, though they represent only a starting point for comprehensive OSINT research.
 
-{% file src="../../../.gitbook/assets/Search (1).html" %}
+Local helper copy: [Search.html](../../../.gitbook/assets/Search.html)
 
 ## [**Google**](https://google.com)
 

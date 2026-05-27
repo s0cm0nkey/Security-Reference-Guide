@@ -33,7 +33,7 @@ Name search records can become ambiguous quickly when dealing with common names 
 
 </details>
 
-{% file src="../../.gitbook/assets/Name (1).html" %}
+Local helper copy: [Name.html](../../.gitbook/assets/Name.html)
 
 Email and username OSINT has its own canonical page. Use this page when the investigation starts from a person, phone number, public record, business record, vehicle, property, or government source; pivot to Username/Email when the identifier becomes an email address or handle.
 
@@ -65,7 +65,7 @@ Email and username OSINT has its own canonical page. Use this page when the inve
 
 * [https://www.aware-online.com/en/how-can-i-find-a-google-account-by-phone-number/](https://www.aware-online.com/en/how-can-i-find-a-google-account-by-phone-number/)
 
-{% file src="../../.gitbook/assets/Telephone.html" %}
+Local helper copy: [Telephone.html](../../.gitbook/assets/Telephone.html)
 
 ## Government and Business Records
 
@@ -186,7 +186,7 @@ Voter registration records are public in many states and can provide address his
 
 </details>
 
-{% file src="../../.gitbook/assets/Business (1).html" %}
+Local helper copy: [Business.html](../../.gitbook/assets/Business.html)
 
 ## Deprecated or Unreliable Tools
 
