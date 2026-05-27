@@ -1,15 +1,21 @@
 # Yellow - AI, Machine Learning, and FOSS
 
+This page collects AI, machine learning, data, and free/open-source software resources that are useful to security practitioners. Treat AI tooling as especially high-churn: links, products, and claims can age quickly.
+
+## How to Use This Page
+
+Use AI tool directories for discovery, but verify each tool's data handling, retention, pricing, and security posture before using it with sensitive material. Use the machine learning sections for datasets, research, and security analytics ideas.
+
 ## AI Tools
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### AI Tool Collections
 
-* [https://theresanaiforthat.com/alphabetical/](https://theresanaiforthat.com/alphabetical/)
-* [https://www.futurepedia.io/](https://www.futurepedia.io/)
-* [https://www.aishrine.com/](https://www.aishrine.com/)
-* [https://theresanaiforthat.com/](https://theresanaiforthat.com/)
+* [There's An AI For That](https://theresanaiforthat.com/)
+* [There's An AI For That - Alphabetical](https://theresanaiforthat.com/alphabetical/)
+* [Futurepedia](https://www.futurepedia.io/)
+* [AI Shrine](https://www.aishrine.com/)
 
 ### Interesting AI Articles
 

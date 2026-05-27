@@ -67,10 +67,14 @@ Passive DNS (pDNS) systems collect DNS resolution data from recursive DNS server
 * [SecurityTrails](https://securitytrails.com/) - Comprehensive passive DNS database with historical DNS records, WHOIS history, and subdomain discovery.
 * [Farsight DNSDB](https://www.farsightsecurity.com/solutions/dnsdb/) - World's largest passive DNS database for threat intelligence and investigation.
 * [PassiveTotal / Microsoft Defender TI](https://community.riskiq.com/) - Threat intelligence platform (now part of Microsoft Defender Threat Intelligence) with passive DNS, WHOIS, SSL certificates, and trackers.
-* [VirusTotal](https://www.virustotal.com/) - Besides malware scanning, provides passive DNS data, subdomains, and related indicators.
 * [Passive DNS Mnemonic](https://passivedns.mnemonic.no/) - Norwegian passive DNS service providing historical DNS data.
 * [Cisco Umbrella Investigate](https://umbrella.cisco.com/) - DNS security and threat intelligence platform with passive DNS capabilities.
-* [AlienVault OTX](https://otx.alienvault.com/) - Open Threat Exchange providing passive DNS and threat intelligence data.
+
+For reputation-focused pivots such as VirusTotal, AlienVault OTX, URLScan, and sandbox platforms, use the Threat Data page:
+
+{% content-ref url="../threat-data.md" %}
+[threat-data.md](../threat-data.md)
+{% endcontent-ref %}
 
 </details>
 
@@ -112,17 +116,19 @@ Numerous highly effective tools exist for subdomain enumeration and brute-forcin
 
 <summary>Domain Reputation and Threat Intelligence</summary>
 
-Domain reputation services help identify malicious, suspicious, or compromised domains, which is critical for threat hunting and security investigations.
+Domain reputation services help identify malicious, suspicious, or compromised domains, which is critical for threat hunting and security investigations. The Threat Data page owns the detailed reputation-tool list.
 
-* [VirusTotal](https://www.virustotal.com/) - Analyze domains for malware, phishing, and malicious activity across 70+ security vendors.
 * [URLhaus](https://urlhaus.abuse.ch/) - Database of malicious URLs used for malware distribution.
 * [PhishTank](https://www.phishtank.com/) - Community-driven anti-phishing site with verified phishing URLs.
 * [Google Safe Browsing](https://transparencyreport.google.com/safe-browsing/search) - Check if a domain is flagged for phishing or malware.
 * [Talos Intelligence](https://talosintelligence.com/) - Cisco's threat intelligence service with domain reputation data.
 * [IBM X-Force Exchange](https://exchange.xforce.ibmcloud.com/) - Threat intelligence platform with domain and IP reputation data.
-* [AlienVault OTX](https://otx.alienvault.com/) - Open threat intelligence community with domain indicators.
 * [AbuseIPDB](https://www.abuseipdb.com/) - Database for reporting and checking abusive IPs and domains.
 * [Pulsedive](https://pulsedive.com/) - Threat intelligence platform with domain risk scoring.
+
+{% content-ref url="../threat-data.md" %}
+[threat-data.md](../threat-data.md)
+{% endcontent-ref %}
 
 </details>
 

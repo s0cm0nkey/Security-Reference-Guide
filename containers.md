@@ -1,5 +1,11 @@
 # Yellow - Containers
 
+Containers and Kubernetes concentrate application code, secrets, identity, networking, orchestration, and host security into one operating model. Use this page for container management, logging, defense, pentesting, Docker, and Kubernetes references.
+
+## How to Use This Page
+
+Start with container basics and logging if you are building visibility. Use the defense and hardening sections before production deployment, and use the pentesting sections only in authorized environments or labs.
+
 ## Container Management
 
 ### **CLI Tools**

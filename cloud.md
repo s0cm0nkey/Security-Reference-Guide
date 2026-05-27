@@ -1,5 +1,11 @@
 # Yellow - Cloud
 
+Cloud security changes quickly because identity, logging, networking, serverless, SaaS, and managed services all evolve at the same time. Use this page as a starting map for cloud basics, hardening, auditing, offensive testing, and provider-specific references.
+
+## How to Use This Page
+
+Start with general cloud design and security resources, then jump into the provider or workflow you need. For offensive testing, always check the provider's current rules of engagement before scanning, exploiting, or running tooling in a cloud environment.
+
 ## **General Cloud**
 
 ### Cloud Basics and design

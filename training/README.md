@@ -1,5 +1,11 @@
 # Training and Resources
 
+This section is for learning paths, certifications, books, labs, CTFs, and broad resource collections. Use it when you are building a study plan or looking for practice material rather than a single tool.
+
+## How to Use This Section
+
+Start with beginner training if you are new to security. Use certifications when planning career goals, books for deeper study, practice labs and CTFs for hands-on work, and Awesome Lists when you need broad discovery across many topics.
+
 ## **Beginner Training**
 
 * [https://github.com/jassics/security-study-plan](https://github.com/jassics/security-study-plan) - Complete Practical Study Plan to become a successful cybersecurity engineer based on roles like Pentest, AppSec, Cloud Security, DevSecOps and so on...
@@ -90,7 +96,9 @@ This goes perfectly between Career resources and Training material as cyber cert
 * [https://defendtheweb.net/](https://defendtheweb.net/) - Defend the Web is an interactive security platform where you can learn and challenge your skills.
 * [https://www.opswat.com/academy](https://www.opswat.com/academy)
 
-### The Awesome Lists - Massive collections of resources on various cyber topics.
+### The Awesome Lists
+
+Massive community collections of resources across cyber topics.
 
 * [awesome-computer-history](https://github.com/watson/awesome-computer-history)
 * [Awesome Lists Collection: Infosec](https://github.com/onlurking/awesome-infosec)
@@ -103,7 +111,7 @@ This goes perfectly between Career resources and Training material as cyber cert
 
 ### Practical Hands-on and CTFs
 
-These sections have guides on how to practice your offensive an defensive skills in either a hosted CTF/CTF style platform, or even how to build everythingyou need in a local environment.
+These sections have guides on how to practice offensive and defensive skills in hosted CTF-style platforms or by building what you need in a local environment.
 
 {% content-ref url="practice-lab.md" %}
 [practice-lab.md](practice-lab.md)
@@ -115,7 +123,7 @@ These sections have guides on how to practice your offensive an defensive skills
 
 ## **Blue Team Training**
 
-* [Blue Team Labs Online » SECURITY BLUE TEAM](https://securityblue.team/blue-team-labs-online/) - A new CTF style learning platform focused on blue teaming. They offer certification tracks for thier platform and are adding more content daily.
+* [Blue Team Labs Online » SECURITY BLUE TEAM](https://securityblue.team/blue-team-labs-online/) - A CTF-style learning platform focused on blue teaming. They offer certification tracks for their platform and are adding more content regularly.
 * [Blue Team Training Toolkit (BT3) - Defensive Security Training Software](https://www.bt3.no/)  - Blue Team Training Toolkit (BT3) is software for defensive security training, which will bring your network analysis training sessions, incident response drills and red team engagements to a new level.
 * [OpenSOC - Network Defense Simulation](https://opensoc.io/) - OpenSOC is a free blue team defensive competition that is as close to "the real thing" as it gets.
 * [https://cyberdefenders.org/](https://cyberdefenders.org/) - CyberDefenders is a training platform focused on the defensive side of cybersecurity, aiming to provide a place for blue teams to practice, validate the skills they have, and acquire the ones they need.

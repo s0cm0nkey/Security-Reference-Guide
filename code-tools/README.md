@@ -7,6 +7,10 @@ The same applies to code.
 
 To help with this foundational understanding, many platforms, tools, and projects have been created to make code more approachable. As a security analyst, you are not expected to write complex JavaScript or in-depth PowerShell commands. However, should you be able to recognize them and understand their function? Absolutely! Fortunately, there are tools that can make this process easier.
 
+## How to Use This Section
+
+Use this section for practical command-line fluency, code reference tools, decoding utilities, regular expressions, beginner-friendly programming resources, and language-specific Awesome lists.
+
 ## Secure Coding
 
 * [https://github.com/6mile/DevSecOps-Playbook](https://github.com/6mile/DevSecOps-Playbook)
@@ -28,7 +32,7 @@ To help with this foundational understanding, many platforms, tools, and project
 
 * _Operator Handbook: Windows\_Commands - pg. 328_
 
-### Powershell
+### PowerShell
 
 {% content-ref url="powershell/" %}
 [powershell](powershell/)
@@ -59,7 +63,7 @@ To help with this foundational understanding, many platforms, tools, and project
 [learn-to-code.md](learn-to-code.md)
 {% endcontent-ref %}
 
-## **Code libraries and collections**
+## **Code Libraries and Collections**
 
 * [Awesome Lists Collection: Python](https://github.com/vinta/awesome-python)
 * [Python-Pentest-Tools](https://github.com/dloss/python-pentest-tools)

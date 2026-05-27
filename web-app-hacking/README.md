@@ -1,5 +1,15 @@
 # Web App Hacking
 
+Web application security sits at the overlap of offensive testing, secure development, APIs, identity, browsers, proxies, and cloud-hosted services. Use this section for web testing methodology, vulnerability-specific references, Burp Suite, scanning utilities, and background on web technologies.
+
+{% hint style="danger" %}
+Only test applications where you have permission. Bug bounty scopes, penetration test rules of engagement, and lab environments define what is allowed.
+{% endhint %}
+
+## How to Use This Section
+
+Start with Web App Testing Resources for methodology, then use Web Technologies for background or Attacks and Vulnerabilities for specific bug classes.
+
 ## **Web App Testing Resources**
 
 {% tabs %}
@@ -76,7 +86,7 @@ There is a bug bounty focused search engine at [BugBountyHunting.com](https://ww
 {% tab title="Resources and Reference" %}
 * Methodology
   * [https://github.com/Cyber-Guy1/theCyberGuy\_Recon\_V1.0](https://github.com/Cyber-Guy1/theCyberGuy\_Recon\_V1.0) - Great Methodology MindMap
-  * [https://labs.detectify.com/2021/11/30/hak_Recon_V1.0](https://github.com/Cyber-Guy1/theCyberGuy_Recon_V1.0) - A comprehensive methodology mindmap.ating-the-perfect-bug-bounty-automation/)
+  * [Creating the Perfect Bug Bounty Automation](https://labs.detectify.com/2021/11/30/creating-the-perfect-bug-bounty-automation/) - Recon automation methodology from Detectify.
 * Resource collections
   * [awesome-bug-bounty](https://github.com/djadmin/awesome-bug-bounty) - is a comprehensive curated list of available Bug Bounty.
 * [Firebounty](https://firebounty.com) — Bug bounty search engine

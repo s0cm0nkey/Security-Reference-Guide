@@ -1,6 +1,16 @@
 # Blue - DFIR: Digital Forensics and Incident Response
 
-DFIR: Digital Forensics and Incident Response is a hugely important sector of cyber security, where your everyday security analysis is taken to the next level. While most security analysts will work out of a SIEM or SOAR platform, Incident Responders and Forensic analysts typically work directly with a potentially compromised device. With this, they are required to not only be familiar with a larger array of tools for analysis, but also a much stricter set of process and procedures as their actions are often subject to legal requirements.
+Digital Forensics and Incident Response (DFIR) takes everyday security analysis closer to the affected systems, accounts, and evidence. While many analysts work primarily from a SIEM or SOAR platform, incident responders and forensic analysts often work directly with potentially compromised devices, cloud accounts, memory images, disk artifacts, and malware samples.
+
+This section is practical by design: commands, tools, checklists, and references. Treat anything that touches a live system with care. Some commands are read-only, some change system state, and some may affect evidence quality or legal defensibility.
+
+{% hint style="warning" %}
+When evidence preservation matters, follow your organization's incident response process before running commands on a live system.
+{% endhint %}
+
+## How to Use This Section
+
+Start with the operating system or evidence type you have: remote interaction, Windows enumeration, process analysis, event logs, Linux, macOS, memory forensics, sandboxing, file analysis, malware, or reverse engineering. Use the legacy/deprecated sections to recognize older workflows, but prefer modern commands and maintained tools where possible.
 
 ## **DFIR Resource Collections**
 
@@ -16,7 +26,6 @@ DFIR: Digital Forensics and Incident Response is a hugely important sector of cy
 
 {% tabs %}
 {% tab title="Guides and Resources" %}
-* [Awesome Lists Collection: Incident Response](https://github.com/meirwah/awesome-incident-response)
 * [ATC React](https://atc-project.github.io/atc-react/) - The RE\&CT Framework is designed for accumulating, describing and categorizing actionable Incident Response techniques. It can be used for prioritization of Incident Response capabilities development, including skills development, technical measures acquisition/deployment, internal procedures development, etc, as well as gap analysis to determine "coverage" of existing Incident Response capabilities.
   * [https://github.com/atc-project/atc-react](https://github.com/atc-project/atc-react)
   * [https://github.com/atc-project/atc-data](https://github.com/atc-project/atc-data)

@@ -4,13 +4,19 @@ description: Logs and the logging loggers that log them
 
 # Logging and Security Architecture
 
+Logging is the foundation for detection, investigation, response, compliance, and long-term security measurement. This section focuses on what to collect, how to move it, how to store it, and how to make it useful without drowning analysts in noise.
+
+## How to Use This Section
+
+Start with the logging strategy page if you are designing a program. Use the network, endpoint, user behavior, cloud, device discovery, and log source evaluation pages when you are deciding what data to collect or how to judge its value.
+
 ## **Logging Guides**
 
-* [https://its.uiowa.edu/support/article/3576](https://its.uiowa.edu/support/article/3576) - Limiting or Removing Unwanted Network Traffic at the Client
-* [https://cheatsheetseries.owasp.org/cheatsheets/Logging\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Logging\_Cheat\_Sheet.html)
-* [https://cheatsheetseries.owasp.org/cheatsheets/Logging\_Vocabulary\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Logging\_Vocabulary\_Cheat\_Sheet.html)
-* [https://github.com/Neo23x0/auditd](https://github.com/Neo23x0/auditd) - Best Practice Auditd Configuration
-* [https://github.com/JSCU-NL/logging-essentials](https://github.com/JSCU-NL/logging-essentials) - A Windows event logging and collection baseline focused on finding balance between forensic value and optimising retention.
+* [Limiting or Removing Unwanted Network Traffic at the Client](https://its.uiowa.edu/support/article/3576)
+* [OWASP Logging Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html)
+* [OWASP Logging Vocabulary Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Vocabulary_Cheat_Sheet.html)
+* [Neo23x0 auditd](https://github.com/Neo23x0/auditd) - Best-practice Auditd configuration.
+* [JSCU-NL logging-essentials](https://github.com/JSCU-NL/logging-essentials) - Windows event logging and collection baseline focused on balancing forensic value with retention.
 * Setting up Network Sensors - _Applied Network Security Monitoring_ - PG. 49
 * Sensor Placement - _Applied Network Security Monitoring_ - PG. 61
 

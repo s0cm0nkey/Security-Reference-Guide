@@ -2,6 +2,8 @@
 
 This section collects useful tools and resources that don't fit neatly into the other specific categories but are essential for a robust defense strategy.
 
+Use this page for general defensive tooling. When a tool category has a dedicated owner page, this page links there instead of duplicating the full list.
+
 ### Open Source AntiVirus/AntiMalware/AntiRootkit
 
 * [ClamAV](https://www.clamav.net/) - An open source antivirus engine for detecting trojans, viruses, malware, and other malicious threats.
@@ -35,11 +37,15 @@ This section collects useful tools and resources that don't fit neatly into the 
 
 ### Malware Analysis & Sandboxing
 
-* [CyberChef](https://gchq.github.io/CyberChef/) - The "Cyber Swiss Army Knife" - a web app for encryption, encoding, compression and data analysis.
-* [Any.Run](https://any.run/) - Interactive online malware sandbox service.
-* [Hybrid Analysis](https://www.hybrid-analysis.com/) - Free automated malware analysis service.
-* [VirusTotal](https://www.virustotal.com/) - Analyze suspicious files, domains, IPs and URLs to detect malware and other breaches.
-* [UrlScan.io](https://urlscan.io/) - A service to scan and analyse websites.
+Indicator reputation, URL scanning, and public sandbox links are maintained on the Threat Data page. Sandbox workflow and OPSEC guidance lives in the DFIR Sandboxing page.
+
+{% content-ref url="../cyber-intelligence/threat-data.md" %}
+[threat-data.md](../cyber-intelligence/threat-data.md)
+{% endcontent-ref %}
+
+{% content-ref url="../dfir-digital-forensics-and-incident-response/sandboxing.md" %}
+[sandboxing.md](../dfir-digital-forensics-and-incident-response/sandboxing.md)
+{% endcontent-ref %}
 
 ### Forensics & Incident Response
 

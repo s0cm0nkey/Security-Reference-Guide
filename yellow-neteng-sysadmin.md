@@ -1,5 +1,11 @@
 # Yellow - NetEng/SysAdmin
 
+Security practitioners become better when they understand the systems they are defending or testing. This page collects networking, operating system, administration, and infrastructure references that support that foundation.
+
+## How to Use This Page
+
+Start with networking if you need protocol fundamentals, then move into Linux, Windows, Active Directory, and administration topics as needed. Use the Code and CLI section for deeper shell, scripting, and command-line practice.
+
 ## **Networking**
 
 * [https://www.geeksforgeeks.org/computer-network-tutorials/](https://www.geeksforgeeks.org/computer-network-tutorials/) - One of the most detailed and thorough open learning tools for computer science topics on the web. Everything you need to know when learning about networking.
@@ -45,7 +51,7 @@
 * [https://nostarch.com/linuxbasicsforhackers](https://nostarch.com/linuxbasicsforhackers) - More focused on offensive security, a great book for learning how to use the linux OS.
 * [https://www.netacad.com/courses/os-it/ndg-linux-unhatched](https://www.netacad.com/courses/os-it/ndg-linux-unhatched) - Great course from Cisco on Linux basics
 * [https://www.roppers.org/courses/computing-fundamentals](https://www.roppers.org/courses/computing-fundamentals) - Great and detailed linux beginners class from Roppers
-* TrHackMe - Great CTF style training
+* TryHackMe - Great CTF style training
   * [https://tryhackme.com/room/linuxfundamentalspart1](https://tryhackme.com/room/linuxfundamentalspart1)
   * [https://tryhackme.com/room/linuxfundamentalspart2](https://tryhackme.com/room/linuxfundamentalspart2)
   * [https://tryhackme.com/room/linuxfundamentalspart3](https://tryhackme.com/room/linuxfundamentalspart3)
@@ -67,7 +73,7 @@
 
 ### **Windows**
 
-* WIndows Components - [https://tinyurl.com/48vexm6h](https://tinyurl.com/48vexm6h)
+* Windows Components - [https://tinyurl.com/48vexm6h](https://tinyurl.com/48vexm6h)
   * _Operator Handbook: Windows\_Structure - pg. 413_
   * _Operator Handbook: Windows\_Ports - pg. 365_
 * Windows Local File Systems - [https://tinyurl.com/35snns2k](https://tinyurl.com/35snns2k)

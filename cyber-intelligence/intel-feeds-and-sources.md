@@ -316,14 +316,12 @@ MISP includes over 30 default feeds, with more being added regularly. Below are 
 * Uncoder CTI - [https://socprime.com/blog/uncoder-cti-step-by-step-guidelines/](https://socprime.com/blog/uncoder-cti-step-by-step-guidelines/)
 * [Rescure](https://rescure.me/) - Curated cyber threat intelligence for everyone
 * [https://github.com/executemalware/Malware-IOCs](https://github.com/executemalware/Malware-IOCs)
-* Shodan - [https://www.shodan.io/](https://www.shodan.io/) - Search engine for Internet-connected devices (free tier available)
-* Censys - [https://censys.io/](https://censys.io/) - Internet-wide scanning and intelligence platform
-* GreyNoise - [https://www.greynoise.io/](https://www.greynoise.io/) - Identifies internet scanners and benign activity
-* VirusTotal - [https://www.virustotal.com/](https://www.virustotal.com/) - File, URL, and IP reputation service
-* Hybrid Analysis - [https://www.hybrid-analysis.com/](https://www.hybrid-analysis.com/) - Free automated malware analysis
-* ANY.RUN - [https://any.run/](https://any.run/) - Interactive malware analysis sandbox
-* Joe Sandbox - [https://www.joesandbox.com/](https://www.joesandbox.com/) - Automated malware analysis (free tier)
-* URLScan.io - [https://urlscan.io/](https://urlscan.io/) - Service to scan and analyze websites
+
+For indicator reputation, enrichment, internet scanning platforms, and public sandbox tools, use the Threat Data page:
+
+{% content-ref url="threat-data.md" %}
+[threat-data.md](threat-data.md)
+{% endcontent-ref %}
 
 </details>
 

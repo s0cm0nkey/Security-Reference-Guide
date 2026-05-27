@@ -1,40 +1,42 @@
-# All of the Best Links and Resources on Cyber Security.
+# Security Reference Guide
 
 ![](.gitbook/assets/proxy-image.jpeg)
 
-I'm the s0cm0nkey. I am a security analyst, threat hunter, pentester, researcher, and CTF enthusiast. By day, I run a SOC team and teach cyber security. By night, I play CTFs, hack things, and eat a professional volume of tacos. Ping me any time. I love to talk about all things security.&#x20;
+I'm the s0cm0nkey. I am a security analyst, threat hunter, pentester, researcher, and CTF enthusiast. By day, I run a SOC team and teach cyber security. By night, I play CTFs, hack things, and eat a professional volume of tacos. Ping me any time. I love talking about all things security.
 
-[https://s0cm0nkey.github.io/](https://s0cm0nkey.github.io/)
+* [s0cm0nkey.github.io](https://s0cm0nkey.github.io/)
+* s0cm0nkey@protonmail.com
+* @s0cm0nkeysec
+* @s0cm0nkey@infosec.exchange
 
-s0cm0nkey@protonmail.com
-
-@s0cm0nkeysec&#x20;
-
-@s0cm0nkey@infosec.exchange
-
-Check out my online course with Applied Network Defense: Command Line Essentials for Security Analysts!\
-[https://www.networkdefense.co/courses/cli/](https://www.networkdefense.co/courses/cli/)
+Check out my online course with Applied Network Defense: [Command Line Essentials for Security Analysts](https://www.networkdefense.co/courses/cli/).
 
 ### What is this?
 
-There are so many guides for security floating around the internet, it is hard to know where they all are and which ones are worth their salt. I am writing this reference guide by leveraging my true skill in security: _finding other people's hard work_. I am not smart enough or skilled enough to top the creators of these tools or the professionals that have used them twice as long as I have.&#x20;
+There are so many guides, tools, blogs, cheatsheets, and training resources floating around the internet that it can be hard to know what is worth your time. This guide is my attempt to organize the resources I keep coming back to across cyber intelligence, offensive security, defensive operations, DFIR, engineering, privacy, and training.
 
-What this will be is a collection of the best tools and resources I have been able to find and use for all my endeavors across cyber. With 10,000 different tools and blogs out there, it is hard to tell which has what you need. Hopefully, I can share the results of my trial and error process, and point you in the right direction towards the resource you need. This guide will provide some basic information where it can, and then point the reader to a slew of resources you can use to improve your skills.
+It is not meant to replace the original creators, researchers, and practitioners who built these resources. The goal is to help you find the right starting point faster, understand why a resource matters, and avoid stale or low-value rabbit holes.
+
+### How to use this guide
+
+* Start with the section that matches your task: OSINT, threat data, red team, blue team, DFIR, logging, cloud, code, privacy, or training.
+* Treat tool lists as starting points, not final answers. Verify whether a tool is still maintained and appropriate for your environment.
+* Pay attention to deprecated and legacy notes. Some older resources are still useful, but they should not be mistaken for current best practice.
+* When in doubt, prefer official documentation, maintained projects, and resources that explain the tradeoffs behind the technique.
 
 {% hint style="info" %}
-Note: These are my personal notes and links curated for public use. The notes and comments are not all of my own. If someone has written something better than I, I will use it and link to their work. I do not claim any copyright or creative content.
+These are my personal notes and links curated for public use. The notes and comments are not all of my own. If someone has written something better than I have, I will use it and link to their work. I do not claim ownership of others' copyright or creative content.
 {% endhint %}
 
 {% hint style="danger" %}
-Warning: Do not use any of the mentioned tools referenced here for illegal, unethical, or questionable purposes. These tools are for legitimate/approved testing and research only.
+Do not use any tools referenced here for illegal, unethical, or questionable purposes. These resources are for legitimate, authorized testing, research, learning, and defense only.
 {% endhint %}
 
-**Mentions:**
+### Mentions
 
 {% embed url="https://labs.detectify.com/2021/08/24/hakluke-list-resources-for-beginner-hackers-2021/" %}
 
-**Other Publications:**
+### Other Publications
 
-[https://www.deepwatch.com/blog/logging-strategy/](https://www.deepwatch.com/blog/logging-strategy/)
-
-[https://s0cm0nkey.gitbook.io/port-scanner-shootout](https://s0cm0nkey.gitbook.io/port-scanner-shootout)
+* [Logging Strategy](https://www.deepwatch.com/blog/logging-strategy/)
+* [Port Scanner Shootout](https://s0cm0nkey.gitbook.io/port-scanner-shootout)

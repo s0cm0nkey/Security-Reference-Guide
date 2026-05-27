@@ -1,5 +1,11 @@
 # Grey - Privacy/TOR/OPSEC
 
+Privacy and OPSEC are context-dependent. A configuration that is enough for casual browsing may be inadequate for journalism, activism, investigations, travel, or high-risk personal safety scenarios. Use this section as a starting point, then match controls to the actual threat model.
+
+## How to Use This Section
+
+Start with general privacy guides, then move into browser checks, privacy apps, secure communications, PGP, and Tor. Treat old anonymity tools carefully: some are historically interesting but no longer safe recommendations.
+
 ## Privacy Guides and How-To
 
 {% embed url="https://www.amazon.com/Extreme-Privacy-Takes-Disappear-America/dp/1093757620" %}
@@ -16,8 +22,8 @@ Read this first!
 * [https://prism-break.org/en/](https://prism-break.org/en/) - A handy way to opt out of global data collection schemes
 * [https://www.safetydetectives.com/best-vpns/](https://www.safetydetectives.com/best-vpns/) - The VPN breakdown
 * [Electronic Frontier Foundation. Keep the internet free.](https://www.eff.org/)
-* [EFF's Survielance Self Defense guide](https://ssd.eff.org/)
-* [CrashOverride's DIY Secuirty Guides](https://www.crashoverridenetwork.com/resources.html)
+* [EFF's Surveillance Self Defense guide](https://ssd.eff.org/)
+* [CrashOverride's DIY Security Guides](https://www.crashoverridenetwork.com/resources.html)
 * [Security-in-a-box Security Guides](https://securityinabox.org/en/)
 * [https://exposingtheinvisible.org/resources/watching-out-yourself/](https://exposingtheinvisible.org/resources/watching-out-yourself/) - Personal security guide for investigators
 * [AmIunique](https://amiunique.org/) - Learn how identifiable you are on the Internet
@@ -111,12 +117,12 @@ These are the go-to tools before others for combination of security and features
 * [https://matrix.org/](https://matrix.org/) - An open network for secure, decentralized, real-time communication.
 * [https://getsession.org/](https://getsession.org/) - Session is an end-to-end encrypted messenger that minimises sensitive metadata, designed and built for people who want absolute privacy and freedom from any form of surveillance.
 
-**Depreciated**
+**Deprecated**
 
-* [TorChat](https://github.com/prof7bit/TorChat) - Decentralized anaonymous IM that uses Tor networks. Creates a new randomly generated .onion address for each client launch
+* [TorChat](https://github.com/prof7bit/TorChat) - Decentralized anonymous IM that uses Tor networks. Creates a new randomly generated .onion address for each client launch.
   * [http://kpvz7ki2v5agwt35.onion/wiki/index.php/Hacking\_TorChat](http://kpvz7ki2v5agwt35.onion/wiki/index.php/Hacking_TorChat)
 
-DO NOT USER
+Not recommended as primary secure messengers:
 
 * Wickr
 * Whatsapp

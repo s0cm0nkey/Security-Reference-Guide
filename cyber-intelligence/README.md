@@ -2,15 +2,17 @@
 
 ## Intro
 
-Intelligence programs are essential to effective security operations. Every organization should stay current with cybersecurity news to understand emerging attacks and vulnerabilities. An intelligence analyst's job is to sift through the vast amount of intelligence data generated daily and extract what is applicable to their organization.
+Intelligence programs help security teams turn scattered information into decisions. Every organization should stay current with emerging attacks and vulnerabilities, but the analyst's job is not to read everything. The job is to find what matters, validate it, add context, and get it to the people who can act on it.
 
 The role of an intelligence analyst is threefold:
 
-**1. Collect Actionable Intelligence** - Analysts gather valuable information from diverse sources including news articles, reports, white papers, blog posts, social media, and forums. Within these sources, analysts identify indicators of compromise (IOCs) that can be added to blocklists or searched for across the network. They also identify configurations or vulnerabilities that pose significant threats to operations.
+**1. Collect Actionable Intelligence** - Analysts gather useful information from news articles, reports, white papers, blog posts, social media, forums, and technical data sources. Within those sources, analysts identify indicators of compromise (IOCs), tactics, vulnerabilities, exposed infrastructure, and other facts that can drive action.
 
-**2. Manage Indicators** - Analysts curate threat intelligence feeds that integrate with security tools for alerting. Since not all indicators have equal value, analysts must evaluate which intelligence sources to use and maintain the quality of those indicators through ongoing curation.
+**2. Manage Indicators** - Analysts curate threat intelligence feeds that integrate with security tools for alerting and investigation. Since not all indicators have equal value, analysts must evaluate source quality, expiration, context, and false-positive risk.
 
 **3. Enrich Indicators** - Context is critical; an indicator without context provides little value. Analysts manage toolsets that add enrichment data to indicators, such as the origin of the threat, associated campaigns, prevalence across threat intelligence sources, and blacklist appearances. This context enables security analysts to make informed decisions when investigating potential threats.
+
+## Start Here
 
 {% content-ref url="osint/" %}
 [osint](osint/)
@@ -33,15 +35,7 @@ There are several domains or disciplines that comprise intelligence:
 * **Human intelligence (HUMINT)** - Human intelligence is derived from human sources. While commonly associated with espionage and covert operations, most HUMINT is collected through overt means by strategic debriefers, military attachés, and other authorized collectors. HUMINT is the oldest intelligence discipline and was the dominant source of intelligence until the technological revolution of the mid-to-late twentieth century.
 * **Signal intelligence (SIGINT)** - Signal intelligence comprises communications intelligence (COMINT), electronic intelligence (ELINT), and foreign instrumentation signals intelligence (FISINT). These intelligence types are generated through signal intercepts and can be collected separately or in combination.
   * [OSHINT SIGINT Links](https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/signals-intelligence-sigint)
-* **Cyber threat intelligence** - Cyber threat intelligence is the collection, processing, analysis, and dissemination of information from all sources of intelligence on threat actors’ cyber programs, intentions, capabilities, research and development, tactics, targets, operational activities and indicators, and their impact or potential effects on U.S. national security interests. Cyber threat intelligence also includes information on cyber threat actor information systems, infrastructure, and data; and network characterization, or insight into the components, structures, use, and vulnerabilities of threat actors information systems.
-
-{% content-ref url="intel-feeds-and-sources.md" %}
-[intel-feeds-and-sources.md](intel-feeds-and-sources.md)
-{% endcontent-ref %}
-
-{% content-ref url="threat-data.md" %}
-[threat-data.md](threat-data.md)
-{% endcontent-ref %}
+* **Cyber threat intelligence** - Cyber threat intelligence is the collection, processing, analysis, and dissemination of information about threat actors, campaigns, infrastructure, tooling, targets, operational activity, indicators, and impact. Use the Intel Feeds and Sources page for collection sources and the Threat Data page for indicator reputation and enrichment.
 
 * **Image intelligence (IMINT)** - Imagery intelligence includes the representations of objects replicated electronically or by optical means on film, electronic display devices, or other media. Visual photography, radar sensors, and electro-optics can all be used to create imagery. The Files/Media page has many tools and resources for analyzing digital media such as photos or video.
 
@@ -53,10 +47,6 @@ There are several domains or disciplines that comprise intelligence:
 * **Geospatial intelligence (GEOINT)** - Geospatial Intelligence is the analysis and visual representation of security-related activities on Earth. It is produced through the integration of imagery, imagery intelligence, and geospatial information.
   * [OSHINT GEOINT Links](https://ohshint.gitbook.io/oh-shint-its-a-blog/osint-web-resources/mapping-and-geo-spatial-intelligence-geoint)
 * **Open-source intelligence (OSINT)** - Open-Source Intelligence is publicly available information that has been collected and subjected to rigorous, methodical analysis to satisfy a stakeholder's intelligence requirements.
-
-{% content-ref url="osint/" %}
-[osint](osint/)
-{% endcontent-ref %}
 
 ## **How is Intelligence Conducted?**
 
@@ -78,9 +68,9 @@ Each step is integral to producing intelligence, but the cycle is not strictly l
 
 ### **Reference and Theory**
 
-* Intelligence Cycle - [https://www.intel.gov/how-the-ic-works](https://www.intel.gov/how-the-ic-works)
-* Intelligence Cycle Concepts - [https://sroberts.io/posts/intelligence-concepts-the-intelligence-cycle/](https://sroberts.io/posts/intelligence-concepts-the-intelligence-cycle/)
-* Intelligence F3EAD - [https://sroberts.io/posts/intelligence-concepts-f3ead/](https://sroberts.io/posts/intelligence-concepts-f3ead/)
+* [Intelligence Cycle](https://www.intel.gov/how-the-ic-works)
+* [Intelligence Cycle Concepts](https://sroberts.io/posts/intelligence-concepts-the-intelligence-cycle/)
+* [Intelligence F3EAD](https://sroberts.io/posts/intelligence-concepts-f3ead/)
 * [US Intelligence Doctrine](https://www.jcs.mil/Portals/36/Documents/Doctrine/pubs/jp2_0.pdf) - Great resource for learning the process of intelligence gathering and putting it to use.
 * Psychology of Intelligence Analysis- Huer - [https://www.ialeia.org/docs/Psychology\_of\_Intelligence\_Analysis.pdf](https://www.ialeia.org/docs/Psychology_of_Intelligence_Analysis.pdf)
 * MITRE ATT\&CK and Threat Intelligence

@@ -92,7 +92,7 @@
 
 ## Web
 
-* Web Application Hackers Handbook (Depreciated) - A great resource, but everything that is in it and more has been posted up with labs at [https://portswigger.net/web-security](https://portswigger.net/web-security)
+* Web Application Hackers Handbook (Deprecated) - A great resource, but everything that is in it and more has been posted up with labs at [PortSwigger Web Security Academy](https://portswigger.net/web-security)
 * Operator Handbook - Netmux
 * Burp Suite Essentials - Mahajan
 * Browser Hackers Handbook - Alcorn

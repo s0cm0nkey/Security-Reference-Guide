@@ -22,8 +22,7 @@
 <summary>Tool collections</summary>
 
 * [Awesome Lists Collection: Security Tools](https://github.com/tina1998612/Awesome-Security-Tool-List)
-* [A Complete Penetration Testing & Hacking Tools List for Hackers & Security Professionals : ](https://www.reddit.com/r/HowToHack/comments/ewm1ax/a\_complete\_penetration\_testing\_hacking\_tools\_list/)
-* [HowToHack](https://www.reddit.com/r/HowToHack/comments/ewm1ax/a\_complete\_penetration\_testing\_hacking\_tools\_list/) - Reddit's Penetration tools list
+* [HowToHack penetration testing tools list](https://www.reddit.com/r/HowToHack/comments/ewm1ax/a\_complete\_penetration\_testing\_hacking\_tools\_list/) - Reddit's penetration tools list.
 * [Rawsec's CyberSecurity Inventory](https://inventory.rawsec.ml/tools.html)&#x20;
 * [ToolsWatch.org – The Hackers Arsenal Tools Portal](http://www.toolswatch.org/)
 * [The Penetration Testers Framework](https://github.com/trustedsec/ptf) - Installation script for a huge collection of security tools to be installed on any linux distro

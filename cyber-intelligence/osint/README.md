@@ -6,10 +6,21 @@ description: Open Source Intelligence
 
 ## **Intro**
 
-The focus of this section is to provide helpful resources for OSINT and Passive reconnaissance on a given target. There will be certain tools and sites you might be familiar with that could be applicable in this section, that I have omitted and with good reason.
+The focus of this section is OSINT and passive reconnaissance: collecting and analyzing publicly available information without directly interacting with the target. Use these pages to plan investigations, find public records, pivot between data types, and validate what you find.
 
-1. This section is "Passive" recon, which does not entail touching or interacting with your target in any way. For offensive operations, staying off radar is key. But can we check with other sources that may have already scanned out target? You bet.&#x20;
-2. There are many research tools that provide similar output to the ones listed in the later sections. The ones that I have specifically omitted (and will document in another section) are tailored more to defensive operations and contain information like reputation data and historical activity.
+Some tools you might expect to see here are intentionally placed elsewhere:
+
+1. Reputation, blacklist, passive DNS, sandbox, and threat-intelligence enrichment tools belong in the Threat Data page.
+2. Active scanning and target interaction belong in the Red - Reconnaissance and Scanning section.
+3. Broad Awesome-list collections may appear both here and in the Training and Resources section when they help the reader.
+
+{% content-ref url="../threat-data.md" %}
+[threat-data.md](../threat-data.md)
+{% endcontent-ref %}
+
+## How to Use This Section
+
+Start with the data type you have: domain, IP address, username, email, phone number, government record, social media account, media file, breach data, paste, or code artifact. Each topic page should help you decide what to search, which tools to use, and what caveats apply.
 
 ## **OSINT Resources**
 
@@ -89,7 +100,7 @@ Specific for what you need to look for and how to find it, during the passive re
 
 <details>
 
-<summary>OSINT communities and thier resources</summary>
+<summary>OSINT communities and their resources</summary>
 
 * [OSINTCurious](https://osintcurio.us/) - Great community and training for those who are interested in OSINT skills and tools.&#x20;
   * [Osint Curious OSINT Resource List](https://docs.google.com/document/d/14li22wAG2Wh2y0UhgBjbqEvZJCDsNZY8vpUAJ_jJ5X8/edit)
@@ -98,7 +109,7 @@ Specific for what you need to look for and how to find it, during the passive re
 * [Osintion](https://www.theosintion.com/) - OSINT and Social Engineering master Joe Grey's website. Resources, OSINT Courses, and consultation services.
 * [OSINT Dojo](https://www.osintdojo.com/) - A project that provides those new to OSINT a number of free resources and simple challenges that build on one another to provide a simple road map for learning more about the field and polishing up related skills while also earning badges to show off your hard work.
   * [OSINT Dojo Resources](https://www.osintdojo.com/resources/)
-* [Bellingcat's OSINT How-To](https://www.bellingcat.com/category/resources/how-tos/) - Bellingcat is a collective of researchers and journalists that use OSINT tools and techniques for a variety of purposes and that have come together to share thier latest and greatest tools and techniques. They have a slow of guides for researching specific things with OSINT.
+* [Bellingcat's OSINT How-To](https://www.bellingcat.com/category/resources/how-tos/) - Bellingcat is a collective of researchers and journalists that use OSINT tools and techniques for a variety of purposes and that have come together to share their latest tools and techniques. They have a large set of guides for researching specific things with OSINT.
   * [Bellingcat's Tool Collection](https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/edit#gid=930747607)
 * [Aware-Online](https://www.aware-online.com/en/) - Aware Online is a Netherlands based training institute specialized in providing training in the field of Open Source intelligence (OSINT) and Social Media Intelligence (SOCMINT).
 * [https://exposingtheinvisible.org/](https://exposingtheinvisible.org/) - Exposing the Invisible is a project of [Tactical Tech](https://tacticaltech.org/), an international NGO that engages with citizens and civil-society organizations to explore and mitigate the impacts of technology on society.
@@ -120,14 +131,12 @@ All of these are fantastic resource. Check them regularly for new tools and tech
 * [https://inteltechniques.com/blog/](https://inteltechniques.com/blog/)
 * [https://keyfindings.blog/](https://keyfindings.blog/)
 * [https://www.lorandbodo.com/](https://www.lorandbodo.com/)
-* [https://www.offensiveosint.io/](https://www.offensiveosint.io/)
 * [https://www.osintcombine.com/blog](https://www.osintcombine.com/blog)
 * [https://www.osinteditor.com/](https://www.osinteditor.com/)
 * [https://www.osintme.com/](https://www.osintme.com/)
 * [http://www.theosintjournal.org/](http://www.theosintjournal.org/)
 * [https://www.bellingcat.com/](https://www.bellingcat.com/)
 * [https://www.cqcore.uk/blog-posts/](https://www.cqcore.uk/blog-posts/)
-* [https://keyfindings.blog/](https://keyfindings.blog/)
 * [https://www.offensiveosint.io/](https://www.offensiveosint.io/)
 * [https://sector035.nl/](https://sector035.nl/)
 

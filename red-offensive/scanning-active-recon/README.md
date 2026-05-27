@@ -46,7 +46,7 @@ The third step is to analyze the attack vectors and identify any vulnerabilities
 * [https://cheatsheetseries.owasp.org/cheatsheets/Attack\_Surface\_Analysis\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Attack\_Surface\_Analysis\_Cheat\_Sheet.html)
 * [https://redhuntlabs.com/](https://redhuntlabs.com/)
 * [https://github.com/hasr00t/Frameworthy](https://github.com/hasr00t/Frameworthy) - The best collection of Attack Surface Management tooling out there.
-  * Shout out to @hasr00t and thier amazing ASM Class.
+  * Shout out to @hasr00t and their amazing ASM class.
 
 {% hint style="info" %}
 Many Recon Frameworks can be excellent for Attack Surface Management.

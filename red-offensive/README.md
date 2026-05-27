@@ -6,15 +6,19 @@ description: Offensive Security and Penetration Testing
 
 ## **Intro**
 
-Offensive security is a huge realm with dozens of different paths and specialties for aspiring hackers of all types. It can be daunting at first, with the sheer volume of tools you can use, technologies you have to learn about, processes,  and procedures. For those getting started, under stand one thing: If it works, then its the right thing for you! As the saying goes, "there are many ways to skin a cat". Same goes for hacking your target.\
-My personal advice is to try test every tool and technique you come across. There are gems hidden out there that work famously or will work famously for you. Even if it fails, you will learn the technical reason why and that can even lead you to developing your own cool hacking tool!
+Offensive security is a huge field with many specialties: reconnaissance, exploitation, web testing, Active Directory, cloud, wireless, physical security, social engineering, red teaming, and reporting. It can be daunting at first because there are so many tools, technologies, processes, and procedures to learn.
+
+Start with methodology, not tool collecting. A good offensive operator understands the rules of engagement, documents clearly, tests safely, and can explain why a technique worked or failed. Try tools in a lab before using them on an engagement; even failed tests teach you something useful.
+
+{% hint style="danger" %}
+Only use the tools and techniques in this section in environments where you have explicit authorization.
+{% endhint %}
 
 ## Resources: Offensive Security/ Penetration Testing&#x20;
 
-When on an offensive security team, there are different levels of engagement that you will have, as well as different sets of rules you must follow, sometimes from engagement to engagement. Of those, one of the most common you will face is a simple Vulnerability assessment. This is little more than testing for the presence of a vulnerability. Sometimes its for a popular vulnerability that is trending in the news, or for an outdated server that reported poorly on the last vulnerability scan. Either way, they are quick, easy, but tedious and tend to have plenty of paperwork to go along with them.\
-The other type of tasks will be a full penetration test. Some times its a white box test with full knowledge of your target, as well as the target having full knowledge of you. Other times it will be a black box stealth mission to see how badly you can compromise your target.
+When working on an offensive security team, the rules change from engagement to engagement. A vulnerability assessment is usually focused on confirming whether specific vulnerabilities exist. A penetration test is broader and may be white box, gray box, or black box depending on how much information and visibility the tester is given.
 
-When performing a structured penetration test, following/documenting proper procedure will be key to explaining your success and justifying your findings. Below are some formal and informal resources that should help you set up your own processes, toolkit, and documentation.
+When performing a structured penetration test, methodology and documentation are what let you explain your success and justify your findings. The resources below can help you build a process, toolkit, and reporting style.
 
 <details>
 
@@ -31,10 +35,10 @@ When performing a structured penetration test, following/documenting proper proc
 
 <summary>Researcher Developed Guides and Resources</summary>
 
-* [https://book.hacktricks.xyz](https://book.hacktricks.xyz)&#x20;
-* [https://www.thehacker.recipes/](https://www.thehacker.recipes/)
-* [https://www.ired.team/](https://www.ired.team/)
-* [https://guif.re/](https://guif.re/)
+* [HackTricks](https://book.hacktricks.xyz)
+* [The Hacker Recipes](https://www.thehacker.recipes/)
+* [iRed.team](https://www.ired.team/)
+* [Guif.re](https://guif.re/)
 * [https://www.0daysecurity.com/penetration-testing/penetration.html](https://www.0daysecurity.com/penetration-testing/penetration.html)
 * Hacking without Metasploit - [https://hakluke.medium.com/haklukes-guide-to-hacking-without-metasploit-1bbbe3d14f90](https://hakluke.medium.com/haklukes-guide-to-hacking-without-metasploit-1bbbe3d14f90)
 * [https://github.com/nixawk/pentest-wiki](https://github.com/nixawk/pentest-wiki)
@@ -58,7 +62,7 @@ When performing a structured penetration test, following/documenting proper proc
 
 ## Notekeeping/Report Writing
 
-Notekeeping becomes incredibly important in recreating exploits, storing essential findings, keeping screenshots, common commands you ran to reach an outcome and more. Without sufficient notekeeping you’re only setting yourself up to fail.
+Notekeeping is essential for recreating exploits, storing findings, keeping screenshots, recording commands, and writing a report someone else can trust. Without good notes, even a successful test becomes hard to defend.
 
 <details>
 

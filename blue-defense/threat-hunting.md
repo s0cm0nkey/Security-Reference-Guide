@@ -15,8 +15,8 @@ Threat hunting doesn’t have to be complex, but it isn't for everyone. Knowing 
 * [Open Threat Research Forge](https://github.com/OTRF) - Github repository of Threat Hunting articles, playbooks and tools.
 * [Sigma HQ](https://github.com/SigmaHQ/sigma) - Generic Signature Format for SIEM Systems.
 * [Awesome Lists Collection: Awesome Threat Detection](https://github.com/0x4D31/awesome-threat-detection) and Hunting
-  * [awesome-threat-detection/hunt-evil.pdf](https://github.com/0x4D31/awesome-threat-detection/blob/master/docs/hunt-evil.pdf)
-  * [awesome-threat-detection/The-Hunters-Handbook.pdf](https://github.com/0x4D31/awesome-threat-detection/blob/master/docs/The-Hunters-Handbook.pdf)
+  * [Hunt Evil PDF](https://github.com/0x4D31/awesome-threat-detection/blob/master/docs/hunt-evil.pdf)
+  * [The Hunter's Handbook PDF](https://github.com/0x4D31/awesome-threat-detection/blob/master/docs/The-Hunters-Handbook.pdf)
 * [ACM's Threat Hunting Labs](https://activecm.github.io/threat-hunting-labs/) - These are a series of labs that cover different types of analysis that can be done on network data when threat hunting.
 * [A Simple Hunting Maturity Model | Enterprise Detection & Response](https://detect-respond.blogspot.com/2015/10/a-simple-hunting-maturity-model.html)&#x20;
 * [HowToHunt](https://github.com/KathanP19/HowToHunt) - Tutorials and Things to Do while Hunting Vulnerability.&#x20;

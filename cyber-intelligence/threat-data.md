@@ -12,6 +12,17 @@ When checking your indicators against the sources below, be sure to examine all 
 
 **⚠️ WARNING**: An indicator can still be malicious even if it does not appear on any searched blacklists. Never assume an indicator is benign simply because your searches returned no results. Absence of evidence is not evidence of absence.
 
+## How to Use This Page
+
+This is the canonical page for indicator reputation, enrichment, and threat-data lookups in this guide. Other pages should point here rather than repeating the same VirusTotal, sandbox, passive DNS, blacklist, and enrichment links.
+
+Use this page to:
+
+* Check whether an IP, domain, URL, file hash, email address, or certificate has known malicious history.
+* Pivot from a single indicator into related infrastructure, campaigns, malware families, or threat actors.
+* Compare multiple sources before deciding whether to block, alert, escalate, or enrich a case.
+* Identify deprecated services that may appear in older writeups or legacy workflows.
+
 ## Threat Maps
 
 Threat maps provide real-time visualizations showing volume trends in traffic and detected cyber attacks mapped to geographic locations worldwide. These dashboards offer valuable situational awareness and can be useful for monitoring global threat patterns and identifying emerging attack trends.
@@ -81,11 +92,11 @@ Internet-connected device search engines provide valuable reconnaissance data by
 * [Hurricane Electric BGP Toolkit](https://bgp.he.net/)
   * Searches: IP address, Domain, ASN, Subnet
   * Returns: IP information, WHOIS, DNS (A records), Reputation Check ( IP Only - 93 sources), Website info, Website Preview
-* [Virustotal](https://www.virustotal.com/)
+* [VirusTotal](https://www.virustotal.com/)
   * Searches: File, hash, ip, domain search
   * Returns: Reputation check (84 sources), DNS records, HTTPS Cert, WHOIS, Related domains, Community comments
   * Has a premium API
-  * [https://virustotal.com/wargame/ ](https://virustotal.com/wargame/)- Virustotal training!
+  * [VirusTotal Wargame](https://virustotal.com/wargame/) - VirusTotal training.
   * [https://github.com/Neo23x0/vti-dorks](https://github.com/Neo23x0/vti-dorks) - VirusTotal Dorking
 * [Cisco Talos](https://talosintelligence.com/reputation\_center)
   * Searches: IP and Domain data
@@ -183,7 +194,7 @@ While these resources may not specifically return reputation data, they leverage
 
 <summary>Indicator Enrichment Tools</summary>
 
-* [Greynoise](https://viz.greynoise.io/)
+* [GreyNoise](https://viz.greynoise.io/)
   * Searches: IP address, domain
   * Returns: Reputation data, tags of related activity, location data, “last-seen”, reverse DNS, Threat Actor Information, Related Organizations, Related ASNs, Top Operating Systems, service type
   * Premium API available, command line version available
@@ -209,7 +220,7 @@ While these resources may not specifically return reputation data, they leverage
 * [Spamhaus Project](https://check.spamhaus.org/)
   * Searches: IP, Domain
   * Returns: Reputation data, blacklist status (SBL, XBL, DBL, etc.)
-* [ThreatInteligencePlatform.com](https://threatintelligenceplatform.com)
+* [Threat Intelligence Platform](https://threatintelligenceplatform.com)
   * Searches: IP, Domain, Hash
   * Returns: Reputation Data, Web site data, Open Ports, SSL Certificate data, Malware Detection, WHOIS, MX records and config, NS records and config
 * [OPSWAT Metadefender](https://metadefender.opswat.com/?lang=en)
