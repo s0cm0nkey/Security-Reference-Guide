@@ -26,7 +26,7 @@ Current useful lookup categories include:
 * **Cyber search** - Shodan, ZoomEye, and similar indexed scan data.
 * **Public records** - Identity or breach pivots where legally appropriate.
 
-{% file src="../../.gitbook/assets/IP (1).html" %}
+Local helper copy: [IP.html](../../.gitbook/assets/IP.html)
 
 ## WHOIS vs. RDAP
 
