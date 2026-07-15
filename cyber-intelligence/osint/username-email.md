@@ -40,6 +40,7 @@ Local helper copy: [Email.html](../../.gitbook/assets/Email.html)
 * [Blackbird](https://github.com/p1ngul1n0/blackbird) - Search for usernames across 600+ social networks and websites
 * [AnalyzeID](https://analyzeid.com/username/) - Check username availability across social media platforms and gather basic profile information
 * [IDCrawl](https://www.idcrawl.com/) - Free people search engine aggregating social network information, deep web data, phone numbers, and email addresses
+* [Lullar](https://com.lullar.com/) - Free profile search by email, username or first/last name across 175+ social networks
 * [Instant Username Search](https://instantusername.com/) - Check username availability across multiple social media platforms instantly
 * [KnowEm](https://knowem.com/) - Check username or real name availability across 500+ popular and emerging social media platforms
 
@@ -203,7 +204,6 @@ These tools were previously included but are now deprecated, shut down, or have 
 * [TruMail](https://trumail.io/) - API service is no longer reliably accessible. Use Email Hippo or NeverBounce as alternatives.
 
 **Username Search:**
-* [Lullar Search](https://www.lullar.com/) - Service functionality has declined and results are often limited.
 * [Stalker](https://gitlab.com/Pxmme/stalker) - GitLab repository appears inactive; tool may not be maintained.
 * [finduser](https://github.com/xHak9x/finduser) - Repository archived and no longer maintained. Use Sherlock, Maigret, or Blackbird instead.
 
