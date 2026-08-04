@@ -71,6 +71,7 @@ Michael Bazzell's **Images.html** and **Videos.html** tools help search for visu
 * [CameraTrace](http://www.cameratrace.com/trace)  - Trace the location a camera has been by the metadata it embeds in photos that end up on the internet.
 * [ExifTool](https://exiftool.org/) - Platform-independent library and command-line application for reading, writing and editing metadata in a wide variety of files.
 * [Jeffrey's Image Metadata Viewer](http://exif.regex.info/exif.cgi) - Online tool for viewing and analyzing image metadata.
+* [Metadata Remover](https://metadataremover.ai/metadata-viewer) - Browser-local image metadata viewer for EXIF, GPS, XMP, IPTC, and supported AI metadata; no uploads or account required.
 * [InVID/WeVerify](https://www.invid-project.eu/tools-and-services/invid-verification-plugin/) - Browser plugin for video and image verification, useful for detecting manipulated media.
 
 </details>
