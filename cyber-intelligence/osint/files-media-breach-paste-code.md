@@ -99,6 +99,7 @@ Michael Bazzell's **Images.html** and **Videos.html** tools help search for visu
 <summary>Facial Recognition</summary>
 
 * [PimEyes](https://pimeyes.com/en) - Powerful facial recognition and reverse image search engine. Requires paid subscription for detailed results and alerts.
+* [Face2social](https://face2social.com) - Face search engine for social media. Upload a photo and it returns matching public profiles on Instagram, Facebook, TikTok, and X. Indexes public social profile pictures only, not the open web. Free preview of results without registration; matched usernames require a paid plan. Used for catfish and romance-scam checks and for finding whether your own photos have been reused on fake accounts.
 * [FindFace](https://findface.pro/) - Russian face search engine. Searches VK and other Russian social networks.
 * [Face Recognition](https://github.com/ageitgey/face\_recognition) — facial recognition api for Python and the command line
 * [Search4faces.com](https://search4faces.com/) — search people in VK, Odnoklassniki, TikTok and ClubHouse by photo or identikit
