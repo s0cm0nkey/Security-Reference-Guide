@@ -33,6 +33,7 @@ Local helper copy: [Email.html](../../.gitbook/assets/Email.html)
 * [UserSearch.org](https://usersearch.org/) - Dedicated search engine for username discovery
 * [NameChk](https://namechk.com/) - Check username availability across multiple platforms simultaneously
 * [Namecheckr](https://www.namecheckr.com/) - Check username and domain availability across social media and web
+* [Consensus OSINT](https://github.com/OSINT-Experts-Society/Consensus-OSINT) - Local username, email and phone lookup with reconciled source modules, enriched results and evidence graphs
 * [Sherlock](https://github.com/sherlock-project/sherlock) - Hunt down social media accounts by username across [400+ social networks](https://github.com/sherlock-project/sherlock/blob/master/sites.md)
   * [Kali Tools Documentation](https://www.kali.org/tools/sherlock/)
 * [Maigret](https://github.com/soxoj/maigret) - Collect information about username across 2500+ sites, improved fork of Sherlock
