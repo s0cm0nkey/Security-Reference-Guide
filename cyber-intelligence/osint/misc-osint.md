@@ -12,7 +12,7 @@
 * [https://csmr.umich.edu/projects/iffy-quotient/](https://csmr.umich.edu/projects/iffy-quotient/) - The Iffy Quotient is a metric for how much content from "Iffy" sites has been amplified on Facebook and Twitter/X.
 * [https://www.io-archive.org/#/](https://www.io-archive.org/#/) - The Information Operation Archive hosts publicly available and rigorously attributed datapoints from known Information Operations on social media platforms.
 * [https://botscout.com/search.htm](https://botscout.com/search.htm) - Search for bot names, email addresses, or IP addresses to retrieve intelligence related to bot activity.
-* [https://accountanalysis.app/](https://accountanalysis.app/) - Analyzes Twitter/X accounts for bot-like behavior with detailed metrics.
+* [https://accountanalysis.app/](https://accountanalysis.app/) - **[SHUT DOWN]** Twitter/X account analysis tool. The domain now shows a registrar parking page.
 
 </details>
 

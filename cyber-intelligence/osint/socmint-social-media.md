@@ -233,13 +233,14 @@ Local helper copy: [Instagram.html](../../.gitbook/assets/Instagram.html)
 
 * Advanced Search - [https://twitter.com/search-advanced](https://twitter.com/search-advanced) - X's native advanced search interface.
 * Toolsets
-  * [https://tweetbeaver.com](https://tweetbeaver.com) - Comprehensive collection of tools for conducting X/Twitter account OSINT. Requires authentication with your account. **Note:** Some features may be limited due to API restrictions.
+  * [https://tweetbeaver.com](https://tweetbeaver.com) - **[SHUT DOWN]** Former X/Twitter account OSINT toolset. The domain now redirects to an unrelated betting site.
 * User Reports
   * [https://tinfoleak.com/](https://tinfoleak.com/) - Tool for discovering X/Twitter user information leaks and metadata analysis. **Note:** Limited functionality due to API changes.
 * Analytics and Statistics
-  * [https://socialbearing.com/](https://socialbearing.com/) - X/Twitter analytics and search platform for analyzing users, posts, and trends. **Note:** Functionality limited by API restrictions.
+  * [https://socialbearing.com/](https://socialbearing.com/) - **[SHUT DOWN]** X/Twitter analytics and search platform. Its developer's page says it is no longer operational because of X API pricing.
   * [https://botsentinel.com](https://botsentinel.com) - Platform for classifying and tracking inauthentic X/Twitter accounts, bots, and toxic trolls using machine learning.
   * [https://twiangulate.com/search/](https://twiangulate.com/search/) - Cross-reference tool for analyzing relationships between multiple X/Twitter accounts.
+  * [https://twtdata.com/twitter-trends/](https://twtdata.com/twitter-trends/) - Free archive of X/Twitter trending topics by country and date. For about 30 locations it is updated hourly and shows each trend's best position and hours on the list.
 * Geolocation
   * [https://onemilliontweetmap.com/](https://onemilliontweetmap.com/) - Interactive map visualizing geotagged posts from around the world in real-time. **Note:** Limited by reduced geolocation data availability.
 
@@ -362,7 +363,7 @@ For Tor, VPN, privacy, and persona OPSEC guidance, use the privacy section.
   * [twint](https://github.com/twintproject/twint) - Advanced Twitter scraping tool. **Status:** No longer functional due to Twitter/X API changes and site structure updates. Last maintained 2021.
   * [https://nitter.net](https://nitter.net) - Privacy-focused Twitter front-end. **Status:** Most public instances are non-functional due to Twitter/X blocking. Self-hosted instances may still work with limitations.
   * [https://foller.me/](https://foller.me/) - Twitter analytics tool. **Status:** Non-functional due to API restrictions.
-  * [https://analytics.mentionmapp.com/](https://analytics.mentionmapp.com/) - Twitter network visualizer. **Status:** Limited functionality due to API changes.
+  * [https://analytics.mentionmapp.com/](https://analytics.mentionmapp.com/) - Twitter network visualizer. **Status:** Domain no longer resolves.
   * [https://spoonbill.io/](https://spoonbill.io/) - Profile change tracker. **Status:** No longer functional due to API restrictions.
   * [Snap Bird](https://snapbird.org/) - Twitter archive search. **Status:** Discontinued due to Twitter API changes.
 
